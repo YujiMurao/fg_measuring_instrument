@@ -1,0 +1,258 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      }
+    },
+    "Count": 9,
+    "DefaultSize": 22.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 20
+  },
+  "Values": {
+    "1,1": "番号：",
+    "4,1": "内容：",
+    "6,8": "追加",
+    "6,14": "キャンセル"
+  },
+  "AttachInfos": {
+    "1,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "mst_mtm_management_department",
+        "ColumnName": "code"
+      }
+    },
+    "4,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "mst_mtm_management_department",
+        "ColumnName": "name"
+      }
+    },
+    "6,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "mst_mtm_management_department",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に追加してもよろしいですか？",
+            "UpdateValues": []
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "追加",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "6,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "キャンセル",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": null,
+        "FontSize": -1.0,
+        "HorizontalAlignment": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "HorizontalAlignment": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 2,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Left",
+        "Meiryo UI",
+        "@",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,5": 1,
+      "4,1": 2,
+      "4,5": 3,
+      "6,8": 4,
+      "6,9": 4,
+      "6,10": 4,
+      "6,11": 4,
+      "6,12": 4,
+      "6,14": 4,
+      "6,15": 4,
+      "6,16": 4,
+      "6,17": 4,
+      "6,18": 4,
+      "7,8": 4,
+      "7,9": 4,
+      "7,10": 4,
+      "7,11": 4,
+      "7,12": 4,
+      "7,14": 4,
+      "7,15": 4,
+      "7,16": 4,
+      "7,17": 4,
+      "7,18": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontSize": 14.666666984558105,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "6,14,2,5",
+    "6,8,2,5",
+    "1,5,1,5",
+    "4,5,1,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "管理部署",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "mst_mtm_management_department"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//MqzkfUtvX0B9LYBY94zXNqM9SkAK33uepdUBszXFZOUEbNu0Gqenf/N0lqC2KH4wEfngJvkC8Mu1nL36mSECtKjAY3NKA76UXa58osFWYtAia664GEuAynGSn+amLG1HylHHYmfBBo63FonXUZF4EdHIrPSjHilJQ+yepRNybUwxsha5zZ4BDGiGdrE+LZ32/ZSdRHec4z6duq1MUQGjKSDE/bSqbFmcVLXr3zkNW+kdQMDfTAQLYCsACjzgOzXJpOr5TQtavd6FWGoxgC5p7yjGd8SEY+z6j5p6YvAM0ALTYMquscIozAoGZQh07UjX00ubr+/Zc+C277Tryx/DMGqP+M50LIuloaJPs6w5ydtJhQa76FA7OsDRZknuYolX2iSNksU24/Y2Kwrj65dcM/A01jwTujv+jxAoD+aRaRo1Bm7oHYtMQLU0Yzg96YraH07CHjU4VY+4gp4DqeCkVI1ckg0sDMohGqmzDimT/t8hmyuzJmg3wUaYKeJPzoiRYr48Vabiu0MnAHFggwa76lyNYdgFJPVhoPDO9VXSbyfcY27V6GO7ACT1f8g7u2jleo2mnHYtDfffdRNZJmAjOdAP196NnZxmbSebJ/yxrodNepnyB+8aB9zZ753n7AWe+JB8aT2MUD6N8B1J3y3JsPPrr9EW/kteU7DImy5moQYiCu3kzihTMYk8zQBEH6vD1iwfcDcvyflGAeaCP2gV6KhsR9D5RSQfYYWagznRogtsbpchwUGQsdz40WSG1VzxPW8klj23ZefN2RwbrCYuw2PMpQokQeHQ77o+mGmjuspGWNNFwOJEDeQ8yw802LH0TBe209SqgCkhznp1xDi3cIYlpLiobcKRCoZIvQSYJ/CXvhkmRFeX/LuEP3KIly4jAQYSEQd6XTnxqxjbbHsW4Q==|920

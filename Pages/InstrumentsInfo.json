@@ -1,0 +1,2050 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      30
+    ],
+    "Count": 31,
+    "DefaultSize": 12.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 23.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0
+        }
+      },
+      "50": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "51": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 52
+  },
+  "Values": {
+    "1,1": "管理番号",
+    "1,17": "使用可否",
+    "1,35": "使用禁止理由",
+    "4,1": "名称",
+    "4,17": "種類",
+    "4,35": "メーカー",
+    "7,1": "型式",
+    "7,17": "シリアル№",
+    "7,35": "測定範囲",
+    "10,1": "最終校正日",
+    "10,17": "校正周期",
+    "10,35": "最小目盛",
+    "13,1": "次回校正月",
+    "13,17": "自動通知日",
+    "13,35": "仕様",
+    "16,1": "校正有効期限",
+    "16,17": "校正区分",
+    "19,1": "備考",
+    "19,35": "画像",
+    "22,1": "登録日",
+    "26,1": "更新日"
+  },
+  "AttachInfos": {
+    "1,6": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "control_number"
+      },
+      "DataValidationInfo": {}
+    },
+    "1,23": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "Items": [
+          {
+            "Value": "使用可",
+            "DisplayValue": "使用可"
+          },
+          {
+            "Value": "使用禁止",
+            "DisplayValue": "使用禁止"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=InstrumentsInfo!X2"
+                      }
+                    ]
+                  },
+                  "value": "使用可"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=InstrumentsInfo!X2"
+                        },
+                        "PropertyType": 3,
+                        "Value": "Accent 1 0"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=InstrumentsInfo!AP2"
+                        },
+                        "Value": "ー"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=InstrumentsInfo!AP2"
+                        },
+                        "PropertyType": 0,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "730fb131-0489-4cac-9cfa-c8ce17c853f1"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=InstrumentsInfo!X2"
+                        },
+                        "PropertyType": 3,
+                        "Value": "#FFFF0000"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=InstrumentsInfo!AP2"
+                        },
+                        "PropertyType": 0,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=InstrumentsInfo!AP2"
+                        },
+                        "Value": "%Null%"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e230f709-65a8-407b-b0c2-a854014feae8"
+              }
+            ]
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "availability"
+      }
+    },
+    "1,41": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "Items": [
+          {},
+          {
+            "Value": "廃棄",
+            "DisplayValue": "廃棄"
+          },
+          {
+            "Value": "故障",
+            "DisplayValue": "故障"
+          },
+          {
+            "Value": "紛失",
+            "DisplayValue": "紛失"
+          },
+          {
+            "Value": "移管",
+            "DisplayValue": "移管"
+          },
+          {
+            "Value": "不適合",
+            "DisplayValue": "不適合"
+          },
+          {
+            "Value": "校正切れ",
+            "DisplayValue": "校正切れ"
+          },
+          {
+            "Value": "使用禁止",
+            "DisplayValue": "使用禁止"
+          },
+          {
+            "Value": "取消",
+            "DisplayValue": "取消"
+          },
+          {
+            "Value": "重複",
+            "DisplayValue": "重複"
+          },
+          {
+            "Value": "条件付き",
+            "DisplayValue": "条件付き"
+          },
+          {
+            "Value": "不適合",
+            "DisplayValue": "不適合"
+          },
+          {
+            "Value": "保管",
+            "DisplayValue": "保管"
+          },
+          {
+            "Value": "ー",
+            "DisplayValue": "ー"
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "state"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "4,6": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 4,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "tool_name"
+      }
+    },
+    "4,23": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "tool_type"
+      }
+    },
+    "4,41": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "tool_maker"
+      }
+    },
+    "7,6": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "tool_model"
+      }
+    },
+    "7,23": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "tool_seria_no"
+      }
+    },
+    "7,41": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "measuring_range"
+      }
+    },
+    "10,6": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "last_calibration_date"
+      }
+    },
+    "10,23": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "calibration_cycle"
+      }
+    },
+    "10,41": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "minimum_scale"
+      }
+    },
+    "13,6": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "next_calibration_month"
+      }
+    },
+    "13,23": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "auto_notification_date"
+      }
+    },
+    "13,41": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "tool_specification"
+      }
+    },
+    "16,6": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "calibration_expiration_date"
+      }
+    },
+    "16,23": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "calibration_class"
+      }
+    },
+    "19,6": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "remarks"
+      }
+    },
+    "19,38": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "HorizontalAlignment": 0
+      },
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "image",
+        "IsImagePath": true
+      }
+    },
+    "24,1": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "FGC_CreateDate"
+      }
+    },
+    "28,1": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_measurement_tools",
+        "ColumnName": "FGC_LastModifyDate"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "Foreground": null,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "Foreground": null,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Foreground": 6,
+        "Formatter": 5
+      },
+      {
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Foreground": 6,
+        "TextIndent": 5,
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Foreground": 6,
+        "Formatter": 5,
+        "TextIndent": 5,
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 5,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "Formatter": 5,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Foreground": 6,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Foreground": 6,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null
+      },
+      {
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "Formatter": 9,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Foreground": 6,
+        "Formatter": 5,
+        "TextIndent": 5,
+        "HorizontalAlignment": 7
+      },
+      {
+        "Background": 0,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "Formatter": 5,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 5,
+        "TextIndent": 5,
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "Foreground": 10,
+        "Formatter": 11,
+        "TextIndent": 0,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderTop": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderTop": 1
+      },
+      {
+        "BorderTop": null
+      },
+      {
+        "Background": 13,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "Formatter": 14,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Strikethrough": false
+      },
+      {
+        "BorderBottom": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1
+      },
+      {
+        "BorderBottom": null
+      },
+      {
+        "Background": 0,
+        "Formatter": 5,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "Formatter": 15,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 11
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 3,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 16,
+        "WordWrap": true
+      },
+      {
+        "Background": 0,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null
+      },
+      {
+        "Background": 0,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null
+      },
+      {
+        "Formatter": 11
+      },
+      {
+        "Background": 13,
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "Formatter": 5,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 0,
+        "Formatter": 5,
+        "BorderTop": null,
+        "BorderLeft": null
+      },
+      {
+        "Background": 0,
+        "Formatter": 5,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "BorderTop": null,
+        "BorderLeft": null
+      },
+      {
+        "Formatter": 9,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 16,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "HorizontalAlignment": 7,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 0,
+        "Formatter": 5
+      },
+      {
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Foreground": 17,
+        "Formatter": 5,
+        "TextIndent": 5,
+        "HorizontalAlignment": 18
+      },
+      {
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Foreground": 10,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Foreground": 10,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "Foreground": 10,
+        "Formatter": 5,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "Foreground": 10,
+        "Formatter": 5,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 2,
+        "FontWeight": 2,
+        "Foreground": 10,
+        "Formatter": 5,
+        "TextIndent": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFCFCFC",
+        "Meiryo UI",
+        "Normal",
+        "General",
+        "Center",
+        "[AUTO]General",
+        "#FF6D6D6D",
+        "Left",
+        "Accent 1 0",
+        "@",
+        "#FF000000",
+        "yyyy/m/d;@",
+        "#FFE6E6E6",
+        "#FFFFFFFF",
+        "0ヶ月",
+        "yyyy/m",
+        "Top",
+        "#FF8C8C8C",
+        "Right"
+      ],
+      "Borders": [
+        {
+          "Style": 2,
+          "Color": 8
+        },
+        {
+          "Color": 12
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 1,
+      "0,20": 1,
+      "0,21": 1,
+      "0,22": 1,
+      "0,23": 1,
+      "0,24": 1,
+      "0,25": 1,
+      "0,26": 1,
+      "0,27": 1,
+      "0,28": 1,
+      "0,29": 1,
+      "0,30": 1,
+      "0,31": 1,
+      "0,32": 1,
+      "0,33": 1,
+      "0,34": 1,
+      "0,35": 1,
+      "0,36": 1,
+      "0,37": 1,
+      "0,38": 1,
+      "0,39": 1,
+      "0,40": 1,
+      "0,41": 1,
+      "0,42": 1,
+      "0,43": 1,
+      "0,44": 1,
+      "0,45": 1,
+      "0,46": 1,
+      "0,47": 1,
+      "0,48": 1,
+      "0,49": 1,
+      "0,50": 1,
+      "0,51": 0,
+      "1,0": 2,
+      "1,1": 3,
+      "1,6": 4,
+      "1,17": 5,
+      "1,18": 6,
+      "1,19": 6,
+      "1,20": 6,
+      "1,21": 6,
+      "1,22": 6,
+      "1,23": 6,
+      "1,24": 6,
+      "1,25": 6,
+      "1,26": 6,
+      "1,27": 6,
+      "1,28": 6,
+      "1,29": 6,
+      "1,30": 6,
+      "1,31": 6,
+      "1,32": 6,
+      "1,33": 6,
+      "1,35": 7,
+      "1,36": 6,
+      "1,37": 6,
+      "1,38": 6,
+      "1,39": 6,
+      "1,40": 6,
+      "1,41": 6,
+      "1,42": 6,
+      "1,43": 6,
+      "1,44": 6,
+      "1,45": 6,
+      "1,46": 6,
+      "1,47": 6,
+      "1,48": 6,
+      "1,51": 8,
+      "2,0": 2,
+      "2,17": 9,
+      "2,18": 9,
+      "2,19": 9,
+      "2,20": 9,
+      "2,21": 9,
+      "2,22": 9,
+      "2,23": 9,
+      "2,24": 9,
+      "2,25": 9,
+      "2,26": 9,
+      "2,27": 9,
+      "2,28": 9,
+      "2,29": 9,
+      "2,30": 9,
+      "2,31": 9,
+      "2,32": 9,
+      "2,33": 9,
+      "2,35": 6,
+      "2,36": 6,
+      "2,37": 6,
+      "2,38": 6,
+      "2,39": 6,
+      "2,40": 6,
+      "2,41": 6,
+      "2,42": 6,
+      "2,43": 6,
+      "2,44": 6,
+      "2,45": 6,
+      "2,46": 6,
+      "2,47": 6,
+      "2,48": 6,
+      "2,51": 10,
+      "3,0": 2,
+      "3,1": 11,
+      "3,2": 11,
+      "3,3": 11,
+      "3,4": 11,
+      "3,5": 11,
+      "3,6": 12,
+      "3,7": 12,
+      "3,8": 12,
+      "3,9": 12,
+      "3,10": 12,
+      "3,11": 12,
+      "3,12": 12,
+      "3,13": 12,
+      "3,14": 12,
+      "3,15": 12,
+      "3,16": 12,
+      "3,17": 13,
+      "3,18": 13,
+      "3,19": 13,
+      "3,20": 13,
+      "3,21": 13,
+      "3,22": 13,
+      "3,23": 13,
+      "3,24": 13,
+      "3,25": 13,
+      "3,26": 13,
+      "3,27": 13,
+      "3,28": 13,
+      "3,29": 13,
+      "3,30": 13,
+      "3,31": 13,
+      "3,32": 13,
+      "3,33": 13,
+      "3,34": 13,
+      "3,35": 13,
+      "3,36": 13,
+      "3,37": 13,
+      "3,38": 13,
+      "3,39": 13,
+      "3,40": 13,
+      "3,41": 13,
+      "3,42": 14,
+      "3,43": 14,
+      "3,44": 14,
+      "3,45": 14,
+      "3,46": 14,
+      "3,47": 14,
+      "3,48": 14,
+      "3,49": 14,
+      "3,50": 14,
+      "3,51": 13,
+      "4,0": 2,
+      "4,1": 15,
+      "4,2": 15,
+      "4,3": 15,
+      "4,4": 15,
+      "4,5": 16,
+      "4,6": 17,
+      "4,17": 7,
+      "4,18": 7,
+      "4,19": 7,
+      "4,20": 7,
+      "4,21": 7,
+      "4,22": 7,
+      "4,23": 18,
+      "4,34": 6,
+      "4,35": 19,
+      "4,41": 18,
+      "5,0": 2,
+      "5,1": 15,
+      "5,2": 15,
+      "5,3": 15,
+      "5,4": 15,
+      "5,5": 16,
+      "5,17": 7,
+      "5,18": 7,
+      "5,19": 7,
+      "5,20": 7,
+      "5,21": 7,
+      "5,22": 7,
+      "5,34": 6,
+      "6,0": 2,
+      "6,1": 20,
+      "6,2": 20,
+      "6,3": 20,
+      "6,4": 20,
+      "6,5": 20,
+      "6,6": 21,
+      "6,7": 21,
+      "6,8": 21,
+      "6,9": 21,
+      "6,10": 21,
+      "6,11": 21,
+      "6,12": 21,
+      "6,13": 21,
+      "6,14": 21,
+      "6,15": 21,
+      "6,16": 21,
+      "6,17": 22,
+      "6,18": 22,
+      "6,19": 22,
+      "6,20": 22,
+      "6,21": 22,
+      "6,22": 22,
+      "6,23": 2,
+      "6,24": 2,
+      "6,25": 2,
+      "6,26": 2,
+      "6,27": 2,
+      "6,28": 2,
+      "6,29": 2,
+      "6,30": 2,
+      "6,31": 2,
+      "6,32": 2,
+      "6,33": 2,
+      "6,34": 2,
+      "6,35": 22,
+      "6,36": 22,
+      "6,37": 22,
+      "6,38": 22,
+      "6,39": 22,
+      "6,40": 22,
+      "6,41": 2,
+      "6,42": 2,
+      "6,43": 2,
+      "6,44": 2,
+      "6,45": 2,
+      "6,46": 2,
+      "6,47": 2,
+      "6,48": 2,
+      "6,49": 2,
+      "6,50": 2,
+      "6,51": 2,
+      "7,0": 2,
+      "7,1": 15,
+      "7,2": 15,
+      "7,3": 15,
+      "7,4": 15,
+      "7,5": 16,
+      "7,6": 4,
+      "7,17": 7,
+      "7,18": 7,
+      "7,19": 7,
+      "7,20": 7,
+      "7,21": 7,
+      "7,22": 7,
+      "7,23": 18,
+      "7,34": 6,
+      "7,35": 7,
+      "7,36": 7,
+      "7,37": 7,
+      "7,38": 7,
+      "7,39": 7,
+      "7,40": 7,
+      "7,41": 18,
+      "8,0": 2,
+      "8,1": 15,
+      "8,2": 15,
+      "8,3": 15,
+      "8,4": 15,
+      "8,5": 16,
+      "8,17": 7,
+      "8,18": 7,
+      "8,19": 7,
+      "8,20": 7,
+      "8,21": 7,
+      "8,22": 7,
+      "8,34": 6,
+      "8,35": 7,
+      "8,36": 7,
+      "8,37": 7,
+      "8,38": 7,
+      "8,39": 7,
+      "8,40": 7,
+      "9,0": 2,
+      "9,1": 20,
+      "9,2": 20,
+      "9,3": 20,
+      "9,4": 20,
+      "9,5": 20,
+      "9,6": 23,
+      "9,7": 23,
+      "9,8": 23,
+      "9,9": 23,
+      "9,10": 23,
+      "9,11": 23,
+      "9,12": 23,
+      "9,13": 23,
+      "9,14": 23,
+      "9,15": 23,
+      "9,16": 21,
+      "9,17": 22,
+      "9,18": 22,
+      "9,19": 22,
+      "9,20": 22,
+      "9,21": 22,
+      "9,22": 22,
+      "9,23": 2,
+      "9,24": 2,
+      "9,25": 2,
+      "9,26": 2,
+      "9,27": 2,
+      "9,28": 2,
+      "9,29": 2,
+      "9,30": 2,
+      "9,31": 2,
+      "9,32": 2,
+      "9,33": 2,
+      "9,34": 2,
+      "9,35": 22,
+      "9,36": 22,
+      "9,37": 22,
+      "9,38": 22,
+      "9,39": 22,
+      "9,40": 22,
+      "9,41": 2,
+      "9,42": 2,
+      "9,43": 2,
+      "9,44": 2,
+      "9,45": 2,
+      "9,46": 2,
+      "9,47": 2,
+      "9,48": 2,
+      "9,49": 2,
+      "9,50": 2,
+      "9,51": 2,
+      "10,0": 2,
+      "10,1": 15,
+      "10,2": 15,
+      "10,3": 15,
+      "10,4": 15,
+      "10,5": 15,
+      "10,6": 24,
+      "10,7": 25,
+      "10,8": 25,
+      "10,9": 25,
+      "10,10": 25,
+      "10,11": 25,
+      "10,12": 25,
+      "10,13": 25,
+      "10,14": 25,
+      "10,15": 25,
+      "10,16": 26,
+      "10,17": 7,
+      "10,18": 7,
+      "10,19": 7,
+      "10,20": 7,
+      "10,21": 7,
+      "10,22": 7,
+      "10,23": 27,
+      "10,34": 6,
+      "10,35": 7,
+      "10,36": 7,
+      "10,37": 7,
+      "10,38": 7,
+      "10,39": 7,
+      "10,40": 7,
+      "10,41": 27,
+      "11,0": 2,
+      "11,1": 15,
+      "11,2": 15,
+      "11,3": 15,
+      "11,4": 15,
+      "11,5": 15,
+      "11,6": 28,
+      "11,7": 29,
+      "11,8": 29,
+      "11,9": 29,
+      "11,10": 29,
+      "11,11": 29,
+      "11,12": 29,
+      "11,13": 29,
+      "11,14": 29,
+      "11,15": 29,
+      "11,16": 30,
+      "11,17": 7,
+      "11,18": 7,
+      "11,19": 7,
+      "11,20": 7,
+      "11,21": 7,
+      "11,22": 7,
+      "11,34": 6,
+      "11,35": 7,
+      "11,36": 7,
+      "11,37": 7,
+      "11,38": 7,
+      "11,39": 7,
+      "11,40": 7,
+      "12,0": 2,
+      "12,1": 20,
+      "12,2": 20,
+      "12,3": 20,
+      "12,4": 20,
+      "12,5": 20,
+      "12,6": 31,
+      "12,7": 31,
+      "12,8": 31,
+      "12,9": 31,
+      "12,10": 31,
+      "12,11": 31,
+      "12,12": 31,
+      "12,13": 31,
+      "12,14": 31,
+      "12,15": 31,
+      "12,16": 21,
+      "12,17": 2,
+      "12,18": 2,
+      "12,19": 2,
+      "12,20": 2,
+      "12,21": 2,
+      "12,22": 2,
+      "12,23": 6,
+      "12,24": 6,
+      "12,25": 6,
+      "12,26": 6,
+      "12,27": 6,
+      "12,28": 6,
+      "12,29": 6,
+      "12,30": 6,
+      "12,31": 6,
+      "12,32": 6,
+      "12,33": 6,
+      "12,34": 6,
+      "12,35": 2,
+      "12,36": 2,
+      "12,37": 2,
+      "12,38": 2,
+      "12,39": 2,
+      "12,40": 2,
+      "12,41": 6,
+      "12,42": 6,
+      "12,43": 6,
+      "12,44": 6,
+      "12,45": 6,
+      "12,46": 6,
+      "12,47": 6,
+      "12,48": 6,
+      "12,49": 6,
+      "12,50": 6,
+      "12,51": 6,
+      "13,0": 2,
+      "13,1": 15,
+      "13,2": 15,
+      "13,3": 15,
+      "13,4": 15,
+      "13,5": 16,
+      "13,6": 32,
+      "13,17": 7,
+      "13,18": 7,
+      "13,19": 7,
+      "13,20": 7,
+      "13,21": 7,
+      "13,22": 7,
+      "13,23": 33,
+      "13,34": 6,
+      "13,35": 7,
+      "13,36": 7,
+      "13,37": 7,
+      "13,38": 7,
+      "13,39": 7,
+      "13,40": 7,
+      "13,41": 34,
+      "14,0": 2,
+      "14,1": 15,
+      "14,2": 15,
+      "14,3": 15,
+      "14,4": 15,
+      "14,5": 16,
+      "14,17": 7,
+      "14,18": 7,
+      "14,19": 7,
+      "14,20": 7,
+      "14,21": 7,
+      "14,22": 7,
+      "14,34": 6,
+      "14,35": 7,
+      "14,36": 7,
+      "14,37": 7,
+      "14,38": 7,
+      "14,39": 7,
+      "14,40": 7,
+      "15,0": 2,
+      "15,1": 20,
+      "15,2": 20,
+      "15,3": 20,
+      "15,4": 20,
+      "15,5": 35,
+      "15,25": 36,
+      "15,26": 2,
+      "15,27": 2,
+      "15,28": 2,
+      "15,29": 2,
+      "15,30": 2,
+      "15,31": 37,
+      "16,0": 2,
+      "16,1": 15,
+      "16,2": 15,
+      "16,3": 15,
+      "16,4": 15,
+      "16,5": 15,
+      "16,6": 38,
+      "16,17": 7,
+      "16,18": 7,
+      "16,19": 7,
+      "16,20": 7,
+      "16,21": 7,
+      "16,22": 7,
+      "16,23": 33,
+      "16,34": 39,
+      "16,35": 39,
+      "16,36": 39,
+      "16,37": 39,
+      "16,38": 39,
+      "16,39": 39,
+      "16,40": 39,
+      "17,0": 20,
+      "17,1": 15,
+      "17,2": 15,
+      "17,3": 15,
+      "17,4": 15,
+      "17,5": 15,
+      "17,17": 7,
+      "17,18": 7,
+      "17,19": 7,
+      "17,20": 7,
+      "17,21": 7,
+      "17,22": 7,
+      "18,0": 20,
+      "18,1": 31,
+      "18,2": 31,
+      "18,3": 31,
+      "18,4": 31,
+      "18,5": 40,
+      "18,25": 41,
+      "18,26": 9,
+      "18,27": 9,
+      "18,28": 9,
+      "18,29": 9,
+      "18,30": 9,
+      "18,31": 42,
+      "18,51": 8,
+      "19,0": 35,
+      "19,1": 15,
+      "19,2": 15,
+      "19,3": 15,
+      "19,4": 15,
+      "19,5": 16,
+      "19,6": 43,
+      "19,7": 44,
+      "19,8": 44,
+      "19,9": 44,
+      "19,10": 44,
+      "19,11": 44,
+      "19,12": 44,
+      "19,13": 44,
+      "19,14": 44,
+      "19,15": 44,
+      "19,16": 44,
+      "19,17": 44,
+      "19,18": 44,
+      "19,19": 44,
+      "19,20": 44,
+      "19,21": 44,
+      "19,22": 44,
+      "19,23": 44,
+      "19,24": 44,
+      "19,25": 44,
+      "19,26": 44,
+      "19,27": 44,
+      "19,28": 44,
+      "19,29": 44,
+      "19,30": 44,
+      "19,31": 44,
+      "19,32": 44,
+      "19,33": 44,
+      "19,35": 7,
+      "19,36": 6,
+      "19,37": 6,
+      "19,38": 45,
+      "20,0": 35,
+      "20,1": 15,
+      "20,2": 15,
+      "20,3": 15,
+      "20,4": 15,
+      "20,5": 16,
+      "20,6": 44,
+      "20,7": 44,
+      "20,8": 44,
+      "20,9": 44,
+      "20,10": 44,
+      "20,11": 44,
+      "20,12": 44,
+      "20,13": 44,
+      "20,14": 44,
+      "20,15": 44,
+      "20,16": 44,
+      "20,17": 44,
+      "20,18": 44,
+      "20,19": 44,
+      "20,20": 44,
+      "20,21": 44,
+      "20,22": 44,
+      "20,23": 44,
+      "20,24": 44,
+      "20,25": 44,
+      "20,26": 44,
+      "20,27": 44,
+      "20,28": 44,
+      "20,29": 44,
+      "20,30": 44,
+      "20,31": 44,
+      "20,32": 44,
+      "20,33": 44,
+      "20,35": 6,
+      "20,36": 6,
+      "20,37": 6,
+      "21,0": 35,
+      "21,1": 20,
+      "21,2": 20,
+      "21,3": 20,
+      "21,4": 20,
+      "21,5": 35,
+      "21,6": 44,
+      "21,7": 44,
+      "21,8": 44,
+      "21,9": 44,
+      "21,10": 44,
+      "21,11": 44,
+      "21,12": 44,
+      "21,13": 44,
+      "21,14": 44,
+      "21,15": 44,
+      "21,16": 44,
+      "21,17": 44,
+      "21,18": 44,
+      "21,19": 44,
+      "21,20": 44,
+      "21,21": 44,
+      "21,22": 44,
+      "21,23": 44,
+      "21,24": 44,
+      "21,25": 44,
+      "21,26": 44,
+      "21,27": 44,
+      "21,28": 44,
+      "21,29": 44,
+      "21,30": 44,
+      "21,31": 44,
+      "21,32": 44,
+      "21,33": 44,
+      "22,0": 35,
+      "22,1": 46,
+      "22,6": 44,
+      "22,7": 44,
+      "22,8": 44,
+      "22,9": 44,
+      "22,10": 44,
+      "22,11": 44,
+      "22,12": 44,
+      "22,13": 44,
+      "22,14": 44,
+      "22,15": 44,
+      "22,16": 44,
+      "22,17": 44,
+      "22,18": 44,
+      "22,19": 44,
+      "22,20": 44,
+      "22,21": 44,
+      "22,22": 44,
+      "22,23": 44,
+      "22,24": 44,
+      "22,25": 44,
+      "22,26": 44,
+      "22,27": 44,
+      "22,28": 44,
+      "22,29": 44,
+      "22,30": 44,
+      "22,31": 44,
+      "22,32": 44,
+      "22,33": 44,
+      "23,0": 35,
+      "23,6": 44,
+      "23,7": 44,
+      "23,8": 44,
+      "23,9": 44,
+      "23,10": 44,
+      "23,11": 44,
+      "23,12": 44,
+      "23,13": 44,
+      "23,14": 44,
+      "23,15": 44,
+      "23,16": 44,
+      "23,17": 44,
+      "23,18": 44,
+      "23,19": 44,
+      "23,20": 44,
+      "23,21": 44,
+      "23,22": 44,
+      "23,23": 44,
+      "23,24": 44,
+      "23,25": 44,
+      "23,26": 44,
+      "23,27": 44,
+      "23,28": 44,
+      "23,29": 44,
+      "23,30": 44,
+      "23,31": 44,
+      "23,32": 44,
+      "23,33": 44,
+      "24,0": 35,
+      "24,1": 46,
+      "24,6": 44,
+      "24,7": 44,
+      "24,8": 44,
+      "24,9": 44,
+      "24,10": 44,
+      "24,11": 44,
+      "24,12": 44,
+      "24,13": 44,
+      "24,14": 44,
+      "24,15": 44,
+      "24,16": 44,
+      "24,17": 44,
+      "24,18": 44,
+      "24,19": 44,
+      "24,20": 44,
+      "24,21": 44,
+      "24,22": 44,
+      "24,23": 44,
+      "24,24": 44,
+      "24,25": 44,
+      "24,26": 44,
+      "24,27": 44,
+      "24,28": 44,
+      "24,29": 44,
+      "24,30": 44,
+      "24,31": 44,
+      "24,32": 44,
+      "24,33": 44,
+      "25,0": 35,
+      "25,6": 44,
+      "25,7": 44,
+      "25,8": 44,
+      "25,9": 44,
+      "25,10": 44,
+      "25,11": 44,
+      "25,12": 44,
+      "25,13": 44,
+      "25,14": 44,
+      "25,15": 44,
+      "25,16": 44,
+      "25,17": 44,
+      "25,18": 44,
+      "25,19": 44,
+      "25,20": 44,
+      "25,21": 44,
+      "25,22": 44,
+      "25,23": 44,
+      "25,24": 44,
+      "25,25": 44,
+      "25,26": 44,
+      "25,27": 44,
+      "25,28": 44,
+      "25,29": 44,
+      "25,30": 44,
+      "25,31": 44,
+      "25,32": 44,
+      "25,33": 44,
+      "26,0": 35,
+      "26,1": 46,
+      "26,6": 44,
+      "26,7": 44,
+      "26,8": 44,
+      "26,9": 44,
+      "26,10": 44,
+      "26,11": 44,
+      "26,12": 44,
+      "26,13": 44,
+      "26,14": 44,
+      "26,15": 44,
+      "26,16": 44,
+      "26,17": 44,
+      "26,18": 44,
+      "26,19": 44,
+      "26,20": 44,
+      "26,21": 44,
+      "26,22": 44,
+      "26,23": 44,
+      "26,24": 44,
+      "26,25": 44,
+      "26,26": 44,
+      "26,27": 44,
+      "26,28": 44,
+      "26,29": 44,
+      "26,30": 44,
+      "26,31": 44,
+      "26,32": 44,
+      "26,33": 44,
+      "27,0": 35,
+      "27,6": 44,
+      "27,7": 44,
+      "27,8": 44,
+      "27,9": 44,
+      "27,10": 44,
+      "27,11": 44,
+      "27,12": 44,
+      "27,13": 44,
+      "27,14": 44,
+      "27,15": 44,
+      "27,16": 44,
+      "27,17": 44,
+      "27,18": 44,
+      "27,19": 44,
+      "27,20": 44,
+      "27,21": 44,
+      "27,22": 44,
+      "27,23": 44,
+      "27,24": 44,
+      "27,25": 44,
+      "27,26": 44,
+      "27,27": 44,
+      "27,28": 44,
+      "27,29": 44,
+      "27,30": 44,
+      "27,31": 44,
+      "27,32": 44,
+      "27,33": 44,
+      "28,0": 35,
+      "28,1": 46,
+      "28,6": 44,
+      "28,7": 44,
+      "28,8": 44,
+      "28,9": 44,
+      "28,10": 44,
+      "28,11": 44,
+      "28,12": 44,
+      "28,13": 44,
+      "28,14": 44,
+      "28,15": 44,
+      "28,16": 44,
+      "28,17": 44,
+      "28,18": 44,
+      "28,19": 44,
+      "28,20": 44,
+      "28,21": 44,
+      "28,22": 44,
+      "28,23": 44,
+      "28,24": 44,
+      "28,25": 44,
+      "28,26": 44,
+      "28,27": 44,
+      "28,28": 44,
+      "28,29": 44,
+      "28,30": 44,
+      "28,31": 44,
+      "28,32": 44,
+      "28,33": 44,
+      "29,0": 35,
+      "29,1": 20,
+      "29,2": 20,
+      "29,3": 20,
+      "29,4": 20,
+      "29,5": 20,
+      "29,6": 47,
+      "29,7": 47,
+      "29,8": 47,
+      "29,9": 47,
+      "29,10": 47,
+      "29,11": 47,
+      "29,12": 47,
+      "29,13": 47,
+      "29,14": 47,
+      "29,15": 47,
+      "29,16": 47,
+      "29,17": 47,
+      "29,18": 47,
+      "29,19": 47,
+      "29,20": 47,
+      "29,21": 47,
+      "29,22": 47,
+      "29,23": 47,
+      "29,24": 47,
+      "29,25": 47,
+      "29,26": 47,
+      "29,27": 47,
+      "29,28": 47,
+      "29,29": 47,
+      "29,30": 47,
+      "29,31": 47,
+      "29,32": 47,
+      "29,33": 48,
+      "29,34": 49,
+      "29,35": 49,
+      "29,36": 49,
+      "29,37": 49,
+      "30,0": 50,
+      "30,1": 51,
+      "30,2": 51,
+      "30,3": 51,
+      "30,4": 51,
+      "30,5": 51,
+      "30,6": 52,
+      "30,12": 53,
+      "30,13": 53,
+      "30,14": 53,
+      "30,15": 53,
+      "30,16": 53,
+      "30,17": 53,
+      "30,18": 53,
+      "30,19": 53,
+      "30,20": 53,
+      "30,21": 53,
+      "30,22": 53,
+      "30,23": 53,
+      "30,24": 53,
+      "30,25": 51,
+      "30,26": 54,
+      "30,27": 54,
+      "30,28": 54,
+      "30,29": 54,
+      "30,30": 54,
+      "30,31": 54,
+      "30,32": 55,
+      "30,33": 55,
+      "30,34": 55,
+      "30,35": 55,
+      "30,36": 55,
+      "30,37": 55,
+      "30,38": 56,
+      "30,39": 56,
+      "30,40": 56,
+      "30,41": 56,
+      "30,42": 56,
+      "30,43": 56,
+      "30,44": 56,
+      "30,45": 56,
+      "30,46": 56,
+      "30,47": 56,
+      "30,48": 56,
+      "30,49": 56,
+      "30,50": 56,
+      "30,51": 57
+    },
+    "RowStyles": {
+      "30": 58
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "FontSize": 14.666666984558105,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "4,1,2,5",
+    "7,1,2,5",
+    "10,1,2,5",
+    "13,1,2,5",
+    "1,1,2,5",
+    "30,6,1,6",
+    "16,1,2,5",
+    "10,6,2,10",
+    "1,6,2,10",
+    "7,6,2,10",
+    "13,6,2,10",
+    "16,6,2,10",
+    "4,17,2,6",
+    "7,17,2,6",
+    "10,17,2,6",
+    "1,17,2,6",
+    "13,17,2,6",
+    "1,23,2,10",
+    "4,23,2,11",
+    "7,23,2,11",
+    "10,23,2,11",
+    "13,23,2,11",
+    "19,1,2,5",
+    "7,35,2,6",
+    "10,35,2,6",
+    "13,35,2,6",
+    "4,41,2,11",
+    "4,35,2,6",
+    "7,41,2,11",
+    "10,41,2,11",
+    "16,17,2,6",
+    "16,23,2,11",
+    "13,41,5,11",
+    "1,41,2,8",
+    "1,35,2,6",
+    "19,35,2,3",
+    "19,38,10,14",
+    "19,6,10,28",
+    "4,6,2,10",
+    "22,1,2,5",
+    "24,1,2,5",
+    "26,1,2,5",
+    "28,1,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "測定機器管理台帳",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "trn_mtm_measurement_tools"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "bugId",
+      "Formula": "InstrumentsInfo!$G$31"
+    },
+    {
+      "Name": "comment",
+      "Formula": "InstrumentsInfo!$AM$20"
+    },
+    {
+      "Name": "statusId",
+      "Formula": "InstrumentsInfo!$G$8"
+    }
+  ]
+}//uCNQVF/7NdkV/2Qs7XQiQHZudgac9jQ7uG0i3s+pNfy1KUhan9N4hhiH+q4uICQV1bSCx1y13NjUjGFGaO3obRiJPrui+78euhtAfvD4sgvTHx10TC/vyohGKrI4O37Yy7eeDUxTy+Hj0+G9Gr0M+QAwnGJ7xUt0k9eeHrxxuA8gNOpZfkBCBsDwdgsyCwJdjn8W1RLc9tzq2fn8zoIZa1e8UX6A1JcsnMz2FVbmfHF7xAqaRs16NE6s1Vone3XqEJsPw43TiFrgMUWcxlqDKdGEKIlRsF69jzBhGz/xpxdwL+oeyWzWTV6SLlG0iUojzi0k/iPm1uy1fJzeaHocAJXtZou7OWoJYNE+1OjppadJpRcrYZgtn0llzyV07+Lv+xfoqrmLHIIG/MRn2UoNys1jcd3T0ZyIf7Rw8xaB05oxca4YZ0qQZP4xcj+THX4SRCq0o4YO3mSB/km5YajpuCff5kyP16Xnz+p3HqcIz9deROpz+eymBc1pdmOBFApOAEgeETD3m2lWuoX2rDAnwcetwtEP0gvO39D71W0zz/85xUGcU4YcCBd3rMNx3uZMEdiIVWd9g3UyikzabzbjynKmM2qx0yB/mowt7x8QwiHvWL00+srLwznZqPWWYe1izlBu3SrH8+9CKhdkMcZnfmPj1O/ffziISHjzC6VLH1Z9YW6h2IxM15Vo4PlcQkoLNvjx7sBAitzzlOM/q33sJtTtQe82Ry4SZstl87wjnZrh6+6ufZT+vQX3fnyYrQ7ptfDP8bxz3BZDWPVlK/6YeuwzP1fA3yfwG1Jyv/YRILgOEAuoXE0tNAP8y2HsOQlvVbvx/+69wRYV/jMOzvLiOf0jbIy96a22tvQJewbrxa1DGHmt+aMERn0eQ4MMWeP7CVArKzwDTpXJn0PXPaQShg==|920

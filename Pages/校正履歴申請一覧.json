@@ -1,0 +1,273 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "1,1": "申請一覧",
+    "25,1": "承認情報",
+    "28,30": "実行後の状態",
+    "30,30": "コメント"
+  },
+  "AttachInfos": {
+    "5,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "trn_mtm_calibration_history",
+        "RowIndex": 5,
+        "ColumnIndex": 1,
+        "ColumnCount": 20,
+        "RowCount": 19,
+        "ColumnOperation": 2,
+        "ShowGridLine": true,
+        "ShowEditStatusIcon": true,
+        "Name": "リストビュー校正修理廃棄履歴LIST",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "6,1": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_calibration_history",
+        "ColumnName": "ID"
+      }
+    },
+    "6,3": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_calibration_history",
+        "ColumnName": "管理番号"
+      }
+    },
+    "6,6": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_calibration_history",
+        "ColumnName": "処理年月日"
+      }
+    },
+    "6,12": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_calibration_history",
+        "ColumnName": "業者名"
+      }
+    },
+    "6,16": {
+      "BindingInfo": {
+        "TableName": "trn_mtm_calibration_history",
+        "ColumnName": "FGC_State"
+      }
+    },
+    "6,19": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "addoredit記録文書",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "ImagePath": "Application/024_edit_4.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1"
+      }
+    },
+    "31,30": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 21.333333333333332,
+        "FontWeight": 0,
+        "Formatter": 1
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "BorderLeft": 0
+      },
+      {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Formatter": 3
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "Formatter": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "[AUTO]General",
+        "DarkGray",
+        "yyyy\"年\"m\"月\"d\"日\"",
+        "@",
+        "Top",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 2
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "5,1": 1,
+      "5,2": 2,
+      "5,3": 2,
+      "5,4": 2,
+      "5,5": 2,
+      "5,6": 2,
+      "5,7": 2,
+      "5,8": 2,
+      "5,9": 2,
+      "5,10": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,14": 2,
+      "5,15": 2,
+      "5,16": 2,
+      "5,17": 2,
+      "5,18": 2,
+      "5,19": 2,
+      "5,20": 3,
+      "6,1": 4,
+      "6,3": 5,
+      "6,6": 6,
+      "6,12": 5,
+      "6,20": 7,
+      "7,1": 8,
+      "7,20": 7,
+      "8,1": 8,
+      "8,20": 7,
+      "9,1": 8,
+      "9,20": 7,
+      "10,1": 8,
+      "10,20": 7,
+      "11,1": 8,
+      "11,20": 7,
+      "12,1": 8,
+      "12,20": 7,
+      "13,1": 8,
+      "13,20": 7,
+      "14,1": 8,
+      "14,20": 7,
+      "15,1": 8,
+      "15,20": 7,
+      "16,1": 8,
+      "16,20": 7,
+      "17,1": 8,
+      "17,20": 7,
+      "18,1": 8,
+      "18,20": 7,
+      "19,1": 8,
+      "19,20": 7,
+      "20,1": 8,
+      "20,20": 7,
+      "21,1": 8,
+      "21,20": 7,
+      "22,1": 8,
+      "22,20": 7,
+      "23,1": 9,
+      "23,2": 10,
+      "23,3": 10,
+      "23,4": 10,
+      "23,5": 10,
+      "23,6": 10,
+      "23,7": 10,
+      "23,8": 10,
+      "23,9": 10,
+      "23,10": 10,
+      "23,11": 10,
+      "23,12": 10,
+      "23,13": 10,
+      "23,14": 10,
+      "23,15": 10,
+      "23,16": 10,
+      "23,17": 10,
+      "23,18": 10,
+      "23,19": 10,
+      "23,20": 11,
+      "25,1": 12,
+      "28,30": 12,
+      "30,30": 12,
+      "31,30": 13
+    },
+    "SheetStyle": {
+      "FontFamily": 6
+    }
+  },
+  "Spans": [
+    "1,1,3,16",
+    "7,1,17,20",
+    "6,1,1,2",
+    "6,3,1,3",
+    "6,6,1,6",
+    "6,12,1,4",
+    "6,16,1,3",
+    "29,30,1,17",
+    "31,30,5,17",
+    "5,1,1,2",
+    "5,3,1,3",
+    "5,6,1,6",
+    "5,12,1,4",
+    "5,16,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "masterpage",
+    "Title": "申請一覧",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//p086j9gHJtnrIq1T/j+BlBQPnoc/YcZmAOX/8CRFLRVQjn7rvCPHoWw6Gx5w9ZACofwwV2lgVISZwtcFtoJJGic7tj1vKPFBD3G4vc5VE26JFMijbQAURyFwSY8v1CLNZBpvhJBisOj34WRgfGhlnqxzWQdLaT0uL82FqSwVxRgUcTyW0sY91Sd0u9L1KY/XjpmE3uZlnsf/uKiV3GGSoxDh9zTAvqs4r6CjecAJEAHSyCHXhc8xz5JgToZpaYtcPEh4koLmUKXG5/KpIRddz80A+Hzy/UbXV4yUhUQoQETq7h0IrTYQFgoU9J6ORBJNjLJajwduKaK1DDZMJv+KA1AoUBxKt9Xujv4eTKAgv7gNbMsxko6G8JVYZZ/SQtSRTntVqFz8quaz1dQDxfHnnkNAH9UoDkdwPJ5ZDqD37zSfAyw6lVyQks5RUE81SQ9QC9Y3qPEFQHMdJYQyGGElrDcu9aWk4nzvBuh0CDxMR+vY7A70wprh8JON79EXEDf/vjU5euUi/71Nx3vYU2ue967Dg1XQaKA+LH+N2NHXJWmDmBc5xFcjuu0QEVZhdX8m3nldCOVtUHmaJ0kpVUmpoYqE6XwgVIIAJVxxTVRA2VnblOHq/ruXI7j/o4TUTfS9uDiywC7L7VJOmyYNf+8UoU6O+vC0CWVL9WbKFhRY0A9LPpjdJtUezTYUbXdZ48Ms6lT/2Trme0+hZ/e7oywaM5NoF8m0WNHbVRRKH/LBdkREELxis+JwfkspB8s4YKspPOALaFJotQnqHLedtcmSmKGX7zbs7Li/rThW/zmnGhZuYVvmAobQAaqA+73rpCT1s5gEyE+CEMCvpU8WLPM7TiykG3rZSAfRdKZknHiTJwsaHlhNxbpJkCKok4UU5Ca0BB9cHDN9XgWvjCNiFpv7Lw==|920
