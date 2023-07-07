@@ -131,7 +131,7 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "trn_mtm_calibration_history",
+                    "TableName": "trn_insptool_calibration_history",
                     "ShowConfirm": false,
                     "ConfirmText": "本当に更新してもよろしいですか？",
                     "UpdateValues": [],
@@ -144,7 +144,7 @@
                     "IgnoreTargetPageCachedCurrentRowInfo": false
                   }
                 ],
-                "ID": "a09c9115-777b-4384-bca1-7e29e3928985"
+                "ID": "3cb90f79-c1bd-45b0-92c8-14869a4b165b"
               },
               {
                 "CommandList": [
@@ -172,7 +172,7 @@
                             }
                           }
                         ],
-                        "ID": "82710709-a2e2-4e06-acc1-a6c4feccb1c9"
+                        "ID": "e4e5b1d9-17d6-4ce3-a427-fbc3a1501f47"
                       },
                       {
                         "Condition": {
@@ -195,7 +195,7 @@
                             }
                           }
                         ],
-                        "ID": "8f813a69-9505-4439-8311-48e580557ddd"
+                        "ID": "330d1921-bd38-47e6-8f1a-3d82b0038774"
                       },
                       {
                         "Condition": {
@@ -219,13 +219,13 @@
                             }
                           }
                         ],
-                        "ID": "e3936323-7412-4808-9012-2390f2bcbdf8"
+                        "ID": "c69f7fdd-b7b0-4ceb-bfd7-30aafae5d558"
                       },
                       {
                         "CommandList": [
                           {
                             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                            "TableName": "trn_mtm_calibration_history",
+                            "TableName": "trn_insptool_calibration_history",
                             "UpdateType": "add",
                             "ShowConfirm": false,
                             "ConfirmText": "本当に追加してもよろしいですか？",
@@ -239,12 +239,12 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "2a7d5d38-f41b-4e43-b28e-c3d7acae9336"
+                        "ID": "94bda17f-516b-43ec-bfe8-2919f342aa2f"
                       }
                     ]
                   }
                 ],
-                "ID": "5bd84aa5-bf05-4fd1-b64d-eefd36b125ca"
+                "ID": "dd0b164c-800f-495f-bf9d-be72540533b0"
               }
             ]
           }
@@ -291,10 +291,10 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "trn_mtm_measurement_tools",
+        "DataSource": "trn_insptool_tools",
         "ValueColumnBindingInfo": {
-          "TableName": "trn_mtm_measurement_tools",
-          "ColumnName": "control_number"
+          "TableName": "trn_insptool_tools",
+          "ColumnName": "control_no"
         },
         "CommandList": [
           {
@@ -307,7 +307,7 @@
         ]
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_calibration_history",
+        "TableName": "trn_insptool_calibration_history",
         "ColumnName": "管理番号"
       }
     },
@@ -321,7 +321,7 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_calibration_history",
+        "TableName": "trn_insptool_calibration_history",
         "ColumnName": "処理年月日"
       },
       "DataValidationInfo": {}
@@ -346,14 +346,14 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "trn_mtm_calibration_history",
+        "DataSource": "trn_insptool_calibration_history",
         "ValueColumnBindingInfo": {
-          "TableName": "trn_mtm_calibration_history",
+          "TableName": "trn_insptool_calibration_history",
           "ColumnName": "業者名"
         }
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_calibration_history",
+        "TableName": "trn_insptool_calibration_history",
         "ColumnName": "業者名"
       }
     },
@@ -385,7 +385,7 @@
         ]
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_calibration_history",
+        "TableName": "trn_insptool_calibration_history",
         "ColumnName": "項目"
       }
     },
@@ -400,7 +400,7 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_calibration_history",
+        "TableName": "trn_insptool_calibration_history",
         "ColumnName": "内容"
       }
     },
@@ -436,7 +436,7 @@
         ]
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_calibration_history",
+        "TableName": "trn_insptool_calibration_history",
         "ColumnName": "FGC_AssignTo"
       }
     },
@@ -472,8 +472,8 @@
         ]
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_calibration_history",
-        "ColumnName": "FGC_State"
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "判定"
       }
     },
     "22,7": {
@@ -505,22 +505,7 @@
           "ColumnName": "subject"
         }
       },
-      "BindingInfo": {
-        "TableName": "trn_mtm_calibration_history",
-        "ColumnName": "記録文書へのリンク"
-      },
       "DataValidationInfo": {}
-    },
-    "22,10": {
-      "BindingInfo": {
-        "TableName": "trn_mtm_calibration_history",
-        "ColumnName": "記録文書へのリンク",
-        "RelationBinding": {
-          "RelatedTable": "trn_mtm_archive_doc",
-          "RelatedColumn": "ID",
-          "DisplayColumn": "subject"
-        }
-      }
     },
     "22,29": {
       "CellType": {
@@ -760,11 +745,7 @@
         "VerticalAlignment": 6,
         "WordWrap": false,
         "Underline": false,
-        "Strikethrough": false,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "Strikethrough": false
       },
       {
         "Background": 0,
@@ -1031,28 +1012,6 @@
       "10,5": 18,
       "10,6": 18,
       "10,7": 19,
-      "10,8": 18,
-      "10,9": 18,
-      "10,10": 18,
-      "10,11": 18,
-      "10,12": 18,
-      "10,13": 18,
-      "10,14": 18,
-      "10,15": 18,
-      "10,16": 18,
-      "10,17": 18,
-      "10,18": 18,
-      "10,19": 18,
-      "10,20": 18,
-      "10,21": 18,
-      "10,22": 18,
-      "10,23": 18,
-      "10,24": 18,
-      "10,25": 18,
-      "10,26": 18,
-      "10,27": 18,
-      "10,28": 18,
-      "10,29": 18,
       "11,0": 3,
       "11,1": 2,
       "11,2": 2,
@@ -1297,15 +1256,15 @@
   },
   "Spans": [
     "0,0,3,16",
+    "22,10,1,19",
+    "22,7,1,3",
+    "8,7,1,23",
     "10,7,1,23",
+    "12,7,1,23",
     "14,7,1,23",
     "16,7,1,23",
-    "8,7,1,23",
-    "12,7,1,23",
     "18,7,1,23",
-    "20,7,1,23",
-    "22,7,1,3",
-    "22,10,1,19"
+    "20,7,1,23"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1316,10 +1275,10 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_mtm_calibration_history"
+    "RelatedDataTableName": "trn_insptool_calibration_history"
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//AVzlEdgBRLv2bxOF4tA64KcCHqKXLgzZaee+rCD4nQBKABhrCgna5njvp0ApPH/g3fXFgprF3JTGp7o2f9IZA3i3NIdtUufhJQ/9XiswvQ/Tm5oooVvXjClS+qLs7yrByA7J9SN7iFMsDoFu43Fmf/1h5UB7IUWeF5hgeTWt+Y+R7zAfYW2B8+SKjrfsIwgPBW8szvX5b8iDrDBTpElNFBWyZqDFJ6qO7Dyqe5pesgEBgkJV8PHjrPAleY8gDKVZzc9lVASGv2Sp8T5vsU+ElqiqvIq6MvW7La+zbwcf+U+L7JA0FBQfF+S3H23lwEZAMw9jtbcfEHczv0ehvXsEOMqTaIQFzfgLF90xa+NqVL2Kj9EJMdCPb6pwVwLdBoL0IEvEDLouv17Py2qFzarC6SHfgNqWiBiMaAt5XY3QgrFQ+DLk6i9EEsa29zCUk4euAI5GrVhYLIdUNduTf63+dSo4LCUYsCFdscM4+84rvsi20rlChN8Q03tsxvbKjYQTuderKIaNf9vkHpBaPa1yO99rEzsepb2RUnTV1SnZFe1ShuTckyZHhQqnEBRn5hFTfVmSWJKvydr3pjQCn8KRqWQRjTW8HP8bogrnRaDcLxpyqBWYgYMUKVzEzu7HMOdNpGv2fiWZVSpyCjX/4OUe+kQQL6AMC+cOYUQSOmeU3+/4B3fo0r5nlazQ5uErhtYEcIYfZt2qzT2rQd6M1HwZuI4PyH0nYIMQb5fPom2aQ3vE6XNyxVjsWR2O4pWEaz5Z9IgH8DFoENAacV60dGHlyxExjPnRd3brsjX21XPYfRZ3vKyHycwTIcgh4kX1U9jF1GBoP4pNm4/ISmkJEAPwA5keu8SC1ih8jfeABDV4kkc1dVt+Sk+7VZlNtUVQvlUEvB1iGx5/O77PUHFFbC6ypQ==|920
+}//F1LRtRjog/hMp2LGB8SkgY4RvBW2y5+4cplsLINvo2yJ9+kbhh8+Wg396r+UzZmQUrL6vLRAl9Fiq3bBxmqtd7vElvHhne/wXdTR22zHETzd6La94syOy54hbgVx/hnmA15JHrFR6kEpLn5jaVqO9qiV0YLZH7USZJaMpkB4zgWb9XrmhgbJDanc6ZcxC6VjXJ2hZaGfBxcOA8UqeruH9R4WFDTAFzY6d4rUKUlRNHv1KMcMjXdw2Y4Z4Ja2uPcLdio36uZ+B8ojOZ8smZ3+OzfjvKTZeV8P7+rYSfiKxTTBU3HR9MU1rktaLbCTyvOIflxWahj8xoyRJV3KUglTHJ4iegVUbUDKQDZSsB2JsVdwUETauS6+7sSkZpdKE2Jxg/qMHJRNQm9zqOk2VAIxPbZ0R8zZGpgOwvZVX1ne9dis52lhxyQ7eHX7CiD8wbBVR2P4eCoF4dVGeRtSqjKJtCG7Ci1Me9StWDdk1VjRfwyhhTDyF0ihXcg4x2VZqOyNvCMwmDasvlL+E7Iins9yQt4lFjw2Sy6v+YkpDSx3sCgkayuVr2/sOoCTiRchliuq1b64cWsIoQcYh030zjnbo4D+1TuwB0mOwHx733ai5MJkXYSlEfpAeJARquTG+n0cP7pYRNMDBREVPEVoR/Prbi6qaDkIP0CIdgExKkZq/EJ2XUILzTqpX/CGO+FssCRQA6bnBHh6Cxzhfxr9osr/Q82F9XSkd4Q4v7DHP9JbGH8oLpFzBVnz6OJr8dMmc7nN0tog82Z4NiEBTcs3faWPM51hLvxwFvHMgiHLq7goiXV8FWIRk7Wm1973r8o69v0NNbU0WcRB70lgv9veZgqQY0iP0BxpTLvS4l9NcYhD+Otoouyi2T5yugToIZuKhmmTTG0tSs40u9OcVvwYFt7zyA==|920

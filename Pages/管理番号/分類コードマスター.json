@@ -149,10 +149,9 @@
     "0,0": {
       "ListViewInfo": {
         "ShowColumnHeaderInDesigner": true,
-        "TableName": "mst_mtm_class_code",
+        "TableName": "mst_insptool_class_code",
         "ColumnCount": 17,
         "RowCount": 46,
-        "IsRowHeaderCheckBoxVisible": true,
         "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
@@ -163,13 +162,13 @@
     },
     "1,2": {
       "BindingInfo": {
-        "TableName": "mst_mtm_class_code",
+        "TableName": "mst_insptool_class_code",
         "ColumnName": "class_code"
       }
     },
     "1,4": {
       "BindingInfo": {
-        "TableName": "mst_mtm_class_code",
+        "TableName": "mst_insptool_class_code",
         "ColumnName": "class_name"
       }
     },
@@ -193,7 +192,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-            "TableName": "mst_mtm_class_code",
+            "TableName": "mst_insptool_class_code",
             "UpdateType": "delete",
             "ShowConfirm": true,
             "ConfirmText": "本当に削除してもよろしいですか？",
@@ -223,7 +222,7 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
-        "TableName": "mst_mtm_class_code",
+        "TableName": "mst_insptool_class_code",
         "ColumnName": "class_code"
       }
     },
@@ -238,7 +237,7 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
-        "TableName": "mst_mtm_class_code",
+        "TableName": "mst_insptool_class_code",
         "ColumnName": "class_name"
       }
     },
@@ -248,7 +247,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-            "TableName": "mst_mtm_class_code",
+            "TableName": "mst_insptool_class_code",
             "ShowConfirm": false,
             "ConfirmText": "本当に更新してもよろしいですか？",
             "UpdateValues": []
@@ -3138,15 +3137,15 @@
     "1,20,2,5",
     "1,26,2,5",
     "10,40,2,5",
-    "2,0,44,17",
-    "5,25,1,5",
-    "8,25,1,14",
-    "1,2,1,2",
-    "1,4,1,13",
     "1,0,1,2",
+    "2,0,44,17",
     "0,0,1,2",
+    "1,2,1,2",
     "0,2,1,2",
-    "0,4,1,13"
+    "1,4,1,13",
+    "0,4,1,13",
+    "5,25,1,5",
+    "8,25,1,14"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3156,10 +3155,10 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "mst_mtm_class_code"
+    "RelatedDataTableName": "mst_insptool_class_code"
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//mzxSFc/o0hO2L/YUuonKDsaSiI9ND8324TupKQ2/OBAqmSGvWTSIZGucvJ82gQ5k+cuQwFykMEcMMkT6r38KRyYtUb5zrUkEfejBXRBQO9x4uC/j79QesurD1ae5yekR+V6EqNl9shVabQCne9Jen7TlCmP8hWwsA8LjCi6iRPgLfXqTr7Qrh32L1JTHufufxynrKNi2o0o2Zp0RY72QYZVX8HX8An4KPRGXwgSgWWZRN16jLPILLAiFs0MItr/MBb0OFIGT7LRzlTkQvPppzWCTAvrd8Qx75orzNKTbee5W4cx3jdLsvmRavYImrilUYQTVHf4c7OX+qhzLcENaiL/awpomnl//fOH79vxTuFBGVQlMEfWfepKW+RQUlXxb1v9NSj0hNSnrcqDFeoLO7NcfnshR93tm44GjnrnKpU1+0juoKIIRxjdLqoJzs0FGTQiiMEGyueiwJhiNQ8elynIdrGiL2uR2auaBwrl2OGcOJytz9lwO0Q/iN2UikNVJN/LmnZf0cZiLiVwEuS+8hiCzpTSeT6OuvfH1PWTQhI6n/+HeHBeYpMTUcf4jt/rsaSaKN29ubiuybgyEBP47MNfvHWr4KlIeVfcGhd9411h4TRQ4DV0pQE7XtCfBW1hWzaE0uRriOHerG6MqGznNxpx4J7skFUFJM2Kj14doJAW+EOQ1uvTQTdE+wf5b1nh6rJ6JsT9lfhJ6G/OSgLGxW2aznOUc40xf3Ja5xl5EJCzluPwGPdyo9xOFroz1fwtNe+Xi+RmvjRcvxtYoG+cao9l1bHXQ7jsq6BU9SB5V7LwuPYENPsS+hGkk5eVs8NoHH4oXOtboTHxsXnIHftcwwB0YPuF3NL8eqTLv1JraFZhmqZ+wpii2Yw5Pw/qPkL9l1Uat67ulZWPH9SUPzfMKJw==|920
+}//67lo8r85CU03QvQhAiLILlTHGZ/F1f6psG89IpYxOWemqoP6zLFiupqkDSzIQLAF0eicTXoYPqpEUi3dRrBYMQOcPHjPMMKnC539VL9m7FVmmfexsMlYQ6a9V5NDSz8bQLR7aGBHoaNZQeCju5rkOR1BZBmLLYYuvahcauwn+v5S7FyEHN69Y/sfmtUwJrQr8Cd2VS9aOxta7/ixlTGRMEGPWgL1K2ctsXIpWBURIG9Cs+Xz1Ec0dsCJ4/043q9cGy6lzt3QIKM5Bnvuz9J2FPTWZT6ZQJs2TkVeCOyBN8JoUWFYKIsRvpRm2hPXoZcFU/TY4VVyDwT1egO/O6SdqevDrApyqPsFAlRMdKEElDYgR3yF8GiXkhsGffWC2xQahPnihmSWFsVruPoo5dRoMustYVspvsvqvNYeZBTknyzJv+r1ShhlOcuVtrU4q7aZR8o1kUSWYRYB5FFHFu2IykETTlu//AsZRaFpZBSXy51ylLJygfJbSgcmJ2viRW4Cs9FWoevXJMSEWn/+/3ByjajDgOizuf2TXRbZDsgPLTX+YZuC9cPphsCVK8DrzM9Lcw2v56RuFuLFqZufrPl8cQk1Rkoe8+lA4CbPmaW0Vion4ogMlgjm5rUsD7GfDCIjQfzjN8CUt9s3TOJu+5aiHCBtPtWm575dtpU2MxK4ygqiD2Pn/BUe2qvswKzh58So3tiNzeYS9fevpQsCUMrnqsd/J1Is1bxAzmd+i5dJq02OUFHkHEPB68BKDljj408t+oYmTPqU8Eqb1vAzb0vyRKTPMP8I00U39BOkGWbvdVjRbMXJImpazbV4Ne/t9VNzTn4mnPmjesMJMj1A2aV+YqjTWhaaQ7eVvapO2eVQDTNUIcQmvCCORC7IQuVUPNbQhxBrenVcc6ild8qJmx9SVA==|920

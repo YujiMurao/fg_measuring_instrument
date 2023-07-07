@@ -98,7 +98,7 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
-        "TableName": "mst_mtm_management_indicator",
+        "TableName": "mst_insptool_management_indicator",
         "ColumnName": "devision"
       }
     },
@@ -113,7 +113,7 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
-        "TableName": "mst_mtm_management_indicator",
+        "TableName": "mst_insptool_management_indicator",
         "ColumnName": "name"
       }
     },
@@ -123,7 +123,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-            "TableName": "mst_mtm_management_indicator",
+            "TableName": "mst_insptool_management_indicator",
             "UpdateType": "add",
             "ShowConfirm": false,
             "ConfirmText": "本当に追加してもよろしいですか？",
@@ -166,19 +166,7 @@
         "FontFamily": 1,
         "FontSize": 14.666666984558105,
         "Formatter": 2,
-        "HorizontalAlignment": 3,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 14.666666984558105,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "HorizontalAlignment": 3
       },
       {
         "FontFamily": 1,
@@ -193,7 +181,11 @@
         "FontFamily": 1,
         "FontSize": 14.666666984558105,
         "Formatter": 2,
-        "HorizontalAlignment": 0,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -211,45 +203,28 @@
     "CellStyles": {
       "1,1": 0,
       "1,5": 1,
-      "1,6": 2,
-      "1,7": 2,
-      "1,8": 2,
-      "1,9": 2,
-      "4,1": 3,
-      "4,5": 4,
-      "4,6": 2,
-      "4,7": 2,
-      "4,8": 2,
-      "4,9": 2,
-      "4,10": 2,
-      "4,11": 2,
-      "4,12": 2,
-      "4,13": 2,
-      "4,14": 2,
-      "4,15": 2,
-      "4,16": 2,
-      "4,17": 2,
-      "4,18": 2,
-      "6,8": 2,
-      "6,9": 2,
-      "6,10": 2,
-      "6,11": 2,
-      "6,12": 2,
-      "6,14": 2,
-      "6,15": 2,
-      "6,16": 2,
-      "6,17": 2,
-      "6,18": 2,
-      "7,8": 2,
-      "7,9": 2,
-      "7,10": 2,
-      "7,11": 2,
-      "7,12": 2,
-      "7,14": 2,
-      "7,15": 2,
-      "7,16": 2,
-      "7,17": 2,
-      "7,18": 2
+      "4,1": 2,
+      "4,5": 3,
+      "6,8": 4,
+      "6,9": 4,
+      "6,10": 4,
+      "6,11": 4,
+      "6,12": 4,
+      "6,14": 4,
+      "6,15": 4,
+      "6,16": 4,
+      "6,17": 4,
+      "6,18": 4,
+      "7,8": 4,
+      "7,9": 4,
+      "7,10": 4,
+      "7,11": 4,
+      "7,12": 4,
+      "7,14": 4,
+      "7,15": 4,
+      "7,16": 4,
+      "7,17": 4,
+      "7,18": 4
     },
     "SheetStyle": {
       "FontFamily": 1,
@@ -261,10 +236,10 @@
     }
   },
   "Spans": [
-    "1,5,1,5",
-    "4,5,1,14",
     "6,14,2,5",
-    "6,8,2,5"
+    "6,8,2,5",
+    "1,5,1,5",
+    "4,5,1,14"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -274,10 +249,10 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "mst_mtm_management_indicator"
+    "RelatedDataTableName": "mst_insptool_management_indicator"
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//9H6owHsTnVsVP9Rqovaons0rOSXRLPA3PhIph98OvQWA3aTO1cnzUJx4vpEi0jmQ3cz5VA4MwX3o/MNCnK4Wl4YvL7pSP/oVy5k66Jq/3kXawCY1NspSLH9yj7eV02F9Ruk27Qvu/INgkMlyDOVShs4z6NeOiboDd2kXp6pK1NzVR4E01bqpRU5xIvMtfRKGswLqNkSZseHTRbOBXff54Nrx6QP9l5ahXuizB1hvdSG/6PKhijMt7MbjcTLjgFQXbOsNu2fwjj5x1mLngw5HW6eISBO4VMzMndaPXrrfNKWMPxZjHwkiRGPLUedb1C/CpdERTc50VL4Vc2nhixXx8Yks+zbLZUMbat1CzKZIU+GJ0UoF6S7smLnd+JqzWHcL7qo2oERMJXt3c7wmrBDcjgA20Q62rokGt7APDRF8Txh0MlZC0FKtEuUdtzO6LB34BnDJTAdgMlY+V0x1zyMHNbXhz6oG3T+/s792IVof0hvnFHRkm6YfajBZXVkiagRdwHmAIoiLvjP9amxDZ0+BPy0dJ0fYgO42q2avybiXb1bCzpB5EBSu0hyjuBmmkEuAEaWu0lyYPSJ1OTU0vus1U6h/OpHhvN58taghm1oz/n7RcytxnBxxZCnIZh/uXQiCUvxbCR7+KE5Pc2qMXKzS4LAyt84ZASVMMA/o1ozBpoV8XCVHqLzBtnaXBdXIgtdXWgzCkrywV3VYKDZNZNsmznoPRtOVNQMGavl73PlWdqJE6gp4+bFZ5Nl6eNYsx+ctZiz7QDpWzd374qOTEqWjUWOvMk6a/8K583Fe4nqIoBX/hdrpIeRG1gBkSGbDfavjxJ4QACuuCceN27/TZFLNhuWDAaCZIYce76B+SxCokZv7mIqedOzUjBEmNbL3KfqPTnQoGJb6zWpRjwuOX5tGvg==|920
+}//8aJep0qpFZuxjM1aJRnFim6NmaI6yomcmQrEou4YrvlK00rHXJNZtDS+q/P2dapI1KsATltMdNpUtj8HYNCuZIR60TgPp5VAkDvw1AqswhPkESO3TjmXpoRTwAWfLG3V2vt5evwZaIAC4cLHboOX1ebC3AuhyJaUOJ0cT4DnMkfyg1FIyU3N4T9/cLxGq4PNjRO0/bIKzjDnkfKE9YM36luoA1kon9XHtHleNS7n/x6SM1jUNQRECfFldxbw8epCRK6GuEgC4h/ZJSBqbXnjXt3S6+TpQp2+p0wy0FNr2vXRkIplEAHWk0p6bxNpjcqzXUGW8bu5ISWq4p+t2m/FBa8qbNp/nUZwIRu6/RCgHKxsWIU6dOwwoCMX97T52dBdur0DZLrfKy0uJgYG7rPysK4FdZZp1IDHwraHNUCZZg7gw0fJ20DzVbOF6o1OpRAEbMjYWyJVy9PW29leCMxw0u8kMOCWpqFEsmOFkQKFg4NzI0lgUq8PAhCwli2yYQOCzmIQcl5sJwMTncKnaJCsZdkgPHUHyIWYp0/roC2go4D8gpjNrUgovtAc59TKpQ21AQ3gx+FCpH8+Ff+E2Q6t78g/hS8Wy5mlPIomuRw/bMWy5qc3Qej/4qknexA0Idh47v5zJNoZmm9EXlOpwDHvMZkz/EGTuvAMmnIglhzv58tBlYEqxBXxh1fwqe4PAyYNo61/z/BRej2TVtJA6eufbTkuiVOO+8uavhCPmgJxC7nfgS+TxqltY0Nu4dfs4RnFzFyTPRyQkjKzAFvGwyigOavylE6OvpthGODqrmfBnpcZ3cUqTee21VgJeCNRupydKG5M0+GiXoyA0su0pWVSLnUDX85UKfHMwBAmPDfgcPzusy34RBmGj9plFz45AonJGiZ35R0JXatLbcBH1PeimQ==|920

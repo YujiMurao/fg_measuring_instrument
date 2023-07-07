@@ -1,111 +1,12 @@
 [
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T16:21:23.5375101+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\ユーザー情報ビュー.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
-  },
-  {
-    "ModuleName": "Table/mst_mtm_class_code",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T15:19:00.4822396+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\mst_mtm_class_code.json"
-    ]
   },
   {
     "ModuleName": "Table/trn_mtm_archive_doc",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T12:23:29.2629885+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\trn_mtm_archive_doc.json"
-    ]
-  },
-  {
-    "ModuleName": "Table/mst_mtm_management_indicator",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T15:19:17.9909255+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\mst_mtm_management_indicator.json"
-    ]
-  },
-  {
-    "ModuleName": "Table/trn_mtm_calibration_history",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:48:12.5036419+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\trn_mtm_calibration_history.json"
-    ]
-  },
-  {
-    "ModuleName": "Table/mst_mtm_management_department",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T15:19:36.7433439+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\mst_mtm_management_department.json"
-    ]
-  },
-  {
-    "ModuleName": "Table/trn_mtm_measurement_tools",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:52:04.9691227+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\trn_mtm_measurement_tools.json"
-    ]
-  },
-  {
-    "ModuleName": "Table/計測機器担当者",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T16:21:23.5365104+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\計測機器担当者.json",
-      "ForguncyDB.sqlite3"
-    ],
-    "ExclusiveType": 0
+    "ModuleType": 7
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
@@ -205,16 +106,7 @@
   },
   {
     "ModuleName": "PCPage/addoredit計測機器",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:52:04.9711205+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\addoredit計測機器.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/addoredit記録文書",
@@ -222,29 +114,11 @@
   },
   {
     "ModuleName": "PCPage/addoredit校正履歴",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:52:04.9701234+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\addoredit校正履歴.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/add校正履歴",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:52:04.9711205+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\add校正履歴.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/applicationdescription",
@@ -252,107 +126,35 @@
   },
   {
     "ModuleName": "PCPage/InstrumentsInfo",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:52:04.9711205+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\InstrumentsInfo.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/測定機器検索",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T14:42:40.3311816+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\測定機器検索.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/customquery(記録文書)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:48:12.5056395+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\customquery(記録文書).json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/history",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:48:12.5036419+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\history.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/すべての計測機器",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:52:04.9721184+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\すべての計測機器.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/home(記録文書)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:52:04.9711205+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\home(記録文書).json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/statistics",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:52:04.9701234+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\statistics.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/校正履歴申請一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:48:12.5046396+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\校正履歴申請一覧.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/RecordDocInfo",
@@ -360,29 +162,11 @@
   },
   {
     "ModuleName": "PCPage/校正承認リスト",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:48:12.5046396+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\校正承認リスト.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/加工処理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:52:04.9701234+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\加工処理.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/管理番号",
@@ -390,120 +174,39 @@
   },
   {
     "ModuleName": "PCPage/管理番号編集",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T16:38:11.0529314+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\管理番号\\管理番号編集.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/管理区分マスター",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T15:19:17.9919267+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\管理番号\\管理区分マスター.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/管理区分マスター追加",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T15:19:17.9919267+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\管理番号\\管理区分マスター追加.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/管理部署マスター",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T16:21:23.5375101+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\管理番号\\管理部署マスター.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/管理部署マスター 追加",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T15:19:36.7433439+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\管理番号\\管理部署マスター 追加.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/分類コードマスター",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T15:19:00.4832392+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\管理番号\\分類コードマスター.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/分類コードマスター追加",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T15:19:00.4832392+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\管理番号\\分類コードマスター追加.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/計測機器担当者マスター",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T16:21:23.5375101+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\管理番号\\計測機器担当者マスター.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/計測機器担当者マスター追加",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T15:19:00.4832392+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\管理番号\\計測機器担当者マスター追加.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
@@ -511,30 +214,11 @@
   },
   {
     "ModuleName": "MasterPCPage/masterpage",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:52:04.9721184+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\masterpage.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "ApplicationSetting",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:52:04.9731223+09:00",
-    "ModuleType": 8,
-    "ToRemoveFiles": [
-      "ApplicationSettings.json",
-      "favicon.ico"
-    ]
+    "ModuleType": 8
   },
   {
     "ModuleName": "Theme",
@@ -562,16 +246,7 @@
   },
   {
     "ModuleName": "DataContectionSet",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T12:23:29.2569906+09:00",
-    "ModuleType": 25,
-    "ToRemoveFiles": [
-      "DataConnectionSet.json"
-    ]
+    "ModuleType": 25
   },
   {
     "ModuleName": "Upload",
@@ -579,102 +254,42 @@
   },
   {
     "ModuleName": "Table/trn_insptool_tools",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T12:25:46.3646574+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "Table/trn_insptool_certifications",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T12:25:46.3646574+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "Pages/計測機器",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T12:28:24.3314228+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "Pages/記録文書",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T12:29:00.0880388+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "PCPage/計測機器一覧",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:52:04.9731223+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Table/mst_insptool_management_indicator",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T15:20:03.9182493+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "Table/mst_insptool_management_department",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T15:20:03.9182493+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "Table/mst_insptool_class_code",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T15:20:03.9182493+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "Table/mst_insptool_manager",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T16:21:00.0198201+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "Table/trn_insptool_calibration_history",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-07-07T18:49:38.3402862+09:00",
     "ModuleType": 7
   }
 ]

@@ -227,18 +227,6 @@
     "47,8": "ー"
   },
   "AttachInfos": {
-    "1,40": {
-      "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "FGC_CreateDate"
-      }
-    },
-    "1,48": {
-      "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "FGC_LastModifyDate"
-      }
-    },
     "4,1": {
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
@@ -247,22 +235,10 @@
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
             "ConditionAndCommandPairList": [
               {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=addoredit計測機器!A1"
-                      }
-                    ]
-                  },
-                  "value": "計測機器の編集"
-                },
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "trn_mtm_measurement_tools",
+                    "TableName": "trn_insptool_tools",
                     "ShowConfirm": false,
                     "ConfirmText": "本当に更新してもよろしいですか？",
                     "UpdateValues": [],
@@ -270,18 +246,18 @@
                   },
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "すべての計測機器",
+                    "PageName": "計測機器一覧",
                     "PassValues": [],
                     "IgnoreTargetPageCachedCurrentRowInfo": false
                   }
                 ],
-                "ID": "abb95db0-00c1-4fd2-87f5-1237b44c4cae"
+                "ID": "7fe3a531-e7f6-49ac-b416-267c7352a245"
               },
               {
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "trn_mtm_measurement_tools",
+                    "TableName": "trn_insptool_tools",
                     "UpdateType": "add",
                     "ShowConfirm": false,
                     "ConfirmText": "本当に追加してもよろしいですか？",
@@ -289,12 +265,12 @@
                   },
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "すべての計測機器",
+                    "PageName": "計測機器一覧",
                     "PassValues": [],
                     "IgnoreTargetPageCachedCurrentRowInfo": false
                   }
                 ],
-                "ID": "679e32c2-d9e4-41c6-8d0a-3c68fa8e3a6b"
+                "ID": "23f2fe49-8bbc-4c27-8639-12618d9bddac"
               }
             ]
           }
@@ -352,15 +328,11 @@
         ]
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "control_number"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "control_no"
       },
-      "DataValidationInfo": {}
-    },
-    "7,17": {
-      "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "sequential_digit"
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
     "7,21": {
@@ -436,7 +408,7 @@
                     ]
                   }
                 ],
-                "ID": "5845db42-2808-472c-9872-ea18958d0134"
+                "ID": "daf6305c-69f1-4b6f-aa2f-fefa947a44c7"
               },
               {
                 "CommandList": [
@@ -469,15 +441,18 @@
                     ]
                   }
                 ],
-                "ID": "b79dbf72-b580-471d-bff5-3d714f5bc5f9"
+                "ID": "2c427445-bac8-413c-9257-30409525ef1c"
               }
             ]
           }
         ]
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "availability"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "usage"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
     "7,45": {
@@ -512,8 +487,8 @@
         ]
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "state"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "prohibition_reason"
       }
     },
     "9,6": {
@@ -536,28 +511,34 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "mst_mtm_management_indicator",
+        "DataSource": "mst_insptool_management_indicator",
         "ValueColumnBindingInfo": {
-          "TableName": "mst_mtm_management_indicator",
+          "TableName": "mst_insptool_management_indicator",
           "ColumnName": "devision"
         },
         "DisplayColumnBindingInfo": {
-          "TableName": "mst_mtm_management_indicator",
+          "TableName": "mst_insptool_management_indicator",
           "ColumnName": "name"
         },
         "CommandList": [
           {
             "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
             "JavaScript": "alert(\"Hello JavaScript\");",
-            "ID": "0af4dc4ed6c04b72bc52e02f842d681f"
+            "ID": "f81fd712939b46f9bfa1f10f0000def7"
           }
         ],
         "CellDefaultValue": "A"
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "management_indicator_code"
-      }
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "n1",
+        "RelationBinding": {
+          "RelatedTable": "mst_insptool_class_code",
+          "RelatedColumn": "class_code",
+          "DisplayColumn": "class_name"
+        }
+      },
+      "DataValidationInfo": {}
     },
     "9,33": {
       "CellType": {
@@ -565,9 +546,9 @@
         "HorizontalAlignment": 0
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
+        "TableName": "trn_insptool_tools",
         "ColumnName": "image",
-        "IsImagePath": true
+        "IsByteArray": true
       }
     },
     "11,6": {
@@ -589,22 +570,33 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "mst_mtm_management_department",
+        "DataSource": "trn_insptool_tools",
         "ValueColumnBindingInfo": {
-          "TableName": "mst_mtm_management_department",
-          "ColumnName": "code"
+          "TableName": "trn_insptool_tools",
+          "ColumnName": "n2"
         },
         "DisplayColumnBindingInfo": {
-          "TableName": "mst_mtm_management_department",
-          "ColumnName": "name"
+          "TableName": "trn_insptool_tools",
+          "ColumnName": "n2",
+          "RelationBinding": {
+            "RelatedTable": "mst_insptool_management_department",
+            "RelatedColumn": "code",
+            "DisplayColumn": "name"
+          }
         },
         "AddNullItemWhenBinding": true,
         "CellDefaultValue": "A"
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "management_department_code"
-      }
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "n2",
+        "RelationBinding": {
+          "RelatedTable": "mst_insptool_management_department",
+          "RelatedColumn": "code",
+          "DisplayColumn": "name"
+        }
+      },
+      "DataValidationInfo": {}
     },
     "13,6": {
       "CellType": {
@@ -625,26 +617,32 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "mst_mtm_class_code",
+        "DataSource": "trn_insptool_tools",
         "ValueColumnBindingInfo": {
-          "TableName": "mst_mtm_class_code",
-          "ColumnName": "class_code"
+          "TableName": "trn_insptool_tools",
+          "ColumnName": "n3"
         },
         "DisplayColumnBindingInfo": {
-          "TableName": "mst_mtm_class_code",
-          "ColumnName": "class_name"
+          "TableName": "trn_insptool_tools",
+          "ColumnName": "n3",
+          "RelationBinding": {
+            "RelatedTable": "mst_insptool_class_code",
+            "RelatedColumn": "class_code",
+            "DisplayColumn": "class_name"
+          }
         },
         "CellDefaultValue": "A"
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "class_code",
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "n3",
         "RelationBinding": {
-          "RelatedTable": "mst_mtm_class_code",
+          "RelatedTable": "mst_insptool_class_code",
           "RelatedColumn": "class_code",
-          "DisplayColumn": "class_code"
+          "DisplayColumn": "class_name"
         }
-      }
+      },
+      "DataValidationInfo": {}
     },
     "15,6": {
       "CellType": {
@@ -666,15 +664,15 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "trn_mtm_measurement_tools",
+        "DataSource": "trn_insptool_tools",
         "ValueColumnBindingInfo": {
-          "TableName": "trn_mtm_measurement_tools",
-          "ColumnName": "tool_type"
+          "TableName": "trn_insptool_tools",
+          "ColumnName": "kind"
         }
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "tool_type"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "kind"
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
@@ -700,15 +698,15 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "trn_mtm_measurement_tools",
+        "DataSource": "trn_insptool_tools",
         "ValueColumnBindingInfo": {
-          "TableName": "trn_mtm_measurement_tools",
-          "ColumnName": "tool_name"
+          "TableName": "trn_insptool_tools",
+          "ColumnName": "item_name"
         }
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "tool_name"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "item_name"
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
@@ -734,19 +732,17 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "trn_mtm_measurement_tools",
+        "DataSource": "trn_insptool_tools",
         "ValueColumnBindingInfo": {
-          "TableName": "trn_mtm_measurement_tools",
-          "ColumnName": "tool_model"
+          "TableName": "trn_insptool_tools",
+          "ColumnName": "type"
         }
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "tool_model"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "type"
       },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
-      }
+      "DataValidationInfo": {}
     },
     "21,6": {
       "CellType": {
@@ -759,20 +755,19 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "tool_seria_no"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "serial"
       },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
-      }
+      "DataValidationInfo": {}
     },
     "21,33": {
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon"
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "files"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "attachment",
+        "IsByteArray": true
       }
     },
     "23,6": {
@@ -795,19 +790,17 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "trn_mtm_measurement_tools",
+        "DataSource": "trn_insptool_tools",
         "ValueColumnBindingInfo": {
-          "TableName": "trn_mtm_measurement_tools",
-          "ColumnName": "tool_maker"
+          "TableName": "trn_insptool_tools",
+          "ColumnName": "maker"
         }
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "tool_maker"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "maker"
       },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
-      }
+      "DataValidationInfo": {}
     },
     "25,6": {
       "CellType": {
@@ -818,10 +811,6 @@
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "measuring_range"
       }
     },
     "27,6": {
@@ -833,10 +822,6 @@
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "minimum_scale"
       }
     },
     "29,6": {
@@ -848,20 +833,12 @@
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "tool_specification"
       }
     },
     "31,6": {
       "CellType": {
         "$type": "Forguncy.DateCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "manufacture_date"
       },
       "DataValidationInfo": {}
     },
@@ -874,10 +851,6 @@
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "asset_no"
       }
     },
     "33,6": {
@@ -885,10 +858,6 @@
         "$type": "Forguncy.DateCellType, ServerDesignerCommon",
         "ShowCalendarScrollBar": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "purchase_date"
       },
       "DataValidationInfo": {}
     },
@@ -912,15 +881,11 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "trn_mtm_measurement_tools",
+        "DataSource": "trn_insptool_tools",
         "ValueColumnBindingInfo": {
-          "TableName": "trn_mtm_measurement_tools",
-          "ColumnName": "purchaser"
+          "TableName": "trn_insptool_tools",
+          "ColumnName": "retailer"
         }
-      },
-      "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "purchaser"
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
@@ -937,12 +902,10 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "tool_manager"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "administrator"
       },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
-      }
+      "DataValidationInfo": {}
     },
     "35,33": {
       "CellType": {
@@ -964,19 +927,17 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "trn_mtm_measurement_tools",
+        "DataSource": "trn_insptool_tools",
         "ValueColumnBindingInfo": {
-          "TableName": "trn_mtm_measurement_tools",
+          "TableName": "trn_insptool_tools",
           "ColumnName": "storage_location"
         }
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
+        "TableName": "trn_insptool_tools",
         "ColumnName": "storage_location"
       },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
-      }
+      "DataValidationInfo": {}
     },
     "37,6": {
       "CellType": {
@@ -996,10 +957,6 @@
             "DisplayValue": "非公正"
           }
         ]
-      },
-      "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "calibration_class"
       }
     },
     "37,33": {
@@ -1046,12 +1003,10 @@
         ]
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "last_calibration_date"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "lastrevisionymd"
       },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
-      }
+      "DataValidationInfo": {}
     },
     "39,6": {
       "CellType": {
@@ -1096,29 +1051,27 @@
         ]
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
+        "TableName": "trn_insptool_tools",
         "ColumnName": "calibration_cycle"
       },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
-      }
+      "DataValidationInfo": {}
     },
     "39,33": {
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "next_calibration_month"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "next_caribration_ymd"
       }
     },
     "41,6": {
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "auto_notification_date"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "automaticnotificationymd"
       }
     },
     "41,33": {
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "calibration_expiration_date"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "kouseiyuukoukigenymd"
       }
     },
     "43,6": {
@@ -1127,32 +1080,32 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "remarks"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "etc"
       }
     },
     "47,6": {
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "management_indicator_code"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "n1"
       }
     },
     "47,7": {
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "management_department_code"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "n2"
       }
     },
     "47,9": {
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "class_code"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "n3"
       }
     },
     "47,10": {
       "BindingInfo": {
-        "TableName": "trn_mtm_measurement_tools",
-        "ColumnName": "sequential_digit"
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "n4"
       }
     }
   },
@@ -1394,19 +1347,7 @@
         "VerticalAlignment": 9,
         "WordWrap": false,
         "Underline": false,
-        "Strikethrough": false,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 3,
-        "FontSize": 14.666666984558105,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "Strikethrough": false
       },
       {
         "Formatter": 13
@@ -1417,6 +1358,14 @@
         "FontSize": 14.666666984558105,
         "Foreground": 6,
         "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 14.666666984558105,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -2160,23 +2109,14 @@
       "7,0": 4,
       "7,1": 19,
       "7,6": 20,
-      "7,7": 21,
-      "7,8": 21,
-      "7,9": 21,
-      "7,10": 21,
-      "7,11": 21,
-      "7,12": 21,
-      "7,13": 21,
-      "7,14": 21,
-      "7,15": 21,
-      "7,17": 22,
-      "7,21": 22,
-      "7,27": 23,
-      "7,28": 21,
-      "7,29": 21,
-      "7,30": 21,
-      "7,31": 21,
-      "7,32": 21,
+      "7,17": 21,
+      "7,21": 21,
+      "7,27": 22,
+      "7,28": 23,
+      "7,29": 23,
+      "7,30": 23,
+      "7,31": 23,
+      "7,32": 23,
       "7,40": 24,
       "7,45": 25,
       "7,53": 26,
@@ -2446,10 +2386,10 @@
       "21,6": 38,
       "21,26": 30,
       "21,27": 36,
-      "21,28": 21,
-      "21,29": 21,
-      "21,30": 21,
-      "21,31": 21,
+      "21,28": 23,
+      "21,29": 23,
+      "21,30": 23,
+      "21,31": 23,
       "21,32": 39,
       "21,33": 40,
       "21,34": 41,
@@ -2989,39 +2929,39 @@
     "41,27,1,6",
     "27,1,1,5",
     "9,27,1,6",
+    "7,27,1,6",
+    "21,27,1,6",
+    "7,21,1,4",
+    "7,6,1,10",
+    "7,17,1,3",
     "9,6,1,20",
     "11,6,1,20",
+    "13,6,1,20",
     "15,6,1,20",
     "17,6,1,20",
     "19,6,1,20",
+    "21,6,1,20",
     "23,6,1,20",
+    "25,6,1,20",
+    "27,6,1,20",
+    "29,6,1,20",
+    "7,33,1,5",
+    "7,45,1,8",
+    "31,6,1,20",
+    "33,6,1,20",
+    "35,6,1,20",
     "37,6,1,20",
     "39,6,1,20",
     "41,6,1,20",
+    "43,6,4,47",
+    "31,33,1,20",
     "33,33,1,20",
     "35,33,1,20",
     "37,33,1,20",
     "39,33,1,20",
     "41,33,1,20",
-    "7,33,1,5",
-    "43,6,4,47",
-    "21,6,1,20",
-    "25,6,1,20",
-    "27,6,1,20",
-    "29,6,1,20",
-    "31,6,1,20",
-    "35,6,1,20",
-    "31,33,1,20",
-    "7,27,1,6",
-    "21,27,1,6",
-    "21,33,9,20",
     "9,33,11,20",
-    "7,45,1,8",
-    "7,6,1,10",
-    "7,17,1,3",
-    "7,21,1,4",
-    "13,6,1,20",
-    "33,6,1,20"
+    "21,33,9,20"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3032,10 +2972,10 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_mtm_measurement_tools"
+    "RelatedDataTableName": "trn_insptool_tools"
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//1/0b/SFTkLbDOR0F+wiIOgf6Ab3GO0VRiAHPDpt4xT5jRl+djQvj2Pec/cwfBgL3Wxr/3sxTxez0rrNaJ0viq1peIjT2jyQp6ccDTGdybU4bLsA/IwCD3x/Tp3W+rwViyQjY1kcmlykPHVlp2dTgrETVFKZwkV9xF1bbq8MKxDSlOs1Fb7z3yHxFFSulkcoBv3PiS6RoNCb4oqQKqjeFKG70IqJ4x09yd8SBHWCulMwu9DhTHOqET5BlDadR0YGy2b63OLIQWZuSJK9/OU74zno7cyZhn4ALGbthnM3WIwqw22P+/aMMLpY5YMPjaj5h3p2OvMZZ4ovPzo9gF+yem89qeXklqtjScxpaGAPlMP9YYXsgc/tacWMOsrPiuE4EogjcQb69bMDIWg0rArml4SOmWu/YdQIXsBKDp+5tpQgs0465yqCRJhgbmT/6qPgedZXBOuri8jN/2wF6kF2qlKoB5h/ErunUjhz21crF4uFJ2uMyQ01piMsd2c2kloRLUtbs6lyzkBwlKUI0bt+GTC2cLOsXmWbGEIniIfLM1rXZUpBuu8KolqOtDZ+YYC044HdOg2Xp1xPDRnnf13jL5DYRwvys3tAV+pphYJTA1BnnjWcKwqBHpputMprG/zoKb6oHXRZb2mfh5wN6pABwUheoQywGkL2Eij3PEkq+EzSBoRT1wr7uk7bqe5J8PX1u2dfqqwr+tMhzOD/srpAqfA56wFqraZ2LHuH47eLfoDhAvDGR08mnUu7BfEM8nRv6sTV2gQx4vG4NKBXeRMk9QvR/LVjV9E9seCSmLLqVTpVgH+QWGNDHvAddEw7V9TDyoJBtO+sjFOADX5mY53gAb3PxkJy7xzv/MJKTw/mLoE+XF2g/HhKcz3N943d/zW02sWe2dCZ95i/R8XyX82grew==|920
+}//dhUIdn36DzhJqzBfeSvndQ+KOojjFPKo6GlbKrKMyPvrtwwAcCw7YhiKzNGd+nwCLhAnN0j7hkUPghLu6IzSp+M5PxgZPLP4CbIlwn3CtoH1jyDed7vLUiroHXKqb3eEF5UPbd+89NDnfZc+keYxC9cAyL2NxxE56Fuk8b26k4BaOvSlrnYEt/YNmh4eerXo02EmWhmLKs5brgcqN4k5xC7bQAFAv9yUNLL4cubmS2MXpAxmnITCYG0mmh4buUbUrkgSFUQ4qdmGqlEnutZCj2mwJhxKzIYnLmbZrHne8xCTUcUsVpIjjuFaaQLA3TIOZlmMx7iV4w/7fORUFZpxQz2jRVCyZdQ56yln4qs2OQBnyBKxUXm4P9zbJQ+wh21z70fHQhL4Y72L9TH7SsiRoN/DkA7xxpYEWcGVIoyOmX3S2ZLH0QSxB5vDBMcEqbDh3rRpxJxvvg8RRVqg4UY/tVeeYpRw7cGs2ZWfO3eU9OaoXsNk+ZgCtTuBqwjyCVrl/gkKfg94EnPJkjsw0noLdzYylHfrl2Yj6axxrR9qNZ79CUc8emW4PGJMyIBJDJrWX1YxCGe+3oRFNP1hX2kG7IJKRouWl/+7eHVKjkdB89iQAStgcvxX/4zuzBggYAHo9kF/vCwnPDIurErtegKUx0UhaqxMVH/XYbLPJIRmGqr7J83884aNUEDtIlQVmQAlNPadHcDYLLdag2z2Lh2/bZdU1O/4x7nAffZ3qAhlq3m9trrMBEr44zTeZexfJDiBbzs0xLNLPOcTuzTJlzaoNotjYoeahOTTnfJeQ1xhSY7ZtUHEOJA5Fh11bU9DGzVa06Zmw/SZzK48s2r4rR5KkOEzALl5LMOQtRgk6by7iFOlshYPgzYhRuxWUNcp9w9WECmMbvm3X/9IW5m4yMheZA==|920

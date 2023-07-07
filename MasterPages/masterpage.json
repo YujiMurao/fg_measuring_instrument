@@ -211,7 +211,7 @@
                 "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
                 "TargetTableName": "trn_mtm_measurement_tools",
                 "Params": [],
-                "ID": "2c1ee732cda04f3db53323849edbb287"
+                "ID": "f1b1a8dba3bb438a9fc2c509ae575142"
               }
             ],
             "CanVisitRoleList": [
@@ -235,7 +235,7 @@
                 "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
                 "TargetTableName": "trn_mtm_measurement_tools",
                 "Params": [],
-                "ID": "568a8a1a44064fdcbabfd0a28d8eb746"
+                "ID": "4d8bd8da56214e8d9e141094f0cd9e28"
               }
             ],
             "CanVisitRoleList": [
@@ -273,7 +273,7 @@
                   }
                 ],
                 "TargetTableName": "trn_mtm_measurement_tools",
-                "ID": "b0cf3bb8a7444717bbaace485a9af1d8"
+                "ID": "1b3d4c43d2304f85b6d6938c4f94fc71"
               }
             ],
             "CanVisitRoleList": [
@@ -329,7 +329,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "すべての計測機器",
+            "PageName": "計測機器一覧",
             "PassValues": [],
             "IgnoreTargetPageCachedCurrentRowInfo": false
           },
@@ -337,7 +337,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_mtm_measurement_tools",
             "Params": [],
-            "ID": "effb2d7127fc41dd94d8dbeecf5033ee"
+            "ID": "fff97b21026849238f8f844ba77f10cf"
           }
         ],
         "Text": "すべての計測機器",
@@ -360,7 +360,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_mtm_measurement_tools",
             "Params": [],
-            "ID": "dfdf9795f0c14d7d808120eceb796c65"
+            "ID": "1f8a84759dca4ba792b0532b311d79f9"
           }
         ],
         "Text": "条件を指定して検索",
@@ -382,7 +382,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_mtm_measurement_tools",
             "Params": [],
-            "ID": "e4a30d04190141de8c55aa602425d868"
+            "ID": "6a3bf250d03146b49cdd12d790d0a790"
           }
         ],
         "Text": "すべての記録文書",
@@ -404,7 +404,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_mtm_archive_doc",
             "Params": [],
-            "ID": "0d04598775d3401a8615fae593c7055b"
+            "ID": "2fc9e5d56457451ba28ed1914b8c49a6"
           }
         ],
         "Text": "条件を指定して検索",
@@ -455,7 +455,7 @@
               }
             },
             "Params": [],
-            "ID": "15f7c6b4a3a845c3b2cbeb7bfca3631e"
+            "ID": "024466718c784c69a571cb35d0eef6da"
           }
         ],
         "Text": "計測機器新規登録",
@@ -488,7 +488,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_mtm_measurement_tools",
             "Params": [],
-            "ID": "f6aed57815ae4635a5087e5ed8a58528"
+            "ID": "1a238f63734b4760b1795199a5ca0b6b"
           }
         ],
         "Text": "記録文書作成",
@@ -532,7 +532,7 @@
               "Value": "使用禁止"
             },
             "Params": [],
-            "ID": "af480ca2223843a39f41f0c6dee985b0"
+            "ID": "887edcf8f16f4fa8afe9c82e124255b8"
           }
         ],
         "Text": "処理リスト",
@@ -587,7 +587,7 @@
               }
             },
             "Params": [],
-            "ID": "30db7a8411694dd494d374d29f96b7bd"
+            "ID": "fc1a968761d240e8be7656140a640f7b"
           }
         ],
         "Text": "校正結果登録",
@@ -644,7 +644,7 @@
               }
             },
             "Params": [],
-            "ID": "001f967c54514e8fb45586ef7b015c10"
+            "ID": "8ee98f1cfd744ea295da6c2a2f1da0d4"
           }
         ],
         "Text": "校正対象計測機器",
@@ -696,7 +696,7 @@
               "Value": "%CurrentUser%"
             },
             "Params": [],
-            "ID": "b48606c107304cb8b42bf76bf8e38e6b"
+            "ID": "05009f0b760046d68fc1cabc8f3d2e71"
           }
         ],
         "Text": "申請一覧",
@@ -726,7 +726,7 @@
               "Value": "%CurrentUser%"
             },
             "Params": [],
-            "ID": "596c3a9112cd431abfc4c46a00e9f7b1"
+            "ID": "21f528843dae46bcae171fa687d52707"
           }
         ],
         "Text": "承認依頼リスト",
@@ -1536,10 +1536,11 @@
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
-    "PageLoadedCommandList": []
+    "PageLoadedCommandList": [],
+    "PageResponsiveMode": 4
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//M/tAPi4phm5h004VeyJx3eC6roaL1+lp0aZOt2SG9EjqEMnCPSry5shWB90g4TXFKFzOENda1pSlD0lhbVk9rDrapdD+skOhuDHqC0gwJPLf1/W74qKwIeWiLXGgG0JNd6+glbLcEAnF/BstPAUsGPlx9URiyWpChvioYSOQfQfyU8t5Udm3ApczPVvAmn4ajiAGlWmIitaueYs0fH4Ypg9u3ims2+/CDchTjp6p75OxBL82H7aS7cAH2XRys9vPKKFavAE6uZab+yaXy1I/Nb5/91KntYkRTzTfZYT2JEcd/8/t/dQqJk7tWBEEyfl86nWZTreQxWznO7pSk6sUtnrqfIFE1EpAMRlf1yj38kbArjbbF+6fKg0nwjGyr0ISFBPGFGSpz7oAGEYIPoufnULS7YcnK03Zf3grs/KG1Me139QTPd563hwu4X1CW+VvzUoPcJJFuzaf/NRaT0BwudNdYjBl+ld2Qu4x5hSqNij38n+zFRuhjcQGMOS2yCv0/E8hMV/9jQgUov7nB9XIZQH1TXHQt5XLj6iDvH1hjl9QnuDbTXFqoV9oyLRHijOcPmvDm16An5D/ASr6Qdo/04McMw5DDrHKtj5WrgL8v3mw6WNSfBzf5jk4LOc8BD2VBVOxaYVJYkxbnnyX4xWcJwyNeA/o2L8tJ8ljGl9GW6TIsc0l/PQ9jy5ijolLP+ADBDtmCKS5sxGWhR6QWAdnMWyFhgeha9H1DWViiOwICfBXqvw/wDyDQpl7vk6iUAA42oAMhIZADig31K5UP3E3FlUtwHKvDlXV0sBZcxft3JaloiT1LcmeUNRl81YSM1VPUqrftSLtJpoqy9ceYMLFGchP0OvJF7VWdLd41L3RI375C7pYHcL4QaC7euedZmMTBQ9/WvTFEnoCdFEByulZoQ==|920
+}//4vBoz5PCn2r4ny1ZcBJ3ejpkWh2KXfDD5Dp8h0JPOjxY1NAOa1jYwTTybHitY+fmxVEgYpHEAL+VVp0daD6ir5hKPznNcuYztCz+Zd56RUyfifa0Il2tYxGhuXUd+ANkmvf9eV1lO2Es5h/qBsyshQCYPBgvqUgTp4d3G+F9uCTN/aw+ZyKa1ypPCk2mV71i3oeS36EI+QEmabi14EiACQjv/G82rlG0TaoX6Y+GGJVwf0I5LV/GHpFreGOn6LEIU2C2JnkXsPTTsPtPZejq7Q+kENDXEU/IWLjKzjasmCrtkv3e078O073p1cfObQsqq9+ncf6RMBlQFj1upJ8om4Vts7LMOBRRb8+gPVPe1qowmLawCsVTNFXEb477URYCxYUgDTCMYY75ahNP35MPNJVBvQXgGiuIO9t9t1m+POPF0wgkWBKNBFaHtUSGDu+6XylYU1AxK1NzITs4e8vl64KYzE1vR/Eg+/uWgIHXwbIATw8XR9EWbpniy62aE3lMI8kS5aEUHwvkmwg+pj5/RoHHNC62JvoftTkRlr4g+E6d4ytxUhSiYa8M557vuqKaGoTpIbfgp1SKzntUFUK2oCerx86PuJOkijxLviFyDJFGdiN29eA6XrnEHyiM1KfHQJNtWW5KGXxyKfVXNhdw21WGKRQFtegBpSR7wWu4b4Ij9At3p53xAluwT2k8JL0cDZnO/ygEdUgZv+c8SK+CuRPus5oaPZWIhHISGxkETMy5uZrZCB0XRvy6YzutQgXS/CHC6QAL8G57eD0Jk18q26JbhNKcPbPgu76teouhGhHowGS0cEoCTzLN1ol7wKZ26U8jdjmlCKXInZY2HsjGzJ9LUgtmDno6bvzBRPUCOsBZyIGg00oTJ/nT6ZMLs5OHn5KEAtt8g6mO9GC8utXvHQ==|920

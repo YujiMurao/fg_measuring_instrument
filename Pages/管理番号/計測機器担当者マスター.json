@@ -148,7 +148,7 @@
     "0,0": {
       "ListViewInfo": {
         "ShowColumnHeaderInDesigner": true,
-        "TableName": "計測機器担当者",
+        "TableName": "mst_insptool_manager",
         "ColumnCount": 17,
         "RowCount": 46,
         "ColumnOperation": 2,
@@ -161,25 +161,20 @@
     },
     "1,0": {
       "BindingInfo": {
-        "TableName": "計測機器担当者",
-        "ColumnName": "管理コード"
+        "TableName": "mst_insptool_manager",
+        "ColumnName": "control_code"
       }
     },
     "1,2": {
       "BindingInfo": {
-        "TableName": "計測機器担当者",
-        "ColumnName": "管理コード",
-        "RelationBinding": {
-          "RelatedTable": "mst_mtm_management_department",
-          "RelatedColumn": "code",
-          "DisplayColumn": "name"
-        }
+        "TableName": "mst_insptool_manager",
+        "ColumnName": "role"
       }
     },
     "1,10": {
       "BindingInfo": {
-        "TableName": "計測機器担当者",
-        "ColumnName": "氏名"
+        "TableName": "mst_insptool_manager",
+        "ColumnName": "name"
       }
     },
     "1,20": {
@@ -188,7 +183,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "分類コードマスター追加",
+            "PageName": "計測機器担当者マスター追加",
             "PassValues": []
           }
         ],
@@ -202,7 +197,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-            "TableName": "計測機器担当者",
+            "TableName": "mst_insptool_manager",
             "UpdateType": "delete",
             "ShowConfirm": true,
             "ConfirmText": "本当に削除してもよろしいですか？",
@@ -232,8 +227,11 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
-        "TableName": "mst_mtm_class_code",
-        "ColumnName": "class_code"
+        "TableName": "mst_insptool_manager",
+        "ColumnName": "control_code"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
     "8,25": {
@@ -247,8 +245,11 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
-        "TableName": "mst_mtm_class_code",
-        "ColumnName": "class_name"
+        "TableName": "mst_insptool_manager",
+        "ColumnName": "name"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
     "10,40": {
@@ -257,7 +258,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-            "TableName": "mst_mtm_class_code",
+            "TableName": "mst_insptool_manager",
             "ShowConfirm": false,
             "ConfirmText": "本当に更新してもよろしいですか？",
             "UpdateValues": []
@@ -3150,28 +3151,28 @@
     "1,20,2,5",
     "1,26,2,5",
     "10,40,2,5",
-    "5,25,1,5",
-    "8,25,1,14",
     "2,0,44,17",
     "1,0,1,2",
-    "1,2,1,8",
-    "1,10,1,5",
     "0,0,1,2",
+    "1,2,1,8",
     "0,2,1,8",
-    "0,10,1,5"
+    "1,10,1,5",
+    "0,10,1,5",
+    "5,25,1,5",
+    "8,25,1,14"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "Title": "分類コード",
+    "Title": "測定機器担当者",
     "AuthorizeInfo": {
       "VisitMode": 2
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "計測機器担当者"
+    "RelatedDataTableName": "mst_insptool_manager"
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//hjO9JgC+vZSz4Li/k5UUiop84ys93i+RMIcp4FVURb+KrpByrCZudbO0dyqsBOY8nLSwFc37NjUiO+gOiV/QzRa8AP3y7pVkaGhYNpcN4SIqrfXgSoR1K9zCGcXTI2lD/ZK9fRb88Ogqde8Us5xJV+RkOaoeC9NPOzw6t95goQr6BnvDsIt0mHhykzUxaArnVcg5e6bUKwQw/sDbi6gD/4HZc8IwvbAKvs40Cf9lJ3hO4nMvzDv3YvocjHyfUK7XFUKoCY2WkbDZqphTLojMlaBcuH8wYQZyk9DDKjW3PwPqlNDQvycK8EKHTftytNo6h1F6lo3Udzr6TXtGvcOz3c89Gk8yR/VJ3qyZ8YDmXe3h9JLQ9MaoY88qE2qerqnF2MoJHYqfUNhfnI3tdguOysj+ZWlFPcf9Tc1XM+0f9tkM72khnkZAYQH5T8Jx2ptuoT7AZONfGXDmaOL3FC40ZxOtlk+okc13uT94xYI8cB3U3w2T3e0+D6e9mHAq2BgDucudWL1tkxKcNEmPdc/l/OKk22N464MpkOkRdIqFguXcFRiN8PcPKGLP1cNnRBPCO4qHEz+SUDyR0sdh7ZGrQ0YdNtghH8M6H5jHzAOcmt+PX4NE4BeDY5+lUtxJOopiHuiM8lDLce5YqTPXSRfD0BX+5Sz5fwcpS3/xq48IHIFDadhsA7Tyv3br7Pxv8nB2ipL+awBSuMg+jYB8ul5AOu2qA+TiBHXu4wZIBF87beUdL4QXybC76ABTjeq8vuu5ysSbqERd3QtAqskUhCXYaMKV2KvNovD70gBKa/q16NQR6ac4HVTMYFf8HjUZJFJvM2XqgCZmmEQ80ycELf1WPlFItdVoo9TPSduwwdehktaz+Y5IKOENP/dnqGh2o7EGRllF7Q039MG+BhQVtCGlxQ==|920
+}//981DOwjq/my7bLc5BhY9FllCeuEqJUji1QdLTPfXicgI8XQNFxMLasyQISw+I4OLYMpBL4pzWOctdPSqegckvDspDyejRmTonvoilpQzhmUmVF4MRBCV2d3ezlMdnrHlk3LTeZkpOCLCobS4P+aqb89ed6O0unV5ueyif7RnG+UgkbTlSnJvQzLw8gblW4CFNvTSDBZrN7cWhM31+3zNS+Onaig6+ooKCp4KkTtWn9iCpqdN/DYw0JwHXESHYXT3o3e0WrErlgTJ2VsK+8+7bCmOYpIsuDve1SnBvz1jsut86xijZISAOolM6ZwWpT6z2u4B0oF54jxfSbUBAtpQoOJOieK6dFvQeDmwrLcJGkZHHvsVbbDMuGZZu4pK/XTF2Dvu/oXL/VFgwmtA+nH0hgjLFzu/ecZ7pIpn8PSy0kfRF6rbgfGv774UWAO5LlyZ/T30C8yBQUffN5BU5YNukCuSKHXtksUQrfw/KkQcKZMn8pdo7YcNtQp4eiHMlWfQfjeBm0YaNqx87Q9zzvz0x8VTpTbvcyaZzP4umANI7du+WYPQE7vBWXoScYpuoj8hQeJaLhNtfO3VuAG2rdazJRKtL7GzHmDjMktBIrtZD0CSzaz05HMtU302u7sJW9sX29p0D0B7T7HPtAzf7m/VfGcC3mdmhW9A4ROe4lae2IWXat03DR4Ke6qAJj41Gb4kGfMej40HK2hbxAYGznf/asp0j+3VAApDyEvb9VhKpDtyMdUTxnRpX3myfJXtOsBIy1QSBm16R/wWWCtVBpYnGRgGvYNtFGSsZV9mvxXO/d12wBf/ox+faMcIr06vab6LNde1Tlt+PW0xBV6QMdgW01ptGvZqH3m5xQ6SYLXhD7HVeJHYos19n7bJmmlDbuY6cRNeFmUK5c4DPRa5qjjk6g==|920
