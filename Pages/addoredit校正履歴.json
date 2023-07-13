@@ -108,18 +108,6 @@
     "22,1": "記録文書へのリンク"
   },
   "AttachInfos": {
-    "3,5": {
-      "CellType": {
-        "$type": "Forguncy.ProcessBarCellType, ServerDesignerCommon",
-        "TableName": "trn_mtm_calibration_history",
-        "ShowCreateBy": true,
-        "ShowModifyBy": true,
-        "DesignTimeShowState": {
-          "TableName": "trn_mtm_calibration_history",
-          "SelectedID": "00000000-0000-0000-0000-000000000000"
-        }
-      }
-    },
     "4,1": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
@@ -156,7 +144,7 @@
                     "IgnoreTargetPageCachedCurrentRowInfo": false
                   }
                 ],
-                "ID": "eb728b2e-0af7-42b8-9f20-8f9f18548111"
+                "ID": "530b042b-684c-4e1b-b8c5-34d0eaf4ddd7"
               },
               {
                 "CommandList": [
@@ -175,7 +163,7 @@
                     "IgnoreTargetPageCachedCurrentRowInfo": false
                   }
                 ],
-                "ID": "8fd78c70-651e-43fd-a966-9910397ec0a8"
+                "ID": "8b766d3e-5117-47fb-99d9-a38d6f970c95"
               }
             ]
           }
@@ -416,12 +404,7 @@
     "24,1": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "ID",
-        "RelationBinding": {
-          "RelatedTable": "trn_mtm_archive_doc",
-          "RelatedColumn": "ID",
-          "DisplayColumn": "subject"
-        }
+        "ColumnName": "ID"
       }
     },
     "24,7": {
@@ -1165,7 +1148,6 @@
   },
   "Spans": [
     "0,0,3,16",
-    "3,5,4,25",
     "24,7,6,23",
     "8,7,1,23",
     "10,7,1,23",
@@ -1175,6 +1157,7 @@
     "18,7,1,23",
     "20,7,1,23",
     "22,7,1,22",
+    "3,5,4,25",
     "24,1,1,5"
   ],
   "PageInfo": {
@@ -1192,4 +1175,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//4rA3DeUehWTj7GfcUb52LZ5nXkhEebniKDvtyanCmqdPfHcAEdUCtPV146qK1f7ySd5s34MkOz7/hd3LF966rrVlHefUOgHgLOScY/wyBtln3oYS06/ohXhEaCUHYs5VpCVVzknkLhxvRVoC6XAl6tkILHQ1YPWNXA0EQW/7PVU4cJg+L4mF5sfAa/XsS7mvFvY/1T3UIJe0iu6CeIOdTsj1/O820EOY995HmJZrTmWnjYGhgNyWZqDN6rDqtKSJpd9c+kmnbbRk9LqsoXf12loJcweejh5dryXfgaGJzn8H4ZxJEfZkAE7XLBd4dfr4HBdjjIRKd3eb53Vjti9jixAKsTOyct+KpJfHe60DZqo18lNJxa3TjIczRiQxPUABp36WNtLvVESJccrJw6FNZcgIQ6CZfoYasN1FH3lfoJDgC8PCVoG0bLo0GjA+JwXRMOBSuUV9gIrVGTuXNoKak1HxYNakvOlD4RURcLNhV0YuoCSiHyxUr/UNz80xr0Pj2cg83t07XY7P6FM99jGf4UExrRVV3BcGjJ1TovynIEagBU7RlpP3CaWHK3sUTqYPnPPUuD/ndTa8a0IcUfVVUK10hCu21thJuX2/bYtwxqksjINIyULntMcgCyU7ySmz02piHdqkneey8WEla19kFFXH7HEZhUDi3mLakwGziA3PEgQ2G/oPqSTvHKXQhE4V5r2VUjWmXzQkaJ1jqSqYidy1hd89IHAAX/FZsR98KrCADvZK9JrxTA+RXyMrhyS+t/F4Ek5IHldPJ0bMNn8uVYLkrVNENnl+trUknL1vxRzsyw0aCyHlyD0OAu2G2uICkqlfVjcZ0YG/WJ3HQy7UVjIdGQ4BBz1pmHrW0C37WGteCjw/jLTIHfKx/WN0AmD3H2RiELWkC/aAV49lwGXYzg==|920
+}//g3kja4Zlk0ofnPcoDpy1EF8Qgqw7cGkPX2v6FA19ZaFkm7KIs1jtyToWNm4UGbo+KUzulgr1gbnXq3mY7/6wQKjjekPA+y1YQzLR6Om2L8qOMH3H87gBke2fIrwN6Wwj8d9Iv18kjKsQfeXTDSNNuujuw+Bx/9Xl+DYE42VxR/ULUfgE6Wuqlu4dW42AlStILtPThDsGwuOel3pekyr0p6wl87iKM/LtljkLRAy7qmv4Z7xszRldxPYGjXGEEAK7pAuekZj0/wAmysbFp41D5Y7O5vH6/7JbYNQZqSmArDPKXa/ev8bdhjlRbrTdLMYeTLbrT+Na1uDFifuKgKgeD504Wfd0vptYTv1jpT5G9nBMARLOTZwY8178egHwoAjlg3eUqMbNPU5MgrrvMML1Xrii0jzwP6gYb1DkkpBsNsApF0b+QmyicdkE8vAsct0Cr+fXvh/6tzFSoqQZ+hZN2JAqEzGgQNcg4FsFbT/S8fnZtuLAzILWePuzt/q3bpqwnxLccYYAGKPC98BOe+wKzmlId2XMY+1VM4idpLhmmSmYfjupXcvl5Qy4h8XvdoZShK66kjFB86owLK/FBPec/MxPzkYK0lLNyHaB3qOY7dxZgcpQEIUf6uXR+6W8RbvLHphdWVmw/q6+rf6p4HYxFOZSBuapn5E3nRB4bmYFJxars8zfKnXKres4PduuYzR1vJrlPQomCYETa8Ma+SGHtSkqJjsAZjcQUPFArTjg0lF80K07stcDfwesmm6sbTUTaM02Itqaz5rulK3YRvVT5dwToFaFnx0G9XIND2uMNMrcVtK10B8b2I41X/fa/2oagolT8Unnh0u+paGGRUn6nFf9omrzw/zEyhv9Yp4fkECVQwmO6u55/oxAGLs9iQJFlO9/xCkgjDJIVwdAv4qKgw==|920

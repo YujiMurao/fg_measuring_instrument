@@ -99,14 +99,14 @@
                   },
                   {
                     "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "trn_mtm_measurement_tools",
+                    "TableName": "trn_insptool_tools",
                     "ShowConfirm": false,
                     "ConfirmText": "本当に更新してもよろしいですか？",
                     "UpdateValues": [],
                     "ParamNameToSaveNewRowValue": "NewRow"
                   }
                 ],
-                "ID": "ee38895b-d0cf-4587-b6c6-b1791a1ced57"
+                "ID": "a00042a1-96c0-434e-9c8e-1197f9d7b9a9"
               }
             ]
           }
@@ -121,7 +121,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-            "TableName": "trn_mtm_measurement_tools",
+            "TableName": "trn_insptool_tools",
             "ShowConfirm": false,
             "ConfirmText": "本当に更新してもよろしいですか？",
             "UpdateValues": [],
@@ -136,7 +136,7 @@
     "4,0": {
       "CellType": {
         "$type": "Forguncy.RecordNavigationCellType, ServerDesignerCommon",
-        "RecordDataTable": "trn_mtm_measurement_tools",
+        "RecordDataTable": "trn_insptool_tools",
         "FirstImage": {
           "Name": "Arrow/347_move_first.svg",
           "BuiltIn": true,
@@ -376,15 +376,15 @@
     "6,3,1,3",
     "6,6,1,12",
     "7,0,28,18",
-    "5,0,1,3",
-    "5,3,1,3",
-    "5,6,1,12",
     "6,19,1,2",
     "6,21,1,2",
     "6,23,1,2",
     "6,25,1,2",
     "6,27,1,2",
     "7,19,28,20",
+    "5,0,1,3",
+    "5,3,1,3",
+    "5,6,1,12",
     "5,19,1,2",
     "5,21,1,2",
     "5,23,1,2",
@@ -405,4 +405,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//FORnGtagkCMTnLGS6gLHTMDyNFih1Bbu4ibMBLexhf2Aq5AD+69Lb3yjyUPx7gWXjKSArSegmMESeh+ytqGT9rWllTCDCY/9lqihKzSHGSznJfUT6AZskUNSph7jOs3KN9U7cdAKGoQ0lLx5KvYdM/KAnWsE5zxrbeDSyHFtSzNL/JGvzqKcnK7JkdhSTvYQQxop3elHKc/OgVPlZplXwH73zxS1ZqWq4GoF6NRJ65JEm5UEfLB66kFWW5iBQXTjxSfSHKcp4cZXwxcHVCuY4E1DAgmP1E8Zcnz+KePTPdkGTmWu4vn02j1WCkXwHiI+buRJV8xAqNv/6DAqSZo612wdSO6Kj8CmYj3MVDSrBWv4ew9vJEphGVLAfWOGZVCSPpoKH82DqEpxJB90XjlA+IEQ03gihNrPvWAATgPTQX8NqLplQpuWetOrkkWUYmrvEZaQthwg3l4rGfGpIDMP6AqNcWstkCAeXTrgf4ud9J1vvvxEq1XGvrfP+dEXxMV1LgDUkbjTE+S1OUpZGsCbK+t4iLFABY6Ms8l5L+ae3v8sgD+vFbNP5U9qIb0G8vCsff5WvmndDJgv4dI3eo1kdQl+I501Qk61AOrLX0T+aouagq9PcGW2ymxKrLr3h5zoQf+N5LMrQzzl3sK4W8bElV8HDPBQj5QMEVpMHrSh3WI/pbAzQb1T0TR0Dz7WJrgHaCpMQEbj+NUK8oek+nndsM1YfkfrgRB7I63Gaanb/E2eBreO+Pt8nZaaTK1bTJmNXIMFS3sYf8/lXMD01TCyjHiVP0HXILZu7oiwNgAdX9ffRWOavnJcbwPJ5qzQS+syDIX8yka/5LmAIOMVVi0wbWDcGp/34astNq1NIMaYeCSb/o1ZFpNdNoi/IHxEvoLCIwSzpKJVBGMIJJCt0Z/mXA==|920
+}//EpkO+Og+qMJqHBf+vZCrew+dLmdzxMYGPSb38QfobEvF7+PUPyUEpMbOjjEi4FR2yDGRWPmeQqXJRV1zXvxI4BIJJaH89DOQrrsS1a3iHyb1iS1FexSl+S6ck/e298rNSjNDxVBi2kWdE2L5wHI+kKtl+9bUjpyT/wUyIi4ZvsvucnMSqWkajC/w0Vvk+QTOUcB7+nAxlVSLgfM/zqFe4vtbiABRtlsn8C7z3Hh0FsSeRIgdsIA36UjcgyCmzREqdYgoy0nTiSCbELOmOJzIH8Y7kk2JsTaXSpZzfBxDhqIIkSeljeCtEIviEw1wsZRPB/K6tG8n9u6wgMAORshskbg/Whh3RVvC1wxVQEpJKJl6E4PMU/urj/7VxFcg+zNkgrCvvDL1AG7FY6yXgPDw7EcxnEcANiCBVzWcIjTDO6cfysKrtv2330zfz58s0ZSTHZ0kY7dPlv485xsTwrWjFvDpn6gYCbm7M4awbRs73iPU83ts7Nqmg5aJTPpAn8pcWXIrJAfpcfJ86Y0NQOeuq+GfY+OsNGXD/MNPOrTp7NtGw436eeRWuC+nPqPtphyM8pNHTffHIUR8Qe5dtcYPQvEkI4qG/HOuZvJsiVLhmi00L9eFqqKoO6Zf565Ag/TbDlcuzxXiG9I8o7E44Qju9LxUjpFjffjwESvIRD6tHkR6xAT8AFTboByrvwnNMdUAFDkkclYrLGcjflUqFC5dD0X4h7wletsXWQOwZZ/xBvq8idRwmKcrS6FiVIOurL1xrbWmHx+pg8Cl6czs9WluAlQItZcdkevDSTWxiKq76RvPr/h+V1v0twASUIKGijDTN4jYHk7vLHMaxLtNcdH9VNJxenljCJKWestY+V+6e5JNNPmrwudYvbSQVJuOXlx4JLVQgpoqigD4vDOLx26JFw==|920

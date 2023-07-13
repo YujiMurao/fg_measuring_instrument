@@ -205,7 +205,7 @@
             "TargetTableName": "trn_insptool_tools",
             "SqlCondition": {
               "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-              "CompareType": 2,
+              "CompareType": 6,
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_tools",
                 "ColumnName": "control_no"
@@ -218,7 +218,7 @@
             "Params": [
               "=P2"
             ],
-            "ID": "ad58f3e4b8234b8c986f7adaa418ab4b"
+            "ID": "cb10256db94b40179ddc8a14ac242a74"
           }
         ],
         "Text": "検索",
@@ -236,7 +236,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
-            "ListViewName": "リストビュー測定機器HOME",
+            "ListViewName": "リストビュー1",
             "ExportExcelListviewNameMode": 1,
             "NewOtherName": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -260,14 +260,14 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ColumnOptionsCommand, ServerDesignerCommon",
-            "ListviewName": "リストビュー測定機器HOME",
+            "ListviewName": "リストビュー1",
             "Columns": [
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "id"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "Column_1"
                 },
-                "Name": "ID",
+                "Name": "Column_1",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -280,10 +280,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "availability"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "n1"
                 },
-                "Name": "使用可否",
+                "Name": "n1",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -296,10 +296,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "create_date"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "n2"
                 },
-                "Name": "登録日",
+                "Name": "n2",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -312,10 +312,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "management_indicator"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "n3"
                 },
-                "Name": "管理区分",
+                "Name": "n3",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -328,10 +328,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "management_department"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "n4"
                 },
-                "Name": "管理部署",
+                "Name": "n4",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -344,10 +344,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "class_name"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "codateymd"
                 },
-                "Name": "分類",
+                "Name": "codateymd",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -360,10 +360,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "measuring_range"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "prohibition_reason"
                 },
-                "Name": "測定範囲",
+                "Name": "prohibition_reason",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -376,10 +376,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "minimum_scale"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "s1"
                 },
-                "Name": "最小メモリ",
+                "Name": "s1",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -392,10 +392,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "tool_specification"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "s2"
                 },
-                "Name": "仕様",
+                "Name": "s2",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -408,10 +408,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "manufacture_date"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "s3"
                 },
-                "Name": "製造年月日",
+                "Name": "s3",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -424,10 +424,26 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "madeymd"
+                },
+                "Name": "madeymd",
+                "HeaderCellStyleInfo": {
+                  "FontFamily": "Body",
+                  "FontSize": 14.667,
+                  "HorizontalAlignment": 1
+                },
+                "TemplateCellStyleInfo": {
+                  "FontFamily": "Body",
+                  "FontSize": 14.667
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "trn_insptool_tools",
                   "ColumnName": "asset_no"
                 },
-                "Name": "資産番号",
+                "Name": "asset_no",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -440,10 +456,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "puechase_date"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "purchaseymd"
                 },
-                "Name": "購入年月",
+                "Name": "purchaseymd",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -456,10 +472,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "purchaser"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "retailer"
                 },
-                "Name": "購入先",
+                "Name": "retailer",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -472,10 +488,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "tool_manager"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "lastrevisionymd"
                 },
-                "Name": "管理者",
+                "Name": "lastrevisionymd",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -488,10 +504,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "last_calibration_date"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "automaticnotificationymd"
                 },
-                "Name": "最終公正日",
+                "Name": "automaticnotificationymd",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -504,10 +520,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "auto_notification_date"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "etc"
                 },
-                "Name": "自動通知日",
+                "Name": "etc",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -520,10 +536,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "remarks"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "kousei_tsuuchibi"
                 },
-                "Name": "備考",
+                "Name": "kousei_tsuuchibi",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -536,10 +552,10 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "caribration_notification_date"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "kouseiyuukoukigenymd"
                 },
-                "Name": "校正通知日",
+                "Name": "kouseiyuukoukigenymd",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -552,55 +568,7 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "Editors"
-                },
-                "Name": "Editors",
-                "HeaderCellStyleInfo": {
-                  "FontFamily": "Body",
-                  "FontSize": 14.667,
-                  "HorizontalAlignment": 1
-                },
-                "TemplateCellStyleInfo": {
-                  "FontFamily": "Body",
-                  "FontSize": 14.667
-                }
-              },
-              {
-                "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "link4"
-                },
-                "Name": "link4",
-                "HeaderCellStyleInfo": {
-                  "FontFamily": "Body",
-                  "FontSize": 14.667,
-                  "HorizontalAlignment": 1
-                },
-                "TemplateCellStyleInfo": {
-                  "FontFamily": "Body",
-                  "FontSize": 14.667
-                }
-              },
-              {
-                "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "calibration_expiration_date"
-                },
-                "Name": "kouseiyuukoukigen",
-                "HeaderCellStyleInfo": {
-                  "FontFamily": "Body",
-                  "FontSize": 14.667,
-                  "HorizontalAlignment": 1
-                },
-                "TemplateCellStyleInfo": {
-                  "FontFamily": "Body",
-                  "FontSize": 14.667
-                }
-              },
-              {
-                "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
+                  "TableName": "trn_insptool_tools",
                   "ColumnName": "tsuucibi_ymd"
                 },
                 "Name": "tsuucibi_ymd",
@@ -616,58 +584,26 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "_UpdatedBy"
-                },
-                "Name": "_UpdatedBy",
-                "HeaderCellStyleInfo": {
-                  "FontFamily": "Body",
-                  "FontSize": 14.667,
-                  "HorizontalAlignment": 1
-                },
-                "TemplateCellStyleInfo": {
-                  "FontFamily": "Body",
-                  "FontSize": 14.667
-                }
-              },
-              {
-                "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "_Revisions"
-                },
-                "Name": "_Revisions",
-                "HeaderCellStyleInfo": {
-                  "FontFamily": "Body",
-                  "FontSize": 14.667,
-                  "HorizontalAlignment": 1
-                },
-                "TemplateCellStyleInfo": {
-                  "FontFamily": "Body",
-                  "FontSize": 14.667
-                }
-              },
-              {
-                "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "files"
-                },
-                "Name": "ファイル",
-                "HeaderCellStyleInfo": {
-                  "FontFamily": "Body",
-                  "FontSize": 14.667,
-                  "HorizontalAlignment": 1
-                },
-                "TemplateCellStyleInfo": {
-                  "FontFamily": "Body",
-                  "FontSize": 14.667
-                }
-              },
-              {
-                "BindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
+                  "TableName": "trn_insptool_tools",
                   "ColumnName": "image"
                 },
-                "Name": "画像",
+                "Name": "image",
+                "HeaderCellStyleInfo": {
+                  "FontFamily": "Body",
+                  "FontSize": 14.667,
+                  "HorizontalAlignment": 1
+                },
+                "TemplateCellStyleInfo": {
+                  "FontFamily": "Body",
+                  "FontSize": 14.667
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "attachment"
+                },
+                "Name": "attachment",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -679,7 +615,7 @@
                 }
               }
             ],
-            "ID": "23313d5dadfe40868b9a126e92bf55b4"
+            "ID": "76dae5178c254cfcb3fc18f361e6cdf4"
           }
         ],
         "Text": "列のオプション",
@@ -2271,28 +2207,28 @@
     "9,0,11,50",
     "24,0,19,51",
     "8,0,1,3",
-    "7,0,1,3",
     "8,3,1,6",
-    "7,3,1,6",
     "8,9,1,2",
-    "7,9,1,2",
-    "7,11,1,6",
     "8,11,1,6",
     "8,17,1,6",
-    "7,17,1,6",
     "8,23,1,4",
-    "7,23,1,4",
     "8,27,1,6",
-    "7,27,1,6",
     "8,34,1,4",
-    "7,34,1,4",
     "8,38,1,2",
-    "7,38,1,2",
     "8,40,1,4",
-    "7,40,1,4",
     "8,44,1,2",
-    "7,44,1,2",
     "8,46,1,2",
+    "7,0,1,3",
+    "7,3,1,6",
+    "7,9,1,2",
+    "7,11,1,6",
+    "7,17,1,6",
+    "7,23,1,4",
+    "7,27,1,6",
+    "7,34,1,4",
+    "7,38,1,2",
+    "7,40,1,4",
+    "7,44,1,2",
     "7,46,1,2"
   ],
   "PageInfo": {
@@ -2310,4 +2246,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//rc7a5TjcBDGBsaNUSmiIHjKSQh+CuzS47eNJVG+GEodIj/97H+fbDF6B0WCHOhp7GzLrsIFxMNrasMu8y8alD9Ky9ipp8N1cF/zk6bt5w5nX1GbOTdwwC2aKFD3nvVWv6j2HaHZR/ASqIw9L8JR2dYBwcRbGJA6AIJRGsP2zkfk3ZSCaFaDJHR0d31YGRsZZr5a1dDlricGTFh5byQvmXk73E+sewJ7769USTKsHe4NnBUXkiZDGReQdcs6VERqSsoT7iP8w2zMg/HFM7sy+N63fcnr9DmhPHTcYiqvwhQjipMULR6yk2Ou0nX6xbwcYWKdNugbAwx7A3M9d5a9YzOb+l48U2Q5sy0unSqCwNDZdo0P5YjtVK1xuurDp6aXccsd6YpiY4keiQPvReeI0CF2IfRNPpiCl7Y6yQ3J3RyvtqDjX7AywV3xPwzc/NdtSZm3YWPckb70recWHx+p0QwLvWvKaNI9SXiVNtAcUlZGVcrsIyYIetnJ1HEZikZ6q9ZE2wxe239vZ5im277NZbV18xWflpAm3vsGgnLsi8cMWA0i6hX0hPpLoRiNVuzxxS1dMgK3C8rbluvbM9fDyOprbW5fPulxDlGJ6inRhxdCNVz1zLTiBu4JgeEF7wyigyzSG6h7+Jia3PBAwviQ07lQaXqADUzneHbQFanLQN1Wx+JTaKoT9aCccHJr/29MFFV7QSToRF8bvNDNkO9megNGVJm0UnA3cJUhENzk5Xh4Ma0OjUyXy/Br9bnD4vKUjDrhp8hgt/r8Apmyb92EsIAcUWJU7XD/N/LgwADSPRoUnZic4k+A+gjXtJAzn3Bl89gs2ZFRXWo/4+JnP4OxrUdDq2LmOOpFE1ZK5ZURDz/YHcgXdh+bcV6fBC1DF7XP+uMEG6DULURYXAdSjPaAcUQ==|920
+}//m7aPrFlapjOs5ojrYLGW02KdhlG/W1Y5AQn+DiLVgCbDyiOCCrjpx7+hBfX+H2CiTMhVnpIxI8MoLz397bwU/aPQe27Q6bcF2jwD7PNMokqUpiFp2C9Mn/m0XL/605PByXjnAdY9etW7SGvp6pb6rQQ/lCiEBTxhMbwhbaeZ8ljt3A91h5/+ACfsHGx+OXZaFtivIygumFunPywlzFrGXlMNkcMaPhWNS450GBz3R8vIWDS97GP7sW8e1Q0jMtC3TCqaWvNgv6l/wJJQHjvRi2R6/eMx98gfisMrcUHMemvk6JpHcmV5mLEirAShe1KI9z8OwGlTkE/K6NCyVqmc0Q6ytXE8yMkCIqHGmOPIh9d1FLuL5ah4Q1eNzCcPKgyYohquCcNxTggWxbF5YCQlBX3kHiCI5LgQs+EdX/QBcyP7BucuzZP7wIbQIJGQkXCitfgD3v6RO8Vk05UzDvGm3XIxF3S4N6VhA5RcXcik0N7Srl6uuZ+2WFOjvUxixabdRPoDD4RUCpLOkyvxqK/JEE+TC5xYNFPsuFrxUKoIUoOLQfzAL9BmZAQ+YY2DdKUaAox5cqL6z0lsaWyUGWALsNCrNE3SzPX+jdz1m7zPfpJfm2qdacxI3MwsoGc4Ryw13ZT9nHNZkw+1i6YqGo/ud5ZfQ9QKL4NE84rcrzWI7LysdDk83wogd42mtz6jRSNUoVWq2J5JbmcWM2M4XACaVLani0QJDzU1lU4MGdjMMWLD52b8VsqcFIJcX4re68zTvoLmfyS42i16PKnZO9VX8noTtW6ml6jneYSvaYz5L3stv2VjfUMW6F8psGBnsczsm2nHI/84nCTPANiptIizsOy0mGvWTR6Zr7cq2dCYk2rzSKN8t+gq2gV8/4iLK5keTbpIVVv/YKmCndNfH9YhHA==|920

@@ -209,9 +209,9 @@
               },
               {
                 "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-                "TargetTableName": "trn_mtm_measurement_tools",
+                "TargetTableName": "trn_insptool_tools",
                 "Params": [],
-                "ID": "f1b1a8dba3bb438a9fc2c509ae575142"
+                "ID": "42b4a3880b0f46f7831e870733300ac0"
               }
             ],
             "CanVisitRoleList": [
@@ -233,9 +233,9 @@
               },
               {
                 "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-                "TargetTableName": "trn_mtm_measurement_tools",
+                "TargetTableName": "trn_insptool_tools",
                 "Params": [],
-                "ID": "4d8bd8da56214e8d9e141094f0cd9e28"
+                "ID": "824f7b347a97497da030af71717170a5"
               }
             ],
             "CanVisitRoleList": [
@@ -253,27 +253,20 @@
                 "$type": "Forguncy.Model.SubscribeCommand, ServerDesignerCommon",
                 "ViewName": "定期校正",
                 "Title": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "control_number"
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "Column_1"
                 },
                 "ViewItems": [
                   {
                     "ColumnBindingInfo": {
-                      "TableName": "trn_mtm_measurement_tools",
-                      "ColumnName": "id"
+                      "TableName": "trn_insptool_tools",
+                      "ColumnName": "Column_1"
                     },
-                    "DisplayName": "ID"
-                  },
-                  {
-                    "ColumnBindingInfo": {
-                      "TableName": "trn_mtm_measurement_tools",
-                      "ColumnName": "control_number"
-                    },
-                    "DisplayName": "管理番号"
+                    "DisplayName": "Column_1"
                   }
                 ],
-                "TargetTableName": "trn_mtm_measurement_tools",
-                "ID": "1b3d4c43d2304f85b6d6938c4f94fc71"
+                "TargetTableName": "trn_insptool_tools",
+                "ID": "e62bed4d253045c19de4873ac1e5d782"
               }
             ],
             "CanVisitRoleList": [
@@ -335,9 +328,9 @@
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_mtm_measurement_tools",
+            "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "fff97b21026849238f8f844ba77f10cf"
+            "ID": "c40c59124322457ab8caf1e7e5054543"
           }
         ],
         "Text": "すべての計測機器",
@@ -358,9 +351,9 @@
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_mtm_measurement_tools",
+            "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "1f8a84759dca4ba792b0532b311d79f9"
+            "ID": "c2ba061d1e084441acf499d7e872b6ba"
           }
         ],
         "Text": "条件を指定して検索",
@@ -380,9 +373,9 @@
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_mtm_measurement_tools",
+            "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "6a3bf250d03146b49cdd12d790d0a790"
+            "ID": "2a0ea4be0e8f43c2999c6140bad6fe80"
           }
         ],
         "Text": "すべての記録文書",
@@ -402,9 +395,9 @@
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_mtm_archive_doc",
+            "TargetTableName": "trn_insptool_certifications",
             "Params": [],
-            "ID": "2fc9e5d56457451ba28ed1914b8c49a6"
+            "ID": "8d388276ccf54c6bac054628fd27623b"
           }
         ],
         "Text": "条件を指定して検索",
@@ -435,27 +428,9 @@
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_mtm_measurement_tools",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-              "Condition1": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "ColumnBindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "tool_maker"
-                }
-              },
-              "Condition2": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "ColumnBindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "tool_manager"
-                },
-                "Value": "%CurrentUser%"
-              }
-            },
+            "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "024466718c784c69a571cb35d0eef6da"
+            "ID": "e81842a24c88431fa88600dad9fade5e"
           }
         ],
         "Text": "計測機器新規登録",
@@ -477,7 +452,7 @@
                   "SerializeProperty": "=masterpage!C37"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=addoredit記録文書!A12"
+                  "SerializeProperty": "=addoredit記録文書!A14"
                 }
               }
             ],
@@ -486,9 +461,9 @@
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_mtm_measurement_tools",
+            "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "1a238f63734b4760b1795199a5ca0b6b"
+            "ID": "8f3eb019507d4b5491936db10a85887b"
           }
         ],
         "Text": "記録文書作成",
@@ -522,17 +497,9 @@
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_mtm_measurement_tools",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "ColumnBindingInfo": {
-                "TableName": "trn_mtm_measurement_tools",
-                "ColumnName": "availability"
-              },
-              "Value": "使用禁止"
-            },
+            "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "887edcf8f16f4fa8afe9c82e124255b8"
+            "ID": "993f9535faac4d7f8712d23302688d85"
           }
         ],
         "Text": "処理リスト",
@@ -578,16 +545,16 @@
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_mtm_measurement_tools",
+            "TargetTableName": "trn_insptool_tools",
             "SqlCondition": {
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "ColumnBindingInfo": {
-                "TableName": "trn_mtm_measurement_tools",
-                "ColumnName": "control_number"
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "control_no"
               }
             },
             "Params": [],
-            "ID": "fc1a968761d240e8be7656140a640f7b"
+            "ID": "cd95795d2cc94be4a3a18ae0a464755e"
           }
         ],
         "Text": "校正結果登録",
@@ -607,44 +574,9 @@
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_mtm_measurement_tools",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-              "Condition1": {
-                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                "Condition1": {
-                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 1,
-                  "ColumnBindingInfo": {
-                    "TableName": "trn_mtm_measurement_tools",
-                    "ColumnName": "availability"
-                  },
-                  "Value": "使用禁止"
-                },
-                "Condition2": {
-                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 1,
-                  "ColumnBindingInfo": {
-                    "TableName": "trn_mtm_measurement_tools",
-                    "ColumnName": "calibration_class"
-                  },
-                  "Value": "非校正"
-                }
-              },
-              "Condition2": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "ColumnBindingInfo": {
-                  "TableName": "trn_mtm_measurement_tools",
-                  "ColumnName": "next_calibration_month"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YEAR(TODAY())&\"/\"&MONTH(TODAY())"
-                }
-              }
-            },
+            "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "8ee98f1cfd744ea295da6c2a2f1da0d4"
+            "ID": "de827d4ba70645b89ab75a5d59a6b9ed"
           }
         ],
         "Text": "校正対象計測機器",
@@ -681,22 +613,9 @@
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_mtm_calibration_history",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "ColumnBindingInfo": {
-                "TableName": "trn_mtm_calibration_history",
-                "ColumnName": "管理番号",
-                "RelationBinding": {
-                  "RelatedTable": "trn_mtm_measurement_tools",
-                  "RelatedColumn": "control_number",
-                  "DisplayColumn": "tool_manager"
-                }
-              },
-              "Value": "%CurrentUser%"
-            },
+            "TargetTableName": "trn_insptool_calibration_history",
             "Params": [],
-            "ID": "05009f0b760046d68fc1cabc8f3d2e71"
+            "ID": "4523fc32befd4773ae0b58776d2d9a3e"
           }
         ],
         "Text": "申請一覧",
@@ -716,17 +635,9 @@
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_mtm_calibration_history",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "ColumnBindingInfo": {
-                "TableName": "trn_mtm_calibration_history",
-                "ColumnName": "FGC_AssignTo"
-              },
-              "Value": "%CurrentUser%"
-            },
+            "TargetTableName": "trn_insptool_calibration_history",
             "Params": [],
-            "ID": "21f528843dae46bcae171fa687d52707"
+            "ID": "df0687c877b14388b1dace25c5f6a974"
           }
         ],
         "Text": "承認依頼リスト",
@@ -1543,4 +1454,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//4vBoz5PCn2r4ny1ZcBJ3ejpkWh2KXfDD5Dp8h0JPOjxY1NAOa1jYwTTybHitY+fmxVEgYpHEAL+VVp0daD6ir5hKPznNcuYztCz+Zd56RUyfifa0Il2tYxGhuXUd+ANkmvf9eV1lO2Es5h/qBsyshQCYPBgvqUgTp4d3G+F9uCTN/aw+ZyKa1ypPCk2mV71i3oeS36EI+QEmabi14EiACQjv/G82rlG0TaoX6Y+GGJVwf0I5LV/GHpFreGOn6LEIU2C2JnkXsPTTsPtPZejq7Q+kENDXEU/IWLjKzjasmCrtkv3e078O073p1cfObQsqq9+ncf6RMBlQFj1upJ8om4Vts7LMOBRRb8+gPVPe1qowmLawCsVTNFXEb477URYCxYUgDTCMYY75ahNP35MPNJVBvQXgGiuIO9t9t1m+POPF0wgkWBKNBFaHtUSGDu+6XylYU1AxK1NzITs4e8vl64KYzE1vR/Eg+/uWgIHXwbIATw8XR9EWbpniy62aE3lMI8kS5aEUHwvkmwg+pj5/RoHHNC62JvoftTkRlr4g+E6d4ytxUhSiYa8M557vuqKaGoTpIbfgp1SKzntUFUK2oCerx86PuJOkijxLviFyDJFGdiN29eA6XrnEHyiM1KfHQJNtWW5KGXxyKfVXNhdw21WGKRQFtegBpSR7wWu4b4Ij9At3p53xAluwT2k8JL0cDZnO/ygEdUgZv+c8SK+CuRPus5oaPZWIhHISGxkETMy5uZrZCB0XRvy6YzutQgXS/CHC6QAL8G57eD0Jk18q26JbhNKcPbPgu76teouhGhHowGS0cEoCTzLN1ol7wKZ26U8jdjmlCKXInZY2HsjGzJ9LUgtmDno6bvzBRPUCOsBZyIGg00oTJ/nT6ZMLs5OHn5KEAtt8g6mO9GC8utXvHQ==|920
+}//PFb/jeFACLJBZPjms4HJosC0G3NCUVbYmz6cHfC7S7craxMlEP9DZwzCLTemNo2to5LXVHfP7uBtufkpaBw4yRBMEAV9rgb/IrZB6Lm+rYNNPcBvfoEVWs8xlLp4/Rkss52ZHa4Is+DW529ohAYT7Z/Ov1n9dNiWffpa+R/5oPGVrO5qYadIo5/GDimq3+IbpVLhTf+wP4sUsGuPUU9ymVSxlNo7XUXlxgCyEXcAH3REu1yxADF3CHMMIoWCQ8Xpp6EhhN1afrksdnKt9cOxmVUqN3Aa2hMBiVl8eEfwxxhNc/hTLmYs7ZIKRkbTo+4GbhGRgV/KseWFi8BfL8uHo4I2kG9tn7CIdBMMGNSs0CNdLoVtX0/3dWjD7IuYxuSWTh1jvUwHYFePjh8UVSdkmYwKBOmmZ3Wdaz+1kxNPH7WL/IQwK6GAFU625cPaqQypKRC36FOb9yoVsdt2ZqQ2Ggnl21i7+eZ/bocBfvScA7yNP3Cd9qsXGw7ZLW5pN3Wm/IrqfZJHLcEsrfVVfep2DZpL9iatA/QA3SW930AQcCgaWlJor3EbfKy2dWkxguW/Q2odH0YGIOu5fkdakSFxGFkfgv/JF1wxx6EQ21u5OULQNybhEqTBHMcRzAHK8gO3qYgLIQGJTdiWex1IKYi1lXICrdjqQ6/6Y4Jos5UVDmvtyx1OAChE0rE975JHQ1b0gNdev5KxY28oZp9bT7SeVDRNc9ufmL3euwSQTLXyKCMS3vc4Kut3JXeqk7rzl01L/OVMK/sFZ6HEWdOV7wSzY80k9Q9uJsSqJ4G3agzfO3QA6fk2q67mZdA6ac15rQpNBYZ1j91AQjh3QEvjnW4DlWNcKnY0Utvfzsem5q3AwfjsDFDTbCfZjf97KFEdU0wrD/wX9qaeRv+DzYy4sXYIRA==|920
