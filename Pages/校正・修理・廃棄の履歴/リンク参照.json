@@ -1,0 +1,338 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "1,1": "番号：",
+    "4,1": "内容：",
+    "6,8": "追加",
+    "6,14": "キャンセル"
+  },
+  "AttachInfos": {
+    "1,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "記録文書へのリンク",
+        "RelationBinding": {
+          "RelatedTable": "trn_insptool_certifications",
+          "RelatedColumn": "id",
+          "DisplayColumn": "registration_date"
+        }
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "1,22": {
+      "ListViewInfo": {
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=リンク参照!F2"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=リンク参照!W3"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=リンク参照!F5"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=リンク参照!AD3"
+                }
+              }
+            ]
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "trn_insptool_certifications",
+        "RowIndex": 1,
+        "ColumnIndex": 22,
+        "ColumnCount": 18,
+        "RowCount": 12,
+        "SelectionMode": 1,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "2,22": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "id"
+      }
+    },
+    "2,24": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "registration_date"
+      }
+    },
+    "2,29": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "subject"
+      }
+    },
+    "4,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "記録文書へのリンク",
+        "RelationBinding": {
+          "RelatedTable": "trn_insptool_certifications",
+          "RelatedColumn": "id",
+          "DisplayColumn": "subject"
+        }
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "6,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "trn_insptool_calibration_history",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に更新してもよろしいですか？",
+            "UpdateValues": []
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "追加",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "6,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "キャンセル",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": null,
+        "FontSize": -1.0,
+        "HorizontalAlignment": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "HorizontalAlignment": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666984558105,
+        "Formatter": 4,
+        "HorizontalAlignment": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Left",
+        "Meiryo UI",
+        "yyyy/MM/dd",
+        "Center",
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 2,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "2,1": 1,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "2,7": 1,
+      "2,8": 1,
+      "2,9": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "2,14": 1,
+      "2,15": 1,
+      "2,16": 1,
+      "2,17": 1,
+      "2,18": 1,
+      "2,24": 3,
+      "3,1": 1,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 1,
+      "3,7": 1,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 1,
+      "3,12": 1,
+      "3,13": 1,
+      "3,14": 1,
+      "3,15": 1,
+      "3,16": 1,
+      "3,17": 1,
+      "3,18": 1,
+      "4,1": 4,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 5,
+      "6,8": 1,
+      "6,9": 1,
+      "6,10": 1,
+      "6,11": 1,
+      "6,12": 1,
+      "6,13": 1,
+      "6,14": 1,
+      "6,15": 1,
+      "6,16": 1,
+      "6,17": 1,
+      "6,18": 1,
+      "7,8": 1,
+      "7,9": 1,
+      "7,10": 1,
+      "7,11": 1,
+      "7,12": 1,
+      "7,13": 1,
+      "7,14": 1,
+      "7,15": 1,
+      "7,16": 1,
+      "7,17": 1,
+      "7,18": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 5
+    }
+  },
+  "Spans": [
+    "6,14,2,5",
+    "6,8,2,5",
+    "3,22,10,18",
+    "2,22,1,2",
+    "2,24,1,5",
+    "2,29,1,11",
+    "4,5,1,14",
+    "1,22,1,2",
+    "1,24,1,5",
+    "1,29,1,11",
+    "1,5,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+        "ListviewName": "リストビュー1",
+        "UpdateValues": [
+          {
+            "Column": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=リンク参照!W3"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=リンク参照!F2"
+            }
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "trn_insptool_calibration_history"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//BDN2irSj6St+CUoOppKWFMyvfMhbj1veKEV4grj+iKTRQfOmkgA0T0JBghf9uyCHaxqAGDeAk01Hqvb+OdCOsp2qTVn0RK3Tms22xm0bU+pDnIjyyIV1K5zur+7G3j/Dp5yYEj03ONn4/QlK1LHMTHzlSDBziWyy3L4UsRubEApey3NAIofeaUmKG8Zlzs+M+zooH8/I9dzab9zO1z1zrwU3vbxaHtXl8vRo94l3pIYTpPbGdla3PSRrrg8ttn4qN/F/dBm11Qg0V/U1h1870TQhPH8mCiQ6m0+9ZwyXpz3HYWRZPP9lIiHhTxN1MJXSOy8TPBSvUWzuvXwkSIDBTuZejT6AdifiKufkU7xslKoEn/wG0szo2wcdAOM+V0qoYYIwB4Nvg3tMVDGk/Lm87UjRYELxDOcAMY1zEhna1CT8tRJW3iYa3/geiB+1SEYLVNHXXj2FJw7K8MkywouylFYYuvfAArIF+KGTil8G9PZSP2+caHqhml8F1re7ub9n7BA7Q2jpstRkWaANrLg3tH2PFgVg8OIrLMyyWf3yYCA/+6UfkNXjjhsjEBi2MbEOxbw2A9DA/CfPUeUq9xYD+akAacpRmi2Mdd1sph3+kNIhARAuHyqSq5Tg0GN1SAbbTQl8BfKur5UznQcTgL2yYRwMf4sdvhXKDtn7uH38RgkE+OzkJy6eqClvm/BE84V7xXUX6KXpuw9wXD4Omw5RPsgPJnN6TpHsz54VIx6s3FCPyyl9ZZCknaTPg7TLWQQtQ1qfrJFHYjA0WTSCszSxTwDdlm4XiKBPKvKQCtmqOLot7B2oT8267deeq0cx9Pu13esXzO7+PXn8CMDVCzw1X1evIHSX1sDb6Omm8NfSbIkGs07Cv/DMoOtOO2MytxV89s1eBltoCvu6eb/Fty+hdQ==|920
