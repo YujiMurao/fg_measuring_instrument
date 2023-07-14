@@ -218,7 +218,7 @@
             "Params": [
               "=P2"
             ],
-            "ID": "cb10256db94b40179ddc8a14ac242a74"
+            "ID": "5174ba4223b84f74bad2bcd83469e64b"
           }
         ],
         "Text": "検索",
@@ -615,7 +615,7 @@
                 }
               }
             ],
-            "ID": "76dae5178c254cfcb3fc18f361e6cdf4"
+            "ID": "9376769ef8a444c2becaa3970e5e7092"
           }
         ],
         "Text": "列のオプション",
@@ -630,6 +630,27 @@
     },
     "7,0": {
       "ListViewInfo": {
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_insptool_calibration_history",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_calibration_history",
+                "ColumnName": "管理番号"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=すべての計測機器!A9"
+              }
+            },
+            "Params": [
+              "=A9"
+            ],
+            "ID": "8e36a90d6f8f49608da357ee25e6ea72"
+          }
+        ],
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_tools",
         "RowIndex": 7,
@@ -802,8 +823,7 @@
       },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "attachment",
-        "IsByteArray": true
+        "ColumnName": "control_no"
       }
     }
   },
@@ -2205,7 +2225,6 @@
     "1,15,4,4",
     "1,11,4,4",
     "9,0,11,50",
-    "24,0,19,51",
     "8,0,1,3",
     "8,3,1,6",
     "8,9,1,2",
@@ -2229,7 +2248,8 @@
     "7,38,1,2",
     "7,40,1,4",
     "7,44,1,2",
-    "7,46,1,2"
+    "7,46,1,2",
+    "24,0,19,51"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2240,10 +2260,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_insptool_tools"
+    "RelatedDataTableName": "trn_insptool_tools",
+    "PageResponsiveMode": 1
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//m7aPrFlapjOs5ojrYLGW02KdhlG/W1Y5AQn+DiLVgCbDyiOCCrjpx7+hBfX+H2CiTMhVnpIxI8MoLz397bwU/aPQe27Q6bcF2jwD7PNMokqUpiFp2C9Mn/m0XL/605PByXjnAdY9etW7SGvp6pb6rQQ/lCiEBTxhMbwhbaeZ8ljt3A91h5/+ACfsHGx+OXZaFtivIygumFunPywlzFrGXlMNkcMaPhWNS450GBz3R8vIWDS97GP7sW8e1Q0jMtC3TCqaWvNgv6l/wJJQHjvRi2R6/eMx98gfisMrcUHMemvk6JpHcmV5mLEirAShe1KI9z8OwGlTkE/K6NCyVqmc0Q6ytXE8yMkCIqHGmOPIh9d1FLuL5ah4Q1eNzCcPKgyYohquCcNxTggWxbF5YCQlBX3kHiCI5LgQs+EdX/QBcyP7BucuzZP7wIbQIJGQkXCitfgD3v6RO8Vk05UzDvGm3XIxF3S4N6VhA5RcXcik0N7Srl6uuZ+2WFOjvUxixabdRPoDD4RUCpLOkyvxqK/JEE+TC5xYNFPsuFrxUKoIUoOLQfzAL9BmZAQ+YY2DdKUaAox5cqL6z0lsaWyUGWALsNCrNE3SzPX+jdz1m7zPfpJfm2qdacxI3MwsoGc4Ryw13ZT9nHNZkw+1i6YqGo/ud5ZfQ9QKL4NE84rcrzWI7LysdDk83wogd42mtz6jRSNUoVWq2J5JbmcWM2M4XACaVLani0QJDzU1lU4MGdjMMWLD52b8VsqcFIJcX4re68zTvoLmfyS42i16PKnZO9VX8noTtW6ml6jneYSvaYz5L3stv2VjfUMW6F8psGBnsczsm2nHI/84nCTPANiptIizsOy0mGvWTR6Zr7cq2dCYk2rzSKN8t+gq2gV8/4iLK5keTbpIVVv/YKmCndNfH9YhHA==|920
+}//zmX6xDSO0f0QAsWjbJ//SAEf88kxr4YxmHwqeo2WPpxNqdEQ406WDQUpbPCXUexsqUfYdsVxE4iUg9Dq1MBBrvnlU6gw6PpgTadLVW+0HLREZxJc15uxN9UOE/O/abAvei5cKHLyT5iqspt9UyjSafd6FMJPm7MbTSjVZcWEXxCHprj2hJ86dkwqNavrC9XoknJOxkDLoYs5w69EIDoQzRcSuABynuOVV3769qQ0bJytzHefTYsfoW+Xh2MKW/i67neRGIMQWCNJdc/a5kCJRT8BcnpEDLc2IeqGhGH/N8GprPY+L5Ow2Wf+czv+4kpqf+rRaEQ/ScvDvjKxy8k/gCPQiF/JuIbpfNQP2ZyWuIaEkZuAskSOHa8Gm8Sz2C0Vw/Xv+u2Q6mtBC1G7giOxn/hlDvQ/GHtKCYYHEPVQl0YjWDXcjjNFnFysMclQrbqboA7c8B1wIJYbXDO/Bt8Dd93aU2WPngqCowEci/03SgplZh4Tmr+tuuQQhXg/WDJ7ObT9PY7OAg8jjv9AKv9zESgpEmvtT2jhJN4U9h2oNdgGx8Vlv5V35VHnqtfMSQYciDyWArG67m+dQQQrpgQNlLSENOgeoylcNamcuCKk7lnO/i0Cc9m6Oouts9ZwDVB5qns/q6Oz4J33ND27Lz3AA9h/gKQayglOddEwHxJSXIlcYLknHrjx9X5OesXKknSu6gu6MQ1d3PJO23mpLZMWtg/a8iBaLyrh653S4iszcdtqBsqDx/ZlAKCPBOxBzK0gCjBJEopoeaRqEZkVmitZWUM1E4yPTwSD9HKKXmKldSm93OHYAyappKVRqG2KhZQH4elx6YO3Zn8SMS6LjK19PYDjNko172Ahd0qnDn97Z4uwtFyUlxeY4ZIDIR9RGdaOmO+j12HAs23vCL+s39adMg==|920
