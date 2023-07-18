@@ -336,7 +336,16 @@
   },
   {
     "ModuleName": "Table/mst_insptool_manager",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "murao.yuji@rorze.com",
+      "Email": "murao.yuji@rorze.com"
+    },
+    "LockDateTime": "2023-07-18T16:10:37.0201697+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\mst_insptool_manager.json"
+    ]
   },
   {
     "ModuleName": "Table/trn_insptool_calibration_history",
