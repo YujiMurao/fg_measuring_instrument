@@ -82,30 +82,54 @@
   },
   "Values": {
     "1,1": "番号：",
-    "4,1": "内容：",
+    "2,1": "ロール：",
+    "4,1": "担当者：",
+    "5,1": "品証担当者:",
     "6,8": "追加",
     "6,14": "キャンセル"
   },
   "AttachInfos": {
     "1,5": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
-        "SavedValidators": [
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
           {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
           }
         ],
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+        "DataSource": "mst_insptool_management_department",
+        "ValueColumnBindingInfo": {
+          "TableName": "mst_insptool_management_department",
+          "ColumnName": "ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "mst_insptool_management_department",
+          "ColumnName": "name"
+        }
       },
       "BindingInfo": {
-        "TableName": "mst_insptool_manager",
-        "ColumnName": "control_code"
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "control_code",
+        "RelationBinding": {
+          "RelatedTable": "mst_insptool_management_department",
+          "RelatedColumn": "code",
+          "DisplayColumn": "name"
+        }
       },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
-      }
+      "DataValidationInfo": {}
     },
-    "4,5": {
+    "2,5": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
@@ -116,11 +140,38 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
-        "TableName": "mst_insptool_manager",
-        "ColumnName": "name"
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "role"
+      }
+    },
+    "4,5": {
+      "CellType": {
+        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "Columns": 7,
+        "CustomColumns": [
+          "上長"
+        ],
+        "SelectOnly": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "chart_in_person"
+      },
+      "DataValidationInfo": {}
+    },
+    "5,6": {
+      "CellType": {
+        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "Columns": 7,
+        "CustomColumns": [
+          "上長"
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "quality_cip"
       }
     },
     "6,8": {
@@ -129,9 +180,10 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-            "TableName": "mst_insptool_manager",
+            "TableName": "mst_insptool_personincharge",
             "UpdateType": "add",
-            "ShowConfirm": false,
+            "ShowConfirm": true,
+            "CheckDataValidation": false,
             "ConfirmText": "本当に追加してもよろしいですか？",
             "UpdateValues": []
           },
@@ -171,8 +223,10 @@
       {
         "FontFamily": 1,
         "FontSize": 14.666666984558105,
-        "Formatter": 2,
-        "HorizontalAlignment": 3
+        "HorizontalAlignment": 2
+      },
+      {
+        "Formatter": 3
       },
       {
         "FontFamily": 1,
@@ -186,7 +240,6 @@
       {
         "FontFamily": 1,
         "FontSize": 14.666666984558105,
-        "Formatter": 2,
         "HorizontalAlignment": 0
       },
       {
@@ -202,35 +255,36 @@
       "Strs": [
         "Left",
         "Meiryo UI",
-        "@",
-        "Center"
+        "Center",
+        "@"
       ]
     },
     "CellStyles": {
       "1,1": 0,
       "1,5": 1,
-      "4,1": 2,
-      "4,5": 3,
-      "6,8": 4,
-      "6,9": 4,
-      "6,10": 4,
-      "6,11": 4,
-      "6,12": 4,
-      "6,14": 4,
-      "6,15": 4,
-      "6,16": 4,
-      "6,17": 4,
-      "6,18": 4,
-      "7,8": 4,
-      "7,9": 4,
-      "7,10": 4,
-      "7,11": 4,
-      "7,12": 4,
-      "7,14": 4,
-      "7,15": 4,
-      "7,16": 4,
-      "7,17": 4,
-      "7,18": 4
+      "2,5": 2,
+      "4,1": 3,
+      "4,5": 4,
+      "6,8": 5,
+      "6,9": 5,
+      "6,10": 5,
+      "6,11": 5,
+      "6,12": 5,
+      "6,14": 5,
+      "6,15": 5,
+      "6,16": 5,
+      "6,17": 5,
+      "6,18": 5,
+      "7,8": 5,
+      "7,9": 5,
+      "7,10": 5,
+      "7,11": 5,
+      "7,12": 5,
+      "7,14": 5,
+      "7,15": 5,
+      "7,16": 5,
+      "7,17": 5,
+      "7,18": 5
     },
     "SheetStyle": {
       "FontFamily": 1,
@@ -245,7 +299,9 @@
     "6,14,2,5",
     "6,8,2,5",
     "1,5,1,5",
-    "4,5,1,14"
+    "2,5,1,5",
+    "4,5,1,14",
+    "5,6,1,13"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -255,10 +311,10 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "mst_insptool_manager"
+    "RelatedDataTableName": "mst_insptool_personincharge"
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//s/89OGOeftJlMfzjIM3AlqxqwCg/QxfcGO3MVz4JNzh5gGQZiGmSFsqgVqAu/VcHtCSbcQDp99VGjl6tXq0h4yuh8JYifMB3Mlty4/5ZC70nAvL9EBDRGyNHljZQMiYInry6UsWkw9H1E7n0EaEaH672sPaDIVup3AMCFDvGRh+U5IleCXNw7NnI//kRp1dFjrn29fICntpSRpb6y3o9y84c6N9Ip2vcKH4dSk0RRAlbSsD1NjkydSSJTc4SppqmY6nr4Y43PcyFRUJBy/FhOE9vMsTkCMKpn+UyAqn9tHa0x0/Ik7PHjDC1J1MAjmZhJ7XIe35i7+1c14gUh2kWlXYJqzVaWVO4kpB5ZJ+hJpd5Xcg2Rvk8LrMolI9R1eC1sz/sbSuZ/uNDlg5qCpZE0hxlinLB+Px8HjCRt2Z+FSTDEHD7kgxMBYV/9eEI2lRbckKeQGGnpsT/+mA2wWOibcGC8QAO9en1LWvM2dYdDAIes0zAMI8tYf8S1o2uwQS/FgizZrd2+pzMM9vsjF5q+rm78SryQn155BbaLayi0b0ubk/CPW8pBAKvPM5xyWNoR2bEO8+zcgwKRtcEVvyYz3CW9O62VDxc88Y9a1UhUFt21GmvNgkXpNS02KN5uWbNkQsGU1YUfIWcAH+DlY+KzsDbxba0VFBl5sy9+1ZrdWpq7Xbvgg3hjR33lpAN2mLxK752l00yOTvBpzWFcJzUWf5Ph7yXICgknuqQGvi2u1qhNL8GNRIEglgdasGKJczvVmHdcgKZtcPc2y7UfiJCyjZN1eI6PkhcdUp+xuWYTZYNtZZp0r4GIF4/6GnXsdCk5x5v1osadPxRBEaxuzQdXLJU2wudulIZTD90gK4+xoDkr0i3jJiBLlN6ay1673r+qMJFJQB/8my0OenAV3MfrA==|920
+}//TCPSE0F0/eoA9l/TpFHX0T7DU23QNv9v2cL2GSTb9pBobxPRvuHHxVaFP1yH4ervBsc47O2MNkJ2bMQIFFYNaSOiFsvJnSHgNzm15i8DOVDJuGCis/DAdn9I6K4nJnZQjGXlcb30FPy5gRWtNnl3WpwxVfJpNMPIQvDMiL9ht6lhcqcnskbDTTRmJwkA3hATbpSNIGGpN8VrpkegOOp+OriejyJx0cIZq6wSyEUHMzTFgUE/eMoh7gpNyLDBbONb6MBHW8bnURPfwATqwmEiKpQuD+MAZAmKtpY3CIBdYfLJ5szqoQdFqdmvFEU+1fSzV+toOX5kTX5pwZ5t7sASuizuUiNPtK0DaiYoA66/3w47BuZl807Co7cTXjiQm/el0v2KoqmaN7+u+dGDsyaJaoa1Geyt8kAKLiPeFiLOg4FWjHTLAsf+YymGYI7N8m2p1vwNselNxfNdOJfXJuwg79Y50UKe0cet8JcnYKZNRiF3f0+kkvN6ZxPmTo4OEA/JSgPIKvisIy1ZsSzH0rN5l1F4DJV3pW8vRINXuQAf8VwAiomCpoap51eYygWbt3KHmKcDYeORrg4Vg6wtRrMfpZeY60Ebgs39ANsFRjPHxPa5BvLPHIla5xaUcsXo57Yq0TT8cSFcp2RiuKxZhqQjddVPWBGlg/8NPQZFehHN211GOzeUu1yubZjw1EMromylC4uSl+otlPF/qKd6jh2pERyq0t6rACIO29phV59rNuqadkvAOBbGwEfwZt0mLqG2BoqcHF+AauPpUImis11R5rUSGiV4wuTEZhDPexSwoVgproJIn7GpBS0iDhi29dFIWWKfSyRzBHwdkQOxQPctpnoQITgQ8ZCv5kQsQs2rE1XIHmnwT6SXj7fLBRrNrErdfP3VSLpgdGpI1zkeIQdnGA==|920
