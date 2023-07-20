@@ -82,7 +82,7 @@
               "=AK1",
               "=AH1"
             ],
-            "ID": "517d21e2761d461ab3a4a9c4521a2f5d"
+            "ID": "1ff228f8b8224eb683da3b0f199b75cb"
           }
         ],
         "Text": "今月校正",
@@ -120,7 +120,7 @@
               }
             },
             "Params": [],
-            "ID": "695e3835b68a4d8d9b453a7278657f06"
+            "ID": "c98ecd914968449d9ad46daff1c073d5"
           }
         ],
         "Text": "校正切れ",
@@ -159,7 +159,7 @@
         "TableName": "trn_insptool_tools",
         "RowIndex": 5,
         "ColumnCount": 62,
-        "RowCount": 30,
+        "RowCount": 22,
         "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
@@ -268,6 +268,48 @@
             "DisplayValue": "項目3"
           }
         ]
+      },
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "usage"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "28,15": {
+      "CellType": {
+        "$type": "Forguncy.ProcessBarCellType, ServerDesignerCommon"
+      }
+    },
+    "29,1": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "control_no"
+      }
+    },
+    "30,1": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "item_name"
+      }
+    },
+    "31,1": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "type"
+      }
+    },
+    "32,1": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "serial"
+      }
+    },
+    "33,1": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "maker"
       }
     }
   },
@@ -420,12 +462,12 @@
     "6,42,1,4",
     "6,46,1,4",
     "6,50,1,2",
-    "7,0,28,62",
     "6,52,1,3",
     "0,29,1,4",
     "2,29,1,4",
     "6,55,1,3",
     "6,58,1,4",
+    "7,0,20,62",
     "5,0,1,3",
     "5,3,1,7",
     "5,10,1,10",
@@ -439,7 +481,8 @@
     "5,50,1,2",
     "5,52,1,3",
     "5,55,1,3",
-    "5,58,1,4"
+    "5,58,1,4",
+    "28,15,6,18"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -485,7 +528,7 @@
           "=AH1",
           "=AK1"
         ],
-        "ID": "598fef8cbe334ec39b7af21c58d2453a"
+        "ID": "28df6e8f680e4b03bf9f5f9bfbf18867"
       }
     ],
     "AuthorizeInfo": {
@@ -500,4 +543,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//WNfZ6tHIxC1WdcuqupDq8/uslASn3n0xnnv598E1FcyfzwQug91I3Yy3TpiXlBE96sIQYUf7frJ2AilQBjXEd7DHAqJ+3QKFzBCl6/ycflXQ+uIgqq7/5a5gjXagLyhMGLDs3KokaKLH6wnFX2GHdBZDHVFQW0COq63SucHUKuILrz/BZ5/OJcXHELSzYD/fYZcyy2glSelwU3lnFhU2egilNefqSTTp8H4bksLyEfWYQIcfzU7pat1mi97l6P66ycBBnLH3xGTnPado1DNIj6HbOkuI1M63XGR1Kl93E0k2IL0ZybuSl+XbPbD3fEhVU2XdMvvPNLREUbw4YiLpOCR9WxViZ49CaLxfff8OhOhhMyiGHzg9PL92r+Pbx0cQHwtf8vi02hK5IH+R6SKlAW0W8+pzQs0by6/HeW2m8fQrZ1xFWKeEIAkq+D87J5Pw1Ng5zsCLymok/jT1v8YMhf3QJcU9sCiTNZfG17AJK518ZchpXwjvY6OmVlWPMn7UYLPwc12BguvtlZbF5va9cmyzJAyAbpF1LJzIuDeDAhzC2IHZG0UFW7ywzQOlHzORRHdWnmLn9kUBNnLUne/h3/r04qbUEZuEDQNpSsu+aBAm7Jdmc14zJsSfF+gQnhuAJV37SLI8aQ4gDXdhGwO9rlN8LdZ8CVKy5BCa+ZROvyG6v/Qfto/AvRb60UuH2ozNPbROOlMwpAg38nP9ocVm0PlL6O9rpjqDBm3L62pT1EYgbZE/86etEUJ3f4XJDhHJb8QtnB000aC+2lKSgsAdZ8Ekqh8bg6mOACWihaMgpsB4EuUYcj5I4eHvRH/Sfkbws7fk1SEr3IoVZs15DHLQrFxNIQ+D8LoNTwGcZ86iqmKaILgO6J5q4pm+5K+aABZCj51XdFeIY68skGcs0TYwPA==|920
+}//FlRJa7a+vEWX9v2mrqoycvlMM4OG34KNy6ynP5V/2gwE8mNJA9qP/ZqVESSmHzfQPKB8ZxiPXcDpgFFlKW6CztdQJ0oJ3+Fozv+Ee64BvERNUk+qE1P7LRnvS05U6YGaHjseS+Z/grt0NFYdfQ+v38oZ1MT7ZY7tf94qjGfRdKOZvnPHsfT60ocRcElQfmPW5XKLkfza2/nEfKCIVnXBZPbxh4g/XSEP9V6g7TRK9REi1ADuhoSUH6KLdpNBDWpJsJLIP5cTiWv7YaHqtjCRyJM1FGjne2Z0tiLlaveY+VuDAUE/Tad9xAJerXvu1LdnREDXWOd2xIE0eEPA2Jb34Hao/Oermg6ZLC6Ub/6bXoiVaVYsBArfgCmc/hCuQXfkSyl/3qTETM3NFudD7Z/OaFoXpnm+oSwwpQQlNeD+9p3fExXrX4AJ4dZeu8NZ+xMQJnIF8idjlDR2znUXcpDcuav+GRHrgy8Szx36/XgVYhEBIlB5BDX/q9ClZkCRcKWvClebgZzvIPcl6oySZD4DiqPXnidFqXDYL/ZZbf0ZqBePz2n1YUZbi9SvxobCaGe9ogcW5HYxFtkUGEHwwMPEFxlZHRHv+qXz9TpmfFIfhNqOu7nisDzPC4ZH5ieVamyUb2/iqpler3JNzqw50WkHK4ib9u3SRMT5tVFkDx82/ajl45tjtZ5mKTz0S0AXXe1EDQ/fBEZG1iUqlbvHKeOUSBfo8Vz9G0EHe/nb0CNzCSqmcFhYP22zit0fGy9hYeYKJfb+15I8J5BpZhoQZv2fXoMiIm9YdESFlivBno1uYyYavg2kLynZBR2LZuYaV9dX+bRn9dJ2zU5h3E/ukacoDorjH9ex5jUek+mKBN3IWpS/SjTRhVt7S0zA+fz0xnYcdeKuxR/oaggEYP/cYzkDnQ==|920
