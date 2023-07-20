@@ -81,17 +81,18 @@
     "Count": 20
   },
   "Values": {
-    "1,1": "番号：",
-    "2,1": "ロール：",
-    "4,1": "担当者：",
-    "5,1": "品証担当者:",
+    "1,5": "管理部署：",
+    "2,5": "ロール：",
+    "3,5": "担当者：",
     "6,8": "追加",
     "6,14": "キャンセル"
   },
   "AttachInfos": {
-    "1,5": {
+    "1,6": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -111,7 +112,7 @@
         "DataSource": "mst_insptool_management_department",
         "ValueColumnBindingInfo": {
           "TableName": "mst_insptool_management_department",
-          "ColumnName": "ID"
+          "ColumnName": "code"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "mst_insptool_management_department",
@@ -120,37 +121,48 @@
       },
       "BindingInfo": {
         "TableName": "mst_insptool_personincharge",
-        "ColumnName": "control_code",
-        "RelationBinding": {
-          "RelatedTable": "mst_insptool_management_department",
-          "RelatedColumn": "code",
-          "DisplayColumn": "name"
-        }
+        "ColumnName": "control_code"
       },
-      "DataValidationInfo": {}
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
     },
-    "2,5": {
+    "2,6": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
-        "SavedValidators": [
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "AutoFilter": 0,
+        "ValidateItem": true,
+        "MaxDropDownItemCount": 3,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "Items": [
           {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+            "Value": "担当部署所属長",
+            "DisplayValue": "担当部署所属長"
+          },
+          {
+            "Value": "測定機器担当者",
+            "DisplayValue": "測定機器担当者"
+          },
+          {
+            "Value": "品証担当",
+            "DisplayValue": "品証担当"
           }
-        ],
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+        ]
       },
       "BindingInfo": {
         "TableName": "mst_insptool_personincharge",
         "ColumnName": "role"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
-    "4,5": {
+    "3,6": {
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "DisplayColumnName": "FullName",
         "Columns": 7,
-        "CustomColumns": [
-          "上長"
-        ],
+        "CustomColumns": [],
         "SelectOnly": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
@@ -158,20 +170,8 @@
         "TableName": "mst_insptool_personincharge",
         "ColumnName": "chart_in_person"
       },
-      "DataValidationInfo": {}
-    },
-    "5,6": {
-      "CellType": {
-        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
-        "Columns": 7,
-        "CustomColumns": [
-          "上長"
-        ],
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "mst_insptool_personincharge",
-        "ColumnName": "quality_cip"
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
     "6,8": {
@@ -214,36 +214,42 @@
       {
         "FontFamily": null,
         "FontSize": -1.0,
-        "HorizontalAlignment": 0,
+        "Formatter": 0,
+        "HorizontalAlignment": 1,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "FontFamily": 1,
+        "FontFamily": 2,
         "FontSize": 14.666666984558105,
-        "HorizontalAlignment": 2
+        "HorizontalAlignment": 3
       },
       {
-        "Formatter": 3
-      },
-      {
-        "FontFamily": 1,
+        "FontFamily": 2,
         "FontSize": 14.666666984558105,
-        "HorizontalAlignment": 0,
+        "HorizontalAlignment": 1,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "FontFamily": 1,
-        "FontSize": 14.666666984558105,
-        "HorizontalAlignment": 0
+        "FontFamily": 2,
+        "FontSize": 14.666666984558105
       },
       {
-        "FontFamily": 1,
+        "FontFamily": 2,
+        "FontSize": 14.666666984558105,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
         "FontSize": 14.666666984558105,
         "BorderBottom": null,
         "BorderTop": null,
@@ -253,18 +259,47 @@
     ],
     "Types": {
       "Strs": [
-        "Left",
+        "[AUTO]General",
+        "Right",
         "Meiryo UI",
         "Center",
-        "@"
+        "Left"
       ]
     },
     "CellStyles": {
-      "1,1": 0,
-      "1,5": 1,
+      "1,5": 0,
+      "1,6": 1,
       "2,5": 2,
-      "4,1": 3,
-      "4,5": 4,
+      "2,6": 3,
+      "3,5": 2,
+      "3,6": 4,
+      "3,7": 5,
+      "3,8": 5,
+      "3,9": 5,
+      "3,10": 5,
+      "3,11": 5,
+      "3,12": 5,
+      "3,13": 5,
+      "3,14": 5,
+      "3,15": 5,
+      "3,16": 5,
+      "3,17": 5,
+      "3,18": 5,
+      "3,19": 5,
+      "4,1": 5,
+      "4,6": 5,
+      "4,7": 5,
+      "4,8": 5,
+      "4,9": 5,
+      "4,10": 5,
+      "4,11": 5,
+      "4,12": 5,
+      "4,13": 5,
+      "4,14": 5,
+      "4,15": 5,
+      "4,16": 5,
+      "4,17": 5,
+      "4,18": 5,
       "6,8": 5,
       "6,9": 5,
       "6,10": 5,
@@ -287,7 +322,7 @@
       "7,18": 5
     },
     "SheetStyle": {
-      "FontFamily": 1,
+      "FontFamily": 2,
       "FontSize": 14.666666984558105,
       "BorderBottom": null,
       "BorderTop": null,
@@ -298,10 +333,9 @@
   "Spans": [
     "6,14,2,5",
     "6,8,2,5",
-    "1,5,1,5",
-    "2,5,1,5",
-    "4,5,1,14",
-    "5,6,1,13"
+    "3,6,1,14",
+    "1,6,1,14",
+    "2,6,1,14"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -317,4 +351,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//TCPSE0F0/eoA9l/TpFHX0T7DU23QNv9v2cL2GSTb9pBobxPRvuHHxVaFP1yH4ervBsc47O2MNkJ2bMQIFFYNaSOiFsvJnSHgNzm15i8DOVDJuGCis/DAdn9I6K4nJnZQjGXlcb30FPy5gRWtNnl3WpwxVfJpNMPIQvDMiL9ht6lhcqcnskbDTTRmJwkA3hATbpSNIGGpN8VrpkegOOp+OriejyJx0cIZq6wSyEUHMzTFgUE/eMoh7gpNyLDBbONb6MBHW8bnURPfwATqwmEiKpQuD+MAZAmKtpY3CIBdYfLJ5szqoQdFqdmvFEU+1fSzV+toOX5kTX5pwZ5t7sASuizuUiNPtK0DaiYoA66/3w47BuZl807Co7cTXjiQm/el0v2KoqmaN7+u+dGDsyaJaoa1Geyt8kAKLiPeFiLOg4FWjHTLAsf+YymGYI7N8m2p1vwNselNxfNdOJfXJuwg79Y50UKe0cet8JcnYKZNRiF3f0+kkvN6ZxPmTo4OEA/JSgPIKvisIy1ZsSzH0rN5l1F4DJV3pW8vRINXuQAf8VwAiomCpoap51eYygWbt3KHmKcDYeORrg4Vg6wtRrMfpZeY60Ebgs39ANsFRjPHxPa5BvLPHIla5xaUcsXo57Yq0TT8cSFcp2RiuKxZhqQjddVPWBGlg/8NPQZFehHN211GOzeUu1yubZjw1EMromylC4uSl+otlPF/qKd6jh2pERyq0t6rACIO29phV59rNuqadkvAOBbGwEfwZt0mLqG2BoqcHF+AauPpUImis11R5rUSGiV4wuTEZhDPexSwoVgproJIn7GpBS0iDhi29dFIWWKfSyRzBHwdkQOxQPctpnoQITgQ8ZCv5kQsQs2rE1XIHmnwT6SXj7fLBRrNrErdfP3VSLpgdGpI1zkeIQdnGA==|920
+}//FTjg52JElczAzNF14o4Y1sBmvQKdOJ2n3H6yZpRv35cj/dW/KLoFlVZX6nz8c5aCyQFY1nYOyY6uDgCKAyfMWY91INsEgeWfXwQPzyBc7uz2JOSpI2BPyReonZKWW89ZG+MMelnKsGvYvuLnuR0wHLwN4OxKxuoK+OcHxeqiDkbjJER0EDAf34cDGnihaOTW9gUxKdYIBxS9jq1Q/Cc8RKCYCZa/yKG2kj8U17n4yZcyLTLxcIGUeLgy9jFK5g44ezhCNwx63ViMD2sQHFrJIyiBQDmcZIl+WbRyuwm3MMebn9/a3tD/zCuUHnsB7aoAYX2I/EZp7KrlvOS47EVwzqCFUXnnwNjPB9rWqNb6LWbrjwmSmTX0euJxoxq8riJYRZYaIA7B9Sk6Q74EGEyeHdb+UdrUHzr1BBnDlD4MigK7pAyHVi7WYklVfX37pZNmutVctfzA3VqksuDp9MKQKe+EMh5/JA7xn0Hk9nNi+t2VDfURIwGUWZCRbU5VwgFz2JbMegCHhKan3WxMGV8WbkNSfLSapjm0WhW5ycqWX6/zTVvfISX88+WjlJw9gUTVO3NGh5rQp2QmrMdVDUOHYtrYfo04RWKb7uRkqcrr8Dh7/tN7pk9UscOJLnfVXty6NSmQEHRr4IDVxLAJL0Y/CEhJ247feFqRkzbbNXJVgBjRN5kKesLjINHhzUpllDi306xsrz1UvtjTWR+dd9KKFe/2EAHdFaAnfo5Rkzo+a33RxeFAsdVvU9Bkry04kAqn226JqOGvTXYpebLhHz7qN2Da6uxQCitqtrr2pr55KPbcSSzOsfZaLvNn9B/syEKsZmuaE1YQvmPk5H0UJ64PlFQFhquI3rMlbj2airLVvJRFuQUccEiqL0R0MYX0rkusn9hxxJ2uOPnlACm713uMXQ==|920

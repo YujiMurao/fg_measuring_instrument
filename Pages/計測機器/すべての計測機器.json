@@ -218,7 +218,7 @@
             "Params": [
               "=P2"
             ],
-            "ID": "021904e31bd640688cc7a2955fd4b5a6"
+            "ID": "1686965fed3842b3a2debcd24ffe9f3a"
           }
         ],
         "Text": "検索",
@@ -615,7 +615,7 @@
                 }
               }
             ],
-            "ID": "6007d5f939de48b8845035417f91b307"
+            "ID": "243b7fe5a98749e296b717b08cfff3c6"
           }
         ],
         "Text": "列のオプション",
@@ -630,27 +630,6 @@
     },
     "7,0": {
       "ListViewInfo": {
-        "CurrentRowChangedCommandList": [
-          {
-            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_insptool_calibration_history",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "ColumnBindingInfo": {
-                "TableName": "trn_insptool_calibration_history",
-                "ColumnName": "管理番号"
-              },
-              "Value": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=すべての計測機器!A9"
-              }
-            },
-            "Params": [
-              "=A9"
-            ],
-            "ID": "7a2ae6d6a8a14178a282d191fa795d28"
-          }
-        ],
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_tools",
         "RowIndex": 7,
@@ -817,8 +796,8 @@
       "CellType": {
         "$type": "Forguncy.TabControlCellType, ServerDesignerCommon",
         "Tabs": [
-          "InstrumentsInfo",
-          "history"
+          "history",
+          "InstrumentsInfo"
         ]
       },
       "BindingInfo": {
@@ -2267,4 +2246,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//TR9puQlD8PWdyTm5h7+vRtsL+w6SL3wkVeKo8WZuwYYIUOwtGjML2GgFIAXzkEnJkLRbqju67h5brIEuapUoVwnaHna7jYxB5177Y3dLO9/5OqxZ39MuCtr70punlt/gHfMSJ1gbN2LwHeQnvD+gDtdGnWnPMy7vvj6RDZRkn7DfxCwfVhc+wHxHiVKORd7jsCyY9UZCE0Ng8ZCB9u+//NkA5NLsw4CLV4YSCM7M3lHxaKQpUbySUmk6MitGGAgcZQes0ZNA3NHehINVihMawWLfKAPLuEK+4AjH4+fKMttcwJyVD+upHSDnpj9fum8KLjbNY+UR2KiDsYGNTqwCgeldnMrzmxwkTtMGi0CwjXdOtZUFEepOwme4gY7PXOabqFLFGFquMN8tn0Ia7GxG4N+r82fhspetuBPrjFKvKdG6oFYY+zeJim92VIMkbcFXOnLF1HQSmAzoiH6SlWGitfgMDdectd4D/taRihfvz5Vz09a/a631TI0BOpr4z4LQHqFEJeRlFeaRZeeFik599yIFN3SXSahMevpk5fFIUXCjYiGdOgfVJcQixbv5X4VL+BR9aj3y3p79+ljPa1hcBc+dt1ai3sOU8sbTDmsOfLgb7muQ+lUBHgJn8n28uEKRu2mI4WC9yN1iRqDLCONu7jO9ityUUTSG9aRuHvEBiPMnWLQfpctomk3vR+xCfyy0vtp6TPcjEupuYXohikw/1L92GLAzG/paxaEdbmCM/GOqNxXf+IfcW/Ucpbdt72nmHk4zxUFi097v2boO/wM4CNDESvLH9799iKS6Kt9it+wDhuqaNVNeR2ypEFlsMC1A70LB0XekQ/i3rmil8x6xcteUlegkTJX77/p44Cumwwo2GS32I7rPzEjCjezTvY0ubYdu+uKxBe8YzChVVe9FyA==|920
+}//INimHVdOCGjUH7O5FWAY1M9NBqIx4iOxPQFwmN7OW4V6Y8iezle3veXSGcTfnp3nDu451lT07kAoIgUizmaej6lHgxXHNMv+FTNomgXR6mk6Rqn8+6crZJzNmJVfEycj2oJh/BrKih+O+pM/voqb7FDg0wU6aMWJQ1TjXpMbqzOJU6Lgxl2uHT+KAtqM12KcDEEsMAWXyt2FJGHT5Jx8Ek/TZismq4b8FZrXFPofD7txCFJu7cJyMv+25qvEeRfPihDwKMge+3YgbNnVA6wwQAEXXYhFrjCvQXaaK8PoyxMwme/wMapI+1WTUPACYvc9ZUFNiC2QZgOp9RPHZDZ7RUvXpLsnGq8raJGsvbmYxgxmAuqFiNXvHQKhMsh08OIPiU8IcRxJ7xIV4fd02lOB4iMvNNEOKvzX44DEqoblx4J8XK5mCtLrHR26pL0vx+f/+jDrSkytXVrDszomhv4ZJN8Dpp4m0lWBFhb33cDZrsf2o7190fv/V7zNOMlEuAlOPQtSqvIImjORqt8YawyPRTijX3us15m0WjgN+L+zlO19gpjZvFnWCCED+gOhivWeu7IYt9VmMfAmk/AMUD3X7JE/5s9yUydEZnK/XK322qdFETM6ZmB35+v/z4y6a082eKduSyv3lI8HFQgN79ZPI9nTZjMFBtYZhAQn8tf2JoTcb3Zdb5a1F7o1uFbrkmMWjLSk3slvHjUxANcM7aBVOR4ol9UB78jQ65ikUF0BBkNC2Ql0x8OsHkLkUEnBlvxiGPqgVkSikodfQfuOUw9GvA8XR3PoD1KCuRROlJYVogmnhQTn7rKSIkPP175LE3Vnsqgo3sdOnAy3BeRQto2mcCRQDB3wb7bZybbWinkJe0kX452QkT/O4TMD1Gpa8W4P5DVymulQqyBvBAatr9ugxw==|920
