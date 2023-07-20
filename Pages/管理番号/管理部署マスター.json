@@ -148,6 +148,27 @@
   "AttachInfos": {
     "0,0": {
       "ListViewInfo": {
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "mst_insptool_personincharge",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "mst_insptool_personincharge",
+                "ColumnName": "control_code"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=管理部署マスター!Z6"
+              }
+            },
+            "Params": [
+              "=Z6"
+            ],
+            "ID": "9ed3afe18ed6487d87833d0ffab35e88"
+          }
+        ],
         "ShowColumnHeaderInDesigner": true,
         "TableName": "mst_insptool_management_department",
         "ColumnCount": 17,
@@ -268,6 +289,50 @@
           "Color": "Background 1",
           "UseCellTypeForeColor": true
         }
+      }
+    },
+    "14,20": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "mst_insptool_personincharge",
+        "RowIndex": 14,
+        "ColumnIndex": 20,
+        "ColumnCount": 26,
+        "RowCount": 13,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー2",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "15,20": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "role"
+      }
+    },
+    "15,27": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "chart_in_person",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 1
+        }
+      }
+    },
+    "15,34": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "control_code"
+      }
+    },
+    "15,38": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "id"
       }
     }
   },
@@ -442,16 +507,16 @@
         "BorderRight": 2
       },
       {
-        "FontFamily": 0,
-        "FontSize": 14.666666984558105,
-        "Formatter": 12
-      },
-      {
         "Background": 10,
         "Foreground": 14,
         "Formatter": 12,
         "HorizontalAlignment": 5,
         "Underline": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "Formatter": 12
       },
       {
         "Background": 10,
@@ -1063,32 +1128,6 @@
       "14,17": 19,
       "14,18": 19,
       "14,19": 19,
-      "14,20": 4,
-      "14,21": 26,
-      "14,22": 4,
-      "14,23": 4,
-      "14,24": 4,
-      "14,25": 4,
-      "14,26": 4,
-      "14,27": 4,
-      "14,28": 4,
-      "14,29": 4,
-      "14,30": 4,
-      "14,31": 4,
-      "14,32": 4,
-      "14,33": 4,
-      "14,34": 4,
-      "14,35": 4,
-      "14,36": 4,
-      "14,37": 4,
-      "14,38": 4,
-      "14,39": 4,
-      "14,40": 4,
-      "14,41": 4,
-      "14,42": 4,
-      "14,43": 4,
-      "14,44": 4,
-      "14,45": 19,
       "14,46": 19,
       "14,47": 19,
       "14,48": 19,
@@ -1123,35 +1162,10 @@
       "15,14": 5,
       "15,15": 5,
       "15,16": 5,
-      "15,17": 27,
-      "15,18": 27,
-      "15,19": 27,
-      "15,20": 5,
-      "15,21": 5,
-      "15,22": 5,
-      "15,23": 5,
-      "15,24": 5,
-      "15,25": 8,
-      "15,26": 5,
-      "15,27": 5,
-      "15,28": 5,
-      "15,29": 5,
-      "15,30": 5,
-      "15,31": 5,
-      "15,32": 5,
-      "15,33": 5,
-      "15,34": 5,
-      "15,35": 5,
-      "15,36": 5,
-      "15,37": 5,
-      "15,38": 5,
-      "15,39": 5,
-      "15,40": 5,
-      "15,41": 5,
-      "15,42": 5,
-      "15,43": 5,
-      "15,44": 5,
-      "15,45": 5,
+      "15,17": 26,
+      "15,18": 26,
+      "15,19": 26,
+      "15,20": 27,
       "15,46": 5,
       "15,47": 5,
       "15,48": 5,
@@ -1167,8 +1181,8 @@
       "15,58": 5,
       "15,59": 5,
       "15,60": 5,
-      "15,61": 27,
-      "15,62": 27,
+      "15,61": 26,
+      "15,62": 26,
       "16,0": 5,
       "16,1": 5,
       "16,2": 6,
@@ -1186,9 +1200,9 @@
       "16,14": 5,
       "16,15": 5,
       "16,16": 5,
-      "16,17": 27,
-      "16,18": 27,
-      "16,19": 27,
+      "16,17": 26,
+      "16,18": 26,
+      "16,19": 26,
       "16,20": 5,
       "16,21": 5,
       "16,22": 5,
@@ -1230,8 +1244,8 @@
       "16,58": 5,
       "16,59": 5,
       "16,60": 5,
-      "16,61": 27,
-      "16,62": 27,
+      "16,61": 26,
+      "16,62": 26,
       "17,0": 5,
       "17,1": 5,
       "17,2": 6,
@@ -1320,7 +1334,7 @@
       "18,22": 5,
       "18,23": 5,
       "18,24": 5,
-      "18,25": 8,
+      "18,25": 5,
       "18,26": 5,
       "18,27": 5,
       "18,28": 5,
@@ -3146,7 +3160,6 @@
     }
   },
   "Spans": [
-    "14,41,1,4",
     "1,20,2,5",
     "1,26,2,5",
     "2,32,1,18",
@@ -3159,7 +3172,16 @@
     "1,0,1,2",
     "0,0,1,2",
     "0,2,1,2",
-    "0,4,1,13"
+    "0,4,1,13",
+    "16,20,11,26",
+    "15,20,1,7",
+    "14,20,1,7",
+    "15,27,1,7",
+    "14,27,1,7",
+    "15,34,1,4",
+    "14,34,1,4",
+    "15,38,1,2",
+    "14,38,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3169,11 +3191,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "mst_insptool_management_department",
+    "RelatedDataTableName": "mst_insptool_personincharge",
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//+6ln9H7B4zKdUCWZOcdkT2hqJLVNmTX3Vty1ve6+MrrQ1QzdL3DQohpdFrKg2CCcMQLHv+jzMquzqAqCzoGWCusYX8JojeEC0f3nlpuLch/tpFDvyzrhfSSVnPNjdxFWJ8Qc8aD1VgkT3JQLKRdnwCe2PO2VwB+C2pz68QsoinnUQzmwGLgqyQqTeR5iT9hWQNSzaLBWatbS2yoLizMtR6OJrEaBuOVu6/qe6ZE9Sh/CJMXSbF2iw54qT4XLpzm+mA6qqT+G2I5QRyOyVpR5oM0yQhW3DciG2Mn4P1WMmx6rtNXTSTt+H3HShQvWDCuZCzi8cD1/hbz4CcvT1SQUD8zugnCawt6VHEsSLy5yd2g+mImYkGoOmzfRk0Z0BgY64onermHEaxq2o9D6xPtpxWTRyPaQtP+zaUEvhzEP9o2Irj2BqVtt74mwT02cwqTCaJKsLiJAtp/xE7JBnC3Rv8dmLas4Z0QzxNMVX1eh4zT54syewFldQ0ElvFW46en7I2QwaeWZKhLbliyimlXLeqolttzfKg4i8hHWYZCwsR4vRhpby0hb+OUcRvZn4703W9nsU6Av3bBWr7c4pHDcNXGTS0qsKhGeyoulEA+J9VVNcs132E7CeAXOnpxczdoyiT7BHvIwMKvODGINOOxYGwUE+FjMtB4LKzGXKGmvB12ggQmx+Rk+MwjvBA4PJA7490dQtC9AaZ3pb/G5qu9Jdm2aFCyjAtXO6lOoXL1BNLfpfjlKizG19z6pU/C+RzvCp13F9WjwZ29nKMZNHbQMewwggmHBINvgTFuIQYs3928gdO195AYGnalMrWMkWmOxuZazMOqC2zrNTk832aV6fUrh8o90M4GPGLY1/phrjK6nM2hGzeLdIt8seqAJDVr5QFx4/CKRaoYnVaNqwIGsaw==|920
+}//9TrvL0TUGvWVNMaUeEkhcsTKOWsNWMmAvIC81wqeulSdWiWnRays9Y+bK0CAAKdjVEtiSxaamv9/o5UNDpBjNx+Nwy0UhVumdp/Mp0k8d+MurRxhDraO0gMj9ekPrznA9/WBTo93v1DTBD3q4lmc0csB7SwXaogJt2swYO5cG3JRJgV4O4GjhLvik2YhCuM/YrqGXsGXZQTkDGP2N4g4feJLSvCemMI7wwFV1S+1pxBHkOjW6HwQuskUXwkCBXgyEhaBIovto0EJGiUGmAeaP2q0blsrQem6pExSns7uGFQsZ2RJ17c6T5uvcwTSVyjfGGeqAoDdF3Ydl0D1P0LQO96TzExLtScxAV2td/XiGFqigsjJb628w3VajUmb9iB81RRCvUjUtWXWhvcXfZF45uRBVWpPO+Jh4yRkAbs+1Wo9pwz+MTbh1bAjZkB639JvSbx2ewrbEAFkAPpUHqA4JS2BUDAcfciqo/lukx/gyekwFFRrNJ+R3IqR99Uu2rKuQIC1GZV99D/wI+J3bwkBpnxNblIYIMxz27DZW8ZJvStn2v2hMebrDZbGaPP5eGOEUUC2rRarcvGiBUV30STVtNZe5xSXtbkOlW4WwcyGcLI+jVufe/I27GKRtdHMrngCc2Ee25aMrTw3sOmhsCMQvwih/3ul/OXBhaEmosoVIVy+EBhJV9EfB6uGxQod9H6pkgBmV5C//9h78zw6S20GNGumRqeHwKWd8RAY/2BNL0hZ969pkdptwgcoPFjgWF5J4OMEal6px1L//aaPDT6T+D2zT4a6hU4rhO2TXZGTyu1roulgQ4CbE4y6mEQXOtrcEvxTgGYIByDxlFCt0FlrZj1GdJTgUXPwHVCyNb7YOu8l4Th9pvmmafBjZSyEMJ7YQfxIx3RWIgXvPfSnabznsg==|920

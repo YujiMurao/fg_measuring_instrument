@@ -110,7 +110,7 @@
     "Count": 52
   },
   "Values": {
-    "1,1": "管理番号",
+    "1,1": "管理番号２",
     "1,17": "使用可否",
     "1,35": "使用禁止理由",
     "4,1": "名称",
@@ -133,13 +133,6 @@
     "26,1": "更新日"
   },
   "AttachInfos": {
-    "1,6": {
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
-        "ColumnName": "control_no"
-      },
-      "DataValidationInfo": {}
-    },
     "1,23": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -165,7 +158,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=InstrumentsInfo!X2"
+                        "SerializeProperty": "='InstrumentsInfo (2)'!X2"
                       }
                     ]
                   },
@@ -178,7 +171,7 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=InstrumentsInfo!X2"
+                          "SerializeProperty": "='InstrumentsInfo (2)'!X2"
                         },
                         "PropertyType": 3,
                         "Value": "Accent 1 0"
@@ -186,22 +179,23 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=InstrumentsInfo!AP2"
+                          "SerializeProperty": "='InstrumentsInfo (2)'!AP2"
                         },
                         "Value": "ー"
                       },
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=InstrumentsInfo!AP2"
+                          "SerializeProperty": "='InstrumentsInfo (2)'!AP2"
                         },
                         "PropertyType": 0,
                         "Value": false
                       }
-                    ]
+                    ],
+                    "Disabled": true
                   }
                 ],
-                "ID": "b40ac763-25f0-4f65-a9f7-c802118e5e91"
+                "ID": "018860b1-e0b8-4406-bd27-1c7fdfd3b0f4"
               },
               {
                 "CommandList": [
@@ -211,7 +205,7 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=InstrumentsInfo!X2"
+                          "SerializeProperty": "='InstrumentsInfo (2)'!X2"
                         },
                         "PropertyType": 3,
                         "Value": "#FFFF0000"
@@ -219,7 +213,7 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=InstrumentsInfo!AP2"
+                          "SerializeProperty": "='InstrumentsInfo (2)'!AP2"
                         },
                         "PropertyType": 0,
                         "Value": true
@@ -227,22 +221,19 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=InstrumentsInfo!AP2"
+                          "SerializeProperty": "='InstrumentsInfo (2)'!AP2"
                         },
                         "Value": "%Null%"
                       }
-                    ]
+                    ],
+                    "Disabled": true
                   }
                 ],
-                "ID": "623d0114-6e1b-416a-aa02-cd57d4c84339"
+                "ID": "13bbde02-2359-409a-bfbc-6d0bb935e47f"
               }
             ]
           }
         ]
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
-        "ColumnName": "usage"
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
@@ -308,10 +299,6 @@
           }
         ]
       },
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
-        "ColumnName": "prohibition_reason"
-      },
       "DataValidationInfo": {}
     },
     "4,6": {
@@ -344,10 +331,6 @@
             ]
           }
         ]
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
-        "ColumnName": "item_name"
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
@@ -420,15 +403,7 @@
     "19,6": {
       "CellType": {
         "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "InstrumentsInfo",
-            "PassValues": [],
-            "Disabled": true
-          }
-        ]
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
@@ -1661,10 +1636,6 @@
     "19,35,2,3",
     "22,1,2,5",
     "26,1,2,5",
-    "1,6,2,10",
-    "1,23,2,10",
-    "1,41,2,8",
-    "4,6,2,10",
     "7,6,2,10",
     "10,6,2,10",
     "13,6,2,10",
@@ -1681,7 +1652,11 @@
     "13,41,5,11",
     "24,1,2,5",
     "28,1,1,5",
-    "19,38,10,14"
+    "19,38,10,14",
+    "4,6,2,10",
+    "1,6,2,10",
+    "1,41,2,8",
+    "1,23,2,10"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1701,15 +1676,15 @@
   "CustomNames": [
     {
       "Name": "bugId",
-      "Formula": "InstrumentsInfo!$G$31"
+      "Formula": "'InstrumentsInfo (2)'!$G$31"
     },
     {
       "Name": "comment",
-      "Formula": "InstrumentsInfo!$AM$20"
+      "Formula": "'InstrumentsInfo (2)'!$AM$20"
     },
     {
       "Name": "statusId",
-      "Formula": "InstrumentsInfo!$G$8"
+      "Formula": "'InstrumentsInfo (2)'!$G$8"
     }
   ]
-}//KBtiXfmQPDwiBDZ7ezcZ8hiZ7LnDDQCuqLYeL09Wh1mo2ZIJ/81SwvYrnhatelG6AjyIVLbgB9Psg1n6tnZnAydrRBq+ATQg0zA985zdw+oAqA2jTWXJgVRpBoULS7itp1nyfGher7YO/Rn8dL+dL+Qf3Lk+fjpDiq+RRcbBdefwhpaGoxRMNNGiML8WQ5S8KSV9De9bCVd4nj3eRl7AAMIptYzHoZwWFmEjYkU/y0VNS31lFNvbM2NLXeN1O8CCQnnwzcYJf0N42iZ/V6E/LuSJY5KD9SGOp7Qt3pPURIzjCz9QkTpgrB7h7BfKt5kGV/h6PA61FX13QU8s5dIQGXt0fLEUzX0SHXGnYrJr1NBexsSLYSub+WaVMI68EFTvnrF0Iw1vuBJqZ38C1aSilUNdU0dcWObfTZqA/hyUEgIJh9S2Ta612FzzU0s/Olizg4oHps2PMmE47M/1FFWrJW437QPay6xts7onctfQJxX/lWzAAXXQRGmOw2Xu0rAHTJMKaO4Gjd7iM4ZjGUeIJg6CRSe5/B4XnWvI/ai2s7+p7RjZEFc7uBnWK0CMozy+t3/DPmad7vrXf3fDYSPzBwwvFASkSO5Cz3oMLPC+4XK4KRc3FbboogBIroxIBHZnL2EvWN1GPxzfQiMOA2OyP4NTMl5p0uT30f8LgQIMXdGjcDz5z7JMLacEf50VuEPAOYabJ+CD49ROTA4bUvaPWkMoQ2GAjmPOUqs1ouALljGAwB5hD1FxqCVEs7tPpstmN9mQWpAwn8ws/65Qk2tS9DfvbsSg/GKwvVqPwvJbyVFH8nId2k8KPaPjZI4pCytn8wO+FwvMQfAxXuhmF5Gsl3VBTQO98ymFNiZYUBG4xg/03ykHLfG8g6ENCpX2VmsBD3t51cxK2WVteks8+PIlkw==|920
+}//39EwrYVAJBFbNUvN0mNheU7MkKTZLrmHO7+qMMn8FX2F5q8N7/zXMG4snDerZjUfaRxc6fa0Fp64h7LHafYnnbCCe+gP8gMBqPo9WlhjonHBY5zjFdABjZF95tUbUNtRM3YYnIJc7XgfD12RWRCkKmahFm1BgONbBsxKSeJ/uu58rKu8DopYheLaJlB7tSddTsH8L8EjwNIqIEmI9qzTEgYmt3YbzWpW0JjwLC0H8eQ24TYucotvHW0Q92nb8EcVMjQ2pJe0ddXEOPwGnr3EscCT0tlM3CdVf9NQ1yzQFD5ySAwYcoI0BsYXGLpiw5HkzzVLprtj+17MQ0Oj54CuEZOSB5Q6tImG5nEr9z6dgvt8APqOy8BmSmN1zFG4P88m6L3nDRVTyTdDfRMRoS1EGpWOfvR2GB+bm80k/HY1lN+n2Lzj0wstYM4HPuIwyFdIAs5DeMfltAgio6L1kJCVBOje6FvM7bO54t2rgP4xPpg6F+rNBKaH0k8wxZgM6R+4/uYsrhfSJgTJDl+iBqde8umEo+aZUXXUzaukD8c8L67MXrxmGL5kaoQh+x4iZmRjepM8Zrv+GSQMl0FZca7VeAXUDKAhBcQpFCBINYCH1s0o/DD/a+JGar1p+cJd5c8QtSv8+Vyj/f8chRbjKRk/w4RgkQRIQ3OKUxmv8juvsMlcM+NBSJmilxYuBWNlnlPtHwO7iYSrzomuWkyEWsNoRoaVHLbUcXz/E9utlh6Wcfmpa8jD1gADFdpY7r8dZD2NSDhq7QlojTBEz/Gbc9KZKoKfzSwDGR77b0Edu54zPy4lACvXUfBl6o1HQ6euD1suxkVo5yN3NRXGT/l0T3U+fLtP4kLQLYg31rfIZ7DYzXlvyy1BF5eQgItfZqC8dUnVaGzfiOQpKgayU5PqmUd1Ag==|920

@@ -255,7 +255,7 @@
             "Params": [
               "=P2"
             ],
-            "ID": "c66b025b27134b008d2a024d80953bf7"
+            "ID": "1695e5d80d394f8a8d04bd074906f1e2"
           }
         ],
         "Text": "検索",
@@ -283,7 +283,7 @@
               }
             },
             "Params": [],
-            "ID": "676a189db9314408888a1d30f7fc1760"
+            "ID": "3d180202a4e34c37819ffc41ad7b6cfe"
           }
         ],
         "Text": "クリア",
@@ -335,19 +335,14 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "trn_insptool_tools",
+        "DataSource": "mst_insptool_management_indicator",
         "ValueColumnBindingInfo": {
-          "TableName": "trn_insptool_tools",
-          "ColumnName": "n1"
+          "TableName": "mst_insptool_management_indicator",
+          "ColumnName": "devision"
         },
         "DisplayColumnBindingInfo": {
-          "TableName": "trn_insptool_tools",
-          "ColumnName": "n1",
-          "RelationBinding": {
-            "RelatedTable": "mst_insptool_management_indicator",
-            "RelatedColumn": "devision",
-            "DisplayColumn": "name"
-          }
+          "TableName": "mst_insptool_management_indicator",
+          "ColumnName": "name"
         },
         "CommandList": [
           {
@@ -368,7 +363,7 @@
             "Params": [
               "=A4"
             ],
-            "ID": "5d2e8158bee042dfb55509e13d3cc6e4"
+            "ID": "dad8d0ad1555412ba3646a3087768dd1"
           }
         ]
       },
@@ -396,19 +391,14 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "trn_insptool_tools",
+        "DataSource": "mst_insptool_management_department",
         "ValueColumnBindingInfo": {
-          "TableName": "trn_insptool_tools",
-          "ColumnName": "n2"
+          "TableName": "mst_insptool_management_department",
+          "ColumnName": "code"
         },
         "DisplayColumnBindingInfo": {
-          "TableName": "trn_insptool_tools",
-          "ColumnName": "n2",
-          "RelationBinding": {
-            "RelatedTable": "mst_insptool_management_department",
-            "RelatedColumn": "code",
-            "DisplayColumn": "name"
-          }
+          "TableName": "mst_insptool_management_department",
+          "ColumnName": "name"
         },
         "CommandList": [
           {
@@ -429,7 +419,7 @@
             "Params": [
               "=A5"
             ],
-            "ID": "9903e42d857e414c82912e4803852b93"
+            "ID": "3f0035a973cd4b8b840da6bd74e8f421"
           }
         ]
       },
@@ -454,19 +444,14 @@
             "DisplayValue": "項目3"
           }
         ],
-        "DataSource": "trn_insptool_tools",
+        "DataSource": "mst_insptool_class_code",
         "ValueColumnBindingInfo": {
-          "TableName": "trn_insptool_tools",
-          "ColumnName": "n3"
+          "TableName": "mst_insptool_class_code",
+          "ColumnName": "class_code"
         },
         "DisplayColumnBindingInfo": {
-          "TableName": "trn_insptool_tools",
-          "ColumnName": "n3",
-          "RelationBinding": {
-            "RelatedTable": "mst_insptool_class_code",
-            "RelatedColumn": "class_code",
-            "DisplayColumn": "class_name"
-          }
+          "TableName": "mst_insptool_class_code",
+          "ColumnName": "class_name"
         },
         "CommandList": [
           {
@@ -487,7 +472,7 @@
             "Params": [
               "=A6"
             ],
-            "ID": "faec315c6b0d4d059475bac538233b3f"
+            "ID": "a147ad14aa114dbf889ac305ab26b45e"
           }
         ]
       },
@@ -2633,4 +2618,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//lQTazwF1LF2YR13KK06bTlDni1nvG4jhf+Inn76U+fMoUE48yNSki+FqxtNO6A5nIFcAhsvWFa+VNP8xJ2OiWmvHBWMV8uACu5nYRfzw+DXoA97He5gu+BnHGDPRA0nnrX2MtqgJLx79NtM6CtK9Z7e69PvFI10i3sXIf9sK2g3Ylr5YcKE9dzOVl5kSEpfau6El2Z42Y5vF9KKHwFNZDJIhLR0bzDczB4YWelmWd/ZwLUcLbfxY28kpK3ouL8tOUKHu4MyIgF65YpK30zxYMwlpaoomjadqtwXHv5+2KGbAaDU/zY+jo4KRWLTeZsl+hkZRR6r25YW5wJ8bRI5A8MbzNpaWxNZIJaP9VID+QDnfiJ/XDyO2wOy/dqfIp3AUGhN40UTp5eqU6kC4Vljr7pNeOCJGXYQtQC56kUWmVSVB2hPKBPT4/BxyhIruM98NK7eZrhQaittHuORB2KP4hvFOepwQ/9/xl6mdr/r0XdCb/PujB5qrrf6JIJiSMbtud5Kc8R98VRJstwmpWukTkSFrcr5lgUlpsx7orIWqI1jhR3OZj/SnefGEk6ZevT4E603DngGS3MgGhAvZJoBFqbhQZjQRzBjvdoN7GiVPbZThrRpqAfcDPR8N0A5kthnQPd63uqIqUpYzvVeHvwkhVXAjZB2JDgu/I8ICnsXWunFowo3O0luWYD3nIApgBj4d1mamGT5otGbaGdM22Hhm6sJhDvX7Y0de4OVH96387seb/Jn+q8JctfWQynDyAqsUb6xIRDl6NgeWw2yY4B4KSVtxNpsu0csGTidPJpLTBk0CLHbxXpsYEe6qIBicxZThroNp2TpvDKDCkPTGMa3gOsxuc5xOv2dl2+DaEyP66X5tk7vYJwCqDsF2aQcttS3S4KRv5b/ZsUGeTiOCs/uIow==|920
+}//NhiDPMbwNoCiclkc30iXhAAtGibAOzErHnti1G+tc00u8qOl0G73cjYAtPlUf8PmChFv0s3hc3oeflDNhtA7GvN/td4O/sBfIqEMnb2YF8v4Re7LtrXc9ue/6Avl3GdKyqIZv2OPn3nLHp8RTB0JLrOJfABwA9nLeFY+vCl6cdEielyBbt7ampG+DqrKfI3t9b8zN6u4yevQJWYkvVNXeUITbP8EtTnxNN6s1aDr65TNccOaOTQ72MsM6+eGTsklBF8pkbHuba0O7XupLyOQ5A8rMs82P8+Lb8/VuPDjm1TclIC8QL/8AyNtn4GmskgXm8dEr8IOBIJbXpbvrKc3bKmO67mKGWpuFYZGuZBVHyQ8e1w1k5dT/pzO8afpsXhaJ19pBqaOygy2e5cYZsSeNS21vb7vUp8diOFGEqgPPto2/g0NMqVXKeQDDR4TEvz+iHGLVvzHMQj7AnBQiv8JigDTBiOpDHTzKsSQtedT7w/jjB8B4kFKd4Cxa8WrOIbLVt611i7yRN5fk8MQzH2MYXaLMTJmfrVIJHXO9FBe2rac8tyINnxdv9DY9N+k9XzZl+l8UngCwTU0Bx5EOktz0ycWORV0rU4N2g8F5UXkvCafNLJVKyiaL2Vnvln3A4yu3yiIhGfSBHhNfFb8OAy8iE7o3ti9S+wPrDhPIalUA5cNiIIlmPI2aQDscXCVzmFlSORweVJlxATnFhG/7DlsI1uiVMYqmiL4rlUzd8zCwf543MUJ4kb/FUmxUglewNChjZbj7j5W+2IdeBNOsBlNffp24AtausX92hHqovAgi5ZzKAYYN5QDbE3TsbYmRBvHXK8aggu/BC6t7XMgvillKZDq6h2LrIix00njI/i0r+eDLBaUwPeiUujpKZjy7L00i2K9MiVACiCCreT099Oc8Q==|920
