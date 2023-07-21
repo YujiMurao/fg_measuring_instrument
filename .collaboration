@@ -287,7 +287,16 @@
   },
   {
     "ModuleName": "Table/trn_insptool_calibration_history",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RJH-PDFGB01\\Administrator",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-07-21T10:44:43.6500354+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\trn_insptool_calibration_history.json"
+    ]
   },
   {
     "ModuleName": "Pages/校正・修理・廃棄の履歴",
