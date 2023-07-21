@@ -238,7 +238,16 @@
   },
   {
     "ModuleName": "DataContectionSet",
-    "ModuleType": 25
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RJH-PDFGB01\\Administrator",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-07-21T10:25:13.5486368+09:00",
+    "ModuleType": 25,
+    "ToRemoveFiles": [
+      "DataConnectionSet.json"
+    ]
   },
   {
     "ModuleName": "Upload",
@@ -303,5 +312,15 @@
   {
     "ModuleName": "PCPage/InstrumentsInfo (2)",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "Table/trn_insptool_workflow",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "RJH-PDFGB01\\Administrator",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-07-21T10:25:13.5536299+09:00",
+    "ModuleType": 7
   }
 ]
