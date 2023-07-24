@@ -1,0 +1,159 @@
+{
+  "Rows": {
+    "Count": 27
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 248.0
+        }
+      }
+    },
+    "Count": 7,
+    "DefaultSize": 80.0
+  },
+  "Values": {
+    "26,5": "OK",
+    "26,6": "キャンセル"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "trn_insptool_certifications",
+        "ColumnCount": 7,
+        "RowCount": 25,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "TopCondition": null,
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true
+        },
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "1,0": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "id"
+      }
+    },
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "registration_date"
+      }
+    },
+    "1,2": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "subject"
+      }
+    },
+    "1,3": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "FGC_Creator"
+      }
+    },
+    "1,4": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "FGC_CreateDate"
+      }
+    },
+    "1,5": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "FGC_LastModifier"
+      }
+    },
+    "1,6": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "FGC_LastModifyDate"
+      }
+    },
+    "26,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "OK",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "26,6": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "キャンセル",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "Formatter": 1
+      },
+      {
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 1",
+        "yyyy/MM/dd",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "1,1": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "2,0,23,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "記録文書一覧",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "trn_insptool_certifications",
+    "PageResponsiveMode": 1
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//gDmjxaRl+WsdEfuRGUPhuFpVDlXBDNTbst3oQqsV+D06I9G5gHBpEygwkhdpEB8mA4AL6M9s3SurFffGUqq7XGiDXZMgXA8vYa0uct+vPe9YU2LlKnLmuScne3fHF+rKhYeZffTru677ARYhcE/8ob4MDcx8Bk0PKmh+8ONFKCfad8Xlt0V0qk+Q/93KMDuB5HsSLmKLHLBUduquZm2E9fVCK1X57GhY+fXhkJ7RbZt3bUvlBZ4JKSVBePE2lONcBzQwYsTzpcyBaSPv+j5qqojdM9qyXblASLZyketUy44QqBT+dTOG4xD0Bp8UM6P2qGFxAN/ncmGeBM+k8eWywSrtXEdTXRUw0zO6K7BL1VTYLAChwApdSFlq+EKO/EtMpVWYTYoCdn97z3QAPOmzAmMxzd7mYnSa4k5vih4LdblNiqUS2K9oX4KpXCGDX+btNeq7hnH4rkXcgm8WCRhCsDKU4yx51msEyz2K+QBmraQD3IhXu3Jn2eTbdMSzB7NszlDJAIlAxk0nWAPQBXc8RyitFd1QOVLm1nyMmWPfd4k8sfrQcPE69QFZHTjyoYzGM0zEFW1LIQTG6jldnMxU3PWxzuV/7m3EF+GjMHKzM25puPk/mdfu995TUlL5BYVjRjkftC8TccoZYBiGAYi7jFna8tfqLpcsp+f57qZvxvl5gYhehsVFujRXxf3+2+SiwN2O3v10CXDoTTGcg5K2OMd1NZ/k29c8zp8j/+aLSKgwfhbPt+SYZ79TqiyYPehGKnb2iK7i8lSxGlgZQTCRQHFC+2yDpRbUwkVZvLdoyEXo3sBnMrSnUe0cKTDsR1lZ6YKes1qwHDdGXSU4Byl0GS4YzttCPR9f9duW7bV2i3ShTCP1CVzihKyWDjKhpx3Gl4GCib+XdXlXo6RRiV26Kw==|920

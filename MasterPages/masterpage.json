@@ -170,7 +170,7 @@
     "40,2": "校正対象機器",
     "42,2": "校正結果登録",
     "44,2": "校正・修理・廃棄履歴一覧",
-    "46,2": "条件を指定して検索",
+    "46,2": "測定機器一覧マスター",
     "48,2": "申請一覧",
     "50,2": "承認依頼リスト"
   },
@@ -212,7 +212,7 @@
                 "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
                 "TargetTableName": "trn_insptool_tools",
                 "Params": [],
-                "ID": "45901f01c54d40e996e9fa7a1b7ee966"
+                "ID": "3784dbec74bf43fcb25638fdca943b69"
               }
             ],
             "CanVisitRoleList": [
@@ -236,7 +236,7 @@
                 "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
                 "TargetTableName": "trn_insptool_tools",
                 "Params": [],
-                "ID": "f2a3533b73ef4a2e9f2952cd3498973a"
+                "ID": "b9b86f295d2742af9cffa7e133bdd5f0"
               }
             ],
             "CanVisitRoleList": [
@@ -255,19 +255,19 @@
                 "ViewName": "定期校正",
                 "Title": {
                   "TableName": "trn_insptool_tools",
-                  "ColumnName": "Column_1"
+                  "ColumnName": "id"
                 },
                 "ViewItems": [
                   {
                     "ColumnBindingInfo": {
                       "TableName": "trn_insptool_tools",
-                      "ColumnName": "Column_1"
+                      "ColumnName": "id"
                     },
                     "DisplayName": "Column_1"
                   }
                 ],
                 "TargetTableName": "trn_insptool_tools",
-                "ID": "371d3a9f62a74ff19a46832538244903"
+                "ID": "6a7bbfa7375f433886933f8ec47d9022"
               }
             ],
             "CanVisitRoleList": [
@@ -331,7 +331,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "dcaa7469f328487d9c87b37b052e9108"
+            "ID": "320400fbae354ba7b76f5612a48facab"
           }
         ],
         "Text": "すべての計測機器",
@@ -354,7 +354,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "a21b37388e3e4470a1ef6009c65c916f"
+            "ID": "4403cc4fbfff440c80a61472060c5b98"
           }
         ],
         "Text": "条件を指定して検索",
@@ -390,7 +390,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "2a13b452461c49e8baf95aef647fe55f"
+            "ID": "911d3d6bdb944ac2b94f6895111e669e"
           }
         ],
         "Text": "すべての記録文書",
@@ -412,7 +412,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_certifications",
             "Params": [],
-            "ID": "d4b16e0302634d1c916244e173b59673"
+            "ID": "af94ff58432945bda6774cd23ad6f1b2"
           }
         ],
         "Text": "条件を指定して検索",
@@ -426,18 +426,8 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "addoredit計測機器",
-            "PassValues": [
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=masterpage!C35"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=addoredit計測機器!A19"
-                }
-              }
-            ],
+            "PageName": "計測機器新規登録",
+            "PassValues": [],
             "IgnoreTargetPageCachedCurrentRowInfo": false,
             "LoadBindingDataOption": 2
           },
@@ -445,7 +435,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "f7f80ca5e6d54f4591d834e96078c83f"
+            "ID": "b87b8d4e22b54bd4bd45a978629ff43b"
           }
         ],
         "Text": "計測機器新規登録",
@@ -478,7 +468,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "422c57a8ca914845bd4b0cc4a33de5c6"
+            "ID": "e45d0bbaef2d4ead8796872ee5845442"
           }
         ],
         "Text": "記録文書作成",
@@ -558,7 +548,7 @@
               }
             },
             "Params": [],
-            "ID": "404370e1c51549b58c00a1e767beb259"
+            "ID": "13534dd65df94f9bbd8b7630f5d8321d"
           }
         ],
         "Text": "校正対象機器",
@@ -613,7 +603,7 @@
               }
             },
             "Params": [],
-            "ID": "5e122e7ffe7844368fb91643c4ca79b4"
+            "ID": "399e4c9b12744090b9a41ab0c796481a"
           }
         ],
         "Text": "校正結果登録",
@@ -643,13 +633,13 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "測定機器検索",
+            "PageName": "計測機器一覧マスター",
             "PassValues": [],
             "IgnoreTargetPageCachedCurrentRowInfo": false,
             "DeleteCachedQuery": true
           }
         ],
-        "Text": "条件を指定して検索",
+        "Text": "測定機器一覧マスター",
         "ClickMode": 1,
         "TemplateKey": "_RS_Normal2"
       }
@@ -668,7 +658,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_calibration_history",
             "Params": [],
-            "ID": "c79b82b3aa5e443baad415db50f67d98"
+            "ID": "6a6412f5f38c4b919dd24f66efebc6c0"
           }
         ],
         "Text": "申請一覧",
@@ -690,7 +680,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_calibration_history",
             "Params": [],
-            "ID": "e38222da9b5744ff8659960f37d99408"
+            "ID": "d5c555b9c9174d43add013768eaae4dc"
           }
         ],
         "Text": "承認依頼リスト",
@@ -1521,4 +1511,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//Jbw3qo/JbWhjIELCUYv1M7wSfaHLrAWiteOXdb1zbDMd3Z1O2OlA3r/HMVFFRi0zr/dKPjqqmJBgvarxg3sf+pg5DHAsJdGEBELfE1GGEPPaSMff6Qp6RNfX3njXFlV1iVfrpk/E7aqGyXag+jkPLNAwEKEaQGXm2ULINUDD4pcjvH38BQRflPyWOiz+RsxYuKJPzRJ3kTF75F1AU9g//aGB3FPs7IUdnAGPPG+eB6CtvR4vGPxOfdxQ8q7L3ldGtgM7uqddN2Rl7qU9cBklSwMN6dyKhkuzXCV0nS1jpXHCMjPRf5CXe3gF6o8O+iEOAH35QW+QksoFYx4iYMKh0PYoYQj0nsW12TaOxYqSQdtvvGVlWpz9rl86dXwXNWNGz2KoWy00SUQbIEEFTpAgPiKy5GVly3VvX5RreOSAfzDpcC5rrAynWUE11XvJbO8/VD9ORGFGtpCRQr1y24YaVih8FoEIPJpBKcQnsRLlpUcti/qP3fFpfaNqt58Z9SdVXkSIPmA+48eAK9rIHXAEYb2XLqw0nW1vPpS3sWAreyokHpZM+4XMG5yqSZ5JjJgS/QgiJn2RHvubCeJrFVAsXhxx1qpZp4QosPWg9Me+zp9Eb5taLVkGJcf0RZSOP1YlkqztePn2T59gWg+uL6k997piAwjjpgMsZjE5Jf47oWoehM7nJ0iHxeTw1ai4GquxjeN6jJFKQu+zcxW/GPGNTz2HRuEmCbBMuXTfQbqXmbArlupydIHIjLKIGmjZdf80f15vBJGfP2TfFtWEbC59lbbSPXQxr1yLy2emlY7c3mSMzMZf5UfShErF4VJPx4W6sHT9D4yOygUP/6EZP9SvJl/uUa8lcEvOH8IBkwsV5zflK4PlEgtKW4pkZIasPwFgZGhRAXx0nd+NpQ/pFDDcKQ==|920
+}//KPAP0Q0nWV8mOR2cO9TCPXZtteN3T0eXSpTMcaO0kruVqmdToXDeIbNEa2LOWr0YRHrNjSWdHsdUMoVeyVqLJf4DTmhwOvn631+v/eIV9tTFn4Lu9Kj4n+h4qzCpfFKB+urvF/VrXOEhDS2zKrD8Typj18E5ThJyiNCSje6ez0JCPelIxcVu/TtTNGC6m6E27Ah4yHmn7fuDWmJ1Z95wZuE7Kb2MopxLwrEKI6BENXSBgRp/c4Urd2nTIvcxjiDtaJgSBdzegoP7iVl1leFfwIRRX74Uz7HERQjxBYRnRneNwL3qZbDxi/6s4cYBO4msxv0O4Gs133g1eA6TZGNOXclUfnYEoPQmObs2XyJcQMHwOjDcnA4mDmvONUxLsHLbsRFNNcN6L9G7PnPjzmVTnaV11B11q57pJxvElzmiFSNlklqAuAecUyrex7aWtG1fw9s8uGFOFY8/UBKpnjKGTt91SO43dOW3Jzqn6T7A1OZQSn3H6jqWO5iqRLR8Ob2qhMBWwqM+KjmLSEy9jRaYueE+qh2IgOUchTMD4qIopVrzCLYVMqIFP8hbueQmrPBdlFes50sXamZeN7M1S0uZBFQm1jqYNRdTHjja7IWa5gg9g/P9Jg1ZPLuVLt77csyjNtxpZCQzibVR3fvQZ1SJyNFqnbA165b3wkb22GUN24bnya+6r4CbxLag/XBDA2H2oZxXBoS/DW740a+CWUKs3AQbPQv27o1kc6mlQc0lOK82cP5RINb+rijdIPLSxm45JvIL2OzQvcsvs83tUMjlRyqtbcGz6Z5yaOsmnmUjEp5+Zw14BfFJYltMbDEmonR9cXODJi89I79oyCixaZ/xO+Ui6Mt9Dn67gO4BbzDG8nwdkBL3mU3BP7dtPh+AI2yJDmZNScTYwjJT3Y+HdgZiyw==|920
