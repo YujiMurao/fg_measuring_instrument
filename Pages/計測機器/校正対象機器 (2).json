@@ -8,7 +8,6 @@
   "Values": {
     "1,0": "今月校正",
     "1,6": "校正切れ",
-    "3,0": "管理№",
     "3,3": "種類",
     "3,10": "名称",
     "3,20": "型式",
@@ -22,7 +21,11 @@
     "25,0": "定期校正・修理再校正・修理・廃棄の履歴",
     "25,14": "新規登録",
     "25,20": "削除",
-    "25,30": "登録件数:"
+    "25,30": "登録件数:",
+    "32,33": "Tool id",
+    "33,33": "Last calibration date",
+    "34,33": "Next calibration date",
+    "35,33": "carbretion Cycle"
   },
   "Formulas": {
     "25,31": "COUNT(C28)"
@@ -80,7 +83,7 @@
               }
             },
             "Params": [],
-            "ID": "5c74c890293c4c0d8d357d1bdfd19a95"
+            "ID": "8c66c757305a43df95214c065be0d341"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -155,7 +158,7 @@
               }
             },
             "Params": [],
-            "ID": "f5c7f70b9b644612a478c567dd3cfbf1"
+            "ID": "7bc3804589bf4104bfb8cd3efb24a976"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -235,7 +238,7 @@
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_calibration_history",
-                "ColumnName": "管理番号"
+                "ColumnName": "it_tool"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -245,7 +248,7 @@
             "Params": [
               "=A5"
             ],
-            "ID": "510ad5d87eae429d908fcb4a70615293",
+            "ID": "f77da894280748eb958c6791d463332a",
             "Disabled": true
           },
           {
@@ -281,7 +284,7 @@
     "4,0": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "control_no"
+        "ColumnName": "ID"
       }
     },
     "4,3": {
@@ -399,10 +402,37 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!AQ26"
+                  "SerializeProperty": "='校正対象機器 (2)'!A5"
                 },
                 "TargetCell": {
                   "SerializeProperty": "='add校正履歴 (2)'!H4"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='校正対象機器 (2)'!D5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "='add校正履歴 (2)'!Q4"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='校正対象機器 (2)'!K5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "='add校正履歴 (2)'!Y4"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='校正対象機器 (2)'!U5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "='add校正履歴 (2)'!Y5"
                 }
               }
             ],
@@ -513,8 +543,8 @@
         "Name": "リストビュー2",
         "DetailListViewInfo": {
           "MasterTable": "trn_insptool_tools",
-          "ColumnOfMasterTable": "control_no",
-          "ColumnOfDetailTable": "管理番号",
+          "ColumnOfMasterTable": "ID",
+          "ColumnOfDetailTable": "it_tool",
           "DataCommitType": 2
         },
         "TopCondition": null,
@@ -582,10 +612,20 @@
         "ColumnName": "内容"
       }
     },
+    "27,19": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "it_tool"
+      }
+    },
     "27,22": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "承認者"
+        "ColumnName": "FGC_AssignTo",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.AssignToColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 1
+        }
       }
     },
     "27,27": {
@@ -598,6 +638,30 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "管理番号"
+      }
+    },
+    "32,41": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "ID"
+      }
+    },
+    "33,41": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "lastrevisionymd"
+      }
+    },
+    "34,41": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "next_caribration_ymd"
+      }
+    },
+    "35,41": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "calibration_cycle"
       }
     }
   },
@@ -673,6 +737,7 @@
         "BorderRight": 1
       },
       {
+        "FontSize": 13.333333333333332,
         "Foreground": 12,
         "Underline": true
       },
@@ -681,11 +746,18 @@
         "Formatter": 13
       },
       {
+        "FontSize": 13.333333333333332
+      },
+      {
         "FontFamily": 0,
         "Formatter": 7
       },
       {
         "FontFamily": 0,
+        "Foreground": 12,
+        "Underline": true
+      },
+      {
         "Foreground": 12,
         "Underline": true
       }
@@ -773,6 +845,7 @@
       "27,2": 17,
       "27,7": 3,
       "27,10": 3,
+      "27,19": 18,
       "27,22": 3,
       "27,27": 3,
       "27,30": 3,
@@ -832,7 +905,7 @@
       "34,48": 3,
       "34,49": 3,
       "35,32": 15,
-      "35,33": 18,
+      "35,33": 19,
       "35,34": 3,
       "35,35": 3,
       "35,36": 3,
@@ -868,7 +941,7 @@
       "36,49": 3,
       "37,32": 15,
       "37,33": 3,
-      "37,37": 19,
+      "37,37": 20,
       "38,32": 15,
       "38,37": 3,
       "38,38": 3,
@@ -880,16 +953,16 @@
       "38,44": 3,
       "38,45": 3,
       "38,46": 3,
-      "38,52": 16,
-      "38,53": 16,
-      "38,54": 16,
-      "38,55": 16,
-      "38,56": 16,
-      "38,57": 16,
-      "38,58": 16,
-      "38,59": 16,
-      "38,60": 16,
-      "38,61": 16
+      "38,52": 21,
+      "38,53": 21,
+      "38,54": 21,
+      "38,55": 21,
+      "38,56": 21,
+      "38,57": 21,
+      "38,58": 21,
+      "38,59": 21,
+      "38,60": 21,
+      "38,61": 21
     },
     "SheetStyle": {
       "FontFamily": 0
@@ -897,7 +970,6 @@
   },
   "Spans": [
     "2,0,1,7",
-    "4,0,1,3",
     "4,3,1,7",
     "4,10,1,10",
     "4,20,1,5",
@@ -911,7 +983,6 @@
     "4,52,1,3",
     "4,55,1,3",
     "4,58,1,4",
-    "27,22,1,5",
     "25,14,1,5",
     "25,20,1,5",
     "26,33,6,29",
@@ -919,11 +990,10 @@
     "1,6,1,6",
     "28,0,11,32",
     "5,0,20,62",
-    "27,10,1,12",
     "27,7,1,3",
     "27,2,1,5",
     "27,0,1,2",
-    "3,0,1,3",
+    "27,30,1,2",
     "3,3,1,7",
     "3,10,1,10",
     "3,20,1,5",
@@ -940,12 +1010,17 @@
     "26,0,1,2",
     "26,2,1,5",
     "26,7,1,3",
-    "26,10,1,12",
+    "26,30,1,2",
+    "4,0,1,3",
+    "3,0,1,3",
+    "27,19,1,3",
+    "26,19,1,3",
+    "27,10,1,9",
+    "26,10,1,9",
+    "27,22,1,5",
     "26,22,1,5",
     "27,27,1,3",
-    "26,27,1,3",
-    "27,30,1,2",
-    "26,30,1,2"
+    "26,27,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -999,7 +1074,7 @@
           }
         },
         "Params": [],
-        "ID": "a10a813f28db470f91e1d89d1fc13d70"
+        "ID": "2a66fe64c8fc496cab9389b10baa679a"
       }
     ],
     "AuthorizeInfo": {
@@ -1007,11 +1082,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_insptool_calibration_history",
+    "RelatedDataTableName": "trn_insptool_tools",
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//GBB3rYJ3lIABOhZC//BCnISjzeZ06rwtyrU2LqG7I01giWN6onZd4xJLCe3KZSQUAxRpLlCSugcMj8NrtpDqdxc2eHhtEJAvPpz0XBzQvlNanfXzdu+CMcqvfIq8c+ptqKCokN2ZVfA54QLlBUW9Q9KjPuzU4MKG7yraZDmk7mZD+m56yBuCxOdNmDGpTksJTexrbYSCkt6sqTBd3V3JYsKAeDSxoADUvuDTVwGbStvAbSYtwlOodWVH0WVCkgpE6prT+ML9TCnYU3d0h8yWttzRgzBkUjNs2+v16d7L8qqfo/MvHbhyjhZszh5eQMIWTjL56aBRF7lCSAAECeXHH9dB0DDE5RbYxpzZzcA8lKl2mDC0F8b+m56aI+a3N32KEUqW/RNC0EE2iro6oI3TFt1rJ/5rkg/U8tIP6sngAw/3LQgPvsCbC5Sa++Atqr2dVB3Lx4wfk5y1+DUsbid57aI9BDt6kb4NrSNULAGWq0R7nYYXrOhUk7w/Hf6dfInG7VbnCDkeQd5S+aoDLDal9OCSJBHuZ1X90bkPaJaICs8XyXNS6o/Zgld4TByR+vqWlvBm0PBOxKOfLtm6JimGTqYbusI2r2OLnvmRwv3D/Lshxf7T1dMLbh89PxjY1dUfbwREf2gOspjAXW0JKdhB26x/d3UlDi3gSqemGTfRCekGKD8TF/0J82iGP2hGmvUmZVLfB3RqoZE4kINbU/Hjm33kOJgqzM8QwzTBnaSGLp//LXNI4xUqq1GstzzobbiJNffneh5vOqT+XJNrBh2F/IU63BMnmIngTg+oljDIq5ooLGO6XKHfvnel+wFnJRgoEK8vk+Vgw7httZUcF9ftYnj9aQSqUTAPbwYX0vTiz6+xAjfDI1/Gf9uqMnKUdkwcEt7tTq2wG906M0jeqk/iPw==|920
+}//NLeCZpmw/VqELVPYTa8IKozB0iGWW6R3TwMIx1linmJQ0xAqYsNOJoyNWqOWyakdmP9SeGbRv56zLrV+tHymXzBV9ANLkXAhNE8v62v9faHk43lpHYFvji2aHMI5fYyBAZg1FyMOw6TtoUdZPXnOW6KpBRZMRCXmt+WNgpqONFnEsnsi3Ek1aDMFlXlBjQroBtwsNAwijL4zhdCgXTNbEkLLzaAw/mAEeu95DhLCgwrrxyfIRpcaO7U3i/pp0A0eohujxts6PYhkQ1O9DOX8xIiIG0ZwXU9NQ51L4oXN1Am79amfudeTLWLtTPGG0HlgebvcpBYQdfe10gaKgPoP/Uwx56WBBu0EgMWgeCijDVJnVM7Ef6tiNdYl+cJOOoeHeYjGWdX8MLGt2cXg1Dcb1b/Rmqz3oEYxN+YKDnPJF65p+fxJKNZHS0CAb/vzVWvY32FVihu/bi/mDG96MSkYFiTaLjgM1xXWnC/W3KLrnRAKKpGtcbbwoSbWV6ymOaYBuyN6mUaSdeEB/O2IhopUdMVPY8Nz0E+r8JSl6wnDFi5Xvac9tbYQfpPRNSqS46GZ9crMBSlYbRezR6YOZseXV9BIteR2vybaqJ3ehWtiWXX5NiKUXGeSxG8sATTi8xNSq89m67hMMaU/hrbWK3RHfwW467SoHgwTQgSB8T8EVmIATTO9iOQCpWFayikPhUU3HT/tZicxwZsMA/te4nXM5tFNFNbzmoU7xjRk4DS3HM00+YPOlwK+NH9DfcuBSmhF4VopSnlQTm74K2Y1r+p6ZO3aMWlyBYfB5orv9Bc94EM7HgNkTRaryhFReBVVSU+xTMe/gHsQK7j+HTrFUr2PXCWai2xmpj+Ff+r3KVORcooqgioDfyTtnqeAeyahNK+zAJDwQwHb7ZDdZi/DOksGZw==|920
