@@ -6,11 +6,98 @@
     "Count": 30
   },
   "Values": {
-    "1,1": "承認待ちの申請"
+    "1,1": "承認待ちの申請",
+    "1,18": "CurrentUser",
+    "2,18": "CurrentName",
+    "3,18": "申請中",
+    "3,22": "RJ0200",
+    "4,18": "クリア"
   },
   "AttachInfos": {
+    "3,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_insptool_calibration_history",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_calibration_history",
+                "ColumnName": "FGC_State"
+              },
+              "Value": "申請中"
+            },
+            "Params": [],
+            "ID": "95c31945549746ff87891d6ed762c438"
+          }
+        ],
+        "Text": "申請中",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "3,22": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_insptool_calibration_history",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_calibration_history",
+                "ColumnName": "FGC_AssignTo"
+              },
+              "Value": "%CurrentUser%"
+            },
+            "Params": [],
+            "ID": "0d22451eac2c405781e21d4bdd2cd0ca"
+          }
+        ],
+        "Text": "RJ0200",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "4,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_insptool_calibration_history",
+            "Params": [],
+            "ID": "3b02666d66584013b5fc0188c16f8768"
+          }
+        ],
+        "Text": "クリア",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
     "5,1": {
       "ListViewInfo": {
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=校正承認リスト!Y2"
+                },
+                "Value": "%CurrentUser%"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=校正承認リスト!Y3"
+                },
+                "Value": "%CurrentUser.UserName%"
+              }
+            ]
+          }
+        ],
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_calibration_history",
         "RowIndex": 5,
@@ -23,6 +110,52 @@
         "Name": "リストビュー1",
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "6,1": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "ID"
+      }
+    },
+    "6,4": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "処理年月日"
+      }
+    },
+    "6,7": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "業者名"
+      }
+    },
+    "6,13": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "項目"
+      }
+    },
+    "6,18": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "FGC_AssignTo"
+      }
+    },
+    "6,21": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "FGC_AssignTo",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.AssignToColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 1
+        }
+      }
+    },
+    "6,25": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "FGC_State"
       }
     }
   },
@@ -50,15 +183,20 @@
       },
       {
         "FontFamily": 3,
-        "FontSize": 13.333333333333332
-      },
-      {
-        "FontFamily": 3
+        "FontSize": 13.333333333333332,
+        "Formatter": 4
       },
       {
         "FontFamily": 3,
         "FontSize": 13.333333333333332,
-        "Formatter": 4
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 3
       },
       {
         "BorderRight": 0
@@ -70,6 +208,7 @@
         "[AUTO]General",
         "DarkGray",
         "Body",
+        "yyyy/m/d",
         "yyyy\"年\"m\"月\"d\"日\""
       ],
       "Borders": [
@@ -109,29 +248,19 @@
       "5,27": 3,
       "6,1": 4,
       "6,4": 5,
-      "6,5": 6,
-      "6,6": 6,
-      "6,7": 7,
-      "6,8": 6,
-      "6,9": 6,
-      "6,10": 6,
-      "6,11": 6,
-      "6,12": 6,
-      "6,13": 5,
-      "6,22": 5,
-      "6,23": 6,
-      "6,24": 6,
-      "6,25": 6,
-      "6,27": 8,
-      "19,28": 6,
-      "20,28": 6,
-      "21,28": 6,
-      "22,28": 6,
-      "23,28": 6,
-      "24,28": 6,
-      "25,28": 6,
-      "26,28": 6,
-      "27,28": 6
+      "6,7": 6,
+      "6,13": 7,
+      "6,25": 8,
+      "6,27": 9,
+      "19,28": 8,
+      "20,28": 8,
+      "21,28": 8,
+      "22,28": 8,
+      "23,28": 8,
+      "24,28": 8,
+      "25,28": 8,
+      "26,28": 8,
+      "27,28": 8
     },
     "SheetStyle": {
       "FontFamily": 3
@@ -139,17 +268,21 @@
   },
   "Spans": [
     "1,1,3,16",
-    "6,1,1,3",
-    "6,4,1,3",
-    "6,7,1,6",
-    "6,13,1,9",
-    "6,22,1,3",
     "7,1,10,27",
+    "6,1,1,3",
     "5,1,1,3",
+    "6,4,1,3",
     "5,4,1,3",
+    "6,7,1,6",
     "5,7,1,6",
-    "5,13,1,9",
-    "5,22,1,3"
+    "6,25,1,3",
+    "5,25,1,3",
+    "6,13,1,5",
+    "5,13,1,5",
+    "6,18,1,3",
+    "5,18,1,3",
+    "6,21,1,4",
+    "5,21,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -160,10 +293,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_mtm_calibration_history"
+    "RelatedDataTableName": "trn_insptool_calibration_history",
+    "PageResponsiveMode": 1
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//JAMXaKgGRV5rrIFG1DIH6jkEwR+KM4lAso5MSzv2kcHd+owxUll56S9EmsBQQcZg3ZgYNi2f3C2gde9IhlUeiUuQgNBgnZYhtoEB9QFfBXOvEYQ9A6TqqxN+JZRsrleRueVUNGKn4PNfhQC3+SoQZG43OpaLPjrO2HiurSdeHdrj07IpFISp0daqOxZ42muPu8hUUMwwgL3tGw0mR4eAjpS2xohcx7/FovosHEXMFqbL19aHG4IMztyrXziBreMZZXOxysw3Bqfz7hHVxmanVx68OflJy/ZyclGgphJ7ZSO354bg2c8gObGjybPgz/V6IaCG2tIGpEJvWmdPVG/geRyOvltRfFwpgDlYsVZAwOVLNf/5XtnhwoUPjsjJrHiDgItfEgGmMMXNUsYp3Ma6T6Ghv94CPtdiSOd2B+hrM8X5iG8AjPPieTPpSwr2bpQGqj9rjEkJub9RgZkqevebuG7HVoDDyzlWNYmLLe4jMdf/BbMfM5H63yfKmQTWpOyksTGLxB+dp1eC3sGhnoy+SNXxI04G7GtS1JCRpnNEUPSyNyM/2yEV7z+IT26PEkCgSGwJZAbr+AgRxHFhrbMcveuURXmjhNcRvQnMOrT/zplDv5NSh9DiNhS/0UD0sGZ89nuXSrMKO6EqQlc2iiXa4xPOUUbdLZ4fBS+AfePhrzSjClnyMGdDDEHVIlnvPHJlqA41tCBBS92y7GNff/II8ePN14+mseGDooZybQ1069T7TFlBrACdyu3UVBZ/oM7TCtrIPn/F0vfGBxwvH2xEYes/5xks3T+g9NDXnnPnw1VcCShcsAA7BTtnwKgIfeiS3v15c+y65M0sbq4uCNqBU09c2qZJp6EwxtGdt8VmGSpGxnO8GF7omffW1T6Gq8qVLgGWJWrZUmaQwE48PLKZCA==|920
+}//opMUtUtV9EQwpY4Jny/y4Q7LXlIDC+5yOF/ijAZmNk55VZyW6kfQ9YTvMFv1VAxOmFBeDyl25PQPuMyQ2iQc8lUN23XPscgBCw7kbCru6W/5AQmxMkaETudQqq/hUyhRDefHnHR7zPifSPZLiOa/VBP0fXfhX01vHNSEGrseb5FO9+FQY84OGHWWiuVNOtgaha9Eswdxgbtsxb0OFib3cwRDZzFVxQ/1tuBgVol2sQF/og2Ol7au4n1CyC993ROnN3qScGlvVcvHbC3GkInCmbRZu4qkPfDu3wfMakRWWYFzKREsCbgqmvD/qK1k0b3qz+uoDL5Qo59dqdaYhH4SuZ1rvCwRb8g2j625W/wgJmcXU8oMy+cEjVC2zYqSV0BOSgTcBXFld/J7H2QWPglB6qKWajAgmzVGpNqJWC1FdVvDC8gtk+hQkf3L/KwOJOCcZT0W8gcTy3CfnQgXIBC7fSx1bqAEHCTzrnrUWsU4Tb8IL/QctbryV/nJyN366i1/chXS6dkKthCJjD24pIiE4pIoeO2op4AnM38tQXV/bOttbyWzljFaRvSNSkT+KrJXIH02C23Vc5U3nB1UMoaDQpj6QTkE+Le8MEIADMn8yFjESmvFjG9ONvBceB505H61Tki/kBl/y0I0ygWJQV8iAnxDtNaf9DpKC/lqOM+uH+TGxZQBetLOEyJ4STTY/6bPU9TlMKIRHJzNEZwAEWlHarlIPKif53LWJH49Uux26fWsmg5cPDa0hCvyMUAKnYl6le3oI3/RpLfBzubdhrrEWZofeIbb/T6LyPvJuox73Q547wVzMzk+voi5kyDTezonDdSXmWf9nhVUKt2TzBucEIJhJ4JmA4rDw8hCcaqfcM3fLQ+5z3R0TXXr/c95GWY5gyE29wnhc2uqFF/kmgpcqg==|920
