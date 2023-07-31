@@ -3,57 +3,57 @@
     "RowColumnAttachedInfos": {
       "0": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 12.0
+          "DesignLengthInPixel": 22.0
         }
       },
       "1": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 24.0
+          "DesignLengthInPixel": 22.0
         }
       },
       "2": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 12.0
+          "DesignLengthInPixel": 22.0
         }
       },
       "3": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 12.0
+          "DesignLengthInPixel": 22.0
         }
       },
       "18": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 14.0
+          "DesignLengthInPixel": 22.0
         }
       },
       "19": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 12.0
+          "DesignLengthInPixel": 22.0
         }
       },
       "20": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 12.0
+          "DesignLengthInPixel": 22.0
         }
       },
       "21": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 24.0
+          "DesignLengthInPixel": 22.0
         }
       },
       "22": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 12.0
+          "DesignLengthInPixel": 22.0
         }
       },
       "23": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 12.0
+          "DesignLengthInPixel": 22.0
         }
       },
       "38": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 14.0
+          "DesignLengthInPixel": 22.0
         }
       }
     },
@@ -64,7 +64,7 @@
     "RowColumnAttachedInfos": {
       "15": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 26.0
+          "DesignLengthInPixel": 20.0
         }
       }
     },
@@ -2385,510 +2385,8 @@
   "Spans": [
     "0,0,3,18",
     "20,0,3,18",
-    "5,0,1,9",
-    "5,9,1,6",
     "6,0,13,16",
-    "4,0,1,9",
-    "4,9,1,6",
-    "25,0,1,9",
-    "25,9,1,6",
-    "26,0,13,16",
-    "24,0,1,9",
-    "24,9,1,6"
-  ],
-  "Charts": [
-    {
-      "ChartType": 22,
-      "DisplayEmptyCellsAs": 1,
-      "DisplayHidden": true,
-      "ChartColorPalette": {
-        "RepeatAlgorithmTint": [
-          0.0,
-          -40.0,
-          20.0,
-          -20.0,
-          40.0,
-          -50.0,
-          30.0,
-          -30.0,
-          50.0
-        ],
-        "ColorList": [
-          "Accent 1",
-          "Accent 2",
-          "Accent 3",
-          "Accent 4",
-          "Accent 5"
-        ]
-      },
-      "DataSeries": [
-        {
-          "ChartType": 22,
-          "Values": [
-            0.0
-          ],
-          "Name": "件数",
-          "DataLabelStyle": {
-            "StyleInfo": {
-              "Fill": null,
-              "FontFamily": "Body",
-              "FontSize": 14.670000076293945,
-              "FontStyle": "Normal",
-              "FontWeight": "Normal",
-              "Foreground": "Text 1",
-              "Stroke": null,
-              "StrokeThickness": 1.0
-            },
-            "IsAutomaticStroke": false,
-            "IsAutomaticFill": false
-          },
-          "DataLabelSettings": {
-            "ShowBubbleSize": false,
-            "ShowPercent": true,
-            "ShowSeriesName": false,
-            "ShowValue": false
-          },
-          "MarkerType": 1,
-          "MarkerSize": "7,7",
-          "DataPoints": [
-            {
-              "StyleInfo": {
-                "Fill": "Accent 1",
-                "Stroke": "Background 1 0",
-                "StrokeThickness": 2.0
-              },
-              "IsAutomaticStroke": false,
-              "IsAutomaticFill": false
-            },
-            {
-              "PointIndex": 1,
-              "StyleInfo": {
-                "Fill": "Accent 2",
-                "Stroke": "Background 1 0",
-                "StrokeThickness": 2.0
-              },
-              "IsAutomaticStroke": false,
-              "IsAutomaticFill": false
-            },
-            {
-              "PointIndex": 2,
-              "StyleInfo": {
-                "Fill": "Accent 3",
-                "Stroke": "Background 1 0",
-                "StrokeThickness": 2.0
-              },
-              "IsAutomaticStroke": false,
-              "IsAutomaticFill": false
-            },
-            {
-              "PointIndex": 3,
-              "StyleInfo": {
-                "Fill": "Accent 1",
-                "Stroke": "Accent 1",
-                "StrokeThickness": 1.0
-              },
-              "IsAutomaticStroke": false,
-              "IsAutomaticFill": false
-            },
-            {
-              "PointIndex": 4,
-              "StyleInfo": {
-                "Fill": "Accent 1",
-                "Stroke": "Accent 1",
-                "StrokeThickness": 1.0
-              },
-              "IsAutomaticStroke": false,
-              "IsAutomaticFill": false
-            }
-          ],
-          "StyleInfo": {
-            "Fill": "Accent 1",
-            "Stroke": "Accent 1",
-            "StrokeThickness": 1.0
-          },
-          "IsAutomaticStroke": false,
-          "IsAutomaticFill": false
-        }
-      ],
-      "XAxises": [
-        {
-          "UseCustomItems": true,
-          "LabelFormatter": "General",
-          "ShowMajorGridlines": false,
-          "MajorGridlinesStroke": "#868686",
-          "MajorTickStroke": "#FF868686",
-          "MajorUnit": 1.0,
-          "MinorTickStroke": "#FF868686",
-          "MinorUnit": 0.5,
-          "Visible": false,
-          "StyleInfo": {
-            "FontFamily": "Body",
-            "FontSize": 14.67,
-            "FontStyle": "Normal",
-            "FontWeight": "Normal",
-            "Foreground": "Text 1",
-            "StrokeDashType": 8,
-            "Stroke": "Text 1",
-            "StrokeThickness": 1.0
-          },
-          "IsAutomaticStroke": false
-        }
-      ],
-      "YAxises": [
-        {
-          "Items": [
-            0.0,
-            0.2,
-            0.4,
-            0.60000000000000009,
-            0.8,
-            1.0,
-            1.2
-          ],
-          "Orientation": 1,
-          "LabelFormatter": "General",
-          "ShowMajorGridlines": false,
-          "MajorGridlinesStroke": "#868686",
-          "MajorTickStroke": "#FF868686",
-          "MajorUnit": 0.2,
-          "MinorTickStroke": "#FF868686",
-          "MinorUnit": 0.04,
-          "Visible": false,
-          "StyleInfo": {
-            "FontFamily": "Body",
-            "FontSize": 14.67,
-            "FontStyle": "Normal",
-            "FontWeight": "Normal",
-            "Foreground": "Text 1",
-            "StrokeDashType": 8,
-            "Stroke": "Text 1",
-            "StrokeThickness": 1.0
-          },
-          "IsAutomaticStroke": false
-        },
-        {
-          "Orientation": 1,
-          "LabelFormatter": "General",
-          "ShowMajorGridlines": false,
-          "MajorGridlinesStroke": "#868686",
-          "MajorTickStroke": "#FF868686",
-          "MajorUnit": 1.0,
-          "MinorTickStroke": "#FF868686",
-          "MinorUnit": 0.02,
-          "Visible": false,
-          "AxisPosition": 1,
-          "StyleInfo": {
-            "FontFamily": "Body",
-            "FontSize": 14.67,
-            "FontStyle": "Normal",
-            "FontWeight": "Normal",
-            "Foreground": "Text 1",
-            "StrokeDashType": 8,
-            "Stroke": "Text 1",
-            "StrokeThickness": 1.0
-          },
-          "IsAutomaticStroke": false
-        }
-      ],
-      "Legend": {
-        "StyleInfo": {
-          "Fill": "transparent",
-          "FontFamily": "Body",
-          "FontSize": 14.67,
-          "FontStyle": "Normal",
-          "FontWeight": "Normal",
-          "Foreground": "Text 1",
-          "StrokeDashType": 8,
-          "Stroke": "transparent",
-          "StrokeThickness": 1.0
-        },
-        "IsAutomaticStroke": false,
-        "IsAutomaticFill": false
-      },
-      "PlotArea": {
-        "StyleInfo": {
-          "Fill": "Background 1",
-          "StrokeDashType": 8,
-          "Stroke": "transparent",
-          "StrokeThickness": 1.0
-        },
-        "IsAutomaticStroke": false,
-        "IsAutomaticFill": false
-      },
-      "Tag": {
-        "$type": "Forguncy.Model.ChartDataMapping, ServerDesignerCommon",
-        "ChartName": "Chart1",
-        "DataSeriesMapping": [
-          {
-            "SheetName": "statistics",
-            "ListViewName": "リストビュー1",
-            "ListViewColumnFormula": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=statistics!J6"
-            }
-          }
-        ],
-        "ItemsMapping": {
-          "SheetName": "statistics",
-          "ListViewName": "リストビュー1",
-          "ListViewColumnFormula": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=statistics!A6"
-          }
-        }
-      },
-      "StyleInfo": {
-        "Fill": "Background 1",
-        "FontFamily": "Body",
-        "FontSize": 14.67,
-        "FontStyle": "Normal",
-        "FontWeight": "Normal",
-        "Foreground": null,
-        "StrokeDashType": 8,
-        "Stroke": "#FF868686",
-        "StrokeThickness": 1.0
-      },
-      "IsAutomaticStroke": false,
-      "IsAutomaticFill": false,
-      "Name": "Chart1",
-      "Location": "360,59",
-      "Size": "560,335"
-    },
-    {
-      "ChartType": 22,
-      "DisplayEmptyCellsAs": 1,
-      "DisplayHidden": true,
-      "ChartColorPalette": {
-        "RepeatAlgorithmTint": [
-          0.0,
-          -40.0,
-          20.0,
-          -20.0,
-          40.0,
-          -50.0,
-          30.0,
-          -30.0,
-          50.0
-        ],
-        "ColorList": [
-          "Accent 1",
-          "Accent 2",
-          "Accent 3"
-        ]
-      },
-      "DataSeries": [
-        {
-          "ChartType": 22,
-          "Values": [
-            0.0
-          ],
-          "Name": "件数",
-          "DataLabelStyle": {
-            "StyleInfo": {
-              "Fill": null,
-              "FontFamily": "Body",
-              "FontSize": 14.670000076293945,
-              "FontStyle": "Normal",
-              "FontWeight": "Normal",
-              "Foreground": "Text 1",
-              "Stroke": null,
-              "StrokeThickness": 1.0
-            },
-            "IsAutomaticStroke": false,
-            "IsAutomaticFill": false
-          },
-          "DataLabelSettings": {
-            "ShowBubbleSize": false,
-            "ShowPercent": true,
-            "ShowSeriesName": false,
-            "ShowValue": false
-          },
-          "MarkerType": 1,
-          "MarkerSize": "7,7",
-          "DataPoints": [
-            {
-              "StyleInfo": {
-                "Fill": "Accent 1",
-                "Stroke": "Background 1 0",
-                "StrokeThickness": 2.0
-              },
-              "IsAutomaticStroke": false,
-              "IsAutomaticFill": false
-            },
-            {
-              "PointIndex": 1,
-              "StyleInfo": {
-                "Fill": "Accent 2",
-                "Stroke": "Background 1 0",
-                "StrokeThickness": 2.0
-              },
-              "IsAutomaticStroke": false,
-              "IsAutomaticFill": false
-            },
-            {
-              "PointIndex": 2,
-              "StyleInfo": {
-                "Fill": "Accent 3",
-                "Stroke": "Background 1 0",
-                "StrokeThickness": 2.0
-              },
-              "IsAutomaticStroke": false,
-              "IsAutomaticFill": false
-            }
-          ],
-          "StyleInfo": {
-            "Fill": "Accent 1",
-            "Stroke": "Accent 1",
-            "StrokeThickness": 1.0
-          },
-          "IsAutomaticStroke": false,
-          "IsAutomaticFill": false
-        }
-      ],
-      "XAxises": [
-        {
-          "UseCustomItems": true,
-          "LabelFormatter": "General",
-          "ShowMajorGridlines": false,
-          "MajorGridlinesStroke": "#868686",
-          "MajorTickStroke": "#FF868686",
-          "MajorUnit": 1.0,
-          "MinorTickStroke": "#FF868686",
-          "MinorUnit": 0.5,
-          "Visible": false,
-          "StyleInfo": {
-            "FontFamily": "Body",
-            "FontSize": 14.67,
-            "FontStyle": "Normal",
-            "FontWeight": "Normal",
-            "Foreground": "Text 1",
-            "StrokeDashType": 8,
-            "Stroke": "Text 1",
-            "StrokeThickness": 1.0
-          },
-          "IsAutomaticStroke": false
-        }
-      ],
-      "YAxises": [
-        {
-          "Items": [
-            0.0,
-            0.2,
-            0.4,
-            0.60000000000000009,
-            0.8,
-            1.0,
-            1.2
-          ],
-          "Orientation": 1,
-          "LabelFormatter": "General",
-          "ShowMajorGridlines": false,
-          "MajorGridlinesStroke": "#868686",
-          "MajorTickStroke": "#FF868686",
-          "MajorUnit": 0.2,
-          "MinorTickStroke": "#FF868686",
-          "MinorUnit": 0.04,
-          "Visible": false,
-          "StyleInfo": {
-            "FontFamily": "Body",
-            "FontSize": 14.67,
-            "FontStyle": "Normal",
-            "FontWeight": "Normal",
-            "Foreground": "Text 1",
-            "StrokeDashType": 8,
-            "Stroke": "Text 1",
-            "StrokeThickness": 1.0
-          },
-          "IsAutomaticStroke": false
-        },
-        {
-          "Orientation": 1,
-          "LabelFormatter": "General",
-          "ShowMajorGridlines": false,
-          "MajorGridlinesStroke": "#868686",
-          "MajorTickStroke": "#FF868686",
-          "MajorUnit": 1.0,
-          "MinorTickStroke": "#FF868686",
-          "MinorUnit": 0.02,
-          "Visible": false,
-          "AxisPosition": 1,
-          "StyleInfo": {
-            "FontFamily": "Body",
-            "FontSize": 14.67,
-            "FontStyle": "Normal",
-            "FontWeight": "Normal",
-            "Foreground": "Text 1",
-            "StrokeDashType": 8,
-            "Stroke": "Text 1",
-            "StrokeThickness": 1.0
-          },
-          "IsAutomaticStroke": false
-        }
-      ],
-      "Legend": {
-        "StyleInfo": {
-          "Fill": "transparent",
-          "FontFamily": "Body",
-          "FontSize": 14.67,
-          "FontStyle": "Normal",
-          "FontWeight": "Normal",
-          "Foreground": "Text 1",
-          "StrokeDashType": 8,
-          "Stroke": "transparent",
-          "StrokeThickness": 1.0
-        },
-        "IsAutomaticStroke": false,
-        "IsAutomaticFill": false
-      },
-      "PlotArea": {
-        "StyleInfo": {
-          "Fill": "Background 1",
-          "StrokeDashType": 8,
-          "Stroke": "transparent",
-          "StrokeThickness": 1.0
-        },
-        "IsAutomaticStroke": false,
-        "IsAutomaticFill": false
-      },
-      "Tag": {
-        "$type": "Forguncy.Model.ChartDataMapping, ServerDesignerCommon",
-        "ChartName": "Chart2",
-        "DataSeriesMapping": [
-          {
-            "SheetName": "statistics",
-            "ListViewName": "リストビュー2",
-            "ListViewColumnFormula": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=statistics!J26"
-            }
-          }
-        ],
-        "ItemsMapping": {
-          "SheetName": "statistics",
-          "ListViewName": "リストビュー2",
-          "ListViewColumnFormula": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=statistics!A26"
-          }
-        }
-      },
-      "StyleInfo": {
-        "Fill": "Background 1",
-        "FontFamily": "Body",
-        "FontSize": 14.67,
-        "FontStyle": "Normal",
-        "FontWeight": "Normal",
-        "Foreground": null,
-        "StrokeDashType": 8,
-        "Stroke": "#FF868686",
-        "StrokeThickness": 1.0
-      },
-      "IsAutomaticStroke": false,
-      "IsAutomaticFill": false,
-      "Name": "Chart2",
-      "Location": "360,453",
-      "Size": "560,335"
-    }
+    "26,0,13,16"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2904,4 +2402,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//aRg5sP67+sjiXKL7d9LLsGF+HGu+m4X4JrvDsjGZ8T0R2RJYpuMXknIDY35n0+JiYVUwUZ3YfJ/LZfqpuWvtU915MTzD4lNLLnOB84rOf/N+bT85l8BmFXEyTgdLyaDp/raaSyKSVHQY1/IyTp/CDX839Mc31EBcWkkoVIhpI9SmjeI3tEBjANkqZvfuJNfPBGkpUi/CLl1NkC4RKqwSdb94yfb0IXM1IU0DHyD1HLkty9/Uh5ZCAwLZVg8HeCtCo/6CmUqO3H4XR+eEWT+pyrnfIDtENG5FZsDcBi3Ke9kkX8ldH0JDA7puCpzni2GRy1XnFh38lKM2mkp6BSj//yD70vS+tZ/7Y+q486EBbxqpLgKMFroh++T8vKGacxa0Urp6jzoue2J8kl5gwMHRMmKqKu7rKyiAd+u6Ombh0rbT5YyfdKC040AEUhUyKwnaC1qO9guUOQ8jso8ncEQZszGXyUQha9dM+GTrufRP5FCFOeQZyCobt6E6IK64gvXtRf+sdMSgE0JRBxIAiAuhND58NqMUCf8wiAMwIxfcXeUhNtH1JARYwx5g9LGpEPvYgONHW1Q+XMhVUBTQ8ZZqJHEx0THhgCnet5wylizZVPZkCxgExh1Mq08ef8MjHXO9K9Izv08bXUH5uBp2zVwEmfhZaoGW9ceHjfXEW7dbhcM1j6STk0q2SxZB6F7smIVPcODdN8pymB6yRe9TPWhtOjtUOAhPmaxRqXoAd0g3l9CufV3OGdg+oQaBGFaXU9efy9PtjNV7X+0Vkhg7i4ci8bIRCo1pJjMiPMMlIGl+acbWn9O4KUrb1rTTymjPoEwh+ekbfIVFfWEJ6tmXnY58s9lHJnYs7m/Zvr8LZELvXdanEcqxSwC1FO0XFvn+b2BnQ+1JdpX9u34B3oeZMuV91Q==|920
+}//yjwRYWFfjKK+oTLLVOlI6i/VmrwmVDvkKV4IT8D9OVdGlhE8D5cXMCFp0P42Zzvmke7N1tFcw+hJoRv6hhSKJLqRpJnkODZEoH3fJqVlNiPd9MLKkC4dM2fdRrUtpgSXd+er1ZIQcYcLVdp2xROI14ufAKC0LoTPcISp+4QJsK0s/Czy9Vy+gLp9LqKa4CSLscnYbPnSkwB+sbMOQ3kTMacmRplQRs/vLxuLKzDgBf6M+KSMZa3Za7I7JXImIP4dC7LDxUWVVlWVfTJNpQJyhE/6/48Y/JT+3fX3iajJNeEcx6S0YWQSe0XE+/lZ+YkHKUT1UH9kRCXkAxRnU4OQnmOIZqViABRXuG/2GATlGddPqNZe1lI92dnI7JdzCiZxssIr9mB9jArObXKv7ZQvZtuYyVEh2xdyHnbJlu0lm+jgcGxfFIQfsVbwAni0VHrUEu1lH+YhiMUcwoN1zeMQrcMFPOWisRRczb/9Pee1tVxWYxG+X9Q7I+ceErxfaVqFotPVxISJAR18jIzndBcfm8rmhtfvGRlA7J4ek7fVoZTMd8f+5kTyBL2KJv9+Q7KiuOWFXusrRWhDZLIsM4tuyplyWU+6fmdJU0tA6Gn4IMfglDzZ5X0oDZXJmzHdPODBM3bI2hBvgl2sgE8DzdwSo8IUKWYxt+bFNelGmn77EYdZgUY7wHKVMIbXKAReK8JB7Y5HOTOmrwj+Q54llIHyciTLszWev1INPVvNOiXIsGtVaPh07JdCED63/CMHrstyIFR0JtkgJwMNddPY0Z1QCU09NNYZ2uGT96Q58PUDaWrwv0uycWoKyUylHjMhmwxn3SPD9CYjyp5VUeCukM0snCSEvjApGTa0P+aXnQwO5F7J2gQ6Zv5j2w/WESFWfmvTJrAnB7nQ1zfx8Oh0ta9jAg==|920
