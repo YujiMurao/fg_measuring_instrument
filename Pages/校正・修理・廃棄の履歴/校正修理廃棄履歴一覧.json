@@ -186,7 +186,12 @@
               "CompareType": 2,
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_calibration_history",
-                "ColumnName": "管理番号"
+                "ColumnName": "id_tool",
+                "RelationBinding": {
+                  "RelatedTable": "trn_insptool_tools",
+                  "RelatedColumn": "ID",
+                  "DisplayColumn": "ctrl_no"
+                }
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -196,7 +201,7 @@
             "Params": [
               "=F2"
             ],
-            "ID": "06016ed52e6d4f6f8eff53308158e7db"
+            "ID": "1eaa5fa4605547acb7d57b300b3a80c1"
           }
         ],
         "Text": "検索",
@@ -219,11 +224,16 @@
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_calibration_history",
-                "ColumnName": "管理番号"
+                "ColumnName": "id_tool",
+                "RelationBinding": {
+                  "RelatedTable": "trn_insptool_tools",
+                  "RelatedColumn": "ID",
+                  "DisplayColumn": "ctrl_no"
+                }
               }
             },
             "Params": [],
-            "ID": "ef371eedd76a43f7ab66884738fe62e9"
+            "ID": "44c1cb61583f445b96edb4b9d504f71a"
           }
         ],
         "Text": "クリア",
@@ -280,7 +290,12 @@
     "5,0": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "管理番号"
+        "ColumnName": "id_tool",
+        "RelationBinding": {
+          "RelatedTable": "trn_insptool_tools",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "ctrl_no"
+        }
       }
     },
     "5,4": {
@@ -357,7 +372,12 @@
     "29,4": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "管理番号"
+        "ColumnName": "id_tool",
+        "RelationBinding": {
+          "RelatedTable": "trn_insptool_tools",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "ctrl_no"
+        }
       }
     },
     "29,25": {
@@ -2046,7 +2066,6 @@
     "1,1,2,4",
     "1,47,2,3",
     "1,42,2,5",
-    "5,0,1,4",
     "5,38,1,4",
     "5,4,1,5",
     "5,9,1,4",
@@ -2054,7 +2073,6 @@
     "5,27,1,8",
     "5,35,1,3",
     "6,0,21,51",
-    "29,4,1,4",
     "31,4,1,6",
     "27,44,2,5",
     "1,9,2,4",
@@ -2067,7 +2085,6 @@
     "29,37,1,14",
     "30,48,2,2",
     "30,37,3,10",
-    "4,0,1,4",
     "4,4,1,5",
     "4,9,1,4",
     "4,13,1,14",
@@ -2075,7 +2092,10 @@
     "4,35,1,3",
     "4,38,1,4",
     "4,42,1,4",
-    "4,46,1,5"
+    "4,46,1,5",
+    "5,0,1,4",
+    "4,0,1,4",
+    "29,4,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2093,4 +2113,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//UX4F2nENmOQUmH2s0b/IeeZIYxxfC0l/JGlug/ZsPBSBgmEKo6mR025yrZZ+3hIsLORhobkZKB4PcaO77/gt9eRN/H4jczZccykwSEAdZSot1okfL4jm+dWuoOKPuQqLHOnFzSCYFP4bV1mSlL86XNGc/pXGTILVcXZJGRhFGo904nOGSm7RMZ8G2HDWFd8xitvHE7yXPqztce2/eMBB5MzT+RcgPLsyi23r/hsYfa7C0s84epJDyaduzFr7TAc4AMuLRuwPP0pIvX7wONsuTglT9W8F3FDNUFE0gxN/siYfjJzbt5XFsWpDr1Wt56p0SM8mc/ql6WKUczxczv2SFfasyqkJ9oAwyvZ0K2dph0c3tG6mbflxlWV4cXNUIcY5QKg/gnjFhzGt9lOMUH1AgIpVypO+yRe0lVXsfFy1jQHTInFIRXq2wbtFBsd2rFr+JyahtrRVU2Salg6x8HTlpDA980PWTFgrPG93H/7KDv5wRdtIKnXkvvK5TZtJVqrnlor9owCHEy4IWwDmO/dh6DyA1fg/gFChwUBO+z+L5XMlRnw7jOWTnzYC/XRiJflKgXx4Jbt2UU/ChJQaf7/cgDY0d6DBcnrgcKW9ZRPmSoRJ6CiWmQRJ4Gp5iyrXGD+fJNVbvYIh+sqlaCGMMtpCd1sJQLHsLQSDjQEQ1HhO7PZ2pBd+YW2Cba1Qk6WKJ18UOJu8XLtXYrTXvm96AyFN7psUlLbxJHLBkQQODPNJNc00s2GsS+4b092msXAWgBLzYDWjgMZKl1W2+HZwKu1qn4a/1eciZsH53qXqBO02Bm0X7zLeSJnZBQGMkCP/vV2/8nAo0s6OU2uzadVpBLhOEE+eGYxUgrIMUS+5gkg6VvFRaTJMBIPVACVKdxRljalJfAQO3eWg8XgyHkrGSvy5KQ==|920
+}//cegHmSHjCD5ibo9cjsitNBBO/H6ytdR2sZ8O/YDvc8w4wGeFtnHZHnGNCvEmE/Q2PA9xvWZ4aKRwcixW6tj4tCuBOYtw1/lnxfWmX+gURpLc2f25ph+Q73R38EQzzNbKcMhvEAvlqUvXe7j0tpqOiD3VZp6JX2DpncOmD3dcthPF387clIiGlNfuA8UKnKGH6+/wPf89ZAV+GebeouKOxMvGcowNoskRSOZ5EAMiEQRTmXeoxhFyKT2Rr5lMQH7VwGIeHlzOGk/qGHwcVfTyBFB1BkSXTiTA4vgUJd6bg5E6MPi3WOLDeY8MdAN7B0t38yaKmwMdhwksrxhNdUXZF5axzp5meMx8j8jXeAxJmtJSt1p6aEKEe5wA2juPttyhITsTFlYzG+RVsNLT5ZRtlQo0yWgKnQ8hkAaZht17WrQ+wGsoh59VcbrEsKZV9R3KhGClAfGPRpLRUdkB0RenBEDcc87yl0HFVFgVvON6Zp6grFVxJwJ1xZB4zaG4KlHfj7Y/InvG7lllOqhK8ivVhHWEOhjdA4/VQtP9OhMfwBPVHUevlDenV0WArz4tm2k1fklVf9U4IOUfk10G1RCmgRxtpq1HoMm7ds7pvrcuCF76UxvQZ8csgUByyzCf2Gb8W9WIq5m1aF7NnCw88RGeVIboj0skM791+6Ry2V7dXBeWkrpqHFkPQohGl1Du3aD9bcpdDy8Qbdp7Qu+iTZKCvtnMmYEDBUmIzbe6tjSgtwzSgCe8lOaANWb+wND/E7xzxuFowPq5WjonRht9PAefz22pk5pIJQdmBd9P7zwjSWIfW1LDZ7CLJ8GPteWPpFNF0384UNJS9PzD/xeV45pnPgOb5gA0yRwz37e4IDqaJEcs9kP3WrIM+SQc1lSChYIO7+Hh/0OMA2RvZnNcZJlCLA==|920

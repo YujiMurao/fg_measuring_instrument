@@ -3,7 +3,7 @@
     "Count": 39
   },
   "Cols": {
-    "Count": 62
+    "Count": 60
   },
   "Values": {
     "1,0": "今月校正",
@@ -17,18 +17,17 @@
     "3,39": "次回校正月",
     "3,42": "校正有効期限",
     "3,46": "担当者",
-    "3,50": "要校正",
     "25,0": "定期校正・修理再校正・修理・廃棄の履歴",
     "25,14": "新規登録",
     "25,20": "削除",
-    "25,30": "登録件数:",
+    "25,29": "登録件数:",
     "32,33": "Tool id",
     "33,33": "Last calibration date",
     "34,33": "Next calibration date",
     "35,33": "carbretion Cycle"
   },
   "Formulas": {
-    "25,31": "COUNT(C28)"
+    "25,30": "COUNT(A28)"
   },
   "AttachInfos": {
     "1,0": {
@@ -83,7 +82,7 @@
               }
             },
             "Params": [],
-            "ID": "8c66c757305a43df95214c065be0d341"
+            "ID": "851388ed93484554abb3c9072eb8131f"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -158,7 +157,7 @@
               }
             },
             "Params": [],
-            "ID": "7734bc1b89a149a8baff15bca9cf0509"
+            "ID": "5f93b537de5a45248b56daf63e4be0e0"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -168,7 +167,8 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "='校正対象機器 (2)'!A2"
                 },
-                "PropertyType": 2
+                "PropertyType": 2,
+                "Value": "Background 2 0"
               },
               {
                 "TargetCells": {
@@ -237,7 +237,7 @@
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_calibration_history",
-                "ColumnName": "it_tool"
+                "ColumnName": "id_tool"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -247,7 +247,7 @@
             "Params": [
               "=A5"
             ],
-            "ID": "f77da894280748eb958c6791d463332a",
+            "ID": "f935894f2b864488bf2b9b740a3667ba",
             "Disabled": true
           },
           {
@@ -270,7 +270,7 @@
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_tools",
         "RowIndex": 3,
-        "ColumnCount": 62,
+        "ColumnCount": 60,
         "RowCount": 22,
         "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
@@ -283,7 +283,7 @@
     "4,0": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "ID"
+        "ColumnName": "ctrl_no"
       }
     },
     "4,3": {
@@ -341,18 +341,12 @@
       }
     },
     "4,50": {
-      "CellType": {
-        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
-        "ShowOnlyEdit": false
-      }
-    },
-    "4,52": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "category"
       }
     },
-    "4,55": {
+    "4,53": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "n2",
@@ -363,7 +357,7 @@
         }
       }
     },
-    "4,58": {
+    "4,56": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "Items": [
@@ -445,13 +439,6 @@
             "ConfirmText": "本当に追加してもよろしいですか？",
             "UpdateValues": [
               {
-                "ColumnName": "管理番号",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!AQ26"
-                }
-              },
-              {
                 "ColumnName": "処理年月日",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -524,7 +511,7 @@
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!C28"
+                  "SerializeProperty": "='校正対象機器 (2)'!A28"
                 }
               }
             ],
@@ -543,7 +530,7 @@
         "DetailListViewInfo": {
           "MasterTable": "trn_insptool_tools",
           "ColumnOfMasterTable": "ID",
-          "ColumnOfDetailTable": "it_tool",
+          "ColumnOfDetailTable": "id_tool",
           "DataCommitType": 2
         },
         "TopCondition": null,
@@ -564,60 +551,28 @@
       },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "control_no"
+        "ColumnName": "ctrl_no"
       }
     },
     "27,0": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PopupDisplayMode": 2,
-            "PageName": "add校正履歴 (2)",
-            "PassValues": [
-              {
-                "Source": "校正履歴の編集",
-                "TargetCell": {
-                  "SerializeProperty": "='add校正履歴 (2)'!A1"
-                }
-              }
-            ],
-            "LoadBindingDataOption": 1
-          }
-        ],
-        "ClickMode": 1
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "ID"
-      }
-    },
-    "27,2": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "処理年月日"
       }
     },
-    "27,7": {
+    "27,5": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "項目"
       }
     },
-    "27,10": {
+    "27,9": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "内容"
       }
     },
-    "27,19": {
-      "BindingInfo": {
-        "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "it_tool"
-      }
-    },
-    "27,22": {
+    "27,18": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "FGC_AssignTo",
@@ -627,16 +582,22 @@
         }
       }
     },
-    "27,27": {
+    "27,23": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "FGC_State"
       }
     },
-    "27,30": {
+    "27,26": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "管理番号"
+        "ColumnName": "判定"
+      }
+    },
+    "27,29": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "承認者"
       }
     },
     "32,41": {
@@ -721,14 +682,12 @@
         "Formatter": 10
       },
       {
-        "HorizontalAlignment": 4
-      },
-      {
         "FontFamily": 0,
         "HorizontalAlignment": 11
       },
       {
         "FontFamily": 0,
+        "HorizontalAlignment": 12,
         "Underline": true
       },
       {
@@ -736,16 +695,13 @@
         "BorderRight": 1
       },
       {
-        "FontSize": 13.333333333333332,
-        "Foreground": 12,
-        "Underline": true
-      },
-      {
         "FontFamily": 0,
         "Formatter": 13
       },
       {
-        "FontSize": 13.333333333333332
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 11
       },
       {
         "FontFamily": 0,
@@ -753,11 +709,11 @@
       },
       {
         "FontFamily": 0,
-        "Foreground": 12,
+        "Foreground": 14,
         "Underline": true
       },
       {
-        "Foreground": 12,
+        "Foreground": 14,
         "Underline": true
       }
     ],
@@ -772,11 +728,12 @@
         "Text 1 0",
         "[AUTO]General",
         "DarkGray",
-        "yyyy\"年\"m\"月\"",
-        "yyyy\"年\"m\"月\"d\"日\"",
+        "yyyy/mm",
+        "yyyy/MM/dd",
         "Right",
-        "Blue",
-        "yyyy/m/d"
+        "Left",
+        "yyyy/m/d",
+        "Blue"
       ],
       "Borders": [
         {
@@ -819,7 +776,6 @@
       "4,39": 10,
       "4,42": 11,
       "4,46": 9,
-      "4,50": 12,
       "25,14": 3,
       "25,15": 3,
       "25,16": 3,
@@ -830,30 +786,35 @@
       "25,22": 3,
       "25,23": 3,
       "25,24": 3,
+      "25,29": 12,
       "25,30": 13,
-      "25,31": 14,
-      "25,32": 15,
+      "25,32": 14,
       "25,33": 3,
       "25,39": 3,
       "25,40": 3,
       "25,41": 3,
       "25,42": 3,
-      "26,32": 15,
+      "26,32": 14,
       "26,33": 3,
-      "27,0": 16,
-      "27,2": 17,
-      "27,7": 3,
-      "27,10": 3,
-      "27,19": 18,
+      "27,0": 15,
+      "27,5": 3,
+      "27,9": 3,
+      "27,18": 3,
+      "27,19": 3,
+      "27,20": 3,
+      "27,21": 3,
       "27,22": 3,
-      "27,27": 3,
-      "27,30": 3,
-      "27,32": 15,
-      "28,32": 15,
-      "29,32": 15,
-      "30,32": 15,
-      "31,32": 15,
-      "32,32": 15,
+      "27,23": 3,
+      "27,24": 3,
+      "27,25": 3,
+      "27,26": 16,
+      "27,29": 16,
+      "27,32": 14,
+      "28,32": 14,
+      "29,32": 14,
+      "30,32": 14,
+      "31,32": 14,
+      "32,32": 14,
       "32,33": 3,
       "32,34": 3,
       "32,35": 3,
@@ -866,8 +827,7 @@
       "32,47": 3,
       "32,48": 3,
       "32,49": 3,
-      "32,50": 14,
-      "33,32": 15,
+      "33,32": 14,
       "33,33": 3,
       "33,34": 3,
       "33,35": 3,
@@ -885,7 +845,7 @@
       "33,47": 3,
       "33,48": 3,
       "33,49": 3,
-      "34,32": 15,
+      "34,32": 14,
       "34,33": 3,
       "34,34": 3,
       "34,35": 3,
@@ -903,8 +863,8 @@
       "34,47": 3,
       "34,48": 3,
       "34,49": 3,
-      "35,32": 15,
-      "35,33": 19,
+      "35,32": 14,
+      "35,33": 17,
       "35,34": 3,
       "35,35": 3,
       "35,36": 3,
@@ -920,7 +880,7 @@
       "35,46": 3,
       "35,47": 3,
       "35,49": 3,
-      "36,32": 15,
+      "36,32": 14,
       "36,33": 3,
       "36,34": 3,
       "36,35": 3,
@@ -938,10 +898,10 @@
       "36,47": 3,
       "36,48": 3,
       "36,49": 3,
-      "37,32": 15,
+      "37,32": 14,
       "37,33": 3,
-      "37,37": 20,
-      "38,32": 15,
+      "37,37": 18,
+      "38,32": 14,
       "38,37": 3,
       "38,38": 3,
       "38,39": 3,
@@ -952,16 +912,16 @@
       "38,44": 3,
       "38,45": 3,
       "38,46": 3,
-      "38,52": 21,
-      "38,53": 21,
-      "38,54": 21,
-      "38,55": 21,
-      "38,56": 21,
-      "38,57": 21,
-      "38,58": 21,
-      "38,59": 21,
-      "38,60": 21,
-      "38,61": 21
+      "38,50": 19,
+      "38,51": 19,
+      "38,52": 19,
+      "38,53": 19,
+      "38,54": 19,
+      "38,55": 19,
+      "38,56": 19,
+      "38,57": 19,
+      "38,58": 19,
+      "38,59": 19
     },
     "SheetStyle": {
       "FontFamily": 0
@@ -978,21 +938,21 @@
     "4,39,1,3",
     "4,42,1,4",
     "4,46,1,4",
-    "4,50,1,2",
-    "4,52,1,3",
-    "4,55,1,3",
-    "4,58,1,4",
+    "4,50,1,3",
+    "4,53,1,3",
+    "4,56,1,4",
     "25,14,1,5",
     "25,20,1,5",
-    "26,33,6,29",
     "1,0,1,6",
     "1,6,1,6",
     "28,0,11,32",
-    "5,0,20,62",
-    "27,7,1,3",
-    "27,2,1,5",
-    "27,0,1,2",
-    "27,30,1,2",
+    "5,0,20,60",
+    "26,33,6,27",
+    "27,0,1,5",
+    "27,5,1,4",
+    "27,23,1,3",
+    "27,18,1,5",
+    "27,9,1,9",
     "3,3,1,7",
     "3,10,1,10",
     "3,20,1,5",
@@ -1002,24 +962,21 @@
     "3,39,1,3",
     "3,42,1,4",
     "3,46,1,4",
-    "3,50,1,2",
-    "3,52,1,3",
-    "3,55,1,3",
-    "3,58,1,4",
-    "26,0,1,2",
-    "26,2,1,5",
-    "26,7,1,3",
-    "26,30,1,2",
+    "3,50,1,3",
+    "3,53,1,3",
+    "3,56,1,4",
+    "26,0,1,5",
+    "26,5,1,4",
+    "26,9,1,9",
+    "26,18,1,5",
+    "26,23,1,3",
+    "25,30,1,2",
     "4,0,1,3",
     "3,0,1,3",
-    "27,19,1,3",
-    "26,19,1,3",
-    "27,10,1,9",
-    "26,10,1,9",
-    "27,22,1,5",
-    "26,22,1,5",
-    "27,27,1,3",
-    "26,27,1,3"
+    "27,26,1,3",
+    "26,26,1,3",
+    "27,29,1,3",
+    "26,29,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1073,7 +1030,7 @@
           }
         },
         "Params": [],
-        "ID": "2a66fe64c8fc496cab9389b10baa679a"
+        "ID": "e0a52a0204ca4dc7bb799a6804b34c56"
       }
     ],
     "AuthorizeInfo": {
@@ -1081,11 +1038,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_insptool_tools",
+    "RelatedDataTableName": "trn_insptool_calibration_history",
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//RbGoKDjQPD890kMifNu+YLcdSFzFoB9+v5G0R3nN2hJGrYt56D5w5+whMgqYongJ8aySXh23vt53wbnJQ6FHNoAqRAmyiGg08RjoNR/rJRbhgXhh9hh/M55v/JcWnylW/z7dhV5kiw5GAWGz1mR3f99xio5edbfyqw1hkgXYWTDoStBIbWgWwc1I32a3Xd78zVS11F3cvHLTYtmUup/7Mfvj9NFYO+CFb6vBRL5oQUlBr2mt4DsTiaZuWcBw+2znZIlMDVciBSlgZ9ev4vMUT8SthSgA+ae15L14ohaYzaZkk4CUAUeib9432LIe7N+UaZE/stH5HKecsUXb2ESNq2rIz3bMqx21eOcxOv24CY09PaLGiaihkIXRtmz9dpKoYeg7jmdTcMe9Gz7Eh9noD6rh9wwU8F/S8ueQm4jWsGJxix3butlGXAg26ujV2vOuYEKjm/Ke8VKns6FHT3MrUWJktka9o3nbTbXYtCabPh48CA8/WDlrcegdzlS3oolRWiPRvlJ2MAvXhcYs563GLvqDYXVX+1QZbqtnRfVkEYdXV1JbbxnHyOmt/DkdmbFCHsBRNJ5N4LgeSjAOX6a9F2QvGbdnDkdiY1trzMvq0kS9zhVkHRVZ6Xfmlv+GzHMp+ksYt5ESblctC93so4Ii3ORKpEaL1Z2Wdb05nx+Juo3Gzx9GVwqmzv4rrd19l56Yn+9d4lzMhzbULV6GTqeNXtf2Ov84mzlx6iczJh3NBMi2X7h5o7FfPXuYtM3HzlZHjm17CYv1R6d2l/ovoRtY6KjX2ySqGWHubj/QTk764w5Cg5hBVUPK/+vPFsigCQi0bCFQWkSC8roOwi0cOuSg8XQs5pw1cBTibq/M1PglVTKQkC2DDAR7j1I6BSh6XMrss2BGZE5CviEAQx0ygwkaSw==|920
+}//Rn7i3C74qJM7IZBpXyfHpq0yzTVL7kJjqZNQRhiU/AG50VhquKLXAw9FBpQo7YzJdW0DBHSvbdmJUEnlor9nFhcxnE8ZYP0UibVo84E6l56LRBG1stVj/HIWnziqFteSrRllbEmfTVkEWYC44vZAuHP+c+emK+u5nJycc4rQZ79CYaJ+BSpXXwJ9yXejOer0ELqH+Emg2lnIVDZvb+yUZ8H9UxQCaF9Iuwifzfbn1eIEcZJm36JcvRGLDTeZJ6Pij4RBvpiCyJmKAVqpLhq6lio1QMxeT8xyX1IyzkgMvMPfBTFWBvpLp5OByWqmtjI6x9tFcP4y1uM7MOboVaKP4PyDA6CN9AcIGv3uJ4eAzl4iwLX0ohy6l3GzfQ4S4VKhrdXD/fZfR0PraDMi5fvcD9f1C2R6ENbiQMKVyt3hl1bwt94zg/mwNpUdjlb8zdbSuGIneKvNfHE4Q7Rs5BMd0dCsgeNtAHFek04N0R+IknbV4wdw/9jtiYqEHFvBgPVMaCohUCBQko9WR8Q1rs+yDqLjDuNQv82W5gQZvB4qwTSJ3eRUXfRPoCFJclRoscCRKfYsXPXQQ3DSWSR2AUBBgkVZLpvqRtJwigXCb3TPAZNllBHopHhzXToOSS2XbJ1huf4/LkL34525sjwxg2ev4Faq30hdH3nsRWvV8jSnSVOWwZB21XwyAxOB/BGh0yaQLa2uy5jmZMJ9DH8dI4B5HaxdvoVfyEfRGxOko9VAXMQQ3CA5UdnRmriZsCsIhoRp7uuyXmRpvT+ZLZnbFNHxkCyotWMqZnQuCUlBzDFI7Cmh6JYAfbrRTNXaFhS3nPUTviBwDJT/VQojXE/M/cyktNIg7BLI97+4xvLgafzHTp8b4tBXqZHLrFg85/HmLAEbxGvy6ld8NR2qM3NQKYCamA==|920

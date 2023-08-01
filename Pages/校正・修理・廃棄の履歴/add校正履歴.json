@@ -144,7 +144,7 @@
                     "IgnoreTargetPageCachedCurrentRowInfo": false
                   }
                 ],
-                "ID": "a6ce22f4-2d63-4dc8-9e1b-0c4b07968010"
+                "ID": "57e733d9-9c38-47c5-8f06-342d79d94165"
               },
               {
                 "CommandList": [
@@ -172,7 +172,7 @@
                             }
                           }
                         ],
-                        "ID": "ef4c5135-226c-41a7-bacd-696347bc047b"
+                        "ID": "accdfab5-902f-4705-9677-9855bb4508a6"
                       },
                       {
                         "Condition": {
@@ -195,7 +195,7 @@
                             }
                           }
                         ],
-                        "ID": "60a74c89-70b2-4722-b4f7-c5aafa83bcd9"
+                        "ID": "e16c2879-e322-4d4d-8655-b8684f85dc9e"
                       },
                       {
                         "Condition": {
@@ -219,7 +219,7 @@
                             }
                           }
                         ],
-                        "ID": "8acd8470-c686-4727-87a1-3186517dcbc9"
+                        "ID": "5d1daa74-789a-4be4-a4ed-143444013958"
                       },
                       {
                         "CommandList": [
@@ -239,12 +239,12 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "dcb387a8-7ec5-45be-a498-a601fa1f6211"
+                        "ID": "b3fce3a5-5d32-4e58-9c94-e203fa89bf2a"
                       }
                     ]
                   }
                 ],
-                "ID": "d02863f8-6be9-407d-8756-2cbbf915fb6d"
+                "ID": "59f1a9a0-8dfb-4967-b05b-8c2ee225d0a9"
               }
             ]
           }
@@ -294,7 +294,11 @@
         "DataSource": "trn_insptool_tools",
         "ValueColumnBindingInfo": {
           "TableName": "trn_insptool_tools",
-          "ColumnName": "control_no"
+          "ColumnName": "ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "trn_insptool_tools",
+          "ColumnName": "ctrl_no"
         },
         "CommandList": [
           {
@@ -308,7 +312,12 @@
       },
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "管理番号"
+        "ColumnName": "id_tool",
+        "RelationBinding": {
+          "RelatedTable": "trn_insptool_tools",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "ctrl_no"
+        }
       }
     },
     "10,7": {
@@ -1261,14 +1270,14 @@
   "Spans": [
     "0,0,3,16",
     "22,10,1,19",
-    "8,7,1,23",
     "10,7,1,23",
     "12,7,1,23",
     "14,7,1,23",
     "16,7,1,23",
     "18,7,1,23",
     "20,7,1,23",
-    "22,7,1,3"
+    "22,7,1,3",
+    "8,7,1,23"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1285,4 +1294,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//S4Uys7SewwTZGXD2eXE2yOXZhpABM3rpJWVLVsNDXliIn76sF/7i6r7/UlVsxSfJcolLl+xZsNgcMH/U6WQoiyR6U93zhHQS7EOvHIbRTuIE9crph0FqcDxsnlpKOickIa3gSiNTa6/9QvMWS6+tUBr/9lYIcwD26VnsBC4W2qgDhv4X4eaN9V9McXwX0xJoanKB0oaqH0iJfpyt/yvJRD0NfDHVDhVLYbQYlarMQOzAYgrY1dOL6cCPVird2ACVOofBzjd7Rodw/eu69pRrTTdnO/xaFsqUB+q+eDANU42HpPhBOJ+XlaD1IK3KSWpv6HdGelD2pZRUG6W5wFbY0Z0Gy4nwTjC2lqKWSOCJdNjEbhq8kgY4Iy1Y9GT9uBmaoSH8U+OKxDr28yGhExYf+PGHoD7Hf+A/9Op7mG3XBk8ABeOi5Ma8tzWT8cI2p0FX/Hn/aa42xC7aJGIJfNfLXdOfQOPYPno5kbCe33aXY7fsS1+Sc3jHzvtw1YhCab3exvSt6BTgN3hnwwev3L2QBl+nzwpB1hTGoJK5gD0nt54XPJgEKTferZ40OyM470MVEuubmUz6b1g7h1r+1CJ/4LaCBBpzKhz2ZiaG/FgZ5oMsuswP57mjP8D80uyKU9heuAojjl79YXxnNp564FtgUXTl/j0VF9LrEm1pC2Mho/fB14Xyx4l9S2Xz+AdsQ7mn8niDCYUBcXwnQL1R42QIEJOr7DseZkwRET/NxTuzKUUpMrZ3IfZ4eWKQUwaGrg7L9GTag2SQ8JxoH1cSOJ82sCBN/xqkMpzY+MNZZh9sZ43cybemSllCZMCS/vOLyghU+uO044fuP5toVj07MsZ/oncQDEKnaoNBcOiW1aTxErX7g4AGuxSU+SSKarFztBHvUlUTzhxyTEheL/txPkQjLA==|920
+}//R3LDV8It9+poQgqhJKWhhgpv1Wz9YTnww28KBJ3jtXTvUw4M0dpF9P0mh4j0aRgGZbf9Z8SjcutNePbWn8BXfD1QkWcfpqhHQLJz2N2ChwzzkDdfAxq2jJz3Rb3+fByWvCmU+S10Hqh5hgpgrkofx6eBhGjY79457yfdbF94semOZNdOYKB/64gGKczA89SNFUYRi+uiwkciirUjS+Wd9O4WP1Mebxvxa94zVHVSOYyvxtb7xoZY9dPTstxHx2kIHZxxxf8Ac4zEvoUQacyo6k7ELTeszTCGnlahmDA2o7+l5Wb4y6q+2GfQy94M4AU53yol6xMFKIlq8oDICuYwYdpg2Wm9UV/3CUV6uAvkLYEeRfS2Vo451MXcwSipmbiWU5taW8fwy49FF1T8FeWrD9EW0AWcNws8BcK6ZSVkDjW3AGLpzcRe3uv9+92ccP1zAxzvkUbxLz3Z8geuaRrmcTeLQxu0Ic5v2ycSNO+UHhAifpIMPFCNCrZMynT4c0KV1v2zuOpAP3E6gURZl+Ki0EBcoIPBCRyMtKSKT1xYYTi+YvCP02KkMVBj28+T95CzBJxa6vUXXHYtjZyYn0m5RX5fuCLRqQ3kIpqjn1epJZoGX1formudlcxyCu1bsVsN2CM7NFEEsn/R+zXW1NNqrBgzp7daG/T5VvowthV8Abx5rgT6+Up70yR72UG1ngsx1UoWOFjZrp0k0g2yKT9c0PlFdvClCsyum5YKfXceBsy0S9DZUQtSBDz6J34WNa/uLGy2Dvc7h0Ugcq1V/kSLGKGy+iJwIv8z0tyE9ui/PnqNcc/4tp0gozbjM4R1bANnr0AL5ZyId6NCjLdwm7w3xKKX5tuVYRno8pzbkwFq2Bxf/F5o1Pd1ZxNZItcDVNBJMQLJuT8reHz1nxfwWP+dkg==|920

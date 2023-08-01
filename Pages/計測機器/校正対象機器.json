@@ -80,7 +80,7 @@
               }
             },
             "Params": [],
-            "ID": "71277b9f0566404cb03aaa9a00b648f6"
+            "ID": "855da01128f8419d888ab5296e9e071c"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -155,7 +155,7 @@
               }
             },
             "Params": [],
-            "ID": "13c2c09069354124b546871062b0dbe9"
+            "ID": "85dfc0dd112749a3860f73bcd405a985"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -165,8 +165,7 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=校正対象機器!B2"
                 },
-                "PropertyType": 3,
-                "Value": "Background 2 0"
+                "PropertyType": 2
               },
               {
                 "TargetCells": {
@@ -235,7 +234,12 @@
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_calibration_history",
-                "ColumnName": "管理番号"
+                "ColumnName": "id_tool",
+                "RelationBinding": {
+                  "RelatedTable": "trn_insptool_tools",
+                  "RelatedColumn": "ID",
+                  "DisplayColumn": "ctrl_no"
+                }
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -245,7 +249,7 @@
             "Params": [
               "=B5"
             ],
-            "ID": "404a243e61c1431a9e078c0f165253a7"
+            "ID": "aa90855e54b94241b49491949b6bcf2c"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -281,7 +285,7 @@
     "4,1": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "control_no"
+        "ColumnName": "ctrl_no"
       }
     },
     "4,4": {
@@ -416,13 +420,6 @@
             "ConfirmText": "本当に追加してもよろしいですか？",
             "UpdateValues": [
               {
-                "ColumnName": "管理番号",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正対象機器!AR26"
-                }
-              },
-              {
                 "ColumnName": "処理年月日",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -529,7 +526,7 @@
       },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "control_no"
+        "ColumnName": "ctrl_no"
       }
     },
     "27,1": {
@@ -888,7 +885,6 @@
   },
   "Spans": [
     "2,1,1,7",
-    "4,1,1,3",
     "4,4,1,7",
     "4,11,1,10",
     "4,21,1,5",
@@ -906,18 +902,14 @@
     "27,28,1,5",
     "25,15,1,5",
     "25,21,1,5",
-    "26,34,6,29",
     "1,1,1,6",
     "1,7,1,6",
     "28,1,11,32",
     "5,1,20,62",
     "27,11,1,12",
     "27,8,1,3",
-    "26,8,1,3",
-    "26,11,1,12",
-    "26,23,1,5",
-    "26,28,1,5",
-    "3,1,1,3",
+    "27,3,1,5",
+    "27,1,1,2",
     "3,4,1,7",
     "3,11,1,10",
     "3,21,1,5",
@@ -931,10 +923,15 @@
     "3,53,1,3",
     "3,56,1,3",
     "3,59,1,4",
-    "27,3,1,5",
+    "26,1,1,2",
     "26,3,1,5",
-    "27,1,1,2",
-    "26,1,1,2"
+    "26,8,1,3",
+    "26,11,1,12",
+    "26,23,1,5",
+    "26,28,1,5",
+    "4,1,1,3",
+    "3,1,1,3",
+    "26,34,6,29"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -988,7 +985,7 @@
           }
         },
         "Params": [],
-        "ID": "028bc0a3f2024f0195c4b42966d49914"
+        "ID": "7c80117fc2e544339d41c0526742ac61"
       }
     ],
     "AuthorizeInfo": {
@@ -996,11 +993,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_insptool_calibration_history",
+    "RelatedDataTableName": "trn_insptool_tools",
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//1BX5yKUIs5tzpxUu2hcF4VlzgNvSh/3PhTqm/bMvx96eh+gUITxx0Qx1RzsBWoQqlEri9BlNmMXHrlYBkacXjcFoE86j7V8N+BvcvaMiK6ADBRfPZ+IGyGNH6N6N0Q4LEgzQn7hn+8LDjzykdJEaBAf58H/J+FAbUsbza8t8Tn1wKhQojfg2+/elH67DNeavmTyaaP7E4CHyycz/Feti1Frxq0KJD32YeModc7baxNt+IicLyEAFmol8pFJEhNq7w6wyMapN/NhFWzZYm1AjRYBRMCERrUkfhi5rUVCY4446xz+y5BF2TAkSLd3dh6kM2+DKspCxCX2ViG4wi/9Vsqriipm+7s43iOrkQxymqIO+THADPH3836/y1p9V6ET1kyzOSeCK4u+vscGlVGUG7ZGOkpoBu76ny8KF98hssmDBuza0r53RNMFBknDtHJ8Bi0PEgqL7Huh16RWVdGn0PLQYlShU/0QHEQURQcOi5oqV4TsY3MRAHumi9IIjO/qu+KP9OqbvHXJ1V6yF0ggR69SdbB6ns8Hn/u7ySfkC6oADyH/PRo3Y8gMIuJRE24UH5P8XI2crxKOWylq/cArQdeCFIVm+WOkDcoAACNhUiV43I0wi2mCk8de1dRSEpKhQuP+jd01lcePA9bi6Qyu293hunpHqpnV2YP9+DSnHObilp/wACwcF3rz4FR+QmvmXghYfcB4uyMVHj/msDLL9VWBE/9R0g+DiGCeEp5jlBEp1efAuBQ21+Yaiu9Za9XGkms91EewtbZh5vzhk9i/y6/41D8kYldwaunLQcpoe0+qWDnAkJb7OH1tb2BZHOtCK3itoSEUN58esg2hm6DjvNFbik4AAmptDr+COncBLXREYBlfCMxWKDWL83DrgtvBlAO6b/B/wYzxJFpYqnykjVw==|920
+}//Hbfon9UvsbXORQw6qkrV0Rqm4IyZllI2xZ+C7mCo5k9Q+Zndnf3KrryKA6mkkXa8CEc8q2LG0XKN8Gf8gF1Kg93/rrpK3hYnfqF1P8IyqjcikbXi+aLCDLpW7gy5BpAvoheB5vahEt87G/1qqsCK7eIjt5yXxNxNzEmiZt+iZvJcHvAo/d5UBxvDROAZWTTJ4ApSC8qD/pcBjqrcrLiWNHZU0f4dTTak40tAVmV3WZuJmCCktkAAvGzxyfcM8RjtA4IUqQ/bQoBG+47v3uBfgZqpTdog1el/b8PTVfLvb15jPQIO66HY/kZowQHEXG7IlqKQqCvkiq6Cf816qJ7eJID/RwUJPhAEtjFCwiTLIf3q0orvJvFckz1OJOl0Pl5C7waj4SNdPM3JhyKP4Ub2XTH6yonAoZHYPLuKzYwCPbEEsfUp4RNDXemh0/asKVT+ckZssNlGB82gRFTY0Gi5xlaqB5KGETMgVhTA2cD/6nmlsFSI2d/dcYqYnszupWm9hYJoeFE2Z9iuNHHElq6P7yrXHZY0g2XU+C3sklKXfuizjBdER2R+aQ/B7hdwEh4jVR9CvwRSooAakIODmDp6N1++UkFsX45FV54to8h02oghUsdmlYB04Jb5h7hCKGMKJZ/pLWKX/YoRtwiZSkn88OE2djqagxOUCBlbyBZsadknJHEVAsR+ENkExjropWXgmXxzolSRAAtIJ1vEsClozvjmJtpou26jSPOQ9XMnEsTWdhYDI0EnvH9EviBk6XKkAmw1NYS2AmePNqNVNE++SmXe1/PTWMPDmfILDug/7ixwAVWFBdcL5mqcu9H7DEwSFEnCd6HzGewHE6vJkiTO5NxgndagwlwLWg5EUHH2Jj4jRZrgC8YtdeL2uEvNUtEqOb9VuEuqZF+AKNhLWjGHvw==|920
