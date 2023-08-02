@@ -632,7 +632,7 @@
               "=F16",
               "=N16"
             ],
-            "ID": "f2083bab1b254f26b24e00c43a4b55a0"
+            "ID": "75a3c67207784c12b7f954950ccc5580"
           }
         ],
         "Text": "検索",
@@ -741,7 +741,7 @@
               }
             },
             "Params": [],
-            "ID": "6e45deea212c49579282319f6e339bcf"
+            "ID": "809200d5c3664ab2a76591042f14cbe6"
           }
         ],
         "Text": "クリア",
@@ -777,7 +777,7 @@
                     "NewOtherName": ""
                   }
                 ],
-                "ID": "9525d5b3-e5d6-4351-9b0f-05268631fda5"
+                "ID": "9292d78a-6011-46ca-9731-653dd2f36234"
               },
               {
                 "CommandList": [
@@ -788,7 +788,7 @@
                     "IgnoreTargetPageCachedCurrentRowInfo": false
                   }
                 ],
-                "ID": "a5f09d91-6f97-45fc-8365-7b0a5b7e90ac"
+                "ID": "78f65ec4-249b-4265-bd3c-f2268a342b14"
               }
             ]
           }
@@ -823,7 +823,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "addoredit計測機器",
+            "PageName": "計測機器の編集",
             "PassValues": [],
             "LoadBindingDataOption": 1
           }
@@ -2339,6 +2339,8 @@
     "23,48,1,5",
     "16,42,2,4",
     "16,46,2,3",
+    "23,0,1,4",
+    "22,0,1,4",
     "22,4,1,5",
     "22,9,1,9",
     "22,18,1,5",
@@ -2348,9 +2350,7 @@
     "22,33,1,5",
     "22,38,1,4",
     "22,42,1,6",
-    "22,48,1,5",
-    "23,0,1,4",
-    "22,0,1,4"
+    "22,48,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2368,4 +2368,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//j0RzGmKDntN8rtrP7eVFJQDzVYfKIPJw0vcF/r1i5mMt8iASxF4auvTARrXVEo6I4yuuQCH65NhRCdp0QQzySakARSnK4hTFNKSwny8FBYE8XhI/vBNHrvcK96ms89WV/JrEI1Kjd9p8nz/w9xMDc5B2M4JrsdHSfhrRr+ctOma+HxfqU2ZgGgGyVt2MiKYU+zovoLcmmYnc7mlrrebZWQLw6prMY0yyRPBxdiytJlN7MxvqTnOTxMXdn4ymXbLjCOMNAmQaKQI1quym8Y3K4StdY+XKZA+4hRuDrMqxtZ5Hbc2+sjZiHEvIR+B5P3JtJ2/OYMHJL9MU+ZYSi5cMHXeoAtV2A6cQlEK39enHOfJgZYD5r4m7keuypYfLGstXhLHmLd0ecX0kZ7mHyhGBmA3owAmP4tTa+MPjWJ0Tml2K7hYpY86PxGW3qXOGmhVERDka7yFib/MhMCKbl484uZ4Cr9svVw1dDdCOH3MGtUG1UJwOZ6HYlm4roZMyRyiQQOkj5gEsib+VQinuhWjMXk/4gpjZOM40RBPoQO9q2b7Ihmo7Z21Fs11MoEEHLGX5fXmy3iDzes3r2PfItjMT7Xz+geLxQRteF+GCoCvnM4a2UgIPyuqqPRlw9ZTP2GyUDT6cO8Ix854u58YRW9+RENUQkEyAqmOT+u+ruHeN+6ciJdqtIGWxLxndLuDPpzltRJ/4wNjtcIxp3ljVTTQFXm+jENPxrepk0h3qdvECgI0rQfV7I2fuDolEksHGABawx5GOciv1PCVRxZ3TzXNRksfmuVJusd27o3Q+Iv+2szbHHy/p3e+gDxFxFLasMemADCCIYjHS7WRBLCHW4Xzf3TKfflpUp+f8ug1IRapY3lW2vGeiaCWqqAe0PyYugtoDuDyvsBcC0BXRhO/JoIG1dw==|920
+}//pEUt1CGSCSr3VmBo/kC3NmaaUhfpKe4HW6QPQcn8oe4l/870x9DFtOJNWRRTjRRbTNBKWpaQ1hhTue84331maVwO7vIvi8jQnN3m14a4rN6bWeeaxYSRXWjuCpz0Qxhcx9utpjDcjo+4wOBao+j0iKBX7utAD3WOam821x8Rn3yj0sZwwWQL2Y0yXUHxUIAy8t6DL1kYxW1mzSXD5CoQAiZ0U6wtvSzO0oCA35HMH3AWvHM8i//gj11w65PEyr8+q3r8wQeTKxcJPRB9sIybxG19JgiuTBTswdluxzJLWHNV3vMKLC1qHI1ACHBsq56PDA1VxeDhQy+C7HKJp8tGTjD3enTp7uCRjXdPOvnnmTIq0DyJT7/2CDmcBdD0ESmYKkgKbNfr+HPEBQa/mZhicM06uGaRzw6tgn2yyX2gklWpDiC3sscWGzFK5j4Fb6qB0Yz8/YvZP9JkQKn0ul4xn1yn4yaMURaglAE4NfHkJ52ZrNXIsxR5HCJzT+MEGcNp9PBZc2lwxkycZ7V0tRCyz+mbzPFJcNRcmUhO7OYIl9FWXAXgA3N57MGqAcDA+QWbjTBtRPvM/7Rupo+xuGWaUpQW23WuXuMVj8htSKg0rTRqXkjdysJuPnYWDEZcIODCE1IWWlK3SMNkjWFwSeXo3+gMAJrKy2tljg0b5JPHsYHF25U/Psqzyz8Qn4teY3LTwAubuUOmW2dAVmtFm6FOW+cnn8ezsypO7XitveVFte9MhX5qoq29PW4tXZlvQ3icZpOFR1IPWcaxhCSmzdOPhktYTEmekBJ+APLBt98VVgyQBpR6t9bd/X9/NMFU+bboB0txBxuKaBmFx4N4XxYDFmCtcoeDg97t678Eu8N71DZP84bcTRJoqxDMLAdJdFI8ctFecmm/MMlCIvOTcGPO6A==|920

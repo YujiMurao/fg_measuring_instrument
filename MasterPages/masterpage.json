@@ -168,7 +168,6 @@
     "36,2": "記録文書作成",
     "38,2": "管理番号マスター",
     "40,2": "校正対象機器",
-    "42,2": "校正結果登録",
     "44,2": "校正・修理・廃棄履歴一覧",
     "46,2": "測定機器一覧マスター",
     "48,2": "テスト",
@@ -496,7 +495,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "校正対象機器 (2)",
+            "PageName": "校正対象機器",
             "PassValues": [],
             "IgnoreTargetPageCachedCurrentRowInfo": false
           },
@@ -572,45 +571,6 @@
         ]
       }
     },
-    "42,2": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "addoredit校正履歴",
-            "PassValues": [
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=masterpage!C43"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=addoredit校正履歴!A1"
-                }
-              }
-            ],
-            "IgnoreTargetPageCachedCurrentRowInfo": false
-          },
-          {
-            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_insptool_tools",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "ColumnBindingInfo": {
-                "TableName": "trn_insptool_tools",
-                "ColumnName": "ctrl_no"
-              }
-            },
-            "Params": [],
-            "ID": "833f0044ce1645c49a797b514fdc1b2c"
-          }
-        ],
-        "Text": "校正結果登録",
-        "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
-      }
-    },
     "44,2": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
@@ -650,7 +610,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "計測機器新規登録 (2)",
+            "PageName": "計測機器新規登録作業",
             "PassValues": []
           }
         ],
@@ -1562,4 +1522,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//YVWeAYEphUOqCKknChY7WwisoBMsTIhSBwl6nkBa4rgb3ISa3GXQSAPV5KUtz+LQ/aYvvtNpg+8j7LmKHmi//MBPXJzvLsLslsHHpELEoSxnaErO+A41IqvCs3QD1t/sgcE2KWSNsCG11WNMizioqfVFea/pRDTTJM1QQ6mxhJT3uVrf1nUnCq9ie+VemC3heE/tBzUz+8PEtBojqSMtc9Zez3S8mb7sD6l31/Mv8m3p0cdum/FtrQruZSyxyprRz5uSb8+3u2Wx4EQZb2jzwrtweePia47Je9o6f1P2JY2keEwMujnZdGGsX6GhyrSSq1JzfHBnR4JOc8FS07NjUXTeQ+YH2Qw+WhhnfuR97FjtukZJghARR9xr4jq3fT7IZBlq5z4cbqb7RcHpIf+Pps4iLnI6bw72mKVMcl+w4pC65e6l3TmCUkvDaEQIWzyMeE+cc1lXW/WxHMOJD4Bs0hrkMVBpeDKVdEiJPwnL+o7ZW0Hv+G4opdQO8Aj7WyZcsgQ5Iox79HvrswJMiSoYz/RBaHO3I7xSWfeigohsckgi7qkqrjMcJpxVyj/ptRBAYUSsv8GmPmCDSrD/e7B7btKdsNqBSjaEvnHfDSP7l2cZy7ssMbgipK/HCngGaQy9TSLL0DheTOjx+aK4H/7y72SeaKTA/bDbcE9/1Mh7g+KzAM9Qjkqkn3F56dWyj32P0Zus5CaBVUI/e1cEHUk5ZtEtn0rFoRm8ib0X9DoiFYvklShV/t167Z0aKaG09LtSR8qs20H0f63XO4cHT0EwJal5Wat6/SzQPkyG2NuLV1Nkk4sRTkp3s47A+X14LzG7a2lV+RWLKW71O5G+AmgBZGSy2C0dY+E1dKEaNds6O1mAfU1bvoc3OfQpDuWb+34g+LVjkBdjygSXN6piAn0fng==|920
+}//oFzsin9dl7ZCBGBfN5gNK5aIMiKVlDrl1O9nWva0JTlL57MN9c4jUmJ/kmRnF/V/EsFGkEvtGUimireGlQxdvPaEtY4MsqM40MseUjhYv9IUW9yKc64duyafPe5wz2vIGnNPreUX2/oh2tSmGTvxraJO5royFyAEhmKWPLjUHlO//0Tfnoq7Lb2J7IR3OVb7uOhBG95uj2Wy9KOpkewy5YVtCgcaYlVgttG0vEnWpc8QY1oXF1RLQ2Y+k3EPrkiXA3csXYBUkLdlC4wUTBAZrOEpNMXCN8Vt9AF+eRLaP6Dw1USKKhkapqWo+vgz8dTGbWTAFq2ibdm3BJXFVrBKFdD4rAYjlZJn28vh5gmZ7QKvPHJmGD9ch3VFYMSv9WguGcD6rtPmQcsa/EC4+oFSTgVFLIPLUOGAKm+NQwV9eDt4coIQCyjf5JVBSuzbYwwRgNky15CStRbFHsV1DoIUUU0E2FjETezfVpuIcaj1pLrSt3Bim9liH8i7tZtM4v/gfvJQsW4/22HidRqkcrLmte7ZEhpGh23WX0ZWdT00sonCc2WwfKE+xIt2+rlYDinHWtbrasqsEyXiTOed6LRZcpnkbKa/K7FrgmZLUNWIACJaFY92bf3VwBaDu8f/O/6hb3RyVnysTlBMKD0RXEX2iZOO6Ls+MEOgAoqC42YaRkGnJ7/aJ98RB0NsvTrrMjmEvLcDqm6DqI7X1p7mzmsKNDS2YMdpyWS2Yzm0oNHUD/AGJ5rUsHMDWLGzB9ZQSjOHYCQU1fwhPSHKUU4gVgDoZkTRnQnzD+///UVyuCcsFv8Xjf5wvxsmkDR4VfumDeEJMZlsxoVQH7fgMCn2Zs6r9edzc86xeIWMepx2rjdNaPeoEBZpyNuHwixhswrLdy5+YaahTK+UbgYDZFS1kPyI/w==|920

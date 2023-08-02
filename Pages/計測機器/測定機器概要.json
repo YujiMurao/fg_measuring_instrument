@@ -165,7 +165,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=InstrumentsInfo!X2"
+                        "SerializeProperty": "=測定機器概要!X2"
                       }
                     ]
                   },
@@ -178,7 +178,7 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=InstrumentsInfo!X2"
+                          "SerializeProperty": "=測定機器概要!X2"
                         },
                         "PropertyType": 3,
                         "Value": "Accent 1 0"
@@ -186,14 +186,14 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=InstrumentsInfo!AP2"
+                          "SerializeProperty": "=測定機器概要!AP2"
                         },
                         "Value": "ー"
                       },
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=InstrumentsInfo!AP2"
+                          "SerializeProperty": "=測定機器概要!AP2"
                         },
                         "PropertyType": 0,
                         "Value": false
@@ -211,7 +211,7 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=InstrumentsInfo!X2"
+                          "SerializeProperty": "=測定機器概要!X2"
                         },
                         "PropertyType": 3,
                         "Value": "#FFFF0000"
@@ -219,7 +219,7 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=InstrumentsInfo!AP2"
+                          "SerializeProperty": "=測定機器概要!AP2"
                         },
                         "PropertyType": 0,
                         "Value": true
@@ -227,7 +227,7 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=InstrumentsInfo!AP2"
+                          "SerializeProperty": "=測定機器概要!AP2"
                         },
                         "Value": "%Null%"
                       }
@@ -424,7 +424,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "InstrumentsInfo",
+            "PageName": "測定機器概要",
             "PassValues": [],
             "Disabled": true
           }
@@ -1700,15 +1700,15 @@
   "CustomNames": [
     {
       "Name": "bugId",
-      "Formula": "InstrumentsInfo!$G$31"
+      "Formula": "測定機器概要!$G$31"
     },
     {
       "Name": "comment",
-      "Formula": "InstrumentsInfo!$AM$20"
+      "Formula": "測定機器概要!$AM$20"
     },
     {
       "Name": "statusId",
-      "Formula": "InstrumentsInfo!$G$8"
+      "Formula": "測定機器概要!$G$8"
     }
   ]
-}//oyvp3inWw07pqe7CxoW3CxUwKX7A+M3V6YEfp5SeEofHEpH4SIh6OW157n8xzLkYy/E4FNK/fOGxxvYqIDJUkV5mkjqWnGqcWjUc968QBSYcIDY+X29VM59E5lPRNq5WFpflJrL4A2TshAUaBHMTPNPN3SMqnqOpBGXk+yB3OzmhSpJW51qDH9X5IvCWFVzxmWCIPH+05qLPXOn+GWXGJfI7An9HdYIVLfry6EeM2BkjtlqX82DfuLRA1mL+IRV1OpmJwDRUlfycQYa3NbU7geSdsbxT3jCiVX2NPsvoMcE+3p9Ek/sG9KapmLcL7E22pLfZb3kTLZzjWKhIhhSq0Cgy4MBmILJd7xNX0vxWvkLBiKhWAScYulX3WYceCJzimSlLEZkDtQdoJQqgoIfaBeVZrQj85jcXKqCLyko45Vkhak7evNtJSdtu4z0eT19sFB4VOqSrx0sNTI5Olcm6NOjkCux0fKjeOSeq0rRgwIqslwuxSrAYIkSkE+sXEeuPrBMlfjauP4lOqTpXbOeuB8g2yQu5QSZL6n02XkZo+fBI6og3luso9wTVtpF6Dcd6N2qIDk+ti+mWBRQoWB83YtoeSnX1dgk1uH71SO7pbxGrVrMKNfhjCogJ1smK6IQ6FXhF21mwkAaqwEqAt6beu7nhOsfRrDAyqI2VNw1JD+6Z6gpEyhiBRFmvXMKP95/RA1rhftHSJ6dhb2tha0ztlY7mcKVly5W3tJ9vobT2PrRNyEkzHSxvWpt5jlJwHYYTNv6PUQwRtJKs/xTODYUC3nLi3iARYOz7VrqzPiiv7Yzlb3+IXX4MkVRqVxwl5KvpMOZ6RAsHINceHNutJlNDG6QhjpKfNAWOSIjyBgzM7jNFpvUCoiWU/W4W2zp4r2kAJfRYmHGUy2n5KwqrwbQ+YQ==|920
+}//55yXy+T6eTDAsul2znTp3zUWXoNVxAOcVzvIc4Z4kELvilJ9p1j1xG9kc1kCBbukrM9lT5p0QMOlyOIPqQ3efrIt8LPesJ7sI6E/VfVkY2o8/RZZ+ed/XrugqrNLI5Y543vXsktwOv32uJKz9mjOoVb/MOrXEqt/4Ey6OPa+OHJKxOD0CYClYecbynSrbykw4fK51TCrNsDNyFCM/OTixysRx0w8AnQ3xqII/Vem+ax3g5HsGyONZRqBLMh5R37OWDzOLQ0/FBiIq1QSNLUdjuajKMNzYQxI7zOxSauGyCrqbdJI+yr5RForBCQ63XsRW1LB0x8AIfeDuXH1T8zxLqBSYoYSuk8LPvUodkXzdc7ks+DVyHZfVPX+Xe/0l1XKISuFDM01nWDIMkrOS2dO1Wn/eo1LYPhbq5MD04z0gugWgnqu7e0UY72D5bDKk5xAeer4p4bgc7E29iusXLu3BYxPdbb49Ih0z8neRj+UBL6gOt30mcJKPlgjfOoXBbNlzhwqcSWeEvHjmmXCQZ0jULRGpxIMcXFGRZPQw60FuuHhz85c/y4y+TaobX077wkVwmgYZ/Jml9/0Yw61TOUeEQuRhqW2bFmUY54oDd25v8GM9oWlBjjngz8cowDipPkT9jXpp4QwE+gAu9+SrsItC56yPg9kMO7CpftcIx59z1279f0/PYD50xExqXzmhFgcOe+AXetjnO8yAIigGn0b1KodxnByD849/iSYZcWDmPU05er54f8cjbB/91jcaw8XQs1y+axufIJ0MikdeeDVH+P484YIC/Flsx1QXgzGMgZeYIhkKjz74V9Qu84MSMClTZPe+8z7xuNQMRM/1S0sTUClf00Efv3V2Gk3bGpNjBW73PkRZMof4bGO2HH805yvFi1aCrXrGU3la0yifoQ5GQ==|920

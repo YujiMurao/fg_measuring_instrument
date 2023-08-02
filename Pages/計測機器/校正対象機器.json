@@ -91,7 +91,7 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!A2"
+                  "SerializeProperty": "=校正対象機器!A2"
                 },
                 "PropertyType": 2,
                 "Value": "Accent 1 80"
@@ -99,7 +99,7 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!G2"
+                  "SerializeProperty": "=校正対象機器!G2"
                 },
                 "PropertyType": 2,
                 "Value": "Background 2 0"
@@ -107,7 +107,7 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!A2"
+                  "SerializeProperty": "=校正対象機器!A2"
                 },
                 "PropertyType": 3,
                 "Value": "Accent 1 0"
@@ -115,7 +115,7 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!G2"
+                  "SerializeProperty": "=校正対象機器!G2"
                 },
                 "PropertyType": 3,
                 "Value": "Text 1 0"
@@ -166,7 +166,7 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!A2"
+                  "SerializeProperty": "=校正対象機器!A2"
                 },
                 "PropertyType": 2,
                 "Value": "Background 2 0"
@@ -174,7 +174,7 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!G2"
+                  "SerializeProperty": "=校正対象機器!G2"
                 },
                 "PropertyType": 2,
                 "Value": "Accent 1 80"
@@ -182,7 +182,7 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!A2"
+                  "SerializeProperty": "=校正対象機器!A2"
                 },
                 "PropertyType": 3,
                 "Value": "Text 1 0"
@@ -190,7 +190,7 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!G2"
+                  "SerializeProperty": "=校正対象機器!G2"
                 },
                 "PropertyType": 3,
                 "Value": "Accent 1 0"
@@ -242,7 +242,7 @@
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='校正対象機器 (2)'!A5"
+                "SerializeProperty": "=校正対象機器!A5"
               }
             },
             "Params": [
@@ -257,11 +257,11 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!AQ26"
+                  "SerializeProperty": "=校正対象機器!AQ26"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!A5"
+                  "SerializeProperty": "=校正対象機器!A5"
                 }
               }
             ],
@@ -397,51 +397,51 @@
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
             "PopupDisplayMode": 2,
-            "PageName": "add校正履歴 (2)",
+            "PageName": "校正履歴の作成",
             "PassValues": [
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!A5"
+                  "SerializeProperty": "=校正対象機器!A5"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "='add校正履歴 (2)'!H4"
+                  "SerializeProperty": "=校正履歴の作成!H4"
                 }
               },
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!D5"
+                  "SerializeProperty": "=校正対象機器!D5"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "='add校正履歴 (2)'!Q4"
+                  "SerializeProperty": "=校正履歴の作成!Q4"
                 }
               },
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!K5"
+                  "SerializeProperty": "=校正対象機器!K5"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "='add校正履歴 (2)'!Y4"
+                  "SerializeProperty": "=校正履歴の作成!Y4"
                 }
               },
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!U5"
+                  "SerializeProperty": "=校正対象機器!U5"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "='add校正履歴 (2)'!Y5"
+                  "SerializeProperty": "=校正履歴の作成!Y5"
                 }
               },
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!BH5"
+                  "SerializeProperty": "=校正対象機器!BH5"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "='add校正履歴 (2)'!H22"
+                  "SerializeProperty": "=校正履歴の作成!H22"
                 }
               }
             ],
@@ -458,35 +458,35 @@
                 "ColumnName": "処理年月日",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!AL33"
+                  "SerializeProperty": "=校正対象機器!AL33"
                 }
               },
               {
                 "ColumnName": "業者名",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!AL37"
+                  "SerializeProperty": "=校正対象機器!AL37"
                 }
               },
               {
                 "ColumnName": "項目",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!AL34"
+                  "SerializeProperty": "=校正対象機器!AL34"
                 }
               },
               {
                 "ColumnName": "内容",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!AL35"
+                  "SerializeProperty": "=校正対象機器!AL35"
                 }
               },
               {
                 "ColumnName": "記録文書へのリンク",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!AL38"
+                  "SerializeProperty": "=校正対象機器!AL38"
                 }
               }
             ],
@@ -529,11 +529,11 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!AL33"
+                  "SerializeProperty": "=校正対象機器!AL33"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='校正対象機器 (2)'!A28"
+                  "SerializeProperty": "=校正対象機器!A28"
                 }
               }
             ],
@@ -1058,4 +1058,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//oE1PBvgnOFF53nB6fxtwEnyEyxZ8F8VCi4Byi7k2hNMyevATGFQZq5YgGhYXOoItdoJQYUvwc6qbGMKnlhBUVSU+/DnOdGlPO4EuI+S83zbzYMSzpNtab6ac+QZEx+86Z2qbUSkxPDUUw2Zk3lrm+qyejdfcoae1H/IgDhWkG/LS2CNBdy16+CFd+D/NdFkXYYifqRIWbobUferytBif0uzg88MQUECEhHHxBfTFVbuq4AtgVv4201M0xPMzH8y9+j6OnPuLQo3B0fAYJLEvG2o3RBPFHRW1lrvejSBQpvdeRzfagMaygb9WxohbnLZzJqZVJ7yqN3rbMgZPJPnGwJSIX6UnDRQNqsi2dKCjO3gv862wIgMJLTUO5yoSODBkKiY0G6KV1xzSKlnLhRuIuEAp/ivODXrX5Gvk0NR65+PZQysJG+zXQJhUBSR8lPZ4Arks9WN6r4Ic6RryDdW2odQiNRk29sRtHlc8JxttYSZbYhtCA5YALq+ksFZoCoFYcXlZu5HQDYRwUChLIWKl0h0Xd/hcXOjHb8C+nSxL3cYIPYZsSlrUICHahi6P1taNv/RfqIBkhrDEOo/xTDyUYRStjXA/7Hi2eQmDzb+g5hH1xGhPiFf9NhekR6qL2Gea5CeoeB/nLT0LnNyX+LHfzB/MoJ20IRjBhIP8sZ0jWZYJeeog0m7PbbN+lZBQvj7XjI3YwQaD4bKZimuJPfKidcyiJDPtNdGjU10uOvzrrhQ6Tf3IhIRiwAzy8ZtkAEeqJmgPr+yTw0am/5PfPnaNF5uHmCy5VYxGnE69U6oakOrFsM4eX/Eb7IaRt8lZ+cdhYWiKJsBBWAkLa+g3ZnWMebnOV6Cfju4ofbhYJDnbvWTLPSVD4kW6xywTpgvOiTQH28ksvGX+V8xfYcFxIzV+6g==|920
+}//ndWqpxmfb8LgalC9p0TO3oHn33Xjr2QvetKlxxBfvsK66dUxavD/MaOhyAiE0hXPZMx9k92GL00W0S1Ci74Ll4bq0JUDho8fMQyoB/HQhBz1IBYiqMmvJYv4pr3aSVHjO+npJVm55mmbPZmgWzDRJTCeT+ZvpAtSw01BbJkO1WACZsA+mnJzki0y+AVGDGrRO2OGvTzgFVCG/yxNLX8kg8lFA3cQjWa4lS/2C56Oj5kHyWqt4qJC9FQtKaCObieUHxmTU+UkC2CgYkmnhb6axrQhoKZIj3rUzTZb0DvO7G2oN0z0LF4dtuL8HWN/uuqa3YWtDc62rJc19huwc4wswMWuMm3rnrmpxJL+tdJJRL9ctKzmSr1K89fREuNKOBQFlgvMDZBxZjYLIa2tt+CUXGQzPtrkeSOZZj1p2kizaothOjL8Dqv1RosZhOrNZ7f2PfdWSkPVSY+9X/wMdNsCcB6RPqFkmy+pvvze9tS3drTTzDUYzeavdQSsgnbnyO6JdZpwbApmPI0/MkC3bZhyofgOZKIUkKvkrClujp8ki6K3XUN7sdnV/dqB1z94PJmHTfpdWGw6EsqJppBLM7w8zUHSAzdpsM4fjvspeftt7QtRbG+R8OKEUK3P9Eeo14s/sBXSkmeGHq573UZHi/0scKgIdpOaxtyk9auit+rBoZrgxonP00PntpqEDg75n9NYSrU8rwglHytvt64DlF0a8KJ5Ry6Cf2Kv8CyjFlw/wL4EloNYC5yHODgspDxff/RY4edf6lAplef5sGOg5CNOBtWRbcqhTWWd1Xf8CVPze8fMtgMA/idUl6enuzQ6acH1iwJXQV1lrsKyy4WJVq9ApFVNOWQUm0k5C1odDBrJbk9ldncQdMSjOiuubQ+kqT3qO2swxQQWS991ux//8PP2GA==|920

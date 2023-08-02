@@ -359,7 +359,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=addoredit計測機器!AH8"
+                        "SerializeProperty": "=計測機器の編集!AH8"
                       }
                     ]
                   },
@@ -372,7 +372,7 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=addoredit計測機器!AH8"
+                          "SerializeProperty": "=計測機器の編集!AH8"
                         },
                         "PropertyType": 3,
                         "Value": "#FF0070C0"
@@ -380,14 +380,14 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=addoredit計測機器!AT8"
+                          "SerializeProperty": "=計測機器の編集!AT8"
                         },
                         "Value": "ー"
                       },
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=addoredit計測機器!AT8"
+                          "SerializeProperty": "=計測機器の編集!AT8"
                         },
                         "PropertyType": 0,
                         "Value": false
@@ -405,7 +405,7 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=addoredit計測機器!AH8"
+                          "SerializeProperty": "=計測機器の編集!AH8"
                         },
                         "PropertyType": 3,
                         "Value": "#FFFF0000"
@@ -413,14 +413,14 @@
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=addoredit計測機器!AT8"
+                          "SerializeProperty": "=計測機器の編集!AT8"
                         },
                         "Value": "%Null%"
                       },
                       {
                         "TargetCells": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=addoredit計測機器!AT8"
+                          "SerializeProperty": "=計測機器の編集!AT8"
                         },
                         "PropertyType": 0,
                         "Value": true
@@ -883,31 +883,31 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=addoredit計測機器!AH40"
+                  "SerializeProperty": "=計測機器の編集!AH40"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=EOMONTH(addoredit計測機器!AH38,addoredit計測機器!G40-1)"
+                  "SerializeProperty": "=EOMONTH(計測機器の編集!AH38,計測機器の編集!G40-1)"
                 }
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=addoredit計測機器!G42"
+                  "SerializeProperty": "=計測機器の編集!G42"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=EOMONTH(addoredit計測機器!AH38,addoredit計測機器!G40-2)+1"
+                  "SerializeProperty": "=EOMONTH(計測機器の編集!AH38,計測機器の編集!G40-2)+1"
                 }
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=addoredit計測機器!AH42"
+                  "SerializeProperty": "=計測機器の編集!AH42"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=EOMONTH(addoredit計測機器!AH38,addoredit計測機器!G40)"
+                  "SerializeProperty": "=EOMONTH(計測機器の編集!AH38,計測機器の編集!G40)"
                 }
               }
             ]
@@ -931,31 +931,31 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=addoredit計測機器!AH40"
+                  "SerializeProperty": "=計測機器の編集!AH40"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=EOMONTH(addoredit計測機器!AH38,addoredit計測機器!G40-1)"
+                  "SerializeProperty": "=EOMONTH(計測機器の編集!AH38,計測機器の編集!G40-1)"
                 }
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=addoredit計測機器!G42"
+                  "SerializeProperty": "=計測機器の編集!G42"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=EOMONTH(addoredit計測機器!AH38,addoredit計測機器!G40-2)+1"
+                  "SerializeProperty": "=EOMONTH(計測機器の編集!AH38,計測機器の編集!G40-2)+1"
                 }
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=addoredit計測機器!AH42"
+                  "SerializeProperty": "=計測機器の編集!AH42"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=EOMONTH(addoredit計測機器!AH38,addoredit計測機器!G40)"
+                  "SerializeProperty": "=EOMONTH(計測機器の編集!AH38,計測機器の編集!G40)"
                 }
               }
             ]
@@ -2974,4 +2974,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//uwMqRQ7zGc37KhisFCaoBGD66qAYR9Ro0zkPNL2bRwa1k5tnlwbOMyLLEUmdL+p8yEtjH5ssIoHqOtoj13Bu7ErIH6B8YAU9g7bEsVHHH3+LnxPjrOn80v+yt6X5JhqqKQgYgPOUoNPQA0BD4zIlhOpR6RjSeVcVt6vXxge5kv4j55AskjZ6WWCCuFVh7yrcoNA8qTZ4ActrL0a1GijCvb5fCjLgoQLXR080yC/qzDqWER4DQZBaRvpq9f4pwihL8U6PUQpuMDlcOCUzoTiWfcSwZ8yUYis8e1BRHh110GElG4+g2H24rgCTBSELo3Yk9n9WVtrSBK34Vr+qWMQIPfLLPsK6qkMdwqFIn4zjkCeJHnz6ItDmQSnQhZNEBcez03JCwJVsnWxhoyhWa0Nm5wCfX3XSVk/DTtrZMgiP96KCrj1UaaZLCEB8FqYlg5NgwjteLLBb7xzkE+ZkMUeQEMSVOzeQ6Qz0w5rjJG/Uoy9gjiE501f0Zv/Czdv/jkAczldXt0I3cTnPVsDKlR5Na9V7TFOuoNhqwXQeJtMSRVH2BK2mhUHy4cAH7ey9JPC1Xw3K8GCNCGv8chqxyg8PcvzwTC0GtAjKvT6LqO23WfLFH7cKb/8l1oZgDP1LpUc/OYPT3AuZpCDEbChdACd07dXgRn18njo+qWcRxcGyOKv6Hk1OYku+OcYdF4TMvrtMdrAgU56h1ng37uYdXKQgfX625uhZYFGxACNdt4GavL2M5gwlpuhqsQNd1N/ueoWikpr4U+0ptQBEzuG+uy6bcqLgUzme0d9WO8KufLO00OBu3XdNcL7qbjmtVdz2Kwkod9SziGN5crImOhjM/GORDQsGtgkECJQsHzPoL58QPFF8sL+XngCHQ3hspTMd85IApfbuhSifHebItCAws9E8Ag==|920
+}//fVmSqh+Jj6vItWrdlDOwKEp1ue9q1rGpf65dNhMytWaKnbUhY3ah8X/BmDTrjGS02f9hI5gi5OUr3gS06LL+j3bW0XY1vhT+xZ0jxn7G62HLXDk4SZPN9XqwSJno6zd6EX7JZVvqiAfVVr/Zx3MClAV55jDk/pKedQiSB76ARWi2PkxzMiMxMeA68lGdR2hkZCnvIaBPrfWxtqJbmX270TPZ2O+zTq89fW91I91dhWwPnsWaqIFPQAl9hS6CVB5iCZ2JpnUz0mo1crOIOHnbAOPeoe+AjWU52y0W4wAjMKPrZwL/XOaa5eOMuHa8Je6TgDwEKlvHJvDjAGmXgxYlQKqd8gZVPzm2C2FnWAwd61/0zlRhUT4bb49aWEHq4XFCTLjz+ewldXZmSfcAL/42JLfBr43j1uJFj0Welz/0ZeOlzaa36ZjDtdOb0qynPME+WKj/JU3rbrcNPboFI4NCyD4dVkkww00GTCB5Ns1OZKBtq1Prkr4/rGUkQ2COGZlO7++jJLh+wxEM/1FCmC63fCmKPAIHQZ6kWhC5RBfAS0psYKLlDiGZjuxGy5NVMGNWGCxf58pyusgCVhVllSpio8nzXCdchoET/eMoLWO2lLa2DkhUnMGjuzKlhxbbnMt6x67i62KpOoC9EyuKIcRwhAcuUChwAhJi1NhEmalg/n726iIbKCbfXptYGAOelM6zw1kdkZ7yoFhMlvV8FiOZx9pnh5B0VzTdbzaxhCBfosXmst65xfvbTvjyFIWSJKFDqZFJhKRY6AU4JxeRUrjzChW3C4BBwiOtibKAs++loTPSEMLJC0XW6zWCPEhJTH9PRmhCxLVzmzPrPZOfvRAjwJk/5OPUjENhTO3O3uLNF7ScBInhlx7TNMSWFakY8E+ba2RAB7792foOuh3SDbLSqQ==|920
