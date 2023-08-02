@@ -168,10 +168,10 @@
     "36,2": "記録文書作成",
     "38,2": "管理番号マスター",
     "40,2": "校正対象機器",
+    "42,2": "測定機器一覧マスター",
     "44,2": "校正・修理・廃棄履歴一覧",
-    "46,2": "測定機器一覧マスター",
-    "48,2": "テスト",
-    "50,2": "承認依頼リスト"
+    "46,2": "承認依頼リスト",
+    "48,2": "テスト"
   },
   "AttachInfos": {
     "2,1": {
@@ -571,6 +571,23 @@
         ]
       }
     },
+    "42,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "計測機器一覧マスター",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "測定機器一覧マスター",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal2"
+      }
+    },
     "44,2": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
@@ -588,37 +605,6 @@
       }
     },
     "46,2": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "計測機器一覧マスター",
-            "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false,
-            "DeleteCachedQuery": true
-          }
-        ],
-        "Text": "測定機器一覧マスター",
-        "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
-      }
-    },
-    "48,2": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "計測機器新規登録作業",
-            "PassValues": []
-          }
-        ],
-        "Text": "テスト",
-        "ClickMode": 1
-      }
-    },
-    "50,2": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
@@ -658,6 +644,20 @@
         "Text": "承認依頼リスト",
         "ClickMode": 1,
         "TemplateKey": "_RS_Normal2"
+      }
+    },
+    "48,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "計測機器新規登録作業",
+            "PassValues": []
+          }
+        ],
+        "Text": "テスト",
+        "ClickMode": 1
       }
     }
   },
@@ -737,11 +737,14 @@
         "Underline": true
       },
       {
-        "Background": 5,
+        "Background": 0,
         "FontFamily": 4,
-        "Foreground": 11,
+        "Foreground": 8,
         "Formatter": 6,
-        "Underline": true
+        "Underline": false
+      },
+      {
+        "Background": 0
       }
     ],
     "Types": {
@@ -1299,7 +1302,7 @@
       "45,65": 4,
       "46,0": 4,
       "46,1": 4,
-      "46,2": 8,
+      "46,2": 11,
       "46,3": 4,
       "46,4": 4,
       "46,5": 4,
@@ -1355,7 +1358,7 @@
       "49,65": 4,
       "50,0": 4,
       "50,1": 4,
-      "50,2": 11,
+      "50,2": 16,
       "50,3": 4,
       "50,4": 4,
       "50,5": 4,
@@ -1522,4 +1525,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//oFzsin9dl7ZCBGBfN5gNK5aIMiKVlDrl1O9nWva0JTlL57MN9c4jUmJ/kmRnF/V/EsFGkEvtGUimireGlQxdvPaEtY4MsqM40MseUjhYv9IUW9yKc64duyafPe5wz2vIGnNPreUX2/oh2tSmGTvxraJO5royFyAEhmKWPLjUHlO//0Tfnoq7Lb2J7IR3OVb7uOhBG95uj2Wy9KOpkewy5YVtCgcaYlVgttG0vEnWpc8QY1oXF1RLQ2Y+k3EPrkiXA3csXYBUkLdlC4wUTBAZrOEpNMXCN8Vt9AF+eRLaP6Dw1USKKhkapqWo+vgz8dTGbWTAFq2ibdm3BJXFVrBKFdD4rAYjlZJn28vh5gmZ7QKvPHJmGD9ch3VFYMSv9WguGcD6rtPmQcsa/EC4+oFSTgVFLIPLUOGAKm+NQwV9eDt4coIQCyjf5JVBSuzbYwwRgNky15CStRbFHsV1DoIUUU0E2FjETezfVpuIcaj1pLrSt3Bim9liH8i7tZtM4v/gfvJQsW4/22HidRqkcrLmte7ZEhpGh23WX0ZWdT00sonCc2WwfKE+xIt2+rlYDinHWtbrasqsEyXiTOed6LRZcpnkbKa/K7FrgmZLUNWIACJaFY92bf3VwBaDu8f/O/6hb3RyVnysTlBMKD0RXEX2iZOO6Ls+MEOgAoqC42YaRkGnJ7/aJ98RB0NsvTrrMjmEvLcDqm6DqI7X1p7mzmsKNDS2YMdpyWS2Yzm0oNHUD/AGJ5rUsHMDWLGzB9ZQSjOHYCQU1fwhPSHKUU4gVgDoZkTRnQnzD+///UVyuCcsFv8Xjf5wvxsmkDR4VfumDeEJMZlsxoVQH7fgMCn2Zs6r9edzc86xeIWMepx2rjdNaPeoEBZpyNuHwixhswrLdy5+YaahTK+UbgYDZFS1kPyI/w==|920
+}//I71vv0IS6c/Xk0ksTZIGonNSGXeUkYUYHZclpVBcQeI8orvyE78I0IvmhrT/mj5m1FPuP+xabWs6ZYh0ZpPVBTAYvxurUfPaKvHcbU+h0fU6TJYOXmX7AY3AMhCWApz7H9xkbubtGJf9JD7dRfOGu4RA1V9QPVgGM+uSNDbXahYnAxFoyXlOGFcn1lvW0m8DGqfYU+W5mHcDJCf4YN+ofNwrrsLFrW88C+niKuqlee+/wnld6lXMb6/YVUZgVfiYKG2+cvRTw3IsJh5qKJkph5lRboFTbOb0SJYwbNjMaJbFnmEGMnzM3GoskwftxpYxGHkarfYBudvKc17sKaPaiPrzlhOW2SZVNrs22iufyGK08si3BbtHZ4S1/IWANo/GUt77oMNbYwsq2OaEif+3FLjeM1Xe0O+VRx5MoAQ0Tj4Cqdou3MgogvASW84rDT2aEn4wfe4ptKAHHLLsbK7uDH1MyQKWm2gOJeG/ET/plpVY01b4QobQvdPJzJfVe3M8yD0M3iAIuGhsBvXgeA1xc9gpz01eZCHMh1/JuR5wU55wrs9YDIEaTImhheV1UbDCveHvzuKdtFgSc1qamYUV9qlrMDm1wd3hnNOGmSD7DrtySWHQP+3jm4tLpPeOCd/kbXhtqsLKpLpZVu0HsvnNDpaTR1/cvq0NqpM/aD09rnMXoo8BKYffjJXrMCb2/8IP+H6gqzauO7cMDJXK01E2rSrmU1bgsT5mf/Q+Q9k582gj27kc6u9Wp/KWTAf4nNgBIN6G5MLwcY0FmV2ecCfbgQPgl4rb7YTgQl90rmoSAuRLFvI8N9JBHzLOUkgpJt0TsmOLluOzHB5lT4xv05ouzLNE6PLslaYTzJrqnwJCy350nQGWUrt7u0yrqj4G9bCpwMGxOKlGE63FdATMUcx75w==|920
