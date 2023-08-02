@@ -82,7 +82,7 @@
               }
             },
             "Params": [],
-            "ID": "851388ed93484554abb3c9072eb8131f"
+            "ID": "c74c73c4742642f48a72a4301dba3645"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -157,7 +157,7 @@
               }
             },
             "Params": [],
-            "ID": "5f93b537de5a45248b56daf63e4be0e0"
+            "ID": "b60675a07af74e9e8908de04530e357e"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -247,7 +247,7 @@
             "Params": [
               "=A5"
             ],
-            "ID": "f935894f2b864488bf2b9b740a3667ba",
+            "ID": "64a586a1dd8d45e58a247cb36125f1be",
             "Disabled": true
           },
           {
@@ -383,6 +383,12 @@
         "IgnoreBlank": false
       }
     },
+    "4,59": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "ID"
+      }
+    },
     "25,14": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
@@ -426,6 +432,15 @@
                 },
                 "TargetCell": {
                   "SerializeProperty": "='add校正履歴 (2)'!Y5"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='校正対象機器 (2)'!BH5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "='add校正履歴 (2)'!H22"
                 }
               }
             ],
@@ -940,7 +955,6 @@
     "4,46,1,4",
     "4,50,1,3",
     "4,53,1,3",
-    "4,56,1,4",
     "25,14,1,5",
     "25,20,1,5",
     "1,0,1,6",
@@ -953,6 +967,11 @@
     "27,23,1,3",
     "27,18,1,5",
     "27,9,1,9",
+    "25,30,1,2",
+    "4,0,1,3",
+    "27,26,1,3",
+    "27,29,1,3",
+    "3,0,1,3",
     "3,3,1,7",
     "3,10,1,10",
     "3,20,1,5",
@@ -964,19 +983,15 @@
     "3,46,1,4",
     "3,50,1,3",
     "3,53,1,3",
-    "3,56,1,4",
     "26,0,1,5",
     "26,5,1,4",
     "26,9,1,9",
     "26,18,1,5",
     "26,23,1,3",
-    "25,30,1,2",
-    "4,0,1,3",
-    "3,0,1,3",
-    "27,26,1,3",
     "26,26,1,3",
-    "27,29,1,3",
-    "26,29,1,3"
+    "26,29,1,3",
+    "4,56,1,3",
+    "3,56,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1030,7 +1045,7 @@
           }
         },
         "Params": [],
-        "ID": "e0a52a0204ca4dc7bb799a6804b34c56"
+        "ID": "7c5162b55ae64478bb413c136064f203"
       }
     ],
     "AuthorizeInfo": {
@@ -1038,11 +1053,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_insptool_calibration_history",
+    "RelatedDataTableName": "trn_insptool_tools",
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//Rn7i3C74qJM7IZBpXyfHpq0yzTVL7kJjqZNQRhiU/AG50VhquKLXAw9FBpQo7YzJdW0DBHSvbdmJUEnlor9nFhcxnE8ZYP0UibVo84E6l56LRBG1stVj/HIWnziqFteSrRllbEmfTVkEWYC44vZAuHP+c+emK+u5nJycc4rQZ79CYaJ+BSpXXwJ9yXejOer0ELqH+Emg2lnIVDZvb+yUZ8H9UxQCaF9Iuwifzfbn1eIEcZJm36JcvRGLDTeZJ6Pij4RBvpiCyJmKAVqpLhq6lio1QMxeT8xyX1IyzkgMvMPfBTFWBvpLp5OByWqmtjI6x9tFcP4y1uM7MOboVaKP4PyDA6CN9AcIGv3uJ4eAzl4iwLX0ohy6l3GzfQ4S4VKhrdXD/fZfR0PraDMi5fvcD9f1C2R6ENbiQMKVyt3hl1bwt94zg/mwNpUdjlb8zdbSuGIneKvNfHE4Q7Rs5BMd0dCsgeNtAHFek04N0R+IknbV4wdw/9jtiYqEHFvBgPVMaCohUCBQko9WR8Q1rs+yDqLjDuNQv82W5gQZvB4qwTSJ3eRUXfRPoCFJclRoscCRKfYsXPXQQ3DSWSR2AUBBgkVZLpvqRtJwigXCb3TPAZNllBHopHhzXToOSS2XbJ1huf4/LkL34525sjwxg2ev4Faq30hdH3nsRWvV8jSnSVOWwZB21XwyAxOB/BGh0yaQLa2uy5jmZMJ9DH8dI4B5HaxdvoVfyEfRGxOko9VAXMQQ3CA5UdnRmriZsCsIhoRp7uuyXmRpvT+ZLZnbFNHxkCyotWMqZnQuCUlBzDFI7Cmh6JYAfbrRTNXaFhS3nPUTviBwDJT/VQojXE/M/cyktNIg7BLI97+4xvLgafzHTp8b4tBXqZHLrFg85/HmLAEbxGvy6ld8NR2qM3NQKYCamA==|920
+}//G7VwOVhX2g7Zm0n7xvqN02+aKKQIFBH1ESdIUNpO8birJiUVgSatOFAj3rukTqCLNrV1ArMOIS/y3/w9Y7VKgZTzMDup+dOP4zhEazNxoYj5LCin5lgmoaCYR0QNDglL99uIyVvg2Epvmc/orjE3O3ldkgSj/sGWd1JZpv8JsAMzIok4dNuKZ46l3q2HQk70qx8TXO/adQw4cgn+RMPpthwIOAeWZSkq8qk2hCxVDGllu+KpFJLxtOxtWwX+4KDIPYlig5nweVpCHuPC9c/Ermd7RqElAEQe57vDQ2wf76lC6fr8ZHJL8lYEoklNyPFc9bOd5PwQCjPuFt8ynfQ4wA4vJlKaaIk89v9+gIGleKvOe7VU/7eKUCLdx3gVbVEjRwV6C4LEXYCK8zn0OLkJP3rtxE7iZIUKYjGgIIiTgLjCRW+LPZFj6i+29ZY3vgA6+KhVBysLBF9H/OcnzWtNlLYlDXpPSFM714Ax9KsdDUrkWPHC7PfKT5pjfXZQF+cHS+c2a7NV/DfQpNRN1msjKUAxXGHa2VKH0mHlhBRRXHfMXHh7UjNb3U0yHc7QTfUz4dOWPMsnxs9Yn8LVtPpizYrAfddozhLM47LRrVONu8lhyrsX0OsTdurkgXJGltaIFqVYC6hkxxdyJ80hETTDaLZ0fPAwRzWO3lW3mPbM1sbjPIeVBsZrVhrDV0IoMt5Vlgtdm8hF7+O3Zo5ylUbKq1tJHQN32U5V3Ka6kCwLkPH5KJmLWr0At8yW9uaqmHSgXoZ4ugwt0+JY6XpoCqEXnLwTPofk9Wwo+ZLT0gMjPzUnNv42icBKqtESLYEXjZwdjfJpOVpQq9QmmlCtie317wqftIkVirdDM222s5spYh/hpQuL+oSEnYTcxHTn7RwBzd59MmriprFT3f+2m75npQ==|920
