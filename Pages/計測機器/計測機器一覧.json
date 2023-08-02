@@ -349,21 +349,53 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "SqlCondition": {
-              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-              "CompareType": 8,
-              "ColumnBindingInfo": {
-                "TableName": "trn_insptool_tools",
-                "ColumnName": "n1"
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 8,
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_insptool_tools",
+                    "ColumnName": "n1"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=計測機器一覧!A4"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 8,
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_insptool_tools",
+                    "ColumnName": "n2"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=計測機器一覧!A5"
+                  }
+                }
               },
-              "Value": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=計測機器一覧!A4"
+              "Condition2": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 8,
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "n3"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=計測機器一覧!A6"
+                }
               }
             },
             "Params": [
-              "=A4"
+              "=A4",
+              "=A5",
+              "=A6"
             ],
-            "ID": "0ff31e03ec9845709dc4da49cf8d441a"
+            "ID": "9a8ff98ed4e44d3293c7caf08f104ff6"
           }
         ]
       },
@@ -405,21 +437,53 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "SqlCondition": {
-              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-              "CompareType": 8,
-              "ColumnBindingInfo": {
-                "TableName": "trn_insptool_tools",
-                "ColumnName": "n2"
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 8,
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_insptool_tools",
+                    "ColumnName": "n2"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=計測機器一覧!A5"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 8,
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_insptool_tools",
+                    "ColumnName": "n1"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=計測機器一覧!A4"
+                  }
+                }
               },
-              "Value": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=計測機器一覧!A5"
+              "Condition2": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 8,
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "n3"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=計測機器一覧!A6"
+                }
               }
             },
             "Params": [
-              "=A5"
+              "=A5",
+              "=A4",
+              "=A6"
             ],
-            "ID": "2defdaa0cb374fafbd73295a64e81735"
+            "ID": "e06e30568d06451486d7d8110682b7f8"
           }
         ]
       },
@@ -458,21 +522,53 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "SqlCondition": {
-              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-              "CompareType": 8,
-              "ColumnBindingInfo": {
-                "TableName": "trn_insptool_tools",
-                "ColumnName": "n3"
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 8,
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_insptool_tools",
+                    "ColumnName": "n3"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=計測機器一覧!A6"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 8,
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_insptool_tools",
+                    "ColumnName": "n1"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=計測機器一覧!A4"
+                  }
+                }
               },
-              "Value": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=計測機器一覧!A6"
+              "Condition2": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 8,
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "n2"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=計測機器一覧!A5"
+                }
               }
             },
             "Params": [
-              "=A6"
+              "=A6",
+              "=A4",
+              "=A5"
             ],
-            "ID": "4a46abc23aec40b890b9f4f447353946"
+            "ID": "0545de41dd1640b49efa4bf452b78fd2"
           }
         ]
       },
@@ -2635,4 +2731,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//H073bld+f8wYI9MRfoh2pQQfDsJ8q4h8oOuSb6J2ZIf5Ea7BVYHcrfa/SnyxE2Sl9i2xm+tnPpots78arZ3mhy5tPEJuo3AEG7djH9dsf/ViqSdbKfl789zklxJjm4rxd7JTbeGWQqZpWDg0qY2aKnXd4VkXifL6kOrDJe8G3VAJdRnGN5R0MyGjD8UOzZC6C2v9PzYfcbfZQsNSzOboxMzFKSliadw4tKWrYRQQQOp75dzzFI+KM+pNDmeugrpY5nXGCsqtj0aj7gJPJwxcHI0FTEMgiRPfeCIDWJlTjZHEI7RUCJTHVswLWEciLrcGPXf77qWbhUGRwJtD8tgyhNAvk0o0XL3UM15c3R8lE/HmWgipTSDL78hiS5RnZ3cBT+biC8y7k+kDaqkZ0pp8NTKDgNXEFRRcK8JiDk+r4qjaSO6GcZ1EmJC28MMV7xEFGIsukCzArijGVaYuYgfaKy2gAr5IC7QRc1bH7oe9UF9F9Ca5raNvx+eMDlplfs0rM1NT/8ullYL1dor3MD9oY9EWGvwSFPX2hn4PzLZeNBsx0ZJYk1KmBaUcAHmxdwgNyn5xhc8lc26T6EpTLKwvlFJojN6vlOfUz/NaZSK1CJu8mhNNRXUTw1wiSsP/PwwGx4e0jTbbvw/EnbtOXuxoOt++UkRjoR3mBxk5ApJmhisNBwDMEJMq5nw+qewIeC/aLAQgQbvO6CnjCl5WuTac3wrm7Yk5FHW4BP6W4cM/8YkoANp+dYgRTQQpo6NW/nlZK9T8t2r5n3VvHkG9Q5L3Eri8R116nM1TTLCFwsLoPg46OU+b83HC5bwlKK9GLZEQcS6BS7akveLhMc32rgMXknP/cR/6+RFy1vdsw+N1nu/agKXsmO09fSB7yPzF392KLmlH9XecLT+XirKw3XrGZA==|920
+}//lRw9/gZgAmUsDYxw1uCJ3IyJS8gtAfRhKw/Q3Kle+YXYrBE9qLTQpj4LK0OHSSy2zMemkewutlnTVVyQw2f/LrTbz3yOfGSv9HaIdPTx0M0ej+VCavmg6/3BUl8xUK2aprJso3m7Cua2+uwpJwcEey53Vz4dcq0+XpcCZ6O87aBJA59P/thEZfRB55u9C56WboMFKRETYnMz3FSlpvkG6Z9ZQfO4QJ6lz0YbEeg0ldGt85w1eMbvht+7VsQWpAdMz+IWeWFvZgYCB8vRbYg3O8pAo23ac6fo4ISUwTJRaTYg8UuzudQB7ljq5BrzS3IOHuVaqLJzdOixOi0LmJ8GErgdz9dKtx84SFuJNFYGB3WLjQCEysywfxelcEvUnivWJpziUeOjIHyfW+UnIjX5Ogo/WN1CPH119zYWmRCyO6rEQpRdBJWtKUOaf7DnO0GqrLraVCfueYHkDKWQBK8QJj/S9ivSkhRZ8JkUzm7W6NPlE8jfZKcI8mKEwV8F5ie7C65PMMcHJchMZ1tFyLiVTm8q3laUztFwdl0uxN5O6Egrs2zKE8z7VdOSDjxCnqwb8x+ihMmr8St9gLPU4xGJGpwExBxy322X0i5imN7i01BM1ax7ujms4oShi9F9AFWwizVUgXbsug9/IAASjEFFY7YiXTrIWjdGVYOKYSwEdceA1m++y7kqReL48b3kQesIOROUxSZuhthTwCvo5AFhI5kew9iS+M1XvP5a41xSZFNj9fJx8UOQ5hHw4Tiot+/0yx8P/4iLctabmjhhBKWfATdow8DLFxsjIDHWlOzlnY+uOQYJnkXZ2qNd7Fhiy94bxrV9Q3eddfh40WedKVA/o6WDsKE/nrCD2rasAAEyKwAb3fNg3hZXCCw3uMSX0ss6vJhqvm74s91uFkdZmjMkow==|920
