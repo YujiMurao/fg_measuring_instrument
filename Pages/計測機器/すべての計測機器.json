@@ -218,7 +218,7 @@
             "Params": [
               "=P2"
             ],
-            "ID": "2a4ac022f53346b7b60de8bc818bcf2d"
+            "ID": "b534a9d88e5548bcb93daedc67ba9672"
           }
         ],
         "Text": "検索",
@@ -585,9 +585,9 @@
               {
                 "BindingInfo": {
                   "TableName": "trn_insptool_tools",
-                  "ColumnName": "image"
+                  "ColumnName": "画像"
                 },
-                "Name": "image",
+                "Name": "画像",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -601,9 +601,9 @@
               {
                 "BindingInfo": {
                   "TableName": "trn_insptool_tools",
-                  "ColumnName": "attachment"
+                  "ColumnName": "添付ファイル"
                 },
-                "Name": "attachment",
+                "Name": "添付ファイル",
                 "HeaderCellStyleInfo": {
                   "FontFamily": "Body",
                   "FontSize": 14.667,
@@ -615,7 +615,7 @@
                 }
               }
             ],
-            "ID": "6ee21868e4194497883c82a38422a470"
+            "ID": "4ee36536eb0f4d39b5d10becf113a341"
           }
         ],
         "Text": "列のオプション",
@@ -653,7 +653,7 @@
             "Params": [
               "=A9"
             ],
-            "ID": "bca125a608444dc49c464d5361c5fc5f",
+            "ID": "404ad9adff0a4d9eb8f3706a25bf611c",
             "Disabled": true
           }
         ],
@@ -2242,6 +2242,9 @@
     "8,40,1,4",
     "8,44,1,2",
     "8,46,1,2",
+    "8,0,1,3",
+    "24,0,19,51",
+    "7,0,1,3",
     "7,3,1,6",
     "7,9,1,2",
     "7,11,1,6",
@@ -2252,10 +2255,7 @@
     "7,38,1,2",
     "7,40,1,4",
     "7,44,1,2",
-    "7,46,1,2",
-    "8,0,1,3",
-    "7,0,1,3",
-    "24,0,19,51"
+    "7,46,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2273,4 +2273,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//iX9/8Pt74NbSnT8ijPBFeSTMHWTrhmL5EDwAhfuwKfqj8cyPpsVVZRoOS4guk1JE/1zOkzQXJdQzUDL7Y5akQJnhBHpgL/EakbQH24AZWx0HglvPy/JVUrnEZ8eXGK3EL6sEQEpOkqgI8NJHt0DBceIkIxK2P4BBSWPrtqAoi/XnKB5yjyFocHuNqkNml0mOYwAdz5x85hvuyLVCkg+YAiaq5qhyAxM31hFGCnzjl88gkL2rN0UnmoA9E82uY++9n/g0CEycEiIFABHfNu070wvV6tAjLqFnKIXJ5Cn6kes8cipRoA1dAL9lEGiPgPowr6XUtiYPBkHI9rV+R82UVKQIjwTQHpEyDwrBjOJG0df+eXu2L2UnuIg9lCq7sxVo1bXxPzYfmxiFHAxIYgsTs6rS1vsrMvmqfO2OSnOY/PsOT6F3QayksRQLm8shf6out0lj8snS19t6wWSzLJcJ3ETSQTQgyTQbUzMb8nESjAqa8UMQIFMaZ7lHnncK42Nmfr0a3Bs25i9T24ZDW8wzdzqGMq+f6C4Ywd+VqKDGsNtLblHdAJszF/zzOW2t+Fc1H8+ZmECUxBuKGG4SoYMQjXuHOgLf+0MGdlqaqmOee3B6r8gRjRk2TCQDxkTVZHfZKy70cl4ripiMTPVSGU6ezYW2woYFE2FX1dkKbz+WaPzhrA/DT2x+x56KFj404qYkXXy9zOFW0RXInIQEkOf5Hom+93uWwTILMmmbjHrFmN+5C5398iA5n9Stnqf2YMWtqmrsEh27Q5b/ZVuiB9YXCn922O40cl75R+jEj2JcjREFVek9A7GGkxIj2kqSqLTNm3jtLEerIqCj46oiW1ulicbMfwU2z9g6aoSowE3pY6Vp3CzI3dev5DFk/XqiJpbaIcAUdRXmcwLw1IDXHfgarg==|920
+}//U2X1t7hfmy1Vg5PplIzblVnVBNX33ZcLphuIzIXVob4Ct8WHAUF+6GNKi+dosSjUuEgfIZUU++SU3y2Djh49jfMZeYOR24LLmBIIq95d1E8BuhkIahQq47cNbJN/1AZHj3GinGjdWbFVGNcmnx8eteA0xPL3olFosTzwz6PLt9HCleKtSE2nKy7IEaJfGPSVB+EEeTXhVmgxUzMyMElTZ1vmRzJOCtteBuRcjA176IZ/+1jT7MxiQZ2TEDvIeteIi7QvGnFQ0em7eW7YzA0LqK1RzcT7L0Ho51R+xx9tnr+YtXyN+rU8VOk7oNNXJ0c3PBw3Wu4Bg2rVN9zyEULC266TJEoR9RWXKbHhl8Ye7d+HldshCNTIWIiku6QjsaxNAe48EPVNK5lL0ApfitdE8DxwCWUyBiIwAJlABHaLj+fF5eVzMukanEpLNCv86FTcTdn9rHx1umM+C2aYhNZ5paUhAwvJv7udLA+niuSCjZKrlEuvGvnVMxV1EA1OyNdGon14B8IRI6cZNQaE3ia+ZoeGnU2ajpm1hhz5FPy6YM8kta0WEAl9+i04OSKPoRuude+Qod+MqVvheBnIuJAcvR3F25FT50CfgM5Y81EHuK/EK7w4trKOEp9N1xkB7d518Mny83MlLEb3EiLY3vtmxuMzqtQjm76xRjBxJb++YktSSKwKUd7PMqFjlszcaUp1p7LNEeAX6lIzRi7uUGQSaGcZtjMvImKIzwtta8PpiBug9GpHCnV8hYGueBbXY7QWJlNhBAZJg9uAENH+gh39JJx/gnfkjiN0teIl5zpwHI2xZpqtqjBpqDUtWu4hR15U3wKKLKf4lObwXF/u1XeaVCAeSx5Gha/3P5DG0IdllBTX3NaW6sFT4jV/Fj910kUhmGxjNeSfL5CeKXu4yv6oHQ==|920
