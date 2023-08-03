@@ -371,7 +371,16 @@
   },
   {
     "ModuleName": "PCPage/校正対象機器",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "murao.yuji@rorze.com",
+      "Email": "murao.yuji@rorze.com"
+    },
+    "LockDateTime": "2023-08-03T11:30:50.6900788+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\計測機器\\校正対象機器.json"
+    ]
   },
   {
     "ModuleName": "PCPage/校正履歴の作成",
@@ -380,7 +389,7 @@
       "UserName": "murao.yuji@rorze.com",
       "Email": "murao.yuji@rorze.com"
     },
-    "LockDateTime": "2023-08-03T11:29:50.6479404+09:00",
+    "LockDateTime": "2023-08-03T11:30:50.6890823+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\校正・修理・廃棄の履歴\\校正履歴の作成.json"
