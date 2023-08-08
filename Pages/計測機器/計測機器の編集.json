@@ -136,13 +136,18 @@
           "DesignLengthInPixel": 23.0
         }
       },
+      "47": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
       "46": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 23.0
         }
       }
     },
-    "Count": 47,
+    "Count": 48,
     "DefaultSize": 24.0
   },
   "Cols": {
@@ -244,60 +249,10 @@
           {
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
             "TableName": "trn_insptool_tools",
-            "ShowConfirm": false,
+            "ShowConfirm": true,
             "ConfirmText": "本当に更新してもよろしいですか？",
             "UpdateValues": [],
             "ParamNameToSaveNewRowValue": "NewRow"
-          },
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "NavigateType": "back",
-            "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false
-          },
-          {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "trn_insptool_tools",
-                    "ShowConfirm": false,
-                    "ConfirmText": "本当に更新してもよろしいですか？",
-                    "UpdateValues": [],
-                    "ParamNameToSaveNewRowValue": "NewRow"
-                  },
-                  {
-                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "計測機器一覧",
-                    "PassValues": [],
-                    "IgnoreTargetPageCachedCurrentRowInfo": false
-                  }
-                ],
-                "ID": "9da22bfa-480c-4af7-8905-9bc6e9815620"
-              },
-              {
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "trn_insptool_tools",
-                    "UpdateType": "add",
-                    "ShowConfirm": false,
-                    "ConfirmText": "本当に追加してもよろしいですか？",
-                    "UpdateValues": []
-                  },
-                  {
-                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "計測機器一覧",
-                    "PassValues": [],
-                    "IgnoreTargetPageCachedCurrentRowInfo": false
-                  }
-                ],
-                "ID": "a4820728-e885-40a3-af56-6e5e28f19072"
-              }
-            ],
-            "Disabled": true
           }
         ],
         "ImageSizeMode": 0,
@@ -311,10 +266,7 @@
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "NavigateType": "back",
-            "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
           }
         ],
         "Text": "キャンセル",
@@ -395,7 +347,7 @@
                     ]
                   }
                 ],
-                "ID": "9bafd9d0-05eb-48c7-84e9-834900d66b4e"
+                "ID": "496b65a2-a429-418c-b78d-7644ee8939dc"
               },
               {
                 "CommandList": [
@@ -428,7 +380,7 @@
                     ]
                   }
                 ],
-                "ID": "c3e09586-5473-4c93-827b-ec2e9d3ab78f"
+                "ID": "269e98d9-d405-4532-b2a5-fbfe7181a1ec"
               }
             ]
           }
@@ -648,7 +600,8 @@
     },
     "21,33": {
       "CellType": {
-        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon"
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "ReadOnly": true
       },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
@@ -700,6 +653,68 @@
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "s1"
+      }
+    },
+    "25,27": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "編集可",
+        "Style": 1,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=計測機器の編集!AB26"
+                      }
+                    ]
+                  },
+                  "value": "True"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器の編集!AH22"
+                        },
+                        "PropertyType": 5,
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "698f90bf-d93c-4d9b-80c0-41d7549c02ce"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器の編集!AH22"
+                        },
+                        "PropertyType": 5,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "44814abf-53bf-43d7-b490-fc0d219a4174"
+              }
+            ]
+          }
+        ]
       }
     },
     "27,6": {
@@ -1004,6 +1019,7 @@
         "FontSize": 18.666666666666664,
         "Foreground": 1,
         "Formatter": 2,
+        "TextIndent": 3,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1012,7 +1028,7 @@
       {
         "Background": 0,
         "Foreground": 1,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1020,9 +1036,9 @@
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1030,7 +1046,7 @@
       },
       {
         "Background": 0,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1038,70 +1054,10 @@
       },
       {
         "Background": 0,
-        "FontFamily": 3,
-        "FontSize": 14.666666984558105,
-        "Foreground": 1,
-        "Formatter": 2,
-        "TextIndent": 5,
-        "HorizontalAlignment": 4,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 0,
-        "Foreground": 1,
-        "Formatter": 2,
-        "TextIndent": 5,
-        "HorizontalAlignment": 4,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 0,
-        "Foreground": 1,
-        "Formatter": 2,
-        "HorizontalAlignment": 5,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
         "Foreground": 1,
-        "Formatter": 2,
-        "HorizontalAlignment": 5,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 0,
-        "Foreground": 6,
-        "Formatter": 2,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 0,
-        "Foreground": 1,
-        "Formatter": 7,
-        "TextIndent": 5,
-        "HorizontalAlignment": 5
-      },
-      {
-        "Background": 0,
-        "Foreground": 1,
-        "Formatter": 2,
+        "Formatter": 3,
         "TextIndent": 5,
         "HorizontalAlignment": 5,
         "BorderBottom": null,
@@ -1111,12 +1067,72 @@
       },
       {
         "Background": 0,
-        "FontStyle": 8,
-        "FontWeight": 8,
+        "Foreground": 1,
+        "Formatter": 3,
+        "TextIndent": 5,
+        "HorizontalAlignment": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "Foreground": 1,
+        "Formatter": 3,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 4,
+        "FontSize": 14.666666984558105,
+        "Foreground": 1,
+        "Formatter": 3,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "Foreground": 7,
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "Foreground": 1,
+        "Formatter": 8,
+        "TextIndent": 5,
+        "HorizontalAlignment": 6
+      },
+      {
+        "Background": 0,
+        "Foreground": 1,
+        "Formatter": 3,
+        "TextIndent": 5,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontStyle": 9,
+        "FontWeight": 9,
         "Foreground": null,
-        "Formatter": 2,
+        "Formatter": 3,
         "TextIndent": 0,
-        "HorizontalAlignment": 9,
+        "HorizontalAlignment": 2,
         "VerticalAlignment": 10,
         "WordWrap": false,
         "Underline": false,
@@ -1127,12 +1143,12 @@
       },
       {
         "Background": 0,
-        "FontStyle": 8,
-        "FontWeight": 8,
+        "FontStyle": 9,
+        "FontWeight": 9,
         "Foreground": null,
-        "Formatter": 2,
+        "Formatter": 3,
         "TextIndent": 0,
-        "HorizontalAlignment": 9,
+        "HorizontalAlignment": 2,
         "VerticalAlignment": 10,
         "WordWrap": false,
         "Underline": false,
@@ -1141,12 +1157,12 @@
       },
       {
         "Background": 0,
-        "FontStyle": 8,
-        "FontWeight": 8,
+        "FontStyle": 9,
+        "FontWeight": 9,
         "Foreground": null,
-        "Formatter": 2,
+        "Formatter": 3,
         "TextIndent": 0,
-        "HorizontalAlignment": 9,
+        "HorizontalAlignment": 2,
         "VerticalAlignment": 10,
         "WordWrap": false,
         "Underline": false,
@@ -1158,14 +1174,14 @@
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "FontStyle": 8,
-        "FontWeight": 8,
+        "FontStyle": 9,
+        "FontWeight": 9,
         "Foreground": null,
-        "Formatter": 2,
+        "Formatter": 3,
         "TextIndent": 0,
-        "HorizontalAlignment": 9,
+        "HorizontalAlignment": 2,
         "VerticalAlignment": 10,
         "WordWrap": false,
         "Underline": false,
@@ -1177,14 +1193,14 @@
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "FontStyle": 8,
-        "FontWeight": 8,
+        "FontStyle": 9,
+        "FontWeight": 9,
         "Foreground": null,
-        "Formatter": 9,
+        "Formatter": 2,
         "TextIndent": 0,
-        "HorizontalAlignment": 9,
+        "HorizontalAlignment": 2,
         "VerticalAlignment": 10,
         "WordWrap": false,
         "Underline": false,
@@ -1197,15 +1213,15 @@
       {
         "Background": 0,
         "Foreground": 12,
-        "Formatter": 2,
+        "Formatter": 3,
         "Underline": true
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Foreground": 6,
-        "Formatter": 2,
+        "Foreground": 7,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1213,16 +1229,16 @@
       },
       {
         "Background": 0,
-        "Formatter": 2
+        "Formatter": 3
       },
       {
         "Background": 0,
-        "FontStyle": 8,
-        "FontWeight": 8,
+        "FontStyle": 9,
+        "FontWeight": 9,
         "Foreground": null,
-        "Formatter": 2,
+        "Formatter": 3,
         "TextIndent": 0,
-        "HorizontalAlignment": 9,
+        "HorizontalAlignment": 2,
         "VerticalAlignment": 10,
         "WordWrap": false,
         "Underline": false,
@@ -1230,18 +1246,18 @@
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Foreground": 6,
-        "Formatter": 2
+        "Foreground": 7,
+        "Formatter": 3
       },
       {
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "FontStyle": 8,
-        "FontWeight": 8,
+        "FontStyle": 9,
+        "FontWeight": 9,
         "TextIndent": 1,
-        "HorizontalAlignment": 9,
+        "HorizontalAlignment": 2,
         "VerticalAlignment": 10,
         "WordWrap": false,
         "Underline": false,
@@ -1260,7 +1276,7 @@
         "BorderRight": 1
       },
       {
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
         "Formatter": 14
       },
@@ -1268,7 +1284,7 @@
         "Formatter": 14
       },
       {
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
         "BorderBottom": null,
         "BorderTop": null,
@@ -1276,37 +1292,37 @@
         "BorderRight": null
       },
       {
-        "Foreground": 6
+        "Foreground": 7
       },
       {
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
         "TextIndent": 1
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderRight": null
       },
       {
         "Background": 0,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
         "Background": 0,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
         "TextIndent": 1,
         "BorderBottom": 1,
@@ -1315,18 +1331,18 @@
       },
       {
         "Background": 0,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderRight": null
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
         "Foreground": 15,
-        "Formatter": 9,
-        "HorizontalAlignment": 5,
+        "Formatter": 2,
+        "HorizontalAlignment": 6,
         "BorderTop": 2,
         "BorderLeft": 2
       },
@@ -1344,11 +1360,11 @@
         "BorderRight": 2
       },
       {
-        "FontStyle": 8,
-        "FontWeight": 8,
-        "Formatter": 9,
+        "FontStyle": 9,
+        "FontWeight": 9,
+        "Formatter": 2,
         "TextIndent": 1,
-        "HorizontalAlignment": 9,
+        "HorizontalAlignment": 2,
         "VerticalAlignment": 10,
         "WordWrap": false,
         "Underline": false,
@@ -1358,10 +1374,10 @@
         "BorderLeft": 1
       },
       {
-        "FontStyle": 8,
-        "FontWeight": 8,
+        "FontStyle": 9,
+        "FontWeight": 9,
         "TextIndent": 1,
-        "HorizontalAlignment": 9,
+        "HorizontalAlignment": 2,
         "Underline": false,
         "Strikethrough": false,
         "BorderBottom": 1,
@@ -1374,16 +1390,16 @@
       },
       {
         "Background": 0,
-        "Foreground": 6,
-        "Formatter": 2
+        "Foreground": 7,
+        "Formatter": 3
       },
       {
         "TextIndent": 1
       },
       {
         "Background": 0,
-        "Foreground": 6,
-        "Formatter": 2,
+        "Foreground": 7,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null
@@ -1401,12 +1417,12 @@
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Foreground": 6,
-        "Formatter": 2,
+        "Foreground": 7,
+        "Formatter": 3,
         "TextIndent": 5,
-        "HorizontalAlignment": 5,
+        "HorizontalAlignment": 6,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1414,12 +1430,12 @@
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Foreground": 6,
-        "Formatter": 2,
+        "Foreground": 7,
+        "Formatter": 3,
         "TextIndent": 5,
-        "HorizontalAlignment": 5,
+        "HorizontalAlignment": 6,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null
@@ -1429,7 +1445,7 @@
         "TextIndent": 1
       },
       {
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
         "BorderBottom": null,
         "BorderTop": null,
@@ -1437,14 +1453,14 @@
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "FontStyle": 8,
-        "FontWeight": 8,
+        "FontStyle": 9,
+        "FontWeight": 9,
         "Foreground": 18,
-        "Formatter": 9,
+        "Formatter": 2,
         "TextIndent": 0,
-        "HorizontalAlignment": 5,
+        "HorizontalAlignment": 6,
         "VerticalAlignment": 19,
         "WordWrap": false,
         "Underline": true,
@@ -1461,25 +1477,25 @@
       },
       {
         "Background": 0,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null
@@ -1492,67 +1508,76 @@
       },
       {
         "Background": 0,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderTop": null
       },
       {
         "FontSize": 13.333333333333332,
-        "Foreground": 6,
+        "Foreground": 7,
         "Formatter": 20,
         "TextIndent": 5,
-        "HorizontalAlignment": 5
+        "HorizontalAlignment": 6
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderTop": null
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
         "Foreground": 1,
-        "Formatter": 2,
+        "Formatter": 3,
         "TextIndent": 5,
-        "HorizontalAlignment": 4,
+        "HorizontalAlignment": 5,
         "BorderBottom": null,
         "BorderTop": null
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
+        "FontSize": 13.333333333333332,
+        "Foreground": 7,
+        "Formatter": 21,
+        "TextIndent": 5,
+        "HorizontalAlignment": 6
+      },
+      {
+        "Background": 0,
+        "Formatter": 3,
+        "BorderTop": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 4,
+        "FontSize": 14.666666984558105,
+        "Formatter": 3
+      },
+      {
+        "Background": 0,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
         "Foreground": 15,
         "Formatter": 21,
         "TextIndent": 5,
-        "HorizontalAlignment": 5
+        "HorizontalAlignment": 6
       },
       {
         "Background": 0,
-        "Formatter": 2,
-        "BorderTop": null
-      },
-      {
-        "Background": 0,
-        "FontFamily": 3,
-        "FontSize": 14.666666984558105,
-        "Formatter": 2
-      },
-      {
-        "Background": 0,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderRight": null
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderBottom": null,
         "BorderLeft": null,
         "BorderRight": null
@@ -1569,51 +1594,51 @@
         "BorderRight": 0
       },
       {
-        "Formatter": 9,
+        "Formatter": 2,
         "TextIndent": 1,
-        "HorizontalAlignment": 5
+        "HorizontalAlignment": 6
       },
       {
         "Formatter": 21,
         "TextIndent": 1,
-        "HorizontalAlignment": 5
+        "HorizontalAlignment": 6
       },
       {
         "Background": 0,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderTop": null,
         "BorderRight": null
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
         "Foreground": 22,
-        "Formatter": 2
+        "Formatter": 3
       },
       {
-        "Formatter": 7,
+        "Formatter": 8,
         "TextIndent": 1,
-        "HorizontalAlignment": 5
+        "HorizontalAlignment": 6
       },
       {
         "Formatter": 23,
         "TextIndent": 1,
-        "HorizontalAlignment": 5
+        "HorizontalAlignment": 6
       },
       {
         "Formatter": 24,
         "TextIndent": 1
       },
       {
-        "Formatter": 7,
+        "Formatter": 8,
         "TextIndent": 1
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Formatter": 2,
+        "Formatter": 3,
         "BorderTop": null,
         "BorderLeft": null
       },
@@ -1624,16 +1649,17 @@
       },
       {
         "Background": 0,
-        "FontFamily": 3,
+        "FontFamily": 4,
         "FontSize": 14.666666984558105,
         "Foreground": 15,
-        "Formatter": 2
+        "Formatter": 3
       }
     ],
     "Types": {
       "Strs": [
         "#FFFCFCFC",
         "#FF8C8C8C",
+        "General",
         "[AUTO]General",
         "Meiryo UI",
         "Right",
@@ -1641,7 +1667,6 @@
         "#FF6D6D6D",
         "yyyy/MM/dd",
         "Normal",
-        "General",
         "Center",
         "#FFCCCCCC",
         "Blue",
@@ -2580,7 +2605,7 @@
       "27,0": 3,
       "27,1": 42,
       "27,6": 50,
-      "27,27": 64,
+      "27,27": 67,
       "27,32": 62,
       "27,33": 58,
       "27,52": 59,
@@ -2611,12 +2636,12 @@
       "28,23": 41,
       "28,24": 41,
       "28,25": 41,
-      "28,26": 67,
-      "28,27": 68,
-      "28,28": 68,
-      "28,29": 68,
-      "28,30": 68,
-      "28,31": 68,
+      "28,26": 68,
+      "28,27": 69,
+      "28,28": 69,
+      "28,29": 69,
+      "28,30": 69,
+      "28,31": 69,
       "28,32": 57,
       "28,33": 58,
       "28,52": 59,
@@ -2631,26 +2656,26 @@
       "29,30": 2,
       "29,31": 2,
       "29,32": 57,
-      "29,33": 69,
-      "29,34": 70,
-      "29,35": 70,
-      "29,36": 70,
-      "29,37": 70,
-      "29,38": 70,
-      "29,39": 70,
-      "29,40": 70,
-      "29,41": 70,
-      "29,42": 70,
-      "29,43": 70,
-      "29,44": 70,
-      "29,45": 70,
-      "29,46": 70,
-      "29,47": 70,
-      "29,48": 70,
-      "29,49": 70,
-      "29,50": 70,
-      "29,51": 70,
-      "29,52": 71,
+      "29,33": 70,
+      "29,34": 71,
+      "29,35": 71,
+      "29,36": 71,
+      "29,37": 71,
+      "29,38": 71,
+      "29,39": 71,
+      "29,40": 71,
+      "29,41": 71,
+      "29,42": 71,
+      "29,43": 71,
+      "29,44": 71,
+      "29,45": 71,
+      "29,46": 71,
+      "29,47": 71,
+      "29,48": 71,
+      "29,49": 71,
+      "29,50": 71,
+      "29,51": 71,
+      "29,52": 72,
       "29,53": 29,
       "30,0": 3,
       "30,1": 18,
@@ -2683,7 +2708,7 @@
       "30,53": 29,
       "31,0": 3,
       "31,1": 42,
-      "31,6": 72,
+      "31,6": 73,
       "31,26": 33,
       "31,27": 20,
       "31,33": 50,
@@ -2724,7 +2749,7 @@
       "32,53": 66,
       "33,0": 18,
       "33,1": 42,
-      "33,6": 73,
+      "33,6": 74,
       "33,26": 18,
       "33,27": 20,
       "33,33": 43,
@@ -2755,7 +2780,7 @@
       "34,23": 41,
       "34,24": 41,
       "34,25": 41,
-      "34,26": 74,
+      "34,26": 75,
       "34,27": 2,
       "34,28": 2,
       "34,29": 2,
@@ -2787,8 +2812,8 @@
       "37,1": 42,
       "37,6": 43,
       "37,26": 18,
-      "37,27": 75,
-      "37,33": 76,
+      "37,27": 76,
+      "37,33": 77,
       "37,53": 66,
       "38,0": 18,
       "38,1": 18,
@@ -2806,10 +2831,10 @@
       "38,53": 66,
       "39,0": 18,
       "39,1": 42,
-      "39,6": 77,
+      "39,6": 78,
       "39,26": 18,
       "39,27": 20,
-      "39,33": 78,
+      "39,33": 79,
       "39,53": 66,
       "40,0": 18,
       "40,1": 18,
@@ -2827,10 +2852,10 @@
       "40,53": 66,
       "41,0": 18,
       "41,1": 42,
-      "41,6": 79,
+      "41,6": 80,
       "41,26": 18,
       "41,27": 20,
-      "41,33": 76,
+      "41,33": 77,
       "41,53": 66,
       "42,0": 3,
       "42,1": 18,
@@ -2858,17 +2883,17 @@
       "42,23": 41,
       "42,24": 41,
       "42,25": 41,
-      "42,26": 74,
+      "42,26": 75,
       "42,27": 56,
       "42,28": 56,
       "42,29": 56,
       "42,30": 56,
       "42,31": 56,
-      "42,32": 80,
+      "42,32": 81,
       "42,53": 29,
       "43,0": 3,
       "43,1": 42,
-      "43,6": 81,
+      "43,6": 82,
       "43,53": 29,
       "44,0": 18,
       "44,1": 18,
@@ -2878,17 +2903,19 @@
       "44,5": 18,
       "44,53": 66,
       "45,0": 3,
-      "45,53": 82,
+      "45,53": 83,
       "46,0": 18,
-      "46,1": 18,
-      "46,2": 18,
-      "46,3": 18,
-      "46,4": 18,
-      "46,5": 18,
-      "46,53": 82
+      "46,53": 83,
+      "47,0": 18,
+      "47,1": 18,
+      "47,2": 18,
+      "47,3": 18,
+      "47,4": 18,
+      "47,5": 18,
+      "47,53": 83
     },
     "SheetStyle": {
-      "FontFamily": 3,
+      "FontFamily": 4,
       "FontSize": 14.666666984558105,
       "BorderBottom": null,
       "BorderTop": null,
@@ -2938,7 +2965,6 @@
     "35,6,1,20",
     "39,6,1,20",
     "41,6,1,20",
-    "43,6,4,47",
     "35,33,1,20",
     "37,33,1,20",
     "39,33,1,20",
@@ -2956,11 +2982,12 @@
     "21,33,9,20",
     "9,6,1,20",
     "11,6,1,20",
-    "13,6,1,20"
+    "13,6,1,20",
+    "43,6,4,47",
+    "25,27,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "MasterPageName": "masterpage",
     "Title": "不具合の新規登録、または編集 - 不具合管理",
     "AuthorizeInfo": {
       "VisitMode": 2
@@ -2974,4 +3001,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//fVmSqh+Jj6vItWrdlDOwKEp1ue9q1rGpf65dNhMytWaKnbUhY3ah8X/BmDTrjGS02f9hI5gi5OUr3gS06LL+j3bW0XY1vhT+xZ0jxn7G62HLXDk4SZPN9XqwSJno6zd6EX7JZVvqiAfVVr/Zx3MClAV55jDk/pKedQiSB76ARWi2PkxzMiMxMeA68lGdR2hkZCnvIaBPrfWxtqJbmX270TPZ2O+zTq89fW91I91dhWwPnsWaqIFPQAl9hS6CVB5iCZ2JpnUz0mo1crOIOHnbAOPeoe+AjWU52y0W4wAjMKPrZwL/XOaa5eOMuHa8Je6TgDwEKlvHJvDjAGmXgxYlQKqd8gZVPzm2C2FnWAwd61/0zlRhUT4bb49aWEHq4XFCTLjz+ewldXZmSfcAL/42JLfBr43j1uJFj0Welz/0ZeOlzaa36ZjDtdOb0qynPME+WKj/JU3rbrcNPboFI4NCyD4dVkkww00GTCB5Ns1OZKBtq1Prkr4/rGUkQ2COGZlO7++jJLh+wxEM/1FCmC63fCmKPAIHQZ6kWhC5RBfAS0psYKLlDiGZjuxGy5NVMGNWGCxf58pyusgCVhVllSpio8nzXCdchoET/eMoLWO2lLa2DkhUnMGjuzKlhxbbnMt6x67i62KpOoC9EyuKIcRwhAcuUChwAhJi1NhEmalg/n726iIbKCbfXptYGAOelM6zw1kdkZ7yoFhMlvV8FiOZx9pnh5B0VzTdbzaxhCBfosXmst65xfvbTvjyFIWSJKFDqZFJhKRY6AU4JxeRUrjzChW3C4BBwiOtibKAs++loTPSEMLJC0XW6zWCPEhJTH9PRmhCxLVzmzPrPZOfvRAjwJk/5OPUjENhTO3O3uLNF7ScBInhlx7TNMSWFakY8E+ba2RAB7792foOuh3SDbLSqQ==|920
+}//9Diqnciun/89110eNfn5P7oP5bFkI7FPMGc9e2X6kypAMeFV6GzaDYGCQtr5bvqBe8cogOxtlBnSsBUENobgN5I4ZV5wjL50cVQ4FDIar1etn7Aq/GjB24q244WqJCCuCnBJ6nl6N+jEK6y4xSmhdA25KP0gCTter/0tFwM+nJQUM7tOwp3LECCe+Yf9kC2WON5ZG5bbBIANDCLWV6M4XxdOT8NXY+XdX3G1upNpULm3M5VRFK+vSH7M6B9nCPGvI9mtX0mtU6ZobBeuUj+koJ66UnWzxfKlQ1xYiitew0nIUx/XlhhzN5ya7MDvirY7+N0DhcYOTs2V+me9MVqCLOgW1sVfOE2Kvph0LDCC+D7kyoIOIIlIcQVw2U/LFkjVeLUrir+OTEEDol8/VlOEuPV/2bRyeaDeVmZZEAXNMGM+SxrvGA+uyXN/AZy6Jhtxmn4+tHSeuv78anL0FCNlwhT+IM5FlFfRzfg66A4N2HOEdF+xhGxyGRkH9O4FNwl677/rfwlX2Bsapa9dWzyLddp6Vpyms8bj2pPDA1vOtSH5jOhsp//9F6RwLJcI/w+efLDp3xRqGuqUeORAzBTtRF5cDc7UCqYwrmQCCGhmTyFsyOvdxqGQMi6icXmkjDiZ1GztOr5jTlQF7kk7dbOnyrPWslnenNA5Mfj4ze3G5+h49/2lHFrnaT2mDRaQo3tE5FPinjF2MUc+h/i9Ary6gXiPPkcbmmjx0m7KXnsNxBQ2egafZRDfjPNOvbOdm95hOX3vgwa7wmvdIeC96uuAGMQsxbDybbD6YJjaG2w98FnPzgAlYV5vyEdjTs3S8fLiFxQ+OfJBFDuVnpBuH+CKrQkvb9utXz2D2mIIAZDclKZBxvCelkOfZglzp4OKG8jCZOnLCTE8i+snhRElcAGe+g==|920
