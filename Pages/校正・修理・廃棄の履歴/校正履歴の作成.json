@@ -153,7 +153,7 @@
     "12,1": "内容",
     "14,1": "添付ファイル",
     "20,1": "記録文書へのリンク",
-    "23,21": "OK",
+    "23,20": "OK",
     "23,25": "キャンセル",
     "24,1": "管理番号ID"
   },
@@ -309,6 +309,17 @@
           "TableName": "trn_insptool_certifications",
           "ColumnName": "registration_date"
         },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_certifications",
+                "ColumnName": "registration_date"
+              },
+              "Order": 1
+            }
+          ]
+        },
         "DropDownSubItems": [
           {
             "GUID": "9335ec11fe7c4a6eb56acdc798c6e0b0",
@@ -332,7 +343,7 @@
       },
       "DataValidationInfo": {}
     },
-    "23,21": {
+    "23,20": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -1017,10 +1028,10 @@
       "21,0": 11,
       "22,0": 11,
       "23,0": 35,
-      "23,21": 36,
+      "23,20": 36,
+      "23,21": 12,
       "23,22": 12,
       "23,23": 12,
-      "23,24": 12,
       "23,25": 36,
       "23,26": 12,
       "23,27": 12,
@@ -1043,14 +1054,14 @@
     "20,7,1,22",
     "14,7,5,22",
     "23,25,1,4",
-    "23,21,1,4",
     "8,20,1,6",
     "8,7,1,6",
-    "3,7,1,4"
+    "3,7,1,4",
+    "23,20,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "Title": "不具合の新規登録、または編集 - 不具合管理",
+    "Title": "校正履歴の作成",
     "AuthorizeInfo": {
       "VisitMode": 2
     },
@@ -1062,4 +1073,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//UU5Avv2AOeBnaVip75w4cFsJoxzN8vuFqO3Pg/1rOUBxSOlL2Ug3RrhKzyqYE+6qfh87R2gMBGUXyPEs+oUA5V7Tfc8k5amq/KW7Z3ib2q2DBVnEDUOiae8+zQMKUrXVOxn/N/F5B0AjGEMznxzX8jqAbYD0FyOdFvYc84CzuaijBVRTaCGIWakXNwZ3uvSNGwyWRJ6qonI2SUqU4cQQXhyVnF7L191d+wykUfYseZlPblx9N2T1BhwPwNymMne78FkuTck5Rk8A5RgIjxOypegi+1combKwlVNDuX8zGc8WlFtOoUi9f4FBSceY5FOKqziQpJoVpf8+YY2YrbHDxF6Z24KeJODCY8mAogyccyIN4no85XR6bMcdpZjRVcHhEI95GjWwLP4Z5au+hgpXQC45A/Ec7zTUEvyRgx2EjALArnJYjw+fDzRWoADco1gnH6UL1uXrqkthBbc7x+AMNfotEKVxtJcWQgREJQtc1upivIXK/d7eWuTKjWT1J29Lz8RMXqVyRFjSVM+dDCMLFbX4wY8SqX8etAAdMwe0w2MxoPeVFtbsjW+wnknKpf72fl2wOijFoSqKuDBHnQ1E30kSVQRaThY4Qg0vlnQWXOt+nHGHFVV4HfVQad/YPl9zNtE1Td+Y88XkgufOicUcv1cQgMpDlfTAaOZ518kPtmeCj2TryKkDn0VaQisrkkpzjbNTiGupEAgxumlJ4sRltr/Hc5ZulTb42ueWBSfp7CJwUdxs6TWGZ2Blq0niQBRB2CGP2qLgphAx+ecwYJze3yKNhDwoR8K6kmBJBf5n9rJpWYlQRnpeWweE0vp5huRf3mVZSbWaT6/qlX2R+/4gk5H6Wa6ku3SVtO0I6K8H+6e1xXc6fpFySper/mdr9ZHjfPX3gUES9Gh+kzzZ1QVFOw==|920
+}//Ngu8WPNiYqhuVm3gMNwutkvLYbNAK3Ploff8EM2fZBzzbCkeaSixuVULVKySdi5XSkfUQQ2zrnlFRfkgEJBZuVnBu8ZM8Hf0F8ngxTB4N58BXeTvskXrQuVUo/dtz87K1HqczpEpfKcyXRBMF8oRG2pbHoiBZ5FSYO25j8hG/tecbMjTELnpFW+PAAXUSj6kYb6OU/T6bvdfkPnxG1ao+SwMQYTMp9JW1lFlytaDd276gklD+qv1rGWqpxQ7//3HjOtXDRB4e1W6kCaO59ceUlIbEEIeZNb6pevxJ50EySrFfNDOldMCo+ADMTlHvsbsAfQcASORUjgysoTgR9Q3LMZ7HqJOluR0OlKWm3LhjemLI89iBh3KDqAptQ4nqVdnsabSEKV2ZwfEEBYYqueReJUqypk93anX6W6WcPogZrer60NAJdft2uzsXeq5NgVwU1uqzYw8KJY2IVhYq5ubYs0zXcHOah04vZWF2eSZbWmbLd1Ue+9ozXHVZWX3ejgpCYjlp1GyN9B+bBwfeE9axOYvGUbT9rgl8BRP/IvUitRMQZJSGHEJO3gXNNFJDocrRiP7NdtMRdRqQNd9jZRz191vMGB0N4i37pJAW2zfxE7X1yZeYPYGNHe7GM9cZEkOVnCLWT3ySUM6+lZFYp1xqRe5o8XOZI6AI++DKGb5XpZk4evfyw4/cG3MfY1pSXcsU/1HYGwo5SRsksNaOk9L4pv6o08PuTRcNhCDFE6IciPT2eCAwZf+nU4xW5L+HxBjVnEl8SZeMsQAyV79Ah9JcMxQiHY8QQz4FcSL92eYFl8J+WZZgYmN1j1lJCNS2+7mp4m+HB4lSP0LDGkRQemQBXpdFA69iBS2B+1TomMlS6Y0w334Mph/j9S1skCrAFKDjRMP8C3LgEcIxsGSfZhe5g==|920
