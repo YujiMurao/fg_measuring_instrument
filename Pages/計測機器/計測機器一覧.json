@@ -270,7 +270,7 @@
             "Params": [
               "=P2"
             ],
-            "ID": "5d9649b6bbfa4c52b0d6215a3c2bf814"
+            "ID": "28affcf033a54c0aa0fea9ce4cbd557f"
           }
         ],
         "Text": "検索",
@@ -298,7 +298,7 @@
               }
             },
             "Params": [],
-            "ID": "e000717d736b4aecbbec1b926bd5a31a"
+            "ID": "15b7501450c74c2d8218058f70a911eb"
           }
         ],
         "Text": "クリア",
@@ -367,10 +367,10 @@
                       "Value": "使用可"
                     },
                     "Params": [],
-                    "ID": "e1699e7fa91c402a93fa40cbfee58e88"
+                    "ID": "f4f3de9de0814ff3a5dc81206b5cc0df"
                   }
                 ],
-                "ID": "ff7d1646-31b3-4350-a174-c8f1442e6700"
+                "ID": "e33c2284-c2a3-449b-9e1d-7b509cf47b3e"
               },
               {
                 "CommandList": [
@@ -386,10 +386,10 @@
                       "Value": "%Null%"
                     },
                     "Params": [],
-                    "ID": "34cf555e897e4d05abc214c9f281d7bf"
+                    "ID": "43bb890876194d5c9ef18bb4f794d22c"
                   }
                 ],
-                "ID": "5f74acdb-7b25-4cf4-bb86-e328d1839560"
+                "ID": "fb75b3f3-d1ee-4587-b490-65f315b5c653"
               }
             ]
           }
@@ -475,7 +475,7 @@
               "=A6",
               "=A7"
             ],
-            "ID": "d5903d5019d145f1a165730ae77aba60"
+            "ID": "44505aaa89a74f00a879cb20b2e5fa1d"
           }
         ]
       },
@@ -563,7 +563,7 @@
               "=A5",
               "=A7"
             ],
-            "ID": "9f12ce46c24e49af9c9c7a749cc70ca5"
+            "ID": "81c14e5f1f044685bcf2561139d83fd8"
           }
         ]
       },
@@ -648,7 +648,7 @@
               "=A5",
               "=A6"
             ],
-            "ID": "f26c4cc69f8b47978e73808579636a15"
+            "ID": "2c7e103b0f8c4591a737d0302a5248ea"
           }
         ]
       },
@@ -2881,6 +2881,7 @@
     "9,16,1,10",
     "9,0,1,3",
     "10,0,26,51",
+    "3,0,1,6",
     "8,0,1,3",
     "8,3,1,3",
     "8,6,1,3",
@@ -2891,8 +2892,7 @@
     "8,35,1,6",
     "8,41,1,3",
     "8,44,1,4",
-    "8,48,1,3",
-    "3,0,1,6"
+    "8,48,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2913,7 +2913,61 @@
             }
           ]
         },
-        "ID": "ee10049ad1bb44658b1d3b8af893fcdc"
+        "ID": "239746a859b84b528157f36cb57679ce"
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=計測機器一覧!A4"
+                  }
+                ]
+              },
+              "value": "true"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                "TargetTableName": "trn_insptool_tools",
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_insptool_tools",
+                    "ColumnName": "usage"
+                  }
+                },
+                "Params": [],
+                "ID": "8ab14e5b8b4d40b884fbe3506e7c5cbd"
+              }
+            ],
+            "ID": "a4d518a2-b8e7-4157-95cf-c91a4e73bf6d"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                "TargetTableName": "trn_insptool_tools",
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_insptool_tools",
+                    "ColumnName": "usage"
+                  },
+                  "Value": "使用可"
+                },
+                "Params": [],
+                "ID": "1f5f081c7b27485eb211774887c4737e"
+              }
+            ],
+            "ID": "e5d91444-33bf-4f17-8e49-eeb6e42d000f"
+          }
+        ]
       }
     ],
     "AuthorizeInfo": {
@@ -2928,4 +2982,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//FGogvWFtYXBflrzLc5GRJ7mKANEwS+cRnkOCq4mXU/TZPTdwHomcm0EuqSwZrM2cSlq77p5iVc9U8vnrwnGmIS+YUtrs7couaElUVg5SXVl/Od//UV2uAZtQHRrLSsArqfl9MRfYltbg55q4CXxyOUXYtdm8UrHo2wXhjhYdQoBzgwQgHxVa8HmGVgKAOzMG265RIC6nDvs83BT4CYCkhwQqhPz5MFY/b3HOJ2yL70dehyYWF2dzK5LlD26kGESceYE1/FudM04CPq7YDiAiaTB4P8i9dHmytwgeuVkJJXHb64pCvQ6i5OFqtE5gIoQXiXXTOF9jQfq18y8vAclKJbsOf3kYTy4kVvxfJB/GNsJof9fB6c1fCkg7acimyrgV5nEn/FCSP8oQlhM9iJF3ZELOhA9IhAaXAmZRjPLql92is3n5x/wzwKxpbno2V2uNVvZk80g/dpyC8Zdd1149giJuJABWKjP19y7ovxVv3cSFQ2JlLOh43mVxqVXEELpyVusskMa31G6xJX0wUuEsXGZDSOAtGbCZI4e4uzHouzgcbLoKlFve0lCtLOqSZNS6jRjc90eqIU156lRJO3DG90bxV3fKf7y6nHHggWDZZ/MDvEBRWA7dQUtUSJvvMXm7ySv9KMa5KaAOY0HZnw+rnHXG1/txQpah+z5SXJZjEz/j5pbUayy/BmswPMdQLoh4v0my62gp1K6NRzeu0UbOpirKDWOGqoFJsdlV5Ujj//ehkWpjrE5xwkxNjehjMaJfiFlFPHftLv6Qq6UdQfTgIHzs8xIt1nSeM1toEs192dY++jnkluI0iNII7ZXo0hDtSomOFLiYRl8SRc57uCWCaB9ZBrqMHNFCZ33Y/IpBYFoU40IqGpJXaUaYmy2NeWulSs8npvRYlTYdhz9Zl1c1Mg==|920
+}//a/clQXhvRPpem0dBaXDxVuIgfDORsY4xmwL/XmPgeZkEqY4KF3nOLterpMh7QFzCO2TjNI5R1X/cOys8cSYVhohAbossNF8bCXwN2ZjB7JNoI55LOI125n6lltl3F/q4HSDrg2anRMjCXQYacMHxBy2MhPv09uTdds54+uEol6nHjE+W3evS1bGCmcE7klYX8nGxa6teLQNnm368+gfH8Gc3zVWIfxyYn3lIp4ysKKiQ4Q1FJOePCGz+UPqr/nJbisCGn4oOpnOZO9iCUGsZQ/PRMFff9re0g7Q9mNZ7SPKTA+GSAIvWShN7Mw0+r2el8U2zGttAMP+locfAoLiSQjpozCsOvUxvdWDkDghy7kGYHC1QSXRgKVIMocn+f/T60CfUTUgJVmlEgnw5N3p/i6+U7JPkwgYCOMyB5dVcHWaDJWB18+Kuh7/FWljiMEz4dlLARrDtSecBmqPPC0VEhb87WYyvL9SRqf8Yxc9pL9RJzijeG2eKL6uzwZGGw/fQPdEEVwc3phMjAVJ60G3Y4T45HwjzCxt1ImbKkRIhiaYmhI8iO2x5pN+9VT2MSTZddrfws7Xn0DIl2xP7Kd63KVuZJbZqWal/i3F0q9EMLHN6NlT1yhZhfJYgxSfkrp96BczmJIWmxDG/ixC0zekOtXyVD3DqdUQt3QsuLURpf2ZYEh53Xdlxp4om8tio8iHPzfjhewDLH5VJxlum5Na+Owx61j97GHnJr7UjEkE0XPN5IX0Qvm2e3w7Q9bhks4yRdNluZNw4XUYBq0zGe/nUpT1IxpglgHRVqrp/2rC+GuutvY44TRD/ljHsn8ahd+I7/X1Eh2UdTcKpTw3irpw/Spdd6tqA/Onp/FUisUA1bNJ+knrq2v3jQpEXm6wEtNPA3aQilgxksnBnaucfyvvSQQ==|920
