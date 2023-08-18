@@ -326,6 +326,110 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
+    "0,23": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+            "LoopInfo": {
+              "$type": "Forguncy.Model.ListviewKindLoopInfo, ServerDesignerCommon",
+              "ListviewName": "リストビュー1"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=計測機器一覧マスター!Y1"
+                          }
+                        ]
+                      },
+                      "value": "社外校正"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                        "PropertyItemsList": [
+                          {
+                            "TargetCells": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=計測機器一覧マスター!Y1"
+                            },
+                            "Value": "社外"
+                          }
+                        ]
+                      },
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "trn_insptool_tools",
+                        "ShowConfirm": false,
+                        "ConfirmText": "本当に更新してもよろしいですか？",
+                        "UpdateValues": []
+                      }
+                    ],
+                    "ID": "7a133e55-25b5-45a0-b5c3-3b9918eb07c0"
+                  },
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=計測機器一覧マスター!Y1"
+                          }
+                        ]
+                      },
+                      "value": "社内校正"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                        "PropertyItemsList": [
+                          {
+                            "TargetCells": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=計測機器一覧マスター!Y1"
+                            },
+                            "Value": "社内"
+                          }
+                        ]
+                      },
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "trn_insptool_tools",
+                        "ShowConfirm": false,
+                        "ConfirmText": "本当に更新してもよろしいですか？",
+                        "UpdateValues": []
+                      }
+                    ],
+                    "ID": "af3bcd39-5e7e-4f89-95ad-3a0efe3ec1cf"
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+                "TableName": "trn_insptool_tools"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "0,24": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "category"
+      }
+    },
     "2,0": {
       "ListViewInfo": {
         "ShowColumnHeaderInDesigner": true,
@@ -647,4 +751,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//4BhJ346LWX/oL+jpiv41PQSAr7la8ziN8nCwDVTmJZ6ZTFstzv8QYR5pIZmvHPguQqI9iJYerW4q04+DNYtZo5pdKYc6Jo7e2kXhxTSUpNff9hoSgGicYdIgLMeFOQZuYv9l4ueZvoWyMMrzF948QkSW38cQh02waJODAwbAzSYgauAwgjT4eFTfC7Qet/BEgmcR2kLB9sHUTlwBpINKQ0fuAOPpVZ5e+Q6liB8muxGZzhxszHlvOGO7imMBZwZnPgqtE64FuFwSZtVKGHAM35SaO/HUC/+SESTO1WrJGHe7dsSqdTOnWboaXo6J+3rtkJUf+rhbq2BNNt+40zMFzcjooCwXMTvSka/kN1Wd0JyOTp+g728Hz4sNKGGa0e/P9vVeiP3k5XjKElbsiDz3YzC6zCv4jYZOaKCGjJrEYTwi31iJu1lLnO50r8F6SXJrBjFdXzMa3Lhwq/zx4DjZzw5ioU26UH9t8ShgPdzviotqdl4Pd/7/Pa7B5BA3X7YGdfrp1EyzHTQLCEIhhk2873DVa5LN6W3WgqDUdgiRfCd+qzhAl+jk9UPKBeFqxyzwlwinXe7aNzCe4yzMTpa3mX92CycnkSoYw4Ap6E9uzp/LjVZk/ls6rLs3G8h1VcCbNgiMKxaMTRwh+h3SX4akfSmSBU75qMARnnNOoqId+PYo3y3oa/rS/oAoChgBC7ut+eV6GRvu5nt/Lyg3J5zdAhMo2utoFxbUW7+AkiG9VigRFK6MVA5BH71r9QHW0PRBbv0p05CSzyr8fkvAoXavMCm9QJh/cKrwXfP67LnWH6JBlAb/Kc1IwUB+50238q/zyK6prnZ4SXmBiXHj8dWFnqaA7d62YFoIqj53GfYaBXwiKOqwxUoLLgNSG2rS/AiHBwUTnz5/BqEAz4uOAbv2NQ==|920
+}//SVe3NrppkgbZrlJOEHPeSyQUOrcnXBgmGwpvBRgPMxI4Dm/xTp2ZfLr9CB46kGCRzhHVt+o79GljfCsfG5FHpLsv1KRxLwqWwtrkSOzaSI84Wg2GfxSsxm33xFCZuyNJry7M2S7cBhXDz+7TgCOvJA2zcyGa/4qxTqYAFU+HLkY6dEpAJoEvWCgyyj0VhFImEj04AnFzpsopdIASsFJaT9/Lg9fZc2rThd5CoIErWBn0UWISxSCoF/ifB3k/nVIPXPxaeIiZvLlnkEUdRNtwIlC5h/VHx4r0fZu6OiXIoyuCuDkmzTHh7LhEAJsCOHbRqhjjURPXD6kbXUO11/TY/0gROAYGdMZfa/YdOape3lO4v6+JBIchtI/0PTBWVlJM3SgzXqRl1SIvlMzUfZdlfE90ozhTAksxJhgj6xp+ULIEZp2m+a1Tn0/2KwqDMzNMWTwwTGJDN5l8SRzHk+WgfRk7HFLFkjSNDpBvSDIBl4JQe9MbBoyulE7dZoaZT90PJaVLhCzm3OHdGBapuIrJx7WWlDqEzJduK2zH25GswR4T/X65GP5yvFcasTyexiLzBxRTqB/xK7+bh/JE6VjcSYsZdKHGoMWYXDu04hHtwX6XFmcD3umYx1Zkg0EjgpG+OfGVi1xfJT3PeSx3QZXTlZUHHiuChFz++ybBJyrW1//qskmsQGxg6tk6sWCjHflp6Hvvn3i1iTBHj+WlF2oqu7iWbV2ByjmsaXpBoDYFZGnehaSs93DE7B6qariGSAezQV87DmY/v8GUZf4UAJ/S7jxi1/Un1pleVVI04uHtsG8RAjdzvsskF6EcBPgzAXBZgejYjmNr27l9x6ybeGIOAgKlJY+n9oi6CegF7lTmx2vsIJ85VvhpjMwIxPQqh97b6vEvPwTasWi41BRKBUnOiA==|920
