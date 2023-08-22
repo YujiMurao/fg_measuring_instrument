@@ -184,32 +184,38 @@
       },
       "54": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "55": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "56": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "57": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "58": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "59": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       }
     },
@@ -528,7 +534,7 @@
                 "ColumnName": "tsuucibi_ymd"
               },
               {
-                "ColumnName": "画像",
+                "ColumnName": "外観",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=計測機器新規登録!AH10"
@@ -634,7 +640,7 @@
                     ]
                   }
                 ],
-                "ID": "c3eb422b-c21b-4db2-bd39-7e0d5e09c2ca"
+                "ID": "c45d2b2b-f2cb-4b7d-a24b-6e3f979d1c1c"
               },
               {
                 "CommandList": [
@@ -667,7 +673,7 @@
                     ]
                   }
                 ],
-                "ID": "0bf20780-acca-4ab5-a407-bf4e95cf7f68"
+                "ID": "2cdd35a3-854e-4d0e-b708-2f4a77e8f86f"
               }
             ]
           }
@@ -3483,4 +3489,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//ZtmRa2gVDzzCOyGcGkMPfgvUBq7p7EjqdunWazZBdJt7t4eJmtT9LYVsYh63FCY8p+0mp4s+z5KdnGB2Xy8hksH9LFMSPy7EgmUwzh3e8AHt219XpDGrNpBHumUzLXIPBM4lwscmTlgL3ve7dIM6oHg6il7O1F8t2a/yXbO4CzaoT2pIWNn7G4wvB/MoKzJcnKJnWAYOxfaJx2VwHnGp6ZbnwOXMKqlRvH+w9eH1QS4mM/tsVaFkchAAYBdIfpLfdustq8L3lTOPAGbur/Jn6Y7VSOJHIAu9StJjXb52A9ne9zXuTOUP0W9yJQ6KtJ+rFSSL8AsBxTf+HMh4zA+VeN6XRvTVV++AFMj1xZHvf3MrijuFUuSMLtQr5ddJ6mUHZBjy0ZWsjHtr+ZDHieveWZ/L8vI9UCiiDLnJdZN+GsbLMabQ0KttvFQvfYISaYB0taNzjmoMdvNMrFb09z2Xr37y6GEwzdubztXyYqmkh+4ekkU8wJlL9s6g82kN16CT8mddX9vK2pAjM6pG2TNXv4Cn0YNaCphzdU8Q6duKL6Zihi02gLidZvlBWf2KUkCLCvXd9/i61GBL4HAawwP3IdYvh8v9AwsTWvBHpzAjpz/qXkYLH3uo+TLQMi6v052TiqjsFo/4k3XgZBIRfBXRUatASH6WXPLG+SIkBnUltiWNkBmZbiTs41eGdIzCY/9nyugEhTHCGSuZH4ZBUNSOik0lN4KwJPDFFGHAgycFe2hly5YUchK/D2dAvink4gSukVBe3eQDNl3Zd0O3qMYYIJa5X3sg4oI00Sik9J4yXyeimMAX4dmRTAjfwD6JBT+QQilcQo9NENIA/J7xPrilpXKczBa8I/Rh+Zt+gmdqDe1Dw2yAg4rhfl2a/4VMObD7KFlMVegaB/3jC10FjRr8qg==|920
+}//L9g73lAEM1/HA+FemBpkaFf6GpQpo+3dEXBnXeJjWHlTJghvEXPB13RWfBeo50MCH7sddG6IDwuXxcLP7WQMWXIuKEzsEYMEoAIbjfJHNUHF5OPY7qN/rArNHpvN+NRH6Q+N5eW1ZbWxwhB/56a8cVZU+7fh0QyDdc6HQlSc2UWbtZownjOQi8cP9V1fY3i+6i9rxNfGUzGc/3ix5E4VRDcmnARNqtH461ixXN7iCn08cDfTtgWpUizc1aGVbDIo5+r0jiQRxwoC0+wATLgSA0WTW9lBp8tqyEFDyOKONQU9ihno62sodk5DZ9rV+iapzhK1Rq2z83EOZ+19LVeW023eyQtnFEAR9xECvrUlRIE60d3OA7OnJjvPCmahbRinicQaB1lPCuG3RcE34mhd6aLmzSQlLzKGl6OVK53/umNGNYrj9PtcN1k2+a9+oaScwInpcW5EV873lyutIS2BWaVIDTPT93LJIJ8kcc8zGGCDUOA4LWAGgzlj8HsblCR+N4kAITuvqjcixsSA50tYk6zPxr+j/qnXqjFwA1Z0ITAb+Mq9YGgBxWu7NHmsjU1i22uUCWI4zp1N2BKGYzWVIn/rHTbiAITrrkMRWZW/0S9DSleoy6fdo0xKcA/WIpogjfDxsAG+lcGjIlDZl1VdBxhE/D2czuYtUhhuor6j6ot7sOlidqNJIGXNwXCjtwVy7+mzDxrb6J3DVeGZldq6KwNe5U7Jgw2Xz+nK52wlsOY/aApAEFzn2OK5FjES3shQVEIxZyRAKo+b/NyfOrlJEPW4pT7L+epodNWwCcTSMKDsvX/UW7VufCfgvsid3sPCC5QKVbWJ8nm+Rd3GSEnUdoGzPesQfyAQCvFYbLvzR0u5FD0m92RjlN8ObqnXvInBglnsRokfbN9XdXjme0x6AA==|920

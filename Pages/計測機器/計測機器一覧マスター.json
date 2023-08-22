@@ -169,18 +169,24 @@
           "DesignLengthInPixel": 70.0
         }
       },
-      "33": {
+      "34": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 75.0
         }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 70.0
+        }
       }
     },
-    "Count": 34,
+    "Count": 35,
     "DefaultSize": 80.0
   },
   "Values": {
     "0,6": "create control no",
     "0,8": "excel export",
+    "1,1": "登録数:",
     "1,5": "管理番号",
     "1,6": "使用可否",
     "1,7": "登録日",
@@ -208,8 +214,10 @@
     "1,29": "校正通知日",
     "1,30": "校正有効期限",
     "1,31": "通知日",
-    "1,32": "画像",
-    "1,33": "ファイル"
+    "1,34": "ファイル"
+  },
+  "Formulas": {
+    "1,2": "COUNTA(A4)"
   },
   "AttachInfos": {
     "0,6": {
@@ -374,7 +382,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "7a133e55-25b5-45a0-b5c3-3b9918eb07c0"
+                    "ID": "20d486c3-b82c-48c0-98cc-d9a9add9f49b"
                   },
                   {
                     "Condition": {
@@ -410,7 +418,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "af3bcd39-5e7e-4f89-95ad-3a0efe3ec1cf"
+                    "ID": "3827fda2-9050-4dd1-8768-8f94b3a40bf6"
                   }
                 ]
               },
@@ -435,7 +443,7 @@
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_tools",
         "RowIndex": 2,
-        "ColumnCount": 34,
+        "ColumnCount": 35,
         "RowCount": 40,
         "AllowEditInListview": true,
         "ColumnOperation": 2,
@@ -641,10 +649,16 @@
     "3,32": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "画像"
+        "ColumnName": "外観"
       }
     },
     "3,33": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "その他画像"
+      }
+    },
+    "3,34": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "添付ファイル"
@@ -654,13 +668,17 @@
   "StyleDatas": {
     "Styles": [
       {
-        "HorizontalAlignment": 0
+        "Formatter": 0,
+        "HorizontalAlignment": 1
       },
       {
-        "Formatter": 1
+        "HorizontalAlignment": 1
       },
       {
         "Formatter": 2
+      },
+      {
+        "Formatter": 3
       },
       {
         "FontSize": -1.0
@@ -668,6 +686,7 @@
     ],
     "Types": {
       "Strs": [
+        "[AUTO]General",
         "Right",
         "000",
         "yyyy/MM/dd",
@@ -675,65 +694,66 @@
       ]
     },
     "CellStyles": {
-      "3,0": 0,
-      "3,4": 1,
-      "3,7": 2,
-      "3,17": 2,
-      "3,19": 2,
-      "3,24": 2,
-      "3,26": 2,
-      "3,27": 2,
-      "3,29": 2,
-      "3,30": 2,
-      "3,31": 2
+      "1,1": 0,
+      "3,0": 1,
+      "3,4": 2,
+      "3,7": 3,
+      "3,17": 3,
+      "3,19": 3,
+      "3,24": 3,
+      "3,26": 3,
+      "3,27": 3,
+      "3,29": 3,
+      "3,30": 3,
+      "3,31": 3
     },
     "RowStyles": {
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 3,
-      "16": 3,
-      "17": 3,
-      "18": 3,
-      "19": 3,
-      "20": 3,
-      "21": 3,
-      "22": 3,
-      "23": 3,
-      "24": 3,
-      "25": 3,
-      "26": 3,
-      "27": 3,
-      "28": 3,
-      "29": 3,
-      "30": 3,
-      "31": 3,
-      "32": 3,
-      "33": 3,
-      "34": 3,
-      "35": 3,
-      "36": 3,
-      "37": 3,
-      "38": 3,
-      "39": 3,
-      "40": 3,
-      "41": 3
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 4,
+      "18": 4,
+      "19": 4,
+      "20": 4,
+      "21": 4,
+      "22": 4,
+      "23": 4,
+      "24": 4,
+      "25": 4,
+      "26": 4,
+      "27": 4,
+      "28": 4,
+      "29": 4,
+      "30": 4,
+      "31": 4,
+      "32": 4,
+      "33": 4,
+      "34": 4,
+      "35": 4,
+      "36": 4,
+      "37": 4,
+      "38": 4,
+      "39": 4,
+      "40": 4,
+      "41": 4
     },
     "SheetStyle": {
-      "FontFamily": 3,
+      "FontFamily": 4,
       "FontSize": 12.0
     }
   },
   "Spans": [
-    "4,0,38,34"
+    "4,0,38,35"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -751,4 +771,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//SVe3NrppkgbZrlJOEHPeSyQUOrcnXBgmGwpvBRgPMxI4Dm/xTp2ZfLr9CB46kGCRzhHVt+o79GljfCsfG5FHpLsv1KRxLwqWwtrkSOzaSI84Wg2GfxSsxm33xFCZuyNJry7M2S7cBhXDz+7TgCOvJA2zcyGa/4qxTqYAFU+HLkY6dEpAJoEvWCgyyj0VhFImEj04AnFzpsopdIASsFJaT9/Lg9fZc2rThd5CoIErWBn0UWISxSCoF/ifB3k/nVIPXPxaeIiZvLlnkEUdRNtwIlC5h/VHx4r0fZu6OiXIoyuCuDkmzTHh7LhEAJsCOHbRqhjjURPXD6kbXUO11/TY/0gROAYGdMZfa/YdOape3lO4v6+JBIchtI/0PTBWVlJM3SgzXqRl1SIvlMzUfZdlfE90ozhTAksxJhgj6xp+ULIEZp2m+a1Tn0/2KwqDMzNMWTwwTGJDN5l8SRzHk+WgfRk7HFLFkjSNDpBvSDIBl4JQe9MbBoyulE7dZoaZT90PJaVLhCzm3OHdGBapuIrJx7WWlDqEzJduK2zH25GswR4T/X65GP5yvFcasTyexiLzBxRTqB/xK7+bh/JE6VjcSYsZdKHGoMWYXDu04hHtwX6XFmcD3umYx1Zkg0EjgpG+OfGVi1xfJT3PeSx3QZXTlZUHHiuChFz++ybBJyrW1//qskmsQGxg6tk6sWCjHflp6Hvvn3i1iTBHj+WlF2oqu7iWbV2ByjmsaXpBoDYFZGnehaSs93DE7B6qariGSAezQV87DmY/v8GUZf4UAJ/S7jxi1/Un1pleVVI04uHtsG8RAjdzvsskF6EcBPgzAXBZgejYjmNr27l9x6ybeGIOAgKlJY+n9oi6CegF7lTmx2vsIJ85VvhpjMwIxPQqh97b6vEvPwTasWi41BRKBUnOiA==|920
+}//4n9GsbNnhHfnSAenw5vaBweYeOVFfwSSJLN5OUWSztXSgBN0WD0JaIFPaeEJZaba8ieVrDyaKQeXc/+crcmWCRuMHB3kKOHmd06JcLg+KXGlc9wItdR8LUy2jGNtKSs4ILXf/BiAvBwHdcA5l8UBuP7RjXSAvmVFVlDogXGDxjl8R8lcMxRQvTgyf6xp21hH0d2ctEU23kHugXYBFm3gMy8359n8QrX4/JLN54DJeq8mOwaYJP1X9HjpxwY7tnH/H3q4Nt8+QpUV995tM3Dntu6c4zqE2mCeAZSuCocaVqOVAM3FXdvOXhXYLPHUojJLBhcQb08ZXWHIRFgMpRSnNFKQNJoLqJ3E21G5HaemflUBKIUWx8xbAeFX/Rvj6kmMly59lcNZVfC7lXlQxTJrE0n9etwcgdQXa4VSdAwm7X1LN5xVNJ7leypS3Et2KXWZQaR0j9QSeP4L/9Ka2f6yMmHaknLY3I5vhP6RAi/SFKY4iRKha7XXzC/omXUn457qgktZyn+iEPyBwOdE67nApelp9jF9UjYAGj8L7zq51ClOKQC8EHFKe6h1zcmXmgcshssYRHIq40R4rm/9E8pL8pek/z6vr8naFc4IBb690Ds4SMHUhTQ+6lM285rMsv66bYk63iHqQcqpE9NKTx5UdBxYqFs/wmFE1anfMIWdPjartkVP10Rhc5Tn2v979lWkgJqpOzhrT+a/gw/BizMIrnuLc3oSEna4MnbRefFNeHSYOXhhF/rV4bFSpq0KrIpNhUkpJ+7X8DYXOLVbzyrRqPbWrsIfGspMVNVN/V6VL2wwX0orEdQ9C3+/HYQoURmHSXHhS6KCYzLzCyGbXWO8Jlo7PgFCZOgdxBj0Y72eXqt9YTxnmrdbMENb3LqDch0OwkipnSXUixB9p7D4YqW0UA==|920

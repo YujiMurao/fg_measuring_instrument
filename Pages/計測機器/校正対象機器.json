@@ -3,6 +3,9 @@
     "Count": 39
   },
   "Cols": {
+    "InLogicalVisibleIndexes": [
+      59
+    ],
     "Count": 60
   },
   "Values": {
@@ -17,6 +20,9 @@
     "3,39": "次回校正月",
     "3,42": "校正有効期限",
     "3,46": "担当者",
+    "3,50": "区分",
+    "3,53": "部署",
+    "3,56": "使用",
     "25,0": "定期校正・修理再校正・修理・廃棄の履歴",
     "25,14": "新規登録",
     "25,20": "削除",
@@ -79,11 +85,11 @@
                   "TableName": "trn_insptool_tools",
                   "ColumnName": "category"
                 },
-                "Value": "社内校正"
+                "Value": "社内"
               }
             },
             "Params": [],
-            "ID": "9a2b8e2e06654ac4ad17ceb8cface270"
+            "ID": "727e133e06f14cf189fb55b82ff1f0ec"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -142,7 +148,7 @@
                   "TableName": "trn_insptool_tools",
                   "ColumnName": "category"
                 },
-                "Value": "社内校正"
+                "Value": "社内"
               },
               "Condition2": {
                 "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -158,7 +164,7 @@
               }
             },
             "Params": [],
-            "ID": "80a8e55863f943edbfa91032de471598"
+            "ID": "5c7e6795e2a749d7a931ef13c5e714fb"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -230,44 +236,6 @@
     },
     "3,0": {
       "ListViewInfo": {
-        "CurrentRowChangedCommandList": [
-          {
-            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_insptool_calibration_history",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "ColumnBindingInfo": {
-                "TableName": "trn_insptool_calibration_history",
-                "ColumnName": "id_tool"
-              },
-              "Value": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=校正対象機器!A5"
-              }
-            },
-            "Params": [
-              "=A5"
-            ],
-            "ID": "d4a966421da84951b3283f7077a83937",
-            "Disabled": true
-          },
-          {
-            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-            "PropertyItemsList": [
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正対象機器!AQ26"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正対象機器!A5"
-                }
-              }
-            ],
-            "Disabled": true
-          }
-        ],
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_tools",
         "RowIndex": 3,
@@ -396,7 +364,6 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PopupDisplayMode": 2,
             "PageName": "校正履歴の作成",
             "PassValues": [
               {
@@ -405,7 +372,7 @@
                   "SerializeProperty": "=校正対象機器!A5"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=校正履歴の作成!H4"
+                  "SerializeProperty": "=校正履歴の作成!H2"
                 }
               },
               {
@@ -414,7 +381,7 @@
                   "SerializeProperty": "=校正対象機器!D5"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=校正履歴の作成!H5"
+                  "SerializeProperty": "=校正履歴の作成!H4"
                 }
               },
               {
@@ -432,7 +399,7 @@
                   "SerializeProperty": "=校正対象機器!U5"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=校正履歴の作成!H7"
+                  "SerializeProperty": "=校正履歴の作成!H8"
                 }
               },
               {
@@ -441,7 +408,7 @@
                   "SerializeProperty": "=校正対象機器!BH5"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=校正履歴の作成!N4"
+                  "SerializeProperty": "=校正履歴の作成!N2"
                 }
               }
             ],
@@ -545,6 +512,7 @@
         "RowIndex": 26,
         "ColumnCount": 32,
         "RowCount": 13,
+        "SelectionMode": 1,
         "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
@@ -564,8 +532,6 @@
       "CellType": {
         "$type": "Forguncy.ProcessBarCellType, ServerDesignerCommon",
         "TableName": "trn_insptool_calibration_history",
-        "ShowCreateBy": true,
-        "ShowModifyBy": true,
         "DesignTimeShowState": {
           "TableName": "trn_insptool_calibration_history",
           "SelectedID": "21885ba3-3358-492c-965c-c0769728e8aa"
@@ -716,13 +682,24 @@
         "HorizontalAlignment": 11
       },
       {
+        "Formatter": 10,
+        "HorizontalAlignment": 4
+      },
+      {
         "FontFamily": 0,
-        "Formatter": 13
+        "Formatter": 10,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 10,
+        "HorizontalAlignment": 12
       },
       {
         "FontFamily": 0,
         "FontSize": 13.333333333333332,
-        "HorizontalAlignment": 11
+        "Formatter": 10,
+        "HorizontalAlignment": 4
       },
       {
         "FontFamily": 0,
@@ -730,11 +707,11 @@
       },
       {
         "FontFamily": 0,
-        "Foreground": 14,
+        "Foreground": 13,
         "Underline": true
       },
       {
-        "Foreground": 14,
+        "Foreground": 13,
         "Underline": true
       }
     ],
@@ -753,7 +730,6 @@
         "yyyy/MM/dd",
         "Right",
         "Left",
-        "yyyy/m/d",
         "Blue"
       ],
       "Borders": [
@@ -816,14 +792,20 @@
       "25,40": 3,
       "25,41": 3,
       "25,42": 3,
+      "26,0": 16,
+      "26,5": 16,
+      "26,9": 16,
+      "26,20": 16,
+      "26,25": 16,
+      "26,28": 16,
       "26,32": 14,
       "26,33": 3,
-      "27,0": 16,
-      "27,5": 3,
-      "27,9": 3,
-      "27,20": 3,
-      "27,25": 3,
-      "27,28": 17,
+      "27,0": 17,
+      "27,5": 17,
+      "27,9": 18,
+      "27,20": 17,
+      "27,25": 17,
+      "27,28": 19,
       "27,32": 14,
       "28,32": 14,
       "29,32": 14,
@@ -879,7 +861,7 @@
       "34,48": 3,
       "34,49": 3,
       "35,32": 14,
-      "35,33": 18,
+      "35,33": 20,
       "35,34": 3,
       "35,35": 3,
       "35,36": 3,
@@ -915,7 +897,7 @@
       "36,49": 3,
       "37,32": 14,
       "37,33": 3,
-      "37,37": 19,
+      "37,37": 21,
       "38,32": 14,
       "38,37": 3,
       "38,38": 3,
@@ -927,16 +909,16 @@
       "38,44": 3,
       "38,45": 3,
       "38,46": 3,
-      "38,50": 20,
-      "38,51": 20,
-      "38,52": 20,
-      "38,53": 20,
-      "38,54": 20,
-      "38,55": 20,
-      "38,56": 20,
-      "38,57": 20,
-      "38,58": 20,
-      "38,59": 20
+      "38,50": 22,
+      "38,51": 22,
+      "38,52": 22,
+      "38,53": 22,
+      "38,54": 22,
+      "38,55": 22,
+      "38,56": 22,
+      "38,57": 22,
+      "38,58": 22,
+      "38,59": 22
     },
     "SheetStyle": {
       "FontFamily": 0
@@ -1039,11 +1021,11 @@
               "TableName": "trn_insptool_tools",
               "ColumnName": "administrator"
             },
-            "Value": "社内校正"
+            "Value": "社内"
           }
         },
         "Params": [],
-        "ID": "f01602e75f0d4184bb453164d8328ec1"
+        "ID": "63c38f77702b41a18ac341293c7699d6"
       }
     ],
     "AuthorizeInfo": {
@@ -1058,4 +1040,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//Gf9iPRm5SpqrntLDzv6dku0wDVPWPc5XSoGzw9fw2/wAr93DzyCynBvg3DixRkpdctBBtfcD1JIC71XquUcxoH8h4NU1hBuOkzsRe19VILP3qePiKwQkn9HBO0/uPRQKRBsXMfHVzYVaJYJvz5D6Z1gLhcR1Mkrg1j5sVZhLBAXJEHwsntQo8l4ThICEBXtXYRKXYM6UWW90/6T0ZS7dRaZZn/U5xYxb70gDLqOJKCJ7kqwtjz/KG8lBljL5QhnF9t0T2XtsK8MXOhP3Z0qhhR8pvmwzdf/RqD9iWRCI0JsLKRtriZB760GEVRoTmKg7FdODXIe6sQcBig7VGQKoiqmyYJMzsn+1UGuqZA9xZW+lP2kKoRGBH0nNvCrQ3P6fApU3Vhti7SJv3GUpgYQvjidgukrGtgyqnJtnMcZavWMsPfNyV1JZLj+CG1UpKuoc62laNrDqRaDoTNpDPVNCsE8fcUPdW8BfVALghpe8E/Ir8rn64cEzJFuuWErEKMM7GXY99uNPkxEIOdzkSvQuCttdQeT69oC+ggaR2bXdzQUS6I7OWgJxrhasYlbbP0aTFSrXg0GLJyk5+UFthbyLFoVPXHatL/RTghE2dt02Bagb5TwNTx7KxfraZWLDINtogBfqopvBic+V3dn1IxC/AsGNz98ibsdpRg7dRoOcBVGUeGsU0CjeWDs6Tgz8NowFEbyiLAW113YhYYzruqudxa0eOjt/Zsdd3yHCzvF7VImMiLKm90YqvZ5ST27kVD09kdZESubOgF3UjGZpC4QhiEG/1sPZeEvYGy/MJSxoakRmmkVSQhyrvOc8GKkqNjgvLeIhvseNN+tKgoYfbdKyWhWC541AT0J55+wC5ShPTgGYr9kVuzxievbhe+dNPoYqcyvbb6Q9gLud3oH3q9IBpQ==|920
+}//YKB7eoo8RL0Kzni3MoHghWtyhNZ/wrpGkl+AFuYg8jf8ZureTLwZqKaLkAND8PEL2IvxmbhBThdHhIhkj15+YMuFL5xf3hk/MbTjCx10HJ+s2DFc8Vju/YHitx7sBJaKgvv7JTtmTGNfFqPxPbrYA3oUDJ839QDAgBwOMbXVxHSbR0WCaJLe9eTCbi/PSJHD6SEQtj+6k3nr8hDl8hV4VNQVslGzhBS2SiqPO9o/QevvgDhNZmNb3m7Du5/C2wF7fqUc0Qm3N3cvd5Sh/5LiaBN/V8CF8OP+x64dnrJ3tKPPJEOCdfDtlywLm+NjUFZxLv6Mst74wFjdvAEWCWvd8Ro70GsnEoW9QD9fN0DzCq2G4KzRaG6bgHcYFJKS6jGsO4cFrmVVy3S94ZVBDjTYjQV5iMKLXtsrMQf5VV8L3rsIEdZbGoB5wPSArHj7lpAGZTeYGs2SgkLAL8fI+0joUh0wmyo8Wlr0JzmtNBYS2eAqgsp2p70B3g5koZMGUP8WM0dVZMRkUMsNFpx3wFDbUubu/jC+pUozfnHXqw3XeqAN2pKid62RwHxn/y5Y6VYpU/XMoDPl9FYhfb73+WiWuViumbbxhq786J8SzSuWCzGLr2brTGzcZrCDS3qz/S1pObQx2Wp5GlD/nA3FcoGClZNrDaK8nvgU+QvvEG6X+rz17Y6UaS1JGQsWiWqZfA1eUu3A9BjhIks/BSfoyxdR+xiQI/1nu+3s0aS0Km0oFnwgsl5fXpKsUllJ95O1mijLsep5GNY2EEveM157GbTfRvPKrLy3wA7BDXIhS8dyIc4Nx4u7nR4PVez6da847iJRYR1rAndieJhkRuzTniu8qzQj+iBmD7SPaLdo/1MjtJ6uHl0c0EXu2Err00xd+0OnZzi2+7z1Eb7psyF85PmrnA==|920
