@@ -201,7 +201,9 @@
     "7,40": "使用禁止理由",
     "9,1": "管理区分",
     "9,27": "外観",
+    "9,29": "クリア",
     "9,40": "その他画像",
+    "9,44": "クリア",
     "11,1": "管理部署",
     "11,6": "A",
     "13,1": "分類コード",
@@ -348,7 +350,7 @@
                     ]
                   }
                 ],
-                "ID": "42586ec0-2f04-4b27-b199-2c591fb78ba1"
+                "ID": "7faa003b-33c6-413b-b894-87508f308884"
               },
               {
                 "CommandList": [
@@ -374,7 +376,7 @@
                     ]
                   }
                 ],
-                "ID": "b3e83aef-fd20-42c1-8fba-486ac2ea845f"
+                "ID": "3fe27f43-a4b7-4f9e-93d9-19de3195d4a3"
               }
             ]
           }
@@ -466,6 +468,48 @@
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
+      }
+    },
+    "9,29": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=計測機器の編集!AB11"
+                },
+                "Value": "%Null%"
+              }
+            ]
+          }
+        ],
+        "Text": "クリア",
+        "TemplateKey": "_RS_Gradient_Shadow_Style2"
+      }
+    },
+    "9,44": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=計測機器の編集!AO11"
+                },
+                "Value": "%Null%"
+              }
+            ]
+          }
+        ],
+        "Text": "クリア",
+        "TemplateKey": "_RS_Gradient_Shadow_Style2"
       }
     },
     "10,27": {
@@ -726,7 +770,7 @@
                     ]
                   }
                 ],
-                "ID": "096e249e-76be-47e7-b9f9-86fff3b3ea7a"
+                "ID": "72737322-8fd8-488c-b3dc-ef9b71f45ae2"
               },
               {
                 "CommandList": [
@@ -744,7 +788,7 @@
                     ]
                   }
                 ],
-                "ID": "28d20a22-455d-4987-92ad-0a0dc119ecc5"
+                "ID": "4f32674d-83fb-4fc1-be50-006ea648693e"
               }
             ]
           }
@@ -2298,8 +2342,6 @@
       "9,41": 34,
       "9,42": 34,
       "9,43": 34,
-      "9,44": 34,
-      "9,45": 34,
       "9,46": 34,
       "9,47": 34,
       "9,48": 34,
@@ -3446,7 +3488,9 @@
     "39,33,1,8",
     "37,33,1,8",
     "10,27,10,13",
-    "10,40,10,13"
+    "10,40,10,13",
+    "9,29,1,2",
+    "9,44,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3463,4 +3507,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//WQQnUwHw1NQAFxxB0yR5gvLm0HBmv/enHvYeQY3rL5RXhXILaBeWC758P7u2B6ecYTli8Ng2ZsC8Oa941zTIv9t0jZUctG5+i3US9FoxLAvseGLER3Ut2NPm0LSMbtV3iXlU62knZATj6gS7fFiaAyFB8vK+aFqTi8fVkRt8Tt4BboJtSNqeVGb01unu0i6I+5fSMscKSo+A+1HvTWwiyx4DagMpBGa80SsSOG0+h0bDwAkLj9QXCoL1+c95Z6SPVFqw+JQWZQ8PRbdvW1TUoruSXX19eSW17eoZ5XdtDbhlPXte2pUpIKNnXXyZY5iYO3hQYZgO5IuBVbks2zZZm+nxtKgdSdqf1xB/vEwvUgQZkeXafJvcLww/R6oW1H6uVMPSvkd0yXaF0q5y2xoY6EmG0FuMwPbZ06ytN785skrgeye49f4c8t/6ucogV2P7EhskDNVTMDpfsROEurX8yjaD896+ca57Gdv9jWHpx7g+ZjnFrEoFTwobyIF99cc9pgutXBRc5wExj7lNspjTtN9xC6IyEgTtueXW5tzvbnsAZJYSa+LhYBT/AsIvKKVJwnBJMYKz9lQ6EmrV6KHeoJVEMq3g1QYLhK+FiZNrlNowzfOvfyMrUihWsZM3LaLgZvNJNCbHp40MaFCE4Issngx926WkhpCHH2sTLAPnvjYBtyTR+PU+ofRL1yC1ogf2k/CZKGRnRLH2O+cgAv9zwbmpWNSQ8zOBS2NP4VSDJXCLfSYn5Wcri9LEAcrXfbIDl2zqGnjEaAWBotzb0XnF9LYSdWaO5Or1wOb1npUFAsmMZPpJHTgIp3rVD93rBwoNxh9U8KbNZ+W08Ki0xW3I8l5+vwPMcKgv9BVKJ6SVQMc4H8hINZu0Ds+AI+smabxDYrOztVXn7ZNJCohnh0DDfg==|920
+}//+odXubP9TydDjUoc58jzEkr+lVEJw3F5BZcUjcnWLUwu6cQbUSQlR1gmEgwpJH5kgRGYFyrskZJMxALTHpPcTTeW/QE+wnN8czaU8rSJWK3KTpNp0fOliA5rvbdN4eNBQ6MCtq2m9M42vl6HSwzzJ/ejA2DP3s0qMxA/scMKcBnxJDfak1YHj2Ce7rSQaVc56cRXlfNRV9l74RggUb83xb7+5p5rqFmS0Ib1KFqOmuGUi2btAJaqMkj9g/s12zgV8GC6O+WT0BSfQYQFvxbswLyBVlJgMtg98Pz+1zfDIaOOkJhSY5hQB7EQjWfm6VQfa2VIQZDrGi8+KCOFDuMmFwxG/GFz1e3n8DS0bZq58ldbVLy3NIBOBcW41B7WcB3LZ0aeTiEQebfAmsbHj9lBb0o/NuDE1jn9Usmtx/T3oTqX5s247/ncXCXQRXYNca4sJ7jl3kHXKvNbP4rMzoMiqk8Zj8puYwKcyo53OWE1t/nfcKc+MXDxlvCa53Ud+vBZdV/x22kLDeraqNB57SaWHFKFd7GpLg1yXe0B4O4DKJFiPRgMhQGeqiUNOIUh1D+U8WGw31UqTOcneuq0acLlHDs+4U7I1dNO7RgoaK3aGUo1dnncEb3VxwDgJFfWP9K/SU9K7+qn483zuUm4u6qRVzyd9KCZuy5jrrOwEkOzJLIkVVwMU1TdRe3qhuzTciAxdHu7rdtDqqoVZPUOHiShcIDKtLXtvXBX1F3WByaVPNBLBdDqZjHrc5/x7Bnnt66GZajVlNlNSvNQhAa3cjfMcwQ0hTQb8qHSHw9XizBclkntKk9aOZHZ2MfHMr3jLuj89XH56XdJ0mpfpbGOmV/kqLqOCmui2TLtYUFv0O336OMipsheJfnyOXvA0Rh6+IAmn1Zb4yCgyVSpyKo5V0ELHQ==|920
