@@ -350,7 +350,7 @@
                     ]
                   }
                 ],
-                "ID": "7faa003b-33c6-413b-b894-87508f308884"
+                "ID": "72214dfb-884e-4f83-991a-943e175af3c7"
               },
               {
                 "CommandList": [
@@ -376,7 +376,7 @@
                     ]
                   }
                 ],
-                "ID": "3fe27f43-a4b7-4f9e-93d9-19de3195d4a3"
+                "ID": "0928e65e-0eeb-4d4d-907c-02ab5849886f"
               }
             ]
           }
@@ -475,14 +475,31 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-            "PropertyItemsList": [
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
               {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器の編集!AB11"
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
                 },
-                "Value": "%Null%"
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器の編集!AB11"
+                        },
+                        "Value": "%Null%"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "7510bea9-05ba-4dc1-9cd3-e690060256a1"
               }
             ]
           }
@@ -496,14 +513,31 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-            "PropertyItemsList": [
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
               {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器の編集!AO11"
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
                 },
-                "Value": "%Null%"
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器の編集!AO11"
+                        },
+                        "Value": "%Null%"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "df399ffa-8ab4-47d5-882a-c829e091f6b2"
               }
             ]
           }
@@ -770,7 +804,7 @@
                     ]
                   }
                 ],
-                "ID": "72737322-8fd8-488c-b3dc-ef9b71f45ae2"
+                "ID": "6f7f9a84-b8c7-4428-8f4e-9b3b684d12b4"
               },
               {
                 "CommandList": [
@@ -788,7 +822,7 @@
                     ]
                   }
                 ],
-                "ID": "4f32674d-83fb-4fc1-be50-006ea648693e"
+                "ID": "6781814b-6c48-47f0-b7f5-447c3b03bfc9"
               }
             ]
           }
@@ -3507,4 +3541,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//+odXubP9TydDjUoc58jzEkr+lVEJw3F5BZcUjcnWLUwu6cQbUSQlR1gmEgwpJH5kgRGYFyrskZJMxALTHpPcTTeW/QE+wnN8czaU8rSJWK3KTpNp0fOliA5rvbdN4eNBQ6MCtq2m9M42vl6HSwzzJ/ejA2DP3s0qMxA/scMKcBnxJDfak1YHj2Ce7rSQaVc56cRXlfNRV9l74RggUb83xb7+5p5rqFmS0Ib1KFqOmuGUi2btAJaqMkj9g/s12zgV8GC6O+WT0BSfQYQFvxbswLyBVlJgMtg98Pz+1zfDIaOOkJhSY5hQB7EQjWfm6VQfa2VIQZDrGi8+KCOFDuMmFwxG/GFz1e3n8DS0bZq58ldbVLy3NIBOBcW41B7WcB3LZ0aeTiEQebfAmsbHj9lBb0o/NuDE1jn9Usmtx/T3oTqX5s247/ncXCXQRXYNca4sJ7jl3kHXKvNbP4rMzoMiqk8Zj8puYwKcyo53OWE1t/nfcKc+MXDxlvCa53Ud+vBZdV/x22kLDeraqNB57SaWHFKFd7GpLg1yXe0B4O4DKJFiPRgMhQGeqiUNOIUh1D+U8WGw31UqTOcneuq0acLlHDs+4U7I1dNO7RgoaK3aGUo1dnncEb3VxwDgJFfWP9K/SU9K7+qn483zuUm4u6qRVzyd9KCZuy5jrrOwEkOzJLIkVVwMU1TdRe3qhuzTciAxdHu7rdtDqqoVZPUOHiShcIDKtLXtvXBX1F3WByaVPNBLBdDqZjHrc5/x7Bnnt66GZajVlNlNSvNQhAa3cjfMcwQ0hTQb8qHSHw9XizBclkntKk9aOZHZ2MfHMr3jLuj89XH56XdJ0mpfpbGOmV/kqLqOCmui2TLtYUFv0O336OMipsheJfnyOXvA0Rh6+IAmn1Zb4yCgyVSpyKo5V0ELHQ==|920
+}//KhUYIqQ6nvc7feNQtTK5YxWi5DMXdDUwt92+V+NO6/eqdEjKWnIgytbicW68x54QdnbId0ZFM7iAUREgfvmfFjgXgtPRN78mkYtCPxEU2tk8sfzwfQOEfJjt+UEcIIHnaE+HnRW6v5TZCMSSZ3E+gABnKEyVRQzNwIE/D5suw1Jrh2jcMaoFVXXnwLKpqURWJHv9oIQq3mVf5qQG9j7SGTLffAxFg+ZEBPiO3fAxASr3lS8ICP6l1kSohUmh9zPB5VpJTP8puimXGqI9WOuqxW4dIxBX830jOOvenEmju/dOgJpLzIaliMf8CfIhvYE8Zm/kfCKUrvUS5gNKx6iv0caWA39gkP8j8OQA+lTlVNw+QoYr86E1/iIxmNKlgrRs4D0gnReZLvuG65RcsP4Sdb6kK7orBWJNjMYtQC5+sVOeJIGCgG3lFpHwQQbPXc3uZ8UJuKcMXS5+xHkP9uRcL5gFMCVAfGlihvPy1avVXMV3RtE8H07KNPwUeS6onn3b4e6+MxFUOwe2n+rNrBZxBqIIy1gEueZCPJCMpX3VQAM9+Vf0Msg73f9Qe1uvgDX2csADkXytCnmBm4huqQ5/DmMSCBsNioZbO+pwgu/TJl64aOeaefwvsk+xuDWJL50RHY6hOG1mVb/CneSXoE1v0iKPxtlE8P3aakwW/eU0TSnkI2BVk8En/z8lkwl2QBaWG5bbgcaU1M3YijAeRkWG0zSXdbn6DRjcbSJEanWOhfT6U9xVNKPZouWnVFyR8MP7NqbPCiDFTab/j9DcT8Fe4bPw+8s+/zLypYz+wgJjLviwrIPIX8Sz02ObBe//6pqY1ll8ucizkqwOY8cVgBaZ+8rMrKDPJ+SMNTLvH+SsijPmDpyROhEDZW7ZY2LZsIUILIkjmGjCwcvf9rno0YeoQQ==|920
