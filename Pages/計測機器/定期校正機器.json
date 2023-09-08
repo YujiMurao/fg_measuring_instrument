@@ -118,7 +118,7 @@
       },
       "24": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 40.0
+          "DesignLengthInPixel": 22.0
         }
       },
       "46": {
@@ -154,80 +154,114 @@
       },
       "62": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "63": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "64": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "65": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "66": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "67": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "68": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "69": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "70": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "71": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "72": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
+          "DesignLengthInPixel": 10.0,
+          "IsHidden": true
         }
       },
       "73": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "74": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
         }
       },
       "75": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
         }
       }
     },
+    "InLogicalVisibleIndexes": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75
+    ],
     "Count": 76
   },
   "Values": {
     "0,0": "条件を指定して検索",
-    "1,21": 1,
     "5,0": "管理番号",
     "7,0": "管理区分",
     "7,22": "種類",
@@ -240,222 +274,27 @@
     "13,38": "担当者",
     "16,0": "次回校正月",
     "16,17": "～",
-    "17,67": "検索",
-    "17,73": "クリア",
+    "17,52": "検索",
+    "17,58": "クリア",
     "21,0": "Excelエクスポート",
-    "21,15": "計測機器新規登録",
-    "21,72": "登録数：",
-    "23,4": "使用可否",
-    "23,7": "状態",
-    "23,10": "管理番号",
-    "23,14": "種類",
-    "23,18": "名称",
+    "21,57": "登録数：",
+    "23,0": "管理№",
+    "23,4": "種類",
+    "23,12": "名称",
     "23,24": "型式",
     "23,29": "シリアル№",
     "23,33": "メーカー",
-    "23,40": "区分",
+    "23,40": "校正周期",
     "23,42": "保管場所",
     "23,47": "次回校正月",
-    "23,51": "校正周期",
-    "23,53": "前回校正日",
-    "23,58": "校正有効期限",
-    "23,63": "管理部署",
-    "23,70": "管理者"
+    "23,51": "校正有効期限",
+    "23,56": "担当者",
+    "23,62": "担当者"
   },
   "Formulas": {
-    "21,73": "COUNTA(K25)"
+    "21,58": "COUNTA(K25)"
   },
   "AttachInfos": {
-    "1,21": {
-      "CellType": {
-        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
-        "NoneItemText": "＜なし＞",
-        "Style": 1,
-        "CellDefaultValue": 1,
-        "Items": [
-          {
-            "Value": "1",
-            "DisplayValue": "使用可アイテム"
-          },
-          {
-            "Value": "2",
-            "DisplayValue": "全てのアイテム"
-          }
-        ],
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=測定機器検索!V2"
-                      }
-                    ]
-                  },
-                  "value": "1"
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-                    "TargetTableName": "trn_insptool_tools",
-                    "SqlCondition": {
-                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                      "ColumnBindingInfo": {
-                        "TableName": "trn_insptool_tools",
-                        "ColumnName": "usage"
-                      },
-                      "Value": "使用可"
-                    },
-                    "Params": [],
-                    "ID": "5dc84947867140d3a1e45ee6f1b2a1a0"
-                  },
-                  {
-                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
-                    "PropertyItemsList": [
-                      {
-                        "Location": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=測定機器検索!E:J"
-                        },
-                        "Value": false
-                      }
-                    ]
-                  }
-                ],
-                "ID": "9f7eea98-f490-4e76-aa67-51b4ada30ae3"
-              },
-              {
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-                    "TargetTableName": "trn_insptool_tools",
-                    "SqlCondition": {
-                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                      "ColumnBindingInfo": {
-                        "TableName": "trn_insptool_tools",
-                        "ColumnName": "usage"
-                      }
-                    },
-                    "Params": [],
-                    "ID": "8de65e983aad4157b06f6e40af753ca1"
-                  },
-                  {
-                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
-                    "PropertyItemsList": [
-                      {
-                        "Location": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=測定機器検索!E:J"
-                        },
-                        "Value": true
-                      }
-                    ]
-                  }
-                ],
-                "ID": "a2e2794d-4d5b-4707-8201-83c107abe540"
-              }
-            ]
-          },
-          {
-            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-            "PropertyItemsList": [
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!L6"
-                },
-                "Value": "%Null%"
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!L8"
-                },
-                "Value": "%Null%"
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!L11"
-                },
-                "Value": "%Null%"
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!L14"
-                },
-                "Value": "%Null%"
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!AB8"
-                },
-                "Value": "%Null%"
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!AB11"
-                },
-                "Value": "%Null%"
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!AB14"
-                },
-                "Value": "%Null%"
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!AR8"
-                },
-                "Value": "%Null%"
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!AR11"
-                },
-                "Value": "%Null%"
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!AR14"
-                },
-                "Value": "%Null%"
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!L17"
-                },
-                "Value": "%Null%"
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!T17"
-                },
-                "Value": "%Null%"
-              }
-            ]
-          }
-        ]
-      },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
-      }
-    },
     "5,11": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
@@ -750,7 +589,7 @@
         "TemplateKey": "_RS_LightLine_Translucent_Normal2"
       }
     },
-    "17,67": {
+    "17,52": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -764,7 +603,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=測定機器検索!V2"
+                        "SerializeProperty": "=定期校正機器!V2"
                       }
                     ]
                   },
@@ -806,7 +645,7 @@
                                               },
                                               "Value": {
                                                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                "SerializeProperty": "=測定機器検索!L8"
+                                                "SerializeProperty": "=定期校正機器!L8"
                                               }
                                             },
                                             "Condition2": {
@@ -817,7 +656,7 @@
                                               },
                                               "Value": {
                                                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                "SerializeProperty": "=測定機器検索!L11"
+                                                "SerializeProperty": "=定期校正機器!L11"
                                               }
                                             }
                                           },
@@ -829,7 +668,7 @@
                                             },
                                             "Value": {
                                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                              "SerializeProperty": "=測定機器検索!L14"
+                                              "SerializeProperty": "=定期校正機器!L14"
                                             }
                                           }
                                         },
@@ -841,7 +680,7 @@
                                           },
                                           "Value": {
                                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                            "SerializeProperty": "=測定機器検索!AB8"
+                                            "SerializeProperty": "=定期校正機器!AB8"
                                           }
                                         }
                                       },
@@ -853,7 +692,7 @@
                                         },
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=測定機器検索!AB11"
+                                          "SerializeProperty": "=定期校正機器!AB11"
                                         }
                                       }
                                     },
@@ -865,7 +704,7 @@
                                       },
                                       "Value": {
                                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                        "SerializeProperty": "=測定機器検索!AB14"
+                                        "SerializeProperty": "=定期校正機器!AB14"
                                       }
                                     }
                                   },
@@ -877,7 +716,7 @@
                                     },
                                     "Value": {
                                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                      "SerializeProperty": "=測定機器検索!AR8"
+                                      "SerializeProperty": "=定期校正機器!AR8"
                                     }
                                   }
                                 },
@@ -889,7 +728,7 @@
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                    "SerializeProperty": "=測定機器検索!AR11"
+                                    "SerializeProperty": "=定期校正機器!AR11"
                                   }
                                 }
                               },
@@ -901,7 +740,7 @@
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=測定機器検索!AR14"
+                                  "SerializeProperty": "=定期校正機器!AR14"
                                 }
                               }
                             },
@@ -914,7 +753,7 @@
                               },
                               "Value": {
                                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                "SerializeProperty": "=測定機器検索!L17"
+                                "SerializeProperty": "=定期校正機器!L17"
                               }
                             }
                           },
@@ -927,7 +766,7 @@
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=測定機器検索!T17"
+                              "SerializeProperty": "=定期校正機器!T17"
                             }
                           }
                         },
@@ -939,7 +778,7 @@
                           },
                           "Value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=測定機器検索!L6"
+                            "SerializeProperty": "=定期校正機器!L6"
                           }
                         }
                       },
@@ -966,10 +805,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "d8a3961840e34a89b76d229d5d58214e"
+                    "ID": "8700f357c1eb48808027ec6f5b1bed74"
                   }
                 ],
-                "ID": "d36c3ce1-d3bd-4340-ae03-adaba9cfa4b0"
+                "ID": "99973cf9-9711-4ea6-b9de-3e1d5dc77b64"
               },
               {
                 "CommandList": [
@@ -1008,7 +847,7 @@
                                               },
                                               "Value": {
                                                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                "SerializeProperty": "=測定機器検索!L8"
+                                                "SerializeProperty": "=定期校正機器!L8"
                                               }
                                             },
                                             "Condition2": {
@@ -1019,7 +858,7 @@
                                               },
                                               "Value": {
                                                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                "SerializeProperty": "=測定機器検索!L11"
+                                                "SerializeProperty": "=定期校正機器!L11"
                                               }
                                             }
                                           },
@@ -1031,7 +870,7 @@
                                             },
                                             "Value": {
                                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                              "SerializeProperty": "=測定機器検索!L14"
+                                              "SerializeProperty": "=定期校正機器!L14"
                                             }
                                           }
                                         },
@@ -1043,7 +882,7 @@
                                           },
                                           "Value": {
                                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                            "SerializeProperty": "=測定機器検索!AB8"
+                                            "SerializeProperty": "=定期校正機器!AB8"
                                           }
                                         }
                                       },
@@ -1055,7 +894,7 @@
                                         },
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=測定機器検索!AB11"
+                                          "SerializeProperty": "=定期校正機器!AB11"
                                         }
                                       }
                                     },
@@ -1067,7 +906,7 @@
                                       },
                                       "Value": {
                                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                        "SerializeProperty": "=測定機器検索!AB14"
+                                        "SerializeProperty": "=定期校正機器!AB14"
                                       }
                                     }
                                   },
@@ -1079,7 +918,7 @@
                                     },
                                     "Value": {
                                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                      "SerializeProperty": "=測定機器検索!AR8"
+                                      "SerializeProperty": "=定期校正機器!AR8"
                                     }
                                   }
                                 },
@@ -1091,7 +930,7 @@
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                    "SerializeProperty": "=測定機器検索!AR11"
+                                    "SerializeProperty": "=定期校正機器!AR11"
                                   }
                                 }
                               },
@@ -1103,7 +942,7 @@
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=測定機器検索!AR14"
+                                  "SerializeProperty": "=定期校正機器!AR14"
                                 }
                               }
                             },
@@ -1116,7 +955,7 @@
                               },
                               "Value": {
                                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                "SerializeProperty": "=測定機器検索!L17"
+                                "SerializeProperty": "=定期校正機器!L17"
                               }
                             }
                           },
@@ -1129,7 +968,7 @@
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=測定機器検索!T17"
+                              "SerializeProperty": "=定期校正機器!T17"
                             }
                           }
                         },
@@ -1141,7 +980,7 @@
                           },
                           "Value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=測定機器検索!L6"
+                            "SerializeProperty": "=定期校正機器!L6"
                           }
                         }
                       },
@@ -1167,10 +1006,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "3fbe3462e2084e26948451fdad90058c"
+                    "ID": "67791d17207043609464a00a2671aade"
                   }
                 ],
-                "ID": "5864c9dd-7dab-41e0-94df-1273b26e7de2"
+                "ID": "7e69728c-0a1b-4267-8565-959897a8ed74"
               }
             ]
           }
@@ -1185,7 +1024,7 @@
         }
       }
     },
-    "17,73": {
+    "17,58": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -1195,91 +1034,91 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!L8"
+                  "SerializeProperty": "=定期校正機器!L8"
                 },
                 "Value": "%Null%"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!L11"
+                  "SerializeProperty": "=定期校正機器!L11"
                 },
                 "Value": "%Null%"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!L14"
+                  "SerializeProperty": "=定期校正機器!L14"
                 },
                 "Value": "%Null%"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!AB8"
+                  "SerializeProperty": "=定期校正機器!AB8"
                 },
                 "Value": "%Null%"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!AB11"
+                  "SerializeProperty": "=定期校正機器!AB11"
                 },
                 "Value": "%Null%"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!AB14"
+                  "SerializeProperty": "=定期校正機器!AB14"
                 },
                 "Value": "%Null%"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!AR8"
+                  "SerializeProperty": "=定期校正機器!AR8"
                 },
                 "Value": "%Null%"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!AR11"
+                  "SerializeProperty": "=定期校正機器!AR11"
                 },
                 "Value": "%Null%"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!AR14"
+                  "SerializeProperty": "=定期校正機器!AR14"
                 },
                 "Value": "%Null%"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!L17"
+                  "SerializeProperty": "=定期校正機器!L17"
                 },
                 "Value": "%Null%"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!Z17"
+                  "SerializeProperty": "=定期校正機器!Z17"
                 },
                 "Value": "%Null%"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!L6"
+                  "SerializeProperty": "=定期校正機器!L6"
                 },
                 "Value": "%Null%"
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!T17"
+                  "SerializeProperty": "=定期校正機器!T17"
                 },
                 "Value": "%Null%"
               }
@@ -1296,7 +1135,7 @@
               }
             },
             "Params": [],
-            "ID": "622a1554ecde492a97a4d4fe0586e59d",
+            "ID": "fd1b89f091d54e48972f490a8d0b5db4",
             "Disabled": true
           },
           {
@@ -1309,7 +1148,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=測定機器検索!V2"
+                        "SerializeProperty": "=定期校正機器!V2"
                       }
                     ]
                   },
@@ -1338,10 +1177,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "3e1dfb37009d432f9b4773f0910b3d75"
+                    "ID": "162c0f6ebd2f4434b7de2c27fa8aaebf"
                   }
                 ],
-                "ID": "0689be9d-a745-4e61-80d4-ae8449b8c910"
+                "ID": "80114439-a566-4f0f-a565-5ada5b5ddeb4"
               },
               {
                 "CommandList": [
@@ -1366,10 +1205,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "1036efab13334aed9d6188430699bc28"
+                    "ID": "4babae12509840118049a7a4806600c1"
                   }
                 ],
-                "ID": "23dd36a8-a6cb-4221-9e7c-6d21bf1abb2d"
+                "ID": "7dd6bf60-249f-4067-bffd-b5a72150192b"
               }
             ]
           }
@@ -1399,26 +1238,6 @@
         }
       }
     },
-    "21,15": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "計測機器新規登録",
-            "PassValues": []
-          }
-        ],
-        "Text": "計測機器新規登録",
-        "TemplateKey": "_RS_Normal_Style7",
-        "Icon": {
-          "Name": "Application/008_add_file_3.svg",
-          "BuiltIn": true,
-          "Color": "Background 1",
-          "UseCellTypeForeColor": true
-        }
-      }
-    },
     "23,0": {
       "ListViewInfo": {
         "ShowColumnHeaderInDesigner": true,
@@ -1430,71 +1249,92 @@
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
         "Name": "リストビュー1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "trn_insptool_tools",
+                      "ColumnName": "category"
+                    },
+                    "Value": "社外"
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 1,
+                    "ColumnBindingInfo": {
+                      "TableName": "trn_insptool_tools",
+                      "ColumnName": "prohibition_reason"
+                    },
+                    "Value": "廃棄"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 1,
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_insptool_tools",
+                    "ColumnName": "prohibition_reason"
+                  },
+                  "Value": "故障"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 1,
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "prohibition_reason"
+                },
+                "Value": "紛失"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "prohibition_reason"
+              },
+              "Value": "移管"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 1,
+            "ColumnBindingInfo": {
+              "TableName": "trn_insptool_tools",
+              "ColumnName": "prohibition_reason"
+            },
+            "Value": "不適合"
+          }
+        },
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2"
       }
     },
     "24,0": {
-      "CellType": {
-        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
-        "TemplateKey": "_RS_Small",
-        "BuiltIn": true,
-        "Color": "Accent 1",
-        "UseCellForeColor": true
-      },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "外観",
+        "ColumnName": "ctrl_no",
         "IsImagePath": true
       }
     },
     "24,4": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "usage"
-      }
-    },
-    "24,7": {
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
-        "ColumnName": "prohibition_reason"
-      }
-    },
-    "24,10": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "計測機器の編集",
-            "PassValues": [
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=測定機器検索!H25"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=計測機器の編集!AT8"
-                }
-              }
-            ],
-            "LoadBindingDataOption": 1
-          }
-        ],
-        "ClickMode": 1
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
-        "ColumnName": "ctrl_no"
-      }
-    },
-    "24,14": {
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
         "ColumnName": "kind"
       }
     },
-    "24,18": {
+    "24,12": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "item_name"
@@ -1521,7 +1361,7 @@
     "24,40": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "category"
+        "ColumnName": "calibration_cycle"
       }
     },
     "24,42": {
@@ -1539,36 +1379,25 @@
     "24,51": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "calibration_cycle"
-      }
-    },
-    "24,53": {
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
-        "ColumnName": "lastrevisionymd"
-      }
-    },
-    "24,58": {
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
         "ColumnName": "kouseiyuukoukigenymd"
       }
     },
-    "24,63": {
+    "24,56": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "n2",
-        "RelationBinding": {
-          "RelatedTable": "mst_insptool_management_department",
-          "RelatedColumn": "code",
-          "DisplayColumn": "name"
-        }
+        "ColumnName": "administrator"
+      }
+    },
+    "24,69": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "category"
       }
     },
     "24,70": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "administrator"
+        "ColumnName": "prohibition_reason"
       }
     }
   },
@@ -1993,7 +1822,11 @@
         "FontSize": 14.666666984558105,
         "Formatter": 2,
         "TextIndent": 0,
-        "HorizontalAlignment": 10
+        "HorizontalAlignment": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Background": 0,
@@ -2093,31 +1926,6 @@
       },
       {
         "FontFamily": 8,
-        "FontSize": 13.333333333333332,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 8,
-        "FontSize": 13.333333333333332,
-        "FontStyle": 9,
-        "FontWeight": 9,
-        "Foreground": 20,
-        "Formatter": null,
-        "TextIndent": 0,
-        "HorizontalAlignment": 10,
-        "VerticalAlignment": 10,
-        "Underline": true,
-        "Strikethrough": false,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": 4,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 8,
         "FontSize": 13.333333333333332
       },
       {
@@ -2139,15 +1947,8 @@
       {
         "FontFamily": 8,
         "FontSize": 13.333333333333332,
-        "FontStyle": 9,
-        "FontWeight": 9,
-        "Foreground": null,
-        "Formatter": 2,
-        "TextIndent": 5,
-        "HorizontalAlignment": 4,
-        "VerticalAlignment": 10,
-        "Underline": false,
-        "Strikethrough": false,
+        "Formatter": 20,
+        "HorizontalAlignment": 10,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -2162,7 +1963,7 @@
       {
         "FontFamily": 8,
         "FontSize": 13.333333333333332,
-        "Formatter": 22,
+        "Formatter": 16,
         "HorizontalAlignment": 10,
         "BorderBottom": null,
         "BorderTop": null,
@@ -2170,9 +1971,12 @@
         "BorderRight": null
       },
       {
+        "FontFamily": 8,
         "FontSize": 13.333333333333332,
-        "Formatter": 16,
-        "HorizontalAlignment": 10
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": null,
@@ -2205,9 +2009,8 @@
         "#FFBFBFBF",
         "Bottom",
         "DarkGray",
-        "Blue",
-        "yyyy/mm",
-        "0"
+        "0",
+        "yyyy/mm"
       ],
       "Borders": [
         {
@@ -3071,11 +2874,15 @@
       "17,36": 39,
       "17,37": 39,
       "17,47": 39,
-      "17,67": 42,
+      "17,52": 42,
+      "17,53": 37,
+      "17,54": 37,
+      "17,55": 37,
+      "17,56": 37,
+      "17,58": 37,
+      "17,59": 37,
+      "17,60": 37,
       "17,72": 37,
-      "17,73": 37,
-      "17,74": 37,
-      "17,75": 37,
       "18,0": 1,
       "18,1": 1,
       "18,2": 1,
@@ -3124,10 +2931,15 @@
       "18,45": 43,
       "18,46": 43,
       "18,47": 43,
+      "18,52": 37,
+      "18,53": 37,
+      "18,54": 37,
+      "18,55": 37,
+      "18,56": 37,
+      "18,58": 37,
+      "18,59": 37,
+      "18,60": 37,
       "18,72": 37,
-      "18,73": 37,
-      "18,74": 37,
-      "18,75": 37,
       "19,0": 44,
       "19,1": 44,
       "19,2": 44,
@@ -3309,10 +3121,10 @@
       "21,51": 16,
       "21,52": 16,
       "21,56": 2,
-      "21,57": 2,
-      "21,58": 2,
-      "21,59": 2,
-      "21,60": 2,
+      "21,57": 50,
+      "21,58": 51,
+      "21,59": 52,
+      "21,60": 52,
       "21,61": 16,
       "21,62": 16,
       "21,63": 16,
@@ -3324,10 +3136,6 @@
       "21,69": 16,
       "21,70": 16,
       "21,71": 16,
-      "21,72": 50,
-      "21,73": 51,
-      "21,74": 52,
-      "21,75": 52,
       "22,0": 17,
       "22,1": 17,
       "22,2": 17,
@@ -3416,15 +3224,6 @@
       "23,9": 54,
       "23,10": 54,
       "23,11": 54,
-      "23,12": 54,
-      "23,13": 54,
-      "23,14": 55,
-      "23,18": 54,
-      "23,19": 54,
-      "23,20": 54,
-      "23,21": 54,
-      "23,22": 54,
-      "23,23": 54,
       "23,24": 54,
       "23,25": 54,
       "23,26": 54,
@@ -3451,54 +3250,50 @@
       "23,47": 55,
       "23,53": 55,
       "24,4": 56,
-      "24,5": 37,
-      "24,6": 37,
-      "24,7": 56,
-      "24,8": 37,
-      "24,9": 37,
-      "24,10": 57,
-      "24,11": 37,
-      "24,12": 37,
-      "24,13": 37,
-      "24,14": 58,
-      "24,18": 59,
-      "24,24": 60,
-      "24,29": 58,
-      "24,33": 58,
-      "24,40": 61,
+      "24,12": 57,
+      "24,24": 58,
+      "24,29": 56,
+      "24,33": 56,
+      "24,40": 59,
       "24,41": 37,
-      "24,42": 58,
-      "24,47": 62,
-      "24,51": 63,
+      "24,42": 56,
+      "24,47": 60,
+      "24,51": 61,
       "24,52": 37,
-      "24,53": 64,
-      "24,58": 64,
-      "24,63": 60,
-      "24,70": 60
+      "24,53": 37,
+      "24,54": 37,
+      "24,55": 37,
+      "24,56": 62,
+      "24,57": 37,
+      "24,58": 37,
+      "24,59": 37,
+      "24,60": 37,
+      "24,61": 37,
+      "24,62": 56
     },
     "RowStyles": {
-      "25": 65,
-      "26": 65,
-      "27": 65,
-      "28": 65,
-      "29": 65,
-      "30": 65,
-      "31": 65,
-      "32": 65,
-      "33": 65,
-      "34": 65,
-      "35": 65,
-      "36": 65,
-      "37": 65,
-      "38": 65,
-      "39": 65,
-      "40": 65,
-      "41": 65,
-      "42": 65,
-      "43": 65,
-      "44": 65,
-      "45": 65,
-      "46": 65
+      "25": 63,
+      "26": 63,
+      "27": 63,
+      "28": 63,
+      "29": 63,
+      "30": 63,
+      "31": 63,
+      "32": 63,
+      "33": 63,
+      "34": 63,
+      "35": 63,
+      "36": 63,
+      "37": 63,
+      "38": 63,
+      "39": 63,
+      "40": 63,
+      "41": 63,
+      "42": 63,
+      "43": 63,
+      "44": 63,
+      "45": 63,
+      "46": 63
     },
     "SheetStyle": {
       "FontFamily": 8,
@@ -3514,7 +3309,6 @@
     "7,0,2,11",
     "10,0,2,11",
     "16,0,2,11",
-    "21,0,1,14",
     "13,0,2,11",
     "7,11,2,10",
     "10,11,2,10",
@@ -3537,77 +3331,38 @@
     "24,24,1,5",
     "24,29,1,4",
     "5,11,1,10",
-    "1,21,2,16",
-    "24,53,1,5",
-    "24,63,1,7",
-    "24,70,1,6",
-    "24,4,1,3",
-    "24,7,1,3",
-    "24,58,1,5",
-    "21,73,1,3",
-    "17,73,2,3",
-    "24,10,1,4",
-    "24,18,1,6",
-    "24,14,1,4",
-    "24,0,1,4",
-    "21,15,1,12",
-    "17,67,2,5",
     "25,0,22,76",
-    "24,51,1,2",
     "24,47,1,4",
     "24,42,1,5",
+    "24,33,1,7",
+    "24,0,1,4",
+    "24,4,1,8",
+    "24,12,1,12",
     "24,40,1,2",
+    "24,51,1,5",
+    "24,56,1,6",
+    "24,62,1,7",
+    "21,0,1,7",
+    "17,58,2,3",
+    "17,52,2,5",
+    "21,58,1,3",
     "23,0,1,4",
-    "23,4,1,3",
-    "23,7,1,3",
-    "23,10,1,4",
-    "23,14,1,4",
-    "23,18,1,6",
+    "23,4,1,8",
+    "23,12,1,12",
     "23,24,1,5",
     "23,29,1,4",
+    "23,33,1,7",
     "23,40,1,2",
     "23,42,1,5",
     "23,47,1,4",
-    "23,51,1,2",
-    "23,53,1,5",
-    "23,58,1,5",
-    "23,63,1,7",
-    "23,70,1,6",
-    "24,33,1,7",
-    "23,33,1,7"
+    "23,51,1,5",
+    "23,56,1,6",
+    "23,62,1,7"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "masterpage",
     "Title": "条件を指定して検索 - 測定機器",
-    "PageLoadedCommandList": [
-      {
-        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-        "TargetTableName": "trn_insptool_tools",
-        "SqlCondition": {
-          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-          "ColumnBindingInfo": {
-            "TableName": "trn_insptool_tools",
-            "ColumnName": "usage"
-          },
-          "Value": "使用可"
-        },
-        "Params": [],
-        "ID": "4c17dca88acc44d38f1dcc2eea3c87d3"
-      },
-      {
-        "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
-        "PropertyItemsList": [
-          {
-            "Location": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=測定機器検索!E:J"
-            },
-            "Value": false
-          }
-        ]
-      }
-    ],
     "AuthorizeInfo": {
       "VisitMode": 2
     },
@@ -3620,4 +3375,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//8q8ErTuiXhJDD8224T/9t83kzSOOMHdnyBAtNPQ+qNO2/gJNQGAvy1COAQsprJxFqKQfQglUx5Tv3UZlpwWPyrcLUfE+vSXu0Ph5XFZcmc6e8H+94ZMbct6C63jEjZtm5xZYXRXfQJtNdOuRkzq0ZSz0Hm+pQ/2JyJ+tDNaNEBlpHN01IqnH+AtvU9QWdXEtKg2RYDVpfSKUt3pIWnomMCytx0/k8wUhCnXvEFOOuZXfHqjdZmUcxdeEqOVGe9JaH0gquLP6u9AILofO5Sxf14aCrHvao8YlOvVG8sfSbsphLasd8rwH/9xT/iVK9VZ+XxPZVnjQtSzdrZN8RIKMEvxmsAMV9+kyMi2MouQjQ20DzJt5oP+fCpSwbvJh7rsyKxD7KZU3dqNpY+ibIsoooUUXTMXSqG1gQ/tCmB6CiJ/ImQBWWcWlpjPFKHB9ki/4Qcc4pof5LhKx8YvgtWoUV5kKTx+pdd8TeE9lmWbiwGiOwh0g/yI36bFLBDyDk8T5cLyXphADt1cubUG/W/Eq9DawN5Jkwk3LDNiwvl3XC2FGVKoowcbEHSBboTnUhs/xHUqqmVu2XVaOZwI+hqND+Bjkmp0mZVwXhoMct/1wwwtaE4+CS7SLaqmvX5j6/Y5yoVYLyg48lJX04uXGh+PLUxUVTeC7Vgr2NZJ6is4bsNP/UuUmmquIWUiCKWFE3DPXSI46YOLPoHScSg9tUBIzr7s+SPDFx6ZMg+NYigrK5di6xGmYE8TX3fL5/PFLOaRoVSBtCvt4uLxQ8BSRd0CFk1eFi11Vow8aomp5+k45LQkCcx/DL6Fy+9lK8KudnpiJvJTD7muS+2bRDXn+f9S13A1oIMTLFKQg1aYmh4UbECHyZ1ewSSg+N5k+vUkr6H1gJTqTM5ZOT1i0qXIRlPUMgA==|920
+}//YoG/n+AzOtKbk2UNeM5Wjwb68FNEoD/1emIlEyn60mDxqNwPhzJcB5OMad+3IvhHwemqD+3h909iX7TxQuzOa/thU40WAcjX0FasQhOcuXiJlpmI+X8pv8fhO5bACBrdCJCPEVF+Yotq5MMj6pF3Z6Wlb5eb4ZvDOsOe/DdIG1SA2gnavXePFxTWtdKtVQ3dPwdfA02LXk/2FyjzZrYK5ndKIFnliKvJ392TlTNuNgBT3YAHVYY6m+Wzbu/smW5w8ClrS8BSysbMpa6fzZsKwojLrhXNnAWbzF0oLWvmJ8Uek9CqV20qY4+Gu71jLPMaRISeCELwnyhcF+BoHYZe8Pf11krQxUzZUEk0uFyhpN+3ghPfzfEmmIXlI8Ni453a7kkbV8SSBwpcmQvi5m0kfcVCZXXhuXbEvdJ9k+Acp5nMltNd95bdVos3XYFxtNDI/NoCnEBXqS3OqHVYLbAnQt+8pEHQfn6bEKttsAotVIr+1up5ryyocZlgITRriGqKK/OfNTlmeu075I9YA1gc1/IWBQXggtjDdoqWUCziHZfQWUGbJ4sEzVNqYPhwtsIjoGNBWQQiJWjJ5UIH7xsssqeMCyifJ7xpny52g/hVONMFOGUtfF3cJkZGl+DpkXN3Y8+pvYfv0sVED0caB0in5i37cft9X9+bmAxZOT+4a/V0A4KAFjduMle97b7EdpGhHTOMWog6TJwu7HMye+AjeVFngceSphaCf6naqAoZh/Er+ykO44pFGha2RdRWIVuLQGZARkLSiDcUZrVYRMKs8kJYawDM8tqDckpMy/RvC8HsLwuCgAagg9JKhDph8UEf92/Py0ZoLu9dYcSXI96IQe/fKzrLLXI/PC77+yfs/TnbIvdVUiGRev0iAuf7puFcbXGk8BBvrDI3wExa0UrDww==|920

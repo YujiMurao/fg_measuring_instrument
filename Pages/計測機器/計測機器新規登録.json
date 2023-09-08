@@ -320,247 +320,287 @@
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-            "TableName": "trn_insptool_tools",
-            "UpdateType": "add",
-            "ShowConfirm": true,
-            "CheckDataValidation": false,
-            "ConfirmText": "本当に追加してもよろしいですか？",
-            "UpdateValues": [
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
               {
-                "ColumnName": "n1",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G10"
-                }
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=計測機器新規登録!AH8"
+                        }
+                      ]
+                    },
+                    "value": "使用禁止"
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=計測機器新規登録!AT8"
+                        }
+                      ]
+                    },
+                    "value": "%Null%"
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "使用禁止理由を設定してください。"
+                  }
+                ],
+                "ID": "f0ec0031-949a-44bb-bcf2-d658ab86ec8d"
               },
               {
-                "ColumnName": "n2",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G12"
-                }
-              },
-              {
-                "ColumnName": "n3",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G14"
-                }
-              },
-              {
-                "ColumnName": "n4",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!N8"
-                }
-              },
-              {
-                "ColumnName": "usage",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH8"
-                }
-              },
-              {
-                "ColumnName": "codateymd",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AO2"
-                }
-              },
-              {
-                "ColumnName": "kind",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G16"
-                }
-              },
-              {
-                "ColumnName": "prohibition_reason",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AT8"
-                }
-              },
-              {
-                "ColumnName": "item_name",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G18"
-                }
-              },
-              {
-                "ColumnName": "type",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G20"
-                }
-              },
-              {
-                "ColumnName": "serial",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G22"
-                }
-              },
-              {
-                "ColumnName": "maker",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G24"
-                }
-              },
-              {
-                "ColumnName": "s1",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G26"
-                }
-              },
-              {
-                "ColumnName": "s2",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G28"
-                }
-              },
-              {
-                "ColumnName": "s3",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G30"
-                }
-              },
-              {
-                "ColumnName": "madeymd",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G32"
-                }
-              },
-              {
-                "ColumnName": "asset_no",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH32"
-                }
-              },
-              {
-                "ColumnName": "purchaseymd",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G34"
-                }
-              },
-              {
-                "ColumnName": "retailer",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH34"
-                }
-              },
-              {
-                "ColumnName": "administrator",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G36"
-                }
-              },
-              {
-                "ColumnName": "storage_location",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH36"
-                }
-              },
-              {
-                "ColumnName": "category",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G38"
-                }
-              },
-              {
-                "ColumnName": "lastrevisionymd",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH38"
-                }
-              },
-              {
-                "ColumnName": "calibration_cycle",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G40"
-                }
-              },
-              {
-                "ColumnName": "next_caribration_ymd",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH40"
-                }
-              },
-              {
-                "ColumnName": "automaticnotificationymd",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G42"
-                }
-              },
-              {
-                "ColumnName": "etc",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G44"
-                }
-              },
-              {
-                "ColumnName": "kousei_tsuuchibi",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH42"
-                }
-              },
-              {
-                "ColumnName": "kouseiyuukoukigenymd",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH42"
-                }
-              },
-              {
-                "ColumnName": "tsuucibi_ymd"
-              },
-              {
-                "ColumnName": "外観",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AB11"
-                }
-              },
-              {
-                "ColumnName": "添付ファイル",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH22"
-                }
-              },
-              {
-                "ColumnName": "ctrl_no",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G8"
-                }
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "trn_insptool_tools",
+                    "UpdateType": "add",
+                    "ShowConfirm": true,
+                    "CheckDataValidation": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "n1",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G10"
+                        }
+                      },
+                      {
+                        "ColumnName": "n2",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G12"
+                        }
+                      },
+                      {
+                        "ColumnName": "n3",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G14"
+                        }
+                      },
+                      {
+                        "ColumnName": "n4",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!N8"
+                        }
+                      },
+                      {
+                        "ColumnName": "usage",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!AH8"
+                        }
+                      },
+                      {
+                        "ColumnName": "codateymd",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!AO2"
+                        }
+                      },
+                      {
+                        "ColumnName": "kind",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G16"
+                        }
+                      },
+                      {
+                        "ColumnName": "prohibition_reason",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!AT8"
+                        }
+                      },
+                      {
+                        "ColumnName": "item_name",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G18"
+                        }
+                      },
+                      {
+                        "ColumnName": "type",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G20"
+                        }
+                      },
+                      {
+                        "ColumnName": "serial",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G22"
+                        }
+                      },
+                      {
+                        "ColumnName": "maker",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G24"
+                        }
+                      },
+                      {
+                        "ColumnName": "s1",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G26"
+                        }
+                      },
+                      {
+                        "ColumnName": "s2",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G28"
+                        }
+                      },
+                      {
+                        "ColumnName": "s3",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G30"
+                        }
+                      },
+                      {
+                        "ColumnName": "madeymd",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G32"
+                        }
+                      },
+                      {
+                        "ColumnName": "asset_no",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!AH32"
+                        }
+                      },
+                      {
+                        "ColumnName": "purchaseymd",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G34"
+                        }
+                      },
+                      {
+                        "ColumnName": "retailer",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!AH34"
+                        }
+                      },
+                      {
+                        "ColumnName": "administrator",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G36"
+                        }
+                      },
+                      {
+                        "ColumnName": "storage_location",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!AH36"
+                        }
+                      },
+                      {
+                        "ColumnName": "category",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G38"
+                        }
+                      },
+                      {
+                        "ColumnName": "lastrevisionymd",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!AH38"
+                        }
+                      },
+                      {
+                        "ColumnName": "calibration_cycle",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G40"
+                        }
+                      },
+                      {
+                        "ColumnName": "next_caribration_ymd",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!AH40"
+                        }
+                      },
+                      {
+                        "ColumnName": "automaticnotificationymd",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G42"
+                        }
+                      },
+                      {
+                        "ColumnName": "etc",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G44"
+                        }
+                      },
+                      {
+                        "ColumnName": "kousei_tsuuchibi",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!AH42"
+                        }
+                      },
+                      {
+                        "ColumnName": "kouseiyuukoukigenymd",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!AH42"
+                        }
+                      },
+                      {
+                        "ColumnName": "tsuucibi_ymd"
+                      },
+                      {
+                        "ColumnName": "外観",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!AB11"
+                        }
+                      },
+                      {
+                        "ColumnName": "添付ファイル",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!AH22"
+                        }
+                      },
+                      {
+                        "ColumnName": "ctrl_no",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器新規登録!G8"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "354c8ffb-48a6-4b2e-bd6f-f5cb3e8d5dd7"
               }
             ]
-          },
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "NavigateType": "back",
-            "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
         "ImageSizeMode": 0,
@@ -640,7 +680,7 @@
                     ]
                   }
                 ],
-                "ID": "d4c5197f-2c93-4ee2-9d01-92ba6f3b1321"
+                "ID": "719a39c7-19ab-4cee-8d23-3d80292aa53f"
               },
               {
                 "CommandList": [
@@ -673,7 +713,7 @@
                     ]
                   }
                 ],
-                "ID": "024ebcfc-35e2-464a-adce-463b0509e500"
+                "ID": "86219947-2f23-4675-9ca5-0a16b07b4812"
               }
             ]
           }
@@ -713,6 +753,14 @@
             "DisplayValue": "不適合"
           }
         ]
+      },
+      "DataValidationInfo": {
+        "NumberType": 7,
+        "IgnoreBlank": false,
+        "FirstParamValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=IF(AND(EXACT(計測機器新規登録!AH8,\"使用禁止\"),ISBLANK(計測機器新規登録!AT8)),0,1)"
+        }
       }
     },
     "9,6": {
@@ -3418,9 +3466,9 @@
     "7,13,1,2",
     "7,1,1,5",
     "10,27,10,13",
+    "10,40,10,13",
     "1,54,1,4",
-    "1,58,1,2",
-    "10,40,10,13"
+    "1,58,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3437,4 +3485,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//0Wnn3emYR+8myR5L722Kp3ZIqtzbb4ybquSBsEwnn8/yni9pzGu3/2T2XS/VAfAGZTPYhYWyWIklR74qh5+l7ThPELNX8H1SpBVK5JSOBnX0hvh1EKU246RmB/7fpT/KUEY07TtOK+7sO2PeWvxQKrmgtqiwhfQhK8aDVgdalrDEpLOatCtz9JsjKi9rX2YDsC/oTrWyGvEKmpcaV0yIq00/xD3trifboKZePGvedZaCFTYOBlau0Lc2XlMvFWcAC2qQWkdpBv0PaIezzTw7xamfPMMQNDzB/wAIpHZHqk/sUKibHFaxp3KstA8DfCePLiz+224eIGr9lPFtNOMxoHbnuU7hunw9yF4T8xdCgSx91jAJsLqZqmgC4trfHUNognVBEjieB5IwX2bK7q5oH3wNFd41+6q6yTSsta51KInDH315CppPa8Ukn+1y+KNc117AiY2SmMseTravhc7JA90M19hPrgDS/QokAwMNrQTBd6OifhPt7o0rF6ndnOMGq59Y0LEySgegHxFmO7ZOF0A9Oy3Wcp7sz0Gl+Q8Q9xMFnxlhpQtTnAr9W2NWng2eL8/+1uIO57Zk3lyOAIn2mLqnqZ/ew6lX26TJA0hEL/vfDnxz4eb2QqHCttxQHVnGpfSbPTqUeftKnA/ojMk8hnwskXAPYpAnhz+OHXVnIHflqsRzpZulCANUjpmxTU/ZLps+RsiVhwN1y1cOcLccBlHCNnK3eQkmaTgpfU0Ds5W9wAUNvPAVcqmLBjHeSSLpFAQkdRno6UKGVYDpuAD4WWiBhUKUHjw0nKVNsCADkjsV1fSPVF5xRl46gja219nIldq5SsP4v88yj2GU+kASkfRK2LNW4qw33J09pUatloU76V4V+7qPWlbEIEEa0wmUhoSNHR8huZ5k6mMmRmZq3g==|920
+}//U9jcPJNNKKIE/6mP8yaFD/E3yDhRHNWYZ+AX45ru5d3tGDeQq5T2oWlCnSVYumzUXMvhx8uQzKL5Oh4ElXDX1eD7P0BS/WGifVoglhW7HuLixP2LQLWHaoKLIXI6Y2Biu7Mlf2aPSkAnZHUpQ5xNKm0FmXSi+rOe7R96MqdfgRvl20Pmsmpx/O/mIDVEwxmcazfqNirRatIq8MXuYD6WMErjr4qfZCvkMhSiN4ihq/vJd0oleVLVHMElatlLmLkPdFPc04JnNv0oL/eu3vQrMybnd7j6a0oSRYlBCvxhWO6B0UYHS8bHk7nkEb4ERFnvTSUOq4KjICIPPyDy9V7nf5wF8hWrToV1aud34KCVMfzULBvjsLeZGbovlZyuQ7nBVyLP3X8f/D243IRQnoS2iCTkcCoXOHYa4jI1RPH92FnB+ZlQHenLC0lA1B7kpqGtT5IiCDfSkGS9Sn7NFIO0/g252L4m9cLwFaAqbY2nGxpJrw/YR0jq9PaPX5t0Gbd2XVzdTXYt0fC17cUdBZIb5g+IOGmO/hYZcBssCRWeXN4qtNr24n4fbaa0yrq7o1hnwF8aGOhfYMywD93WFLraD4mND9I4gzI3QrA8tXt3YnkjCZ6qPaIZVihRiZPijPjRMZqRwy79NF1AiBz8ISdq9Re2FAIfMIFpNrf3yxjDqv9rXLCBitA63vXBjKCfytzYeaJ6LDfkco/OGVSy305w6NamxpkmUW0Tg/Tje/Zso7kfs58iQQ4XsU7CgHa+MhvSD7ILQpLSZ1GQgOnf7X404oA3RxmqC8Z9NffyRkCpXVtBiiohYeHUqyM8uSwWYOqfvQgL2bSqZQlqtR3MjpEEq6YoTlTZZshobvsgHDJWwoXsMpqAbo/B4zpryq8oyDp2DV14GJaLriTcFly3mkr+jg==|920

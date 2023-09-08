@@ -164,7 +164,7 @@
     "25,2": "すべての記録文書",
     "27,2": "条件を指定して検索",
     "32,1": "管理メニュー",
-    "34,2": "計測機器新規登録",
+    "34,2": "校正対象計測機器",
     "36,2": "記録文書作成",
     "38,2": "管理番号マスター",
     "40,2": "校正対象機器",
@@ -211,7 +211,7 @@
                 "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
                 "TargetTableName": "trn_insptool_tools",
                 "Params": [],
-                "ID": "9e4434e690d14bcfa4292288844bab54"
+                "ID": "636b63f6e0dd4dc3ad2a2deb3708bcc1"
               }
             ],
             "CanVisitRoleList": [
@@ -235,7 +235,7 @@
                 "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
                 "TargetTableName": "trn_insptool_tools",
                 "Params": [],
-                "ID": "9b0c1d62749d49c080208337d712f4f5"
+                "ID": "c773a828038d46aab1b71c16b85b804e"
               }
             ],
             "CanVisitRoleList": [
@@ -266,7 +266,7 @@
                   }
                 ],
                 "TargetTableName": "trn_insptool_tools",
-                "ID": "4dec5bc6c79940158c073e14e3390542"
+                "ID": "57672795a4e24e1391cfda038ab49eb9"
               }
             ],
             "CanVisitRoleList": [
@@ -338,7 +338,7 @@
               "Value": "使用可"
             },
             "Params": [],
-            "ID": "c7d85027946845caa5108193fe060bde"
+            "ID": "9f88e5c42e0e4cca804280726b4dbebe"
           }
         ],
         "Text": "すべての計測機器",
@@ -361,7 +361,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "138adb36da1b4da68c76daf509475f26"
+            "ID": "bcb79f7741f846788e6d06a74ab30661"
           }
         ],
         "Text": "条件を指定して検索",
@@ -399,7 +399,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "4fe89b87191c4174b70b569e8991259e"
+            "ID": "ddc929ecc3e24316a350f37ba0d958f0"
           }
         ],
         "Text": "すべての記録文書",
@@ -421,7 +421,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_certifications",
             "Params": [],
-            "ID": "44d2ce11219641819d13b16449b93738"
+            "ID": "5dcf65ceeea34754851ffa7cab8c2c5e"
           }
         ],
         "Text": "条件を指定して検索",
@@ -436,7 +436,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "計測機器新規登録",
+            "PageName": "定期校正機器",
             "PassValues": [],
             "IgnoreTargetPageCachedCurrentRowInfo": false,
             "LoadBindingDataOption": 2
@@ -444,13 +444,20 @@
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "category"
+              },
+              "Value": "社外"
+            },
             "Params": [],
-            "ID": "1fe7fd1ca83f408a96c741ea270b5011"
+            "ID": "69148bd586094152a26602a2116164c2"
           }
         ],
-        "Text": "計測機器新規登録",
+        "Text": "校正対象計測機器",
         "ClickMode": 1,
-        "IsInvisible": true,
         "TemplateKey": "_RS_Normal2"
       }
     },
@@ -479,7 +486,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "b804ec620e184016ac7b03f13e6e55f2"
+            "ID": "6147dae7c550425b80e8ca0788feb9e0"
           }
         ],
         "Text": "記録文書作成",
@@ -560,7 +567,7 @@
               }
             },
             "Params": [],
-            "ID": "2e042541a38d4013859090ebcbb1c910"
+            "ID": "7d16778a36034da39bb3073475a4d36f"
           }
         ],
         "Text": "校正対象機器",
@@ -650,7 +657,7 @@
               }
             },
             "Params": [],
-            "ID": "926d787c30f8482fbce62547060af7fd",
+            "ID": "f635fa88d31f44a685e296702fda8c7d",
             "Disabled": true
           }
         ],
@@ -1530,4 +1537,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//aDYONiptI2+OKkJaT5OGGUsmCdpYwg40MZANxELpRHiVhwqZYB8aEaPZVuVBVay2MAxbETpW87niwWTuVLcrfD12heA9lAkwK6XdlFR/nmjo3AbPQC8Wjtyq8L6gx9o/w+aQAk//2oscAiJZKgIY30CKgpcSYHnJWpwOhJmZa/MC+rCpX9IOh9VKRsffUdX07qk0qG4DrfHjaVzuKrd0NKW67yUlC4vJA7OdCjcXUaCHSUnV37SsciZoQFU620F4Apb5qU1JhLB9vGPJgFsadNL6Fu/UsWFjLkiEB9TgnNl/vLARkEWvjxvjWzVGmV00W3+pUjBoONewN3FYnXzkbefCCJzBJJLT6ZpmCH0uno10Q98Tl7KC8QuDqWKfILpFnzxfiAmkCWRVzyrnFFZom4nL243kjQIQSWiJx2K8eyXgRpg2QJXKj2hqjloXxD6qfOs53FWPA1DIgFTzEYcKMkn3c08G4HZlOPo8Hcd7NseEPoNkg+5oPmWgegyPXTxE+toEfKQZ20VVX7eGKPe+t4WQUMZYaav7aK6QNgjv+lOxUOTkDQGedE6sFnFe3QJw6321Ql4mZnybNGN48/9kkY/ZEmZWH5lzFEHLre0HqoutWxCtsnPaR6Jds+i9RU3vZFAI7WZeN43FhPPIEVFbKujhlgboTajKBk2/z52TavnQOcb/0Qm6qSL6ulOrVwTTGGl/5wgqX3eA/Mf6i1u+A6ZUDJsFcUserhDyVaC2uXF47UlA+CJL/odxK7CuKTp2EhLLrdiN8fXgKVtBvUp19ACo/QsY9fn4jCdIAMPQDTwumhVZJXYZtEoVK/vE+4bDtHcpcoNJb4I/6n64G1jS8qT1KSrT/qlBJzJfSt0Gr1O4YvTM3WNa4XmxgUmD34cJSYdx83IUFZzPMDAhJmFpRw==|920
+}//6B7g8AdPgntz1MziIIovGJIojWdg6SHGa/w24iJ8Syhd8fiZzSm8b7a2ULWjIwoAL3bSz2kcD7I0dwgZHGXkDmfLnlio8TDthUuyz7FBSTLIq1CKEzIVIivlfUpR+uB/qDxfhCtgKxRQ3QeVV7fBK30cv51oXzFHxU3jE+0aLjsnmwv1EhGruaEjbObFLmrZwu3C6v9RKstOx+94aHjqFcOa0xBWlxFutJCLcI6vIFg9ax5x/iCXvVsT+F0EJtU/yc7j+fSCNC7vwVWrNVoIx1d3kZzCFHJXe+KHH2jIm7cCej94APUuUe2vNrevSMQRpnjU/LeZS1PNZrSG/OBVOq5TPDzr9FKXd5SKLRMnparmsxndqca2YjkqOto8P7A99RcRTeHZ6OqM1v3eHn8S3EHoJhid7pMYcpTXeksKtBD6m911J5W2K8RA7zWubndipVfFlTxxATTC66KoLoNz7aI4p+6hqrJkRSliknuc6WJsF+60cXOvqsxRWpeiq2IcvxntcGG9p7w+/GPR/5YFcAF/ihSIPMuIjMmGY7TUoDz2M3jJzUE4OYINAdOieS5/XmHsON3LGNMhDRRINKZfXrFQFZEBYwLNl3QmwE1mdXgMro51enTrHNlhDOokm/sv7x1rqcAuGqmCuUgvvOrNIbqdFlfO+yLGs2qpuSAuPHuDaNBiwurQcpM8/MD+WHZXvnsDpxWlTgbZ3LWB8VOX83Fq040xb9zwcuTB1KPb/iTOKUZULkXJgv6NMlB9vzpJMKAoRC0qEVklPZ4zLDGcpQr9qUZx4PlP+1U0ZNd7QM1O16we4aI5wY1je7eXV9rZbTEVpFtBKpAP6uv4HTo5Z70JD+GB4Bu+OzyIt/6x25STiPP40L/UOk73Cf4/fB3eKpzmAROv6V0HWFZrc9ah+w==|920
