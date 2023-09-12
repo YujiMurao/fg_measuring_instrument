@@ -76,15 +76,21 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
       }
     },
     "Count": 20
   },
   "Values": {
     "1,1": "番号：",
-    "4,1": "内容：",
-    "6,8": "追加",
-    "6,14": "キャンセル"
+    "3,1": "内容：",
+    "5,1": "管轄：",
+    "7,9": "追加",
+    "7,15": "キャンセル"
   },
   "AttachInfos": {
     "1,5": {
@@ -102,7 +108,7 @@
         "ColumnName": "code"
       }
     },
-    "4,5": {
+    "3,5": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
@@ -117,7 +123,30 @@
         "ColumnName": "name"
       }
     },
-    "6,8": {
+    "5,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "Items": [
+          {
+            "Value": "本社",
+            "DisplayValue": "本社"
+          },
+          {
+            "Value": "九州工場",
+            "DisplayValue": "九州工場"
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "mst_insptool_management_department",
+        "ColumnName": "jurisdiction"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "7,9": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -138,7 +167,7 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "6,14": {
+    "7,15": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -181,7 +210,11 @@
         "FontFamily": 1,
         "FontSize": 14.666666984558105,
         "Formatter": 2,
-        "HorizontalAlignment": 0
+        "HorizontalAlignment": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
@@ -203,28 +236,41 @@
     "CellStyles": {
       "1,1": 0,
       "1,5": 1,
-      "4,1": 2,
-      "4,5": 3,
-      "6,8": 4,
-      "6,9": 4,
-      "6,10": 4,
-      "6,11": 4,
-      "6,12": 4,
-      "6,14": 4,
-      "6,15": 4,
-      "6,16": 4,
-      "6,17": 4,
-      "6,18": 4,
-      "7,8": 4,
+      "3,1": 2,
+      "3,5": 3,
+      "3,6": 4,
+      "3,7": 4,
+      "3,8": 4,
+      "3,9": 4,
+      "3,10": 4,
+      "3,11": 4,
+      "3,12": 4,
+      "3,13": 4,
+      "3,14": 4,
+      "3,15": 4,
+      "3,16": 4,
+      "3,17": 4,
+      "3,18": 4,
       "7,9": 4,
       "7,10": 4,
       "7,11": 4,
       "7,12": 4,
-      "7,14": 4,
+      "7,13": 4,
       "7,15": 4,
       "7,16": 4,
       "7,17": 4,
-      "7,18": 4
+      "7,18": 4,
+      "7,19": 4,
+      "8,9": 4,
+      "8,10": 4,
+      "8,11": 4,
+      "8,12": 4,
+      "8,13": 4,
+      "8,15": 4,
+      "8,16": 4,
+      "8,17": 4,
+      "8,18": 4,
+      "8,19": 4
     },
     "SheetStyle": {
       "FontFamily": 1,
@@ -236,10 +282,11 @@
     }
   },
   "Spans": [
-    "6,14,2,5",
-    "6,8,2,5",
     "1,5,1,5",
-    "4,5,1,14"
+    "5,5,1,5",
+    "3,5,1,14",
+    "7,9,2,5",
+    "7,15,2,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -255,4 +302,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//HYRCSlG6zmNvZPEF/5b83SwIlE8MJ/cbtSw9XEK8j1VgMvsF54LgroScSarzF4Sj5NSCU4z/wbxoRcIhPv4spzSdIseES8b/mCSzbeGWqLdpM3PL1A+t9//VNyd0/GUhch0LfpLkFOstKSjxxIsy4kizVNQbeV/cmxbvKubrr+ZvCO/JYS/tPNRzHkGPT4eMPxogxbsJhWHDHL85BD//7mNJs4PvaE9gNKAwbsjlHnHeAIrzIuc2G3FhGP4ropTLwnrBXlSx30ah72XeksSJHZ0Pn5FqRGFQHvWJowPaeHtzoGrVUJCVCczPwZ+5MqiHLNHK4VhgWWHNrJoTD4boPBU6DyJKwzPCrI23HZyDMmcPmofJNX5py1bt7xRTrovJ/RhjVmdb4UUyT/rY8eNYZCLbnK7/lx71lhB7H+KKtVn5JBBrWLAOHo/5uplxHUosKfUlzCmf5uE8IP8vhx/L176VbczID4w9Klv3FHDspo6iFN4DpBZNG+JVxP+lY6LqWJvkUBETrKNhZAWKAopbmbSVKceT0ljRpfBsE9KIAmmqST60JIVcy0w1k8ttjRtBGOT1H2H/+3wpwKC4GO8TbNPylJjYx4hqrX4yTpllK8EDtEpCSqbaDO0AMBuhOy3Chk6GhK48n0ecGDO9E/PU2tMYYwpLv2T/7FGh879F2gb/e6ZhH9eMp/D33HVKIzYITPl/36Zl4OACxPH00I1kdD5yG46L70KjftVpNxtoQiTNXSWc5PUv+UC7RBzJkZ/iC2pWICxPtmSqCd9Ih1OV7s/eqObqVdgfOJ9ZBImwoCrhR2OilVK+n9/QNU3bL/LzMpfF8KXXk4AiIa9hWWYYhrI9hcZqHEJEcsRnmIUlNwKsDCl7rofBp2ujqKsRwpdlbCOSR1/eOEz4EF/4LokzgQ==|920
+}//J3fYK/DHG6eDeXo+nXNU1tV7tkfxy2tlITt8c3EdmF/CH/L5K3dMg1ZBP+SI7vc8zNp+yKVDP3l2dy/1Tfm2+ZIxSgK8Py9u2dAvIp3kjIOD9bFE+sNjnoRSI8XIeynIhAnh0WhMDbWZnidRvCtt3Qi3lB3qVeO7RZVwHXN/YF1QBg4kO/AxAFOUtDrAZzzoQneSaJuW7zmZnGmmrklXKh3r5L5NUgr2pfAlY6F2cGOYFJgfxsOmzzeM/TjAaMyc33SwHNuJ4rbpmRnpkrpl+nHBOtsbSfNwVSJplUCmyPg2Cff8JdM2GTDQVp0imydwMaAA5oEbQoVu9GrqGop6zJjvH+FaK6Sy8igzg5Nkecg7mKb+CCkJ5mqp8+DsFkhhrMQLwj95mRg+wYrJ3n1aMpnE+z2N1QonB1Esw9rtm8UliK/MlyxobkolLUiuTMzoduHbk/pvsPQLeqIogf+4J3Q6FlQj7zUUzgcp5/4kNgIVn3HLI05Emiie4tjlrM5vwWKDvvLcNS08o2mm+f1xW+tDxgTmh4VF3YplZw9SzG6O6mfRaBmS5FZDyRsf8TKntijZo+akjK6dnyRkhFsjGzhCHTMuGHQEix4pMXbcvg7rv29TV5tILJzGvwbKYFqfbx4C6hiOQ2KgiZDvIbZAE8oLB51zyTLI2CFgjx+LPqyhVFRoL3HdcppCL0y2DzbgML3jlkK7aMLr/2iAe9GRkXaUIF5uf78VZaONEVtAyPmpGzrEauQakfsAUYV0wAj+UHdSuZuPHDfVSpf29kV4uasw0RPMuKOCWOp7WPO0NkaL8WTcowZypQwV/qCgiBjevSF0bowdCGxNfc7ltfCLqdI7pFuTqIE+rpY3qZlS/y72aUffMniUi1xtQoETxlWiOVklsaUGC9Wk24XbYNcpBA==|920
