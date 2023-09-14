@@ -1,0 +1,254 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      }
+    },
+    "Count": 10
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 49
+  },
+  "Values": {
+    "0,0": "管理番号",
+    "0,34": "種類",
+    "1,40": "詳細...",
+    "2,12": "名称",
+    "2,26": "次回校正日",
+    "3,12": "型式",
+    "3,26": "校正周期",
+    "3,40": "校正登録...",
+    "4,12": "シリアル",
+    "5,12": "メーカー",
+    "5,40": "校正履歴...",
+    "6,26": "保管場所",
+    "7,26": "担当者"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "管理番号"
+      }
+    },
+    "0,4": {
+      "TemplateCellSource": "管理番号"
+    },
+    "0,36": {
+      "TemplateCellSource": "種類"
+    },
+    "1,40": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "詳細...",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Arrow/283_move_next_4.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "2,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "IsInvisible": true
+      },
+      "TemplateCellSource": "画像"
+    },
+    "2,15": {
+      "TemplateCellSource": "名称"
+    },
+    "2,30": {
+      "TemplateCellSource": "次回校正日"
+    },
+    "3,15": {
+      "TemplateCellSource": "型式"
+    },
+    "3,30": {
+      "TemplateCellSource": "周期"
+    },
+    "3,40": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "校正登録...",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Arrow/283_move_next_4.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "4,15": {
+      "TemplateCellSource": "シリアル"
+    },
+    "5,15": {
+      "TemplateCellSource": "メーカー"
+    },
+    "5,40": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "校正履歴...",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Arrow/283_move_next_4.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "6,30": {
+      "TemplateCellSource": "保管場所"
+    },
+    "7,30": {
+      "TemplateCellSource": "担当者"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "Formatter": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Background": 0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Background": 0
+      },
+      {
+        "Background": 4,
+        "FontFamily": 5,
+        "Foreground": 6
+      },
+      {
+        "FontFamily": 5
+      },
+      {
+        "Background": 7,
+        "FontFamily": 5,
+        "Foreground": 6
+      },
+      {
+        "Background": 8,
+        "FontFamily": 5,
+        "Foreground": 6
+      },
+      {
+        "FontFamily": 5,
+        "Formatter": 9
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 1 80",
+        "@",
+        "Center",
+        "Left",
+        "Accent 3 80",
+        "Body",
+        "Accent 1 0",
+        "Accent 4 80",
+        "Accent 6 80",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,4": 1,
+      "0,9": 2,
+      "0,34": 2,
+      "0,36": 2,
+      "1,40": 3,
+      "2,1": 4,
+      "3,40": 5,
+      "3,41": 4,
+      "3,42": 4,
+      "3,43": 4,
+      "3,44": 4,
+      "3,45": 4,
+      "3,46": 4,
+      "3,47": 4,
+      "4,40": 4,
+      "4,41": 4,
+      "4,42": 4,
+      "4,43": 4,
+      "4,44": 4,
+      "4,45": 4,
+      "4,46": 4,
+      "4,47": 4,
+      "5,40": 6,
+      "5,41": 4,
+      "5,42": 4,
+      "5,43": 4,
+      "5,44": 4,
+      "5,45": 4,
+      "5,46": 4,
+      "5,47": 4,
+      "6,26": 7,
+      "6,40": 4,
+      "6,41": 4,
+      "6,42": 4,
+      "6,43": 4,
+      "6,44": 4,
+      "6,45": 4,
+      "6,46": 4,
+      "6,47": 4,
+      "7,26": 7,
+      "9,1": 4,
+      "9,2": 4,
+      "9,3": 4,
+      "9,4": 4,
+      "9,5": 4,
+      "9,6": 4,
+      "9,7": 4,
+      "9,8": 4,
+      "9,9": 4,
+      "9,10": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 5
+    }
+  },
+  "Spans": [
+    "0,0,1,4",
+    "5,40,2,8",
+    "3,40,2,8",
+    "0,4,1,5",
+    "0,36,1,12",
+    "0,34,1,2",
+    "0,9,1,25",
+    "2,1,7,10",
+    "1,40,2,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "計測機器一覧"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//b+QuUkABM+zJNVJVcdDXcQXjY1njWDiRpXsCAYvgR336HO1QNyu9JJc+tVl3vsZb7VL39iFm6LUma34qjL77SjCFOxApC67OcvXm9A1S0FO9egVaPXqDW6be+cw3L5q/onFtyup/FsErP/VcMXu1SvfyhSMGUWvrS7S1ZLQDGzH/xlNOWj/W8jjtX2MDiwZddLJ02F5EF+TTb4cVM5QNOKQJa6WAWI8XNhuVxh9S5IJuVs5Jeu2YfyeauQvg7EUpLlOBrK2JsLpjo74LA8UMgd1Sva4xE5wGJdJgkTMwMxHlIN/gr8wiwtSZ0nlADzhegA6lP+4Ez1nWDnUJfD50aKJklsrphc/NEgnR0CQD637rMKIrRa6sFg16lDGlIGH0cOpodLHRXmWBr/MWi65Hp7nThAgJFcsTU554SvDtuwwiIKJXfNOOnMESDCsZ6tMFYNHvfovIUXNeYaIxrEbuzHlz2ymYOMAYH+wnMXnR4cDOayGJz16IgBi+Bjlrn2HphMG3iAYME9OhNo5JBJVCTL+cnDmj5vuegWWXprA/EiEO6sDmqY0ZVeqUMlhxiEHVzXikZ9SSGZ/uSUHU4kW80RFTN5lay7LMFq92XPhLj7wZf0cFBEP7YVNscdhi+YqckU6DXSZzuV3BzASG109G1eqqm2f4eUJ/HLtNs89bh0Qg1grV7CT+8GHbS5QLF4UGhrhc7WlCACnXW1OmWRbFHrVbgVcZ66EOORap1D2Tdyz8/ZEjbBnbENMD8JXvHGpjCE462E4xTa7y22cuDRwrm+uSbOqxycClEvPNQ5tv0g5rah7RZgyb+adr2PbQngQ8C6jgbmnodQ0nJs3xH7xFQD7c3GVFARzYQaJKP8AQ74w8tRZn2hD3s87JV7iUW5ESkgvcUgBY4+GS6Fm/0Ext7w==|920

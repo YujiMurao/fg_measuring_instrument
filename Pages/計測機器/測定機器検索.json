@@ -116,14 +116,14 @@
           "DesignLengthInPixel": 12.0
         }
       },
-      "24": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 40.0
-        }
-      },
       "23": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 22.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
         }
       },
       "25": {
@@ -182,8 +182,8 @@
         }
       }
     },
-    "Count": 36,
-    "DefaultSize": 12.0
+    "Count": 44,
+    "DefaultSize": 22.0
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -368,7 +368,7 @@
                       "Value": "使用可"
                     },
                     "Params": [],
-                    "ID": "d630839c5fbf43918fd9b5a26ec60872"
+                    "ID": "83fa0be2106f409ebe90fe9856a157a5"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -383,7 +383,7 @@
                     ]
                   }
                 ],
-                "ID": "cfc07190-fd76-43b2-bf0a-fae1e43a33c0"
+                "ID": "dcd046c2-8885-4b39-b944-d9293fd2e9d0"
               },
               {
                 "CommandList": [
@@ -398,7 +398,7 @@
                       }
                     },
                     "Params": [],
-                    "ID": "486dd71117794547834ebb368cf43387"
+                    "ID": "0e7db68338104398bb4dc72afc0ab950"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -413,7 +413,7 @@
                     ]
                   }
                 ],
-                "ID": "0fb80f1d-b45c-4131-9c6d-5f1271f97679"
+                "ID": "24077a8c-bd5b-4687-b8ac-1493d49a380d"
               }
             ]
           },
@@ -1022,10 +1022,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "21cf37bd1f514ee2bed49105ad99d51c"
+                    "ID": "af7e6d4460424d1f8bdcba17f41a3289"
                   }
                 ],
-                "ID": "804a58c1-8d06-4411-9f35-7a1b111e3bd8"
+                "ID": "13bca1b7-1140-4b01-b447-d324081c8c2d"
               },
               {
                 "CommandList": [
@@ -1223,10 +1223,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "83f3053236c743249ed50fac435a8ef2"
+                    "ID": "6f7137ee2b9448618e0360a2221178a2"
                   }
                 ],
-                "ID": "98464d9e-0ced-4210-a9e3-a369248fba95"
+                "ID": "a92bb0a1-7101-4a91-b527-94121e6d3ece"
               }
             ]
           }
@@ -1352,7 +1352,7 @@
               }
             },
             "Params": [],
-            "ID": "5d49956ac4e84a52af7ba29efab57388",
+            "ID": "494a0717c73c4ffb9e481a99e8024b43",
             "Disabled": true
           },
           {
@@ -1394,10 +1394,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "bded02075b854bdeb23dd419803d4e0c"
+                    "ID": "86368bc887544f95ae934b2d8e262619"
                   }
                 ],
-                "ID": "6b9bd5d4-9c9d-480d-a5b5-cdd19e79d932"
+                "ID": "28b8b836-d8d8-4ea1-b87f-7e5434169d84"
               },
               {
                 "CommandList": [
@@ -1422,10 +1422,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "9f8bf7a4d6ef416eb615d4c016074450"
+                    "ID": "b885cdba9ba54adb9347a6fd50755345"
                   }
                 ],
-                "ID": "c66a7f80-d779-45c0-901c-7c9053f36eae"
+                "ID": "c8e442a3-8d52-4f80-8482-a5ea395cf6ba"
               }
             ]
           }
@@ -1481,7 +1481,7 @@
         "TableName": "trn_insptool_tools",
         "RowIndex": 23,
         "ColumnCount": 76,
-        "RowCount": 13,
+        "RowCount": 21,
         "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
@@ -3553,7 +3553,15 @@
       "32": 65,
       "33": 65,
       "34": 65,
-      "35": 65
+      "35": 65,
+      "36": 65,
+      "37": 65,
+      "38": 65,
+      "39": 65,
+      "40": 65,
+      "41": 65,
+      "42": 65,
+      "43": 65
     },
     "SheetStyle": {
       "FontFamily": 8,
@@ -3612,7 +3620,7 @@
     "17,66,2,3",
     "17,60,2,5",
     "21,66,1,3",
-    "25,0,11,76",
+    "25,0,19,76",
     "23,0,1,4",
     "23,4,1,3",
     "23,7,1,3",
@@ -3648,7 +3656,7 @@
           "Value": "使用可"
         },
         "Params": [],
-        "ID": "cdc0e66fa29f4da8acaa9332c4e3bf9b"
+        "ID": "1f08b18ce1f0409bbad82e08acba8168"
       },
       {
         "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -3668,11 +3676,10 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_insptool_tools",
-    "PageResponsiveMode": 1
+    "RelatedDataTableName": "trn_insptool_tools"
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//4YFuaxlQOjcKGJR7BCLiGlx2v5VL063OeJ4r3b/IQ1SFELAb4jzsmMXvyiuWw/ZZGVq7WwtZrGLiuwgG3W7KNQ9l4LvMu+5UteBKPRKVcd0wVvb4JnUFwtUtQHzVVMkG0et9+mWHfsQYjsNODqwrRSMUvP80b17yKIflyWTTSRNk3TUiC7JbZRWJy494IeuKtMf6VV0tnLFOhdabFABX1eIj+dUefx5ZBFTcr1GB1YdLW83JCVuN+ZR5YhkCAb30L9GfUEPxvj44uw/TLtci2tHDAe9N4Q4jBml7tXNQrxOFcdo4UGZ5snsC6+EtWBMJVZf9Bxxc+FYWU1QmhhwLzZokEdBiizv4sjQTDH1MY5BQobOcoz6IfdsAySs0DyqOqC1PXsevAugMGqS7l9txGZ3yF1kiUdnM9+wLp2jRr2JvqA30M7Ex6Dkjp8QosNZAZGW2MEoArJHVMqIcs0gkXDnDq2yx168TU8kCdM9jNvCJ9wvDInxwHgLikyPZvfDNw7Tar2PXCJkJBsShpzIkC+cRh21KDalPyzydIPCGPOTKjK/qMDqttbhTsusIp0/Nix30uxslQgN2wZ2MPDRRq3BC6ttysv06F2JBlOxNSkJjhjcvSPbhysAZEatKQUiFt94rnlnAIO57BH2mPbvJ5KWpkwtlUOHtPxbCaKx9jPFPGTOJD8d4MLZrP0dF6KBTJjW3JJukNEyPLoI+DcCgThLSTTS3o9xDK8O/LegG+Hc4xZaEfrXA9ST1ge6pS7DtCNHTeLDCkmVhdty4AUzWnn3lRauIBVrQK3cISzk8j7RJLajYAjjC/e+h69aqkhgUM/In2DOyTQp+/dEneJk0MVzpl1DWxKnZP+co5aweiTTw6kZg2FvBndK+RabAGX/s1YljmDOV9ekiTHXGEYe0jg==|920
+}//2av/Bogaf7/44dlWg0tDr3lDKNqaWagXVFlZsQ5N+tDCOyZyqWP/iCTrJTNGzk0GvWgobyo50AwKHWrY89PdzygGpngZw86JgEH7zCW4onE2zc4Cl/miCMaTWS1RjnRBGiuZlcWnJ+hk4qTfnwzFWvhL6f15MnRzfFeGGaqkJq+hGJavdgkTmB4xXgZ6V4db3b6igilymA0XSE+v4fwB/gu9HHP/iq/IQX4Qd8A0pfJPKxFkdG16mm6WsHZoTN6tLMw6TDbui1XCldnQmeIUlVNY51aJ3F0TsR7vAZHJS54Zj8nYbC9rMdwyHD7eKnMkQ0s7Atfba+jI5ZdXSCrdU1A3mIDrMppxP+vWQytcT0bN/Gh1/zHTuyn/Ft1gThHEUCcbxZywUirDeETVwiGeItK8n5WCJkINd4mMO8O4sp1TODvuzs3/lxD/6wo/rnPKme7j4K1bASVTfQBmOtN8vtYcEXWwHgiXFO27cDRTf16AUdpQJmAavw8H58/MSVUGXVigw3mXBdiZWPmAwVipQc6nGE8J4rItplVzIES4vT9D6CN7k8eLuiZo/Hj2+pAoNENssvq7cKmuruCh9rdCGq6lkFifW2+GeRBe9CWL9e+rJtMTDCyyl9Rq87jeGmIz7oNeRk0gojYmPEl0ki9cpVRk98Y7R6lr4deSHUX4Zo5dFXFxJl2KyGqvoo5n2xcRgtDk4NWR4QnA9+bGhJEHDp0dirkkqQV9dyT9boYNrkB3E90EJ7lbfFutWAm8d3t6U7AHwEPKgINV/0F3de3soM/B9xM2thbtwA9mjpYFva6z/VbQY6OziHXFaKipMtctPPFEMfeXbCX6CXYfQi6PzQQwLCsV3WAaqgkZfVGk7/FzU+NoKHQwQqtpjzFLToUFeT64aYpvJKY68LyFsB84qg==|920
