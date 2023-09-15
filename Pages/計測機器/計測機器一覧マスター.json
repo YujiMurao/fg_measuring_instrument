@@ -169,18 +169,23 @@
           "DesignLengthInPixel": 70.0
         }
       },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 70.0
+        }
+      },
       "34": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 75.0
         }
       },
-      "33": {
+      "35": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 70.0
+          "DesignLengthInPixel": 75.0
         }
       }
     },
-    "Count": 35,
+    "Count": 36,
     "DefaultSize": 80.0
   },
   "Values": {
@@ -214,7 +219,8 @@
     "1,29": "校正通知日",
     "1,30": "校正有効期限",
     "1,31": "通知日",
-    "1,34": "ファイル"
+    "1,34": "ファイル",
+    "1,35": "校正要否"
   },
   "Formulas": {
     "1,2": "COUNTA(A4)"
@@ -382,7 +388,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "20d486c3-b82c-48c0-98cc-d9a9add9f49b"
+                    "ID": "d317de00-9bb9-4162-aa4f-f0cc350a8c9e"
                   },
                   {
                     "Condition": {
@@ -418,7 +424,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "3827fda2-9050-4dd1-8768-8f94b3a40bf6"
+                    "ID": "7c537e7e-4375-4e89-9bb6-093044e2b294"
                   }
                 ]
               },
@@ -443,7 +449,7 @@
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_tools",
         "RowIndex": 2,
-        "ColumnCount": 35,
+        "ColumnCount": 36,
         "RowCount": 40,
         "AllowEditInListview": true,
         "ColumnOperation": 2,
@@ -663,6 +669,12 @@
         "TableName": "trn_insptool_tools",
         "ColumnName": "添付ファイル"
       }
+    },
+    "3,35": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "Yes_No"
+      }
     }
   },
   "StyleDatas": {
@@ -753,7 +765,7 @@
     }
   },
   "Spans": [
-    "4,0,38,35"
+    "4,0,38,36"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -771,4 +783,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//4n9GsbNnhHfnSAenw5vaBweYeOVFfwSSJLN5OUWSztXSgBN0WD0JaIFPaeEJZaba8ieVrDyaKQeXc/+crcmWCRuMHB3kKOHmd06JcLg+KXGlc9wItdR8LUy2jGNtKSs4ILXf/BiAvBwHdcA5l8UBuP7RjXSAvmVFVlDogXGDxjl8R8lcMxRQvTgyf6xp21hH0d2ctEU23kHugXYBFm3gMy8359n8QrX4/JLN54DJeq8mOwaYJP1X9HjpxwY7tnH/H3q4Nt8+QpUV995tM3Dntu6c4zqE2mCeAZSuCocaVqOVAM3FXdvOXhXYLPHUojJLBhcQb08ZXWHIRFgMpRSnNFKQNJoLqJ3E21G5HaemflUBKIUWx8xbAeFX/Rvj6kmMly59lcNZVfC7lXlQxTJrE0n9etwcgdQXa4VSdAwm7X1LN5xVNJ7leypS3Et2KXWZQaR0j9QSeP4L/9Ka2f6yMmHaknLY3I5vhP6RAi/SFKY4iRKha7XXzC/omXUn457qgktZyn+iEPyBwOdE67nApelp9jF9UjYAGj8L7zq51ClOKQC8EHFKe6h1zcmXmgcshssYRHIq40R4rm/9E8pL8pek/z6vr8naFc4IBb690Ds4SMHUhTQ+6lM285rMsv66bYk63iHqQcqpE9NKTx5UdBxYqFs/wmFE1anfMIWdPjartkVP10Rhc5Tn2v979lWkgJqpOzhrT+a/gw/BizMIrnuLc3oSEna4MnbRefFNeHSYOXhhF/rV4bFSpq0KrIpNhUkpJ+7X8DYXOLVbzyrRqPbWrsIfGspMVNVN/V6VL2wwX0orEdQ9C3+/HYQoURmHSXHhS6KCYzLzCyGbXWO8Jlo7PgFCZOgdxBj0Y72eXqt9YTxnmrdbMENb3LqDch0OwkipnSXUixB9p7D4YqW0UA==|920
+}//b/5b/MC8WKJRm9BvpnG1ppnzn+AfXMN++H5ZWbZvfuSxGARBVhg4l1ZBcrA9YPBBUUKtfhEWIGRM5Z/UbxA64A3cq4Ji28V5MIIe35DgTClygtntINbO7Ep7T2yqmsUQEM9Vl5XNTm++4B6jDUwwcIsGBlDmkmR1eHrNAKEqXyXex3BhVKpbnj3lEnG6fq07Jdmua9o30tmfFWjMX2qvvYzddPiAM/lymCNf55395syYBGarAh88b78Iz/Tb+zHkYgE4xJ7dQFuSJVv82EpbwZL9VZs6fPEDNV3Mu9iVUaHV5n5zw9DrcPSTLViP/PqhjxTmJbOxWO59s2gz0AQ4Y12Hs71FB24y296sJxV7v/wTettVXbd9R+xagyEbjybsv7LmITelqcctfp1s2VNkGYNO1Iq0e9dng2TyqomNY/Wgj5hL6L6YBZPkQ+k7KR5qjxGBE4nTrGWN4j/U4JB4Pvf53GU7fZ8y43o8gbzYxv+S4KyvrXDzDZNW9aIYsM+msQgiSbPucXiY6N5WDfbbqweWeRq1+ZJq3PDmw7eEdtPYaeYn3q7Luer9FxDy8RJIzujDmLXMXoJCl3KjDn4G6HbIDPtVYFmueLkQkv/6nEZINUzTHyNbxZFrdnr2aV2PcEJOy//yv3wMl8nq8Zt4EOL7DGWumLcU/KfTeKvk6fg0ra5QmEn5evTFARusSDSRcYID+gs9u7lUssSZfVHn3On6tGrSOAa126lpvKO1w7PJMiHJxGrVgX260YpUeDDbg6HNwSrg6HGrYFtdJVjduN3Vf322Z5KrHX1pHMIuyQ2gQOKo0uhASkVTCKm87x71gUmm4RqEjZFK6IgACq0/aLFzHRYv0WDCKQMB1xloHTQnPRQ+CyOOrgzkGf8oD5xo2tg4bQ4CEb7LGyZsiEb+mw==|920
