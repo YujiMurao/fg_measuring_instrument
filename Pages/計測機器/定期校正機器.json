@@ -36,6 +36,11 @@
           "DesignLengthInPixel": 24.0
         }
       },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0
+        }
+      },
       "8": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 12.0
@@ -54,11 +59,6 @@
       "12": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 22.0
-        }
-      },
-      "7": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 12.0
         }
       },
       "36": {
@@ -204,7 +204,7 @@
   "Values": {
     "0,0": "条件を指定して検索",
     "2,0": "出力内容：",
-    "3,39": "抽出条件\r\n・社外校正\r\n・禁止理由（以外）：廃棄、故障、紛失、移管、不整合\r\n定期校正＝11月1日～来年10月31日\r\n校正切れ＝～10月31日",
+    "2,39": "抽出条件\r\n・社外校正\r\n・禁止理由（以外）：廃棄、故障、紛失、移管、不整合\r\n定期校正＝11月1日～来年10月31日\r\n校正切れ＝～10月31日",
     "4,0": "管轄：",
     "4,5": "本社",
     "4,64": "校正対象計測機器一覧()_校正有無確認",
@@ -212,7 +212,8 @@
     "6,11": "～",
     "9,3": "登録数：",
     "9,8": "Excelエクスポート",
-    "11,0": "管理№",
+    "9,61": "Clear",
+    "11,1": "管理№",
     "11,4": "使用可否",
     "11,7": "種類",
     "11,12": "名称",
@@ -424,10 +425,10 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "b98add4f8e0a4dbab604a99f64b1e63e"
+                            "ID": "299395287ca74d9993d5d33109a4ddde"
                           }
                         ],
-                        "ID": "7592e8b1-6bfa-4401-83b6-0ebb745199cd"
+                        "ID": "4ff590b8-302c-4ce2-90f4-3f9c079dc013"
                       },
                       {
                         "CommandList": [
@@ -552,15 +553,15 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "ef98c42751744e3893efd6cefe8f58f1"
+                            "ID": "5c91f8bf30f241c08f10d424556f1abd"
                           }
                         ],
-                        "ID": "271e0785-3101-4bdf-9a7e-f5e8b13c38af"
+                        "ID": "adfe9a68-45ca-4f43-859f-ebd98671e63f"
                       }
                     ]
                   }
                 ],
-                "ID": "a23bfdf1-6f02-4ec4-9493-f440c96ce3c4"
+                "ID": "2f01ccb9-4151-42ae-9d29-ff6d813dae07"
               },
               {
                 "CommandList": [
@@ -707,10 +708,10 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "ef69572939bd4920a96ed9ee4c5df855"
+                            "ID": "941e931060814ab989fa9bf9a0dd0322"
                           }
                         ],
-                        "ID": "5001c0f9-9caa-4008-beab-ef82faa44d51"
+                        "ID": "19045c15-6e08-4201-96c8-06153ca7bf81"
                       },
                       {
                         "CommandList": [
@@ -819,22 +820,22 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "a041ca7a11b74b1e928ffd02903d34bc"
+                            "ID": "bb21abdafb8242e19c47a3b9dc2388dd"
                           }
                         ],
-                        "ID": "a818904e-ff62-4ee0-b51b-adb632a2d19f"
+                        "ID": "95cb89e0-fd0a-47cc-88ff-4c889672e073"
                       }
                     ]
                   }
                 ],
-                "ID": "2491c643-d2a9-48fb-967d-f3cc8beda2f2"
+                "ID": "37c4cd2c-c6be-4e06-8d38-f15a74123191"
               }
             ]
           }
         ]
       }
     },
-    "3,39": {
+    "2,39": {
       "CellType": {
         "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
@@ -1034,10 +1035,10 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "6918da86a2c54a5ead8056400698e67d"
+                            "ID": "5fcb2b9b32a64c7faf9679b09f5679ef"
                           }
                         ],
-                        "ID": "80f3b389-c650-40bb-accf-cb5253b0553b"
+                        "ID": "9893ebbe-b732-44ce-8fdb-447c2c1cabfa"
                       },
                       {
                         "CommandList": [
@@ -1162,15 +1163,15 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "ba65938c793441478da0c023019131bf"
+                            "ID": "f468625568f04ec1abe5e7c71af56665"
                           }
                         ],
-                        "ID": "5ec3dc7d-5b6d-4e9d-8b20-c346bc30be10"
+                        "ID": "2db41a66-0231-4eb7-94ba-546a0b6ef337"
                       }
                     ]
                   }
                 ],
-                "ID": "92448dfc-95e3-4d39-b4f9-75e83b30d931"
+                "ID": "cbbc8352-43f8-4ea7-b604-f5c327def872"
               },
               {
                 "CommandList": [
@@ -1317,10 +1318,10 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "90af723164db4e8ca4892278a68d5e62"
+                            "ID": "b081792249a44ac7848469de9878cd76"
                           }
                         ],
-                        "ID": "c6826b92-847b-4c2b-b764-fb4fcfaf8b91"
+                        "ID": "9943bca2-0b71-47a3-a55a-9676d6958373"
                       },
                       {
                         "CommandList": [
@@ -1429,15 +1430,15 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "e1a45345d81d4af2bf59faffcba89b16"
+                            "ID": "8fb15d3753d0433f8c0fa7450b2852c0"
                           }
                         ],
-                        "ID": "d45e3924-e1d6-44ea-811f-2bee8995d721"
+                        "ID": "b2ab31a6-cff4-45f0-9832-a746ed7abc69"
                       }
                     ]
                   }
                 ],
-                "ID": "e5ef2ba0-8586-4886-a9e7-08e4baa57db4"
+                "ID": "dd10e9ab-0e4b-425c-bb88-ab477a463b23"
               }
             ]
           }
@@ -1633,10 +1634,10 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "383ca8c68708429d8fb84cbfbdb6ab05"
+                            "ID": "0f551bb814fa4f51bd35f4baad194be7"
                           }
                         ],
-                        "ID": "9c8573e5-2e4a-4a31-a975-301e88a548cf"
+                        "ID": "f21b6086-90f4-421d-9f74-a8ecc7a14d64"
                       },
                       {
                         "CommandList": [
@@ -1761,15 +1762,15 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "bffd06a97fac42bd8df5ab9df058e799"
+                            "ID": "23afc5afc0bf4ea9af2207cd8392716e"
                           }
                         ],
-                        "ID": "77e81a8b-b9f6-4a54-ae1c-04600e31825d"
+                        "ID": "858cb383-3e6a-4e33-a92e-19f217581057"
                       }
                     ]
                   }
                 ],
-                "ID": "bad69586-5b1b-467d-aff4-746c2ed04395"
+                "ID": "6d86ddbc-59e7-4cf6-a26c-6af9fd2318e2"
               },
               {
                 "CommandList": [
@@ -1916,10 +1917,10 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "c8f49c9518774c95ba1fdb4693f4d098"
+                            "ID": "2a32f00e1bfe46cf8651965bf6841945"
                           }
                         ],
-                        "ID": "90677164-7150-42b2-aea3-23ddf9e465cb"
+                        "ID": "58e8c856-016e-43e9-ac91-fc4fa5470e5b"
                       },
                       {
                         "CommandList": [
@@ -2028,15 +2029,15 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "378d01e6b0d245f8a1b72abfa9ae25d0"
+                            "ID": "08096faa26694d42a6518a545f28a875"
                           }
                         ],
-                        "ID": "62568d73-b5b8-4e7a-b878-9d0ad75216ab"
+                        "ID": "ebc4db09-7b62-475f-91e8-b3d485f2bdcc"
                       }
                     ]
                   }
                 ],
-                "ID": "8225202c-05b0-43c8-915f-cb4e11015f04"
+                "ID": "92e0fca4-a74b-467c-8d45-628cbf2c61b9"
               }
             ]
           }
@@ -2229,10 +2230,10 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "480da2d24a6d49b2a950cd47b88af492"
+                            "ID": "e0e0de24ae534d1fa0280e63850c2916"
                           }
                         ],
-                        "ID": "c714e673-6dea-408c-bf7d-c4e6623f9fb6"
+                        "ID": "172bba3e-679d-43d8-b48c-16411df8c0f6"
                       },
                       {
                         "CommandList": [
@@ -2357,15 +2358,15 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "d3d79b64270d4763b980835286c86d7a"
+                            "ID": "487529e2c04a45a287fdb59849793883"
                           }
                         ],
-                        "ID": "ffc6aa33-06d3-4867-a8c0-6dd40e74b45d"
+                        "ID": "9505a932-659d-4029-a7be-b5e2b32ba13f"
                       }
                     ]
                   }
                 ],
-                "ID": "96d34c35-4d3b-4706-b871-1e67e77863e6"
+                "ID": "089d82f7-d606-47f5-a0ce-0e3f310766ae"
               },
               {
                 "CommandList": [
@@ -2512,10 +2513,10 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "ccf617d8a1f14960b154cda897e32254"
+                            "ID": "dae50a8d99b3470b98d2f12b56811e56"
                           }
                         ],
-                        "ID": "223dbdb9-bee5-4888-9ee9-554f05f23173"
+                        "ID": "c9fef14e-1e0d-42b3-b1cf-3ce358ebf883"
                       },
                       {
                         "CommandList": [
@@ -2624,15 +2625,15 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "e2dc5da2e77b4645bb72383efb298125"
+                            "ID": "8e1514293ba54a2eb0d234520aaa635e"
                           }
                         ],
-                        "ID": "7a0f449b-ec13-427b-b635-57451d84df23"
+                        "ID": "1a366cf5-d232-4c6c-a369-32af2adb0060"
                       }
                     ]
                   }
                 ],
-                "ID": "be47ecba-1df7-4498-b9d3-d38fe00de2fe"
+                "ID": "537be430-9d6a-4e75-a57c-2fc98b786db9"
               }
             ]
           }
@@ -2688,7 +2689,7 @@
                             }
                           }
                         ],
-                        "ID": "e69ff58e-b9d7-41e2-a7db-dd0bc1d284e4"
+                        "ID": "181f1332-0af0-462b-84fa-af6e10f9dd9a"
                       },
                       {
                         "CommandList": [
@@ -2703,12 +2704,12 @@
                             }
                           }
                         ],
-                        "ID": "0d312a9e-083d-48c6-8485-f63df9239643"
+                        "ID": "12ddac7f-a4e5-4cf9-9f0e-4d7b6e86c2cd"
                       }
                     ]
                   }
                 ],
-                "ID": "284dfd4b-f939-4c8a-a749-3035de624dee"
+                "ID": "f4c3ec1a-8dc5-4020-be87-21a85bf77c10"
               },
               {
                 "CommandList": [
@@ -2740,7 +2741,7 @@
                             }
                           }
                         ],
-                        "ID": "43aed55e-5821-492d-8754-f62b4d5c2af2"
+                        "ID": "13c9a262-f8a6-4b91-b073-668d27f4aadd"
                       },
                       {
                         "CommandList": [
@@ -2755,12 +2756,12 @@
                             }
                           }
                         ],
-                        "ID": "a112191f-d18a-4308-a963-dcf77a43acd8"
+                        "ID": "bcc5345b-1939-4c46-9256-80e546a770f4"
                       }
                     ]
                   }
                 ],
-                "ID": "d1e7dd85-2d03-4f6f-b26e-c73c4ba0738a"
+                "ID": "eed9df31-e27f-43e9-9299-a3632a2283f3"
               }
             ]
           }
@@ -2774,6 +2775,28 @@
         }
       }
     },
+    "9,61": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "trn_insptool_tools",
+            "ShowConfirm": true,
+            "ConfirmText": "校正要否データをクリアします。本当に更新してもよろしいですか？",
+            "RowsToUpdate": 2,
+            "RowsToUpdateListViewName": "リストビュー1",
+            "UpdateValues": [
+              {
+                "ColumnName": "calibration_enabled"
+              }
+            ]
+          }
+        ],
+        "Text": "Clear",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
     "11,0": {
       "ListViewInfo": {
         "ShowColumnHeaderInDesigner": true,
@@ -2781,6 +2804,7 @@
         "RowIndex": 11,
         "ColumnCount": 64,
         "RowCount": 26,
+        "IsRowHeaderCheckBoxVisible": true,
         "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
@@ -2857,7 +2881,8 @@
         "ListViewStyleName": "_RS_Medium2"
       }
     },
-    "12,0": {
+    "12,1": {
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "ctrl_no",
@@ -2942,7 +2967,7 @@
     "12,62": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "Yes_No"
+        "ColumnName": "calibration_enabled"
       }
     }
   },
@@ -3110,17 +3135,22 @@
         "BorderRight": null
       },
       {
+        "FontFamily": 5,
+        "FontSize": 14.666666984558105,
         "FontStyle": 8,
         "FontWeight": 8,
         "Foreground": null,
-        "Formatter": 2,
+        "Formatter": 11,
         "TextIndent": 0,
         "HorizontalAlignment": 6,
-        "VerticalAlignment": 9,
-        "WordWrap": false,
+        "VerticalAlignment": 12,
+        "WordWrap": true,
         "Underline": false,
         "Strikethrough": false,
-        "BorderLeft": null
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 5,
@@ -3152,24 +3182,6 @@
       },
       {
         "Formatter": 2,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 5,
-        "FontSize": 14.666666984558105,
-        "FontStyle": 8,
-        "FontWeight": 8,
-        "Foreground": null,
-        "Formatter": 11,
-        "TextIndent": 0,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 12,
-        "WordWrap": true,
-        "Underline": false,
-        "Strikethrough": false,
-        "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
@@ -3414,6 +3426,14 @@
         "FontSize": 14.666666984558105
       },
       {
+        "FontFamily": 5,
+        "FontSize": 13.333333333333332,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
         "FontSize": 13.333333333333332,
         "HorizontalAlignment": 9
       },
@@ -3655,17 +3675,31 @@
       "2,14": 16,
       "2,25": 12,
       "2,26": 12,
-      "2,52": 12,
-      "2,53": 12,
-      "2,54": 12,
-      "2,55": 17,
-      "2,56": 12,
-      "2,57": 12,
-      "2,58": 12,
-      "2,59": 12,
-      "2,60": 12,
-      "2,61": 12,
-      "2,63": 12,
+      "2,39": 17,
+      "2,40": 16,
+      "2,41": 16,
+      "2,42": 16,
+      "2,43": 16,
+      "2,44": 16,
+      "2,45": 16,
+      "2,46": 16,
+      "2,47": 16,
+      "2,48": 16,
+      "2,49": 16,
+      "2,50": 16,
+      "2,51": 16,
+      "2,52": 16,
+      "2,53": 16,
+      "2,54": 16,
+      "2,55": 16,
+      "2,56": 16,
+      "2,57": 16,
+      "2,58": 16,
+      "2,59": 16,
+      "2,60": 16,
+      "2,61": 16,
+      "2,62": 16,
+      "2,63": 16,
       "2,64": 18,
       "2,65": 12,
       "2,66": 12,
@@ -3704,7 +3738,7 @@
       "3,23": 21,
       "3,24": 21,
       "3,25": 21,
-      "3,39": 22,
+      "3,39": 16,
       "3,40": 16,
       "3,41": 16,
       "3,42": 16,
@@ -3741,11 +3775,11 @@
       "3,73": 20,
       "3,74": 20,
       "3,75": 20,
-      "4,0": 23,
-      "4,1": 23,
-      "4,2": 23,
-      "4,3": 23,
-      "4,5": 24,
+      "4,0": 22,
+      "4,1": 22,
+      "4,2": 22,
+      "4,3": 22,
+      "4,5": 23,
       "4,6": 16,
       "4,7": 16,
       "4,8": 16,
@@ -3778,18 +3812,18 @@
       "4,61": 16,
       "4,62": 16,
       "4,63": 16,
-      "4,64": 25,
-      "4,65": 26,
-      "4,66": 26,
-      "4,67": 26,
-      "4,68": 26,
-      "4,69": 26,
-      "4,70": 26,
-      "4,71": 26,
-      "4,72": 26,
-      "4,73": 26,
-      "4,74": 26,
-      "4,75": 26,
+      "4,64": 24,
+      "4,65": 25,
+      "4,66": 25,
+      "4,67": 25,
+      "4,68": 25,
+      "4,69": 25,
+      "4,70": 25,
+      "4,71": 25,
+      "4,72": 25,
+      "4,73": 25,
+      "4,74": 25,
+      "4,75": 25,
       "5,0": 19,
       "5,1": 19,
       "5,2": 19,
@@ -3801,21 +3835,21 @@
       "5,8": 20,
       "5,9": 20,
       "5,10": 19,
-      "5,11": 27,
-      "5,12": 27,
-      "5,13": 27,
-      "5,14": 27,
-      "5,15": 27,
-      "5,16": 27,
-      "5,17": 27,
-      "5,18": 27,
-      "5,19": 27,
-      "5,20": 27,
-      "5,21": 27,
-      "5,22": 27,
-      "5,23": 27,
-      "5,24": 27,
-      "5,25": 27,
+      "5,11": 26,
+      "5,12": 26,
+      "5,13": 26,
+      "5,14": 26,
+      "5,15": 26,
+      "5,16": 26,
+      "5,17": 26,
+      "5,18": 26,
+      "5,19": 26,
+      "5,20": 26,
+      "5,21": 26,
+      "5,22": 26,
+      "5,23": 26,
+      "5,24": 26,
+      "5,25": 26,
       "5,39": 16,
       "5,40": 16,
       "5,41": 16,
@@ -3854,25 +3888,25 @@
       "5,74": 20,
       "5,75": 20,
       "6,0": 14,
-      "6,1": 23,
-      "6,2": 23,
-      "6,3": 23,
-      "6,5": 28,
+      "6,1": 22,
+      "6,2": 22,
+      "6,3": 22,
+      "6,5": 27,
       "6,6": 16,
       "6,7": 16,
       "6,8": 16,
       "6,9": 16,
       "6,10": 16,
-      "6,11": 29,
+      "6,11": 28,
       "6,12": 16,
-      "6,13": 28,
+      "6,13": 27,
       "6,14": 16,
       "6,15": 16,
       "6,16": 16,
       "6,17": 16,
       "6,18": 16,
-      "6,21": 30,
-      "6,22": 31,
+      "6,21": 29,
+      "6,22": 30,
       "6,39": 16,
       "6,40": 16,
       "6,41": 16,
@@ -3898,29 +3932,29 @@
       "6,61": 16,
       "6,62": 16,
       "6,63": 16,
-      "7,0": 32,
-      "7,1": 33,
-      "7,2": 33,
-      "7,3": 33,
+      "7,0": 31,
+      "7,1": 32,
+      "7,2": 32,
+      "7,3": 32,
       "7,4": 2,
-      "7,5": 34,
-      "7,6": 34,
-      "7,7": 34,
-      "7,8": 34,
-      "7,9": 34,
-      "7,10": 34,
-      "7,11": 35,
-      "7,12": 35,
-      "7,13": 34,
-      "7,14": 34,
-      "7,15": 34,
-      "7,16": 34,
-      "7,17": 34,
-      "7,18": 34,
+      "7,5": 33,
+      "7,6": 33,
+      "7,7": 33,
+      "7,8": 33,
+      "7,9": 33,
+      "7,10": 33,
+      "7,11": 34,
+      "7,12": 34,
+      "7,13": 33,
+      "7,14": 33,
+      "7,15": 33,
+      "7,16": 33,
+      "7,17": 33,
+      "7,18": 33,
       "7,19": 2,
       "7,20": 2,
-      "7,21": 36,
-      "7,22": 37,
+      "7,21": 35,
+      "7,22": 36,
       "7,23": 2,
       "7,24": 2,
       "7,25": 2,
@@ -3961,32 +3995,32 @@
       "7,73": 2,
       "7,74": 2,
       "7,75": 2,
-      "8,0": 38,
-      "8,1": 38,
-      "8,2": 38,
-      "8,3": 38,
+      "8,0": 37,
+      "8,1": 37,
+      "8,2": 37,
+      "8,3": 37,
       "8,4": 20,
       "8,5": 20,
       "8,6": 20,
       "8,7": 20,
       "8,8": 20,
       "8,9": 20,
-      "8,10": 38,
-      "8,11": 38,
-      "8,12": 38,
-      "8,13": 38,
-      "8,14": 38,
-      "8,15": 38,
-      "8,16": 38,
-      "8,17": 38,
-      "8,18": 38,
-      "8,19": 38,
-      "8,20": 38,
-      "8,21": 38,
-      "8,22": 38,
-      "8,23": 38,
-      "8,24": 38,
-      "8,25": 38,
+      "8,10": 37,
+      "8,11": 37,
+      "8,12": 37,
+      "8,13": 37,
+      "8,14": 37,
+      "8,15": 37,
+      "8,16": 37,
+      "8,17": 37,
+      "8,18": 37,
+      "8,19": 37,
+      "8,20": 37,
+      "8,21": 37,
+      "8,22": 37,
+      "8,23": 37,
+      "8,24": 37,
+      "8,25": 37,
       "8,39": 16,
       "8,40": 16,
       "8,41": 16,
@@ -4012,23 +4046,23 @@
       "8,61": 16,
       "8,62": 16,
       "8,63": 16,
-      "8,64": 39,
-      "8,65": 39,
-      "8,66": 39,
-      "8,67": 39,
-      "8,68": 39,
-      "8,69": 39,
-      "8,70": 39,
-      "8,71": 39,
-      "8,72": 39,
-      "8,73": 39,
-      "8,74": 39,
-      "8,75": 39,
-      "9,3": 40,
-      "9,4": 41,
-      "9,5": 42,
-      "9,6": 42,
-      "9,8": 43,
+      "8,64": 38,
+      "8,65": 38,
+      "8,66": 38,
+      "8,67": 38,
+      "8,68": 38,
+      "8,69": 38,
+      "8,70": 38,
+      "8,71": 38,
+      "8,72": 38,
+      "8,73": 38,
+      "8,74": 38,
+      "8,75": 38,
+      "9,3": 39,
+      "9,4": 40,
+      "9,5": 41,
+      "9,6": 41,
+      "9,8": 42,
       "9,9": 16,
       "9,10": 16,
       "9,11": 16,
@@ -4036,31 +4070,6 @@
       "9,13": 16,
       "9,14": 16,
       "9,15": 20,
-      "9,39": 16,
-      "9,40": 16,
-      "9,41": 16,
-      "9,42": 16,
-      "9,43": 16,
-      "9,44": 16,
-      "9,45": 16,
-      "9,46": 16,
-      "9,47": 16,
-      "9,48": 16,
-      "9,49": 16,
-      "9,50": 16,
-      "9,51": 16,
-      "9,52": 16,
-      "9,53": 16,
-      "9,54": 16,
-      "9,55": 16,
-      "9,56": 16,
-      "9,57": 16,
-      "9,58": 16,
-      "9,59": 16,
-      "9,60": 16,
-      "9,61": 16,
-      "9,62": 16,
-      "9,63": 16,
       "9,64": 20,
       "9,65": 20,
       "9,66": 20,
@@ -4122,9 +4131,9 @@
       "10,50": 21,
       "10,51": 20,
       "10,52": 20,
-      "10,53": 27,
-      "10,54": 27,
-      "10,55": 27,
+      "10,53": 26,
+      "10,54": 26,
+      "10,55": 26,
       "10,56": 21,
       "10,57": 21,
       "10,58": 21,
@@ -4145,43 +4154,46 @@
       "10,73": 20,
       "10,74": 20,
       "10,75": 20,
-      "11,0": 44,
-      "11,1": 45,
-      "11,2": 45,
-      "11,3": 45,
-      "11,4": 45,
-      "11,5": 45,
-      "11,6": 45,
-      "11,7": 45,
-      "11,8": 45,
-      "11,9": 45,
-      "11,10": 45,
-      "11,11": 45,
-      "11,24": 45,
-      "11,25": 45,
-      "11,26": 45,
-      "11,27": 45,
-      "11,28": 45,
-      "11,29": 45,
-      "11,30": 45,
-      "11,31": 45,
-      "11,32": 45,
-      "11,33": 45,
-      "11,34": 45,
-      "11,35": 45,
-      "11,36": 45,
-      "11,37": 45,
-      "11,38": 45,
-      "11,39": 45,
-      "11,40": 45,
-      "11,41": 45,
-      "11,42": 45,
-      "11,43": 45,
-      "11,44": 45,
-      "11,45": 45,
-      "11,46": 45,
-      "11,47": 46,
-      "11,53": 46,
+      "11,0": 43,
+      "11,1": 44,
+      "11,2": 44,
+      "11,3": 44,
+      "11,4": 44,
+      "11,5": 44,
+      "11,6": 44,
+      "11,7": 44,
+      "11,8": 44,
+      "11,9": 44,
+      "11,10": 44,
+      "11,11": 44,
+      "11,24": 44,
+      "11,25": 44,
+      "11,26": 44,
+      "11,27": 44,
+      "11,28": 44,
+      "11,29": 44,
+      "11,30": 44,
+      "11,31": 44,
+      "11,32": 44,
+      "11,33": 44,
+      "11,34": 44,
+      "11,35": 44,
+      "11,36": 44,
+      "11,37": 44,
+      "11,38": 44,
+      "11,39": 44,
+      "11,40": 44,
+      "11,41": 44,
+      "11,42": 44,
+      "11,43": 44,
+      "11,44": 44,
+      "11,45": 44,
+      "11,46": 44,
+      "11,47": 45,
+      "11,53": 45,
+      "12,1": 46,
+      "12,2": 16,
+      "12,3": 16,
       "12,4": 47,
       "12,7": 48,
       "12,12": 49,
@@ -4198,6 +4210,7 @@
       "12,54": 16,
       "12,55": 16,
       "12,56": 48,
+      "12,62": 20,
       "13,62": 54,
       "13,63": 54,
       "14,62": 54,
@@ -5032,7 +5045,6 @@
     "12,47,1,4",
     "12,42,1,5",
     "12,33,1,7",
-    "12,0,1,4",
     "12,12,1,12",
     "12,40,1,2",
     "12,51,1,5",
@@ -5044,12 +5056,14 @@
     "6,11,1,2",
     "6,13,1,6",
     "4,5,1,8",
-    "12,62,1,2",
     "9,8,1,7",
     "9,4,1,3",
     "13,0,24,64",
-    "3,39,7,25",
-    "11,0,1,4",
+    "2,39,7,25",
+    "9,61,1,3",
+    "12,62,1,2",
+    "12,1,1,3",
+    "11,1,1,3",
     "11,4,1,3",
     "11,7,1,5",
     "11,12,1,12",
@@ -5079,4 +5093,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//BJIG8xA1rIhJgiDIqCkEjDdj1Ph76xmY54h5p+0nxbRUYW7VJ3uorVVQwHBNVk+dGGmmIgFl2dqEtrzahI/4RluS2Rb5D+Z6+5m7DOgutbWFJHRb0wlrcP5L1XauhkWCBbT7u8v2u07d15sN4sBrfOTl79m+maYpX4eG3mCydoji41CNjX3A2/IK1WE9bSLym86itBmYzwrcAMi9rsWieXRvMKiN7pEBnnOJSTdbTCe0KhR+9W8XYAwHL6LYZul+JbIMbSn5TbWAhD0zzku7iIWP5IuEyC6W6VZUkbDTupPIFye/4WLF6RByDJMmEkd3St8d6f65M9LOlRo/kbgct0EEmQvCECPdGsTOH/5x6KbUJunZNmfN6wWNBKlTqo6eat9bKQR7gYs1vvYySr13yTAM1oYXosXc2worRM2uMTuxO8nSIILEuVS7WJ7VcgTPQ+7e6P9GekpVJ5RYA6lyd6/m1LwCZp5esxQccpS5lTyhCNoTT5O90NtgNPbVw4Jj0TfWP8Me5toU7HB6dmIeaoLTwQilbCknoCKbqwUSOPmkrOXZN1iz5vmiQs5W702aksrJX+VSlWhVrdK7q6zpUI9K9Ex56RUHWEhhBh2Asdtj6AffEOomKKPckE/428hiYthUcaH00M533zg/MACSA5FMfxcxjErm52xPKQgbEfPP+6W5qx/2CF1L6ZIiTn/U7fgTW7sbsRTRZaVzCPwsn+Svp723LljqDOR/IOiPAJQzTIzI0d5m7+qxjdokgZ27ie9nRoff4sUIHL1bQMVb7AQk8swsgdb56K0Y6bHoVxxIoJSJkWKeVadfGVH+ug1m1WsD6dN9Jhatn9kegnsGs3q7X3C7HvqApzjliG+CUgdrFcuCJVb9MtloHt/Y0aNGwwqwTXcOSikmgkmb4CLr4Q==|920
+}//nHerEJN/khJ6/7/XxW1hl2BFO0d7FcMyUtGIFdTmNhqJpdsWCiMnldhBvP4rcEy0vjVE23iBKd7KcpNg1aS5NbZZWiyTWFejEyXw0oUHPbpltqGhsRgRQk2v9ikVpPbz0ytxEig0KROBympngyxffbuU273jQDsRhLGQqEZEm2FBUiELZNu2E6hRKKNHNbQbRaQJSZ+nuJ/bdYAMxhoDWkzfz/fGh+IfiSZd7iozwzYdJFI5V1UlTrPp40/rR4uGq60D0BLBbSrcCLlkINZXdoQasHPRB9p8XO+vd9nR29whlWpNOM4/KZqnrhrs5V6544Fb77+MYUzHzWPjRRju4ywEZrKV9W21sjegkmOfd4KZKD5aTiS0t70tP+EnjvjgiwsFaukPfG3HU8/j94LBZZ35dP+LExrIyZwfN8eBqg5KySegWXzE7m6kXFZ06IsJKQLY2pUXU1cXRuIHMB2UkA1mo+2sorKyMD3jhjzcXu7viasTZFKjBcohUia9RYzLWCKhjXBhI+44cOLDdZuKnHaiIkgOV8RxNmDtIJ2qALK4svpaXOrhH5qPUkGI4gqWDCr2qilgibfhIKc7ykjKDh4QghKJJ+ngFw2JUy8YJNecS8E25yAeZy+84PfhEXY0oPIg3KIC/A9jDpU+j44cbhEAFUzkfTp4UagEMfV597De9E/tCK7sOJ5pQmdHNZMIdxSRCjxhwxUohLzXEYWgKTWency5Lo4zOIHACalIkp/+O0pddw7bTCX/FrlQ36m+0wzjW7rT2UVx/vsY5tvEfdSO6F6y981pagvKOzDOo+3SaPZeFTGFKpJpw6J1nd2IVGTgB+lorhZdbKqUTFX7EWhgdRyEbYPPLh/oyXjYZKsz683NX/RXEYILrgbH2e6z4CjMTQVUxd3IigFSV7tLyQ==|920
