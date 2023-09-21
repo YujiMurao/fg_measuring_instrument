@@ -377,7 +377,7 @@
                       "Value": "使用可"
                     },
                     "Params": [],
-                    "ID": "568de52ed44d471fb2024d46c9ac213e"
+                    "ID": "833a55684ade46df9675b05be2ebe318"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -392,7 +392,7 @@
                     ]
                   }
                 ],
-                "ID": "cb7013d7-efd7-4414-91a4-dc66aeb79181"
+                "ID": "3827360c-3a68-47fd-801a-226bd4aa865a"
               },
               {
                 "CommandList": [
@@ -407,7 +407,7 @@
                       }
                     },
                     "Params": [],
-                    "ID": "828e3c6705b64b7998229d2d924f6666"
+                    "ID": "db4d108ea0d146559c7cdc56d3d74f53"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -422,7 +422,7 @@
                     ]
                   }
                 ],
-                "ID": "f510a3b3-e8d6-4837-9a7f-a8e0ca3a25a2"
+                "ID": "c5d241a3-b8c1-46b0-b71d-d3f73c8908ed"
               }
             ]
           },
@@ -529,13 +529,17 @@
             "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "指定値から始まる"
       }
     },
     "7,11": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "指定値と等しい",
         "IsBounding": true,
         "Items": [
           {
@@ -571,7 +575,9 @@
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
+        "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "指定値と等しい",
         "IsBounding": true,
         "Items": [
           {
@@ -598,7 +604,9 @@
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
+        "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "指定値と等しい",
         "IsBounding": true,
         "Items": [
           {
@@ -624,8 +632,11 @@
     "10,11": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
         "MaxDropDownItemCount": 10,
         "TemplateKey": "_RS_LightLine_Translucent_Normal2",
+        "WaterMark": "指定値と等しい",
         "IsBounding": true,
         "Items": [
           {
@@ -662,7 +673,9 @@
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
+        "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "指定値と等しい",
         "IsBounding": true,
         "Items": [
           {
@@ -689,7 +702,9 @@
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
+        "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "指定値と等しい",
         "IsBounding": true,
         "Items": [
           {
@@ -715,7 +730,10 @@
     "13,11": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "指定値と等しい",
         "IsBounding": true,
         "Items": [
           {
@@ -751,7 +769,9 @@
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
+        "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "指定値と等しい",
         "IsBounding": true,
         "Items": [
           {
@@ -778,7 +798,9 @@
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
+        "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "指定値と等しい",
         "IsBounding": true,
         "Items": [
           {
@@ -805,6 +827,7 @@
       "CellType": {
         "$type": "Forguncy.DateCellType, ServerDesignerCommon",
         "DisplayFormat": "yyyy/MM/dd",
+        "ShowCalendarScrollBar": true,
         "TemplateKey": "_RS_LightLine_Translucent_Normal2"
       }
     },
@@ -812,6 +835,7 @@
       "CellType": {
         "$type": "Forguncy.DateCellType, ServerDesignerCommon",
         "DisplayFormat": "yyyy/MM/dd",
+        "ShowCalendarScrollBar": true,
         "TemplateKey": "_RS_LightLine_Translucent_Normal2"
       }
     },
@@ -997,7 +1021,8 @@
                           }
                         },
                         "Condition2": {
-                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 2,
                           "ColumnBindingInfo": {
                             "TableName": "trn_insptool_tools",
                             "ColumnName": "ctrl_no"
@@ -1031,10 +1056,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "a88553cb8c6740ec9d8eddf2683020d5"
+                    "ID": "4b9ade457a54436b975f57dc0b373c4c"
                   }
                 ],
-                "ID": "9d5cce4f-f461-4cbd-b4bc-94a5329f8b9b"
+                "ID": "99ffd926-5b62-4979-9f0c-1d3b0841ab11"
               },
               {
                 "CommandList": [
@@ -1232,10 +1257,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "2ae60b8e2ca9468d883f4a0450fcbd07"
+                    "ID": "68fb45740a1446f6ab1ca8b764bf9137"
                   }
                 ],
-                "ID": "aecd247b-9463-4e95-bf67-d6dad09c5c49"
+                "ID": "fd5368fd-8f03-40e4-a9ac-18a91153aa1d"
               }
             ]
           }
@@ -1361,7 +1386,7 @@
               }
             },
             "Params": [],
-            "ID": "b44cfcf14e3446589fbe15a53b623600",
+            "ID": "2277508b41734249ae133412ee3c8151",
             "Disabled": true
           },
           {
@@ -1403,10 +1428,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "167f38cb662742f98040a378da5257f7"
+                    "ID": "3fe9f26515ca4c96a8c097893eb18ede"
                   }
                 ],
-                "ID": "ad8d0d1f-888d-4b15-add2-f9780efe27e1"
+                "ID": "d376f08d-672e-46d7-900c-f4818d43678b"
               },
               {
                 "CommandList": [
@@ -1431,10 +1456,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "eb53742495eb4cd5bcd82828e9a94207"
+                    "ID": "654f5bdb985446288a98abe8078c9f07"
                   }
                 ],
-                "ID": "d17f247e-23e1-4c7d-8c36-b0d28bee06c8"
+                "ID": "43a126cf-951a-4e06-ae50-19a779a7e8d7"
               }
             ]
           }
@@ -1650,14 +1675,30 @@
                   "SerializeProperty": "=測定機器検索!K25"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=校正履歴!I2"
+                  "SerializeProperty": "=校正履歴!L2"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!BZ25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=校正履歴!BB2"
                 }
               }
-            ]
+            ],
+            "LoadBindingDataOption": 2
           }
         ],
         "Text": "歴",
         "ClickMode": 1
+      }
+    },
+    "24,77": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "ID"
       }
     }
   },
@@ -3697,7 +3738,7 @@
           "Value": "使用可"
         },
         "Params": [],
-        "ID": "22ba3c6e8ce84671b2915558507266cf"
+        "ID": "2ea51ee720fe4c048ee50ee9c2378933"
       },
       {
         "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -3723,4 +3764,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//gZd2lwEbbLnYv/9r/J6cl9L6HgDKsD11yA+0pdiWlfwLL3eL+4JFMGEAUnpSfKfRUa4woJXLZ+dEPRvirwWOcQA3arqRfNtd4iSyCl4OSoqj5BWe9ZYKo34PuH+Yapk5418MSNVjNZtS9Y7JiPDmxHTxXwMaWK6xTkZxbX93JaslIDtA3SxS1tMkMfJogd64f76SSwbqj3IUkZ6ifeTfr9x/CEOrTioOxC7C1Hz3wlhCey0wEd1po+zj9lAWXN6Ior50syR6nEo6fc7chgkscOvQWWfu3hQdU/UG1yqLPAZiWa9eLjqCzBkE01xbexSUBRp3xY0exWH1pCkSnWaZO6Zyx8/vm2e9oATMgCmmvbmqlKWorfJFkNajqiU7MZdKm0eOEQ1ucjz/WKW4i5GfZksoB81XSM5nFeSvRDnOgj2mv45i/B4DXkzw7U3Mo/52FDzhoGAPg+Pn0SAjYOosoIHp7AuV2QKAA1qkZ4yd9J9UO1HNTun1Y25ho0YR/2f1j17hk6NMl1DNVgwAqQQGHJRE9t1MR5f8J07c1L1UwjvgWg50z5mLPLMNPcEPbJZ5JoNzGKsNX0vUVSdHTvGk+AcuD/6Q7PY2Qi2diZEXQ32wTsngq1cDIdL92LwOD+3g1SmYxtXCxEk//UNhpCHmUWm9yzi9SOWvT5mHJy8LhA6T66y2sHuZ4RUi/K7bI2zcpiAjnGXrXqhDYuCpmBztwb2RdeIMO34Wy4lg5nL2D4cCG5XzbVI8/i+lWSRa+/za/NT5ZXxogrGjazvTnmDPHuZvx8pUKgTzlCi6ygYajaq9pVfBJe67v9hIsw+WUhS14LFUjL2Z9F+Yrue8IRlfZefHEEbURQ/zF+otUImY8K6xCI0wEFtoeQqev1mG+xP5iPtrsp0p143eeKKriOZpnw==|920
+}//yqNx/bSFp/+AhKws8JjiWX1pnjVcUMd9bdycA3BJNVJZywN2Z0PxDbTm/zZroMcgRZr3hfuTpKIUy9Kzie/XQ/xpHTv4IMRLkmDAr0iS4PZ/9U7lU9YNUjzsCmXQ1XIoRNDKfYX5eqfomXe63KTIcj/y2vZENODpul+5Dc2owz0hujuHYy3G5VcbwNx0oBizwqd6qolh2Ex0/d4AcdZfZ1quEPKutnN2uJhiLt388zL40e/8gMj0Ykk/7iyzutSTUU5KgE/pTiWiF1opzN43gh8Edd1e4eQFr4KtKunWWebvqCyIH/17OsPN30NYPzZuLqz3fMsy8O9ZNyajrb6O/LdKaMx6urRuU/Hu14hZK2IfzO2PcwK1/a8byy/pX64luHczdUhlYmZYaHEflw92lXkdmEWBSStEC4uV9EQdBIa3aXsiNLM3oYXwhXNUtiiytOLFBq7BcX44O13p6EwsyMPC6CquRXVihtq9FQ4JPgCAydDGj+lnmM8s0Zn1pKCMO9fWjCF2t7T3klZ/33I4WUuqmsWmiizGBYdeEQAjZiYfLBjW1AE0ZXdri1danVXkwhQTabmnNNkeOSb4zt4pNE9UT+7MqLMITNmCnYKWh5Iaybi9c+QLbLrJL5FsFRGqC6tTOk0LG/N/mnHusp6XdlYt5//Qy7x3GI9xNuM0f1MsTDbpjxjbMX8OoLad5WUqrqEfxDoqWxotyw78FFnrG+b6XvC1evrCcheifFBJ4zSUIHWNMIYAeZuFHuXm1zapL6doaK0lC48QExQVIC2xAu1nZi/q+oOkNd8PiHfJ0XSP2VjrEaxs2e4+lt75xwR26WPLSzCTwSj+/Yya6fFBrrPlT/UORsCTEz0Cvv0uk9b1ilw0XMRpucmegfPY/UQjnFYu16t6pQmHmwN8tYhelg==|920
