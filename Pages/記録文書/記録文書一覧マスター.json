@@ -1,39 +1,71 @@
 {
   "Rows": {
-    "Count": 27
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      }
+    },
+    "Count": 40
   },
   "Cols": {
     "RowColumnAttachedInfos": {
       "0": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 30.0
+          "DesignLengthInPixel": 40.0
         }
       },
       "1": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 100.0
+          "DesignLengthInPixel": 90.0
         }
       },
       "2": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 248.0
+          "DesignLengthInPixel": 318.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 143.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 104.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
         }
       }
     },
-    "Count": 7,
-    "DefaultSize": 80.0
+    "Count": 9,
+    "DefaultSize": 90.0
   },
   "Values": {
-    "26,5": "OK",
-    "26,6": "キャンセル"
+    "0,1": "登録日",
+    "0,2": "件名",
+    "0,3": "メモ",
+    "0,4": "添付ファイル"
   },
   "AttachInfos": {
-    "0,0": {
+    "1,0": {
       "ListViewInfo": {
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_certifications",
-        "ColumnCount": 7,
-        "RowCount": 25,
+        "RowIndex": 1,
+        "ColumnCount": 9,
+        "RowCount": 39,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
         "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
@@ -45,104 +77,170 @@
         "ListViewStyleName": "_RS_Medium2"
       }
     },
-    "1,0": {
+    "2,0": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "id"
       }
     },
-    "1,1": {
+    "2,1": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "registration_date"
       }
     },
-    "1,2": {
+    "2,2": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "subject"
       }
     },
-    "1,3": {
+    "2,3": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
-        "ColumnName": "FGC_Creator"
+        "ColumnName": "memo"
       }
     },
-    "1,4": {
+    "2,4": {
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
+          "ReplaceWhenOneFile": true
+        }
+      },
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "attachment"
+      }
+    },
+    "2,5": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "FGC_Creator",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 1
+        }
+      }
+    },
+    "2,6": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_CreateDate"
       }
     },
-    "1,5": {
+    "2,7": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
-        "ColumnName": "FGC_LastModifier"
+        "ColumnName": "FGC_LastModifier",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 1
+        }
       }
     },
-    "1,6": {
+    "2,8": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_LastModifyDate"
-      }
-    },
-    "26,5": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
-            "PassValueBack": true
-          }
-        ],
-        "Text": "OK",
-        "TemplateKey": "_RS_Normal_Style2"
-      }
-    },
-    "26,6": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
-          }
-        ],
-        "Text": "キャンセル",
-        "TemplateKey": "_RS_Normal_Style2"
       }
     }
   },
   "StyleDatas": {
     "Styles": [
       {
-        "Background": 0,
-        "Formatter": 1
+        "HorizontalAlignment": 0
       },
       {
-        "Formatter": 1
+        "Background": 1,
+        "Formatter": 2
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "Foreground": 3,
+        "Underline": true
+      },
+      {
+        "FontSize": -1.0
       }
     ],
     "Types": {
       "Strs": [
+        "Center",
         "Accent 1",
         "yyyy/MM/dd",
+        "Blue",
         "Body"
       ]
     },
     "CellStyles": {
-      "0,1": 0,
-      "1,1": 1
+      "1,0": 0,
+      "1,1": 1,
+      "2,0": 0,
+      "2,1": 2,
+      "2,4": 3,
+      "2,6": 2,
+      "2,8": 2
+    },
+    "RowStyles": {
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 4,
+      "18": 4,
+      "19": 4,
+      "20": 4,
+      "21": 4,
+      "22": 4,
+      "23": 4,
+      "24": 4,
+      "25": 4,
+      "26": 4,
+      "27": 4,
+      "28": 4,
+      "29": 4,
+      "30": 4,
+      "31": 4,
+      "32": 4,
+      "33": 4,
+      "34": 4,
+      "35": 4,
+      "36": 4,
+      "37": 4,
+      "38": 4,
+      "39": 4
+    },
+    "ColStyles": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
     },
     "SheetStyle": {
-      "FontFamily": 2
+      "FontFamily": 4,
+      "FontSize": 13.333333333333332
     }
   },
   "Spans": [
-    "2,0,23,7"
+    "3,0,37,9"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "masterpage",
     "Title": "記録文書一覧",
     "AuthorizeInfo": {
       "VisitMode": 2
@@ -156,4 +254,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//gDmjxaRl+WsdEfuRGUPhuFpVDlXBDNTbst3oQqsV+D06I9G5gHBpEygwkhdpEB8mA4AL6M9s3SurFffGUqq7XGiDXZMgXA8vYa0uct+vPe9YU2LlKnLmuScne3fHF+rKhYeZffTru677ARYhcE/8ob4MDcx8Bk0PKmh+8ONFKCfad8Xlt0V0qk+Q/93KMDuB5HsSLmKLHLBUduquZm2E9fVCK1X57GhY+fXhkJ7RbZt3bUvlBZ4JKSVBePE2lONcBzQwYsTzpcyBaSPv+j5qqojdM9qyXblASLZyketUy44QqBT+dTOG4xD0Bp8UM6P2qGFxAN/ncmGeBM+k8eWywSrtXEdTXRUw0zO6K7BL1VTYLAChwApdSFlq+EKO/EtMpVWYTYoCdn97z3QAPOmzAmMxzd7mYnSa4k5vih4LdblNiqUS2K9oX4KpXCGDX+btNeq7hnH4rkXcgm8WCRhCsDKU4yx51msEyz2K+QBmraQD3IhXu3Jn2eTbdMSzB7NszlDJAIlAxk0nWAPQBXc8RyitFd1QOVLm1nyMmWPfd4k8sfrQcPE69QFZHTjyoYzGM0zEFW1LIQTG6jldnMxU3PWxzuV/7m3EF+GjMHKzM25puPk/mdfu995TUlL5BYVjRjkftC8TccoZYBiGAYi7jFna8tfqLpcsp+f57qZvxvl5gYhehsVFujRXxf3+2+SiwN2O3v10CXDoTTGcg5K2OMd1NZ/k29c8zp8j/+aLSKgwfhbPt+SYZ79TqiyYPehGKnb2iK7i8lSxGlgZQTCRQHFC+2yDpRbUwkVZvLdoyEXo3sBnMrSnUe0cKTDsR1lZ6YKes1qwHDdGXSU4Byl0GS4YzttCPR9f9duW7bV2i3ShTCP1CVzihKyWDjKhpx3Gl4GCib+XdXlXo6RRiV26Kw==|920
+}//LooK7yv1XExsuOZT7FvILNwffxz0T1iefCpW9Z/EQm0jkGazZlM/KLed7shFL8hGp3WqnXjAtEnBNJ7oH1931XmCRcSl/z7qGJ6r2oFGJJgvF8hLUOJh3sWVd4+xogo30rqDKBeTYecTSvO5FMFYqisfkFj4WlufKbRzZi3NggQf0MWBkVbhxLr8muBZCOaWeWGpoT7lCOsDa6Ro37rkLNN8j8ncrkYsjbwK/wP4dsl8zpJG3SWD5zpNh2NcwOxkHXpevnGRzs8NLlye3f7yNpMJJ2pX54zd2p3JX2zrX28ocO2gvMTSV2CWycosdHL+DOM/jcWLYZCHBnWGA3E44kGZai27XFXAE1FXL9w5kG+/IZJn4HHrwgCA530j91WZ7tP7TOcbbEAS9kFgP9joFuvjmuaT3zmuXZjQR5wo7V2+mosRySmSymmNS4Oy3rBeBFHRAzCg/k+8hJL5rrsVVnxCB+B2lDOiln6i9wRkmWKwgwsYeUqIDSLgrZBrSYVxFkfk5ZcJFprc3bMetnOJuDGNPDfWwTr/xsPfhHSJGRv7NZr800xrsm81QOkaFLNI8V7ruoKoEnfapReLza9GZo9pC9yVoG/Qwl4iDU9au3gOiBQhRCNueeiQTps9qM6fNGf/t+aFavHFydSI9G75hgaSmHMk5Etv8xRQ3K7Oxi2pEc/14HnifwvNWCeaoRiPTSdIsG3PgsXJPwbGrDrXVTfX3ji2Hz74RnuE2W3t+SnDF04wQNVGNwUATpDv7A9RkvW747auxySfNHSV/tU61hgdrFYhxEgXNJlkgH+0KZEv2oLvnUnjVjZ7lYojiC+n/Be5zmj/m3XJZdUOlBRz6LROUcGB4uOjupYkLyU5v6mFGgmINNcYqZKC4WTzX1M7+20QPvMgvp5EkSQpnJ9a5g==|920

@@ -200,13 +200,13 @@
     "27,2": "条件を指定して検索",
     "32,1": "管理メニュー",
     "34,2": "定期校正対象計測機器",
-    "36,2": "記録文書作成",
+    "36,2": "承認依頼リスト",
     "38,2": "管理番号マスター",
-    "40,2": "校正対象機器",
+    "40,2": "記録文書マスター",
     "42,2": "測定機器一覧マスター",
-    "44,2": "校正・修理・廃棄履歴一覧",
-    "46,2": "承認依頼リスト",
-    "48,2": "テスト"
+    "44,2": "校正・修理・廃棄履歴マスター",
+    "48,2": "校正対象機器",
+    "50,2": "テスト"
   },
   "AttachInfos": {
     "2,1": {
@@ -246,7 +246,7 @@
                 "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
                 "TargetTableName": "trn_insptool_tools",
                 "Params": [],
-                "ID": "d89dfe29b30d49b2bcce4f5802fd3a69"
+                "ID": "a2ff817eca1d4bdda6da14571b42790e"
               }
             ],
             "CanVisitRoleList": [
@@ -270,7 +270,7 @@
                 "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
                 "TargetTableName": "trn_insptool_tools",
                 "Params": [],
-                "ID": "9c8860b55e13454b819bbbc93d1cb86e"
+                "ID": "e72fb3608c58470d94d9801b1948cf11"
               }
             ],
             "CanVisitRoleList": [
@@ -301,7 +301,7 @@
                   }
                 ],
                 "TargetTableName": "trn_insptool_tools",
-                "ID": "d4f8dc8ec6fb48bcaf336f2e693088ba"
+                "ID": "7afcf668d0394727b81b9eb1f9aa79dc"
               }
             ],
             "CanVisitRoleList": [
@@ -373,7 +373,7 @@
               "Value": "使用可"
             },
             "Params": [],
-            "ID": "e2e22cd571c24b10941e47d2fa24636e"
+            "ID": "efe791141eab4d7c8bfcb6259dc23ec8"
           }
         ],
         "Text": "すべての計測機器",
@@ -408,7 +408,7 @@
               "Value": "%CurrentUser.UserName%"
             },
             "Params": [],
-            "ID": "b2f70cca90a4499ab04c2cdbcf5f7fa6"
+            "ID": "096279cdfe5240ebaf5f461a772aa3f6"
           }
         ],
         "Text": "定期校正対象計測機器",
@@ -427,7 +427,8 @@
           }
         ],
         "Text": "計測機器履歴",
-        "ClickMode": 1
+        "ClickMode": 1,
+        "IsInvisible": true
       }
     },
     "25,2": {
@@ -444,7 +445,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "74dae30aef184295bcb61ccdec3f0c7d"
+            "ID": "a268377bdf7f4284ac2e3a41569a45fa"
           }
         ],
         "Text": "すべての記録文書",
@@ -466,7 +467,7 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_certifications",
             "Params": [],
-            "ID": "bc0ba6cc891946b489648196c2e47d28"
+            "ID": "9316fb5d77144da9b9d6887a0aab369c"
           }
         ],
         "Text": "条件を指定して検索",
@@ -498,7 +499,7 @@
               "Value": "社外"
             },
             "Params": [],
-            "ID": "731c02e188eb4e7685d774edf1ab5c32"
+            "ID": "fb4ed031e9c34226a64f603d391cb872"
           }
         ],
         "Text": "定期校正対象計測機器",
@@ -512,31 +513,39 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "addoredit記録文書",
-            "PassValues": [
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=masterpage!C37"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=addoredit記録文書!A11"
-                }
-              }
-            ],
-            "IgnoreTargetPageCachedCurrentRowInfo": false,
-            "LoadBindingDataOption": 2
+            "PageName": "校正承認リスト",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_insptool_tools",
+            "TargetTableName": "trn_insptool_calibration_history",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_calibration_history",
+                  "ColumnName": "FGC_AssignTo"
+                },
+                "Value": "%CurrentUser%"
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_calibration_history",
+                  "ColumnName": "FGC_State"
+                },
+                "Value": "申請中"
+              }
+            },
             "Params": [],
-            "ID": "2c5420b5bea94e97bfa9ca0bc7c95bce"
+            "ID": "bd5efba1b0064f909ad541fa9bfba332",
+            "Disabled": true
           }
         ],
-        "Text": "記録文書作成",
+        "Text": "承認依頼リスト",
         "ClickMode": 1,
-        "IsInvisible": true,
         "TemplateKey": "_RS_Normal2"
       }
     },
@@ -555,6 +564,53 @@
       }
     },
     "40,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "記録文書一覧マスター",
+            "PassValues": []
+          }
+        ],
+        "Text": "記録文書マスター",
+        "ClickMode": 1
+      }
+    },
+    "42,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "計測機器一覧マスター",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "測定機器一覧マスター",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal2"
+      }
+    },
+    "44,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "校正修理廃棄履歴一覧マスター",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "校正・修理・廃棄履歴マスター",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal2"
+      }
+    },
+    "48,2": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
@@ -612,7 +668,7 @@
               }
             },
             "Params": [],
-            "ID": "5b9600fe8474481ea869578ddc935a1e"
+            "ID": "e604fdd5917b443bb9cfd3815812a235"
           }
         ],
         "Text": "校正対象機器",
@@ -636,82 +692,7 @@
         ]
       }
     },
-    "42,2": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "計測機器一覧マスター",
-            "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false,
-            "DeleteCachedQuery": true
-          }
-        ],
-        "Text": "測定機器一覧マスター",
-        "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
-      }
-    },
-    "44,2": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "校正修理廃棄履歴一覧マスター",
-            "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false
-          }
-        ],
-        "Text": "校正・修理・廃棄履歴一覧",
-        "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
-      }
-    },
-    "46,2": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "校正承認リスト",
-            "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false
-          },
-          {
-            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_insptool_calibration_history",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-              "Condition1": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "ColumnBindingInfo": {
-                  "TableName": "trn_insptool_calibration_history",
-                  "ColumnName": "FGC_AssignTo"
-                },
-                "Value": "%CurrentUser%"
-              },
-              "Condition2": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "ColumnBindingInfo": {
-                  "TableName": "trn_insptool_calibration_history",
-                  "ColumnName": "FGC_State"
-                },
-                "Value": "申請中"
-              }
-            },
-            "Params": [],
-            "ID": "5f6fad37b69b4b91af12a7fea27e3bf2",
-            "Disabled": true
-          }
-        ],
-        "Text": "承認依頼リスト",
-        "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
-      }
-    },
-    "48,2": {
+    "50,2": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
@@ -1278,7 +1259,7 @@
       "39,65": 4,
       "40,0": 4,
       "40,1": 4,
-      "40,2": 10,
+      "40,2": 13,
       "40,3": 4,
       "40,4": 4,
       "40,5": 4,
@@ -1362,7 +1343,7 @@
       "45,65": 4,
       "46,0": 4,
       "46,1": 4,
-      "46,2": 10,
+      "46,2": 12,
       "46,3": 4,
       "46,4": 4,
       "46,5": 4,
@@ -1390,7 +1371,7 @@
       "47,65": 4,
       "48,0": 4,
       "48,1": 4,
-      "48,2": 15,
+      "48,2": 10,
       "48,3": 4,
       "48,4": 4,
       "48,5": 4,
@@ -1418,7 +1399,7 @@
       "49,65": 4,
       "50,0": 4,
       "50,1": 4,
-      "50,2": 12,
+      "50,2": 15,
       "50,3": 4,
       "50,4": 4,
       "50,5": 4,
@@ -1584,4 +1565,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//BdHwZmyQ+O/yMDgCPFsxjWnq71c+RZsTr+TuY21n3bxzcTwB2qxVr6BuPALyhy0rfFZeCBicF35JSajT+nY+LdLNuSBzwsV08mxmnUDD52bi7Qo4i1Xf7QKOF+3gr4l7yoXnkm4BYKRKCrjCJHKZyMRbyZMjj8S1md87C2+/775oPWl3+nay8ONJukggyiEqPal1JuA02d99qHuGhW3JAU96GB7sl7M1RnRj22ObPCaHuqifVtEZ/7Ei2yIzqlFd80Ir/bpTBY1NC8dq/EBxUT2mP6UWwWnJU4Vc0GDSDSx5xYxsj9gYoGQEMK5vuMDdMpCrn3Xf5bmdO5jgMOC+O9reQqteLZZAOR24SyTAp7pJKi896yX6rc0306AL9vnn8ZJV4fgT0jf3mak1GBq6m1RTgkAY3Any3Xte/oOzHRdOciD0tlQp4ENFy12Fcxb0cc+7JUVAYdsqAzQ2ESM0cHkfzGQwWCx6mQVPaYIO2Unmg/lzf5B/ssxSipGk2ybklclHSQpRrqK/9ecP/KCk0rLQyZiFtARGmnbMeUEKhrZUI81phpC5/nvavB9nxPVY5qSbxjlhjuqzXLVk2woY0aT9+sJGxuhYiKoezBx6CydcvqGnM8BxIEM7ao/FqhBONByWnRUVreRU/jwatIlK22B+/40Q0gRxU10/ec3DU4BtXwAT50U//Lp3t3wXr2FRWUGHNfmHePzGxjvKlmAJlrfxgBzKetkGxWJFFNxrJvORH+upN+VsLdF4z1oBjs1hHo2idmC1cdrs6hJgg6O7Gm5u+I+DN1Rh5xC7/3K9MOBseFfp571GGwSsKsSlgmP5f59iibdeCU0/g7xl59vByFtKiiZOWGk0XfKMacngIDhLEqg/Fk3sU+ZJ5hVWycn7kB4vEuMc/44sNo6uf5wJ2Q==|920
+}//gEvz9E7m2JDmY2x7HgWh6IblvnS/tKi8KvKphcvo9Ys5meL/fzv4PCrpZhO7pA7cQWPqiChKu8m9qCIgBnD+l8fWqmKInxprGlgjtVbi8ihqFAFdsE1rScYu8663U9GosZOMBuZhPNo1gZwVTZJbfS2XfVzwlgRglnL1iBIgHKLnGEmmHbW6y5KX6RMYsAJYWmpOixg8Pzkr/b4rI5RodjVKNM7U2Ut7sHWeVmA+t4whhoqHGmo2F2EyS05KkCyXrGeOzYojfI6RTIaKUWsXo6uHVUt5XPGnC/8jiait98/o7zgzatbCOrknJ33f+MwKbrbX3SDgMOrBesw6nKDlFaeWLjlvdoEqkc0ywFpF6DfdUzAynOOmk1nbQvUHeTJkJYTlJmke/1Zo7TGfM/gNwCeBLQUIwVha3EwUtx8yr57efVL6rXYPROAsEwsjAKYJQOUichCbSDm4Rnj1aiyhXVFo4qfk1+DmRH/m+GqCDPbyTzo737gZ6w1jbXuu3Soco9tYcu+oKRqAEIHpl8CVwOboOYAD2XE3ZDzwPX+ixWWP59p9cWAxKNPgcu1HovFpEG12mDf0fHTpa2w/ODMqjDQ9nQeuxTkIUyAUOoi79tZXbkFjT1Kupxjkx1PwTLBPnXX2/Y6HlPygyFy36beizy9fsK9bzn/rNmkbxrJ4r803vg6BexmV3g8CUiI57hdjsbxLWRyY+frYuIiD2fzT+v60p0Bf/KHOLiTarojx9MqSW3/jEgGKY3Q1IxmfZI6jHqeyaig+5yEJqTU+V1afEdMhxwGJfhVYq94Bc0horipHWF6gogvAMTz8i9pooapyeHMpGX7pa26fJgyKIPbBFyK3FFJp7Kc9KJgJ7JhJVhHqmWkURdAhO05q0bPfl297uM5RT1O8JL+PSGAz1Z40Wg==|920
