@@ -144,10 +144,16 @@
     "36,18": "RJ0169",
     "36,23": "西江 文洋",
     "36,28": 123456,
-    "36,32": "RJ0163\t",
+    "36,32": "RJ0163",
     "36,37": "藤井　義貴",
     "36,42": 123456,
-    "37,18": "ユーザー名か氏名をクリックするとログイン情報が設定されます。",
+    "37,18": "RJ0216",
+    "37,23": "小畠　充人",
+    "37,28": 123456,
+    "37,32": "RJ0052",
+    "37,37": "日隅　広志",
+    "37,42": 123456,
+    "38,18": "ユーザー名か氏名をクリックするとログイン情報が設定されます。",
     "39,18": "ビルトインページは、リセットできます。実際にアプリケーションを運用する際には、ページをリセットしてユーザー名とパスワードに関する記載部分を削除してください。"
   },
   "AttachInfos": {
@@ -1139,7 +1145,7 @@
             ]
           }
         ],
-        "Text": "RJ0163\t",
+        "Text": "RJ0163",
         "ClickMode": 1
       }
     },
@@ -1174,6 +1180,142 @@
           }
         ],
         "Text": "藤井　義貴",
+        "ClickMode": 1
+      }
+    },
+    "37,18": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!Z15"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!S38"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!Z19"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!AC38"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "RJ0216",
+        "ClickMode": 1
+      }
+    },
+    "37,23": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!Z15"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!S38"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!Z19"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!AC38"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "小畠　充人",
+        "ClickMode": 1
+      }
+    },
+    "37,32": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!Z15"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!AG38"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!Z19"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!AQ38"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "RJ0052",
+        "ClickMode": 1
+      }
+    },
+    "37,37": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!Z15"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!AG38"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!Z19"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン!AQ38"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "日隅　広志",
         "ClickMode": 1
       }
     }
@@ -1688,7 +1830,35 @@
       "36,43": 10,
       "36,44": 10,
       "36,45": 10,
-      "37,18": 7,
+      "37,18": 34,
+      "37,19": 10,
+      "37,20": 10,
+      "37,21": 10,
+      "37,22": 10,
+      "37,23": 34,
+      "37,24": 10,
+      "37,25": 10,
+      "37,26": 10,
+      "37,27": 10,
+      "37,28": 33,
+      "37,29": 10,
+      "37,30": 10,
+      "37,31": 10,
+      "37,32": 32,
+      "37,33": 10,
+      "37,34": 10,
+      "37,35": 10,
+      "37,36": 10,
+      "37,37": 34,
+      "37,38": 10,
+      "37,39": 10,
+      "37,40": 10,
+      "37,41": 10,
+      "37,42": 33,
+      "37,43": 10,
+      "37,44": 10,
+      "37,45": 10,
+      "38,18": 7,
       "39,18": 35
     },
     "SheetStyle": {
@@ -1750,7 +1920,13 @@
     "31,42,1,4",
     "32,42,1,4",
     "33,42,1,4",
-    "34,42,1,4"
+    "34,42,1,4",
+    "37,18,1,5",
+    "37,23,1,5",
+    "37,28,1,4",
+    "37,32,1,5",
+    "37,37,1,5",
+    "37,42,1,4"
   ],
   "BackgroundPictures": [
     {
@@ -1790,4 +1966,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//trz6GBNoyyCRKUaq1U0NNG8TJosPglbpEuybPqcXn+CkOALWknW6eQRs9LiL0twuby/Rjd/flu/I06iqSx/I0gtxK6RBD8/1laegPClzTPwJtkDJvSNq86OoHLlkwauF/4ZIUc2a8Ta0g2Xn/ow9udNBRDFddDz2DWnGDxG36WnWDD7vBG587OynfD7VqwATG+14pvHZS7HQrL06J+4/WlAxv0sa9Pis0HwW7a1AJEyeH7SZdDyoCUcLw11vrz6mLT4UB7lxgz9K7NKEUIGgULvP9jSaJ81DjpBV+xrZrsdAvxPDRho/qY+AxBQfx9zLjGU3DP+ZLY+gXrSaCN1dzTuFohTcbGhjwLwXxclmfhe1jlY02LPrLXgifH0L44/MocHB+a80EZN4RjoqrUCKif6UqYalUE7+ZFrLOBtR3eZiAommwEXxeRtaKNy+jAeXSboYE9ITT0jH8FdR2dknSw8V3MpiBfsK9AaVWNPWkd88kZQxvkjt55anyLxlyN3Rp/5ER9uLVXsBuYfkQUR17Wk8g8M4hoP0iNC3to+tVQbkEKrfe8T2egvDAub9u6yJ0EUNofvXz6JhoKia1Zupu8lF0/xIvMjOPVmlzMhl897ILMfbBzPkVjBJ3tbiMNbQjkmVKnn7nOMon2qN02bb+zP/Vj/i2H2NWNzOaVe/7DVPFWe0Kpzho6IUjk3X085cOiHQMraV2bzVrXzn5WXgsdSB76jNfyM28dt625h7pIV20y//UnUsC1Hwd9pFdKNIQdbYFBHHkYj9sL+uHKxhM5s7b3HWqmfZUz319+aKH30GpnDpMIioE/flKKcQ7X0sSFFmePkOx5ilT8P3k6/v8mXBVbs5i7Cw5TmC97OQs3GEQeWJuyp1V3WgXJ4vB0bhgOmMdqkmx+5yYa8k8lB+7A==|920
+}//9VkHF8MVpaLHwKJMspNZlHSBUFpBgvts6MRDyZN+RPt2jXtOdh2zec7wxjiZpuN3XkxIsiQFSi35dkr2YRk4U8G/SWIq94/ZZLHqeG5/fGzHz/KC/U/UrCXWLcB2uNmlXiAaLwKktDhTvMSCP6QYk7HhVvn/DFnfn95BKwQvG2MCL9riZOWZVunIO8nJTSI7+Y5yJpwicSPi1NmlgSVPKv0Xz1Zj70BYZU2VyspTbWwJVoBmUn2BQYDudRdDdVHk++P3CMLmDjjnBep/Eb1dOKaDNh5BElKuqZnfQZZ/gdJQDHoqOED8rVTVtT7WsL2n5YWxXd4FeS1zybWdZ2i7qOqOhprQVtnGiVeMo6z9wR5vSAJwHuXxUQhvcnHvIEq58vJ9X+i8nqA8UhhPSlZ53x+edBQm/3Z8WbEMNXzKzm77y95HGDpe0aAS7CGT1N7qqPj9B6gjkOpUasQHzxZFa6AXL08uBAaQEh9+EB0SZL5QgisAfBwO7bPjOoWOJGiXY3rMvEL9LI8biyYl7gNKW+4TMVwFKq0xVHqOYalTPoaFyQD3Hhj1xQfqqj8UXlKzcm3TjE55JJrBALrFYtvvULXEvHFyPgk6lLQFU90W8A9pamcA5LlKBKg6lGDU7iPeQLQpVX/6jqEuMCOKES0jEwShOyjm/AIpZ5v1unwQATaqshdEbO0GKoIzvzd/3oej6KERI+j65SEvbcGlf85f0cyEEbul3qEoWWH81X5Mwh01rSy5zNuqQsIiMd6MZuS+/gfk65ZAVtgrjFU2sOn7zfR0v+C16Q9KU94I045JTKB3WHssiyLIT14iEbrLd/jCgOkM6epmFs7jPYIfa5IpC16KpZT3yL9iRDS/SqeR6p4OtTEi7K+7vOwoNpoTDeo4Mv1B8TjBfD/rs4pKX63VZA==|920

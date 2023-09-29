@@ -289,13 +289,19 @@
       }
     },
     "InLogicalVisibleIndexes": [
-      77
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83
     ],
-    "Count": 78
+    "Count": 84
   },
   "Values": {
     "0,0": "条件を指定して検索",
-    "1,21": 1,
+    "1,21": "使用可",
     "5,0": "管理番号",
     "7,0": "管理区分",
     "7,22": "種類",
@@ -312,6 +318,7 @@
     "17,58": "クリア",
     "21,0": "Excelエクスポート",
     "21,15": "計測機器新規登録",
+    "21,28": "コピーして新規登録",
     "21,57": "登録数：",
     "23,4": "使用可否",
     "23,7": "状態",
@@ -341,14 +348,14 @@
         "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
         "NoneItemText": "＜なし＞",
         "Style": 1,
-        "CellDefaultValue": 1,
+        "CellDefaultValue": "使用可",
         "Items": [
           {
-            "Value": "1",
+            "Value": "使用可",
             "DisplayValue": "使用可アイテム"
           },
           {
-            "Value": "2",
+            "Value": "全て",
             "DisplayValue": "全てのアイテム"
           }
         ],
@@ -382,7 +389,7 @@
                       "Value": "使用可"
                     },
                     "Params": [],
-                    "ID": "8e653cd09a8d429cbd0523e05d87fa9e"
+                    "ID": "e2ec4b9cae624bdcbae91d2c54982b54"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -397,7 +404,7 @@
                     ]
                   }
                 ],
-                "ID": "9669b40e-f30a-4c43-9ecc-898096ec5a53"
+                "ID": "5bbc387a-b3c4-400b-b22b-fea42a3e3c1f"
               },
               {
                 "CommandList": [
@@ -412,7 +419,7 @@
                       }
                     },
                     "Params": [],
-                    "ID": "993ef631ca40401a9a7e7f2d4f0df5b5"
+                    "ID": "931f1d5ca3204e36ba9f7afe192e8f05"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -427,7 +434,7 @@
                     ]
                   }
                 ],
-                "ID": "1bdebee9-1891-4614-bdde-68f873b4f606"
+                "ID": "a0e05081-cca1-4424-90ab-8d2e1e0de651"
               }
             ]
           },
@@ -608,8 +615,6 @@
     "7,43": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
-        "SelectOnly": false,
-        "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "WaterMark": "指定値と等しい",
         "IsBounding": true,
@@ -862,7 +867,7 @@
                       }
                     ]
                   },
-                  "value": "1"
+                  "value": "使用可"
                 },
                 "CommandList": [
                   {
@@ -1061,10 +1066,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "df05e0edcab64ba8a6394eaf750aeff0"
+                    "ID": "dac710fe1ecb4a0c8831a0d570980af2"
                   }
                 ],
-                "ID": "10d772a6-1ec9-4f11-b465-1a410537294e"
+                "ID": "7d1fa728-15af-4a5a-a8ad-f42e028a62d5"
               },
               {
                 "CommandList": [
@@ -1094,39 +1099,25 @@
                                         "Condition1": {
                                           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
                                           "Condition1": {
-                                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                            "Condition1": {
-                                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                              "ColumnBindingInfo": {
-                                                "TableName": "trn_insptool_tools",
-                                                "ColumnName": "n1"
-                                              },
-                                              "Value": {
-                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                "SerializeProperty": "=測定機器検索!L8"
-                                              }
+                                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                            "ColumnBindingInfo": {
+                                              "TableName": "trn_insptool_tools",
+                                              "ColumnName": "n1"
                                             },
-                                            "Condition2": {
-                                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                              "ColumnBindingInfo": {
-                                                "TableName": "trn_insptool_tools",
-                                                "ColumnName": "n2"
-                                              },
-                                              "Value": {
-                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                "SerializeProperty": "=測定機器検索!L11"
-                                              }
+                                            "Value": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=測定機器検索!L8"
                                             }
                                           },
                                           "Condition2": {
                                             "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                             "ColumnBindingInfo": {
                                               "TableName": "trn_insptool_tools",
-                                              "ColumnName": "n3"
+                                              "ColumnName": "n2"
                                             },
                                             "Value": {
                                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                              "SerializeProperty": "=測定機器検索!L14"
+                                              "SerializeProperty": "=測定機器検索!L11"
                                             }
                                           }
                                         },
@@ -1134,11 +1125,11 @@
                                           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                           "ColumnBindingInfo": {
                                             "TableName": "trn_insptool_tools",
-                                            "ColumnName": "kind"
+                                            "ColumnName": "n3"
                                           },
                                           "Value": {
                                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                            "SerializeProperty": "=測定機器検索!AB8"
+                                            "SerializeProperty": "=測定機器検索!L14"
                                           }
                                         }
                                       },
@@ -1146,11 +1137,11 @@
                                         "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                         "ColumnBindingInfo": {
                                           "TableName": "trn_insptool_tools",
-                                          "ColumnName": "item_name"
+                                          "ColumnName": "kind"
                                         },
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=測定機器検索!AB11"
+                                          "SerializeProperty": "=測定機器検索!AB8"
                                         }
                                       }
                                     },
@@ -1158,11 +1149,11 @@
                                       "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                       "ColumnBindingInfo": {
                                         "TableName": "trn_insptool_tools",
-                                        "ColumnName": "type"
+                                        "ColumnName": "item_name"
                                       },
                                       "Value": {
                                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                        "SerializeProperty": "=測定機器検索!AB14"
+                                        "SerializeProperty": "=測定機器検索!AB11"
                                       }
                                     }
                                   },
@@ -1170,11 +1161,11 @@
                                     "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                     "ColumnBindingInfo": {
                                       "TableName": "trn_insptool_tools",
-                                      "ColumnName": "maker"
+                                      "ColumnName": "type"
                                     },
                                     "Value": {
                                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                      "SerializeProperty": "=測定機器検索!AR8"
+                                      "SerializeProperty": "=測定機器検索!AB14"
                                     }
                                   }
                                 },
@@ -1182,11 +1173,11 @@
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "storage_location"
+                                    "ColumnName": "maker"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                    "SerializeProperty": "=測定機器検索!AR11"
+                                    "SerializeProperty": "=測定機器検索!AR8"
                                   }
                                 }
                               },
@@ -1194,57 +1185,62 @@
                                 "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                 "ColumnBindingInfo": {
                                   "TableName": "trn_insptool_tools",
-                                  "ColumnName": "administrator"
+                                  "ColumnName": "storage_location"
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=測定機器検索!AR14"
+                                  "SerializeProperty": "=測定機器検索!AR11"
                                 }
                               }
                             },
                             "Condition2": {
                               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                              "CompareType": 3,
                               "ColumnBindingInfo": {
                                 "TableName": "trn_insptool_tools",
-                                "ColumnName": "next_caribration_ymd"
+                                "ColumnName": "administrator"
                               },
                               "Value": {
                                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                "SerializeProperty": "=測定機器検索!L17"
+                                "SerializeProperty": "=測定機器検索!AR14"
                               }
                             }
                           },
                           "Condition2": {
                             "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                            "CompareType": 5,
+                            "CompareType": 3,
                             "ColumnBindingInfo": {
                               "TableName": "trn_insptool_tools",
                               "ColumnName": "next_caribration_ymd"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=測定機器検索!T17"
+                              "SerializeProperty": "=測定機器検索!L17"
                             }
                           }
                         },
                         "Condition2": {
                           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 5,
                           "ColumnBindingInfo": {
                             "TableName": "trn_insptool_tools",
-                            "ColumnName": "ctrl_no"
+                            "ColumnName": "next_caribration_ymd"
                           },
                           "Value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=測定機器検索!L6"
+                            "SerializeProperty": "=測定機器検索!T17"
                           }
                         }
                       },
                       "Condition2": {
-                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                        "CompareType": 2,
                         "ColumnBindingInfo": {
                           "TableName": "trn_insptool_tools",
-                          "ColumnName": "usage"
+                          "ColumnName": "ctrl_no"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=測定機器検索!L6"
                         }
                       }
                     },
@@ -1262,10 +1258,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "979a9f4d1ebe4fccafa072dbf9cf873d"
+                    "ID": "3edfde5660d3468583538adf2663b479"
                   }
                 ],
-                "ID": "d230cb8a-bcae-4c91-a376-d07a9f3930cf"
+                "ID": "680cfa85-b73e-41fc-9d78-6ac8842deedc"
               }
             ]
           }
@@ -1391,7 +1387,7 @@
               }
             },
             "Params": [],
-            "ID": "36a5c9c8b7354e88a33171f149e5f435",
+            "ID": "eceed06bf5a0462aa94f836dd873ba00",
             "Disabled": true
           },
           {
@@ -1433,10 +1429,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "02d91785157d49b28eb20a8fe164a3d3"
+                    "ID": "78b813a6b01f47bb93c2a3525e2f0462"
                   }
                 ],
-                "ID": "85068ba6-f212-4e9f-a6f3-84363a54f4d5"
+                "ID": "8dd4a9fe-1bf1-483b-b67f-7f8adac0b2d9"
               },
               {
                 "CommandList": [
@@ -1461,10 +1457,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "1a8f31fe93ef43419801b2bc4dd401ec"
+                    "ID": "f0c88aad199742abbc5293382558af74"
                   }
                 ],
-                "ID": "b11dce12-a5b8-439f-8652-97f08141aad9"
+                "ID": "6fa9fd0e-8234-4583-88aa-2fa905dfb922"
               }
             ]
           }
@@ -1479,10 +1475,28 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
-            "ListViewName": "リストビュー1",
-            "IsOnlyExportValue": false,
-            "NewOtherName": ""
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "ExportExcelListviewNameMode": 1,
+                    "IsOnlyExportValue": false,
+                    "NewOtherName": "計測機器リスト"
+                  }
+                ],
+                "ID": "56d5e39f-12d2-411e-b87f-ae91f2c6f68a"
+              }
+            ]
           }
         ],
         "Text": "Excelエクスポート",
@@ -1514,13 +1528,143 @@
         }
       }
     },
+    "21,28": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "計測機器新規登録",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!O25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=計測機器新規登録!G13"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!S25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=計測機器新規登録!G15"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!Y25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=計測機器新規登録!G17"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!AH25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=計測機器新規登録!G21"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!AO25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=計測機器新規登録!G35"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!AZ25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=計測機器新規登録!G37"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!CA25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=計測機器新規登録!G7"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!CB25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=計測機器新規登録!G9"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!CC25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=計測機器新規登録!G11"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!CD25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=計測機器新規登録!G23"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!CE25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=計測機器新規登録!G25"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測定機器検索!CF25"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=計測機器新規登録!G27"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "コピーして新規登録",
+        "TemplateKey": "_RS_Normal_Style7",
+        "Icon": {
+          "Name": "Application/008_add_file_3.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
     "23,0": {
       "ListViewInfo": {
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_tools",
         "RowIndex": 23,
-        "ColumnCount": 78,
+        "ColumnCount": 84,
         "RowCount": 22,
+        "SelectionMode": 1,
         "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
@@ -1693,6 +1837,42 @@
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "ID"
+      }
+    },
+    "24,78": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "n1"
+      }
+    },
+    "24,79": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "n2"
+      }
+    },
+    "24,80": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "n3"
+      }
+    },
+    "24,81": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "s1"
+      }
+    },
+    "24,82": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "s2"
+      }
+    },
+    "24,83": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "s3"
       }
     }
   },
@@ -2402,6 +2582,12 @@
       "0,75": 6,
       "0,76": 6,
       "0,77": 6,
+      "0,78": 6,
+      "0,79": 6,
+      "0,80": 6,
+      "0,81": 6,
+      "0,82": 6,
+      "0,83": 6,
       "1,0": 1,
       "1,1": 1,
       "1,2": 1,
@@ -2459,6 +2645,12 @@
       "1,75": 6,
       "1,76": 6,
       "1,77": 6,
+      "1,78": 6,
+      "1,79": 6,
+      "1,80": 6,
+      "1,81": 6,
+      "1,82": 6,
+      "1,83": 6,
       "2,0": 1,
       "2,1": 1,
       "2,2": 1,
@@ -2515,6 +2707,12 @@
       "2,75": 6,
       "2,76": 6,
       "2,77": 6,
+      "2,78": 6,
+      "2,79": 6,
+      "2,80": 6,
+      "2,81": 6,
+      "2,82": 6,
+      "2,83": 6,
       "3,0": 1,
       "3,1": 1,
       "3,2": 1,
@@ -2587,6 +2785,12 @@
       "3,75": 9,
       "3,76": 10,
       "3,77": 10,
+      "3,78": 10,
+      "3,79": 10,
+      "3,80": 10,
+      "3,81": 10,
+      "3,82": 10,
+      "3,83": 10,
       "4,0": 11,
       "4,1": 11,
       "4,2": 11,
@@ -2665,6 +2869,12 @@
       "4,75": 14,
       "4,76": 14,
       "4,77": 14,
+      "4,78": 14,
+      "4,79": 14,
+      "4,80": 14,
+      "4,81": 14,
+      "4,82": 14,
+      "4,83": 14,
       "5,0": 15,
       "5,1": 14,
       "5,2": 14,
@@ -2734,6 +2944,12 @@
       "5,75": 14,
       "5,76": 14,
       "5,77": 14,
+      "5,78": 14,
+      "5,79": 14,
+      "5,80": 14,
+      "5,81": 14,
+      "5,82": 14,
+      "5,83": 14,
       "6,0": 2,
       "6,1": 2,
       "6,2": 2,
@@ -2812,6 +3028,12 @@
       "6,75": 17,
       "6,76": 17,
       "6,77": 17,
+      "6,78": 17,
+      "6,79": 17,
+      "6,80": 17,
+      "6,81": 17,
+      "6,82": 17,
+      "6,83": 17,
       "7,0": 19,
       "7,1": 20,
       "7,2": 20,
@@ -2840,6 +3062,12 @@
       "7,75": 26,
       "7,76": 26,
       "7,77": 26,
+      "7,78": 26,
+      "7,79": 26,
+      "7,80": 26,
+      "7,81": 26,
+      "7,82": 26,
+      "7,83": 26,
       "8,0": 20,
       "8,1": 20,
       "8,2": 20,
@@ -2863,6 +3091,12 @@
       "8,75": 26,
       "8,76": 26,
       "8,77": 26,
+      "8,78": 26,
+      "8,79": 26,
+      "8,80": 26,
+      "8,81": 26,
+      "8,82": 26,
+      "8,83": 26,
       "9,0": 2,
       "9,1": 2,
       "9,2": 2,
@@ -2941,6 +3175,12 @@
       "9,75": 17,
       "9,76": 17,
       "9,77": 17,
+      "9,78": 17,
+      "9,79": 17,
+      "9,80": 17,
+      "9,81": 17,
+      "9,82": 17,
+      "9,83": 17,
       "10,0": 19,
       "10,1": 20,
       "10,2": 20,
@@ -3027,6 +3267,12 @@
       "12,75": 17,
       "12,76": 17,
       "12,77": 17,
+      "12,78": 17,
+      "12,79": 17,
+      "12,80": 17,
+      "12,81": 17,
+      "12,82": 17,
+      "12,83": 17,
       "13,0": 33,
       "13,11": 34,
       "13,22": 34,
@@ -3051,6 +3297,12 @@
       "13,75": 17,
       "13,76": 17,
       "13,77": 17,
+      "13,78": 17,
+      "13,79": 17,
+      "13,80": 17,
+      "13,81": 17,
+      "13,82": 17,
+      "13,83": 17,
       "14,37": 35,
       "14,61": 17,
       "14,62": 17,
@@ -3069,6 +3321,12 @@
       "14,75": 17,
       "14,76": 17,
       "14,77": 17,
+      "14,78": 17,
+      "14,79": 17,
+      "14,80": 17,
+      "14,81": 17,
+      "14,82": 17,
+      "14,83": 17,
       "15,0": 17,
       "15,1": 17,
       "15,2": 17,
@@ -3147,6 +3405,12 @@
       "15,75": 17,
       "15,76": 17,
       "15,77": 17,
+      "15,78": 17,
+      "15,79": 17,
+      "15,80": 17,
+      "15,81": 17,
+      "15,82": 17,
+      "15,83": 17,
       "16,0": 19,
       "16,1": 20,
       "16,2": 20,
@@ -3192,6 +3456,12 @@
       "16,75": 42,
       "16,76": 42,
       "16,77": 42,
+      "16,78": 42,
+      "16,79": 42,
+      "16,80": 42,
+      "16,81": 42,
+      "16,82": 42,
+      "16,83": 42,
       "17,0": 20,
       "17,1": 20,
       "17,2": 20,
@@ -3347,6 +3617,12 @@
       "19,75": 47,
       "19,76": 48,
       "19,77": 48,
+      "19,78": 48,
+      "19,79": 48,
+      "19,80": 48,
+      "19,81": 48,
+      "19,82": 48,
+      "19,83": 48,
       "20,0": 49,
       "20,1": 49,
       "20,2": 49,
@@ -3425,22 +3701,28 @@
       "20,75": 50,
       "20,76": 48,
       "20,77": 48,
+      "20,78": 48,
+      "20,79": 48,
+      "20,80": 48,
+      "20,81": 48,
+      "20,82": 48,
+      "20,83": 48,
       "21,0": 17,
       "21,14": 2,
       "21,15": 17,
       "21,27": 2,
-      "21,28": 2,
-      "21,29": 2,
-      "21,30": 2,
-      "21,31": 2,
-      "21,32": 2,
-      "21,33": 2,
-      "21,34": 2,
-      "21,35": 2,
-      "21,36": 2,
-      "21,37": 2,
-      "21,38": 2,
-      "21,39": 2,
+      "21,28": 50,
+      "21,29": 38,
+      "21,30": 38,
+      "21,31": 38,
+      "21,32": 38,
+      "21,33": 38,
+      "21,34": 38,
+      "21,35": 38,
+      "21,36": 38,
+      "21,37": 38,
+      "21,38": 38,
+      "21,39": 38,
       "21,40": 2,
       "21,41": 2,
       "21,42": 2,
@@ -3544,6 +3826,12 @@
       "22,75": 17,
       "22,76": 17,
       "22,77": 17,
+      "22,78": 17,
+      "22,79": 17,
+      "22,80": 17,
+      "22,81": 17,
+      "22,82": 17,
+      "22,83": 17,
       "23,0": 55,
       "23,1": 56,
       "23,2": 56,
@@ -3697,6 +3985,8 @@
     "24,58,1,5",
     "24,63,1,7",
     "24,70,1,6",
+    "21,28,1,12",
+    "25,0,20,84",
     "23,0,1,4",
     "23,4,1,3",
     "23,7,1,3",
@@ -3713,8 +4003,7 @@
     "23,53,1,5",
     "23,58,1,5",
     "23,63,1,7",
-    "23,70,1,6",
-    "25,0,20,78"
+    "23,70,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3733,7 +4022,7 @@
           "Value": "使用可"
         },
         "Params": [],
-        "ID": "d30ce71b9dda40cea09bd0404392fd0e"
+        "ID": "f5d72f1db4414a5bae217d3d3b11654b"
       },
       {
         "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -3759,4 +4048,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//uPfBteWDoTcHhk1jG0xGltoJYPJObaKF9/4kKPmQxHLhKnPdIMjIi0bA3lT+9gs4jesC9tgotI/Tiq9EYge3voALMLWaL0wjhrG4BygZUvaMZeSeExrJv+VM+YJPW4jf3G/6PCRnUyLDJsTtkERFvgcbGFpynqG69ELorFIl1xs11ui+798Krp/ACvolAN7raaBLhd5pXruvIbvQXUH2aZ2N/DcjKnLq7Bu+5lZiwyiUMxMtt4TxBgbwTCvfZBRXWW2J/XNVWh2id5w2i/vfPiIPwV8WL3JIA6x75z+lw1t9TB19em1VJvV+seVOjw26W1JkhLUNLmeiiyX/UKrPpEo7rKpoc+gfcUYPDQpHpqT5lAAcuKUP0GhJvGm5iHrjNOr1I51PTyEDTnmI92IcokaTzdaka68IAQBEwHZqFrBOPGRSehuF+ajrcZifWkjMdEmAkHjN23vO3XUcjs0Lho42vxfJkIx1vSjn4sa8+W98Q3tVFbCRJdsIHM0bIzHFQPz5FOGQcrJ54xUPgGOHWp2sMdRLj+Y8+8+qrCtiaby7ToM7Nk1eNxf83gV31AfdFfiZdM0RXLLkyDotvDoHjlIi8t1GagJy14Ucf6XorAmEXZw2I4Ls8SGZSLOL/w5gezCWmmNHl6oe8x+30uUn/boumLEbJNTYmzfU1EcW5CJHbYoUOewjdBUdNdFnVPiZsJoeznnIWfuN+2eJSmQL/IW/pjO66LUuCVZf11cK1co7pZdTwPV60igrFIAXlKUxglYxa5LDHkqNaMTOXQy02mX/rMs9AJXrUWBDWh/BaolnSqefsYeBkcLUh55Mm950H9+or6IbGutaflSH6cBtr0ai+PuWhYqE2iwSkXZg068WnzG5ATbYmvY5RYtnj0biyu+8X5YM11Q6asVo15ZMoQ==|920
+}//Ic89EWYFeooCQsAd6ywzCu8iAWcAkaK15i/TlAIpNrWVqnN1wi4RH/Juhel83IwDjTbslaJDda9nL37E5/DWmX5TlJzlmM+Xx0HW2KcZADHZq55rZuf/VU+q0Pqltn7zddsbsV4ffC/EPDCJAe33jTr/fqnXNUQFuI/Qglp0lDkz8BXSB4Ols0CKOlPlgsu4QlizQtIYhUqcHYpBB4ysYmhPgFKSFfUJTNz7PsNnH5f3P//Y8Q4n8UPYqdhcbanNoq1BUWXR1CurBrvQno+gyUNZP0znc0ZrRbVSQ/URcrL0lN/jAeF2Ch0VU0nWFht0Cvx1yJrYZtIP6RxjQol8OHk9huMqYpyGiFfSsSK8lQ3rA3l7FANlOqfAZcIQ1GeQ3p9gigAjjlgTNKfH71NQsqKcajvoQrf1yy21RGkwOMpS7XD4nwNz9e2Y5xvtK/2zBT09PPsdDMUVRyKybtAhQAuKClWO9M6mmh/7qrmG8JAAl7FE+LaV3XC8y7clFlogMZsdePts3moFcxq7t8Db4/ImOjRr59gS6AxwMp48mX+v/kMiCz7QoHI3H3KH6sQkAEB5iqFiBXapDsBNIt000/a8yMmArfCG8cHokTkYpsBqoU1eXmZdHeSbAoEUPd4+saU9fsqejGxo+jqMcKUGAmwrZ+gIFwSXwhLXCeAglg7l+qq1OAkYTY9AjUvgQkoEcOMyM6JhzkMV0ffJgr2qPXJ4ujiLsfivtd3vR3rktyZDhrhzMMNtBtVIquoDhpCISGXV+vRXDSjyH+M+b5bUs9rhiZLf2YSvUgHd94s2mvCNjBXRf5uF3YYVNoMcF59bxkmBM7c8UD3tPPFSJoKwo10D6QIPXYlha1keNkOk+lnPIEpGOrVYcRw/ax0AW4JLZ4z/viHxvxWkmtSoCAxakg==|920

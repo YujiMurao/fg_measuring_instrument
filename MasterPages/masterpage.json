@@ -197,7 +197,6 @@
     "20,2": "計測機器履歴",
     "23,1": "記録文書一覧",
     "25,2": "すべての記録文書",
-    "27,2": "条件を指定して検索",
     "32,1": "管理メニュー",
     "34,2": "定期校正対象計測機器",
     "36,2": "承認依頼リスト",
@@ -246,7 +245,7 @@
                 "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
                 "TargetTableName": "trn_insptool_tools",
                 "Params": [],
-                "ID": "a2ff817eca1d4bdda6da14571b42790e"
+                "ID": "70104e41924b4ec8bb033b5ee4385792"
               }
             ],
             "CanVisitRoleList": [
@@ -270,7 +269,7 @@
                 "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
                 "TargetTableName": "trn_insptool_tools",
                 "Params": [],
-                "ID": "e72fb3608c58470d94d9801b1948cf11"
+                "ID": "e8761122edb546c8908dd2b94f94ac37"
               }
             ],
             "CanVisitRoleList": [
@@ -301,7 +300,7 @@
                   }
                 ],
                 "TargetTableName": "trn_insptool_tools",
-                "ID": "7afcf668d0394727b81b9eb1f9aa79dc"
+                "ID": "3f5245cdd07240c4a1769390095b39ec"
               }
             ],
             "CanVisitRoleList": [
@@ -373,7 +372,7 @@
               "Value": "使用可"
             },
             "Params": [],
-            "ID": "efe791141eab4d7c8bfcb6259dc23ec8"
+            "ID": "798350435232483ca707c8070389e335"
           }
         ],
         "Text": "すべての計測機器",
@@ -408,7 +407,7 @@
               "Value": "%CurrentUser.UserName%"
             },
             "Params": [],
-            "ID": "096279cdfe5240ebaf5f461a772aa3f6"
+            "ID": "fece28ec74484bbb97baf24d40aa625a"
           }
         ],
         "Text": "定期校正対象計測機器",
@@ -445,34 +444,11 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "Params": [],
-            "ID": "a268377bdf7f4284ac2e3a41569a45fa"
+            "ID": "e26822a2ec5d4181be9c8e8c0da7baa9"
           }
         ],
         "Text": "すべての記録文書",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
-      }
-    },
-    "27,2": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "customquery(記録文書)",
-            "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false
-          },
-          {
-            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_insptool_certifications",
-            "Params": [],
-            "ID": "9316fb5d77144da9b9d6887a0aab369c"
-          }
-        ],
-        "Text": "条件を指定して検索",
-        "ClickMode": 1,
-        "IsInvisible": true,
         "TemplateKey": "_RS_Normal2"
       }
     },
@@ -499,7 +475,7 @@
               "Value": "社外"
             },
             "Params": [],
-            "ID": "fb4ed031e9c34226a64f603d391cb872"
+            "ID": "7a046070e78240718133b39e053a97e2"
           }
         ],
         "Text": "定期校正対象計測機器",
@@ -540,7 +516,7 @@
               }
             },
             "Params": [],
-            "ID": "bd5efba1b0064f909ad541fa9bfba332",
+            "ID": "2ccfafae1c9243809ac941549d413134",
             "Disabled": true
           }
         ],
@@ -668,7 +644,7 @@
               }
             },
             "Params": [],
-            "ID": "e604fdd5917b443bb9cfd3815812a235"
+            "ID": "5a2d0903a6d84fcb951937d26b50315e"
           }
         ],
         "Text": "校正対象機器",
@@ -698,7 +674,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "計測機器新規登録作業",
+            "PageName": "社外校正機器リスト",
             "PassValues": []
           }
         ],
@@ -1565,4 +1541,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//gEvz9E7m2JDmY2x7HgWh6IblvnS/tKi8KvKphcvo9Ys5meL/fzv4PCrpZhO7pA7cQWPqiChKu8m9qCIgBnD+l8fWqmKInxprGlgjtVbi8ihqFAFdsE1rScYu8663U9GosZOMBuZhPNo1gZwVTZJbfS2XfVzwlgRglnL1iBIgHKLnGEmmHbW6y5KX6RMYsAJYWmpOixg8Pzkr/b4rI5RodjVKNM7U2Ut7sHWeVmA+t4whhoqHGmo2F2EyS05KkCyXrGeOzYojfI6RTIaKUWsXo6uHVUt5XPGnC/8jiait98/o7zgzatbCOrknJ33f+MwKbrbX3SDgMOrBesw6nKDlFaeWLjlvdoEqkc0ywFpF6DfdUzAynOOmk1nbQvUHeTJkJYTlJmke/1Zo7TGfM/gNwCeBLQUIwVha3EwUtx8yr57efVL6rXYPROAsEwsjAKYJQOUichCbSDm4Rnj1aiyhXVFo4qfk1+DmRH/m+GqCDPbyTzo737gZ6w1jbXuu3Soco9tYcu+oKRqAEIHpl8CVwOboOYAD2XE3ZDzwPX+ixWWP59p9cWAxKNPgcu1HovFpEG12mDf0fHTpa2w/ODMqjDQ9nQeuxTkIUyAUOoi79tZXbkFjT1Kupxjkx1PwTLBPnXX2/Y6HlPygyFy36beizy9fsK9bzn/rNmkbxrJ4r803vg6BexmV3g8CUiI57hdjsbxLWRyY+frYuIiD2fzT+v60p0Bf/KHOLiTarojx9MqSW3/jEgGKY3Q1IxmfZI6jHqeyaig+5yEJqTU+V1afEdMhxwGJfhVYq94Bc0horipHWF6gogvAMTz8i9pooapyeHMpGX7pa26fJgyKIPbBFyK3FFJp7Kc9KJgJ7JhJVhHqmWkURdAhO05q0bPfl297uM5RT1O8JL+PSGAz1Z40Wg==|920
+}//uJ//Gj0lgz3iq1o838u9/BZzmCknGaC2dEnIAQoOrlo+ObdqmlF1TfobFb0G6TTv+j8CK13N9785UmpIsGMsc7DUlQ747tThBeAxxeQoPBPET0lUc5HMWOVbsc6tODuSDP2IbLEGkqFAqOGNuJUi9XBtuBHKtkrqgcmaA8NlLNhfHxAlQd2G12OW7B5XRzA7lyn5Gf4Bn2AZPtNTcbqd+98GKvM5YypLTmt6ohpDcPm9eAvqcHQIYNG6icHQAbhmfd5J1vBHX484Dpg63AaBALGh4CuiZT1czOFudw7HFYiG/JBqcRIBE4KSjv6SLZdJjuVIQVh8KeiW9byEbwvazpjdR1VcDZbkgeYWlVjIQj0WL6jiOdwWLTDPZgJOGfibIdygZOkOQ6MfXgSHzwPS/OHFHvUQsow8hm8Ig1CHiUe9RYapDHOEi0qdpcJBymg/deUIAw3SjJXUfwoB4q5WrEBrZAlVA7ROAy2fjH//CYXv1coaHR6GCwhyhHIgbxjo1K12CUa3BO2PtSy2L55T8Txq0EvG32ySq9izPlDwvGLsrQTkIiLsjH68oTH/9xhb7Y5dM6euJJ5Wr0+GZ3nQldOIruoozP5AWT/mI4BR6ZhfcYvLd7iXpLpQQePJbYoaDFSFN3/a4nuiEkrikV8QIWPHm5QrX/Cqxqky2P+/4Dn9yYz66mUTR07BxBPIBY2xUKPZlsLXeSX/UCu4sO0Atu6jZUoxWK1UxooW63cctnRlW/HRW+6KU0RQtJoQ7xcABfO+HR0hu3zXQMkxA6rfD1FHEmbh3HvnM0sVscM3ElsAbKMFZV7eN+rNbPLPKasfaOlO8DDIOWCt6nI1TWKl7Zzh4Cl/2on9FILg0Ly3C+/aHWvjfQUgWQJkhRTM9Fe74tLZ6S/FRn0sERTo1XHKoA==|920

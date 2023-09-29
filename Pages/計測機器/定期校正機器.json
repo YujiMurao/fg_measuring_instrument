@@ -82,6 +82,11 @@
           "DesignLengthInPixel": 20.0
         }
       },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
       "48": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
@@ -183,11 +188,6 @@
           "DesignLengthInPixel": 20.0,
           "IsHidden": true
         }
-      },
-      "3": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 30.0
-        }
       }
     },
     "InLogicalVisibleIndexes": [
@@ -209,7 +209,11 @@
   "Values": {
     "0,0": "条件を指定して検索",
     "2,0": "出力内容：",
+    "2,5": "定期校正",
     "2,39": "抽出条件\r\n・社外校正\r\n・禁止理由（以外）：廃棄、故障、紛失、移管、不整合\r\n定期校正＝11月1日～来年10月31日\r\n校正切れ＝～10月31日",
+    "2,64": "=",
+    "2,65": "=",
+    "2,66": "=",
     "4,0": "管轄：",
     "4,5": "本社",
     "4,64": "校正対象計測機器一覧()_校正有無確認",
@@ -234,8 +238,7 @@
   },
   "Formulas": {
     "9,4": "COUNTA(K13)",
-    "4,64": "\"校正対象計測機器一覧(\"&TEXT(TODAY(),\"yyyymmdd\")&\")_校正有無確認\"",
-    "2,64": "\"校正対象計測機器一覧(\"&TEXT(TODAY(),\"yyyymmdd\")&\")_校正有無確認 - 九州\""
+    "4,64": "\"校正対象計測機器一覧(\"&TEXT(TODAY(),\"yyyymmdd\")&\")_校正有無確認\""
   },
   "AttachInfos": {
     "2,5": {
@@ -243,6 +246,7 @@
         "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
         "NoneItemText": "＜なし＞",
         "Style": 1,
+        "CellDefaultValue": "定期校正",
         "Items": [
           {
             "Value": "定期校正",
@@ -359,10 +363,10 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "f0c610c254d6432f82fa7ef0fe3eb4ff"
+                            "ID": "e466b8c2803d4e6997e889f5dde2e3d3"
                           }
                         ],
-                        "ID": "3b14d85d-c06a-4a81-808b-d837ffc9a4e3"
+                        "ID": "5486920e-3c7b-4153-82af-1b1e01340785"
                       },
                       {
                         "CommandList": [
@@ -416,15 +420,15 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "677d141cafeb4a06aed04a196da8b7d1"
+                            "ID": "96e093b8b5b74f669db19e01eb45b946"
                           }
                         ],
-                        "ID": "7a25c976-73c9-426b-8e4c-a3bf6e2c2378"
+                        "ID": "0c5585ee-b6ae-4922-b7ac-e59ed1e0751c"
                       }
                     ]
                   }
                 ],
-                "ID": "ad70f187-0be0-4060-aa34-0e8392d99aa3"
+                "ID": "d81a79f2-ab78-452e-bc1e-880971387132"
               },
               {
                 "CommandList": [
@@ -514,10 +518,10 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "3029021eaebf4a11a24fed99df94e6b6"
+                            "ID": "cda5e6241a03468fab1f2f26a363ff31"
                           }
                         ],
-                        "ID": "8e2bfca6-b0ab-434d-8884-ceaa40bd56d7"
+                        "ID": "977f195a-2798-4b2c-b49b-f951796d6c36"
                       },
                       {
                         "CommandList": [
@@ -569,15 +573,15 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "b05071f120b24a188bee1bff323a8c7f"
+                            "ID": "df6ddf690a85498185acd1b02f6fbc32"
                           }
                         ],
-                        "ID": "cc2cbc9d-1577-4cc0-9b0f-d536f7e4a465"
+                        "ID": "b50e8093-65b0-440d-a4b2-3130638abb25"
                       }
                     ]
                   }
                 ],
-                "ID": "eeddd627-c880-43ff-816f-283ce1315bbd"
+                "ID": "69102ca4-9a34-483e-b1ce-e1e4058f231b"
               }
             ]
           }
@@ -713,10 +717,10 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "08f8a12e7e6b411a931a494573f3328e"
+                            "ID": "c67ca8bd21594c769065ff425a30eddd"
                           }
                         ],
-                        "ID": "83a8c36b-4a46-434b-b77c-f22e8ea15d1c"
+                        "ID": "2deef464-0e70-46de-8921-a9cdf55fbc5a"
                       },
                       {
                         "CommandList": [
@@ -770,15 +774,15 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "de3ba3fce44a4fe8a12fb12cae25c195"
+                            "ID": "47f2b3f8018642b1b1191909893ff0a1"
                           }
                         ],
-                        "ID": "c27c0a7b-7970-4651-8d5c-f367885db62a"
+                        "ID": "5b4a1b8f-9501-46c8-89d8-03313f3e36b4"
                       }
                     ]
                   }
                 ],
-                "ID": "a1eceed2-9694-4873-9bbe-e624b620b930"
+                "ID": "89e00670-3082-4819-bf2f-4830a5a0dc32"
               },
               {
                 "CommandList": [
@@ -868,10 +872,10 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "0b4a4b1002c645929e7fce596614b946"
+                            "ID": "e067a1aebf39477fa2ce90446ffbb420"
                           }
                         ],
-                        "ID": "b4c6c419-9bda-4758-afe2-c48b0eaae4f8"
+                        "ID": "436ff629-f906-424a-8961-364d330be2b1"
                       },
                       {
                         "CommandList": [
@@ -923,15 +927,15 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "fd755f2e1dd2469ea27687649319f991"
+                            "ID": "14eace754c4b4d3fa485197fc8c98f2f"
                           }
                         ],
-                        "ID": "a7c6a7e9-836e-44a0-b845-166b20f91258"
+                        "ID": "1979d4e3-1c20-4e5b-a926-d51b58a89b7e"
                       }
                     ]
                   }
                 ],
-                "ID": "ab7b5b9c-3637-436c-a1d9-6eb65137d29f"
+                "ID": "78b2b3fd-4272-49cc-b4f3-07271b0aecb6"
               }
             ]
           }
@@ -1057,10 +1061,10 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "2cc7f343fd1a4967a6bef39e4cfd64df"
+                            "ID": "704d9e27fa11477c987d5b123fbb0954"
                           }
                         ],
-                        "ID": "eea2773b-029e-4a05-b21f-712b8113ef5f"
+                        "ID": "bd3d1445-ca74-4a0c-b3b9-08576173748c"
                       },
                       {
                         "CommandList": [
@@ -1114,15 +1118,15 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "a9c2a81206d84b2eb053c5c4a7ce96a6"
+                            "ID": "c635881eafcf420a9f4504dbef561dc9"
                           }
                         ],
-                        "ID": "0642c9dd-1188-40f1-94f6-afada6e2297b"
+                        "ID": "67b32858-3334-40a2-80f6-73ec76afbb88"
                       }
                     ]
                   }
                 ],
-                "ID": "e27567c5-3453-42d1-b21f-0019147c6ab1"
+                "ID": "d17b42b5-a15d-45f0-9e91-42ceb3d24414"
               },
               {
                 "CommandList": [
@@ -1212,10 +1216,10 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "23691a4bf7a84242b0563d2e338d233d"
+                            "ID": "3532d599141b49788c9b34547ac64df0"
                           }
                         ],
-                        "ID": "1e1905d1-9fb5-4eab-8684-c93701ec32a7"
+                        "ID": "a7782439-ce9c-4b53-838a-90236f3b7806"
                       },
                       {
                         "CommandList": [
@@ -1267,15 +1271,15 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "03bc9774d817413b9b857797a318acff"
+                            "ID": "e4bb614b88b646de85b9f2803f5a7fe7"
                           }
                         ],
-                        "ID": "79a250df-120f-434a-b7d3-8c7f1a02b324"
+                        "ID": "e616f1b4-7436-4471-8061-8c3a178a35fb"
                       }
                     ]
                   }
                 ],
-                "ID": "2d6808c4-07c4-4bff-8690-2ba3fd4724f0"
+                "ID": "1accb7ce-7a43-4be9-b15c-5f9979e6040a"
               }
             ]
           }
@@ -1398,10 +1402,10 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "69445fc999cc4724b6be6039578756a7"
+                            "ID": "eca3bca657fe45d6a725fe5b96e4d29a"
                           }
                         ],
-                        "ID": "7ff56a2b-c2e8-401d-bcb3-febda2d042e3"
+                        "ID": "fa709431-0c11-4ffe-9413-6d4f196da8f8"
                       },
                       {
                         "CommandList": [
@@ -1455,15 +1459,15 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "e47e34d2fc4d452ba612f79cbdb18076"
+                            "ID": "d0d7d75c165d4f2f936edb93b3d3b62e"
                           }
                         ],
-                        "ID": "d7d05e3b-63cc-41eb-a809-15ea226acdec"
+                        "ID": "357a76fa-0e2e-49d7-ba18-9f24ada590fe"
                       }
                     ]
                   }
                 ],
-                "ID": "f47ae65e-8522-40c9-9fa0-c92933737d60"
+                "ID": "21389c45-bba7-407f-b5f5-67a9d1ffb232"
               },
               {
                 "CommandList": [
@@ -1553,10 +1557,10 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "c92d20c14cca45818a47eab7a65dca49"
+                            "ID": "e27affd620ed432bae260a144171c507"
                           }
                         ],
-                        "ID": "7d4d7713-23c1-4414-b78d-789fc10da841"
+                        "ID": "abd7c831-ce14-4377-b644-4601d16fb06b"
                       },
                       {
                         "CommandList": [
@@ -1608,15 +1612,15 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "a5264bd60fb2497697a945b7363671b3"
+                            "ID": "2f76f5134aa741c8a483fc1f154ca5ae"
                           }
                         ],
-                        "ID": "062f790a-aa1c-4b24-8748-e05a7390e36f"
+                        "ID": "d9a3296b-d84d-4b06-a5b5-ed3785877995"
                       }
                     ]
                   }
                 ],
-                "ID": "f29ed592-3d88-48bc-81cb-31a5468ff734"
+                "ID": "f88c6e89-32ea-4ba9-99b0-6d1075cd1de0"
               }
             ]
           }
@@ -1672,7 +1676,7 @@
                             }
                           }
                         ],
-                        "ID": "a917e60a-fb04-47fc-98db-0dcf05c306c7"
+                        "ID": "1913d0c4-c014-48d7-a7e2-ebd9a6905dbc"
                       },
                       {
                         "CommandList": [
@@ -1687,12 +1691,12 @@
                             }
                           }
                         ],
-                        "ID": "a0ca097b-3094-4600-899d-cb4ec93b8c71"
+                        "ID": "612e2007-6a71-4eac-93e7-079e84052280"
                       }
                     ]
                   }
                 ],
-                "ID": "e5366157-abcb-4fd6-9c4d-cb0d1f2125f0"
+                "ID": "5347c756-d466-4763-824d-cbd6077d9bed"
               },
               {
                 "CommandList": [
@@ -1724,7 +1728,7 @@
                             }
                           }
                         ],
-                        "ID": "bf4aad61-129a-4503-bf64-e9bac4da4147"
+                        "ID": "584525ab-801f-4579-bdb2-5c94c69ca407"
                       },
                       {
                         "CommandList": [
@@ -1739,12 +1743,12 @@
                             }
                           }
                         ],
-                        "ID": "74c21297-8088-4b62-882c-20677e996a7a"
+                        "ID": "6a71a01d-4700-4896-956e-6268e274f31f"
                       }
                     ]
                   }
                 ],
-                "ID": "39f0b520-b0f7-45b6-b877-d5008bcb1d7d"
+                "ID": "1dc31f12-5a6f-4dc0-a419-880670024953"
               }
             ]
           }
@@ -1803,12 +1807,24 @@
                 "Condition1": {
                   "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
                   "Condition1": {
-                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                    "ColumnBindingInfo": {
-                      "TableName": "trn_insptool_tools",
-                      "ColumnName": "category"
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "trn_insptool_tools",
+                        "ColumnName": "category"
+                      },
+                      "Value": "社外"
                     },
-                    "Value": "社外"
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 1,
+                      "ColumnBindingInfo": {
+                        "TableName": "trn_insptool_tools",
+                        "ColumnName": "prohibition_reason"
+                      },
+                      "Value": "廃棄"
+                    }
                   },
                   "Condition2": {
                     "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -1817,7 +1833,7 @@
                       "TableName": "trn_insptool_tools",
                       "ColumnName": "prohibition_reason"
                     },
-                    "Value": "廃棄"
+                    "Value": "故障"
                   }
                 },
                 "Condition2": {
@@ -1827,7 +1843,7 @@
                     "TableName": "trn_insptool_tools",
                     "ColumnName": "prohibition_reason"
                   },
-                  "Value": "故障"
+                  "Value": "紛失"
                 }
               },
               "Condition2": {
@@ -1837,7 +1853,7 @@
                   "TableName": "trn_insptool_tools",
                   "ColumnName": "prohibition_reason"
                 },
-                "Value": "紛失"
+                "Value": "移管"
               }
             },
             "Condition2": {
@@ -1847,17 +1863,24 @@
                 "TableName": "trn_insptool_tools",
                 "ColumnName": "prohibition_reason"
               },
-              "Value": "移管"
+              "Value": "不適合"
             }
           },
           "Condition2": {
             "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "CompareType": 1,
             "ColumnBindingInfo": {
               "TableName": "trn_insptool_tools",
-              "ColumnName": "prohibition_reason"
+              "ColumnName": "n2",
+              "RelationBinding": {
+                "RelatedTable": "mst_insptool_management_department",
+                "RelatedColumn": "code",
+                "DisplayColumn": "jurisdiction"
+              }
             },
-            "Value": "不適合"
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=定期校正機器!F5"
+            }
           }
         },
         "TopCondition": null,
@@ -2693,8 +2716,8 @@
       "2,62": 16,
       "2,63": 16,
       "2,64": 18,
-      "2,65": 12,
-      "2,66": 12,
+      "2,65": 18,
+      "2,66": 18,
       "2,67": 12,
       "2,68": 12,
       "2,69": 12,
@@ -4053,6 +4076,7 @@
     "9,61,1,3",
     "12,62,1,2",
     "12,1,1,3",
+    "13,0,25,64",
     "11,1,1,3",
     "11,4,1,3",
     "11,7,1,5",
@@ -4065,13 +4089,82 @@
     "11,47,1,4",
     "11,51,1,5",
     "11,56,1,6",
-    "11,62,1,2",
-    "13,0,25,64"
+    "11,62,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "masterpage",
     "Title": "条件を指定して検索 - 測定機器",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+        "TargetTableName": "trn_insptool_tools",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "n2",
+                "RelationBinding": {
+                  "RelatedTable": "mst_insptool_management_department",
+                  "RelatedColumn": "code",
+                  "DisplayColumn": "jurisdiction"
+                }
+              },
+              "Value": "本社"
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "next_caribration_ymd"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=定期校正機器!F7"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 5,
+            "ColumnBindingInfo": {
+              "TableName": "trn_insptool_tools",
+              "ColumnName": "next_caribration_ymd"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=定期校正機器!N7"
+            }
+          }
+        },
+        "Params": [
+          "=F7",
+          "=N7"
+        ],
+        "ID": "95cbb1c8fecf43848dfa09e3d43e9bc2"
+      },
+      {
+        "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+        "ListViewName": "リストビュー1",
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "ID"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "ID": "63f2c3b5cf8e419ea52ed1c1ca9fd1d3"
+      }
+    ],
     "AuthorizeInfo": {
       "VisitMode": 2
     },
@@ -4084,4 +4177,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//AqSETx8oXak9a0evLbnC3kX0o/CvuZVyuiTQCkPjXY9r2cKuqwXt8Fz3Jg5nEVZtiugLqN3N+dJfnesuKKrcjfMOBehLOhUMylVU2Kk2YYbw4cMSU7Itd7PBtmoyIAg8JM5gL0t54ybb8Q33kvdLFTk7fT33Qvp7Y7Bbv9toafXCAnCtFYC7xomhjHqZU1v7hBvRgHLz+L8+fAesW6u4Ms2ycyyOvILgZ7vytglVJJ+1Dx1efNAObD+I2UJsfr068ixDez1DupU4K6JFe1oHENBzNEGqg0ANEGR9jvcWImQQUAzU4sWWuMn5m4hwAFUEq0KsUoV52vCmXYGz8IvlaXdG0i4p2KFSSW5HdW3cKT7m41SpwsIqYMGlgfy8DpbkMb8sujpGSVX0B2Um3QETVOyjK8AR2maOUhgVN3zcHmlZRqpfJFs66WHWiaOo0mCA3tsjAj1yEXjMM37t7CcgTj5XsfEV/Rzqz6S/R6a10+gQ2lGtExs21kNeeII3FYqBZaBnvc0bKFVNm+kT4uYPHBhsiOnXjQ2wJA5gIJ0gPQREqNgG9JJxb6SYtltkegSglHxb6V2kfDm1rRzcxWaA0DvzaH6/QJ6vfHqlXfAk+kDQaC1wUeDv+NbD4g3UGZNGgzfiTEKo/lwddLvCRSBEw+QOiBYiq+gahSsGeRJJXiKLmGsm6R5YHCBcsJxol/QnbZX9pGg40qrs8ewvLKRIrzsiD/b/K2thLaWRL4dqQCv1wvYkF9gHa5o2DVCNY2d50zec5H98QAsazh/sdxjBMm9HKDYMDyAOVDOP7mq3k4m0FSxc/qqXeEF+zTcae/HRdqvptGSPB7Y2i9INtcO0vQI4aPOQG9DnNtp66oklup/Put1aAxOU6Iv9rGV1lfeRiexUbJvkNBBfM7ZayqzE0Q==|920
+}//BymowNGzXBp6f3yV/JL77FsOMpKHZfooJVuNmjseOUthf2f7AMzTaItNbXlPNVNrJ62Q56xiHjgi/KlFilHrVepSs2O+xmaUhTMwiPWu/5QaiPkmY9g/v19JDRdEwmC4VsA1sjl+jeKBYapmN2Ri4FOjyAYUoOUM+wp+65rkau2xPBofsDP050NZCw1p/PueJ2W5mz+tP2bFbxZUAoJ6koqDfSpJvJNY/B67lcHheNfHDDSu0RofPEeE1CwFCihIDOSctTCSd5NyYisRydCth6q+MDpb1RgG1p2ymySfAnZmCDIddwlX+311Alas9tTki4QfIzBkLmsIkF0lpD5DlHfN9KTtfkwSHSw4zqg5RWq5VjxH9jC6kI3RgcsvWu+urVJv2xHFT4oanwrE4bTurf6F4+toidxegKFqUJ9tDtF181oKd56dG3gKMOwuBpq2XwKbXpm8S1K5SzWhWWpuA/ni2/aUQSCrjtSsH1Yu+JQ0rtvytx3IaINFdW6fzdMw8RxV+bQjRxiDFlvd9o52wEzHspxkb8tODAJ1ow4jNxoHWE8SV68LBrEfNz/LtIuPH2Xf4Yq8iWUp4LfGrNvWc3hTCuMvto+c8UtMryqoaMLBJWLs+ykTHXA46/v9LhciGMFPBHWQy9X9jCUQlSjw7GPdWGils2hLD3/wo3F6mEoRcKW4AZkhjvWr61rr6muaLmlttSrvdfIYkaDxsSBZuhqS2hsSrcBg7TZ0KVgn2lG5pNvyuFS4HfsfgnsvgOqDrCv1WIIMkhi+tZdJ1N+jcNtQ7gB7hD8DPbnm0pWyadRqihawFPDHb2vQ8ufuYSL1Ry82ICaQuBzn4XOT2iYtFVNSQc9Av10ww9eqeYbejq4aW7F9oag03HQNmGT5tYTJBbK+GHYSZPOP2q9us0h4rw==|920

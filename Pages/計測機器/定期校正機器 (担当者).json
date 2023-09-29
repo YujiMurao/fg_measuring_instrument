@@ -303,8 +303,7 @@
                               "SerializeProperty": "='定期校正機器 (担当者)'!N5"
                             },
                             "RightBracket": 1
-                          },
-                          "RelationType": 1
+                          }
                         },
                         "Condition2": {
                           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -315,7 +314,8 @@
                           "Value": "%Null%",
                           "LeftBracket": 1,
                           "RightBracket": 2
-                        }
+                        },
+                        "RelationType": 1
                       },
                       "Condition2": {
                         "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -335,10 +335,10 @@
                       "=F5",
                       "=N5"
                     ],
-                    "ID": "b7f0a267932d4a53b8a4e5597ca22132"
+                    "ID": "dd9810458bbd406f81c270c4ae5ccc46"
                   }
                 ],
-                "ID": "e01f655f-5009-44aa-a1aa-da21d2daf979"
+                "ID": "cc0e3079-0c7b-4793-909b-d9a76c51be9d"
               },
               {
                 "CommandList": [
@@ -397,10 +397,10 @@
                     "Params": [
                       "=F5"
                     ],
-                    "ID": "a5c076e91c514485a764f01ab1802a3f"
+                    "ID": "cf8383a4c54c469abaabda2c8f6e2bf8"
                   }
                 ],
-                "ID": "da2c3589-11db-4bb1-9734-4e1f6d9e1061"
+                "ID": "7d7cccc7-e2b6-4fdc-97d8-d6856cb05c92"
               }
             ]
           }
@@ -522,10 +522,10 @@
                       "=F5",
                       "=N5"
                     ],
-                    "ID": "2ac02578f91f4a5b87523f4d8cfa7851"
+                    "ID": "f99c098c827c486298db69cd7565e074"
                   }
                 ],
-                "ID": "3279cf92-64f2-4354-89f4-75057cdd21d0"
+                "ID": "0f395710-12f7-443b-801f-ecd23ab6f6af"
               },
               {
                 "CommandList": [
@@ -584,10 +584,10 @@
                     "Params": [
                       "=F5"
                     ],
-                    "ID": "e7d35740ca10496898700f64ca31c983"
+                    "ID": "526dfd40a0d4409ebd0928350ad328c7"
                   }
                 ],
-                "ID": "f836ff14-f724-40c9-8130-93a714ee003b"
+                "ID": "834f2faf-bfc1-49c7-a1c1-cf2c59ad6d73"
               }
             ]
           }
@@ -709,10 +709,10 @@
                       "=F5",
                       "=N5"
                     ],
-                    "ID": "9ebfc7d13e0e4daabbf26a0afa58184d"
+                    "ID": "c236199907184190bd739847da643fb4"
                   }
                 ],
-                "ID": "32a92faf-0b0f-4948-b114-67f666753746"
+                "ID": "268f1f88-ad98-457b-908a-70834e93fdeb"
               },
               {
                 "CommandList": [
@@ -771,10 +771,10 @@
                     "Params": [
                       "=F5"
                     ],
-                    "ID": "6bb163e364214c808a6ef81b10542480"
+                    "ID": "e0a7bacfd20a4a08a116f291be8de49d"
                   }
                 ],
-                "ID": "2c68866b-1aa9-4960-aa6d-a0885b00f5cf"
+                "ID": "d0ffab5d-9af6-4ece-b64b-8ae5d3cb5333"
               }
             ]
           }
@@ -2970,6 +2970,7 @@
     "6,15,1,7",
     "9,62,1,2",
     "9,2,1,4",
+    "10,0,27,66",
     "8,0,1,2",
     "8,2,1,4",
     "8,6,1,3",
@@ -2983,8 +2984,7 @@
     "8,49,1,4",
     "8,53,1,5",
     "8,58,1,4",
-    "8,62,1,2",
-    "10,0,27,66"
+    "8,62,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3002,4 +3002,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//FEF2svlf2bAj+kOpk3V//sCMQ39aGkgXPUgYokr2UYizgTeibowZJpPzxkdqQI6icFItEXyXw/67SBs2Ajfbs3tB6ectuKtELeUpSg1OxQQK+kW9iECz6Hb7qY9PpE/bs7WUaqAOTPfVz1QeRIoUOlP5M/AveMO6EB/bwbx9bpE2Mjg9G3UUoMAYX4CbA/6x8KAzYYNPyTrW806GOxQh9CtY4TzIyysr6i5Rd1E0M5sEbAg8wnU+N4Agn/KUOIGQrLdLct0OOwQQymowDwBh3qba6eO6heG9C6iDKtSgpr7tjVSmLHR4oSCLKM1HA+6VoYtUROSD5SHENji7e66plMmbCSWmM3jbCwpWQnzXu+u3WYMt2v7LfD7LIZc1cKGHqWGvIRva3eOlf44STU37mLTKrRHiWYgqlGXNOkL530TREmDZfMMdbfvQXFRSvtkh6AS7hM96BVjC96xLspn7pX3d9edODyIRcMSxGz6zLY1qcBuIFFklS8acqzc7UKUzel4UrYh5t9gJI3px1xk1r+82AcTzAwu4J+UrT1aTmFF16Nc5KIXUhHNgV/5NFtbRW6Lhhy+30SWTSvCRqPi0/GQVqjBzRMpZTEgXzhJ96Y0IwuziNFZaJpQYZaAmCAIPhMFUJ8yuMl+UJc2uiwFHIiJD0ESke6hRr2RGHk7luOrPuCOKbVatJ8KGxvhvNeVEyFjfDUVoIXp7JG/B50cbEtWtwMXcYEKSuLvCHbUAzApB5xpc9pwpG1tdU0Gh6NQ++2rFjfOj59W7Jt1BcVETIPeyAE4zAa825Ag+PKuX8vJ8bg7IxQpuDq/STal+rz2NXP6TARGXM9NI1CyRtWeRgPJV/ZIr9UwlKZemUSvUvt++EYNdDq3D0fG35BOExGG8t6A8VPok/azHlNwDbZ4TiQ==|920
+}//DHN0iPwVW9elfmwgEHhSbbPEhTvmcGTmcpgOBRp6XoflUJc7kHIStWQBfH/rx7XPd22kKNTbCzG4wEy7nFcoaVcET+QqO4OBEX2wt7Jis18wYt68Emx9tQPNoLYIwMGzlr7IhKjLaA9pXkhJV2HViQoo336p78E/b72MKxUutOmXPkfThiE0CMFucd5CSRGLY16nY4AkmHqaWI50C3kuiIzWqCV7/Ri8WNbEDf2aHM295/rEnaaAGuY7oSscidQUSe/HOqHZj+Mxj2wBhY4M+UJwE1pPzDUpmyypmXprunWjhAeq3YIv3WCofa7E71pup22tg43R/JIXXJ20fJiR/2Yv+kUvyhij5wmmKlj57ZErHjZ0AxOt3hfrKb7ujcsWBYjul6h75dwaSJrrv9Tc2icNF9mJW89XLJoVmj3eBTmcyl3fOmUUwh5+JqlxC+d+7FMmDoJY1+IsMdcQzZWs36UL5XmgM2D4WKtWM0XbEu1+3OAujdZpojn3x4a+GIgjmP95wtNJMw/AvIntUdIE2FqnidbRk51SAzx/xiudH3CfzwawPy3dGUEpnc7OYG1kU7NxuErXObv9n64OvP02En6eed1kf1YVZh+SVdRc/EzlJQBwDUuPS3YAVU1orwI6oz/Q7pT7Bg52yETr/gsu5Xz0uzXSfWFzqEcN+UcvjAwe7t0yr0N+Ru6KlbtS2prH6S7i6ePL/0kO4GjQgvDGsWTSptxAusVpWQZV8M099c6PbIelBS83TNHVhAYP2m7gm3qwmNCH6UlxXM+HFMiE3o2RCNXrg2MV9k83yz8eDccxwoiIyYDTPNq/X1bddsWDsTBefQ9r9sFj4DfGTcICAwG5/sPEzsxv88uVFnFF6mA/yTrQlQA99u1bCt94y8ArBBsng4KIgKpnJHYbfWZvXg==|920
