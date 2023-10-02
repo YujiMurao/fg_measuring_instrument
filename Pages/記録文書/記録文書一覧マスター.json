@@ -160,7 +160,10 @@
         "Formatter": 2
       },
       {
-        "Foreground": 3,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Foreground": 4,
         "Underline": true
       },
       {
@@ -172,6 +175,7 @@
         "Center",
         "Accent 1",
         "yyyy/MM/dd",
+        "Left",
         "Blue",
         "Body"
       ]
@@ -181,48 +185,50 @@
       "1,1": 1,
       "2,0": 0,
       "2,1": 2,
-      "2,4": 3,
+      "2,2": 3,
+      "2,3": 3,
+      "2,4": 4,
       "2,6": 2,
       "2,8": 2
     },
     "RowStyles": {
-      "3": 4,
-      "4": 4,
-      "5": 4,
-      "6": 4,
-      "7": 4,
-      "8": 4,
-      "9": 4,
-      "10": 4,
-      "11": 4,
-      "12": 4,
-      "13": 4,
-      "14": 4,
-      "15": 4,
-      "16": 4,
-      "17": 4,
-      "18": 4,
-      "19": 4,
-      "20": 4,
-      "21": 4,
-      "22": 4,
-      "23": 4,
-      "24": 4,
-      "25": 4,
-      "26": 4,
-      "27": 4,
-      "28": 4,
-      "29": 4,
-      "30": 4,
-      "31": 4,
-      "32": 4,
-      "33": 4,
-      "34": 4,
-      "35": 4,
-      "36": 4,
-      "37": 4,
-      "38": 4,
-      "39": 4
+      "3": 5,
+      "4": 5,
+      "5": 5,
+      "6": 5,
+      "7": 5,
+      "8": 5,
+      "9": 5,
+      "10": 5,
+      "11": 5,
+      "12": 5,
+      "13": 5,
+      "14": 5,
+      "15": 5,
+      "16": 5,
+      "17": 5,
+      "18": 5,
+      "19": 5,
+      "20": 5,
+      "21": 5,
+      "22": 5,
+      "23": 5,
+      "24": 5,
+      "25": 5,
+      "26": 5,
+      "27": 5,
+      "28": 5,
+      "29": 5,
+      "30": 5,
+      "31": 5,
+      "32": 5,
+      "33": 5,
+      "34": 5,
+      "35": 5,
+      "36": 5,
+      "37": 5,
+      "38": 5,
+      "39": 5
     },
     "ColStyles": {
       "1": 0,
@@ -231,7 +237,7 @@
       "4": 0
     },
     "SheetStyle": {
-      "FontFamily": 4,
+      "FontFamily": 5,
       "FontSize": 13.333333333333332
     }
   },
@@ -242,6 +248,21 @@
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "masterpage",
     "Title": "記録文書一覧",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+        "TargetTableName": "trn_insptool_certifications",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "trn_insptool_certifications",
+            "ColumnName": "id"
+          }
+        },
+        "Params": [],
+        "ID": "7c8d8d235b274c6183b7c9b4ea37d02f"
+      }
+    ],
     "AuthorizeInfo": {
       "VisitMode": 2
     },
@@ -254,4 +275,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//LooK7yv1XExsuOZT7FvILNwffxz0T1iefCpW9Z/EQm0jkGazZlM/KLed7shFL8hGp3WqnXjAtEnBNJ7oH1931XmCRcSl/z7qGJ6r2oFGJJgvF8hLUOJh3sWVd4+xogo30rqDKBeTYecTSvO5FMFYqisfkFj4WlufKbRzZi3NggQf0MWBkVbhxLr8muBZCOaWeWGpoT7lCOsDa6Ro37rkLNN8j8ncrkYsjbwK/wP4dsl8zpJG3SWD5zpNh2NcwOxkHXpevnGRzs8NLlye3f7yNpMJJ2pX54zd2p3JX2zrX28ocO2gvMTSV2CWycosdHL+DOM/jcWLYZCHBnWGA3E44kGZai27XFXAE1FXL9w5kG+/IZJn4HHrwgCA530j91WZ7tP7TOcbbEAS9kFgP9joFuvjmuaT3zmuXZjQR5wo7V2+mosRySmSymmNS4Oy3rBeBFHRAzCg/k+8hJL5rrsVVnxCB+B2lDOiln6i9wRkmWKwgwsYeUqIDSLgrZBrSYVxFkfk5ZcJFprc3bMetnOJuDGNPDfWwTr/xsPfhHSJGRv7NZr800xrsm81QOkaFLNI8V7ruoKoEnfapReLza9GZo9pC9yVoG/Qwl4iDU9au3gOiBQhRCNueeiQTps9qM6fNGf/t+aFavHFydSI9G75hgaSmHMk5Etv8xRQ3K7Oxi2pEc/14HnifwvNWCeaoRiPTSdIsG3PgsXJPwbGrDrXVTfX3ji2Hz74RnuE2W3t+SnDF04wQNVGNwUATpDv7A9RkvW747auxySfNHSV/tU61hgdrFYhxEgXNJlkgH+0KZEv2oLvnUnjVjZ7lYojiC+n/Be5zmj/m3XJZdUOlBRz6LROUcGB4uOjupYkLyU5v6mFGgmINNcYqZKC4WTzX1M7+20QPvMgvp5EkSQpnJ9a5g==|920
+}//c2+rHwnYusV041EZDRgiM4otEQ7G/R8qI2ex3GhjIBLSvOxfcXQMuxil1N2SjeFg22bN7zzp8u+QdNR+RLEKON1BOb3d/DmpbNhwqXRrCHX1K0B+dl9tuKI3C7xhmSVF4pOpIhyjSPznT8BETjzFgJK3vZR+637k97QnxMPdXbFdnFA9q90qRLcrdCyad2B/0aVdYG7NzSwpKmNR5KuvOvGXdiBTKFk9/TBFWGmTQHZmtRXa3sSVGrRxkqNbyQK/ihEjxrqt3Wd8yb82iWWPJqCXtQf/8zoOzNo73n6ASrWULQx0xZwWQzGg9RJOttd8kCeoQNgayX6dGNnVKf+znAvStGjKZl9PVe1HDOrV/ZQSVt8XUWxk+POvMUa3+ppiWMJPXi2GubzdYPvCnQf9HJJY+O6yayiwYcGhRYtbM1WmyHBn58+up6xt6Y9iLZBMuDwou+Ry1fFaNJNtMpcQqMEI6hN2w3bWuiceLy4u+d2MQe82sj/6KD1hNQ1p/JJzOMXaHve80WPWZTUHZKisdmnioIf1OB9vrydUlRL1uFMrj6A+lLn9T+TFvAJ+DsTMg0HUganyZJnic9ngE//RTe/J6Nqb39nOVmSf3s5kmqQSKHMzTrhinWdRrWnpVWR2Pb6EPNw96JOlWLgyB/j5jurIuiX2/R9GsPw7O/s+6vH9IqcVWu6BrywWKyo528LptHMQew2n0YDTdYC1EhviaUKIrpbGMX9RFffJGqGFqXaAMgXggFE0zXEZcdt7Xs/+Vb3rjTolFT0tX4WTsdmGqeUrnJrjoM2iDFY571SCIp+e1iNq9o5ncQbGCrEpQdrbJE9wsRnzRIxoIVNZ/YRpOA/bifgKim4uXmfZY9BwZCPOvE8ajWo37dH4keGNDQtxkWVj0x4gquH76XnmH1rxpQ==|920

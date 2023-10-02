@@ -86,7 +86,9 @@
   },
   "Values": {
     "1,1": "定期校正・修理再校正・修理・廃棄の登録...",
-    "1,47": "登録数："
+    "1,47": "登録数：",
+    "3,43": "添付ファイル",
+    "3,48": "記録文書リンク"
   },
   "Formulas": {
     "1,51": "COUNTA(B5)"
@@ -103,10 +105,10 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正履歴!J2"
+                  "SerializeProperty": "=校正履歴!BC5"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=校正履歴の作成!H2"
+                  "SerializeProperty": "=校正履歴の作成!H5"
                 }
               }
             ],
@@ -149,7 +151,7 @@
             "Params": [
               "=BC2"
             ],
-            "ID": "2922919339f149a497ffd538a8d3e6ef"
+            "ID": "007b25248fab49d49a954d11664b7cf0"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -181,37 +183,43 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "処理年月日"
-      }
+      },
+      "NameUsedInJavaScript": "処理年月日"
     },
     "4,6": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "項目"
-      }
+      },
+      "NameUsedInJavaScript": "項目"
     },
     "4,10": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "業者名"
-      }
+      },
+      "NameUsedInJavaScript": "業者名"
     },
     "4,17": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "内容"
-      }
+      },
+      "NameUsedInJavaScript": "内容"
     },
     "4,31": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "承認者"
-      }
+      },
+      "NameUsedInJavaScript": "承認者"
     },
     "4,36": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "FGC_State"
-      }
+      },
+      "NameUsedInJavaScript": "状態"
     },
     "4,39": {
       "BindingInfo": {
@@ -221,7 +229,8 @@
           "$type": "ForguncyDataAccess.AssignToColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
         }
-      }
+      },
+      "NameUsedInJavaScript": "担当者.氏名"
     },
     "4,43": {
       "CellType": {
@@ -234,7 +243,8 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "attachment"
-      }
+      },
+      "NameUsedInJavaScript": "attachment"
     },
     "4,48": {
       "CellType": {
@@ -257,19 +267,22 @@
           "RelatedColumn": "id",
           "DisplayColumn": "subject"
         }
-      }
+      },
+      "NameUsedInJavaScript": "subject"
     },
     "4,53": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク"
-      }
+      },
+      "NameUsedInJavaScript": "記録文書へのリンク"
     },
     "4,54": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool"
-      }
+      },
+      "NameUsedInJavaScript": "id_tool"
     }
   },
   "StyleDatas": {
@@ -940,6 +953,7 @@
     "5,1,13,54",
     "4,43,1,5",
     "4,48,1,5",
+    "1,1,1,16",
     "3,1,1,5",
     "3,6,1,4",
     "3,10,1,7",
@@ -948,8 +962,7 @@
     "3,36,1,3",
     "3,39,1,4",
     "3,43,1,5",
-    "3,48,1,5",
-    "1,1,1,16"
+    "3,48,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -972,7 +985,7 @@
         "Params": [
           "=BC2"
         ],
-        "ID": "bcbd4683c4cd4d79ab5b84fa46522bb2"
+        "ID": "b3b03123830049c6b83e3e7ab4c7eb37"
       },
       {
         "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
@@ -988,7 +1001,7 @@
             }
           ]
         },
-        "ID": "1ef5db1ad78d423e9eaae6ea25c5fdfb"
+        "ID": "95d1e76721ba4399b9396886a5c86dee"
       }
     ],
     "AuthorizeInfo": {
@@ -1003,4 +1016,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//NuZQ/f+Vd0W9GOyJ6YBjMAMwLl+mN6Jb0Gn/fCQvmTc3IPD96f4NvCt78ZCRswb1fKk/gq4n4CFpuXxJyARUj38XOXxhtylgbFR9omXgg3KIG6Dj7KlGrsC3v6Cjrxe5ixgvbvrnMV/X05x4vlMDZr+Y9TCJ8CAIpSEON0LXpq4ChzNV0fI37hrDSx81oxq09t3y1Q029toNHr5EoAjMqE1M6SNV8KYvLKvqWmUvljv6rvN8Ir2mmzQVLV2R6S8+gihwTj3fbu5c/36p80UAWug6MUNJKcTMtG0EDKZ2/MHUoHdT6OkJf5OjJBrygh0JeEqYcYGObFSfsxZDFpvPu5Yo4bROPcmneuAUHd0RIjIDumwEL2zIvtDBjdbDfZLE2guDVYF4salIXhp/U+9ZotkwSKpim/RnWy+w//0ZP0YOfnnexocSSWy9NgGlvOQ3mAjE5UwOKmzjwR5GnZKOA6lZqpkZsppTb18O2H726+hMlKXywnkpGpKIzwdqG9S2HY1O2CNk+HOnsGGHwQg9Y1BGuOMVjhjtRciPYiu2TuBeGq9AJKUqmmNlyZxBB3bffDvXHjv2LDzKjZBtJQhEstCAShHa2bCm3jhlMQvj7TxS7sp+8vJvl0FyclqoSPmwv/lKj0dIvZkH6XEb4azdhaQbvF2rYIoZxxFimxUCe97ZWeztgDn8q+34EK7oE6iwFHbJNA+UjZLkMxjnSBtTwTVOBlafQsGwIgZXhA5Up7JVd3A9k8ltkEBS8MOOHEQ+HTZq9Et0gVRCIPerhbhs0Ih83IPlCO8E2QWPsX4UFIjHFO9emU9Fv+7PXaLdcA5p/WbacP+VclV0oIUN/1hSHAsRyzaPh4MeM1YszYgJlBEHNEdL8BOj3IwI+h45ZyEDP8FQi2xH2GXG88FTm9CBxA==|920
+}//lOsucreLVMiJ3Pd73wmacJ1TUI2flAeYrxmqGjJtj4Ajsf9FuoGYGwTjbiDQguCBfjkbFPy26XX32azRymDwJ5pwph8zE7SsoilV76NdOI13IBBLpUPHm78GzVCtOL15MTCurIUYVUSbdGV2M6SX9pVFQ3Mv30vkx7TrxOY1yvYLqrV08Qs8+UDP6Z50wQkbR8nRRQo1bI0RKpuJsYGS700iA60v0IKZSW5yTh0W2s2+1TasHv68F+8VbN5m7mQkZgwdDlxwn9s5c2wpaekC0h/kZOw5Er41u0a3ezhz581/TaiBPtFOnwepQ6npFXWs70g5TQ8Qvq/zeFJCDRYy0MeM7zY9qPlvdIN5Q/vo9tF1pLjN9DDH22R15SjOdATuV2A1VUdfRA7OxTt9prXxO2/U1Llqu5gWObKdWQs7SKiBuwXVkZpms+C2WwJ3mZqLPtWu74geO4Q1mfztsBXdkC3NC+HRbLLmPih2H9HKrZ4ctw+8Xyb3TQMiAikXXhJu5bz23y8WuHZURbgXpLoILtzbNPbXe7BjXUulNuww2XYXe6Beyz4vJb1IIbpBDI82SabcRHcxCW55NBqh0i6SqGXAgR+nbGKrxk7HmK+6iSlaXE/KWoG6nzEZN6XUtrKgceXP2dQwTHz6iztYp4FB0QYapBkC/4VOFfKrJ5s+66CWwmJTxttbttK/4AqlcRhAfDIY8EiV1dUDpoj87hwP/ZZUbQv/9GFrt2oBu739yjotU6SsCwE7n8w/MpPne0Mlc25unQDuoMYrKgol7KeujTTEBL7/hI7kdwt8h3kF+SlvdrcBdSrlIeRcr+c0XHBtkq8lkOxQ0aioNmKE0KbFQzy5lpslgxu/03Kz+8cipCCIgpIJBItAxB+OF12DTcqZRel55CdnQfcC4s0lGkT3UQ==|920

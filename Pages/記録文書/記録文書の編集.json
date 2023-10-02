@@ -6,6 +6,11 @@
           "DesignLengthInPixel": 12.0
         }
       },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
       "2": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 12.0
@@ -105,17 +110,17 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
-      },
-      "1": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 24.0
-        }
       }
     },
     "Count": 22
   },
   "Cols": {
     "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
       "1": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 24.0
@@ -134,11 +139,6 @@
       "26": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
-        }
-      },
-      "0": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
         }
       },
       "30": {
@@ -179,14 +179,14 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "trn_insptool_tools",
-                    "ShowConfirm": true,
+                    "TableName": "trn_insptool_certifications",
+                    "ShowConfirm": false,
                     "ConfirmText": "本当に更新してもよろしいですか？",
                     "UpdateValues": [],
                     "ParamNameToSaveNewRowValue": "NewRow"
                   }
                 ],
-                "ID": "5b2e4f0a-6eea-4a2e-a7de-d4d29aca3db3"
+                "ID": "c946ab2d-47ee-46e7-97c5-83a6ba0dca9e"
               }
             ]
           }
@@ -327,7 +327,7 @@
                     ]
                   }
                 ],
-                "ID": "a3cdcfb2-7648-48e3-a893-0b49b9314034"
+                "ID": "b3162d96-81e7-4f24-b01e-8f49f499fce8"
               },
               {
                 "CommandList": [
@@ -345,7 +345,7 @@
                     ]
                   }
                 ],
-                "ID": "2f77e326-323e-443e-8718-f9faf423b1e8"
+                "ID": "09579056-aa3d-485d-be9f-dce70cda4f70"
               }
             ]
           }
@@ -1234,4 +1234,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//MNN05VwF53uojtfnFgYVkkHKtRNcC+5nY72oWxpsc7NaPIJbK1pP3u6fqeD9dDcwlKTXvRFr6frt75dPyqcFX2KudoM5CH6cp1DD+9mvgRTOEw1sAfbkWeUIVEh+Jb3R3IFAczz1j84idGIbIy3RbnBeWF5s2f8tReErmhwrXV8H2Gt1l98XjBcerY+QPADRJ1nTkXfF00Ogu6NlAMrTeHpdM7r08SdeQ4D7Wfrn7xSpnD0zWQ+ILXVH7W4LqvV+S22fTsjsRlpcJO26n4bU9qvCqCkzOEqbZvFlRp5+aXDj246gthW61PKVkhJmn0nEYgtrQvOKBxYaRiU12jjE86ihnWmM8JnZv+abkz6wMWg1JYlcac42j/1lk7Kt5wfTsIDM/28Vvm13buS+7bi2tcktdPQwS1YsQrjFeNntUq9vvtQprprRo6gnPaR6Hv6x9uhSM8cAvBmoznJgvIH8H1SF+x+HSRN7YfoAZzEj8TZ92sZ4txs6BrLUPZgWXZ713uOc3JyJ2sUwWeHSAxI7i57DBknkXeip9YxxnQ+rSqR8d5uAYv92WWqSwMfjMhlKLA7cVkTFtuIX2L/2vUtSudrqcr4rAMSyMY+DV6Ahyrhd5SzK24Mv/wPi6CChtQsmIx8/ErXbOfQYStsQddw7RoRWOeSqyskJRlp/ROs/AjsGnd45D0z5WMhaGRoNWKPj+qBXV/+bZ3CC4J3a5Lch3WB0l36NJH+qZqBgDu9KmV3EoCFWyCC+ZF63brIMXzrPj1Q2LRg7q8T15MQ4W357D+ipeE6xsnDupFGyimn9ZiunW35CajjNeC6WtdgY/iVoSeEoFIAnjaSv6yAp0dM90ng8ErBRoPEzEossNJ+2JcyDW2kCSpCk6XCF20v2zgCxEEXfhcXCgymOAlsizjVWtQ==|920
+}//Kgcii2265IzdKXqwDmHWncB/MfJPmBaNOtb94YWkQpT9w3NmQ3b5zfolucKeW+sfrctAMeLZnLikGAXuJ20L5fdtR/YnoVWrsTZrE3g/1BtioHnd1AkOPTXKYTfxQbx7o5XWMG/lQPGXSSqUNaKA0m1xe5ysNoj/iRGU7GJss5R/OOAWJ/Dcqs3JZhivQaG+RulKJAUC3iwiXMk/DcaO+ZGQCeleDpLqPf9PdCMzb4JDrXkqKd6tG66xIC+tKcGKmo8TYl9Yb0YCE2eZEVjkhzYIQCrGMpEGJrSXIDkYJGrFj98E5el8tjN6i4mcau2aLWZvXxYcEfXPkzaF71Q0joPhL/0NSOnujomJBDwDN920OGvjGq81syJGj2I+AycDIyLatz0nTiyggaxDQ+WoAY750v8gTQ8zbrUklaDbHfxHEsslLJ6oHpkiWIsA5y/4lWQe/w4bOYwpsxcFpRg1ACCQmfUHB8ubuFzQc81UtwFWeUBleCVXnQQYvfqHYBIYYZt1HDeWjYPZvteofVRw7hfcyH5vbLzVpQSBIXzo23kf1cM/QBZCtWt87ravu8c+NsucorsIi/u7QdvM34ldFvj8BjzyX+G1UErnFJmJW9KtWPc5wssjo9j6GYVMe4oKBmjCHPyNU3duZhKy2zvf2DuALk04g4+BpJb4LyHuYvJ+rDuaYzqZPpAYA48L8AsZOdJxJLw+Z/KyX5qv+YaYfRah2deDRgMpugO/IBgeO1bze0NBOCGc0QEh/thr60kUUp7NtV+SZ4WJb9yV2cFf75UCH9713fTv7M/N2FYSew15aN/N3eIs2gBlUCdnh5QzCqiry0C21mctMzdu7zNkolXA56KpHNdOMsAaAD57GP61hRF7NWbOSlOqcDw3SohsmC2m9K0Zt7kSe1E47uhIBg==|920
