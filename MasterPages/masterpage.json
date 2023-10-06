@@ -61,6 +61,51 @@
           "DesignLengthInPixel": 8.0
         }
       },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
       "39": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 8.0
@@ -160,51 +205,6 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 22.0
         }
-      },
-      "29": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 8.0
-        }
-      },
-      "30": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 8.0
-        }
-      },
-      "31": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 8.0
-        }
-      },
-      "32": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 8.0
-        }
-      },
-      "33": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 8.0
-        }
-      },
-      "34": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 8.0
-        }
-      },
-      "35": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 8.0
-        }
-      },
-      "36": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 8.0
-        }
-      },
-      "37": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 8.0
-        }
       }
     },
     "Count": 68
@@ -218,12 +218,12 @@
       },
       "12": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 14.0
+          "DesignLengthInPixel": 20.0
         }
       },
       "64": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 26.0
+          "DesignLengthInPixel": 20.0
         }
       },
       "65": {
@@ -245,9 +245,9 @@
     "43,2": "定期校正対象計測機器",
     "45,2": "承認依頼リスト",
     "47,2": "管理番号マスター",
-    "49,2": "記録文書マスター",
-    "51,2": "測定機器一覧マスター",
-    "53,2": "校正・修理・廃棄履歴マスター",
+    "49,2": "測定機器一覧マスター",
+    "51,2": "校正・修理・廃棄履歴マスター",
+    "53,2": "記録文書マスター",
     "57,2": "校正対象機器",
     "59,2": "テスト"
   },
@@ -296,7 +296,7 @@
                   }
                 },
                 "Params": [],
-                "ID": "1320f15e12114baa9bc654e5d058bbb3"
+                "ID": "eff1c28657f64f0cae39683ed61cd9fb"
               }
             ],
             "CanVisitRoleList": [
@@ -368,7 +368,7 @@
               "Value": "使用可"
             },
             "Params": [],
-            "ID": "82677d399429436ca5624a792540d1c1"
+            "ID": "8b55a962413649948ec09af9271f35dc"
           }
         ],
         "Text": "すべての計測機器",
@@ -403,7 +403,7 @@
               "Value": "%CurrentUser.UserName%"
             },
             "Params": [],
-            "ID": "5040407686d447b9a07c5e23c030b833"
+            "ID": "f3cbae4953c54686a16ee43c0d06e0d1"
           }
         ],
         "Text": "定期校正対象計測機器",
@@ -432,7 +432,7 @@
               }
             },
             "Params": [],
-            "ID": "39575a0c13b84d269eabd32de3477a9e"
+            "ID": "3fbe332cd8cf4cd1bb4a30c44ba2e109"
           }
         ],
         "Text": "すべての記録文書",
@@ -463,7 +463,7 @@
               "Value": "社外"
             },
             "Params": [],
-            "ID": "1f51e27aab5343e5a8dab38d95dc7ca0"
+            "ID": "e24e2013d38f4093a17d1b89897e9c70"
           }
         ],
         "Text": "定期校正対象計測機器",
@@ -504,7 +504,7 @@
               }
             },
             "Params": [],
-            "ID": "93ab80fc128241bfa8ae2f394addc344",
+            "ID": "f9c73166fcc44f36acf58be591a51e26",
             "Disabled": true
           }
         ],
@@ -533,6 +533,52 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "計測機器一覧マスター",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "測定機器一覧マスター",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal2"
+      }
+    },
+    "51,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "校正修理廃棄履歴一覧マスター",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_insptool_calibration_history",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_calibration_history",
+                "ColumnName": "id_tool"
+              }
+            },
+            "Params": [],
+            "ID": "643e1e3c21d54ed1ab9eefbec1893c39"
+          }
+        ],
+        "Text": "校正・修理・廃棄履歴マスター",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal2"
+      }
+    },
+    "53,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "記録文書一覧マスター",
             "PassValues": []
           },
@@ -547,44 +593,11 @@
               }
             },
             "Params": [],
-            "ID": "44126cef8cde41a3bf64e67d2361d17e"
+            "ID": "2cc631d5f35549a5ba7ea5802ee5979f"
           }
         ],
         "Text": "記録文書マスター",
         "ClickMode": 1
-      }
-    },
-    "51,2": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "計測機器一覧マスター",
-            "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false,
-            "DeleteCachedQuery": true
-          }
-        ],
-        "Text": "測定機器一覧マスター",
-        "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
-      }
-    },
-    "53,2": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "校正修理廃棄履歴一覧マスター",
-            "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false
-          }
-        ],
-        "Text": "校正・修理・廃棄履歴マスター",
-        "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
       }
     },
     "57,2": {
@@ -645,7 +658,7 @@
               }
             },
             "Params": [],
-            "ID": "65139b79827743d29280ad8a2bd17c77"
+            "ID": "c133674f5c814e7587d1474fca4a6980"
           }
         ],
         "Text": "校正対象機器",
@@ -760,6 +773,9 @@
         "Background": 5,
         "Foreground": 10,
         "Underline": true
+      },
+      {
+        "Background": 0
       },
       {
         "Background": 0,
@@ -1353,7 +1369,7 @@
       "48,65": 4,
       "49,0": 4,
       "49,1": 4,
-      "49,2": 13,
+      "49,2": 10,
       "49,3": 4,
       "49,4": 4,
       "49,5": 4,
@@ -1367,7 +1383,7 @@
       "49,65": 4,
       "50,0": 4,
       "50,1": 4,
-      "50,2": 4,
+      "50,2": 12,
       "50,3": 4,
       "50,4": 4,
       "50,5": 4,
@@ -1395,7 +1411,7 @@
       "51,65": 4,
       "52,0": 4,
       "52,1": 4,
-      "52,2": 4,
+      "52,2": 12,
       "52,3": 4,
       "52,4": 4,
       "52,5": 4,
@@ -1409,7 +1425,7 @@
       "52,65": 4,
       "53,0": 4,
       "53,1": 4,
-      "53,2": 10,
+      "53,2": 13,
       "53,3": 4,
       "53,4": 4,
       "53,5": 4,
@@ -1423,7 +1439,7 @@
       "53,65": 4,
       "54,0": 4,
       "54,1": 4,
-      "54,2": 4,
+      "54,2": 15,
       "54,3": 4,
       "54,4": 4,
       "54,5": 4,
@@ -1437,7 +1453,7 @@
       "54,65": 4,
       "55,0": 4,
       "55,1": 4,
-      "55,2": 12,
+      "55,2": 15,
       "55,3": 4,
       "55,4": 4,
       "55,5": 4,
@@ -1493,7 +1509,7 @@
       "58,65": 4,
       "59,0": 4,
       "59,1": 4,
-      "59,2": 15,
+      "59,2": 16,
       "59,3": 4,
       "59,4": 4,
       "59,5": 4,
@@ -1659,4 +1675,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//596JMUfaEIUZpDRay+Vc7UJuapuDNsS8u3f9Yz96EoDCPWCGCsZSWfVQQS2ZBrKanxOTV9xWotKBry/wt0d4kFpVpBNFPIV0zmXpZCminmTfMTsPilq45eE2wREIsQqr9rqt6Pkh4tyFxUhdQOr0Lg+GNHt/mCYTDaRL+Fncpr56RfFUGv6hkuk1exZhWFsOwwnFr1P90G8WezqgVuLA1WJ3h8pZSZNGZ9Rldlb8/vlFdY7HfIfV87CzkbAp4QEuDs0STRQOVL0Szu1jL4Jojhyls5H0vX3oGtzYiaZvpuWpAt6M9ZtrnKC7e+0AfAaeicFCYZPUdnuy0plrsabBaOY9mOkA6daRCcXdMW7ZEQNDMU+SeR7ecas8zx3leehgp3fMjE39O1azPlpsuenIZISc9tcOxgbkuOwqHltndzZMIla44sY6SCygT4SochyLiLOhyYAXmOgzzIhThEsiVhiBAG4b4qu/M+qvwVwFQFyovlSUGS/qOhATMKyS7uUq5Vh9mwn4vfl/pKvdLanMzHCFtThwFZI2oMY0wmVZZuXopWXgtbTr8+tbPW3dTZBWY3hJ28Od1ZFsshnnPOAOjsB2uUQSIB3OcScOiBqeKdw2L62NjBWrsz/QYv6fL53pUZYpZnuDPKbib8YFl9AtGSypGklbgWpJPW5UUQ09po1B9T8GiTaneu86ccMoQF5FnTP8NuBReVnjmJAuwNvGrk4xXGuBCg0e79NoNfvQ0/Hi7xKXVdMx764nBLikkqMOrqG4SiVZrc9ihbILktc97dSFe+jCewRxFtoGXPhUGLLAdNbTWKrlgeERzywyHcgRep4F7Lr7lMpfJ3OVozNF97a9x3ulT61O4LCvDq4C8YOlyZXDM5ZltgxFbCvqM+aABDjxixj/sL6+GzZEuKt3bQ==|920
+}//ZEAYTBWXtWyciyhhcNgfU9dtwxgfjJ6RN/8GPvel8SL8wRAhzZ/StNXFVsAjM4hJIFXdSET4Ie6OuIQ/p3cQqmBM32A8FKUSvMjv7+0LilTc7dlzs2LVo7YKoOek2s8gTams6pbcoY8WdR88ZJG+mtsNvfEsNKSaasL2LWLD7ENx3AhvN1Cxyocuu2c5DZb4ZMCHqnS+ryubGyt3cruTdWyy/F7fnnltGSvAq7gsnnzJyXrQeLGCjJnOQEBZ9M151DGJhUdbPmwXs8p8KODBBfQJQfuYF2KLQ1gRgyrpuWMnqCENUDx9EDTlEAtV6/ugtokvvzNWFhFszNyWWkDUIGmvOt+N6YsdE6N24l6F24t1s2Dur2rDh3JNwCulK2t2dOCitVSQ2JoZGgDzcDc2i0Q9sJREiIvVZIYiibMebKZQvMqFCrMscbD9F57pZ82AnevwNqd/DfeWA4qaRB2Jz9XT+mYZOdLsCx3Z4MAu3wNo2hNVUOBx9osz/1Fg6ZWb44kcF31Pb7DCZR3YpsNNVzLXc8uVQXc/Wwpgt0PkEomci80YC+fazV29a/7oHdlN2lwy6TNSWmI0DBhOG76X4RDzoRIQjTO+KP3uPOaC2UJO31fKoxgS722e0EszTILGNyBh962HeSLwklZ8mJqwgUiMjP3gM1fmKMBIki+sw0sqtHizzIjmaryeLxXjI9EPSr+9sUb6bp+ysoyq6Jx6S0YiAVfVNyip65skJprl5rmrY2DPlQ7SPVm0iBB5kLYs20yO8NlxhNlbGTV4VI4y0GFvPdzHG5lZ29ZovghrrG1Y7PcG2ZWrcqRKSOKktLDtUno9+lzJa75btYSUT6eN4Nj2m3qyLYYSm6Xb3Y1E2qQShWB0ampRrWbxXOhK7dLlafaFscU3X/ZfP9lMKbCX8Q==|920
