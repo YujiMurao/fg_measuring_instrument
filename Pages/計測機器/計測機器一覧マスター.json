@@ -196,6 +196,7 @@
     "DefaultSize": 80.0
   },
   "Values": {
+    "0,0": "計測機器一覧マスター",
     "0,6": "create control no",
     "0,8": "excel export",
     "1,1": "登録数:",
@@ -395,7 +396,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "4d22fac5-6fa2-4b28-ac2b-d589e15166a5"
+                    "ID": "87879bb3-3591-4218-ba89-eeb624cafc05"
                   },
                   {
                     "Condition": {
@@ -431,7 +432,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "e99e9791-04ab-4048-bb70-9eaf15732343"
+                    "ID": "be5e4692-a402-4ce3-b27a-d1ee0ca50e7f"
                   }
                 ]
               },
@@ -688,17 +689,21 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Formatter": 0,
-        "HorizontalAlignment": 1
+        "Foreground": 0,
+        "Formatter": 1
       },
       {
-        "HorizontalAlignment": 1
+        "Formatter": 1,
+        "HorizontalAlignment": 2
       },
       {
-        "Formatter": 2
+        "HorizontalAlignment": 2
       },
       {
         "Formatter": 3
+      },
+      {
+        "Formatter": 4
       },
       {
         "FontSize": -1.0
@@ -706,6 +711,7 @@
     ],
     "Types": {
       "Strs": [
+        "Accent 1 0",
         "[AUTO]General",
         "Right",
         "000",
@@ -714,59 +720,60 @@
       ]
     },
     "CellStyles": {
-      "1,1": 0,
-      "3,0": 1,
-      "3,4": 2,
-      "3,7": 3,
-      "3,17": 3,
-      "3,19": 3,
-      "3,24": 3,
-      "3,26": 3,
-      "3,27": 3,
-      "3,29": 3,
-      "3,30": 3,
-      "3,31": 3
+      "0,0": 0,
+      "1,1": 1,
+      "3,0": 2,
+      "3,4": 3,
+      "3,7": 4,
+      "3,17": 4,
+      "3,19": 4,
+      "3,24": 4,
+      "3,26": 4,
+      "3,27": 4,
+      "3,29": 4,
+      "3,30": 4,
+      "3,31": 4
     },
     "RowStyles": {
-      "4": 4,
-      "5": 4,
-      "6": 4,
-      "7": 4,
-      "8": 4,
-      "9": 4,
-      "10": 4,
-      "11": 4,
-      "12": 4,
-      "13": 4,
-      "14": 4,
-      "15": 4,
-      "16": 4,
-      "17": 4,
-      "18": 4,
-      "19": 4,
-      "20": 4,
-      "21": 4,
-      "22": 4,
-      "23": 4,
-      "24": 4,
-      "25": 4,
-      "26": 4,
-      "27": 4,
-      "28": 4,
-      "29": 4,
-      "30": 4,
-      "31": 4,
-      "32": 4,
-      "33": 4,
-      "34": 4,
-      "35": 4,
-      "36": 4,
-      "37": 4,
-      "38": 4,
-      "39": 4
+      "4": 5,
+      "5": 5,
+      "6": 5,
+      "7": 5,
+      "8": 5,
+      "9": 5,
+      "10": 5,
+      "11": 5,
+      "12": 5,
+      "13": 5,
+      "14": 5,
+      "15": 5,
+      "16": 5,
+      "17": 5,
+      "18": 5,
+      "19": 5,
+      "20": 5,
+      "21": 5,
+      "22": 5,
+      "23": 5,
+      "24": 5,
+      "25": 5,
+      "26": 5,
+      "27": 5,
+      "28": 5,
+      "29": 5,
+      "30": 5,
+      "31": 5,
+      "32": 5,
+      "33": 5,
+      "34": 5,
+      "35": 5,
+      "36": 5,
+      "37": 5,
+      "38": 5,
+      "39": 5
     },
     "SheetStyle": {
-      "FontFamily": 4,
+      "FontFamily": 5,
       "FontSize": 12.0
     }
   },
@@ -789,4 +796,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//jB3PDuMjjfpXBACmLRmRaKhUiu0Acd263GQZuCj5JnvnNP/3R6iGofUy+x7iaWi09w01bYj+NoY82n+ARO07FeSphaNNQYC7Rs1OyD9xDw9jDVUhetWq5AEo4JRTJiZ/IXbUxO0BfUuSa59uYnbcMuEz6BfGIRS2G9BHkVmDAR33NdNa1FcmbDmPdY72SBJBUB3oAutTDvQErDBdbPwefezs5zchN+x/owKKjNeePn6cVgpsnzRM+DHxNebZh8CTevgrVr4GvQK2zyOwLd2kKi/nhtPN5vs4dzvpCkwV1S2oiTCAsYUgDeGDGzqli3Od99NzyHCUtU4XDaMgRihIBeCe/E5PicamwysSCDv8PMVlcndzWBJQVp+O1jcdG0rDan2SP6BV4AA/Wt10lydpBdB6xvGJkrtT68OqGeet+WzFuUR/WYXsoQ3MM941FKkPvyDH/6iv7TapvaAcE23bnIBMURbsLW6XSHM+LY8Qd+annogQSLTsnmn95AoDoXRa5bHZKVLhB429HxV8cfP+/1Ys92RI5774nf6qnN59NoF5Ovn8uwY2kc3dY9jWEapOmKA5pXcK9bHTFBuB5bU2tHGks8GkezostxPIQ5bl9QamvupG2B7vuj6P7u6WEm5K0WkK33uwzjDjZPoq5Gs/uGGKnyFu9y7gHjdWIIUDSLdAzsQF5kYg43rKADpQ7xZJkI3hU9nUPWzyirzfR43Rmt/o9lavNyShge0aPkByH89qtKJIhrIilpaU+82ZxWGGsYZcwO6TTJaM/UQXAFcYPHExemxBiauDW+s1PaVHwbrYtjUTwWfey74U8sHO7TG6sP5BGugYcgkUDQ56H6smG2r0SkwWCzmKiqZ0oD4zjsH3V8lZ7NnjXVybV8utXvpOFSHMWSfMVSskzodmX03YaA==|920
+}//bOwH/v1OqtEA4lzuNGl6uedIMJVONVqDv4SnW48TKYTrIYRUWQ9Wji6TBii39ReYaz1OdKJHJTaIrZ9TSllkATwdrF0AVljMd6hxLAblsTolITbIE7EHgQftPh+qdbzAcjLcRsPdYXzmFINBate++0WY8q/uQ6nbsx3QCgaPKmsbShVgpmnfFgxd2ZjdQsIg6SaKIXiT5PLYzHRMBLzm+nAvMyPKwcSjIZCNcnUnm5W6HN3/w+mLZURhfqjpfduVfLi5m6rj4GKWjKnCRxFL234dUvQ/JNmxKkrLpaEJNZvtoEZLBpLj3wuzkz0/GdSxv36CblIHCc5Yeb0B35Sqfzv2esjhZITfZDVPrrVvjE09CKFY5288oIQhWVcQEVZu1SbfMXx94dX2JnYpBi/wDSYTZNyCC10yATXSkfJj0uut/YM7KOHLR3QXod1PN1uNuDLyFuOg7GIH5vvctElbcW5CEl2w6I0DJ3XSTnqbonQrSiIH5lmG8ZDhOXw5I1L1Q5zZPMgHAQwElzohLLfhw2eUoKK6EcaLbUAeA8WNvHi6uf/oNviQW6mk0KphQNtkir26LhjvBRnvVzVpXjzoV0pVObPoCvRbCwtbGW+Cq57u8nQjA9YJlRmvp8x4WlO/kODkaD8PGrA69hn9kUJ0q0QbPaqUmrYtnixX7qMPjn5E9ctq//mWhZalkvo2BpTdgjrxebMjkX5NVSAZ5M2ub5bbVEodnPGCdRpgmg0jDdLqsNfPLa2UXVT+pzZgMBR7zHeEH3PuRC5pAAFkJVC3aTqPCezKbq43uIrUDjlo1KfqWRSDRo05yI3t68iP3gCHPl6DBqoGt071uIuWPYtBJN+oklER2AiU2OCU+BfFaJ1G1Y4/Ns60DhUe6pqAAiaV0Kw9wMhijmJ5rOPaxpv7gg==|920

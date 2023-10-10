@@ -51,6 +51,7 @@
     "DefaultSize": 90.0
   },
   "Values": {
+    "0,0": "記録文書一覧マスター",
     "0,1": "登録日",
     "0,2": "件名",
     "0,3": "メモ",
@@ -150,20 +151,23 @@
   "StyleDatas": {
     "Styles": [
       {
-        "HorizontalAlignment": 0
+        "Foreground": 0
       },
       {
-        "Background": 1,
-        "Formatter": 2
+        "HorizontalAlignment": 1
       },
       {
-        "Formatter": 2
+        "Background": 2,
+        "Formatter": 3
       },
       {
-        "HorizontalAlignment": 3
+        "Formatter": 3
       },
       {
-        "Foreground": 4,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Foreground": 5,
         "Underline": true
       },
       {
@@ -172,6 +176,7 @@
     ],
     "Types": {
       "Strs": [
+        "Accent 1 0",
         "Center",
         "Accent 1",
         "yyyy/MM/dd",
@@ -181,63 +186,64 @@
       ]
     },
     "CellStyles": {
-      "1,0": 0,
-      "1,1": 1,
-      "2,0": 0,
-      "2,1": 2,
-      "2,2": 3,
-      "2,3": 3,
-      "2,4": 4,
-      "2,6": 2,
-      "2,8": 2
+      "0,0": 0,
+      "1,0": 1,
+      "1,1": 2,
+      "2,0": 1,
+      "2,1": 3,
+      "2,2": 4,
+      "2,3": 4,
+      "2,4": 5,
+      "2,6": 3,
+      "2,8": 3
     },
     "RowStyles": {
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 5,
-      "10": 5,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
-      "18": 5,
-      "19": 5,
-      "20": 5,
-      "21": 5,
-      "22": 5,
-      "23": 5,
-      "24": 5,
-      "25": 5,
-      "26": 5,
-      "27": 5,
-      "28": 5,
-      "29": 5,
-      "30": 5,
-      "31": 5,
-      "32": 5,
-      "33": 5,
-      "34": 5,
-      "35": 5,
-      "36": 5,
-      "37": 5,
-      "38": 5,
-      "39": 5
+      "3": 6,
+      "4": 6,
+      "5": 6,
+      "6": 6,
+      "7": 6,
+      "8": 6,
+      "9": 6,
+      "10": 6,
+      "11": 6,
+      "12": 6,
+      "13": 6,
+      "14": 6,
+      "15": 6,
+      "16": 6,
+      "17": 6,
+      "18": 6,
+      "19": 6,
+      "20": 6,
+      "21": 6,
+      "22": 6,
+      "23": 6,
+      "24": 6,
+      "25": 6,
+      "26": 6,
+      "27": 6,
+      "28": 6,
+      "29": 6,
+      "30": 6,
+      "31": 6,
+      "32": 6,
+      "33": 6,
+      "34": 6,
+      "35": 6,
+      "36": 6,
+      "37": 6,
+      "38": 6,
+      "39": 6
     },
     "ColStyles": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
     },
     "SheetStyle": {
-      "FontFamily": 5,
+      "FontFamily": 6,
       "FontSize": 13.333333333333332
     }
   },
@@ -260,7 +266,7 @@
           }
         },
         "Params": [],
-        "ID": "7c8d8d235b274c6183b7c9b4ea37d02f"
+        "ID": "c058c7fe5076465b821fbe19a33b282d"
       }
     ],
     "AuthorizeInfo": {
@@ -275,4 +281,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//c2+rHwnYusV041EZDRgiM4otEQ7G/R8qI2ex3GhjIBLSvOxfcXQMuxil1N2SjeFg22bN7zzp8u+QdNR+RLEKON1BOb3d/DmpbNhwqXRrCHX1K0B+dl9tuKI3C7xhmSVF4pOpIhyjSPznT8BETjzFgJK3vZR+637k97QnxMPdXbFdnFA9q90qRLcrdCyad2B/0aVdYG7NzSwpKmNR5KuvOvGXdiBTKFk9/TBFWGmTQHZmtRXa3sSVGrRxkqNbyQK/ihEjxrqt3Wd8yb82iWWPJqCXtQf/8zoOzNo73n6ASrWULQx0xZwWQzGg9RJOttd8kCeoQNgayX6dGNnVKf+znAvStGjKZl9PVe1HDOrV/ZQSVt8XUWxk+POvMUa3+ppiWMJPXi2GubzdYPvCnQf9HJJY+O6yayiwYcGhRYtbM1WmyHBn58+up6xt6Y9iLZBMuDwou+Ry1fFaNJNtMpcQqMEI6hN2w3bWuiceLy4u+d2MQe82sj/6KD1hNQ1p/JJzOMXaHve80WPWZTUHZKisdmnioIf1OB9vrydUlRL1uFMrj6A+lLn9T+TFvAJ+DsTMg0HUganyZJnic9ngE//RTe/J6Nqb39nOVmSf3s5kmqQSKHMzTrhinWdRrWnpVWR2Pb6EPNw96JOlWLgyB/j5jurIuiX2/R9GsPw7O/s+6vH9IqcVWu6BrywWKyo528LptHMQew2n0YDTdYC1EhviaUKIrpbGMX9RFffJGqGFqXaAMgXggFE0zXEZcdt7Xs/+Vb3rjTolFT0tX4WTsdmGqeUrnJrjoM2iDFY571SCIp+e1iNq9o5ncQbGCrEpQdrbJE9wsRnzRIxoIVNZ/YRpOA/bifgKim4uXmfZY9BwZCPOvE8ajWo37dH4keGNDQtxkWVj0x4gquH76XnmH1rxpQ==|920
+}//J1/X3cSdj8VU2HJwOnLSq5PR/D5SYJOQARCpSb9XdcOnTSF1ZVDJ/3qtAsSIgchRPamFAjnnMIyAkMRM7GOPHY0Vd+AYqSBQWzIMAMfeB8PHcvywBWaBtp2iSk2ruYqQXIrjlb5syJovMXtnDGUdtF2OafntdOxUgpSSizOS2J/VPy+yV1AbpQt6fTnA+tK/aRitmXPj9F4ntYZMYksm7M5VcUAuPOx5BtEVxWNlmEIF+fuDZbdwRwnkLnYfuAW12Mf7nIYBwDvLmVVgjKewnv75H2rYEjV1PRHGjbG6Ez6Rg7chCOUhMDJ0FkyR41aWJ4oxl5tWgxolcnsoLhOmQWhJyULuCzR5xr1lkmGW7UmnvVnwYZF7iVw77DWPz8zdjHc8CZtnv7WJBi2hk9eeJVhIh9QbsE/D67uv7zpYdnjN2JRFx4dRV+z8VuxMUoTRSyQbf5pqvXq03z/zZycBgWh0dRAMrns/+aPrae7vnbHAenFdNj1rAt8a4hs4Fhyo4JZj6/BjUIOViiWJ9TCPl7m6zLxxpAi26lc7pN2qS5M8TxujzTe3S8QQX2p+I+nUj/XcBKekjub2Toz3EpFxbb/+KUb7lffXp+N6R5iA+4mIN7Vtvul5z4L5h4naCCPe6btkA/vNDMFNAjzmPhy3+D1THaltfDZC7HkKVxZ10ZbX/OZmU25q8WFgAXSdO1L20QDRb17O/4IiJRYbBHWHbXhRkUkM2BDPDCjyqmxQxNPEg+XpPLZdmIkNAiZmUFO7YacXDHgHp6cd6jP+S1KuYW/STxriNbR6QgZbRTvdzrJ/Zvcww4xJWREinxHWjvgcsUwAvSqCn14UnWiknzmxHs68LwB/zCi2VrvoVrbrJayOYa+2hQgBBddOqi2X2h0JrZxJMZmC0xbKatH2cbql/Q==|920

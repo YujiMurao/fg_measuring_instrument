@@ -255,6 +255,7 @@
     "Count": 72
   },
   "Values": {
+    "0,0": "定期校正・修理再構成・修理・廃棄の履歴",
     "0,17": "→",
     "0,68": "登録数:",
     "1,3": "計測機器ID",
@@ -267,7 +268,7 @@
     "0,69": "COUNTA(A3)"
   },
   "AttachInfos": {
-    "0,10": {
+    "0,12": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -498,108 +499,111 @@
     "Styles": [
       {
         "FontFamily": 0,
-        "Formatter": 1,
+        "Foreground": 1,
+        "Formatter": 2,
         "BorderBottom": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
         "FontFamily": 0,
-        "Formatter": 1
+        "Formatter": 2
       },
       {
         "FontFamily": 0,
-        "Foreground": 2,
-        "Formatter": 1
+        "Foreground": 3,
+        "Formatter": 2
       },
       {
         "FontFamily": 0,
-        "FontStyle": 3,
-        "FontWeight": 3,
-        "Foreground": 2,
-        "Formatter": 4,
+        "FontStyle": 4,
+        "FontWeight": 4,
+        "Foreground": 3,
+        "Formatter": 5,
         "TextIndent": 0,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 6,
-        "WordWrap": false,
-        "Underline": false,
-        "Strikethrough": false
-      },
-      {
-        "FontFamily": 0,
-        "Formatter": 1,
-        "TextIndent": 0,
-        "HorizontalAlignment": 6
-      },
-      {
-        "FontFamily": 0,
-        "Formatter": 1,
-        "HorizontalAlignment": 6
-      },
-      {
-        "FontStyle": 3,
-        "FontWeight": 3,
-        "Foreground": 7,
-        "Formatter": 1,
-        "TextIndent": 0,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 6,
-        "WordWrap": false,
-        "Underline": false,
-        "Strikethrough": false
-      },
-      {
-        "FontFamily": 0,
-        "FontStyle": 3,
-        "FontWeight": 3,
-        "Formatter": 1,
-        "TextIndent": 0,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 6,
-        "WordWrap": false,
-        "Underline": false,
-        "Strikethrough": false,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 0,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 8,
-        "FontFamily": 0,
-        "Foreground": 9,
-        "Formatter": 1,
-        "TextIndent": 5,
-        "HorizontalAlignment": 10,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 8,
-        "FontFamily": 0,
-        "Foreground": 9,
-        "Formatter": 1,
-        "TextIndent": 5,
-        "HorizontalAlignment": 10
-      },
-      {
-        "Background": 11,
-        "FontFamily": 0,
-        "FontStyle": 3,
-        "FontWeight": 3,
-        "Foreground": 2,
-        "Formatter": 1,
         "HorizontalAlignment": 6,
-        "VerticalAlignment": 6,
+        "VerticalAlignment": 7,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontStyle": 4,
+        "FontWeight": 4,
+        "Foreground": 8,
+        "Formatter": 2,
+        "TextIndent": 0,
+        "HorizontalAlignment": 6,
+        "VerticalAlignment": 7,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontStyle": 4,
+        "FontWeight": 4,
+        "Formatter": 2,
+        "TextIndent": 0,
+        "HorizontalAlignment": 6,
+        "VerticalAlignment": 7,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "FontFamily": 0,
+        "Foreground": 10,
+        "Formatter": 2,
+        "TextIndent": 5,
+        "HorizontalAlignment": 11,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "FontFamily": 0,
+        "Foreground": 10,
+        "Formatter": 2,
+        "TextIndent": 5,
+        "HorizontalAlignment": 11
+      },
+      {
+        "Background": 12,
+        "FontFamily": 0,
+        "FontStyle": 4,
+        "FontWeight": 4,
+        "Foreground": 3,
+        "Formatter": 2,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 7,
         "WordWrap": false,
         "Underline": false,
         "Strikethrough": false,
@@ -616,13 +620,13 @@
         "BorderRight": null
       },
       {
-        "FontStyle": 3,
-        "FontWeight": 3,
-        "Foreground": 13,
-        "Formatter": 14,
+        "FontStyle": 4,
+        "FontWeight": 4,
+        "Foreground": 14,
+        "Formatter": 15,
         "TextIndent": 0,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 6,
+        "HorizontalAlignment": 6,
+        "VerticalAlignment": 7,
         "WordWrap": false,
         "Underline": false,
         "Strikethrough": false,
@@ -636,13 +640,13 @@
       },
       {
         "Background": null,
-        "FontStyle": 3,
-        "FontWeight": 3,
-        "Foreground": 7,
-        "Formatter": 5,
+        "FontStyle": 4,
+        "FontWeight": 4,
+        "Foreground": 8,
+        "Formatter": 6,
         "TextIndent": 0,
-        "HorizontalAlignment": 10,
-        "VerticalAlignment": 6,
+        "HorizontalAlignment": 11,
+        "VerticalAlignment": 7,
         "WordWrap": false,
         "Underline": false,
         "Strikethrough": false,
@@ -655,15 +659,15 @@
         "BorderTop": 1
       },
       {
-        "Formatter": 1,
-        "HorizontalAlignment": 10
+        "Formatter": 2,
+        "HorizontalAlignment": 11
       },
       {
-        "HorizontalAlignment": 6
+        "HorizontalAlignment": 7
       },
       {
-        "Formatter": 17,
-        "HorizontalAlignment": 6
+        "Formatter": 18,
+        "HorizontalAlignment": 7
       },
       {
         "FontFamily": 0
@@ -687,6 +691,7 @@
     "Types": {
       "Strs": [
         "Meiryo UI",
+        "Accent 1 0",
         "[AUTO]General",
         "#FF6D6D6D",
         "Normal",
@@ -707,13 +712,13 @@
       ],
       "Borders": [
         {
-          "Color": 12
-        },
-        {
-          "Color": 15
+          "Color": 13
         },
         {
           "Color": 16
+        },
+        {
+          "Color": 17
         }
       ]
     },
@@ -722,7 +727,7 @@
       "0,1": 1,
       "0,2": 2,
       "0,4": 3,
-      "0,11": 4,
+      "0,12": 4,
       "0,15": 5,
       "0,24": 6,
       "0,28": 6,
@@ -1965,4 +1970,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//TL6FDaZ7zrE3l1QQg6DfLuFZY3Zt57l+R3UIHGp6qi/0SQUupSPALU9rSS2LAihzLtFQyNYyI724ezD2ZfjggsJNmfDCfWJrcsFKdWwvejQlja7vrbVe7suRW809e3sC3enec6Exzm0CeKFpM/h9XkSHB75258EoZ6FtO/QX+5bzkWNFUBP7bqVk6eEzT6ZCmdqMLFFwlRwZ/zONNCwfYcrgYsl90FqpCUwk8ZlqMKgzRjnHWQ7DnbE+G0nz5sdvLXPzlqhzV0TBsD0ubWhFcfDChEzBgKcGMd9c4430OdKbX0hv2yxoJaoksiPUIiQ0SGDCleF/QYkTblMgHM635dlLZKTa47S0rcVAiozg0aViefeAz//BwzBFi9X6wYBKCsYYxn5wO+QTkHCFoy31SmaJSFsS9gtm2DrQxM9shX5EExzeFOE7z1LEGEMkggEs+KEwt56IqELrTKMWhIQv+Ncrl53GFCF5UvHhWKUqoi68S5miKAaInAtmEyCViRpPLKBWbFKTRXvK4ull6E9uRp1GeSLsZii4n6DPX0buEu1G+5tXVbVokcS+lp22maUVLHRwYxAYlMENzbuULPtWHn+KM1CDT2cLcDeE5HdPg3GPAASg4Kb9yc+gCW0zoXdLceBwpTPMVEmx6s8u4w9e0o72Vj0s3MLvagn+sOYDISUgaHKblKf5FIz935IXy+ko1q/Rc9GwOpyfSFIvTbskPV4nVC1HazEdLM5/ofoiXjXr6coGeSbqT/rdNm33mkz0QJSz3qIE5R5sRRpqrMbOMHt8tRqnRdisIXNHk952porAUycBDgIiVFvuGK+D3Qaen2Oo+fDRkOBA/QsxHQAosbLndYwnI6lItgsc4JZpo8KGLLH2Y/JPsuNgUNjxR600874z2waOkM7CI8O9QEZRMw==|920
+}//4gy7zQ0Hqh2Hwn66OnwroORndAZSlN/4uYLXt6e7FiPSzqBL5UQr9VWb7ecT1MTaVKkjWPhE5RILeX4tp2/AVb5kk1Klj88l8Bd8Y9HTzwQpEVbTEWqNysEiRp9dMKjTkw4Jvb+bVaYLouxCB7v5vRW8Ml9iNz2TGRckfzw4CZ0eKqmagtTRh+T7+AtSGa/Ojxbnd8JYsSm2RYTGsbLgu3v0dW0EeVhnb7h2jEFC5uJonEWyKp4DIEwCVPpB8c0AXlLTFW9xokmey7+ppZNNqPfcLI39hDVWRmFZIQBiMZ0HZjnPt/1+nR8nSeMb7N66LsFVwnKdiUiuItOD9dMo1FcBkGvl6GPzB0H5pl20+XEU9884apJG4pasoPwDNMzlsfGNXfaGHlO9oth3jWHmzjhRmC9K30UJ2J0SfswbtgoD6+aSnZeI1fsX+ubWnBZRX2oECyR/xvwDj/3mX6LJ0pm+IGfOrAxUVyFsGGfX4p9/0hY8HH6j0VSlWlkF+tf2s3ryPHmpsZMsRwPWdzWO498ap/U33jteL2ds7vrcn9mu29BYqZLHQvZjtdxhelRFeLWrXBXr6ttfA8/n23wPSxSrSu45eaoU3KVxkht1hiMZwSFrw2Ws3TycSp5hKVMIu6QB1QnXge0qXgnwlydpF9+tU5WF+PnvtsjM0+NoGv8xhp2aR9JESRe91191JDClgcdqFRqLqK8DqQJ9Tmg/GEjL+yNY4Ep390rqyITiJkEdDZJ1m9qVPZsceWokPqEFq5uLWbV+8o1k6Zt29fsSI25CNm2+p0YlJeCF0B6jbKHbgB7rKnWdFcNk9pkxe9PtIL2QN3AitxvXNLstf4x0GNdLCsYqa4QY4irrkjpe3HASBfrK4WkzOmChzKIgh7lA6BBj1nUa+UvaZTXmwmB3xg==|920
