@@ -118,7 +118,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正履歴リスト!BC6"
+                  "SerializeProperty": "=校正履歴リスト!BB3"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=校正履歴の作成!K5"
@@ -127,7 +127,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正履歴リスト!BD6"
+                  "SerializeProperty": "=校正履歴リスト!BC3"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=校正履歴の作成!E5"
@@ -136,7 +136,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正履歴リスト!BE6"
+                  "SerializeProperty": "=校正履歴リスト!BD3"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=校正履歴の作成!E6"
@@ -145,16 +145,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正履歴リスト!BF6"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=校正履歴の作成!E7"
-                }
-              },
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正履歴リスト!BG6"
+                  "SerializeProperty": "=校正履歴リスト!BF3"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=校正履歴の作成!E8"
@@ -163,7 +154,16 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正履歴リスト!BH6"
+                  "SerializeProperty": "=校正履歴リスト!BE3"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=校正履歴の作成!E7"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=校正履歴リスト!BG3"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=校正履歴の作成!R5"
@@ -192,6 +192,42 @@
           "RelatedColumn": "ID",
           "DisplayColumn": "ctrl_no"
         }
+      }
+    },
+    "2,53": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "ID"
+      }
+    },
+    "2,54": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "ctrl_no"
+      }
+    },
+    "2,55": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "kind"
+      }
+    },
+    "2,56": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "item_name"
+      }
+    },
+    "2,57": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "type"
+      }
+    },
+    "2,58": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "外観"
       }
     },
     "4,1": {
@@ -654,7 +690,6 @@
       "2,19": 4,
       "2,20": 4,
       "2,21": 4,
-      "2,22": 4,
       "2,23": 4,
       "2,24": 5,
       "2,25": 4,
@@ -668,7 +703,7 @@
       "2,50": 4,
       "2,51": 8,
       "2,52": 9,
-      "2,53": 6,
+      "2,53": 4,
       "2,54": 6,
       "2,55": 6,
       "2,56": 6,
@@ -2134,7 +2169,7 @@
             }
           ]
         },
-        "ID": "f2c8bb445817489fb0a380f7fa5d014e"
+        "ID": "5c6f3ac4b8954b78a263f2b4555bdea9"
       }
     ],
     "AuthorizeInfo": {
@@ -2142,11 +2177,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_insptool_calibration_history",
+    "RelatedDataTableName": "trn_insptool_tools",
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//W2fakEWPzdCtagKUsDWVwiqXhtSdxb++ixb9qm9VeIYy2bDW2X7UjnPkJ//EECh2H4++p9HehEVh8oWBzc+45XrUn9AE2FzFengriHmnQMllQWtfVp/JeVV3R9fSwsHNHtUWSgw+ylmxrrAovbX6s34yhH9yTiRfpeW/8+QBKAFOoTBOWg0Scp7MbltRyfhptURTriFB6nZ8CLjSif6Mj8mH3Vk6C2omvthpp+pOtNcw+8tm6MOLOhihXxszDaNMKqL5t7T6S5xHlRhsf2u19jpSiMmmubJaaQaA9WhoOVj3Ee7fon3GwRSAPoh1dGe0qqr74PM88yM+so2t17MT0Nkph7DzIjKhcEUuTjC5DWsDoKqtD+6gYwWjBbdj1aF5vOQT/zEGDuM/9bsfLSe5kjpss778ZqJWqawdm/cEtdDpchVowq+K7Drk9FtFLF9+jK7obZv4ng6fU3ksFOncixw2jNXwLNNXuCkbWEXeOjA0UUDFi+hiui7LNv1JYS3+IKd8sSPytYKaxwRzJbSyUjHdmv562KDz3/ZpeU66e149DSfzypqqnog5FphHTBtCPXAEurD+w0JVyawwH82Xsk+9cn7uQn3CL9k3m3MySxZFvMS93NJaCfmY1ACoTeDaiOE4DogeScqegm5pqJcI2nDfKOEaOx/OLvJfzmYnXMrsgdM4f7Ti6/PkVoZzSVzLZwMKEdIx4hBiyG+xE97rn9I8n/pX9QG7B3S+yXUEQNPAG+OAyZ9UBgmTXLQr1I8dJN9gMhXrcBFT8GFzTHgInx/i5DwAJPTtJNcYiSJ8e2wvE4PN6ynw15U0Nw9D0YzDd/TjlES/kOHBhkHBLNU0OckEE7KS2VRuFukfzEflkXD1uvUONzY7wEwGTOcJh/Sv6BCFuxErNgTcliLjeSc+RQ==|920
+}//KJYMHOum6oRqSSxR+6lnWFSnYsaae3tJ6gIaXUrqY2847OBHtOV1PkwGEp2TPlWsrOaQL+l/cQkBQnCvhuEJvIhlZ9ThJ3UcabD2ek+gXQ5Be5blifCOZTase0nnVxLasrp50YoXkEcr9AzDsOouzumInxvzkf3QhGfBRuKsEsPe/EutKQEqK6M3yIeMgMz69jUoNNj1brE08rCFckSel1ZUKt9M6vUlqoUX5oBoYViKCs91bN34Ra8X/BuietMsG3v/n1NAEvIaQBzx7O3GJp/ofDV9RQg1LAVmRjd77F/D3CKGLSFGs1E5pm++cqnQBem34Q9x6gBmfE1M0X51Subx7OYJrENCEh+UsTuyk3BUbPdZjXdGTNLYKfchiqWcBmn1OQzmcxuWdv7TjUgLkLcP0AUnESJZzqZG7TSPzbV4kQL8ALQnk/eWl4pBY6/t74q5zmlrvQkfo1eHhTT/krbxy/xpSu4U1Og6hJ0GxI4abTprPwmeZ/7shg+ELl18rJrneSBwdRQv1rw4j/tflD3AqyRxQGjRNn09eQAypAuPQnQDD7iHLAv+qiSe8N8tGZuICXJgMsi7nqdHBzkyUEpyQMos1iLVV6VcVFzLZgWfRG8TZthC3+AmLjA3CiMgGfLVDqwzoH6b80NT5xXDCaSyj5+ri7kODLC+KnyVcl0QvsYKsarkR8Ci7kBdJUCqHAkeNhFNyA0cVg5cpAlUC7Fq/2qTfS0rVE59w1bCdxMHnqPRLbmOTipWbRgMlQkF4Cu809qoCkC8vrgS0tcxU39VXQUjJ5aGRomSNdORyqF4IP1rPkQWmkA39t1JH+TSPAOddx02fTwgvSQlM0SEwr3HDdoiBaftL72SAu6Cmow1kEDJX9ZgxMcVPz6X/Y1vMMk3sQxQ0SKYrwgMGdv35A==|920
