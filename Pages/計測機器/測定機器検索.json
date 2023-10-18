@@ -388,7 +388,7 @@
                       "Value": "使用可"
                     },
                     "Params": [],
-                    "ID": "cc586482473646df956f7d3f6956aca2"
+                    "ID": "f1499a20ecc04357bdff2f9020b2972b"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -403,7 +403,7 @@
                     ]
                   }
                 ],
-                "ID": "3fc6484f-afc6-4506-905b-5bb06d3a3030"
+                "ID": "f32ce672-e487-4981-8657-16b07019ddfe"
               },
               {
                 "CommandList": [
@@ -418,7 +418,7 @@
                       }
                     },
                     "Params": [],
-                    "ID": "630042af2b1849ecbd25ff56f68a125a"
+                    "ID": "844ab3da603f43ebb28288851c0dc077"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -433,7 +433,7 @@
                     ]
                   }
                 ],
-                "ID": "8d11bc82-70fa-4343-b074-85891e157143"
+                "ID": "6a691759-6ba0-4d26-9748-b38bebcc2180"
               }
             ]
           },
@@ -1066,10 +1066,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "22627cb58b7f41eeb92873daceb3cfc3"
+                    "ID": "9d0f48a37b91463aa95943a3929567d4"
                   }
                 ],
-                "ID": "f13314e8-9d88-4aca-a3a3-02dea5b0c907"
+                "ID": "a6aa775c-918f-4547-8933-230edb6f446b"
               },
               {
                 "CommandList": [
@@ -1258,10 +1258,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "82663321508f4154a4c327f0cdcec66d"
+                    "ID": "b67e2ff2d40f4e3a979886e27a59ef65"
                   }
                 ],
-                "ID": "160d2f57-f408-4ca6-aa16-514fe4c0f93d"
+                "ID": "adee8d28-e3ea-4f19-b236-11044a87acf0"
               }
             ]
           }
@@ -1387,7 +1387,7 @@
               }
             },
             "Params": [],
-            "ID": "2e3e4fc8b0fe459a9beb6d22e3e50337",
+            "ID": "8e72582b32e647b5ab4ce455920b1dc9",
             "Disabled": true
           },
           {
@@ -1429,10 +1429,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "f1845e2fcf3e441e8e28c33347de73d0"
+                    "ID": "f0f789249955451aaec6396daa60265b"
                   }
                 ],
-                "ID": "f36e3a0f-46dd-455c-b182-b07d22483fc5"
+                "ID": "57b2a073-a5ea-48d1-808c-07842b9ea1e3"
               },
               {
                 "CommandList": [
@@ -1457,10 +1457,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "48196c8c10324d43a7dbf824f902e383"
+                    "ID": "f3f5012ad7fa43b19dee108940866897"
                   }
                 ],
-                "ID": "ec3803fe-ce56-47b4-9d6b-24bcc5a7b27b"
+                "ID": "940b457c-e2f5-46bf-930c-6e3fd400d19f"
               }
             ]
           }
@@ -1494,7 +1494,7 @@
                     "NewOtherName": "計測機器リスト"
                   }
                 ],
-                "ID": "f296a7e3-9733-4ff2-b0cd-45058a2f7e08"
+                "ID": "f8799a04-e58d-4181-85d3-c961fa68347e"
               }
             ]
           }
@@ -1515,7 +1515,21 @@
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
             "PageName": "計測機器新規登録",
-            "PassValues": []
+            "PassValues": [],
+            "LoadBindingDataOption": 2
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_insptool_tools",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "ID"
+              }
+            },
+            "Params": [],
+            "ID": "394cab0deddb4f9daa004da31405b361"
           }
         ],
         "Text": "計測機器新規登録",
@@ -1645,6 +1659,19 @@
                 }
               }
             ]
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_insptool_tools",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "ID"
+              }
+            },
+            "Params": [],
+            "ID": "0c1def695cf24338b6125a706d8d3443"
           }
         ],
         "Text": "コピーして新規登録",
@@ -1677,7 +1704,7 @@
             "Params": [
               "=BY25"
             ],
-            "ID": "dee423ebd8ba474482a4c3bbc6903baa"
+            "ID": "d82368c5325648e0a00319f10648d6ae"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -3943,6 +3970,12 @@
     "24,70,1,6",
     "21,28,1,12",
     "25,0,20,83",
+    "7,25,2,2",
+    "10,25,2,2",
+    "13,25,2,2",
+    "10,11,2,13",
+    "7,11,2,13",
+    "13,11,2,13",
     "23,0,1,4",
     "23,4,1,3",
     "23,7,1,3",
@@ -3959,13 +3992,7 @@
     "23,53,1,5",
     "23,58,1,5",
     "23,63,1,7",
-    "23,70,1,6",
-    "7,25,2,2",
-    "10,25,2,2",
-    "13,25,2,2",
-    "10,11,2,13",
-    "7,11,2,13",
-    "13,11,2,13"
+    "23,70,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3984,7 +4011,7 @@
           "Value": "使用可"
         },
         "Params": [],
-        "ID": "ae4579899f4d4b91a2e6e1a8c4b7ff08"
+        "ID": "674a0e03d81e4bf2aa945de64a23b130"
       },
       {
         "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -4010,4 +4037,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//jQiguy7ieSfiAi5CN2T9TPfqsmWfjEZMgFvgZGFheidfj4Vfm3aAEAopqdyWAYTrHQULuyNFQlBuB/WEQYfZPVDv5gmtzSBnW31U2iA28dqYWPeMhbZJrNoNHzRIdreGbF5T8cAptwb386qJpMMiBW0ze21JQv1N7poNNa9UcuI60Wr+ms+X1zlynb1U85osb9v72J2FXmIu2mhPz3CDytmxgS3GV/r2ucWSF/rzgPG+HrHt+6TRZhZ8eD9eZMqHMFG8s0aX1Q+MWOn3vtfgGjVxMM9EGGUs8YLENl4L8NgBHU0/LU9P/xLlJMb9RaPYaer7Ar1HVYdj+JluGzPGloqtZVvlJQKcIRI8lTGf6stK4R0lhSKo0BsiSOCSVGy2CQbKDVDvkd1UfRdQoImC4IC1fZee12UwwMKdmq+SWlXDIwJeQ+mdZ3ItB7Oowgldmc3pJbgcHkgTrmUBe6x3rzgfEiAAfOw0tNgX/aHYf9/VQLX4gBjO4B8+pg7b/vS3baKVfwU5aZ3GvE5NGPSUf+iLJVV2KiHTYQg904eIK/a8QtS5D7wrRqStDG+CkGbNIldYfCfuHa1yWJSGDNcTR8COhi8aioJY3zMjYPaNTr78dChZf4BsXR+4MF5dC9ULkWNOE1ilEgbzMJmHXwYFZ4Ca0rg9UUqwCG12sqWgq3IUwOIxXmnk0N6ouDxP+fRdBLSQBHeSG9Dod9F2dNjHhvjNU3eR51UBVU/SHeZEdUKHiapzGZPteLeJkBTLhsRZ2fsxNSq09TOSTODlMaEaoEONY7CQ+4R/3jH1cqe0MI8ZlBgnH/Xgx0g5cQrFZxbFmuXCDdXt/SJxcFl0poPBwrwg3KulZT7HiKhzhT0aSlDgzBM3a+3Smk7ukMigtL+dcAXuWhjAarL3uW2P7doW9A==|920
+}//04ucAyE0Duf0JtKL6wgQ23yTJIyTYbSkdahSVZHT47ue85cILshpMJvGJ4fif22rtx49nG5DMvMa1sgJdQG8JSqOzQ+zf7+zYMtRMKxXR28l/idY2i5vHeJ/nQl5IAlVxYMSPLeaEegOplgjhCKxp886VNU8R2VfziDPyb39Ob/PEkbUhyFTn3pvAGVpNFpXkkaNZ1We6BMRjcakXKMp/qxrbIJivG9hZOTpdDMmuCvtDqtWOh6ILM8dp+5F5bT9P5LQVItSvqHNlgQcB842ZolXa3EcB2VVItMMPzYt9yARwOU2c/sFs2IPo2ADQ62/iaJ83jvtdnkQgvRKTqdWP7rTwCN/sT+gpXGLoSOejN4nLXhZF2Ci0IzYvXha7qiETTKPs3vJa8pm0lbt0yanLI0DjAYgtHl7bDhDqfysrUssWImiefRU90aRAQ+pl1I/+B3PMbDdW/2G/YEzaRvrWxHsr0S+MUOBK+dVx0RhfQKLmGHk9ttRsyW0QQkJDAAJ1/ubotGlMkzZlWvPaAYm5MqdOesNr6QIOhDSmy8AvVmcqJo/SZseMLJLoQXu9Y1cMh/vBbc33+ZbMNQC8Dbh738UdSD6pIS8QnMhH6+68p8ak8ISrW3C+U9EuGtPc17pnqZ8eJWu46uFUs18g/BthrZ7TnstZmLZ6PNNGV75Ddvr9qVCCws1OuH5vECy7VynO4E+HlZrrEw04dGzNyR6jNQAZCSZUmgMCzNbiu9JxgWj+BlCvjg9jyOALBEZzP7op1PK2hsgUDo1jyIReyeeEeNwkTgqDCTL9YG3asFohJxRhmIWM4+MXBIcOHL6tJCpj1tCvGksT3KpnbJ0rEEiBZJjf2w4uoRI2X2QfaVn94bxdqHS4kFdKEKFDL0L7oTBgXwcjThhvY9QqCtNqCwKwQ==|920

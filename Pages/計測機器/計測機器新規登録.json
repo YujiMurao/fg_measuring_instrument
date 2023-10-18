@@ -231,6 +231,7 @@
     "4,11": "連番",
     "4,26": "*",
     "4,27": "使用可否",
+    "4,33": "使用可",
     "4,40": "使用禁止理由",
     "6,0": "*",
     "6,1": "管理区分",
@@ -348,7 +349,7 @@
                     "MessageFormula": "使用禁止理由を設定してください。"
                   }
                 ],
-                "ID": "854f5ad6-fbbc-4153-a2bf-542371cfe2dd"
+                "ID": "26721414-e5a9-417c-9e15-353487b09380"
               },
               {
                 "CommandList": [
@@ -590,7 +591,7 @@
                     ]
                   }
                 ],
-                "ID": "6392715f-f59c-435c-8f21-3cd0104cc400"
+                "ID": "e90a837e-97d6-47d7-aa6f-832083e35446"
               }
             ]
           }
@@ -684,7 +685,7 @@
                     ]
                   }
                 ],
-                "ID": "f5148440-21e0-4621-8d57-1739c1282ec8"
+                "ID": "55d8c8ce-fa41-41a4-85a6-7669aacac174"
               },
               {
                 "CommandList": [
@@ -717,11 +718,12 @@
                     ]
                   }
                 ],
-                "ID": "b18c2f8c-f566-4e64-ba79-7991ee470416"
+                "ID": "e36a836a-bf1a-4ea1-8503-0a1c7315fa7f"
               }
             ]
           }
-        ]
+        ],
+        "CellDefaultValue": "使用可"
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
@@ -830,7 +832,7 @@
                     ]
                   }
                 ],
-                "ID": "659dc0a2-d2e3-479a-84b6-b8a36443a953"
+                "ID": "f3707e74-822a-40cb-b5ac-b222e979bdc5"
               }
             ]
           }
@@ -868,7 +870,7 @@
                     ]
                   }
                 ],
-                "ID": "0b47b4b1-8d6d-43ff-8d60-c4cc56a9a076"
+                "ID": "7600d92f-40b1-4d2f-bcdb-588f1d65e272"
               }
             ]
           }
@@ -1136,7 +1138,7 @@
                     ]
                   }
                 ],
-                "ID": "7179878a-910d-4b3e-bb6c-8b6b75ba6959"
+                "ID": "fd550fea-90b9-4e26-911e-244610bbbdf0"
               },
               {
                 "CommandList": [
@@ -1154,7 +1156,7 @@
                     ]
                   }
                 ],
-                "ID": "b69fb204-50fa-4a2f-bd5b-02ed69d88bb5"
+                "ID": "ac9333bd-a55c-496d-bbf8-51243b4dab2e"
               }
             ]
           }
@@ -3602,4 +3604,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//+nisO82+onhuBMjEzdmwColUnVTRDApJauxqsqwX/5j7U01G4QeKZYhYTkdl1JhlJme9PYqJ3YfqqU3xSFIMiy7aQeATvS7UqxCcaa7KT1T0Q04I+sJ15Ro4WfKsspHlXJ8Xl7SFAcTptDOUGEGMybKGWaqA2JLJU8cYkDPCnzG6MawpGkvrzxTEnWRNa9RuM1rgMgApkmBhc2gGzoHomIIwleNql2PMn3u3QVSfMAwm8XMc9/dVT7id/FMe1I+SxaH4oSAkLeQfpmptXLaYw23W18mSZ50LttvP36dqVTNZlg5tObuqayUALRLPXke90a40ycS2gjnRkNOWCKUHp+lURftj8Cq0r37nqjj9pjKro3kMgQYBEGPS9Lh9T+Gr8tpoVw64AA9KNsJ2axuwkRZ/p7gYnYFb49pu1jLPdgxWgyWz70QJJtx3HFij0dEZfpgb7P76MUR3SIJxIxtl8Rls8xHOGfFdGt9gz3BqzCRC0oGOki1zQvNT0hMDPQvDgK9UQdq2hH1kTuNdHWrG3JzXeMHFVx5KSXIqr4a9cbmPHA/rZatELbqB5NJkZlEoKBhzLCnTm5ntmI5Nf0GI57cjjcf86jOIss2eTfmig7XQNK801dcBkoersBatxw/flrHr1O3Q7KJhN7fpwLP0JtLM2B6e6coGXG3mSZVqzxLr3MaZv70Gd75MXLdFJc9Id0XpBhTgTmjWBBO5ipaV5QCfag127Hx321ik+B7z74ahPwmRttxCGnZ4B/IdLIewZPtmkh10TBGaXHC6A4nBBTFU9wrY3rhtG0tBB44ZnN9bYuvZJPPLCUbY7DM+F8Io7c+UbP+cnl2GXcJ4L7FcybZMG/tRXRJ5oS5wrk3V3gjPV1cIXGThvdfwGy+NRjNk9X8tEKOrKFpqg3B3ged3+A==|920
+}//FiyStqwVmDPQuYfsstQu3jTrjGS2O+CCcwMru++yIZe/02BFkzxbXBIT07Pc7XUnhKKjnWW/8LOfC7KAmnEHw35pYgAUN6PmkTUDGCHHXny5q4KA9KXVppAZVUg3by2w2uSVzN2Cy9mrHibUEQ0Zy+euZAaNunsEVcIMlS8aJAI744YgtGX+ZUNtch8zGi3qtfDpHI0ipyqW5A77x+GbambRMlTE5DDVBxdhZMLyozB4e5AqlBnJPBIhoNSGeB6fCL+r0jUlVlEDzceg91v4++ijQPUtW33AVr46Ng3bhaD8Df+zHFE1ZqOQq54j6Oej0tBqJLuN7q2RjYUODD9dxCjQjqHeIcqZTzI/YuDpg5TrCJ8P6iWG8jF5ssKLpeuk/rA98Ekn3G+ksDORC3wx8FOBURN9dQSclkQ+ADTyCKMtdWjzXV9k6b9w368m3tHlV6eZHVO97rZKe9177wAfJD4iriPqsGpAAE0xPAh1K+D3AichikH5+koz7+vLh4iI8t9p3duChziIfqBYeIdoMjU/9uIcsCC96OmVzT6E1JuSQA2NZV0N+vqau697F8kqfomuF8J7Hob90422ltXhxaBCpGB6yGk81H5w85xZcmNVltU1zGwcAIpM+37MlNw8Kgek6jGxAc8Lu+65s75DD16iFw1scxmt0Ec/3gm0cP5nqwfNFsJUJeHz42ZdHCzLuZyVHSQGU34qbIW6sUEGK5oH9ciKkK/NhGHJutmqufpGBAOVhU/7fYYNv5MsbuzmApHMdVoHU8ebdnM8vz7PS5Eg5JNJ6VM0d/3Sg8BO3pS7UdatL0YsGzLh/qael/qHRrf8cTkPt8Gu1S+wEEpLwLWoDEs3NLilbKGy36gKLDbPS534/l5vGzE4Lc+Saym+cGwTCg1YJDZpLnVWVgBo4g==|920
