@@ -210,7 +210,7 @@
     "0,0": "条件を指定して検索",
     "2,0": "出力内容：",
     "2,5": "定期校正",
-    "2,39": "抽出条件\r\n・社外校正\r\n・禁止理由（以外）：廃棄、故障、紛失、移管、不整合\r\n定期校正＝11月1日～来年10月31日\r\n校正切れ＝～10月31日",
+    "2,39": "抽出条件\r\n・社外校正\r\n・禁止理由（以外）：廃棄、故障、紛失、移管、不整合\r\n定期校正＝11月1日～来年10月31日\r\n校正切れ＝～10月31日or空欄",
     "2,64": "=",
     "2,65": "=",
     "2,66": "=",
@@ -363,10 +363,10 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "e466b8c2803d4e6997e889f5dde2e3d3"
+                            "ID": "eff35147f7ff430f8832748af500fdc0"
                           }
                         ],
-                        "ID": "5486920e-3c7b-4153-82af-1b1e01340785"
+                        "ID": "f279ccda-2fc4-410a-a9f0-0559e688fc97"
                       },
                       {
                         "CommandList": [
@@ -420,15 +420,15 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "96e093b8b5b74f669db19e01eb45b946"
+                            "ID": "78306735f8994956a77210d7b1e42a75"
                           }
                         ],
-                        "ID": "0c5585ee-b6ae-4922-b7ac-e59ed1e0751c"
+                        "ID": "ae7094f2-35c0-469f-8f51-72ac17bfa8e3"
                       }
                     ]
                   }
                 ],
-                "ID": "d81a79f2-ab78-452e-bc1e-880971387132"
+                "ID": "044f8371-0d81-4664-a453-64b09a1b77e4"
               },
               {
                 "CommandList": [
@@ -518,10 +518,10 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "cda5e6241a03468fab1f2f26a363ff31"
+                            "ID": "e177cc29e93842c3907ed2a3de079c65"
                           }
                         ],
-                        "ID": "977f195a-2798-4b2c-b49b-f951796d6c36"
+                        "ID": "cbe5e73c-64b6-41c2-9b1c-1e1d26b6747d"
                       },
                       {
                         "CommandList": [
@@ -573,15 +573,15 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "df6ddf690a85498185acd1b02f6fbc32"
+                            "ID": "d2081e1933d744a89370943fd8f4d6b4"
                           }
                         ],
-                        "ID": "b50e8093-65b0-440d-a4b2-3130638abb25"
+                        "ID": "5e5d2b99-6395-4c1d-8de3-74440be41284"
                       }
                     ]
                   }
                 ],
-                "ID": "69102ca4-9a34-483e-b1ce-e1e4058f231b"
+                "ID": "7ac622be-a2cb-41b1-b97c-4f2e78388b98"
               }
             ]
           }
@@ -592,7 +592,7 @@
       "CellType": {
         "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "CellDefaultValue": "抽出条件\r\n・社外校正\r\n・禁止理由（以外）：廃棄、故障、紛失、移管、不整合\r\n定期校正＝11月1日～来年10月31日\r\n校正切れ＝～10月31日"
+        "CellDefaultValue": "抽出条件\r\n・社外校正\r\n・禁止理由（以外）：廃棄、故障、紛失、移管、不整合\r\n定期校正＝11月1日～来年10月31日\r\n校正切れ＝～10月31日or空欄"
       }
     },
     "4,5": {
@@ -717,10 +717,10 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "c67ca8bd21594c769065ff425a30eddd"
+                            "ID": "5ee982a8d15c4eb7a5dec420e83a213f"
                           }
                         ],
-                        "ID": "2deef464-0e70-46de-8921-a9cdf55fbc5a"
+                        "ID": "96cf3cad-aeb3-4b96-860e-7b644e89dd1c"
                       },
                       {
                         "CommandList": [
@@ -774,15 +774,15 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "47f2b3f8018642b1b1191909893ff0a1"
+                            "ID": "81181a411b53416f9e809c9bcb429327"
                           }
                         ],
-                        "ID": "5b4a1b8f-9501-46c8-89d8-03313f3e36b4"
+                        "ID": "d2b0f92f-3f39-41f2-a593-78b866a4d534"
                       }
                     ]
                   }
                 ],
-                "ID": "89e00670-3082-4819-bf2f-4830a5a0dc32"
+                "ID": "0e56c3b2-b887-402f-baa0-38a8b5291545"
               },
               {
                 "CommandList": [
@@ -872,10 +872,10 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "e067a1aebf39477fa2ce90446ffbb420"
+                            "ID": "7a38279969e64362b3dd35a91ef49879"
                           }
                         ],
-                        "ID": "436ff629-f906-424a-8961-364d330be2b1"
+                        "ID": "8e96409b-a331-4f91-8474-4d566fca7d37"
                       },
                       {
                         "CommandList": [
@@ -927,15 +927,15 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "14eace754c4b4d3fa485197fc8c98f2f"
+                            "ID": "472dff8e8d9b437ab88c8b4ae826710c"
                           }
                         ],
-                        "ID": "1979d4e3-1c20-4e5b-a926-d51b58a89b7e"
+                        "ID": "0616f1a6-a0df-4a0b-ba47-78d5b7c880d4"
                       }
                     ]
                   }
                 ],
-                "ID": "78b2b3fd-4272-49cc-b4f3-07271b0aecb6"
+                "ID": "4b7680e8-90bc-444e-94f0-c68fb941598a"
               }
             ]
           }
@@ -1061,10 +1061,10 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "704d9e27fa11477c987d5b123fbb0954"
+                            "ID": "a99444cdac5642bd95fd79f1a2dc60f1"
                           }
                         ],
-                        "ID": "bd3d1445-ca74-4a0c-b3b9-08576173748c"
+                        "ID": "5ee26899-900e-45b9-a3a2-efaac5ed9d3c"
                       },
                       {
                         "CommandList": [
@@ -1118,15 +1118,15 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "c635881eafcf420a9f4504dbef561dc9"
+                            "ID": "29d20a80f1804d8da369e3fd023a0f48"
                           }
                         ],
-                        "ID": "67b32858-3334-40a2-80f6-73ec76afbb88"
+                        "ID": "898ef39a-6e39-4ce0-8e3f-639cbe0eecf6"
                       }
                     ]
                   }
                 ],
-                "ID": "d17b42b5-a15d-45f0-9e91-42ceb3d24414"
+                "ID": "8f36e2c8-9f60-40f7-96a1-926236084e71"
               },
               {
                 "CommandList": [
@@ -1216,10 +1216,10 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "3532d599141b49788c9b34547ac64df0"
+                            "ID": "ced78355d99a41029f06717de075d6b6"
                           }
                         ],
-                        "ID": "a7782439-ce9c-4b53-838a-90236f3b7806"
+                        "ID": "86ca9cb3-d64d-4c88-91dc-c8f85b710c23"
                       },
                       {
                         "CommandList": [
@@ -1271,15 +1271,15 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "e4bb614b88b646de85b9f2803f5a7fe7"
+                            "ID": "e5726c86c58d4b958c6d7140f8b46c1a"
                           }
                         ],
-                        "ID": "e616f1b4-7436-4471-8061-8c3a178a35fb"
+                        "ID": "066e0cfc-8120-4bcb-86b3-8293cb181138"
                       }
                     ]
                   }
                 ],
-                "ID": "1accb7ce-7a43-4be9-b15c-5f9979e6040a"
+                "ID": "9f2aebbf-0769-43d3-b8f8-ea6ec3945ac7"
               }
             ]
           }
@@ -1402,10 +1402,10 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "eca3bca657fe45d6a725fe5b96e4d29a"
+                            "ID": "a9736b6219024e56ac10a08b175070e0"
                           }
                         ],
-                        "ID": "fa709431-0c11-4ffe-9413-6d4f196da8f8"
+                        "ID": "5bccc14f-94e7-4696-9ef5-e34816d1e7b9"
                       },
                       {
                         "CommandList": [
@@ -1459,15 +1459,15 @@
                               "=F7",
                               "=N7"
                             ],
-                            "ID": "d0d7d75c165d4f2f936edb93b3d3b62e"
+                            "ID": "65ace28ad3584f8fbfa5a91c2666a70c"
                           }
                         ],
-                        "ID": "357a76fa-0e2e-49d7-ba18-9f24ada590fe"
+                        "ID": "3ab5cc4e-9e02-43c7-b9cb-004c08b70d02"
                       }
                     ]
                   }
                 ],
-                "ID": "21389c45-bba7-407f-b5f5-67a9d1ffb232"
+                "ID": "e4451e0b-18e6-4bb9-be6e-73840438a653"
               },
               {
                 "CommandList": [
@@ -1557,10 +1557,10 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "e27affd620ed432bae260a144171c507"
+                            "ID": "35759e4a61214c248b205cc86091530a"
                           }
                         ],
-                        "ID": "abd7c831-ce14-4377-b644-4601d16fb06b"
+                        "ID": "38cda2b4-1cbc-485d-b433-a0e02c8c43d9"
                       },
                       {
                         "CommandList": [
@@ -1612,15 +1612,15 @@
                             "Params": [
                               "=F7"
                             ],
-                            "ID": "2f76f5134aa741c8a483fc1f154ca5ae"
+                            "ID": "7e91da6978d2432a868fc5b74c6025a2"
                           }
                         ],
-                        "ID": "d9a3296b-d84d-4b06-a5b5-ed3785877995"
+                        "ID": "39eca227-c0e2-446d-8fbe-6b321da4dcaf"
                       }
                     ]
                   }
                 ],
-                "ID": "f88c6e89-32ea-4ba9-99b0-6d1075cd1de0"
+                "ID": "247b224d-0308-4583-ad78-5c9102f21ac1"
               }
             ]
           }
@@ -1676,7 +1676,7 @@
                             }
                           }
                         ],
-                        "ID": "1913d0c4-c014-48d7-a7e2-ebd9a6905dbc"
+                        "ID": "cb842b5b-0ee0-4065-b9c5-547cd7989d65"
                       },
                       {
                         "CommandList": [
@@ -1691,12 +1691,12 @@
                             }
                           }
                         ],
-                        "ID": "612e2007-6a71-4eac-93e7-079e84052280"
+                        "ID": "663d8390-d887-4bbc-91cc-8ab5f5bc4bd3"
                       }
                     ]
                   }
                 ],
-                "ID": "5347c756-d466-4763-824d-cbd6077d9bed"
+                "ID": "3f7c37fe-3669-4532-8b3a-d51b9da23f81"
               },
               {
                 "CommandList": [
@@ -1728,7 +1728,7 @@
                             }
                           }
                         ],
-                        "ID": "584525ab-801f-4579-bdb2-5c94c69ca407"
+                        "ID": "76c3245b-fde5-4b9b-8c31-5061cca290ef"
                       },
                       {
                         "CommandList": [
@@ -1743,12 +1743,12 @@
                             }
                           }
                         ],
-                        "ID": "6a71a01d-4700-4896-956e-6268e274f31f"
+                        "ID": "75195494-7176-4be3-bd38-d00dae5f5a52"
                       }
                     ]
                   }
                 ],
-                "ID": "1dc31f12-5a6f-4dc0-a419-880670024953"
+                "ID": "ed79b6a3-e3d2-43ff-ba50-80daa06e205e"
               }
             ]
           }
@@ -4146,7 +4146,7 @@
           "=F7",
           "=N7"
         ],
-        "ID": "95cbb1c8fecf43848dfa09e3d43e9bc2"
+        "ID": "fce27950eec344fd9ef32b0367f99869"
       },
       {
         "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
@@ -4162,7 +4162,7 @@
             }
           ]
         },
-        "ID": "63f2c3b5cf8e419ea52ed1c1ca9fd1d3"
+        "ID": "e064a951e5784b94813623e34c56d270"
       }
     ],
     "AuthorizeInfo": {
@@ -4177,4 +4177,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//BymowNGzXBp6f3yV/JL77FsOMpKHZfooJVuNmjseOUthf2f7AMzTaItNbXlPNVNrJ62Q56xiHjgi/KlFilHrVepSs2O+xmaUhTMwiPWu/5QaiPkmY9g/v19JDRdEwmC4VsA1sjl+jeKBYapmN2Ri4FOjyAYUoOUM+wp+65rkau2xPBofsDP050NZCw1p/PueJ2W5mz+tP2bFbxZUAoJ6koqDfSpJvJNY/B67lcHheNfHDDSu0RofPEeE1CwFCihIDOSctTCSd5NyYisRydCth6q+MDpb1RgG1p2ymySfAnZmCDIddwlX+311Alas9tTki4QfIzBkLmsIkF0lpD5DlHfN9KTtfkwSHSw4zqg5RWq5VjxH9jC6kI3RgcsvWu+urVJv2xHFT4oanwrE4bTurf6F4+toidxegKFqUJ9tDtF181oKd56dG3gKMOwuBpq2XwKbXpm8S1K5SzWhWWpuA/ni2/aUQSCrjtSsH1Yu+JQ0rtvytx3IaINFdW6fzdMw8RxV+bQjRxiDFlvd9o52wEzHspxkb8tODAJ1ow4jNxoHWE8SV68LBrEfNz/LtIuPH2Xf4Yq8iWUp4LfGrNvWc3hTCuMvto+c8UtMryqoaMLBJWLs+ykTHXA46/v9LhciGMFPBHWQy9X9jCUQlSjw7GPdWGils2hLD3/wo3F6mEoRcKW4AZkhjvWr61rr6muaLmlttSrvdfIYkaDxsSBZuhqS2hsSrcBg7TZ0KVgn2lG5pNvyuFS4HfsfgnsvgOqDrCv1WIIMkhi+tZdJ1N+jcNtQ7gB7hD8DPbnm0pWyadRqihawFPDHb2vQ8ufuYSL1Ry82ICaQuBzn4XOT2iYtFVNSQc9Av10ww9eqeYbejq4aW7F9oag03HQNmGT5tYTJBbK+GHYSZPOP2q9us0h4rw==|920
+}//SFhz+wPbogFFcUg+R8iySlXQkV0J3nozFlzicevPkDyAHBxMrdYIdn1cob1CTDkIXF6AlKDWAlCaDtkQ4FWVToIjeO07iqiqVVohKgk2EA2lWjJuKif/ROup6psGpXGMRB0RDgej+m8nm9mNrKxSnu+6WB1i+jld6MPt1HziaH+tN++7Qc2Z9K6DvxSox9vEnw9xJdbzDZUM43EPeG47aaQPW1TH+ocWaiVssK7fsIHj1Kn6/ObnzMze6hHraq4tyhtzt62WLLRjkTkCSXzucQ1bluR5j7mrtxOs0yOWyD4l0PVU2HjXFcVH6zHEVw9sD/QKQoaZLIwry1G0BuOBvIuFoR8b1LMNZHNSo12DJ1/4k8aZ63c596Tr9asiuSDxlUQi2VL4Xq9GgqIX0ot5V+ITOOkXJjpZbm6xaw2WBzG9WtzzLjwYD/E3S9yXzdy3lEdXxtpyBee/7pC97NGWip+KQ1kMIHaXHiji9qTMi6zORWoMyA5/HoOJUOrCAQTr2/4PuQGc0CeXLsr4CoDC3v09ngooRGsp6M44C6XbqdkT+viYoGooFeTNqYJKrFo5I1Red4KrY6frY5kTSSR4hLpPiuzDTV6Pe0tFe/7kkbw9dzLvC9GAZ8HcVu/vwp56SIU85vpUctKpvdcYfBU3Kvwu/R8P0eOpSaS1XmEajIEHxgObrGCxiogh9vdl/2LiPBIjLX2R7m5kQnHyyV1CtfGl5+K97wRhTxE0mHwkB2THBYl10n5pBatkj1mIkuixgaw4f+TWO/h9mPIKuiFR3Lq/nEwvog/9ksmcw0suO8TtVwB48eE3PAFVIMSlVvdHHmlV653NxOlejfK8jUb4g6o2XYKv7d09uFLKzEOZa395YjMHXTxgeOjdwvGINsnphFMSOvuoKMZ5rmwNugr8PA==|920
