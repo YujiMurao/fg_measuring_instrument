@@ -349,7 +349,7 @@
                     "MessageFormula": "使用禁止理由を設定してください。"
                   }
                 ],
-                "ID": "26721414-e5a9-417c-9e15-353487b09380"
+                "ID": "cbe63c49-1743-4707-9259-55f798a40095"
               },
               {
                 "CommandList": [
@@ -591,7 +591,7 @@
                     ]
                   }
                 ],
-                "ID": "e90a837e-97d6-47d7-aa6f-832083e35446"
+                "ID": "20895279-2f26-4e68-b549-ff6842874418"
               }
             ]
           }
@@ -685,7 +685,7 @@
                     ]
                   }
                 ],
-                "ID": "55d8c8ce-fa41-41a4-85a6-7669aacac174"
+                "ID": "5829b677-9358-4d32-9530-3b9cd3e954c9"
               },
               {
                 "CommandList": [
@@ -718,7 +718,7 @@
                     ]
                   }
                 ],
-                "ID": "e36a836a-bf1a-4ea1-8503-0a1c7315fa7f"
+                "ID": "78760f40-b73d-43f1-a5a4-1da553cfe432"
               }
             ]
           }
@@ -832,7 +832,7 @@
                     ]
                   }
                 ],
-                "ID": "f3707e74-822a-40cb-b5ac-b222e979bdc5"
+                "ID": "51b4a83c-bded-4451-bdc7-d160eba90152"
               }
             ]
           }
@@ -870,7 +870,7 @@
                     ]
                   }
                 ],
-                "ID": "7600d92f-40b1-4d2f-bcdb-588f1d65e272"
+                "ID": "1a43d6bf-3915-456f-88da-2f008829bf62"
               }
             ]
           }
@@ -1138,7 +1138,7 @@
                     ]
                   }
                 ],
-                "ID": "fd550fea-90b9-4e26-911e-244610bbbdf0"
+                "ID": "b8ffbca2-2b47-4690-9d32-75d0ac7157ae"
               },
               {
                 "CommandList": [
@@ -1156,7 +1156,7 @@
                     ]
                   }
                 ],
-                "ID": "ac9333bd-a55c-496d-bbf8-51243b4dab2e"
+                "ID": "16b4ac15-a7e1-4a7a-9455-bcdf2b03e319"
               }
             ]
           }
@@ -1252,12 +1252,9 @@
     },
     "32,6": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
-        "SavedValidators": [
-          {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
-          }
-        ],
+        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "DisplayColumnName": "FullName",
+        "Columns": 7,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "DataValidationInfo": {}
@@ -3260,7 +3257,6 @@
       "31,59": 15,
       "32,0": 10,
       "32,1": 40,
-      "32,6": 49,
       "32,26": 77,
       "32,27": 74,
       "32,53": 25,
@@ -3562,7 +3558,6 @@
     "26,6,1,20",
     "28,6,1,20",
     "30,6,1,20",
-    "32,6,1,20",
     "34,6,1,20",
     "36,6,1,20",
     "38,6,1,20",
@@ -3587,7 +3582,8 @@
     "7,40,10,13",
     "22,27,1,4",
     "0,54,1,4",
-    "0,58,1,2"
+    "0,58,1,2",
+    "32,6,1,20"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3604,4 +3600,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//FiyStqwVmDPQuYfsstQu3jTrjGS2O+CCcwMru++yIZe/02BFkzxbXBIT07Pc7XUnhKKjnWW/8LOfC7KAmnEHw35pYgAUN6PmkTUDGCHHXny5q4KA9KXVppAZVUg3by2w2uSVzN2Cy9mrHibUEQ0Zy+euZAaNunsEVcIMlS8aJAI744YgtGX+ZUNtch8zGi3qtfDpHI0ipyqW5A77x+GbambRMlTE5DDVBxdhZMLyozB4e5AqlBnJPBIhoNSGeB6fCL+r0jUlVlEDzceg91v4++ijQPUtW33AVr46Ng3bhaD8Df+zHFE1ZqOQq54j6Oej0tBqJLuN7q2RjYUODD9dxCjQjqHeIcqZTzI/YuDpg5TrCJ8P6iWG8jF5ssKLpeuk/rA98Ekn3G+ksDORC3wx8FOBURN9dQSclkQ+ADTyCKMtdWjzXV9k6b9w368m3tHlV6eZHVO97rZKe9177wAfJD4iriPqsGpAAE0xPAh1K+D3AichikH5+koz7+vLh4iI8t9p3duChziIfqBYeIdoMjU/9uIcsCC96OmVzT6E1JuSQA2NZV0N+vqau697F8kqfomuF8J7Hob90422ltXhxaBCpGB6yGk81H5w85xZcmNVltU1zGwcAIpM+37MlNw8Kgek6jGxAc8Lu+65s75DD16iFw1scxmt0Ec/3gm0cP5nqwfNFsJUJeHz42ZdHCzLuZyVHSQGU34qbIW6sUEGK5oH9ciKkK/NhGHJutmqufpGBAOVhU/7fYYNv5MsbuzmApHMdVoHU8ebdnM8vz7PS5Eg5JNJ6VM0d/3Sg8BO3pS7UdatL0YsGzLh/qael/qHRrf8cTkPt8Gu1S+wEEpLwLWoDEs3NLilbKGy36gKLDbPS534/l5vGzE4Lc+Saym+cGwTCg1YJDZpLnVWVgBo4g==|920
+}//vRg6JC02SCGYROGKBIZhDS/T26T7ji9Z5usTXdjHBTX4Ju0pQfjRGtxFguyRKXYlzgmLFs759IYRkMDihXlqtCPfZz6X7oWdtLM1sYl51typiJIxDWFVVKux3OKJPnA7Cn72W1dv1tfatBnOSpqZktPasw0nZ9Pf5yqDzCGXarLtr7VTZwH60P9Lh9CZLcGA9Vtdpc7Gwm9TSHB9DRgEIda1uBp1C7LMhicEtEcN9joDKrlq923AG5PZD3CBiHuuzp+yngKlPpgxjAH2q4WkNrMBasjcbEHfXOmWhiAT6Fihi01sdMHEgg+n9YkUBjdrydfk0fvVK+PY6vki8wBWINFlmtDWIuzKhnMBGEpCe/2/zlR6ahBGcqTHh/Gh1/1BU+MMGIuRyTWo1HDJC0aaxUGLVGtHt/TTHvVtEEQDBvRslHMUsGCGoCdq+EnH/egXdPCUjpGeP2BCkynEi7R9lEaxRiQCFGH/k01DUIts/fu0oOhLkdYO5jqaXnjdLJXKeKddP3vdQuqkUgV6tTbIOQu3HaeoanzcCJRvENPCtLT8i3tnokLE82yiN/9+HZgewBJCgGl1yhoIX63lM/ohl+3kMsH9GrEkVY4QsNdSojhnq/YbrUr4loNS+WY0llm8L3n9PgC3dVUTyB8J7HJ+Te9cnK+/iwVA2DXfKV8y6KUaIP0U3nA6q6CVpxBPddF+he3RdOU6j5VoRaexARizp0rOj2Nn7oQoQUEQrqeF21LATgjM/mP6KrPF7mT7f64mb9pD254vnHS7B9J8AfmE/xQ3YWANSw3VuGEs25u/NGggj5O+L6FapEZJ0XaKFAv3LL7XETKFcGYn2e6sEn9oMoTZPL8+DZEOdSDC2DVA+h99GD21Zr73AKQqezZIH/DSw0gACCZjIfMGcHrsJaP1gQ==|920

@@ -241,7 +241,7 @@
                     "ParamNameToSaveNewRowValue": "NewRow"
                   }
                 ],
-                "ID": "0fc09469-28f5-472e-9128-d30a55e0da60"
+                "ID": "b92592cf-a596-41c5-886a-d9576b07548d"
               }
             ]
           }
@@ -270,10 +270,32 @@
         "ColumnName": "id"
       }
     },
+    "4,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "trn_insptool_tools",
+        "RowIndex": 4,
+        "ColumnIndex": 1,
+        "ColumnCount": 4,
+        "RowCount": 4,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
     "4,30": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_LastModifyDate"
+      }
+    },
+    "5,1": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "ctrl_no"
       }
     },
     "5,30": {
@@ -384,7 +406,7 @@
                     ]
                   }
                 ],
-                "ID": "9aed1ba2-bfd1-4270-b931-a99ec8e12975"
+                "ID": "6030a5f8-c122-42cf-ab69-97cad749a83e"
               },
               {
                 "CommandList": [
@@ -402,7 +424,7 @@
                     ]
                   }
                 ],
-                "ID": "5052f42f-e0dc-4485-912d-01492a147a91"
+                "ID": "cc800308-ef0a-423a-91fa-727fd10448dd"
               }
             ]
           }
@@ -458,14 +480,6 @@
         "BorderBottom": 0
       },
       {
-        "FontFamily": null,
-        "FontSize": -1.0,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
         "FontFamily": 1,
         "FontSize": 14.666666984558105,
         "FontWeight": 8,
@@ -484,6 +498,14 @@
       },
       {
         "BorderBottom": 1
+      },
+      {
+        "FontFamily": null,
+        "FontSize": -1.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 1,
@@ -906,56 +928,38 @@
       "2,36": 4,
       "2,37": 4,
       "2,38": 4,
-      "4,20": 5,
-      "4,21": 5,
-      "4,29": 6,
-      "4,30": 7,
-      "4,31": 8,
-      "4,32": 8,
-      "4,33": 8,
-      "4,34": 8,
-      "4,35": 8,
-      "4,36": 8,
-      "4,37": 8,
-      "4,38": 8,
-      "5,20": 5,
-      "5,21": 5,
-      "5,29": 6,
-      "5,30": 7,
-      "5,31": 8,
-      "5,32": 8,
-      "5,33": 8,
-      "5,34": 8,
-      "5,35": 8,
-      "5,36": 8,
-      "5,37": 8,
-      "5,38": 8,
-      "6,1": 5,
-      "6,2": 5,
-      "6,3": 5,
-      "6,4": 5,
-      "6,5": 5,
-      "6,6": 5,
-      "6,7": 5,
-      "6,18": 5,
-      "6,19": 5,
-      "6,20": 5,
-      "6,21": 5,
+      "4,29": 5,
+      "4,30": 6,
+      "4,31": 7,
+      "4,32": 7,
+      "4,33": 7,
+      "4,34": 7,
+      "4,35": 7,
+      "4,36": 7,
+      "4,37": 7,
+      "4,38": 7,
+      "5,29": 5,
+      "5,30": 6,
+      "5,31": 7,
+      "5,32": 7,
+      "5,33": 7,
+      "5,34": 7,
+      "5,35": 7,
+      "5,36": 7,
+      "5,37": 7,
+      "5,38": 7,
+      "6,1": 8,
+      "6,2": 8,
+      "6,3": 8,
+      "6,4": 8,
       "6,29": 9,
       "6,30": 10,
       "6,39": 11,
       "6,40": 11,
-      "7,1": 5,
-      "7,2": 5,
-      "7,3": 5,
-      "7,4": 5,
-      "7,5": 5,
-      "7,6": 5,
-      "7,7": 5,
-      "7,18": 5,
-      "7,19": 5,
-      "7,20": 5,
-      "7,21": 5,
+      "7,1": 8,
+      "7,2": 8,
+      "7,3": 8,
+      "7,4": 8,
       "7,29": 9,
       "7,30": 12,
       "7,31": 13,
@@ -2112,21 +2116,45 @@
     "5,30,1,9",
     "4,30,1,9",
     "9,2,1,4",
-    "10,2,1,4"
+    "10,2,1,4",
+    "5,1,1,4",
+    "6,1,2,4",
+    "4,1,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "記録文書の編集",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+        "TargetTableName": "trn_insptool_tools",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "trn_insptool_tools",
+            "ColumnName": "ctrl_no"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=記録文書の編集!AO2"
+          }
+        },
+        "Params": [
+          "=AO2"
+        ],
+        "ID": "2185b8435dcb489daf5af80012554f99"
+      }
+    ],
     "AuthorizeInfo": {
       "VisitMode": 2
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_insptool_certifications",
+    "RelatedDataTableName": "trn_insptool_tools",
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//A3Sl/2brzPQ0NqXGcRMd6UwgKEHVBereoJ+B5XjQnB1Pfal5IpVwExvdbilnNB6YSzloNiDmN86p28Wwe8+cMC+9EAk2NFaTg08H8H5AEUCHXPvAZ0+EXG3CwOonwD7sOhoitMUdKosLTkgaR0lRJD0a7eO4MH83DrCSSgi80JPpvmNDZwUTf7de7BCJ9QV9um6CkgSi/q1Qf+Z62nw9WuRLEXuHo58XbYGV4NbQdQRP1sFfecKUHM7zRqyWVHN1dnlllMPwmNW50Oe9t+rJnT6rjwk3JeLkrxFatRAqz1PYYAscWuyHazy+opv0umB3WUsnhLqLxF4ZiBFCb1PWsKdCrh/vlp0dRf1nWFmSVr0AkPcVJxmk8lnjhGbDw/1Jf6rmoT3dxzcI2mX4KLn5qVk/hjtA1Es8ZTbHlaLErnG81/fSFSQQ2A03lhvavqIrGrhvS40+Hv65Vyk+GXaH0X06uARPWKyYYap4PcANnDZN2JDTNTNgRaO3WykOIP8nqj4QeqpIdCdv9XW0MTkOjT9avTQnK68Ly+2D9Ycakpff/xelgA+tcMfIUNdz1Y/DYH9SdWg05ijoNlWXJsfh6y03dbkX540osa6YiVRP/pqsjAHYyKduGgk9Xg+IeHs8cO3pP6F6lEO0LEMJHnFwtESmUi2LV0KUC13WLo0NijDT6n/IvZuYbWjaqJbDbsV2q/k6i9UQd+BHGmC4/kXRsx3RXC9Xj9G9l1Xa/gyFBkTYXdplgerQFUEIPsacXh2coiok69gmDvkaaCr7uNho29nGUeCfBzsqFWPyz2cYYGKm7SPZTXTKklWBKSDMoKFCuzQ/dtUlNRGjx9/x0dhhOOQ5QQgtOKweNZjwFqH+To0vl+ZpctWufH370V96D1ajrDnClVBslhScJGDYEv0i5Q==|920
+}//5l6NEj/eIDF3zw1bl+I4pxnSQkINpb375WOBeVi2ywPpjwbV70xfkhLI5hOdohUH8DHcPPRzupbDM3laHB4EAgtNAt7Hy76as5MFov2POWc+qGnQjYZ4xxOgn3dDHWFXtESzM6zuYhUxjZucZrcYbvrZ8oHWFhBsSrFnIccXX0kRIpagt2XxNhuJfI32h+fs77vFfkLkjsNEebdKnShzvHHq++VjtaNI4kKCyzya+8XFD4ljy/Iw8EubsF8w1Ae7rYeBLsN2pIdbXY2wImlaTtWJTK5xdY6B3GXlL/IlSUKdSVnkdewRyV/avgaBhSqUvKWBzuZ+1TBPf3lYS6jYMcjw8CwoqDmv+CKD3n8Fyy023hbaKGXU+QbbGlkwTQJycpyDoRtKpyWZIeuv1CyUhjY0Y7u79iqKnltrqsk9OBUZrS0iBatl0+hNcj+DK4KQmZRfQvXvKYcGt13QMiSgpvGB3b/960m3WmrWPTvjoEZqk1Z4BN9YNomDL9K1bLMggf65fvl4VxXxfLkiQR5tfjhiaux3MLRIrwKKyPCFJH4OVFfJva6YokV52oT8VWVxQ7kaWderLSWSp4Qj42H5z9XASXjd/NxZI1xiGTNR++yUMZCoJ3cYLXpJEma0eYTsO6bpDSZCLe9vjHX27K037tPTYX4H1qz0LNO2Mn8sZA9PARqI/qT/UmC6x62kgNAHlauT4ZiPPD7RQdgjJC66kg++Fi6shUJOfegO9AlwRimBlrY6FpLstUk5Ylqvm7PIBVXC9qeLslu9vhI5v1E3+Vki7dzaNqfpVaQINkf2427IB74QglxALN2sCmhG3Oocwbg++Lh1KgKDjOHWS7T1GmuoGffWTlZxQ7Nyu0R8R+7h6Rvjx9QO87tRlRlJRRmPkLvSqearCDpQzF7hNY5tRQ==|920

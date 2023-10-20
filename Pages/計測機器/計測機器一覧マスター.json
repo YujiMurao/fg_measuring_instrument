@@ -116,29 +116,19 @@
           "DesignLengthInPixel": 65.0
         }
       },
-      "21": {
+      "23": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 63.0
         }
       },
-      "22": {
+      "24": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 86.0
         }
       },
-      "23": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 72.0
-        }
-      },
-      "24": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 80.0
-        }
-      },
       "25": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 27.0
+          "DesignLengthInPixel": 72.0
         }
       },
       "26": {
@@ -148,12 +138,12 @@
       },
       "27": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 80.0
+          "DesignLengthInPixel": 27.0
         }
       },
       "28": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 123.0
+          "DesignLengthInPixel": 80.0
         }
       },
       "29": {
@@ -163,7 +153,7 @@
       },
       "30": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 80.0
+          "DesignLengthInPixel": 123.0
         }
       },
       "31": {
@@ -173,26 +163,46 @@
       },
       "32": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 70.0
+          "DesignLengthInPixel": 80.0
         }
       },
       "33": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 70.0
+          "DesignLengthInPixel": 80.0
         }
       },
       "34": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 75.0
+          "DesignLengthInPixel": 70.0
         }
       },
       "35": {
         "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 70.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
           "DesignLengthInPixel": 75.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 75.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 65.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 65.0
         }
       }
     },
-    "Count": 36,
+    "Count": 38,
     "DefaultSize": 80.0
   },
   "Values": {
@@ -216,19 +226,21 @@
     "1,18": "資産番号",
     "1,19": "購入日",
     "1,20": "購入先",
-    "1,21": "管理者",
-    "1,22": "保管場所",
-    "1,23": "校正区分",
-    "1,24": "前回校正日",
-    "1,25": "周期",
-    "1,26": "次回校正日",
-    "1,27": "自動通知日",
-    "1,28": "備考",
-    "1,29": "校正通知日",
-    "1,30": "校正有効期限",
-    "1,31": "通知日",
-    "1,34": "ファイル",
-    "1,35": "校正要否"
+    "1,21": "社員ID",
+    "1,22": "担当者氏名",
+    "1,23": "管理者",
+    "1,24": "保管場所",
+    "1,25": "校正区分",
+    "1,26": "前回校正日",
+    "1,27": "周期",
+    "1,28": "次回校正日",
+    "1,29": "自動通知日",
+    "1,30": "備考",
+    "1,31": "校正通知日",
+    "1,32": "校正有効期限",
+    "1,33": "通知日",
+    "1,36": "ファイル",
+    "1,37": "校正要否"
   },
   "Formulas": {
     "1,2": "COUNTA(A4)"
@@ -348,7 +360,7 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "0,23": {
+    "0,25": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -369,7 +381,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=計測機器一覧マスター!Y1"
+                            "SerializeProperty": "=計測機器一覧マスター!AA1"
                           }
                         ]
                       },
@@ -382,7 +394,7 @@
                           {
                             "TargetCells": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=計測機器一覧マスター!Y1"
+                              "SerializeProperty": "=計測機器一覧マスター!AA1"
                             },
                             "Value": "社外"
                           }
@@ -405,7 +417,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=計測機器一覧マスター!Y1"
+                            "SerializeProperty": "=計測機器一覧マスター!AA1"
                           }
                         ]
                       },
@@ -418,7 +430,7 @@
                           {
                             "TargetCells": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=計測機器一覧マスター!Y1"
+                              "SerializeProperty": "=計測機器一覧マスター!AA1"
                             },
                             "Value": "社内"
                           }
@@ -446,7 +458,7 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "0,24": {
+    "0,26": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "category"
@@ -457,7 +469,7 @@
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_tools",
         "RowIndex": 2,
-        "ColumnCount": 36,
+        "ColumnCount": 38,
         "RowCount": 38,
         "FrozenIndexEnd": 5,
         "AllowEditInListview": true,
@@ -599,88 +611,104 @@
     "3,21": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "administrator"
+        "ColumnName": "pic"
       }
     },
     "3,22": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "storage_location"
+        "ColumnName": "pic",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 1
+        }
       }
     },
     "3,23": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "category"
+        "ColumnName": "administrator"
       }
     },
     "3,24": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "lastrevisionymd"
+        "ColumnName": "storage_location"
       }
     },
     "3,25": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "calibration_cycle"
+        "ColumnName": "category"
       }
     },
     "3,26": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "next_caribration_ymd"
+        "ColumnName": "lastrevisionymd"
       }
     },
     "3,27": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "automaticnotificationymd"
+        "ColumnName": "calibration_cycle"
       }
     },
     "3,28": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "etc"
+        "ColumnName": "next_caribration_ymd"
       }
     },
     "3,29": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "kousei_tsuuchibi"
+        "ColumnName": "automaticnotificationymd"
       }
     },
     "3,30": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "kouseiyuukoukigenymd"
+        "ColumnName": "etc"
       }
     },
     "3,31": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "tsuucibi_ymd"
+        "ColumnName": "kousei_tsuuchibi"
       }
     },
     "3,32": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "外観"
+        "ColumnName": "kouseiyuukoukigenymd"
       }
     },
     "3,33": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "その他画像"
+        "ColumnName": "tsuucibi_ymd"
       }
     },
     "3,34": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "添付ファイル"
+        "ColumnName": "外観"
       }
     },
     "3,35": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "その他画像"
+      }
+    },
+    "3,36": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "添付ファイル"
+      }
+    },
+    "3,37": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "calibration_enabled"
@@ -708,6 +736,9 @@
       },
       {
         "FontSize": -1.0
+      },
+      {
+        "HorizontalAlignment": 5
       }
     ],
     "Types": {
@@ -717,6 +748,7 @@
         "Right",
         "000",
         "yyyy/MM/dd",
+        "Center",
         "Body"
       ]
     },
@@ -728,12 +760,12 @@
       "3,7": 4,
       "3,17": 4,
       "3,19": 4,
-      "3,24": 4,
       "3,26": 4,
-      "3,27": 4,
+      "3,28": 4,
       "3,29": 4,
-      "3,30": 4,
-      "3,31": 4
+      "3,31": 4,
+      "3,32": 4,
+      "3,33": 4
     },
     "RowStyles": {
       "4": 5,
@@ -773,13 +805,17 @@
       "38": 5,
       "39": 5
     },
+    "ColStyles": {
+      "21": 6,
+      "22": 6
+    },
     "SheetStyle": {
-      "FontFamily": 5,
+      "FontFamily": 6,
       "FontSize": 12.0
     }
   },
   "Spans": [
-    "4,0,36,36"
+    "4,0,36,38"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -797,4 +833,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//b0/gY8O4NquHyXAL+bV/0W7YTlV3TFTSCC0Gt3chah2J9xFIcE4HHAoHX9L6gitj1f9+yqQl+ootVWGHw8gtHkfgN4Ve3PzpFDM7R7fQY3NgR82V33RUpKb82buo6AtKiVu1aVLeNwhX39u6CQf2R4Jv23sD2cuBcLhxj/p63223AVlwkzG9ojIRNoo8fok3mlbUZ748q7FoopDW0Ru+Wism2nSB01v1JkYXgq+4wYV56RF/TUgWKRW/1XbOEBxqapdKeKmaXqtlYWps9D1njfBXgL6Y2siPfUtAx7oRoH2kXoOdVEZ+C6+tk3tT4Y349csII5s52zRf99+Yz+2KEnK//nO3yLRNvWgTTn8yRlL04lNEsYzrhRx1sisQSzI10Vb2VuRChwBMpdiSf6NjrEHRuS7CeVyUqRVSfgw6w9g6l5tPaxvzMeADTqJEQLU670ATAc6vz+BsEIEa2IErm2RTdpBMJy4tfejd/6ndB6V1ICZCoyj9yypN0JD5zLYLLgraZaaGkGw2SP8bXGsY0nG0j8OopE28XCjLAQRdtiHwXc23A4ZFZCKdiwDS7QEhR7BOT9p04cHcTUgBgRBTwLE0nnJNDJLIbco3bT7Otxijru4OCYUn/JRP0rI28lgsB/bhzqBuGdSg8eg6gE51PETrTJ1Z6pv4qhzeV+0TwYKpHMFNB5qSGlcvnp90P44FsYLWTFZUf2LAWNi1OjyVDRT0tpmWGtwcIRbQ5vMG3NCJugDmR2opwozXmMzoJj/5lZSviC2KLtgScVAJ52HRLHGLdbg5e58PCuQO/RdRSxQBxL5GYXowahEKKgQ8xAyGGbbnNBOumdSfILoXl+i7WZJTRCoHZKzQAseqZsCqi7QgBlU+kvCoPP4BMkcvaL4HzZj2xsRCsMrZclEcUZvJCw==|920
+}//KaOnxvPTeffG0tLTqaK512A9L/3FblvuHjYzv9Jm+Br1rW9Pls6jnD1czfgLdKzNQOeMZv2cUvJ9Av6Imd4F+BWOSEV9nl144EoCCkL8TMiqoVHCHKVcYWw04OccVtZhaNs4SGxc2PCYEZK6koDHlUxT5DoMpzX2OKrENAPjVOiMbInb6QC8xrPVHkIU0E/T++LBSJ5xyTMMREjTnHCEh3rE2CYp0Is+AUb8qG95i65/iphVkGZ7PqwPTHSvE4OWzGkOimsLuKG9r/SlfGAnw1M0em7Y+9nnwdR0neEgvQLDkX6TR4A5s9fdCPcrOvtJtbffAgaXntZ9M+ZTjtoBz2i7pd0qI7koqtIrpyjs6XeYv7b0YHG2kHMPXY5VgU87cN2DUr90ytQHxRojsqf9A0a3s3EKs5jVYmV0UQsUFoca+WDmb8Nkq/cC4hMa4Gxi58iAbW92G5VmGO6U/vU3RROGCPt5ai75bsZgpD3Ac5PFAf4Vb+A+zg8VCstD7G2tP4ZYZa6uF1Emx0gHwg9mtzPpesQDR2caRQMDZomVar/WJwG09PHi+tafeklJLFOKxIQfhJtXeWfubfhibyZarP2I4Ig4VsT14SZwUTz513/dZwyHe49tM2F8qAgI90aWoRylCZkCw5RwsRfY5HJqkYdAVHaRXyNYnW2Zq6n3f2kb750NXyYMshCRf+ccDWhieySBdHgxVuwCIeBoEb1s864wnDVDFYhLB4OLSa8m1qUihccbfMLTJ4xPtPITc5NafR5f5CvaHUGmLSSEk9jLQBUpwlR9L6wo3yjfIELYZ5ACo4EEgofv+q898vvc/3QyLUbSvzsCvaH/VEbsEFZz8nc/RsQQn9cpiFz715EeVoC6pTs+GeHFEr++RkpEgUJmPVD6jxw+RPOHj5jhFsspmg==|920

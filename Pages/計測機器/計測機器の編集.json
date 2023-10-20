@@ -228,6 +228,7 @@
     "30,26": "*",
     "30,27": "購入先",
     "32,1": "管理者",
+    "32,17": "旧データ：",
     "32,26": "*",
     "32,27": "保管場所",
     "34,0": "*",
@@ -281,7 +282,7 @@
                     "MessageFormula": "使用禁止理由を設定してください。"
                   }
                 ],
-                "ID": "cc73f17f-18bb-417d-957b-220678a00d35"
+                "ID": "a55e09d0-05c3-4e4a-9be7-8b53ecdc7f80"
               },
               {
                 "CommandList": [
@@ -294,7 +295,7 @@
                     "ParamNameToSaveNewRowValue": "NewRow"
                   }
                 ],
-                "ID": "6f9dee3b-baf7-49ae-8c8f-b3387f0b5fcd"
+                "ID": "8dbb47d2-095f-4d8a-a45d-490431776a12"
               }
             ]
           }
@@ -413,7 +414,7 @@
                     ]
                   }
                 ],
-                "ID": "1f727899-4194-49e5-8fc9-ab8a13aef8b0"
+                "ID": "b1a8f1b3-d3b0-49f5-a882-26f05671e358"
               },
               {
                 "CommandList": [
@@ -439,7 +440,7 @@
                     ]
                   }
                 ],
-                "ID": "9852fc45-79f7-419a-99bb-3a72daf047b9"
+                "ID": "7cf9d41f-629b-4f21-b5e7-6f23b5288298"
               }
             ]
           }
@@ -565,7 +566,7 @@
                     ]
                   }
                 ],
-                "ID": "11136e9b-6216-4ddf-b9a3-54e6adae9373"
+                "ID": "6f5161f0-5422-45cb-8fb1-6c067065eb68"
               }
             ]
           }
@@ -603,7 +604,7 @@
                     ]
                   }
                 ],
-                "ID": "6806c3b7-dff6-4873-b379-7b414cfbb14a"
+                "ID": "05a06897-db8e-40cc-a018-0f81c6d99d97"
               }
             ]
           }
@@ -870,7 +871,7 @@
                     ]
                   }
                 ],
-                "ID": "8b3c5002-f79e-44e8-927e-a2f940dc9bf3"
+                "ID": "0502be3c-0a3d-4db9-8cb6-257331534121"
               },
               {
                 "CommandList": [
@@ -888,7 +889,7 @@
                     ]
                   }
                 ],
-                "ID": "2898fdd7-ff61-4a92-b857-a52dc382b476"
+                "ID": "b1f838bc-fd73-4a24-a6ae-424974166ba5"
               }
             ]
           }
@@ -992,14 +993,22 @@
     },
     "32,6": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
-        "SavedValidators": [
-          {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
-          }
-        ],
+        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "DisplayColumnName": "FullName",
+        "Columns": 7,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "pic",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 1
+        }
+      },
+      "DataValidationInfo": {}
+    },
+    "32,18": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "administrator"
@@ -1910,6 +1919,16 @@
         "FontFamily": 6,
         "FontSize": 14.666666984558105,
         "TextIndent": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 6,
+        "FontSize": 14.666666984558105,
+        "Formatter": 2,
+        "HorizontalAlignment": 8,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -3187,7 +3206,8 @@
       "31,52": 17,
       "32,0": 9,
       "32,1": 53,
-      "32,6": 66,
+      "32,17": 94,
+      "32,18": 29,
       "32,26": 27,
       "32,27": 90,
       "32,28": 17,
@@ -3248,15 +3268,15 @@
       "33,51": 17,
       "33,52": 17,
       "34,0": 27,
-      "34,1": 94,
+      "34,1": 95,
       "34,6": 54,
-      "34,27": 95,
+      "34,27": 96,
       "34,28": 17,
       "34,29": 17,
       "34,30": 17,
       "34,31": 17,
       "34,32": 17,
-      "34,33": 96,
+      "34,33": 97,
       "34,34": 17,
       "34,35": 17,
       "34,36": 17,
@@ -3309,15 +3329,15 @@
       "35,51": 17,
       "35,52": 17,
       "36,0": 10,
-      "36,1": 94,
-      "36,6": 97,
-      "36,27": 98,
+      "36,1": 95,
+      "36,6": 98,
+      "36,27": 99,
       "36,28": 17,
       "36,29": 17,
       "36,30": 17,
       "36,31": 17,
       "36,32": 17,
-      "36,33": 99,
+      "36,33": 100,
       "36,34": 17,
       "36,35": 17,
       "36,36": 17,
@@ -3370,15 +3390,15 @@
       "37,51": 17,
       "37,52": 17,
       "38,0": 10,
-      "38,1": 94,
-      "38,6": 100,
-      "38,27": 98,
+      "38,1": 95,
+      "38,6": 101,
+      "38,27": 99,
       "38,28": 17,
       "38,29": 17,
       "38,30": 17,
       "38,31": 17,
       "38,32": 17,
-      "38,33": 96,
+      "38,33": 97,
       "38,34": 17,
       "38,35": 17,
       "38,36": 17,
@@ -3424,18 +3444,18 @@
       "39,23": 52,
       "39,24": 52,
       "39,25": 52,
-      "39,26": 101,
+      "39,26": 102,
       "39,27": 73,
       "39,28": 73,
       "39,29": 73,
       "39,30": 73,
       "39,31": 73,
-      "39,32": 102,
+      "39,32": 103,
       "39,53": 30,
       "39,54": 18,
       "40,0": 9,
       "40,1": 57,
-      "40,6": 103,
+      "40,6": 104,
       "40,53": 30,
       "40,54": 18,
       "41,0": 10,
@@ -3447,19 +3467,19 @@
       "41,53": 18,
       "41,54": 18,
       "42,0": 9,
-      "42,53": 104,
-      "42,54": 104,
+      "42,53": 105,
+      "42,54": 105,
       "43,0": 10,
-      "43,53": 104,
-      "43,54": 104,
+      "43,53": 105,
+      "43,54": 105,
       "44,0": 10,
       "44,1": 10,
       "44,2": 10,
       "44,3": 10,
       "44,4": 10,
       "44,5": 10,
-      "44,53": 104,
-      "44,54": 104
+      "44,53": 105,
+      "44,54": 105
     },
     "SheetStyle": {
       "FontFamily": 6,
@@ -3514,7 +3534,6 @@
     "38,6,1,8",
     "36,6,2,8",
     "34,6,1,8",
-    "32,6,1,8",
     "28,27,1,6",
     "30,27,1,6",
     "32,27,1,6",
@@ -3530,7 +3549,9 @@
     "7,27,10,13",
     "7,40,10,13",
     "6,29,1,2",
-    "6,44,1,2"
+    "6,44,1,2",
+    "32,6,1,8",
+    "32,18,1,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3547,4 +3568,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//10tVFxf7+rKUT4f+JBIfbZoApIYlCssQWrKxMmET3quL36vg87BwplBkyROMil/OnDZdp+JQl/n9m1AMS77Jkl3wXnKxYcmTpI+TyKppMBdG3oRZuHXf89/g2TMHFVq3ZT6UsutYOlQ/ylG0gn+HP5c7cTiN3cKJ/ic5al0G5akNSRt7MeSuH0GHeTrrykul74Qux+hAXoH5lT6JaSGx1T65XbrNz/dqlBdV6EGV+mk/yxoIfuo637bXXDuhVsvypbdMz8ACgGDfoStTR97Al0OjjiOh7O29mI+LWEAwW27gzFiIqpH9bXF26CQ5UvdxdMt3HicWglZmszzf66gesBFAf/cD1pvfAdsUROca4HdM33uwSx9kYL4tKeZ6VGOpl4GsGJzThmIpDG5Gcq4uTAwKikWFMmoNx17FDwkZH3ad0158bjdeoFvBivX2oCUNeFsItjoEfnZ+BuWlPD0wlZ9Ktc4lfrwe4dynYUGr4YQ7cZlhd/2Yo8EQdGqPFE1ChhLteAHWp1Dl0t34sjETPxfbCdqFzpKxg/HHkmCaO087pm+TEg2mHmc4zo85CLwqRTgKGC/qRHVSsvSpgaBN8LI7gHLv9lngvx0iNHE+zqmfzOua0SR3WAbMbvd8HrsFlLQdOab6R4rsCecTg31lndhFQldkfv7BRYojAIXuwgTbus8FTS+GBBv1mr5mkPchud+abPubmy3K4ahhBZ3OotX1B+eKBBxMsGXC78nDKVnxZmimGYusyu88sn+B+w9Od1q3UcU8mBw7cqRlE0LhQIr36ywyLhkZ8eLg3iyI5L9bZBY8KRZxccOLNlcLFDa/1VATt79UWeNwNB4Vk741RnQnHHp8w5RqNeBMeYgVl8EhkWNEbIKE+AvgHBqPqoT48nvPimdHJsbAzhUhdr1+bw==|920
+}//lvZ1huPnYzNbANQ8/zGoU8UreHaUNtpE6twOk22q/KNzShQkQ7egHVAoYdP+RDSg0EFgD4CbecYi4Hu2WleosTYu0DbJmnVD/wP9LdLTQ/AsWYGFCOFP+w3WtACfRzK5gUSisy3BQOj5MZ1zETkKfIm9kKfsegPErrmA9+thN4ppH1AoZJepflWAwGRRNPVa1/aLs93qMbsvTaHcQKnETfELcL6LKGZzxfdCPXAhP3rdnliWnsGoU2sPStWzP6QGENXbtgakkM4v/hsbXGHh1rxr6Rh+C+2MT81R6owYkrpOQshBzqcfHF2sTTm5Ky9GhfIP20X+x+OjN2oYqLOTok5nuK5CFWvi334mxmjWA8jHPbQzNdgnu+0VojWDcmwdArmEoQ0V4pzzng/y64Zu0caJtpUR+ijcMQPoyf6eawwoQoMrrObMFrPamu6euDfk916IGB9t2AymirozrSHM7jZiFaYNyiz4y56CNHqjK20LvrgiOJXyb0zMK03j9PIUlpH4Z0pfSgo7mBedYMB9TebYWfXmAT9bHtL9Bx5n/QnPZxMhtunu2fNMVwi6t8gbCViWYtsIxD1tYkVGmpMxfxlXT8xTZlPnUA1oYT+lz+j56GMJPSD6Efmq/nmVyvuulwCC2OKg3RcnaIyCPszchChbtpaotjX2QdKlrCsYb/qqDyULOAp0yvJk8yecXlTuyvh5DbgZEvc0PdUf9RSlRv7D+/hu0arp54Al996BaMvre0wWIL4v1jUIm9eJPgT9qLmfDk4lA/NTFpuUPxuIEGTwnwbAfT8stozsEyby5ZOwnpuAx9XCjPtsBwmd7nRSEpQtOZrELgYUEoMi7F8hATsUASKgGK+Qkp2Ds1xVzkAVn8x3C8BaXajm2Wx98KG34WhNMf61c+A8sDRDpWyYfQ==|920
