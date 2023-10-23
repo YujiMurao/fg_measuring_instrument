@@ -311,7 +311,7 @@
     "10,38": "保管場所",
     "13,0": "分類コード",
     "13,25": "型式",
-    "13,38": "担当者",
+    "13,38": "管理者",
     "16,0": "次回校正月",
     "16,17": "～",
     "17,52": "検索",
@@ -388,7 +388,7 @@
                       "Value": "使用可"
                     },
                     "Params": [],
-                    "ID": "f1499a20ecc04357bdff2f9020b2972b"
+                    "ID": "73b37612617f4cc4bae49d8c38d27ca9"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -403,7 +403,7 @@
                     ]
                   }
                 ],
-                "ID": "f32ce672-e487-4981-8657-16b07019ddfe"
+                "ID": "e82de604-207e-4ce8-afe3-4e94110e3fbc"
               },
               {
                 "CommandList": [
@@ -418,7 +418,7 @@
                       }
                     },
                     "Params": [],
-                    "ID": "844ab3da603f43ebb28288851c0dc077"
+                    "ID": "4c3a2f1349ed49d6aeba9dd0e6f48e47"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -433,7 +433,7 @@
                     ]
                   }
                 ],
-                "ID": "6a691759-6ba0-4d26-9748-b38bebcc2180"
+                "ID": "1add63c6-258f-4da2-aab5-b0996a8519fe"
               }
             ]
           },
@@ -829,7 +829,15 @@
         "DataSource": "trn_insptool_tools",
         "ValueColumnBindingInfo": {
           "TableName": "trn_insptool_tools",
-          "ColumnName": "administrator"
+          "ColumnName": "pic"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "trn_insptool_tools",
+          "ColumnName": "pic",
+          "AttachType": {
+            "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+            "UserColumnAttachType": 1
+          }
         }
       }
     },
@@ -996,7 +1004,7 @@
                                 "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                 "ColumnBindingInfo": {
                                   "TableName": "trn_insptool_tools",
-                                  "ColumnName": "administrator"
+                                  "ColumnName": "pic"
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1066,10 +1074,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "9d0f48a37b91463aa95943a3929567d4"
+                    "ID": "f4038f448cc14bd5ad6bda1accb281b4"
                   }
                 ],
-                "ID": "a6aa775c-918f-4547-8933-230edb6f446b"
+                "ID": "e09570c3-8939-47d9-8239-3ca99253c2bb"
               },
               {
                 "CommandList": [
@@ -1258,10 +1266,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "b67e2ff2d40f4e3a979886e27a59ef65"
+                    "ID": "061176a5df7c4d83b6472bf7b7e38a1f"
                   }
                 ],
-                "ID": "adee8d28-e3ea-4f19-b236-11044a87acf0"
+                "ID": "d1372acc-01f9-491a-adee-afcb5e8933d2"
               }
             ]
           }
@@ -1387,7 +1395,7 @@
               }
             },
             "Params": [],
-            "ID": "8e72582b32e647b5ab4ce455920b1dc9",
+            "ID": "2dbe7010f13c4beb921cc742f4ad7ec9",
             "Disabled": true
           },
           {
@@ -1429,10 +1437,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "f0f789249955451aaec6396daa60265b"
+                    "ID": "7a25f4ad5f974d51b298d25a03f31480"
                   }
                 ],
-                "ID": "57b2a073-a5ea-48d1-808c-07842b9ea1e3"
+                "ID": "7f13af02-251a-4400-99b5-6e30b2e261eb"
               },
               {
                 "CommandList": [
@@ -1457,10 +1465,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "f3f5012ad7fa43b19dee108940866897"
+                    "ID": "9a0542374d9c480cb0849c3ed1d4fa4d"
                   }
                 ],
-                "ID": "940b457c-e2f5-46bf-930c-6e3fd400d19f"
+                "ID": "53780b0d-bfef-4426-bd16-5b2f04559e20"
               }
             ]
           }
@@ -1494,7 +1502,7 @@
                     "NewOtherName": "計測機器リスト"
                   }
                 ],
-                "ID": "f8799a04-e58d-4181-85d3-c961fa68347e"
+                "ID": "7f44ab6d-857e-4a31-b2b5-fc1dce49d8cd"
               }
             ]
           }
@@ -1529,7 +1537,7 @@
               }
             },
             "Params": [],
-            "ID": "394cab0deddb4f9daa004da31405b361"
+            "ID": "3e7a4f5339e944c2ae54ab0a72b44f1d"
           }
         ],
         "Text": "計測機器新規登録",
@@ -1671,7 +1679,7 @@
               }
             },
             "Params": [],
-            "ID": "0c1def695cf24338b6125a706d8d3443"
+            "ID": "4b0ece72c43f48358eb10bf202b1f51b"
           }
         ],
         "Text": "コピーして新規登録",
@@ -1704,7 +1712,7 @@
             "Params": [
               "=BY25"
             ],
-            "ID": "d82368c5325648e0a00319f10648d6ae"
+            "ID": "7b19804d9da54344bc98b4fab6c0c1af"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -1712,6 +1720,7 @@
         "RowIndex": 23,
         "ColumnCount": 83,
         "RowCount": 22,
+        "IsAutoReload": true,
         "SelectionMode": 1,
         "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
@@ -1844,7 +1853,11 @@
     "24,70": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "administrator"
+        "ColumnName": "pic",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 1
+        }
       }
     },
     "24,76": {
@@ -3967,7 +3980,6 @@
     "24,53,1,5",
     "24,58,1,5",
     "24,63,1,7",
-    "24,70,1,6",
     "21,28,1,12",
     "25,0,20,83",
     "7,25,2,2",
@@ -3976,6 +3988,7 @@
     "10,11,2,13",
     "7,11,2,13",
     "13,11,2,13",
+    "24,70,1,6",
     "23,0,1,4",
     "23,4,1,3",
     "23,7,1,3",
@@ -4011,7 +4024,7 @@
           "Value": "使用可"
         },
         "Params": [],
-        "ID": "674a0e03d81e4bf2aa945de64a23b130"
+        "ID": "41d7a64110ca48c387db5dfdcc54bddd"
       },
       {
         "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -4037,4 +4050,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//04ucAyE0Duf0JtKL6wgQ23yTJIyTYbSkdahSVZHT47ue85cILshpMJvGJ4fif22rtx49nG5DMvMa1sgJdQG8JSqOzQ+zf7+zYMtRMKxXR28l/idY2i5vHeJ/nQl5IAlVxYMSPLeaEegOplgjhCKxp886VNU8R2VfziDPyb39Ob/PEkbUhyFTn3pvAGVpNFpXkkaNZ1We6BMRjcakXKMp/qxrbIJivG9hZOTpdDMmuCvtDqtWOh6ILM8dp+5F5bT9P5LQVItSvqHNlgQcB842ZolXa3EcB2VVItMMPzYt9yARwOU2c/sFs2IPo2ADQ62/iaJ83jvtdnkQgvRKTqdWP7rTwCN/sT+gpXGLoSOejN4nLXhZF2Ci0IzYvXha7qiETTKPs3vJa8pm0lbt0yanLI0DjAYgtHl7bDhDqfysrUssWImiefRU90aRAQ+pl1I/+B3PMbDdW/2G/YEzaRvrWxHsr0S+MUOBK+dVx0RhfQKLmGHk9ttRsyW0QQkJDAAJ1/ubotGlMkzZlWvPaAYm5MqdOesNr6QIOhDSmy8AvVmcqJo/SZseMLJLoQXu9Y1cMh/vBbc33+ZbMNQC8Dbh738UdSD6pIS8QnMhH6+68p8ak8ISrW3C+U9EuGtPc17pnqZ8eJWu46uFUs18g/BthrZ7TnstZmLZ6PNNGV75Ddvr9qVCCws1OuH5vECy7VynO4E+HlZrrEw04dGzNyR6jNQAZCSZUmgMCzNbiu9JxgWj+BlCvjg9jyOALBEZzP7op1PK2hsgUDo1jyIReyeeEeNwkTgqDCTL9YG3asFohJxRhmIWM4+MXBIcOHL6tJCpj1tCvGksT3KpnbJ0rEEiBZJjf2w4uoRI2X2QfaVn94bxdqHS4kFdKEKFDL0L7oTBgXwcjThhvY9QqCtNqCwKwQ==|920
+}//KY7OOf6InXGGWIOF3yAuX9jBQPx+bSoR82T6yd3x4znsI+iKoqq59O1Wz7UTHkKa63nXc3f/pgDgYMOhNjZKi9s3nwLwMw3p6Ynrs2zOP7ljmYp407t3c1K26QzCCSML0mEb+1OMs073LFdXmZETqNs89eUpV2XRBfmqpMYmtOx5QX0fq9lFllZ63sAmZlRTRknmY60Jgg6Yi3wA8NVhFCO3SBfuNdKpAee3V+BJjyJUVKWjaW7VktEtUH21/4TJ59rGPnA3KgFHbPgvw7kajqtAMJj6AnPvGoxISHLxgGonvkncvSe7Q0tq/es0JheNCp0/5K/WJ5M+eMtOVBcIKXdRResbXkqJGFY5WU8dec0Ax2sV5+Wexj1aok/eDyYKzPVDN2okvY+glZU3GDberqpTFTcxryi64HyzpLk8BqbzRPyyiW6ob9uiU2P+5kWKlOeKN2RRYrQgKagDXRqhRGg6bJW1hDHREghaVnOq1POTMr7Jb/U2Bah8d+35PAyBKvP2swAk96W9Lnix1/Jb5qlxf8N5QxNhPNc62soSIfvo75+hoJEdMwST7EJHmgnS1gghBjaYgfg3ovpLxcB88QNoXkPAaaeJJr4yfpIFSegMlnFbWawOM/uJoK/dWz321yTjGlUz/GSMFOWMXa5EmIn87IlsR4wd2YlN5TicQH2AlV+QgEsb3gCUoHmGIS1hy9xp9ZvrhJabtr0lKmuieaZ3uLCbi5etKyvKWzUavW6sTChXlFszvyD0rGJHAoNH/+yi7RdKhvGZxmDauRaeBELOjqCrWhEwpHir0nfhD+olNhlMNnvJEOS6LrHikdioTFF+c8e77Aj9z0htlLQ/xEcrk7+9ZFZChVj4G+6HbxLXBqBF+AmXTXwmIR/VLU6o+avSa6tdozqnRVg/BXBv2Q==|920

@@ -282,7 +282,7 @@
                     "MessageFormula": "使用禁止理由を設定してください。"
                   }
                 ],
-                "ID": "a55e09d0-05c3-4e4a-9be7-8b53ecdc7f80"
+                "ID": "76a28f34-ec9a-4181-a56c-c97d4a2ea4a1"
               },
               {
                 "CommandList": [
@@ -291,11 +291,19 @@
                     "TableName": "trn_insptool_tools",
                     "ShowConfirm": true,
                     "ConfirmText": "本当に更新してもよろしいですか？",
-                    "UpdateValues": [],
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "pic",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器の編集!G33"
+                        }
+                      }
+                    ],
                     "ParamNameToSaveNewRowValue": "NewRow"
                   }
                 ],
-                "ID": "8dbb47d2-095f-4d8a-a45d-490431776a12"
+                "ID": "afb59e31-a315-4eeb-bbf9-e5a61392e111"
               }
             ]
           }
@@ -414,7 +422,7 @@
                     ]
                   }
                 ],
-                "ID": "b1a8f1b3-d3b0-49f5-a882-26f05671e358"
+                "ID": "bff2326e-80ce-4f0f-96f2-d87905827095"
               },
               {
                 "CommandList": [
@@ -440,7 +448,7 @@
                     ]
                   }
                 ],
-                "ID": "7cf9d41f-629b-4f21-b5e7-6f23b5288298"
+                "ID": "afb71cdc-8934-4836-97ac-3f5d4c84d740"
               }
             ]
           }
@@ -566,7 +574,7 @@
                     ]
                   }
                 ],
-                "ID": "6f5161f0-5422-45cb-8fb1-6c067065eb68"
+                "ID": "6bf80adf-8d86-4d09-8730-4f88b2b5ed86"
               }
             ]
           }
@@ -604,7 +612,7 @@
                     ]
                   }
                 ],
-                "ID": "05a06897-db8e-40cc-a018-0f81c6d99d97"
+                "ID": "254d065a-f63c-475d-8eab-8a1b99512da2"
               }
             ]
           }
@@ -871,7 +879,7 @@
                     ]
                   }
                 ],
-                "ID": "0502be3c-0a3d-4db9-8cb6-257331534121"
+                "ID": "043213b2-82cf-4ca1-9529-d76069473bc0"
               },
               {
                 "CommandList": [
@@ -889,7 +897,7 @@
                     ]
                   }
                 ],
-                "ID": "b1f838bc-fd73-4a24-a6ae-424974166ba5"
+                "ID": "75fac93e-79aa-4be5-8513-653bcbbc377e"
               }
             ]
           }
@@ -932,6 +940,10 @@
         "ShowCalendarScrollBar": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "madeymd"
+      },
       "DataValidationInfo": {}
     },
     "28,33": {
@@ -954,6 +966,10 @@
         "$type": "Forguncy.DateCellType, ServerDesignerCommon",
         "ShowCalendarScrollBar": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "purchaseymd"
       },
       "DataValidationInfo": {}
     },
@@ -1000,11 +1016,7 @@
       },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "pic",
-        "AttachType": {
-          "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
-          "UserColumnAttachType": 1
-        }
+        "ColumnName": "pic"
       },
       "DataValidationInfo": {}
     },
@@ -3529,8 +3541,6 @@
     "10,6,1,20",
     "40,6,4,47",
     "22,27,1,4",
-    "28,6,1,8",
-    "30,6,1,8",
     "38,6,1,8",
     "36,6,2,8",
     "34,6,1,8",
@@ -3550,12 +3560,15 @@
     "7,40,10,13",
     "6,29,1,2",
     "6,44,1,2",
-    "32,6,1,8",
-    "32,18,1,8"
+    "32,18,1,8",
+    "28,6,1,8",
+    "30,6,1,8",
+    "32,6,1,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "計測機器の編集",
+    "ShouldCheckDirty": true,
     "AuthorizeInfo": {
       "VisitMode": 2
     },
@@ -3568,4 +3581,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//lvZ1huPnYzNbANQ8/zGoU8UreHaUNtpE6twOk22q/KNzShQkQ7egHVAoYdP+RDSg0EFgD4CbecYi4Hu2WleosTYu0DbJmnVD/wP9LdLTQ/AsWYGFCOFP+w3WtACfRzK5gUSisy3BQOj5MZ1zETkKfIm9kKfsegPErrmA9+thN4ppH1AoZJepflWAwGRRNPVa1/aLs93qMbsvTaHcQKnETfELcL6LKGZzxfdCPXAhP3rdnliWnsGoU2sPStWzP6QGENXbtgakkM4v/hsbXGHh1rxr6Rh+C+2MT81R6owYkrpOQshBzqcfHF2sTTm5Ky9GhfIP20X+x+OjN2oYqLOTok5nuK5CFWvi334mxmjWA8jHPbQzNdgnu+0VojWDcmwdArmEoQ0V4pzzng/y64Zu0caJtpUR+ijcMQPoyf6eawwoQoMrrObMFrPamu6euDfk916IGB9t2AymirozrSHM7jZiFaYNyiz4y56CNHqjK20LvrgiOJXyb0zMK03j9PIUlpH4Z0pfSgo7mBedYMB9TebYWfXmAT9bHtL9Bx5n/QnPZxMhtunu2fNMVwi6t8gbCViWYtsIxD1tYkVGmpMxfxlXT8xTZlPnUA1oYT+lz+j56GMJPSD6Efmq/nmVyvuulwCC2OKg3RcnaIyCPszchChbtpaotjX2QdKlrCsYb/qqDyULOAp0yvJk8yecXlTuyvh5DbgZEvc0PdUf9RSlRv7D+/hu0arp54Al996BaMvre0wWIL4v1jUIm9eJPgT9qLmfDk4lA/NTFpuUPxuIEGTwnwbAfT8stozsEyby5ZOwnpuAx9XCjPtsBwmd7nRSEpQtOZrELgYUEoMi7F8hATsUASKgGK+Qkp2Ds1xVzkAVn8x3C8BaXajm2Wx98KG34WhNMf61c+A8sDRDpWyYfQ==|920
+}//a5Mr8ScStiCw7+GR5fi8EcZRd9NgalUJzskeB79d9uWuLePywQ5JRE+9RYJt2E3JkCnZjIXCgfhzZr097xwXqHRQOZ/O13cAhMazTS62CTNMc8P29/A7PmQdQ6bkkBRNcDQMMrf8atEZPQJ+3+5+S6FjTLHfp16LFU4EL7OjNS6BpE8OFtbPKA2HKIWEWFPAWxfcKKEqgjVKyBDBsiuqjtMBzg2xDvVIWkZRmPHjLVnUlku+AQa75jlzGFgueB9LTZqa1oarAJOxybAN8lnsjNTte1cbur5GA5yK1wZyF/TeQ0QbbZ+c0lR4tq33BxrduptewH9gqyLhccrDRUdabdgwQ5UIn2a5zDxi2ffBmYZhOzLt/5DrK9NNgMr1rjYfsI07lxuH4k7U8ye276Klr+BWGAcKvpRsQ1IZf1uMlEgY3jnpc643gM8rpjmI6Pv2ssFIPHtcaTKaVdDiM3Yz6ghAw44jyEO+hFLVFANHtTfkWWYC0+inqnUfi0sEE+WraUYbwFMPmwMjzCz+zxIBtMdBnVrVo/m1WrPy6ulgcSzD4RP+Rsa2/Rq6HYmGfaa1887VclXebSD3NeSDr519ZEr+jDfsdouJHcuRZse9qqkC/4N8q0YWVD1iT2n8eg0GRB4Mw9dTvxrhwNSLtsJXjs35urMJAhepglOcqwQ3dE4NuO3S39q8W++1pcKmYxREV92FzKfTK+HwmJHo7sbEnsRfz7Y2eM4LmIAMjXO5xVAXDfdRxEQDhNDwCAdW25BFDMcsAx7kf99gRx/ggEPdq1mI75LXXB0Oji/MhhIaNXRW7KLutjcVMQypzSHTXuOeQo71OYvYHegd7AL2YkBitW7H9zolJOKih4VMY+rIhA0vV/iHwxuZTztAtlgu1ZBZL3dI0zTEt162rWPlUIwRmA==|920
