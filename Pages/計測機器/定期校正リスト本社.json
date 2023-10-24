@@ -375,7 +375,7 @@
               "=F2",
               "=N2"
             ],
-            "ID": "704a37b04c174bc6874a2c8781bbfe43"
+            "ID": "cffaeb6966304c5b9876455b02e6ecc9"
           }
         ]
       }
@@ -425,7 +425,7 @@
               "=F2",
               "=N2"
             ],
-            "ID": "a9713f87521b41cf9ef53597ecc09eaa"
+            "ID": "e94107e33bbd4c85af56dc8a00046cb8"
           }
         ]
       }
@@ -749,7 +749,8 @@
         "FontSize": 14.666666984558105,
         "FontStyle": 0,
         "FontWeight": 0,
-        "Formatter": 6,
+        "Foreground": 6,
+        "Formatter": 7,
         "HorizontalAlignment": 3,
         "VerticalAlignment": 3,
         "WordWrap": false,
@@ -771,7 +772,7 @@
       {
         "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Foreground": 5,
+        "Foreground": 6,
         "Formatter": 1,
         "HorizontalAlignment": 3,
         "BorderBottom": null,
@@ -788,7 +789,7 @@
         "FontSize": 14.666666984558105,
         "FontStyle": 0,
         "FontWeight": 0,
-        "Foreground": 7,
+        "Foreground": 8,
         "Formatter": 2,
         "TextIndent": 0,
         "HorizontalAlignment": 2,
@@ -804,7 +805,7 @@
       {
         "FontStyle": 0,
         "FontWeight": 0,
-        "Foreground": 7,
+        "Foreground": 8,
         "Formatter": 2,
         "TextIndent": 0,
         "HorizontalAlignment": 2,
@@ -840,10 +841,10 @@
       {
         "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Foreground": 8,
+        "Foreground": 9,
         "Formatter": 1,
-        "HorizontalAlignment": 9,
-        "VerticalAlignment": 10,
+        "HorizontalAlignment": 10,
+        "VerticalAlignment": 11,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -852,10 +853,10 @@
       {
         "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Foreground": 8,
+        "Foreground": 9,
         "Formatter": 2,
         "HorizontalAlignment": 3,
-        "VerticalAlignment": 10,
+        "VerticalAlignment": 11,
         "BorderBottom": 0,
         "BorderTop": null,
         "BorderLeft": null,
@@ -895,7 +896,7 @@
       {
         "FontFamily": 4,
         "FontSize": 14.666666984558105,
-        "Foreground": 13,
+        "Foreground": 14,
         "Underline": true
       },
       {
@@ -923,20 +924,10 @@
         "Foreground": null,
         "Formatter": 1,
         "TextIndent": 5,
-        "HorizontalAlignment": 14,
+        "HorizontalAlignment": 15,
         "VerticalAlignment": 3,
         "Underline": false,
         "Strikethrough": false,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 4,
-        "FontSize": 13.333333333333332,
-        "Formatter": 15,
-        "HorizontalAlignment": 3,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -963,6 +954,16 @@
         "BorderRight": null
       },
       {
+        "FontFamily": 4,
+        "FontSize": 13.333333333333332,
+        "Formatter": 18,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
         "FontFamily": null,
         "FontSize": -1.0,
         "BorderBottom": null,
@@ -979,6 +980,7 @@
         "Center",
         "Meiryo UI",
         "#FF6D6D6D",
+        "Background 2 -50",
         "yyyy/MM",
         "#FF000000",
         "#FF8C8C8C",
@@ -994,13 +996,13 @@
       ],
       "Borders": [
         {
-          "Color": 8
-        },
-        {
-          "Color": 11
+          "Color": 9
         },
         {
           "Color": 12
+        },
+        {
+          "Color": 13
         }
       ]
     },
@@ -2272,6 +2274,8 @@
     "6,0,1,2",
     "6,62,1,2",
     "6,2,1,4",
+    "7,0,34,66",
+    "3,8,1,7",
     "5,0,1,2",
     "5,2,1,4",
     "5,6,1,3",
@@ -2285,9 +2289,7 @@
     "5,49,1,4",
     "5,53,1,5",
     "5,58,1,4",
-    "5,62,1,2",
-    "7,0,34,66",
-    "3,8,1,7"
+    "5,62,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2304,4 +2306,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//CXBLXKXWp5y34sChBwSh0xd08uG+V27/Cwo8sOUQIIJv9hVLcUMCkWBaBqVBo4Jny1Oqk7IyvjbPFMJknroQDgF+btTFoi4ZX3pgBFSdT/dpxT2xsP1XN33yB8Dymt54wT6WRmhOkZ0kWvbeFcRkknRN6ykDsZrxfCv1TVOZuxmFcG4bABPX7QZpwcMD34s0BMlFBeYJBLjUNoEswjrfMRfRvUkZXT9zSrDuy82VLr9l37NSymKGu+e4aScfYSMT5HBCQrLJ4dEqUI/0jtBNdAAuRF2dlZKrpl4zuGmkKz9LA5gqp6M+wF1/a8VkF/DtYqfnFHhBHor0mjQHzMysfn90UXOQ8R0FmcpJ7dLNnQLPLAS4t1l/lwD8+W42akcY36oqdP56cW4yv1C7dLB1KEzck3P0M1qtNWFp3kxWsvbcKGNpkF1ipiJ9A6t2Z8aY+60UAvdp1f3P89tqrfCejQqZU7P6KiXTja9S+SKhqlUl+RgCiSzYW6nm+1n7ih1k2WtHuu1HS+229icVT8fuStr/kh41t/O2/vAkwrRGy6dsYkJVWR4x5Bf15WuTz6Q6PvI4IJWKQj9+64nahkiAfmqfDHqwuflwc3JEwZ2GESMLgXqcd3KerXkASaRC6Yu+MvXeXu7zGSxrmcWlAT2Zz+rST2y7O3U9aAw7EyW9UHDsy5+gfYoxSxaSXglIOIKfKCqEcLMrEx9gU7GXI5o3+Y1lzrFUxvkQy3FDswraKbV8qIDNWiEEHXB/cnf9okzuayJwZ7OqmUyWQkoAHeURVWwb9I0/csg947uhAfLl9eTMq9l92BRRkyJcqnffOrr633uFfOkKZQE5J42hDuJ7+YHP2h80HoaGQsuMUcJWsMQXWqMaSJwifTnMC1+6AP+Au1WvdPWHQ4dP+SKP+ypz9w==|920
+}//nSAHYdZPn7K3Ecba7Nio6BgxDwUyLAlIpjnurYVXwTPO7jNeq0mrAfMppldaAXFMFZ4MSOVi56YHQiGhe3kc/fy/2fbhmHw9i4raRsToK9sBTHL+xSCeRkO84kc4aBSx6rZu9nlNA1FEbJlAsaR5gBYO82eHHwITBCoGjfoyCPN6xOAOfwwIhgI6+P9i+tp0JhI2ibnMcWeEFtxk7GiMnt8bklOqPRickqQJhZ3Puszc1zkox9IVhs1mK4Su6v2MBn635GjNqlkBOleocl1GN00Y41YEN+33fZiVWvzMDovg5eKH5rqfbG/FhBJ8MKCyT1DG2ESm79+fuU2S/FnzaGcPiRTQXoNOjpmGGrHXNkRXJm+XTaUWUxVUY9eqJXZmCdlz4SP/eVf6pWwcIjL0HL0Rb6/7S7CzdspZITq6c+bXFRUlUOyF0BZfarCKxCa0i684layswCPwN8ohEPHbJKmSprmYCGxbXusxgE2IorH+SyBr8KrQDDr6j1ijFHM3CHVXJT7g4J+f2ate7zNSSvfVwa3VUi2mmw0mczXFI8V0OwPK94duGGMoVp9VhPp6UNTbMxW9o9vrzDiPaxt8UrSkDDpN2EgJ/t3yeGDEaTOYFxxxnoIrFg5Y3jEBKyuLhjSWvti/z5FEcfhHteqggVH02mikgLfEQk4F0X0hxHhE7ik1clM49D752ydk93O5M092VWgkOhaRtsiWicrbUuXhuh4LuDdVq1E/ywhF0ZDzG3JTEEaFbtxDKfYsI1iTgmTRbonY7fsvsznFdBZZa7bO5VhP4rMpUFtzStki8ofdCCRVpF5BEubEJ/LRmZSZPPxIn9e9fbeKU6mmCunwS6OOX5hYBqqnP5KJKGBg1lEMu3wjg0Obk3zOFcw3Rx7bucg8RVOsLYuDOz0bG2Hd/g==|920

@@ -417,7 +417,7 @@
                   }
                 },
                 "Params": [],
-                "ID": "c012b6655eb6402ca1c3b83c6825ce26"
+                "ID": "979d5e6c0dc84ca890c7b25baee68d62"
               }
             ],
             "CanVisitRoleList": [
@@ -489,7 +489,7 @@
               "Value": "使用可"
             },
             "Params": [],
-            "ID": "ff0d2ed093c941fc804032befe3c7e6a"
+            "ID": "629a0b5402ba45bc9a78fdd0e64e7e1c"
           }
         ],
         "Text": "すべての計測機器",
@@ -503,7 +503,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "校正リスト (個人)",
+            "PageName": "校正リスト(個人)",
             "PassValues": [],
             "IgnoreTargetPageCachedCurrentRowInfo": false
           }
@@ -534,7 +534,7 @@
               }
             },
             "Params": [],
-            "ID": "bd9b3619249a43d38f1b80cc3529bccc"
+            "ID": "ffb3b41037e84a6c9a0671db1de616d7"
           }
         ],
         "Text": "すべての記録文書",
@@ -565,7 +565,7 @@
               "Value": "社外"
             },
             "Params": [],
-            "ID": "b8df44cb8e5d4f35a3baf8b8c9edb415"
+            "ID": "fa5394b34bc84e8cb527ad8f104fe722"
           }
         ],
         "Text": "定期校正対象計測機器",
@@ -581,33 +581,8 @@
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "校正承認リスト",
             "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false
-          },
-          {
-            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_insptool_calibration_history",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-              "Condition1": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "ColumnBindingInfo": {
-                  "TableName": "trn_insptool_calibration_history",
-                  "ColumnName": "FGC_AssignTo"
-                },
-                "Value": "%CurrentUser%"
-              },
-              "Condition2": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "ColumnBindingInfo": {
-                  "TableName": "trn_insptool_calibration_history",
-                  "ColumnName": "FGC_State"
-                },
-                "Value": "申請中"
-              }
-            },
-            "Params": [],
-            "ID": "94c8f880e7764afdba1f8ece5aadf94f",
-            "Disabled": true
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "DeleteCachedQuery": true
           }
         ],
         "Text": "承認依頼リスト",
@@ -667,7 +642,7 @@
               }
             },
             "Params": [],
-            "ID": "a97fac35511142848709ff220475173b"
+            "ID": "671d99d5318a4c268de105afbe1510c3"
           }
         ],
         "Text": "校正・修理・廃棄履歴マスター",
@@ -695,7 +670,7 @@
               }
             },
             "Params": [],
-            "ID": "b1703f8ae6dc4a4a81286719a52b4d32"
+            "ID": "424745dc516944fb957624705c520d84"
           }
         ],
         "Text": "記録文書マスター",
@@ -760,7 +735,7 @@
               }
             },
             "Params": [],
-            "ID": "8ffe57ff6aae48cfb87cacbbe5129327"
+            "ID": "104ee627e41c4b6fb55cfed37e604014"
           }
         ],
         "Text": "校正対象機器",
@@ -1770,4 +1745,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//wSrTzQswuvFWdtipmeJ3onYPBG0/1gpl+Pq6tFyLK7w6BUcexhUo4au670fqX7cBecIALqylRN/gO9B+fi+Z8q4KI/LS3kvocg6fJTNhQEocAn7ZpqFQemEBuuKuuuURKhUthcDjpNBt3uqoVjjyOh2sMhK5Besq/ZbQzG6f3FrQUNl4uRRIX0M3nWq1MEwE4uH6OY6QhRPPm/XpEqx7itLxauTFkaFAR06KEqZHKPe72w+19CLKXFm65b7BpUov89XP+LeiFeEhOACo8lkDt2W5Ny/+o4PsBAeBOySSK5A45ij2tVsNe81GE2wvhxchR7dylUtgT9k5KGxUaDtOG9tyOdGir2uQYF/PfBiLVEOB9x1y5MpfFlqWmf0BSbvSTzWgXWkAa0efLKKUacHofDWt02t6Od/d7wWTqT2nQuWGET/cO92yLLlSjnA5CJ9x9ZjYjz5kpan5AFGQVute26kBKHN/bQAF+3Px0oHGRtk9G5FlzMFR5wZUoQLmAhs2M6wnQRQDZeuzcWpv4w8M2S7OnDf9rbWtFZ/Vyy8FdF7TF2OZTuURBotm8PjnfkO4foyxBw4RxDK/J4Wmjt0p8slOwy/VpSo7ABVt00K+zx/RgXW8LlduVImKy8Y2cPqSpF06TKx9qTDjFGUPzGXjwHNDEb55LZtwcrJgxFcPVYgcK1y8KY+TZ/JVecvk/EnQhhjPdGnBCZv2iiFZFUiadxXCL6Eo6yy7rYANETyYdaGb2bVpw0xWg8V7UsRhuT5hXx0pH1iwqI2rSizhv/6OS1fMg1idE6axavZOyxevRYkuooBtKDlqCGGKRxdmeiylLWQTr79n6iKp+fchGn8hTVpeVhZrN3nLz4wk80akRmj/d4fa+m9CxbLnH4syW5IJ220HWpxSeXAhl/Xu/ZKQMg==|920
+}//1BP3dtoehwJY+tPAndP4R2DLykVYkYfvUMMK8PzO5OpeszlbLTrz0ugXQq7qfqkFaFjVfr2W/Nt9pBxaa+DTgeOrBOZ7j0QViwvD3T2rJCse0lwBzZ8cRfUyZGL5VExxTHrf06qvJB+Nj10WA0hscwlynLrlcx/Cgst2UgtI3RKDwNHhNkjxjAi3IsjoUzbUUKq4ix4egEytvF4O4ExFNAiUFoo+HTAa51t3GVwb8Cffl7OvPRp//BdRUwaDRW15GfnHGOtela/osFryuI2OL3ENcWcXTv+T2rgwS+JbklzCaxOSn2NE2o/j/fe+qJpeBtyWBq5WOL3B6IHCgeP08PU1IIJbwZF0gE1mw97tcCR6z3d6ytY2jSb+ZqYgRunAihd5PH+gkY15Ax2PmP3iMDGVNn7IaP8qq+90YTaNyzVKAttmHbHkcc5QHwiZatY9m/yjM0eChNhYwOulnz/D+TullrpwVaB8yYEKrO4jMaECi/FFHG8GO8bqG3rAmJ1dGmJHFIIuaxw6/P7YhbBXiiZMV5NNXSzfR3FVJw2sMa194cscq94XD1DTZilzd6muSXjpUbJL4dqrOP9vEFw6aEdIGBzxvzVIXUtiMjctZKHvZ5gzm0eEitWnqy8Oi/2zi/v8jcLwJiM1atTKlsze/c+rgOgQK89/rCOWaNTj6pvSbsKNMRyDizTx7sm5AhqOzqkOiR5C8fGM5M56BruPg8nI0+Jz3kvIZHwHX2zRCiofCv/ORuTAtl91ZqxpnS4OOoBHLQDVry+mP5tbgOb7ebDfKycSS3d7/Lgf9gXXNcgggDCQ9qemEo9Nr5GQxUYX/9JmQkAyvelW6Wp1NPfAUFfpCEm+OWPMOP5+cbEATPz3UMUgKubszFOJuTGdN0YfGP8NO4ogz8kxhw7y1suxOA==|920
