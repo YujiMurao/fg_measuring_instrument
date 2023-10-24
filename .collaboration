@@ -164,7 +164,16 @@
   },
   {
     "ModuleName": "MasterPCPage/masterpage",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "murao.yuji@rorze.com",
+      "Email": "murao.yuji@rorze.com"
+    },
+    "LockDateTime": "2023-10-24T10:54:01.1814764+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\masterpage.json"
+    ]
   },
   {
     "ModuleName": "ApplicationSetting",
@@ -401,12 +410,12 @@
   },
   {
     "ModuleName": "PCPage/校正リスト (個人)",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "murao.yuji@rorze.com",
       "Email": "murao.yuji@rorze.com"
     },
-    "LockDateTime": "2023-10-24T10:28:26.4034829+09:00",
+    "LockDateTime": "2023-10-24T10:54:01.1804748+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\計測機器\\校正リスト (個人).json"
@@ -450,5 +459,15 @@
     "ToRemoveFiles": [
       "Pages\\計測機器\\社内校正リスト(個人).json"
     ]
+  },
+  {
+    "ModuleName": "PCPage/校正リスト(個人)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "murao.yuji@rorze.com",
+      "Email": "murao.yuji@rorze.com"
+    },
+    "LockDateTime": "2023-10-24T10:54:01.1814764+09:00",
+    "ModuleType": 1
   }
 ]
