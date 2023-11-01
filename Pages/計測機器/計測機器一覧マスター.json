@@ -351,13 +351,36 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
-            "ListViewName": "リストビュー1",
-            "NewOtherName": ""
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "NewOtherName": ""
+                  }
+                ],
+                "ID": "1a34fdb8-2d66-421f-9154-6809b02d2e72"
+              }
+            ]
           }
         ],
         "Text": "excel export",
-        "TemplateKey": "_RS_Normal_Style2"
+        "TemplateKey": "_RS_Normal_Style3",
+        "Icon": {
+          "Name": "File/349_excel_file_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
       }
     },
     "0,25": {
@@ -408,7 +431,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "b37bb81c-8502-4795-a2b8-8d336910b425"
+                    "ID": "52065879-7674-4c1e-8a68-468520e3291c"
                   },
                   {
                     "Condition": {
@@ -444,7 +467,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "6a9476cc-d88b-4545-a694-b0f7f5121968"
+                    "ID": "7bbd9cf2-ffa2-4691-bf7a-847ad423e4e3"
                   }
                 ]
               },
@@ -833,4 +856,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//j/vlbr3ZKwRkSZ8SUY9AovIQCIanxVpWoR3JDFcMDwIxzJYtz+m5S2cZuuFvkA/3rmpxGYpubMXlMwsKKTUWfbssWSwN/xY7cvXCoVILDfM/Wl1FGtOsJyxYQz8Z4+8OJF03egCAVhirqzi9appRajk4gXCHRuIlLMzC8scjxVJdW5nogtMuByfmMGB5lUpUEDpKVHI1QRE3Q2Tynl7fVlm10SjC9zX/WsckOoqWmvWO5LJ4qiQ5fCRSdPajt60l7mCWMkcVJFhJbjByj5Mjk4Ouj2bgAOMDQGjl/RXkFjHpMTpc28we1ryEWkVa3Gd5m/Z/GlcH3/yd1LUQoDTzhnCcz9Kifb0iOH5Utsbt9ZhjMgVCNsph4bmT08tjaGdM2PkQCXVKcIwbl3WbNRcJo9AJmSzw2VuyFzEOONcAunpVTsO0ft9VNx0J2g1rU4Ap0TF6658UzGh43XvdUCpHlqBQ2oBamaijz9PhgjA58ynUeurrk0lNX5DoezBNhf/T1PsmW8SPFB2LOoVOeMm+9LhRRXo5IN0ul6mkQkFsDpeGHycbyxhZxfdwlD0gEA1zJYtdIDXDEz1SGjKhA+i5UAWyGkWt+7EhY3BRUilbxpxB4T9sdBHD043Uja6o0d2WU3BFxO/A1+wW8pufRQ3nqYTtVEY9ZoQObl/tUEZE2f9OFk5AUGM6ioK8KXwHE3FMfkxHkjtATRkOFPdkppjWdbx9O8OuqD0+bpxJOQFiWzp0zSauVPpt+3jXkF3UDPt9ZnPJXzNoNyfmfy4zOOdzVElFIZod3/78jmk04EHP9SSnkUVXbQwBvYrIN9+2nWR1pN445nDimB5awUumhMPersn4bgjqu6PCfhRTIIrVkyg7zjOA2FhslNAnaMACFv+7OCsyiDBi0yWWEFlyqb/fnw==|920
+}//r4dtlRgpS1TOtfEmxwX4vFaOKEi32/VWEeTWKGXKCAqSfumgoTJs1qGsT0IDyBl1y/c94nSs4Jup4esFbxyu4GjGpqzHBAhV5gK5Yd6ORjuEIGqs71q2GeSenk0guvQFxPctqtfmA9efIESAIhjWKEaEk6wpFKtRQS0i/lfisWSJvdQY3GH0KPA/jR3taGMFH7iRnBF23+I/yurzgAE6dcxQ+1R4wFazUitZezqlyVZyXW+okZckA6abdKT4GQZkEAn0wLAue8MsGLnYGBtw4UUMTZBe3nmOEKCZLuMjJY3A2tC58cEnYHllIFTtLoYiLhG2Vwmm41OrX5s1WyT7h0gEesdCPCIZk73XuEtiJbKC1Diuc9tSHkRrogyVChNW+YTUos9Ac7MSdt79Gl6n1pkch7yLBNqSk0iys0h+S9o22NriB/10Z14JVajZsRwdXYW/FUq1KKUU1tZYbmZ1eCXDWOV2xLQ/kBtw1rL96+R0ptD6vUFY7ViC5jXwJHEYOgWWhS4vQWn23zUWEsg13qwgvFQ2NbnG4WXIvGw5FPyJ+/h+e5Ps/8zcYC17KG8sSTq9oxSR8gvMFRChrts+bUFBoWXOoQ9JSc8qG2gfW0sz9G9W44XjPL0PtfDTowOzNwJVjzycovzPuWFkuUsAnFTVTvZowt1ORHEUgcYTQtE+CD0SsP1M08MsrpVVNB0786b/8ml4kN4CoWoxGVMpI+6eR3eS88pPTvIfVU/1MRyC06iO99LbKY/MUsLJSM8g0tebsGdMGK14khWch4FPBfdCkrw99qniLWQ4QEGnJwjifqiNDtipC+E+PS24VlcPXdqSavO1X52G/vEL8BOvkjUl7pA2HFcdnWVKuGTGhwLNlQp/cDXM8sLt7Xh/Jpghk3XGxTN+4nhd7yrYrne4Og==|920

@@ -176,6 +176,11 @@
   },
   "Cols": {
     "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
       "1": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
@@ -287,11 +292,6 @@
           "DesignLengthInPixel": 20.0,
           "IsHidden": true
         }
-      },
-      "0": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
       }
     },
     "InLogicalVisibleIndexes": [
@@ -343,14 +343,31 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
-            "ListViewName": "リストビュー1",
-            "ExportExcelListviewNameMode": 1,
-            "IsOnlyExportValue": false,
-            "NewOtherName": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "='社内校正リスト(個人)'!BP2"
-            }
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "ExportExcelListviewNameMode": 1,
+                    "IsOnlyExportValue": false,
+                    "NewOtherName": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "='社内校正リスト(個人)'!BP2"
+                    }
+                  }
+                ],
+                "ID": "284227ff-2f9a-479d-bdf7-4d0b20a1dd63"
+              }
+            ]
           }
         ],
         "Text": "Excelエクスポート",
@@ -382,7 +399,7 @@
             "Params": [
               "=BO7"
             ],
-            "ID": "51d3560ad7a144e1aadbd25db2d5937c"
+            "ID": "4e5d5a1914f64ce3963acc70f85b75e9"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -2241,4 +2258,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}///0GJwOKcPcTMhh3+QnG6TzuMBbDtfoLOda2MAm8+c4BUmy9nEPrs/IdrtW/Mq+5DNC+4FfxENHeXtx5K7JtCdwCEpzBsyUrogO8hkoE6ixXwQJ6G1cuNmeG9/iGwAbiyVy2t1o8EaTbS031UDcxbzEsCGvbWsTx8oFOwGBw2fMyghHWt+qBwHD7h5F+7OPUamfQHrJq6roouQTulFLLngmk8gE1hLaipa5OxAPs+ekDFyMWKbBn0lSiZeYdOo+YZqxvX87PLgfmev7kLuUSBYsxPdX0H3QtvZO8iELvlGBS0DcMW1k7XDz884PJDX7So/nKVD+cXlqCe9QhJPovjqwJZvpk9HMexHD4J9xDR7Hi3MI6BgaJrARs8zFuPOVKyV9XwFs3bfR6D4lzWxiqBdFzR+VlTTA3EQdsZQyb6Il2kmXXA3XPVnd2/RgjRjRIcmkKyfe3EUMQcs0sgU/LMR8jzLZfs10/AucC2MF3muWI/CK6k4OVa+LhNj07q+lxrx70i8cnLNNXup+Mx2TL5m4NuvpMbK4OQnbo/TdyBlWFhxLuTDDh7jEbgtshwO6ng1Ik8ynHEXkH1VPkQmdrprsjR0Sg6TuyfB/Ajl5b1axBBkTM1Y6RHgrZlJmqeqoGBZyYE0rpHHtlHhBFBB+zMoramBztyH1LdW1k0y7972ZuY4PNQ0Og6Z+2gP0VYIR6BNj348PCdjwt8M34uBEhN4LEHf3buLJYGA+L+rtUMzYce5x6fUhgRBmk1mqe09C3Ns931tgf645DryOeHB3WgSK7hEAZX+VJkI9oQPh1yUfFctfuvVBFf2IuBWuNO/ZhhNEbZnOyBtACgEDJ1x7UUWPlR02e5VAgww2xSek5OmAYhByK4CaV79PBTU/CDE8BO5L3aS3W2UlgtvSaxKmi7+w==|920
+}//qwCG8ly4CDifgMAYoGjjy6Wiw3rxdk2Oe+irWzeC6gShZjEUXZB5njsE/wutZAEYOMkqk6J2ar3w7NL4TgTqSYyl+TpuAWG+luLuogBWDGP2m8a0ogrtgVwYVXtzS3bNbqAsqOvQI8XhG7sqaKZdE43gJy2pSeBvgflNZoFlV27WCrJtXF0JF/jomSh+v0FXy8FIpN/9pnST9xKyHjsNmttG/+QasTHHQ28L+YcuYT5nqmpWQnv7ZdpA50oXpXXrZy6ZmDj+uHYVBCsPEyWvk/B1eEaP2h2sRSkzoYbToXrsKM1TK3s7y6+u1DBB1huDJnljBaq4Qhtf1z5Pl0J2lAYMWgvZMggCgwAHcxIFyaXRiB13tR+WVjz87hAgZyT42ya6Ye/wSeqfdIy54SRbk/XdSiFHEFjz4gpszrJp4fA1bXz/UuiaJSvUsqMoGsdhLEUOyDknhjJrceZtYSOFKJmHM5MakS7Qk4cXRVAFjCkmebvrXxBW4+n1SFwrj/ePE2wXWo/uSh0GcnHA5Kff2dpFLRaE6jeF/hdC54NVfh8jSQ2OTHUu3pNcgyC5DYWErqcBXk2CA/uYWLFrcgJ0cf+8+t5Rgt1Fi+CyuQsm2dXkWqBCZSgRZou1Rj4/u0DCDaC6FbbW8TG/jeBZC2XPngHQx8fF4yJ+/6jNlvM06NpynU9JUGPYft7060gqi2U0P5Dgm6dsfgGAA0K8U9o3xX+3gu/3Pnttfgx5gaHqWUJWPc4DsG8mIeQmsNpb48T/dYpIvZsiJn3BpRmjRsBINOPS+GNXGsz6W3x16E4pOaKykkib/b5NHO5dJHF0CTCAbvdumF2Vd8z1seHlOwAv0JdDyjnvqa8Jh9SmoXcnGH8gSHIvJLpAMVW1RgDClrOdVdqQbd5uXbm5z2M8+y/4vA==|920

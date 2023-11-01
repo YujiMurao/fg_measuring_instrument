@@ -418,7 +418,7 @@
                   }
                 },
                 "Params": [],
-                "ID": "38c5ef2b0efa4bba81d536919ff7c63e"
+                "ID": "44bce4d23292418c8224595cf486ca4e"
               }
             ],
             "CanVisitRoleList": [
@@ -490,7 +490,7 @@
               "Value": "使用可"
             },
             "Params": [],
-            "ID": "9d6a54fa4f014f1fb420f10e52408463"
+            "ID": "402e9f4e2d9a44079c877a876c6eb9b9"
           }
         ],
         "Text": "すべての計測機器",
@@ -550,7 +550,7 @@
               }
             },
             "Params": [],
-            "ID": "37439a5088804699a7e2e721b0460ff5"
+            "ID": "647b2952f1c74611bda7ac8415ae85af"
           }
         ],
         "Text": "すべての記録文書",
@@ -581,12 +581,30 @@
               "Value": "社外"
             },
             "Params": [],
-            "ID": "02896175d1ea46cc8c8842ba22c77a87"
+            "ID": "777b04e8c8584c0ca061b25e00aa13fa"
           }
         ],
         "Text": "定期校正対象計測機器",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
+        "TemplateKey": "_RS_Normal2",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "品質保証課（編集者）",
+              "品質保証課",
+              "IT戦略室"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "43,2": {
@@ -603,7 +621,25 @@
         ],
         "Text": "承認依頼リスト",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
+        "TemplateKey": "_RS_Normal2",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "品質保証課",
+              "品質保証課（編集者）",
+              "IT戦略室"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "45,2": {
@@ -617,7 +653,25 @@
           }
         ],
         "Text": "管理番号マスター",
-        "ClickMode": 1
+        "ClickMode": 1,
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "品質保証課",
+              "品質保証課（編集者）",
+              "IT戦略室"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "47,2": {
@@ -634,7 +688,25 @@
         ],
         "Text": "測定機器一覧マスター",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
+        "TemplateKey": "_RS_Normal2",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "品質保証課",
+              "品質保証課（編集者）",
+              "IT戦略室"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "49,2": {
@@ -658,12 +730,30 @@
               }
             },
             "Params": [],
-            "ID": "212db52e8c3846aaa9e57a7483e7ad33"
+            "ID": "933a3093b5254473b21d92a71f49fe33"
           }
         ],
         "Text": "校正・修理・廃棄履歴マスター",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
+        "TemplateKey": "_RS_Normal2",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "品質保証課",
+              "品質保証課（編集者）",
+              "IT戦略室"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "51,2": {
@@ -686,11 +776,29 @@
               }
             },
             "Params": [],
-            "ID": "00a36f5e9d164b7d8afb4eb8ad53d583"
+            "ID": "388d9ecbb8884aeea844ef8edbbfdc61"
           }
         ],
         "Text": "記録文書マスター",
-        "ClickMode": 1
+        "ClickMode": 1,
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "品質保証課（編集者）",
+              "品質保証課",
+              "IT戦略室"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "55,2": {
@@ -751,7 +859,7 @@
               }
             },
             "Params": [],
-            "ID": "2f61c2b30a81443e81ce02f1ff9dd12d"
+            "ID": "32a5962ef59544a8aed555b33ed42a20"
           }
         ],
         "Text": "校正対象機器",
@@ -763,13 +871,15 @@
             "Enabled": true,
             "AllowRoles": [
               "Administrator",
-              "FGC_Anonymous"
+              "IT戦略室"
             ]
           },
           {
             "Scope": 1,
+            "Enabled": true,
             "AllowRoles": [
-              "FGC_Anonymous"
+              "Administrator",
+              "IT戦略室"
             ]
           }
         ]
@@ -787,7 +897,23 @@
           }
         ],
         "Text": "1",
-        "ClickMode": 1
+        "ClickMode": 1,
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator",
+              "IT戦略室"
+            ]
+          }
+        ]
       }
     }
   },
@@ -1755,4 +1881,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//ABwawqi8oqxmquiz8onKnDe8RBpTqNLoX7VU3KDOvLJmWdkoPaXnaRt3+1JpSsMM1vLIBzHtquJTalJD1Q2NlWLVGzWwTuUx+LzPy4iYOwlhV8P1WzV5/VElrgJtYl2DUYTeUjJjClEZXoVKv23N8IBe5yDnI6X8mFYG398kz3w+K/Atuqf2p+qpICK/lxPLLpkIt8re+kPkkwOweIVjhPd0eK2wYVZoEc/Xuoh8DxsVfSaIfhPNmcmSZWcqGy3lwfSuKzcYKYc4L1V7WlJpIExxNmDXXmfcypRzrcB1BEk2Is2CM49UFKPXnbBsbfL8RbQxqTDUi4/W2E6BgdTR0R3t9yqtGEjp0+XDTqKNQWqRLtltVYWy5Bm7tP4oeT9P/kMYtW83A3B0IV6x67XBuLr7hb65iWt70WyBr+ILqkVAFFktd57MyAuHH3+plo7fttDxFMlGf/RdILlbenOcrgzX0fgqwpLMae+jDxDfJ1YT+dbQKTvvejnVc9drhQZywmxO7c3KtG7j7R0uYNtdbeN4IFIwLKX27JEJN6YjjXRjHKSsJKUHDmY5mySpUBv/Qg6Pi5MkwVa5KTHSIE16k4LqXWYwYo4aD3quYctAGwYHc9FqifZC5x7zyGngDu8wB/WNg0n3mPe3iXOt31nppP6coc6myUMEWO/HroqcEOfOUzAXPYjREf7efBL8SGoPHmFrsvRrNdbFdwbb/b79ltMgbpUHWROqW1iVXdTfk1dN469/anFGvTsEclmD8MihbIDRvInV1RSBBLHwKdxRHk1hm28o2R8YQ9W3AYtRuQif/HjLVJqwpbcsyl3tgQr4IWQTVCmF+hWyAe8iZEob7d23bb9rx6kV8T7Dhx0nES6SwmZcysp7ivtHsLkfF7w1J7UwZG/vHqz1Ft2M7hsvQg==|920
+}//cL9PY4CqaS9v20pP2WnHNpNgIddxajz2SdDUus7uNpJkGX8BTdpnfIhhmdfMMBkIHj9SDjKHqPpFSA8fRF73RdHkQHU72YX8k7qsR+Fg40enr0gj6MYwNBcIdKFuPqYdX8qtkNYQa8q9s/+CC68bjU5zj1VsYaS7munhgXgFMKwK9gObfz+JmQnRfDWQgu1rI4HLNMsOueNtCMatuVMJ/zbkLawuExifDi9nrEKrR0AO+1IYfWFhC2wnwy3AmrJzAJbaDAgciIxyVLSTdlzuAirDdHIB3PGec4r0q/zgOG4PhH9wAURrb5GJSU+KfKwMNCCEA5UGCFT6pUq9jrCbRp3xGYASZAcA2qdGofTCQfJMpdBZXdZZK8ltOONsPlePqC0WLUK9A21qI1Op+9lUgF+1y5ksV5vwyWv4f/CofCIHhoTfzNRUXuQGdxAOvnCh1G14wF5uy5sBeRtGzl24trk4IkcvKAGBjb3RJrEQBqrxtvTlwN7j95fdcz+phl4+fkUnmbjz3l7MLMxqsWDO5Py4ADoy0oKnCbXM8Mot15Tw2isGaOIjOL0HTDOecJWNIeQoW5hBWXr975+o+IfIWTie0SukFEs4Xgm9Rpg4XhfbJb9RnpXUEiQtvV+YMkHJxPE7BPgWnU9rMoGyz2QeodVVIFEOgonmwWGPgsptGj7jz8GPhZolrVbBXtCSRjywCfXJql91E43/Pjt3Xmklril3ZKYLw4h9FoOsBcygZuN5ynETT7TVNs2qK6X7WzM5lRheniUgXYkN45fSDRWfKLBkiO94mAZIKoWEncjpid+g1rNKU0v2z6KjScQmfKang8CD0VSh7cKX1EHnyGcWWguQEAbrBqb7FGqzqzSjh8/WTLR8OB1xOgmaCrSPb5MdWOMd1mQHAZ0RiAn8IXuQwA==|920

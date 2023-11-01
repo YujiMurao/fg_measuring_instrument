@@ -349,14 +349,31 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
-            "ListViewName": "リストビュー1",
-            "ExportExcelListviewNameMode": 1,
-            "IsOnlyExportValue": false,
-            "NewOtherName": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "='校正切れリスト(個人)'!BQ2"
-            }
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "ExportExcelListviewNameMode": 1,
+                    "IsOnlyExportValue": false,
+                    "NewOtherName": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "='校正切れリスト(個人)'!BQ2"
+                    }
+                  }
+                ],
+                "ID": "5cbae467-0eb1-4dcf-8ef3-5078ce09160c"
+              }
+            ]
           }
         ],
         "Text": "Excelエクスポート",
@@ -388,7 +405,7 @@
             "Params": [
               "=BO7"
             ],
-            "ID": "eec42b3d513843c28daabbb046a3e733"
+            "ID": "fa1694740f57432bbc7e25c9e3d5db3f"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -2281,6 +2298,7 @@
     "6,50,1,4",
     "6,54,1,5",
     "6,59,1,4",
+    "3,51,2,14",
     "5,1,1,2",
     "5,3,1,4",
     "5,7,1,3",
@@ -2294,8 +2312,7 @@
     "5,50,1,4",
     "5,54,1,5",
     "5,59,1,4",
-    "5,63,1,3",
-    "3,51,2,14"
+    "5,63,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2312,4 +2329,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//2hW3IP/DU5NJC7FkKbp+TTnPqMtGl2EZGNEPKNDYoh+CbjaBlupmsPR8+jMwmPaplFxKqR7ScVXzQRAt2oERIaWMPQqfdvSvOE8L+x1AqiGp+VbigXZNNb3fHBYs0LV1+HnjalG4oWDTGAtmSM/0TgIzg+98S2pA/UXCg+0QSSqA0DGiXdwskpLp0h/ifuwqZ8WRZxgGJntug0d1YaJkqxvxRAphopwI4dPxeCzzJNLWbZo7Ett3OSh84+iowc0q+W8W9UVD4ay1xlhnXbAalm2N9MVS46g3xmJjy5qscp+vS+owwMNnLcq2KbJtVrIMS393oqxsXhSJ1812Z5KlYkKBjk33uvh0U09Ng0Ngr+Q9EIBXt9N73nAYpoOjs81SY+qap6290wEQ9gpnFYfWWXjRAsYeljd3wBBsnnYFCJtDVAXjXe2NEZa3MUiQdtqqw0FM+XEeAywXYIA2tKhcXxfYAeHN2APRm3Am8jMlCdzJGvs9CuMrzckGtTFx3YyEbWjypAM4jAM0OiLJ5nay3qTCEjqCk9moa8SU0QwEh8+7sl493qziGGqwjQMnx9MKOIfJZN736SemqMunpnxeigjtwUXZLY8fyfv+TM8QPjHeXffcnOV/fcP5/u8A7jsTqTVe0/RE5j0n2a3LUW7MYff14Oj3TtMJcQmQzUWTUaFM/2/0lkgcnCOv0tnN78wKdW+qM2080cAi5ZiSDqcWN9dXkMERggcY6qtzf1eN06aUz8peNTcyKdj/Y4CNwYUtDjOYFf/V62G9cyC2LC7wW4dR51DKaSkR89IlJBB1x1qSFhy5u6jYv3IlXAsoJSVFbR1MUkMp9NqVxTsM5dsoqflgoqDQXLBQgjuR/6uwliV4R1v8ZQGM8Fe1JRrEGjg+VW/+syokFg6KoCU9rOyuvw==|920
+}//rImvpP8fK5tAisLJWuluEMet5Lu3UpJaGz7xQfaOyWSK/F8lRwWtuqpWYO9oLNNz7bYnRABi4SxKN8GEQtKi0mBi0q+Ecz/Y8gBc2ekMRBEN/wRkMr1P19wpROXFrUlzf/eB5ddsSZTa7TpfLNYlhBwcwVNrmxKj3YYtTFOXSGaCPgtPJYp/haPObtpgl7oIcjVOTSb5lG28PTWQHBftaTwE258t2g7Y+o3XYuPnZqLDUeRf90rXRlVlM4sqNOaV/3Tthp51CJ8XSHae4MPHkc5qzbNHW6sTw+HIxuXI0xJ/jVPmRNeJLULzoQJI4zXeWmvVGjK8zcrKwWZqvd22M5drOJQmtc0MP1gJa9mR6T3moOr5G7L3zyx89vjEGG7ad3cBWvo0A4+wfkMAQGfm+8l+5+u6E8+RYLv2B0y5UemStxCo2dIkU/16BlNXCaLR8j4wtIYWZNo8RskIosXVwtab3J/jb/95MSeQTTOfKLVRwOP45MHkDNrLgBosVj126A6/c4HEoZLiT0qk6HcbOUC72sGT4QA/4xRVg8WgWLVIQeXVtyWLJUfZb3KRPs6lWyXZdSwbdhu71aRSrBnf3ZickSP6IXZTosC9cEfw9OAAd68ogR4QdimYg68D138Jg/6tTGCOUmTnRtTOaycxISEuSlXu0qxNycHz+x3BIH0nDFhwmYMfzfUb89Lpr5FZZ96ULJfzgr5afRx0XRwEJidf/h/F+hWlwV+1+vTCnO8jMTQhsfRBVzXTS545daO+1DAzRwsb8uSxs16+juIR4f4QPrPaIY7u4+gtovyg3/hl6L7LbN3LaAC6zH5bXxPNUWo5eNWng3A3UYlFTefcy33l9w5h7Pgwh9+K8269zyVpjOiNuOa0MB0d1lj5KVyWgRWQaJbxZKmOyRhBt8v/dw==|920

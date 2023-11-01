@@ -362,61 +362,78 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
-            "ListViewName": "リストビュー1",
-            "ImportExcelToListViewColumnInfos": [
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
               {
-                "Column": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正修理廃棄履歴一覧マスター!D3"
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
                 },
-                "ColumnName": "id_tool"
-              },
-              {
-                "Column": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正修理廃棄履歴一覧マスター!N3"
-                },
-                "ColumnName": "処理年月日"
-              },
-              {
-                "Column": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正修理廃棄履歴一覧マスター!S3"
-                },
-                "ColumnName": "項目"
-              },
-              {
-                "Column": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正修理廃棄履歴一覧マスター!W3"
-                },
-                "ColumnName": "内容"
-              },
-              {
-                "Column": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AG3"
-                },
-                "ColumnName": "業者名"
-              },
-              {
-                "Column": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AP3"
-                },
-                "ColumnName": "承認者"
-              },
-              {
-                "Column": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AT3"
-                },
-                "ColumnName": "判定"
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "ImportExcelToListViewColumnInfos": [
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!D3"
+                        },
+                        "ColumnName": "id_tool"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!N3"
+                        },
+                        "ColumnName": "処理年月日"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!S3"
+                        },
+                        "ColumnName": "項目"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!W3"
+                        },
+                        "ColumnName": "内容"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AG3"
+                        },
+                        "ColumnName": "業者名"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AP3"
+                        },
+                        "ColumnName": "承認者"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AT3"
+                        },
+                        "ColumnName": "判定"
+                      }
+                    ],
+                    "IsShowSuccessAlert": true,
+                    "SuccessMessage": "Excelファイルのインポートが正常に完了しました。"
+                  }
+                ],
+                "ID": "f24f2d64-33b8-40fd-b3a5-1bbf4e3766db"
               }
-            ],
-            "IsShowSuccessAlert": true,
-            "SuccessMessage": "Excelファイルのインポートが正常に完了しました。"
+            ]
           }
         ],
         "Text": "import",
@@ -2261,4 +2278,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//qPfnIpk5i3f5o3org7+G9m2Wg76rMK9EEoDUzjAgN+lpF3l0d6O6P7iW+O7VlNDYMci2IK5QQTo6JD33aUSPXcYlHYvFXoDgrvzjdfalUqtbnhsPw4+rlfDYkIwP5P5dXsROB7cTUClcO0sCPVJT0DHjcStDiN42lpPL+xFlnUcCilEBjI3ERx29Ofq/9IBNqGIhP4xZjSzwmeic+qEIXHBO3BZB38ZyfDzyGzwy0biJWj3xCXKQugmYpDltuZgQjGak3p0u9fM5JHMPS43dOjfao/dW32u5B8/f9ynOfhD8VEIWmSzbpACoPndGZSOzlCg3tyo9jAM7e27pkvs2z/SnkSzr1MktK265zqMGpD8FcsiS1CJP6z2M1vazgcDXMlZCFCXYk97n91jqpNqRzo6RV2N3W9pKdyp+FrKHUdhlgNWGMDpachrqa9wnbV+O1Q+srVEYEaj8Kdw8HqRYvA/x2K+JDBVjElBVnG4v1QUsOrztgboY8hWdIAMnjq2BQEGkM8W4Jfq4YpUNEKlhf477oSWfndKTnh20B7DOtHO4rU9kNvFU8TR8QOs8f/US7Vflz245SVEMNU525rDmLwhaCzBDB6+Wbtv9Dm113ox0vevcBeDrh+3rGODToo2wm3Man/HJs3TNhHf2KI5eKpYVI6MR2tfsmiaQW3HuCQJfoBYLFyxkd9d00+yb1MiAPmqA3VtAxOg1vV00xyZv76cDGv5O7d9NFKmDJk+HYTZ9AIf6udv7qgZL8rTVQqOpuira9D0fqQGK8RV37snD1IAqGO4o+5nF2tq5uXnVgmB9k2cVOEdHL+TaQn6cwiOIShvv/SzSCpDZrzcmfCioGeHtNnusDOTrI2yABrMjIlwjBpDhr8vxvIpeFdDq++BKhVlxKq8xBO/LFGBlFHPTjA==|920
+}//MtKDqokOVMOZuA7ocMMZH0eqQ2T6gF9vN/jjj3QBlPUXEeIoTBwyMh75wJl0T9xWBYyOwYXBwGrLSVkSucdC74LNyrWBPrgZjDuTYSB0HZ1SjB3vIuhrtSTxe5cn01hIkZ6dI5RSwal3f+3dXvirc/ZEVtuXxF+dhcNM3xZ6G9ruGLHQ7L9BNFq0o61nRZzqSxWCB4AwTu+IcGb6w7xjsnzNJ3yulaCWinuobVzg68XBSbzxt7Rj/stPGNGLAciUm5c4zBdngkQp+1RRfwdkypG6f4MzTCIRu5fKH3Jdk351/LAxeZ7X5gKXi1MQXorRUQ5YGTjlqEu6tQeNws7XiJ2ZmGv/SUVPT0gTr6q9bfXeySgjPfZYK/xHdCt/lHcrp2S4hnwwzWFub2EexVtDeXrpWPMlwKOzMli/BEfVKWZZMLMgePqvgqKDk6cGWFnGD+u/mcy5llJ17lYwhb3rHqa/FQpK+jaXRGfO7DCJAAIQetOpGIGcU0MMIAx0EkrTasQL3lialSGlbpBnjSmeAqmJDN5MEgIub/x9dg6f/1X82+gE75vJgTqv9bCzaaH3eWfiZeEUk38qUmilC1XLxBa6xgIyKjzz3yWByoLuhX9dSUlMkbuOU1V26A7uopWmeXM2QKszw9isS42VaCYAmFUSh0bn4bLuTxE5KYBeMWlEaT5OghaaPATuJdvjC1HLlZ3kgdHyHNsVwA6qdHCMB5D+btlvlSsM+qZk7RT8gdJRn5V3Pbmk02r8tFpZSOJvDuE/e7Rej3w8JI3vhL/rpJAeUEOcbQxZdDCZcVainPbnfq7xopIERmZvcJ/xfIAdwoj43z4U9hfaEt3AK3hWiQkGulp1KCFrJzkmkfP0uiYAbDgmowKCfKQLRda2NfluAFquQexWVr1gIAL+6s0byw==|920
