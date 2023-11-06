@@ -31,23 +31,28 @@
           "DesignLengthInPixel": 143.0
         }
       },
-      "4": {
+      "5": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 104.0
         }
       },
-      "5": {
+      "6": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 80.0
         }
       },
-      "7": {
+      "8": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 80.0
         }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 143.0
+        }
       }
     },
-    "Count": 9,
+    "Count": 10,
     "DefaultSize": 90.0
   },
   "Values": {
@@ -55,7 +60,8 @@
     "0,1": "登録日",
     "0,2": "件名",
     "0,3": "メモ",
-    "0,4": "添付ファイル"
+    "0,4": "添付ファイルリスト",
+    "0,5": "添付ファイル"
   },
   "AttachInfos": {
     "1,0": {
@@ -63,7 +69,7 @@
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_certifications",
         "RowIndex": 1,
-        "ColumnCount": 9,
+        "ColumnCount": 10,
         "RowCount": 39,
         "AllowEditInListview": true,
         "AllowAddNewRow": true,
@@ -104,6 +110,12 @@
       }
     },
     "2,4": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "attachment_list"
+      }
+    },
+    "2,5": {
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "UploadLimit": {
@@ -116,7 +128,7 @@
         "ColumnName": "attachment"
       }
     },
-    "2,5": {
+    "2,6": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_Creator",
@@ -126,13 +138,13 @@
         }
       }
     },
-    "2,6": {
+    "2,7": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_CreateDate"
       }
     },
-    "2,7": {
+    "2,8": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_LastModifier",
@@ -142,7 +154,7 @@
         }
       }
     },
-    "2,8": {
+    "2,9": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_LastModifyDate"
@@ -194,9 +206,10 @@
       "2,1": 3,
       "2,2": 4,
       "2,3": 4,
-      "2,4": 5,
-      "2,6": 3,
-      "2,8": 3
+      "2,4": 4,
+      "2,5": 5,
+      "2,7": 3,
+      "2,9": 3
     },
     "RowStyles": {
       "3": 6,
@@ -241,7 +254,8 @@
       "1": 1,
       "2": 1,
       "3": 1,
-      "4": 1
+      "4": 1,
+      "5": 1
     },
     "SheetStyle": {
       "FontFamily": 6,
@@ -249,7 +263,7 @@
     }
   },
   "Spans": [
-    "3,0,37,9"
+    "3,0,37,10"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -267,7 +281,7 @@
           }
         },
         "Params": [],
-        "ID": "d875daf9870a49f0bbbf15544ff27e3d"
+        "ID": "7c095739149244819b18c0aac30ffc19"
       }
     ],
     "AuthorizeInfo": {
@@ -282,4 +296,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//MAcgNNkgvgPQmYuYx+mEBjv63D4NWqYjzt/orjZFaf13jSOy68QBIqoUKdq6dq42XM32Kpmk8ydqmzXXkqCcMh4ZvXFRwh5SNenfP3kzRYSBUuH4Ap5Bucl8a4hrW8GvZQQ4zwKs4+LuGoHTYN4jwmUQcMp1k2qq4VxInUAv9/V6hheKUwkQbHptLX8WuMdm+oHCoSoKv7qFuUIo3/p/cWrQLwZsg2NZB+1AO/nV61bIDVmhXpsiyzH3FHGbgReLcLa4AX5Xf5rispPWHNwyCYtqw3juCAlCenlnL6K/RISLPD/aub8ftiUhvlN57RgmbXIeUs5KszRg2VE9Ouk3obnKimYXjcNTJfrlC12S6sE1+Ym51P6Zec+r5/1iOV24VZDv/9Lj5GFLCHqR3VjRM+FQkdZ8bNUQeyhW/8MoRnpiampYAlGvwb0ttualBN5cB7lUEI50JS5tnS82JKXhzpIwpq049x1hLD/X/ozmg9ZKnji4dhPfIosRZQHww3du8a5IBybBPv+bePEcEYvRgXvhjdMBjyRJ/QvyoDfUs7N4Blf2ZAHadPqWR6ICvBBrd/BZUeckw2bXGIuDOSTHZvTdXipaPWgux+u+gIspbVbSl9jwqIBxXOM5cucRg691PFHEzvkO0flN2IrvG3hlzQXp891q8zRPgMa+0yJrJ6MebPZWQFwiDJfHqzjA2VXtuO8hlvXG5yoae1N5iNVCjrcJ7sTjNwZfTibCVkxh1IMVB0K6kY0sED0ho+lKWniQ800QIIGrJbBFJ4ZL/C+7zy+N39upNYKd3vIuPHyTV+wM3DwXYesG+80CJrCUuf7RCbAV727qf43GGEwu/0bFxqDbUZO+xPVGFA0aZuGwm9xJD+jcvY7gAYwK0dxR8QKgPasc84+EK8bJGO6IyGfNyQ==|920
+}//eP/DAun7Nzvd0ODTUiwfFsHMIYnzITIWK9F/U7K+++5YSiYQ/zl33a42yE7TNnDgihrMJnzrtz5Q5NdQwMMgrPJ+teZBPzzMgKAwnB50oDcWPZfCjIhHHS7L7FR415uo5ToX1tjiDI3h6a2NDb9UHsQn/qbI7+PcwiuaeqjqBhlSrjxKCOri3H9EaKJGylHGYdW0KlcIlS2yNheiHaOx8IAWIgJKqKdKbeq42ts8v82D6wZWJrnIKLP69zHMrRpwsIH195ZD4A+w1wQfUcg4jlDWl06u9+vzwMaz+2xwcdVGFT8dG5/607YemXd/Mcuw8svNqEhOcJ1+Q1uhEb/ubYWTFwXw/7Yq+Iqd5JsHi7DmWELjq0GLEY3sGl2qcqzZLQzl9dg+0P/JAFoy5VF8wSCdtIXlZx5CnbaD6abQ7Kqjj3U9bXWnj6zDRmragYBSg2NOuUYVnZ2TrlVnrLqal5qva4EMnha4AIdrKoRD7eSIWGt4TdiGE0NeXhqjO3rDy33Bw3TtUfyNRPDnEEuD4/hDaHt+m3+7YOHgZQeRSGiwyKXNcsEq5kaViwWB5bK3h6yXHqN4BFHLqfb4dEMyqIj68Q5Ebb3YBduVnimq1wvJjouxWWOXnc9BslLk99N0TLnsOuFhSfLxPzxIZu0kDXwyisXSIH67YeHFVWcD5AbDopqS1UVooj/whW//xEbdNd7PuF5gdXhnXLkeDA3CBinyeBBIprSSb7RbFK4wqKJsOMtpplj/BRdCVu6kzKBtfpIYXj5KH5PmREKnpHse3xSe0a0nyOYTwWev9fhDUwvdj6n48G75jjH9+29/HUl+10LoqjidnOv/Dckuz32hbaasvJL3ZbuIBQHqz2BEOwxYAvbuZWdsm8bTD6OAIdFhLiLIj2Oo1Ib/t9Kkl5YeKg==|920
