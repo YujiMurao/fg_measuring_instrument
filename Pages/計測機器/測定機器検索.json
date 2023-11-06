@@ -319,7 +319,6 @@
     "21,0": "Excelエクスポート",
     "21,15": "計測機器新規登録",
     "21,28": "コピーして新規登録",
-    "21,57": "登録数：",
     "23,4": "使用可否",
     "23,7": "状態",
     "23,10": "管理番号",
@@ -338,7 +337,6 @@
     "23,70": "管理者"
   },
   "Formulas": {
-    "21,58": "COUNTA(K25)",
     "0,76": "\"すべての計測機器(\"&TEXT(TODAY(),\"yyyymmdd\")&\")\""
   },
   "AttachInfos": {
@@ -388,7 +386,7 @@
                       "Value": "使用可"
                     },
                     "Params": [],
-                    "ID": "08bff0ac7c924e79984f3ee5c3b60859"
+                    "ID": "9db396986aa842b388b29492d9c71e9e"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -403,7 +401,7 @@
                     ]
                   }
                 ],
-                "ID": "f7b4fd98-b5d9-43c0-a2e3-b08355032574"
+                "ID": "77aa6f58-9581-457d-bbf2-15d14478049e"
               },
               {
                 "CommandList": [
@@ -418,7 +416,7 @@
                       }
                     },
                     "Params": [],
-                    "ID": "ca44002f9721499bbe2b343a3867fd86"
+                    "ID": "5d9c9c0142244b4b931f64e0588519a8"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -433,7 +431,7 @@
                     ]
                   }
                 ],
-                "ID": "a23553b9-035b-4239-9116-43e23a85142c"
+                "ID": "ecf956b6-fa25-46a0-835a-81d27917c352"
               }
             ]
           },
@@ -1074,10 +1072,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "604dd7093c32461ebd089b03b2780685"
+                    "ID": "ac13e83d97bc4eb3bcbd74fc27c0ae61"
                   }
                 ],
-                "ID": "e67bacfd-b4df-4492-be0f-646de208c360"
+                "ID": "7ade4953-291c-49a0-b87d-b97d25b8691f"
               },
               {
                 "CommandList": [
@@ -1266,10 +1264,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "9ae493d8b31e4d1b8c3215d3ae51daf4"
+                    "ID": "b73aa88f5c044896a8744832df5c5146"
                   }
                 ],
-                "ID": "f398df26-7748-4af7-806e-da1905c762b3"
+                "ID": "2d63ed9e-bdb2-4482-aeb3-8dbf85b8376d"
               }
             ]
           }
@@ -1395,7 +1393,7 @@
               }
             },
             "Params": [],
-            "ID": "3c6a67f69c574fe4bd38ac65d5d7dfa7",
+            "ID": "ab7ed0e829114ee0b55d7fbec1bf2e18",
             "Disabled": true
           },
           {
@@ -1437,10 +1435,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "31c6173d388f4e0d83644e8cc687d972"
+                    "ID": "1e088c3e26e14a8f81da43335cbaafdb"
                   }
                 ],
-                "ID": "3fa741a6-d432-499e-a949-0bb8a3c014db"
+                "ID": "b7def48d-1cff-4235-b8f1-f1ea21a9feba"
               },
               {
                 "CommandList": [
@@ -1465,10 +1463,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "1ce2b468798a4ef9b6cbeb0b80e61443"
+                    "ID": "c345916863d0419f995a2a16180e876b"
                   }
                 ],
-                "ID": "d2c2a663-9dfd-4a96-868d-3d779673addd"
+                "ID": "2ff89952-bd48-4476-b9f1-33c2c8ea4248"
               }
             ]
           }
@@ -1502,7 +1500,7 @@
                     "NewOtherName": "計測機器リスト"
                   }
                 ],
-                "ID": "3040ea6d-0aeb-4578-896b-d5cad8fefa2e"
+                "ID": "17360556-5e8a-494f-9394-b118db477ca0"
               }
             ]
           }
@@ -1522,22 +1520,23 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "計測機器新規登録",
+            "PageName": "計測機器詳細(新規)",
             "PassValues": [],
+            "DeleteCachedQuery": true,
             "LoadBindingDataOption": 2
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_insptool_tools",
+            "TargetTableName": "trn_insptool_calibration_history",
             "SqlCondition": {
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "ColumnBindingInfo": {
-                "TableName": "trn_insptool_tools",
+                "TableName": "trn_insptool_calibration_history",
                 "ColumnName": "ID"
               }
             },
             "Params": [],
-            "ID": "d846f12ed4c8460b9ed1fc4f80e32964"
+            "ID": "fca2d6c56b2a4f8ab048ac9b118b9d58"
           }
         ],
         "Text": "計測機器新規登録",
@@ -1679,7 +1678,7 @@
               }
             },
             "Params": [],
-            "ID": "a6b1a23ccc34445288b6da8a30b0cd43"
+            "ID": "c1c7f8511dde4c339160b831496b0534"
           }
         ],
         "Text": "コピーして新規登録",
@@ -1712,7 +1711,7 @@
             "Params": [
               "=BY25"
             ],
-            "ID": "d9616c969aaf482a83546b96f7b92ecb"
+            "ID": "67e1fbcacb234dfd82e01f8f885adc28"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -1721,6 +1720,7 @@
         "ColumnCount": 83,
         "RowCount": 22,
         "IsAutoReload": true,
+        "IsTotalRowVisible": true,
         "SelectionMode": 1,
         "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
@@ -1738,6 +1738,12 @@
         "Color": "Accent 1",
         "UseCellForeColor": true
       },
+      "TotalRowSetting": {
+        "StaticText": "[登録数]",
+        "StyleInfo": {
+          "HorizontalAlignment": 2
+        }
+      },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "外観",
@@ -1745,6 +1751,7 @@
       }
     },
     "24,4": {
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "usage"
@@ -1767,6 +1774,12 @@
           }
         ],
         "ClickMode": 1
+      },
+      "TotalRowSetting": {
+        "FormulaType": 2,
+        "StyleInfo": {
+          "Formatter": "0件"
+        }
       },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
@@ -1792,6 +1805,7 @@
       }
     },
     "24,29": {
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "serial"
@@ -1810,6 +1824,7 @@
       }
     },
     "24,42": {
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "storage_location"
@@ -2359,8 +2374,7 @@
         "VerticalAlignment": 17,
         "BorderBottom": null,
         "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "BorderLeft": null
       },
       {
         "FontFamily": 8,
@@ -2368,19 +2382,11 @@
         "Foreground": 0,
         "Formatter": 6,
         "HorizontalAlignment": 10,
-        "VerticalAlignment": 17,
-        "BorderBottom": 3,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "VerticalAlignment": 17
       },
       {
         "FontFamily": 8,
-        "FontSize": 14.666666984558105,
-        "BorderBottom": 3,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "FontSize": 14.666666984558105
       },
       {
         "Formatter": 1,
@@ -2388,14 +2394,10 @@
       },
       {
         "BorderTop": 2,
-        "BorderLeft": 4
+        "BorderLeft": 3
       },
       {
         "BorderTop": 2
-      },
-      {
-        "FontFamily": 8,
-        "FontSize": 14.666666984558105
       },
       {
         "FontFamily": 8,
@@ -2419,7 +2421,7 @@
         "Strikethrough": false,
         "BorderBottom": null,
         "BorderTop": null,
-        "BorderLeft": 4,
+        "BorderLeft": 3,
         "BorderRight": null
       },
       {
@@ -2523,9 +2525,6 @@
         },
         {
           "Color": 16
-        },
-        {
-          "Color": 0
         },
         {
           "Color": 18
@@ -3686,9 +3685,9 @@
       "20,55": 50,
       "20,56": 50,
       "20,57": 50,
-      "20,58": 50,
-      "20,59": 50,
-      "20,60": 50,
+      "20,58": 27,
+      "20,59": 27,
+      "20,60": 27,
       "20,61": 51,
       "20,62": 51,
       "20,63": 51,
@@ -3810,9 +3809,9 @@
       "22,55": 27,
       "22,56": 18,
       "22,57": 18,
-      "22,58": 18,
-      "22,59": 18,
-      "22,60": 18,
+      "22,58": 27,
+      "22,59": 27,
+      "22,60": 27,
       "22,61": 17,
       "22,62": 17,
       "22,63": 17,
@@ -3849,7 +3848,7 @@
       "23,11": 57,
       "23,12": 57,
       "23,13": 57,
-      "23,14": 58,
+      "23,14": 54,
       "23,18": 57,
       "23,19": 57,
       "23,20": 57,
@@ -3879,56 +3878,56 @@
       "23,44": 57,
       "23,45": 57,
       "23,46": 57,
-      "23,47": 58,
-      "23,53": 58,
-      "24,4": 59,
+      "23,47": 54,
+      "23,53": 54,
+      "24,4": 58,
       "24,5": 39,
       "24,6": 39,
-      "24,7": 59,
+      "24,7": 58,
       "24,8": 39,
       "24,9": 39,
-      "24,10": 60,
+      "24,10": 59,
       "24,11": 39,
       "24,12": 39,
       "24,13": 39,
-      "24,14": 61,
-      "24,18": 62,
-      "24,24": 63,
-      "24,29": 61,
-      "24,33": 61,
-      "24,40": 64,
+      "24,14": 60,
+      "24,18": 61,
+      "24,24": 62,
+      "24,29": 60,
+      "24,33": 60,
+      "24,40": 63,
       "24,41": 39,
-      "24,42": 61,
-      "24,47": 65,
-      "24,51": 66,
+      "24,42": 60,
+      "24,47": 64,
+      "24,51": 65,
       "24,52": 39,
-      "24,53": 67,
-      "24,58": 67,
-      "24,63": 63,
-      "24,70": 63
+      "24,53": 66,
+      "24,58": 66,
+      "24,63": 62,
+      "24,70": 62
     },
     "RowStyles": {
-      "25": 68,
-      "26": 68,
-      "27": 68,
-      "28": 68,
-      "29": 68,
-      "30": 68,
-      "31": 68,
-      "32": 68,
-      "33": 68,
-      "34": 68,
-      "35": 68,
-      "36": 68,
-      "37": 68,
-      "38": 68,
-      "39": 68,
-      "40": 68,
-      "41": 68,
-      "42": 68,
-      "43": 68,
-      "44": 68,
-      "45": 68
+      "25": 67,
+      "26": 67,
+      "27": 67,
+      "28": 67,
+      "29": 67,
+      "30": 67,
+      "31": 67,
+      "32": 67,
+      "33": 67,
+      "34": 67,
+      "35": 67,
+      "36": 67,
+      "37": 67,
+      "38": 67,
+      "39": 67,
+      "40": 67,
+      "41": 67,
+      "42": 67,
+      "43": 67,
+      "44": 67,
+      "45": 67
     },
     "SheetStyle": {
       "FontFamily": 8,
@@ -3963,7 +3962,6 @@
     "17,58,2,3",
     "21,0,1,14",
     "21,15,1,12",
-    "21,58,1,3",
     "24,0,1,4",
     "24,4,1,3",
     "24,7,1,3",
@@ -4024,7 +4022,7 @@
           "Value": "使用可"
         },
         "Params": [],
-        "ID": "b91a9fed9b054fba85b5889651d7378b"
+        "ID": "bf257d753bd44cc59cb4335436a94fa3"
       },
       {
         "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -4050,4 +4048,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//5v9SlF4bYW+7XCdNTJ6TtvQW/6KZcoDKEGQlNIiwjj9E3asPJAocjC/QieVf2jWgBiJcAvnetWZS9pj+y3ncmNnrg3bmk3/IbtL33bu5sOqFhkSaRwAnG0kStqUJX5a/NKb/eUBAiJ7b1xNm1oAEvTck+i8a2kjh4wx9viuhFAokeSik11Yjb5xpJDEdZOtAWA4Nf63WtsB7N+AVNdf/FIj6cQISpTN3rtD6ows6ihb3h0IOqz9kmWoAa+p1lesZDvJenltobBRujFZl7LtrRSRZ+p83dfJsV6kVjxz1llW3/b5xujZJ/zKORJVWYj3ctlsS2SYwn21CuvPIzzBu3RAk6pyRPS5xikzFsRTrzoAWk3R1YmQEjFa8sz/IvUpLlUw8/cdMPA2Ib5HrxsOYODjXreiOdgocxdKvfBAuyl8kUNljf+UwyGk54NGip6eUToY/wgCLvuR21nylLFRUlB6OgIUAZtqaysBxIG7kQ0VaWBzDHT3R9v3905UFRrV/PPOVq2beijetDisJVaOPcKDtfLwg19bnPcxLOmgyD2fAPLKEyZ6bFFet/VBKATtlojLGKRzBVWQkQQVh/qfLlkiImzbL1INt13LjnMJeLQdKM1vvjvzLHpH0Gc40uBUkFh85DdBOrDeN9zA1FHq5q4oKYc7qvGiOwsslPGVt1wknD1GPRF+S26/55aXYIfJ3iCfjRPzoS2V6b2ivFWJFK5c9gOGw1593xkwIk5U+FpilKigU//ClvkR1HJcubPXPWNz4NA5RKdP2YMMXojtWRHZsIXp96QVjHV2zAlp6TmzfRlh5rZ9y2TiMyCJQ1x2ngO0rS7GgFytxZpS8nNuohdE36pHMZc/IbV22unLqi71/DjHjxyvVusna6+JO+lRzpAPSZM5BgIS118q5VX9UKQ==|920
+}//aeX/sgRznlyCCx/i1/bOGMCsKQ17Vh9oDRyWmQFb1kegIzpQ3EsTvBM1HtHADGv4wcoyfKoLBRxRrKfOnPOlR9yxeoE1suyfU94PoDf6LvowSTpDKAOU4m1/eNg67LavZOfwi1WiY5xzx+DXgMNDyEMB5fyHZHxzXbQtbbS3ZFY8TavO1pkHSdiYB+SiCrTx2O9hPNOHScmv/iecpq5J83RqicEOMerGgoelzM0MNH/FAmLvG04vHxA9aEjx0+dlabP5WCIfmcxO8sej4FKqQv6rXl+UNvwXyjEVEdNu9TBty362bbSpicX7e71CkIJun08TVcDRM4ZPtKQ/tZGTA01At3oMgAnEZRWZ4NZaxJ+l3jrS9/i/6r6WBuzdC7c14iulvTkd7G2tPpqGxeTdCJZLRyF6CjB5VlCxX4NtgIttrSATna9oCJLwl7YWAzy8tLsco0di+ivT3vt7tOwHF2bJP7CCpfMcGXm+c8GgPF4o3oxC69G//r6MCH7D9RqRBZQg05sBAnHcAyAILfEDrcQeE8I7L/RZ9Pom3eGb6NJQWYER2/kMzzFK3ZdnndUUV1bVFkTjn/YWEBjEVEVBLiN6Io51ssfNZOR1MILJzpsb1IwtQ98am1CjvnDdq/I7DnOOlwpod0ZTIUdg0EUW5qXl9llR9UJ0scXVqBf2D7ZV+hqccbmAAFx6lBwDgN1QEYSPYKXF1uv45/XzmXeWDVNdWG0IGep7CeZKIiqXsNiz7hxOcQB57MnaL640p0kMfmpfCehxTv6d0dkQX7ptN+dpxfvuU/yXFYhSGCxBTXfDqck1EbRNP3Togk0Gz9J2mUIWTETOSDGrreobHE5PlpvJStPYvOTBYPCsWczYtPXEYTIlbwqW+2oS3FDB1/0NTlgrctdjx1merC5+MN41ag==|920
