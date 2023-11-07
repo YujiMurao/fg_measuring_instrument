@@ -170,7 +170,7 @@
     "5,1": "*",
     "5,2": "件  名",
     "6,1": "メ   モ",
-    "11,1": "一覧",
+    "11,1": "校正証明書\n一覧",
     "15,1": "添付ファイル"
   },
   "AttachInfos": {
@@ -199,7 +199,7 @@
                     "UpdateValues": []
                   }
                 ],
-                "ID": "814ede36-79ad-4559-9bc7-3aa266291dfb"
+                "ID": "88f239c1-39d6-496d-a7ee-060e23d58ef5"
               }
             ]
           }
@@ -496,18 +496,18 @@
         "BorderBottom": 2,
         "BorderTop": 3,
         "BorderLeft": 2,
-        "BorderRight": 2
+        "BorderRight": null
       },
       {
         "BorderBottom": 2,
         "BorderTop": 3,
-        "BorderLeft": 2,
-        "BorderRight": 2
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "BorderBottom": 2,
         "BorderTop": 3,
-        "BorderLeft": 2,
+        "BorderLeft": null,
         "BorderRight": 3
       },
       {
@@ -660,6 +660,7 @@
         "Foreground": 13,
         "HorizontalAlignment": 3,
         "VerticalAlignment": 12,
+        "WordWrap": true,
         "BorderTop": 2,
         "BorderLeft": 3
       },
@@ -1640,7 +1641,6 @@
   },
   "Spans": [
     "1,23,1,7",
-    "4,6,1,33",
     "5,6,1,33",
     "6,1,5,5",
     "6,6,5,33",
@@ -1649,7 +1649,8 @@
     "5,2,1,4",
     "11,1,4,5",
     "11,6,4,33",
-    "15,6,21,33"
+    "15,6,21,33",
+    "4,6,1,7"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1666,4 +1667,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//cDcgMz9/fvD5bGlQrmZnsPP5DjNAsRwArw2hCEnOrdVvJd41hJaBSkD8ORv1OrJFrIYY/Q7UOWUQ9EZezEbmLJGXGQQvULCe6JxmnmCSTyLSdmpVqKpgeEtFGqR9rWUN6U/PGmdne2mU69kbI6Tn+TuxnJMBcLwH9wSwC5juCbzIqeaeJ1AhT0qSB5xvu7K/ZLX6ZRSy4Bd+K4D4cwj2Dx2cTtXue+6gmBn0jF29uZOhi9xQAgxyyBoHGc23i7pBaO9T4rXHCTj3DfLHgcG2G940lGViIepFhQR5X/hDlLbz+LwouBsDZ9Tq1xzh63wSx97H2Cw7STJxWL5W5iJ0tOKQ1ZOzswqueSB3NXFdw1onu+UkCalrmbo4ABwEzftTKM9OWnCXIlUIMTp1h70FPUDSAqDVZinR6etufmRDbZW0WoVgfFlDC5ACawuE7cU+CEc2CLaCmATzncc0Ve2ok5itgjeDbCp9PjP8qCiPqUjrmec38GjBBFDWL+khtc8EI6z/Zt0jGVlsxchwm05NNsaQit/Ny6W48ylJ0gk6i5hLbWyTFxWxmzgriVBTuhpnRlI+rdBwIAJ/tuvw4gKUWJkKO4a1PpjbETELgLEymX1jVC9LbUcf0cSP52D9kQ+Jb2gFb0WfxedFzW2+tQrZFBuoFw5OH741JwOpFGj+ZWXh6kNZnEVX34Gj2vKuZYA7QqRxP7Ub1O0QVbE6ixxIBZXYrgiN7E5XwzzWb5VWRESOjWFKvhRWmAIlueB6Y8v9YNPojJfZsOZFr4ysYMbiDILQsSTjKReHYJn5C3Xyhje2Zjc1uY21/lhHb4X1JzWVVzmV9HJ9XjqPYHK6TmVAt6x5/Tce7l+6t0putHsT+XOv4YTe3EUo2z750vlONA78s1oBMIBvUhetjhN2o4IVqg==|920
+}//5SFzmsihAYWTxlY2TFItJlVDK+yz4SrGnm7n/0EnX9Yx5+fqQRQdGlqtr1C+S8hyaU3T/3Ful+2BhBRV26uCbFPicnEciCwodePp7Omd3Onzy9SpXLo+k5RYvDkBpXSFWRgplfLT2CVqHYSONackpdvxz6nxpensaFuYk9XyJB3MCjeyA55HIqS/gTuC372abc1YKIRnK2VNJFWUDMqL79sfxxPHpBr9Sx2d8Dbyk+NIrzni6np207V5rA4r7N6QTlhC8ZdplxLE7f+OB16evlEj0EcBfw0k1SYQuNTNeKHiB9/hbamBiNiTyHUqMEeP5J0vx2DV9ZW3PbozddI46efjkqKMs3XN3ruezEcHfUsFCoptUc6n3iuWn4oYkuGWCBVTrL6KIzxj9VbbH1/HbowrM3r0VYQ9v/l+xDBXny5DH155dWiApgr3IX7rcrgdpM9eSIo3fKVoQs6R0XG42+exrT5qUzeGiln4FpSWDFx7X8SMLIiPOA2XGBTH8LYQFe3QwLX4BoX/WfflShLJLB0nDQ3vsit4o/q0cvag4xBt22tN8ooYIKRbFMSE66EX5cB4n7aGVstcr2Wm3NIzXeHia9t3mCr0yqNbgKANTqo/GXFN0isag8UvziKM535j8EIZNQsXT7lIAnRSa3sstXWnLqEl2562LqbJGsW42AI4nfpolTjd4Infn3ItL7xfU9EIOWb5dA4Awtlb7NQB+/toQzgqj/kFlDFTZdT/I5aw/iqePWRHDkBw/hhvb2wk7VsmbZV99bCYI7kdeaLOqQZ0+hz2QF/72tneYGPD6CtzhjEGl90FyZw7KqQwwt7g608YaFZZuDEREdpdvj469crAPP1n8KJXrG9CTsWgozmy3PeUUe8ay05hm/MjeZpyN9SLHfvY9X82PVNEqrXq9w==|920
