@@ -368,7 +368,7 @@
                     "NewOtherName": ""
                   }
                 ],
-                "ID": "1a34fdb8-2d66-421f-9154-6809b02d2e72"
+                "ID": "75d2b984-c174-40b5-a81f-9940c9171ebd"
               }
             ]
           }
@@ -431,7 +431,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "52065879-7674-4c1e-8a68-468520e3291c"
+                    "ID": "2aae7f0b-28db-4721-a95b-020f43526310"
                   },
                   {
                     "Condition": {
@@ -467,7 +467,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "7bbd9cf2-ffa2-4691-bf7a-847ad423e4e3"
+                    "ID": "b48b42f4-b7c4-42f8-97a9-109edf3ad0af"
                   }
                 ]
               },
@@ -494,7 +494,10 @@
         "RowIndex": 2,
         "ColumnCount": 38,
         "RowCount": 38,
+        "FrozenIndex": 6,
         "FrozenIndexEnd": 5,
+        "IsTotalRowVisible": true,
+        "IsTotalRowAtFirstRow": true,
         "AllowEditInListview": true,
         "ShowDeleteButton": true,
         "ColumnOperation": 2,
@@ -506,12 +509,19 @@
       }
     },
     "3,0": {
+      "TotalRowSetting": {
+        "StaticText": "[登録数]",
+        "StyleInfo": {
+          "FontSize": 10.666666666666666
+        }
+      },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "id"
       }
     },
     "3,1": {
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "n1"
@@ -536,6 +546,13 @@
       }
     },
     "3,5": {
+      "TotalRowSetting": {
+        "FormulaType": 2,
+        "StyleInfo": {
+          "FontSize": 12.0,
+          "Foreground": "Accent 1 0"
+        }
+      },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "ctrl_no"
@@ -749,6 +766,7 @@
         "HorizontalAlignment": 2
       },
       {
+        "FontSize": 12.0,
         "HorizontalAlignment": 2
       },
       {
@@ -856,4 +874,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//r4dtlRgpS1TOtfEmxwX4vFaOKEi32/VWEeTWKGXKCAqSfumgoTJs1qGsT0IDyBl1y/c94nSs4Jup4esFbxyu4GjGpqzHBAhV5gK5Yd6ORjuEIGqs71q2GeSenk0guvQFxPctqtfmA9efIESAIhjWKEaEk6wpFKtRQS0i/lfisWSJvdQY3GH0KPA/jR3taGMFH7iRnBF23+I/yurzgAE6dcxQ+1R4wFazUitZezqlyVZyXW+okZckA6abdKT4GQZkEAn0wLAue8MsGLnYGBtw4UUMTZBe3nmOEKCZLuMjJY3A2tC58cEnYHllIFTtLoYiLhG2Vwmm41OrX5s1WyT7h0gEesdCPCIZk73XuEtiJbKC1Diuc9tSHkRrogyVChNW+YTUos9Ac7MSdt79Gl6n1pkch7yLBNqSk0iys0h+S9o22NriB/10Z14JVajZsRwdXYW/FUq1KKUU1tZYbmZ1eCXDWOV2xLQ/kBtw1rL96+R0ptD6vUFY7ViC5jXwJHEYOgWWhS4vQWn23zUWEsg13qwgvFQ2NbnG4WXIvGw5FPyJ+/h+e5Ps/8zcYC17KG8sSTq9oxSR8gvMFRChrts+bUFBoWXOoQ9JSc8qG2gfW0sz9G9W44XjPL0PtfDTowOzNwJVjzycovzPuWFkuUsAnFTVTvZowt1ORHEUgcYTQtE+CD0SsP1M08MsrpVVNB0786b/8ml4kN4CoWoxGVMpI+6eR3eS88pPTvIfVU/1MRyC06iO99LbKY/MUsLJSM8g0tebsGdMGK14khWch4FPBfdCkrw99qniLWQ4QEGnJwjifqiNDtipC+E+PS24VlcPXdqSavO1X52G/vEL8BOvkjUl7pA2HFcdnWVKuGTGhwLNlQp/cDXM8sLt7Xh/Jpghk3XGxTN+4nhd7yrYrne4Og==|920
+}//pMtxX0QTnIlM4ahQLNYGtprSIpLakg1ExdCH+LzhgnrFxzNQPpQmt0m/zqWN91gXSCbwhpDtas5m72EqfIUeVFhyVP3rllFOertuO/OfevKf6H0Z9BkKPq9q+1vydJIEPOuYUMyx2WaMECR9tze7soOuZlg4IgSosHJMRrspDeIrVNo6dlpgS+lRZaJekFhPVd0zrHmwqvPf2/JZhN6sRVsvvsP2B+L1DQVCBZcn5nmoxQa1nPr7By00GHb5v/m7vnauZZIHk+5+IzPZa8IAvqTZlIXLO4qEfU6HNRwymvgcCrEhtjrB3ESnwiu8W4YIxUcVXLJxMRhNH8WIvwIltpAMg7BtIZ1uTB1yqX6NeeaAGsnkX/H4G1wD+Wwjhx7StcsmmFmU8FZyNSC0BHyL1xm5yTvInEcxi+CVOKUhqm/N3wcGF7Xt6GVlL59HS9veVWd+f5cPO6VkmFo87CWkbXxrmEX8Sl772a5BN/aH4lYDN3dkN0T/poTsNTcP1ZF/bWL7PLmUz4LKTOFC/NfKEn4d+ONA+RlGC4HSwj2baJeFw2kH4sxECySc8ekLR0SEltVMXqVrP/jPW6SayD4qL0RdNBqep9eY544RxKUr6KmOpzAxD+KB7O3pezYiDK8Ah2I4XiOVFK1nzo5Vsr8NwAuZ8Rm/0rlNWoWUqp9EtWuefWZsSLB4pKAjewicmY5P8M0xwcdmqe5svHk2O7AqcHD3rJJcbT6TdS6tYFhf8VXcjjA7c8534ulKolZsyDB2ymWzZvF/CWvKgJ1erlOCijeD6TLLD0HUJD8iKxePWqmkw+3s0jbl1xHpDF6ON01pRLjxAYr0o/b24ePZSvz9eHwJuESQjkcuOgUg6LYrX9Na2uL+VXhfpnklcwlfCqNoXx+BZZsXS3lg6bEmiJYmSQ==|920
