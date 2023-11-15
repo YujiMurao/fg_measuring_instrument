@@ -16,7 +16,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
       },
-      "ID": "c6802fb3ccb849f9a0cfb35439b9c0b7"
+      "ID": "96460d8aa8f740b5bd06c6df4b7d87fd"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -25,7 +25,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
       },
-      "ID": "571c64beb3024c93ba13c210c4417ce1"
+      "ID": "3045589e969741d39e21ed7c99cff6eb"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -34,7 +34,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
       },
-      "ID": "83b9ec0a352648859f561c5663b781d8"
+      "ID": "32a515aae2974514bf039605256dd6cc"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -43,7 +43,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-2)+1,\"yyyy/m/d\")"
       },
-      "ID": "f1bce71f9d66435c91cb7b1743b2af38"
+      "ID": "abef9d9aaa5c4224827f61674dc342ea"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -52,7 +52,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1),\"yyyy/m/d\")"
       },
-      "ID": "056542c911af4cd7a6203e2cc576e4d2"
+      "ID": "0221744fcc51476e884147ce54922b0a"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -173,7 +173,7 @@
           }
         }
       },
-      "ID": "6c3c7c7096274215a56e1815a516a7cf",
+      "ID": "13f5843fb09c40bcbe2badc94d87853b",
       "Comments": "校正月の案内用"
     },
     {
@@ -210,7 +210,7 @@
           }
         }
       },
-      "ID": "63e6988254254bb1a03d0ffd1e4c84cf",
+      "ID": "0cf7ebc372b849ff884086c986090300",
       "Comments": "有効期限が切れる案内"
     },
     {
@@ -270,7 +270,7 @@
           }
         }
       },
-      "ID": "4b5a177e30e84202ade1dcb547f64b03",
+      "ID": "0194864b888c43fdbf431acc5c04a2fc",
       "Comments": "校正切れの案内用"
     },
     {
@@ -338,7 +338,7 @@
           }
         }
       },
-      "ID": "729e742937aa4914981ebae3cf6491b7",
+      "ID": "da54eb912cd64ce9b82cd19ddf19fa75",
       "Comments": "校正切れの案内用"
     },
     {
@@ -393,25 +393,19 @@
             {
               "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
               "From": "equipment@rorze.com",
-              "Subject": "校正測定機器の期限について",
-              "Content": "担当者さま\r\n\r\nForguncy計測機器タスクからの自動送信メールです。([=今月])\r\n①今月の校正対象測定機器は[=今月校正数]件あります。\r\n[%PageNavigate=(定期校正リスト(個人),定期校正リスト(個人))%]\r\n②今月の校正有効期限が切れる測定機器は[=今月期限数]件あります。\r\n[%PageNavigate=(社内校正リスト(個人),社内校正リスト(個人))%]\r\n③先月の校正有効期限が切れた測定機器は[=校正切れ数]件あります。\r\n[%PageNavigate=(社内校正リスト(個人),社内校正リスト(個人))%]\r\n[=校正切れ数機器リスト{1}]\r\n\r\n以上\r\n",
+              "Subject": "校正機器の期限について",
+              "Content": "担当者さま\r\n\r\nForguncy計測機器タスクからの自動送信メールです。\r\n①今月の校正対象測定機器は[=今月校正数]件あります。\r\n[%PageNavigate=(定期校正リスト(個人),定期校正リスト(個人))%]\r\n②今月の校正有効期限が切れる測定機器は[=今月期限数]件あります。\r\n[%PageNavigate=(社内校正リスト(個人),社内校正リスト(個人))%]\r\n③先月の校正有効期限が切れた測定機器は[=校正切れ数]件あります。\r\n[%PageNavigate=(社内校正リスト(個人),社内校正リスト(個人))%]\r\nTEXT([=校正切れ数機器リスト])\r\n[%PageNavigate=(定期校正リスト(個人),こちらをクリック)%]\r\n<p>\r\n  <a href=\"http://rj_forguncy/%E8%A8%88%E6%B8%AC%E6%A9%9F%E5%99%A8/%E6%A0%A1%E6%AD%A3%E3%83%AA%E3%82%B9%E3%83%88(%E5%80%8B%E4%BA%BA)\r\n\">校正対象リスト（担当者向け）</a>へ\r\n</p>\r\n以上\r\n",
               "EnhancedRecipient": {
-                "CommonValue": "kai.rie@rorze.com"
-              },
-              "EnhancedCC": {
-                "CommonValue": "sakashita.noriko@rorze.com"
-              },
-              "EnhancedBCC": {
                 "CommonValue": "murao.yuji@rorze.com"
               },
               "Priority": "high",
-              "ID": "6b6090cd81c743b7aa1835d6d92bbcd7"
+              "ID": "2eac8e059c464c239ee874aabe1057a7"
             }
           ],
-          "ID": "b61d5d08-b9db-4435-b65f-45a5980a9191"
+          "ID": "b1844149-a6e0-4295-bf14-aca6a38677d4"
         }
       ]
     }
   ],
-  "Name": "校正切れメール送信"
+  "Name": "校正切れメール送信1"
 }
