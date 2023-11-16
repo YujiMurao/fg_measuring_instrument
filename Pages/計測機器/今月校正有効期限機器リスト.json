@@ -307,7 +307,7 @@
     "Count": 79
   },
   "Values": {
-    "1,7": "社内校正基準月：",
+    "1,7": "校正有効期限基準月：",
     "1,13": "～",
     "1,67": "校正対象計測機器一覧()_校正有無確認",
     "3,3": "管理№",
@@ -344,13 +344,13 @@
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=今月校正対象測定機器リスト!BO5"
+                "SerializeProperty": "=今月校正有効期限機器リスト!BO5"
               }
             },
             "Params": [
               "=BO5"
             ],
-            "ID": "778b2e3ee6d2443b9ea9d8f8387f6651"
+            "ID": "cd95387f6bd4427489203a44e908f771"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -436,11 +436,11 @@
                   "CompareType": 3,
                   "ColumnBindingInfo": {
                     "TableName": "trn_insptool_tools",
-                    "ColumnName": "next_caribration_ymd"
+                    "ColumnName": "kouseiyuukoukigenymd"
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=今月校正対象測定機器リスト!I2"
+                    "SerializeProperty": "=今月校正有効期限機器リスト!I2"
                   }
                 }
               },
@@ -449,11 +449,11 @@
                 "CompareType": 5,
                 "ColumnBindingInfo": {
                   "TableName": "trn_insptool_tools",
-                  "ColumnName": "next_caribration_ymd"
+                  "ColumnName": "kouseiyuukoukigenymd"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=今月校正対象測定機器リスト!P2"
+                  "SerializeProperty": "=今月校正有効期限機器リスト!P2"
                 }
               }
             },
@@ -482,7 +482,12 @@
     },
     "4,1": {
       "TotalRowSetting": {
-        "StaticText": ""
+        "StaticText": "登録数",
+        "StyleInfo": {
+          "FontSize": 10.666666666666666,
+          "HorizontalAlignment": 2,
+          "Foreground": "Accent 1 0"
+        }
       }
     },
     "4,3": {
@@ -508,6 +513,7 @@
         "StaticText": "",
         "StyleInfo": {
           "FontSize": 13.333333333333332,
+          "HorizontalAlignment": 1,
           "Foreground": "Accent 1 0"
         }
       },
@@ -875,7 +881,7 @@
         "Center",
         "Meiryo UI",
         "#FF6D6D6D",
-        "Background 2 -50",
+        "Text 1 50",
         "Right",
         "yyyy/MM/dd",
         "#FF000000",
@@ -2099,4 +2105,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//rk3GQoopFxwIFmkf23fDSpDRayVazJZiMJ0lHWcUXArRnSvwDN8bmyfd4D+gb6zv5DY3/OFcCfz9J++gc4/Niis91fZNOhK3BMXioYptvo6MGlgISSYYBtjFfYLtS3sySp6UBdw2qQxR0tJBgrwYFqr7vrySdAmcmKZPq7U96wWzPXyseo6lDPZyGiUDkQk593AjDylIftsYWYiA76JnIIgV8Y2KDJ4AApIJEY/BVAfQpzM4yUjyethorTW/1YrYGLyOKnVwWVE/8sjMQtrcM2u/bC86Tv8p6/3/S8jQwFLNmcqxcjGkRc1lX+B62GraNnGmckQxv4x2sm07bVtaw2uCeWdretZGOxTDJcroM1akMr0thRoCM8GOvdvH3oxalHfc+bF5OMjqWNaUh2huIfIkbRSaAjNYs+uwPTPFzOU7+YkqHr7fcHyp+u67KNon/kLBGzMJI1RssAhfsjZm+fdOZtFgCWF4CVan5KFpkV0XHC3nqwiG/rRAlyhcq2fWXMUXX1pTIjO+o4aaAGkKgZv5iC9CRzZN3iH2RmEBYerF1s+EmKKWaVYjCTzuFnDNvqArl/FOt66J3nh1mOrUySBxQ3ZfP+eWxwZksEVLHUAh2mHhPuH5FLqpix8wT/IOy2GK2HaSG+q3eyMGYTMPxGjkTlH6RyNnYWSnwFqpJtWeNAv7LCBh8N7lYTJ0kAEsFQAsTWPTIllkUTKWZQ/R37hGRAypKPx7npi4Aq/rRuz1TF3marteaASJ9lnLGnqWOeoRSw2shvUvx8pW50NURrYNCgLdD9q0rM2GRiJQtasp3JLIsBS0pVIIm9TPVxnQDlfGvLBMjJnlnDILVHMfa/ATpP01DxA1ZMIVV0DPH2V1ZiiKWcgEZv7mpa8B36qVRFoCI+mxGQKzBm7abwzfEw==|920
+}//ErLlOwQ5eME/7wQ1fXhyC6r7MklLk3vk1C7gmfPk6Vf4sE5miFdk5Id0pmbM0/e4s/mNlvgIuifWYhOtp1KheqXjFRFwWKByAqB/KOoGuj00m/mFlkj7wI2ZEFfk6mD7DoBQbHdSQIZMT2pMP7+abPwLvFD3zxLuFV1EuNEEe3einVIq9f6mYd0Fv9oH9Sv+QONKfVXpFHnlQvwBUwE6MXS/SW9gv+wjXvu5IHy8p8Ni6VPhmjwpBfxXKj2n/80z8Nx1p4Jev3ZI5Ml2j7nJLD924souCes2i6/sbwr9QPcgFoWdbuZG2VdMOSQLsRdq1wM+pXoyLiejjcaJwIJku9wtf8aKyAzniQqviOUnTgQUeHZsYzqXLae0BMm2PivqBAm42lY1WbP82ckXcxAULYYc7nnj/gyU971Jryc00kESll/Ls9weJvmQRM2bPTwNOOXK5ucQfn/lbhTAiAi9u4r/fYxIKiCyNcFOetO23bZMS2t+dt7uJ3ctoV7EeNRN3IZnheDHwlm3mFQVCayRzGi7EvXwuDqqvlyRLYe/5vhxY/k9ak1g5rEsj6TL1gADVpGLY6PI6dC6+wkJAReplnUVdM2gp3PIAL9ap5b9Z+OrLORs54I1gOR63W7p5q0mkqHznBQ9pj36r2m8QBC8l0yx3yk5tPNGDMHZlE+a17cWv88It5Sqo6MayTzJaLsmuVXNIHj0gU9rLiXnJG0gJayGDvB1pcRHLwLJxt8n8MdEbm9/b0KcJ9zlfF5nS03nyCjlqMzr++YfuZRq5WaCK5wgR7CMQZm3AnQxO++0GKv/uyj3UfobmyxqShwQAQ1/QTOXP/DdG9aW8Fg8vir3GAJGRf9UWvGQrmnrUkBj0Pd239gAl+PR4u94Ber6hH0z4rxOLAVDh2vbKvzheCs23w==|920
