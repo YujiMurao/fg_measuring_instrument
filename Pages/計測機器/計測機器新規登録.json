@@ -348,7 +348,7 @@
                     "MessageFormula": "使用禁止理由を設定してください。"
                   }
                 ],
-                "ID": "41b76fed-45cb-4e5a-984d-e2547100a36f"
+                "ID": "ffa759f9-90b5-47a1-b12d-589ce64b760f"
               },
               {
                 "CommandList": [
@@ -633,7 +633,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "e078d277-711e-4a8d-b8e9-f76a6103fcad"
+                                "ID": "56b18bae-f986-47d2-b50d-fff55909e6df"
                               },
                               {
                                 "CommandList": [
@@ -867,17 +867,17 @@
                                     ]
                                   }
                                 ],
-                                "ID": "b2cf1f3d-4ebd-4c18-b396-f93e377d4e84"
+                                "ID": "3fd31912-a30e-4fb6-9e2a-aec077429a84"
                               }
                             ]
                           }
                         ],
-                        "ID": "999d0070-eef4-4a81-b0b3-6c955342c96b"
+                        "ID": "400e4351-2bc3-4eea-be34-52dabac0083e"
                       }
                     ]
                   }
                 ],
-                "ID": "b17ceff3-4bbf-48ff-b408-c0c962986fb1"
+                "ID": "191f9f2e-71bb-4c71-80c5-487ed604edb7"
               }
             ]
           }
@@ -1069,7 +1069,7 @@
                     ]
                   }
                 ],
-                "ID": "45fd1d42-5885-45a0-bc53-2074e7a413a8"
+                "ID": "0a224481-d2a8-42fd-8295-08e369ee4357"
               },
               {
                 "CommandList": [
@@ -1102,7 +1102,7 @@
                     ]
                   }
                 ],
-                "ID": "cc912a61-4432-4272-b7d8-e09de3d70edc"
+                "ID": "a37a758e-7f7f-4ed6-a803-1f19d8e9c3b8"
               }
             ]
           }
@@ -1216,7 +1216,7 @@
                     ]
                   }
                 ],
-                "ID": "3067a3ff-aa8e-4028-91a5-b138f0f58a70"
+                "ID": "ed2b8d16-e90c-456f-a8e4-0a10739efff2"
               }
             ]
           }
@@ -1254,7 +1254,7 @@
                     ]
                   }
                 ],
-                "ID": "7ccf304f-b746-43a2-95be-5efb61709803"
+                "ID": "71629fec-17a4-4458-a4e5-a2db31cd2fb2"
               }
             ]
           }
@@ -1522,7 +1522,7 @@
                     ]
                   }
                 ],
-                "ID": "be753462-2ae8-432a-bc31-6da83cd1f333"
+                "ID": "6b797799-7f25-4dfa-bfe0-f9e9cd53f390"
               },
               {
                 "CommandList": [
@@ -1540,7 +1540,7 @@
                     ]
                   }
                 ],
-                "ID": "2a0cf189-d66a-428c-8113-9a606e9689d0"
+                "ID": "c608cd95-c9f7-448e-8dde-1224f3d5dffe"
               }
             ]
           }
@@ -1691,8 +1691,200 @@
             "DisplayValue": "社内"
           },
           {
-            "Value": "非公正",
-            "DisplayValue": "非公正"
+            "Value": "非校正",
+            "DisplayValue": "非校正"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "校正区分",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=計測機器新規登録!G35"
+            },
+            "ID": "fad28154e2d04b6a9df025ba496bbfd4"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "周期",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=計測機器新規登録!G37"
+            },
+            "ID": "869437300b05432288a9bdb8ba11eb5e"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "最終校正日",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=計測機器新規登録!AH35"
+            },
+            "ID": "cb219cb5ba144eb2a58c7066e7b05ece"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=計測機器新規登録!周期"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=計測機器新規登録!校正区分"
+                              }
+                            ]
+                          },
+                          "value": "社内"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH37"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期)"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!G39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-2)+1"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-1)"
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "25890b4a-f0db-4abc-a17d-95182353955e"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=計測機器新規登録!校正区分"
+                              }
+                            ]
+                          },
+                          "value": "社外"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH37"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-1)"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!G39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-2)+1"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-1)"
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "8f359266-2e88-4c30-8592-63fbc963ecc6"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH37"
+                                },
+                                "Value": "%Null%"
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!G39"
+                                },
+                                "Value": "%Null%"
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH39"
+                                },
+                                "Value": "%Null%"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "e67355b3-7a31-4138-a127-cc4846ade445"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "9b099d94-2851-47f8-a80b-5ca258743fb3"
+              }
+            ]
           }
         ]
       },
@@ -1711,37 +1903,208 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-            "PropertyItemsList": [
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "校正区分",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=計測機器新規登録!G35"
+            },
+            "ID": "401d44ac522f47659c018608a98e9cba"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "周期",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=計測機器新規登録!G37"
+            },
+            "ID": "c5402511bb834d7db0f83bf7d992ef99"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "最終校正日",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=計測機器新規登録!AH35"
+            },
+            "ID": "84a6f36854484f1b84a98f69513e1793"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
               {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH37"
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=計測機器新規登録!周期"
+                        }
+                      ]
+                    },
+                    "value": "%Null%",
+                    "compareType": 1
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=計測機器新規登録!校正区分"
+                        }
+                      ]
+                    },
+                    "value": "%Null%",
+                    "compareType": 1
+                  }
                 },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=EOMONTH(計測機器新規登録!AH35,計測機器新規登録!G37-1)"
-                }
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G39"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=EOMONTH(計測機器新規登録!AH35,計測機器新規登録!G37-2)+1"
-                }
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH39"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=EOMONTH(計測機器新規登録!AH35,計測機器新規登録!G37)"
-                }
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=計測機器新規登録!校正区分"
+                              }
+                            ]
+                          },
+                          "value": "社内"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH37"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期)"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!G39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-2)+1"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-1)"
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "bb62eab7-f27b-4914-8a51-1284fae1e277"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=計測機器新規登録!校正区分"
+                              }
+                            ]
+                          },
+                          "value": "社外"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH37"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-1)"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!G39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-2)+1"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-1)"
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "2d054851-8158-443d-86b1-3d087d7bebc6"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH37"
+                                },
+                                "Value": "%Null%"
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!G39"
+                                },
+                                "Value": "%Null%"
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH39"
+                                },
+                                "Value": "%Null%"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "c311c284-42ac-4b18-a48d-6f4e3671782d"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "25e60b50-8b8f-40b0-b1cb-974f6a5517dd"
               }
             ]
           }
@@ -1752,51 +2115,203 @@
     "36,6": {
       "CellType": {
         "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
-        "SpinButtonvisibility": 0,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "WaterMark": "月数",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-            "PropertyItemsList": [
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "校正区分",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=計測機器新規登録!G35"
+            },
+            "ID": "c3bd9cef77a44eda86e45935b780de7c"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "周期",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=計測機器新規登録!G37"
+            },
+            "ID": "5b7130dd6fda4208b78f6678d60b3767"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "最終校正日",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=計測機器新規登録!AH35"
+            },
+            "ID": "db92307555d54543aa8b5c6f217e186e"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
               {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH37"
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=計測機器新規登録!校正区分"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
                 },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=EOMONTH(計測機器新規登録!AH35,計測機器新規登録!G37-1)"
-                }
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!G39"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=EOMONTH(計測機器新規登録!AH35,計測機器新規登録!G37-2)+1"
-                }
-              },
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器新規登録!AH39"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=EOMONTH(計測機器新規登録!AH35,計測機器新規登録!G37)"
-                }
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=計測機器新規登録!校正区分"
+                              }
+                            ]
+                          },
+                          "value": "社内"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH37"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期)"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!G39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-2)+1"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-1)"
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "0732a4ae-e0cd-4889-8e57-8c278d4b7247"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=計測機器新規登録!校正区分"
+                              }
+                            ]
+                          },
+                          "value": "社外"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH37"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-1)"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!G39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-2)+1"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=EOMONTH(計測機器新規登録!最終校正日,計測機器新規登録!周期-1)"
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "354c4277-e8a9-4a57-956b-250c58cddac8"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH37"
+                                },
+                                "Value": "%Null%"
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!G39"
+                                },
+                                "Value": "%Null%"
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=計測機器新規登録!AH39"
+                                },
+                                "Value": "%Null%"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "cb2c5700-6de0-4a3c-93f1-a48537b7636e"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "292c7485-edeb-4a10-bf6a-2599123fd5fe"
               }
             ]
           }
         ]
       },
       "DataValidationInfo": {
-        "NumberType": 1,
-        "CompareParamType": 6,
-        "FirstParamValue": "0"
+        "CompareParamType": 6
       }
     },
     "40,6": {
@@ -4058,4 +4573,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//9Wz2A+fE3jNc4UOJJBa4zDg9iAWeFdb5kxGq/LToWCEz+tq/PNFxDlaErvVxXyZftb+eu0e+utUPo5oe+Qdrgk7R0nXe0YGYlCswA77SeiwcRHIuY3Sijye6tHYkU5ksbnTzxpnRixhgXLKknZmeBanyeHJyHaKMvWuIjhN0Pl1g0s12HPlOktcj1PtiwOIgArN/sRHe5EX26fXMxmVrqeg6Lhmc2cW8AI7RqzsqMWzaT2MI236SxvRwb9TlbIT1gagTmirDehNd+jUQbt22PfvfkfMBVVSo+mtxnnmEu2hd7mKzPKtsqsXItlgb2knbqZwVH9WxVOuQU2gvm4Mv17/xRQn0bZx/lY3Vea//MJOEiAVQ9P7te0vTXFdajk+NOunj1y8dZgMTjZ3y8FTKCHuHwDRbcy1ieCmNN0cbqPSLt1Llm/p6DJ4NFRNpZmhoMyZFhrTQpCNVwlgBmniEr7Rp+qe6G/Q4X/qkIz/hcsIXtdOQMhGlwesGPLWcNG+DOCmyLOW3Q94bcLAGqLTfzDLYphlnDP+0tciLCfX9k+40SWkNnwHhBeKr4q6bsKStcy7F09/+vmGJ2hk6mJLzzkBwo6mWyQ/SSBgDmLgUwz4ukSdXHTiRs1GdZiQ1ut8LnyEJD1Ycoscq62BWqW89DVd82zCcdytHr6+0cuiQZfJg2zQC9R9bN2tMvdNBqVLl2/UqnKuo5oUXzgErQZfMSkJKFUTeFHT7a/VX9GzyYZZsgJZCRaz1A4vQHJ44N/SdoSPIWiYvep5zEkzECFnfb6qj9iqa5FxOYq0/LmOdsE6xoKW/bifrfoHrtJABUyias5Ou07hT4iBb4vCuQnhdsuc7qLKMMSaJK8LUjJnEdqlDD8KOPVqHTBacAdiBhn4ryUFNA3LziU/0FGN+HwHhwg==|920
+}//fPRB5cerr7MI54R3p59/Lg06AoTsTNYfoEM+1l2G6RETmFmwXQJRmAj2ehzwnMr5CWAN3B04UQatUnz0tD+OZp9Oc9bxgurrb4o+lesSwAwYsgCeS9EqE0nFm9HjKZx05WLxTsDTHnkYG36EYq1kt0DCComvfk05aj2sCeRUVqDkVjJVGKUANuaBoO9EpLhvCc3CYvqoWHdTRI8+1Obe1F5fYfpIQZ8PxOzFTaInP7fhDeLKPYHaS6RfVO79lD65A6vc+o2HFVpX59NGQpIYU54ovN5Nh1Y8OA8PnBMgS/B7hWcZz+gCLCi2OlQo0b8o6EgaFHStESbxEMOpoM0QYemOgYn3SYFynGV2ZEKA6bANLxvEFuout1QuefkV9Rm9C415oH0/NaGl8CApgBh2pfrpw0D9mC8f1ABnudm1WHtYbpNuVLdHaxlRr965OXqPG7tXX6MXgUbXEf1OtIZry68bPODTquxZTGJW2i6TPoRSd/TMIQq0tUKoR0MsP497CQt6pJTGB/aLOZlEAYZLTgYbA55efpZXQQFCTLWO0zoxxwuOF0z/XZBDtcIWqbHoF15E/TcJb2DFCgqjadvW22Tppy+F9hMGibvAEnddFLXSIgEyZcFkYAPdUF49hB/gXQx61e7NyOeXxxBUSgg32amGIOLtAYlif/IOQBSdt9SPMqFxwsHP9dcRChZUT8TnGYJi39VloH/hpAMSqE/Uf3bQGFfPeg+XwVkOs90PBF3NYBpYpZxApXW6PLfp9wa1dEvCUkmE+yIo/cxAIQaLhRyg6hsTwqG8sWwDMHzVbS5JNiRzwtWVg1NCe0I+q35j4tKciR3P65nqm988K4V0Tui6AnfMANt5OLU4/NQpGPtq0Gb9IJsRGP4vzJiwrYYpFIPgXbFZFbRtn47wZu3G6w==|920
