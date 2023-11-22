@@ -359,7 +359,16 @@
   },
   {
     "ModuleName": "TaskScheduler/校正切れメール送信",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RJH-PDFGB01\\Administrator",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-11-22T15:13:14.0334709+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\校正切れメール送信.json"
+    ]
   },
   {
     "ModuleName": "PCPage/社内校正リスト（今月）",
