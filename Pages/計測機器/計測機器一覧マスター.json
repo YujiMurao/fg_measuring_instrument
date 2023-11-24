@@ -3,11 +3,21 @@
     "RowColumnAttachedInfos": {
       "1": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 18.0
+          "DesignLengthInPixel": 13.0
+        }
+      },
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
         }
       }
     },
-    "Count": 40
+    "Count": 37
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -209,7 +219,6 @@
     "0,0": "計測機器一覧マスター",
     "0,6": "create control no",
     "0,8": "excel export",
-    "1,1": "登録数:",
     "1,5": "管理番号",
     "1,6": "使用可否",
     "1,7": "登録日",
@@ -241,9 +250,6 @@
     "1,33": "通知日",
     "1,36": "ファイル",
     "1,37": "校正要否"
-  },
-  "Formulas": {
-    "1,2": "COUNTA(A4)"
   },
   "AttachInfos": {
     "0,6": {
@@ -368,7 +374,7 @@
                     "NewOtherName": ""
                   }
                 ],
-                "ID": "75d2b984-c174-40b5-a81f-9940c9171ebd"
+                "ID": "41092250-a82d-4817-9627-58b9dfe9ea10"
               }
             ]
           }
@@ -431,7 +437,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "2aae7f0b-28db-4721-a95b-020f43526310"
+                    "ID": "b0158248-c06c-4d60-885a-c1ca07e56737"
                   },
                   {
                     "Condition": {
@@ -467,7 +473,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "b48b42f4-b7c4-42f8-97a9-109edf3ad0af"
+                    "ID": "58cd84d9-842c-457c-a21b-db01e3a8fea9"
                   }
                 ]
               },
@@ -493,9 +499,7 @@
         "TableName": "trn_insptool_tools",
         "RowIndex": 2,
         "ColumnCount": 38,
-        "RowCount": 38,
-        "FrozenIndex": 6,
-        "FrozenIndexEnd": 5,
+        "RowCount": 34,
         "IsTotalRowVisible": true,
         "IsTotalRowAtFirstRow": true,
         "AllowEditInListview": true,
@@ -776,10 +780,11 @@
         "Formatter": 4
       },
       {
-        "FontSize": -1.0
+        "FontSize": -1.0,
+        "HorizontalAlignment": 5
       },
       {
-        "HorizontalAlignment": 5
+        "HorizontalAlignment": 6
       }
     ],
     "Types": {
@@ -789,6 +794,7 @@
         "Right",
         "000",
         "yyyy/MM/dd",
+        "General",
         "Center",
         "Body"
       ]
@@ -841,22 +847,19 @@
       "33": 5,
       "34": 5,
       "35": 5,
-      "36": 5,
-      "37": 5,
-      "38": 5,
-      "39": 5
+      "36": 5
     },
     "ColStyles": {
       "21": 6,
       "22": 6
     },
     "SheetStyle": {
-      "FontFamily": 6,
+      "FontFamily": 7,
       "FontSize": 12.0
     }
   },
   "Spans": [
-    "4,0,36,38"
+    "4,0,32,38"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -867,11 +870,10 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_insptool_tools",
-    "PageResponsiveMode": 5
+    "RelatedDataTableName": "trn_insptool_tools"
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//pMtxX0QTnIlM4ahQLNYGtprSIpLakg1ExdCH+LzhgnrFxzNQPpQmt0m/zqWN91gXSCbwhpDtas5m72EqfIUeVFhyVP3rllFOertuO/OfevKf6H0Z9BkKPq9q+1vydJIEPOuYUMyx2WaMECR9tze7soOuZlg4IgSosHJMRrspDeIrVNo6dlpgS+lRZaJekFhPVd0zrHmwqvPf2/JZhN6sRVsvvsP2B+L1DQVCBZcn5nmoxQa1nPr7By00GHb5v/m7vnauZZIHk+5+IzPZa8IAvqTZlIXLO4qEfU6HNRwymvgcCrEhtjrB3ESnwiu8W4YIxUcVXLJxMRhNH8WIvwIltpAMg7BtIZ1uTB1yqX6NeeaAGsnkX/H4G1wD+Wwjhx7StcsmmFmU8FZyNSC0BHyL1xm5yTvInEcxi+CVOKUhqm/N3wcGF7Xt6GVlL59HS9veVWd+f5cPO6VkmFo87CWkbXxrmEX8Sl772a5BN/aH4lYDN3dkN0T/poTsNTcP1ZF/bWL7PLmUz4LKTOFC/NfKEn4d+ONA+RlGC4HSwj2baJeFw2kH4sxECySc8ekLR0SEltVMXqVrP/jPW6SayD4qL0RdNBqep9eY544RxKUr6KmOpzAxD+KB7O3pezYiDK8Ah2I4XiOVFK1nzo5Vsr8NwAuZ8Rm/0rlNWoWUqp9EtWuefWZsSLB4pKAjewicmY5P8M0xwcdmqe5svHk2O7AqcHD3rJJcbT6TdS6tYFhf8VXcjjA7c8534ulKolZsyDB2ymWzZvF/CWvKgJ1erlOCijeD6TLLD0HUJD8iKxePWqmkw+3s0jbl1xHpDF6ON01pRLjxAYr0o/b24ePZSvz9eHwJuESQjkcuOgUg6LYrX9Na2uL+VXhfpnklcwlfCqNoXx+BZZsXS3lg6bEmiJYmSQ==|920
+}//+iZUQsZYdquvIAPO5NF3jGc87bnKVwLaluV+ToBUesN0ct0zjAB/5cxA4R/mhbGihd4ZF5BMev+v6NxLXpZfLWXs+AjX0KWoP8ULZ2sxmrBI5PVCLxG3OMIufdt+um9VIcP8bY2o0P4xXwRPdaciizP+zrKGyNHxrYw+m+B9V9IG3yQxNMVZnS0ETIwqmSNky13tas1BeH/Dx18+NV0yQ6q5fc7Og6d3UvPNDLPGJn6tUCxMJhYjDIE9i161N6rhP/Lkd/slLpEbzPioMRy2FVGP/zKAaxnbwrYYWYKv1r1YphfwBtdYg/h2HF+kuZyTnaSZkgmw/VtrGbtYTGsV+xWDqWJL3qbREEWABCTVo2ZOdEJqMpLhFEeDG2C16SLfem4qWX4tP+uKIglvFUECDUHsx2dFDGcHlH8Wum5b4+GaTlB77pMT1A4MZpRids+nkcLap/s2JgqjFWv25sSg2eetcUOAxMUtNBfZ3ZYL6WRpG0CB8G32NUdn0TtB9+ppAeUaC3qwKL2Ofm3OT/8ZBlqnbOUx4WVpiz1iURNytvQepEFNB0/jyvyt0q+vXUfUDnKiuIF54++yQU0MRUmP/G6GdyKYT6lTaOaUsFzbZowUdPOU5o7TTj+12ODCu98F2NUMEGwKYyjC94sc57QQ4wVcVRn17K/pDHLMxxLSjT1Q2BQhRAnazUR/ubH+oesRn4ifexGLc83A2Hvtl1L9eaJkF17QfhhBjidBe2R5BmQIpMFs+1HOrZ/we5F6Lfrs+5i+cn3zh0fv1Ka1MZeiZ14O+SHxGktLVg7SwOCST4+kyDaIWyhk6LrpUnjYZbeQQao9sVufjs3OBkpQgoV1o7ztrKO1dmvJB8kebHbtK4UMAaKzd1e48RuwS6GQRYtDufXizXqt2F92zI0OUFsVOA==|920
