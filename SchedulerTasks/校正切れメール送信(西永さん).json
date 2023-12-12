@@ -16,7 +16,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
       },
-      "ID": "3338f9b69787481b863d0e3d8f8a75b5"
+      "ID": "8a7b3f30c0164b148542611c6a8e92b2"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -25,7 +25,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
       },
-      "ID": "72a9224f56c847b7a6a7856d0312f97b"
+      "ID": "8f0b6ac0d28d48c994d4726fa8ca10d7"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -34,7 +34,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
       },
-      "ID": "10f300764a6147778d3a7dbdbe2e44de"
+      "ID": "9c400a3a14c94f78a2cdcca8cbe4853f"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -43,7 +43,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-2)+1,\"yyyy/m/d\")"
       },
-      "ID": "313f7bf407f54f50b70494aa0d1f1353"
+      "ID": "9ae67f1d3c4c4112b01dbf0d6d87d13e"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -52,7 +52,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1),\"yyyy/m/d\")"
       },
-      "ID": "e2b3bf6182874f15936d95989081fc97"
+      "ID": "234f5d94e86345d1a623313771bcdfb1"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -75,51 +75,63 @@
                     "Condition1": {
                       "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
                       "Condition1": {
-                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                        "CompareType": 3,
-                        "ColumnBindingInfo": {
-                          "TableName": "trn_insptool_tools",
-                          "ColumnName": "next_caribration_ymd"
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 3,
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_insptool_tools",
+                            "ColumnName": "next_caribration_ymd"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=今月初日"
+                          }
                         },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=今月初日"
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 5,
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_insptool_tools",
+                            "ColumnName": "next_caribration_ymd"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=今月末日"
+                          }
                         }
                       },
                       "Condition2": {
-                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                        "CompareType": 5,
-                        "ColumnBindingInfo": {
-                          "TableName": "trn_insptool_tools",
-                          "ColumnName": "next_caribration_ymd"
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_insptool_tools",
+                            "ColumnName": "category"
+                          },
+                          "Value": "社内",
+                          "LeftBracket": 1
                         },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=今月末日"
-                        }
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_insptool_tools",
+                            "ColumnName": "category"
+                          },
+                          "Value": "社外",
+                          "RightBracket": 1
+                        },
+                        "RelationType": 1
                       }
                     },
                     "Condition2": {
-                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                      "Condition1": {
-                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                        "ColumnBindingInfo": {
-                          "TableName": "trn_insptool_tools",
-                          "ColumnName": "category"
-                        },
-                        "Value": "社内",
-                        "LeftBracket": 1
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 1,
+                      "ColumnBindingInfo": {
+                        "TableName": "trn_insptool_tools",
+                        "ColumnName": "prohibition_reason"
                       },
-                      "Condition2": {
-                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                        "ColumnBindingInfo": {
-                          "TableName": "trn_insptool_tools",
-                          "ColumnName": "category"
-                        },
-                        "Value": "社外",
-                        "RightBracket": 1
-                      },
-                      "RelationType": 1
+                      "Value": "廃棄"
                     }
                   },
                   "Condition2": {
@@ -129,7 +141,7 @@
                       "TableName": "trn_insptool_tools",
                       "ColumnName": "prohibition_reason"
                     },
-                    "Value": "廃棄"
+                    "Value": "故障"
                   }
                 },
                 "Condition2": {
@@ -139,7 +151,7 @@
                     "TableName": "trn_insptool_tools",
                     "ColumnName": "prohibition_reason"
                   },
-                  "Value": "故障"
+                  "Value": "紛失"
                 }
               },
               "Condition2": {
@@ -149,7 +161,7 @@
                   "TableName": "trn_insptool_tools",
                   "ColumnName": "prohibition_reason"
                 },
-                "Value": "紛失"
+                "Value": "移管"
               }
             },
             "Condition2": {
@@ -159,21 +171,24 @@
                 "TableName": "trn_insptool_tools",
                 "ColumnName": "prohibition_reason"
               },
-              "Value": "移管"
+              "Value": "不適合"
             }
           },
           "Condition2": {
             "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "CompareType": 1,
             "ColumnBindingInfo": {
               "TableName": "trn_insptool_tools",
-              "ColumnName": "prohibition_reason"
+              "ColumnName": "pic",
+              "AttachType": {
+                "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+                "UserColumnAttachType": 1
+              }
             },
-            "Value": "不適合"
+            "Value": "西永　友香"
           }
         }
       },
-      "ID": "8043d48cd83f4b45b85de4cab022f07b",
+      "ID": "06a72c8cd4dd4b5184bf18080dff7942",
       "Comments": "校正月の案内用"
     },
     {
@@ -185,32 +200,47 @@
         "SqlCondition": {
           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
           "Condition1": {
-            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "CompareType": 3,
-            "ColumnBindingInfo": {
-              "TableName": "trn_insptool_tools",
-              "ColumnName": "kouseiyuukoukigenymd"
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "kouseiyuukoukigenymd"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=今月初日"
+              }
             },
-            "Value": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=今月初日"
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "kouseiyuukoukigenymd"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=今月末日"
+              }
             }
           },
           "Condition2": {
             "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "CompareType": 5,
             "ColumnBindingInfo": {
               "TableName": "trn_insptool_tools",
-              "ColumnName": "kouseiyuukoukigenymd"
+              "ColumnName": "pic",
+              "AttachType": {
+                "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+                "UserColumnAttachType": 1
+              }
             },
-            "Value": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=今月末日"
-            }
+            "Value": "西永　友香"
           }
         }
       },
-      "ID": "82dbf01a1a704daeb97671c0b173c114",
+      "ID": "d42a17043bbb408a90d21b71a8c8eb97",
       "Comments": "有効期限が切れる案内"
     },
     {
@@ -224,38 +254,53 @@
           "Condition1": {
             "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
             "Condition1": {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "CompareType": 5,
-              "ColumnBindingInfo": {
-                "TableName": "trn_insptool_tools",
-                "ColumnName": "kouseiyuukoukigenymd"
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 5,
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "kouseiyuukoukigenymd"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=先月末日"
+                }
               },
-              "Value": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=先月末日"
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "usage"
+                },
+                "Value": "使用可"
               }
             },
             "Condition2": {
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_tools",
-                "ColumnName": "usage"
+                "ColumnName": "category"
               },
-              "Value": "使用可"
+              "Value": "非校正"
             }
           },
           "Condition2": {
             "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "CompareType": 1,
             "ColumnBindingInfo": {
               "TableName": "trn_insptool_tools",
-              "ColumnName": "category"
+              "ColumnName": "pic",
+              "AttachType": {
+                "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+                "UserColumnAttachType": 1
+              }
             },
-            "Value": "非校正"
+            "Value": "西永　友香"
           }
         }
       },
-      "ID": "987b690877f048628e1274f7e92f79c6",
+      "ID": "7918d7132a964ac9aca8941d5b425fb3",
       "Comments": "校正切れの案内用"
     },
     {
@@ -323,7 +368,7 @@
           }
         }
       },
-      "ID": "3794b51142c24ab08bf83ddbc4b3be2b",
+      "ID": "6aa994a8e2e147f9801e80dcb9fb1b12",
       "Comments": "校正切れの案内用"
     },
     {
@@ -379,9 +424,9 @@
               "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
               "From": "equipment@rorze.com",
               "Subject": "校正測定機器の期限について",
-              "Content": "担当者さま\r\n\r\nForguncy計測機器タスクからの自動送信メールです。([=今月])\r\n①今月の校正対象測定機器は[=今月校正数]件あります。\r\n[%PageNavigate=(今月校正対象機器リスト (品証),こちらをクリック)%]\r\n②今月の校正有効期限が切れる測定機器は[=今月期限数]件あります。\r\n[%PageNavigate=(今月校正有効期限機器リスト (品証),こちらをクリック)%]\r\n③先月の校正有効期限が切れた測定機器は[=校正切れ数]件あります。\r\n[%PageNavigate=(先月校正有効期限機器リスト (品証),こちらをクリック)%]\r\n[=校正切れ数機器リスト{1}]\r\n\r\n以上\r\n",
+              "Content": "西永　友香 さま\r\n\r\nForguncy計測機器タスクからの自動送信メールです。([=今月])\r\n①今月の校正対象測定機器は[=今月校正数]件あります。\r\n[%PageNavigate=(今月校正対象機器リスト,こちらをクリック)%]\r\n②今月の校正有効期限が切れる測定機器は[=今月期限数]件あります。\r\n[%PageNavigate=(今月校正有効期限機器リスト,こちらをクリック)%]\r\n③先月の校正有効期限が切れた測定機器は[=校正切れ数]件あります。\r\n[%PageNavigate=(先月校正有効期限機器リスト,こちらをクリック)%]\r\n\r\n以上\r\n",
               "EnhancedRecipient": {
-                "CommonValue": "kai.rie@rorze.com"
+                "CommonValue": "nishinaga.yuka@rorze.com"
               },
               "EnhancedCC": {
                 "CommonValue": "sakashita.noriko@rorze.com"
@@ -390,13 +435,13 @@
                 "CommonValue": "murao.yuji@rorze.com"
               },
               "Priority": "high",
-              "ID": "a567d8dc454a4bfa9b1949caaf6f7965"
+              "ID": "21277358742e46ec88fb00e34980e7e1"
             }
           ],
-          "ID": "62d3d71e-ac4a-4764-88b5-e796c3a18d37"
+          "ID": "6887199d-4b2f-42d4-a339-504179b88084"
         }
       ]
     }
   ],
-  "Name": "校正切れメール送信"
+  "Name": "校正切れメール送信(西永さん)"
 }
