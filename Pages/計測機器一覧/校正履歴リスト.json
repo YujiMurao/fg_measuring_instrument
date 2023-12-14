@@ -297,13 +297,10 @@
       "NameUsedInJavaScript": "状態"
     },
     "5,38": {
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "FGC_AssignTo",
-        "AttachType": {
-          "$type": "ForguncyDataAccess.AssignToColumnAttachObj, ForguncyDataAccess",
-          "UserColumnAttachType": 1
-        }
+        "ColumnName": "申請者"
       },
       "NameUsedInJavaScript": "担当者.氏名"
     },
@@ -783,10 +780,7 @@
       "4,35": 18,
       "4,36": 17,
       "4,37": 17,
-      "4,38": 18,
-      "4,39": 17,
-      "4,40": 17,
-      "4,41": 17,
+      "4,38": 15,
       "4,42": 15,
       "4,47": 15,
       "4,52": 16,
@@ -829,10 +823,7 @@
       "5,35": 22,
       "5,36": 17,
       "5,37": 17,
-      "5,38": 18,
-      "5,39": 17,
-      "5,40": 17,
-      "5,41": 17,
+      "5,38": 15,
       "5,42": 24,
       "5,47": 24,
       "5,52": 16,
@@ -2131,7 +2122,6 @@
     "5,19,1,12",
     "5,31,1,4",
     "5,35,1,3",
-    "5,38,1,4",
     "5,42,1,5",
     "5,47,1,5",
     "6,1,28,59",
@@ -2144,9 +2134,10 @@
     "4,19,1,12",
     "4,31,1,4",
     "4,35,1,3",
-    "4,38,1,4",
     "4,42,1,5",
-    "4,47,1,5"
+    "4,47,1,5",
+    "5,38,1,4",
+    "4,38,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2166,7 +2157,7 @@
             }
           ]
         },
-        "ID": "aec649cc35144c6ebbda23a94595a596"
+        "ID": "dc290a4d042a47b3963d56ec481f0628"
       }
     ],
     "AuthorizeInfo": {
@@ -2174,11 +2165,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "trn_insptool_tools",
+    "RelatedDataTableName": "trn_insptool_calibration_history",
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}//xV5WwLkc22PUQhaU6NGcV3VXvhfDqJQ7kHnFxHMZbkLLRUSKfPixyNJp/2F5mYYWTRyDbBY8cZeEVj2xcCGXD0GR2D+XMF9wFH9OmQOfzYDi7/sbBi4pdvnAeSy14vjQLSm/RRZbWSI2z4JMLC2G3/lC4jlWNEd3oHuM1Sy3volQ4aOmvwSTJn/ygqukZdrAtU3T2VN3mqxhzA37V77pF0cnz0nB1wkcG8gdniRbGDDwr8cSZez3uo8T4xIB0ALU/NnuavS1IQPykMST89aRhikzY/2oZZd3ItEbfYQgedj+kNfJhVtsLtHQvz/TcBRphE8TaSVzQkfwcqSZeAH4k1uHOLZ+JMql7mmSucd0V8E755z03eBUEuVGmLPDjg/1wH3hvGR5JxPB84qUi8dQA2BYNivdAJCSWwG0VxEpeUjpPqZ9UkOGGRfBqWJ7LmNkXkL0dtZuwZhnjOsq1/CqOh/DSJFst5YjeeBqITuDIx1DfSCLmo4oGIl4kxNarhnzqI8yA18HdFzXkSw68O65EyoYjxT8S11WGYTVmlGibkkHFbgtwYxy3hll+e6uAkIqZmrlT5EebQpH0vYm3Y76GX9y2Bup+zRCbd/JJBh2F+6mQqRjRu0U/CHO60qw3p/PoS1CYoy8uYqfi6KtJwAvF2no6JVzuoO1Ki7rcsrw3ofOh7enXonDnNmNP+rwaBnArVE1H2bvmCMxbZUhEVEVgY7Qh5Kq4qhKniKhejDZikoKKSmxiBlR6aDfdvmMmZ4oWoUYh6rSkVeOxu5L9B0doXTfQoSaLda3FCbuqAhYYKjYWk1BWPJmf+Fjx1DQ9hQ65lFZ1gR5qCyS5R+1YV/wlnY5FTFBLHnUoj7gnnx167miGk7H+2KvvtJh2JO+tAkSHOygC8UI9G7gG7J9lZaqVA==|920
+}//Jx/5AhqOlFx+phGlajuxK4MLactPL0LjJN9EN7u4ymyNf/xVTQaclvV3Fm8uUeiVxGfegBavyYKGnTDEjzQ6qLmxE21vRe1XiGOotqLjeBYO9hKvQ5GM1XIlPNQu1H/C95NyvxgR4gEZnAwPDIqukwRzAJAqmYUwWFMFeXKv0Y1HVSNhwCmXr97MOdgT3yPii3dxn4/i/wnNfl7RIbIKPOrY9dLA7BjTG1RVXl3D7N3Bi93xxPBHR1l8gwuX++GCHbSR+ZGwUfzzEjLv/43GIRjRKiJXoewP5hGgpUKYIa/B/Jq3lK4PqFqeYqtJuSk5HN6yPpJvWPZeBOelVK42IRoEInsCGFd3NJw5BgQ/JkTDUUKWDXPMEDsm1MffKQ55Az4e8y759jMGIVthwTNEyWeKOadBFSDRL92guttIJqZMP7Z2n1/iSzFFLsmTEMhA5KMuakVbQUbl6Ll+gGsfFMt2lsel9fDu/QDOZNcc160Fa5JoozFOkTKD2ptvHRojixIlVvAtBcyuIMq5GcRLxvp9R7YfKjwUTEhcNPjYT0OzSjcDlyJAQA9g8eUNhhUCCsmDXsbRRn58JbV9vUkYVyHjvkEXQ3y8D/Ag1unbEyjX+2MsssYdGBnANyZ5HrzZrQqchySBz0vnGGPYKGCqThBYUlrMoY+NWQ+YKSScACY1Dv3P1jqOkDywF3HSrG93vAto5o0TNaPHEzUXgVCCrF+Sy9APQdxX4jujEdH60ONj8ggjECm2c34MhcZ6s0HnCnEwS6TG9YkAu5pF58fwl4K4liYLRMngmEWB+N+8huB+Njq6U92HJRjRBUSEoc5RidozlfEM9eN5A8Aqt+q/kGHbHv5w5JtTKOA3WAb7sl3UT1Sw1RlG7kj/DqncGir4ps3Iybr+mDZ1pfxjkY6jDw==|920
