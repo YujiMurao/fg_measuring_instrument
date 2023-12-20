@@ -293,7 +293,7 @@
     "0,14": "計測機器",
     "0,23": "'2023/11月校正対象機器",
     "0,33": "'2023/11月有効期限機器",
-    "0,43": "'2023/10月有効期限機器",
+    "0,43": "'2023/10月以前有効期限",
     "2,24": 2000,
     "2,34": 10,
     "2,44": 50,
@@ -363,7 +363,7 @@
                   }
                 },
                 "Params": [],
-                "ID": "f15340d69bec4c29802f6e857c38ff2c"
+                "ID": "6827b0da14e649afbd981c31c6cc44bc"
               }
             ],
             "CanVisitRoleList": [
@@ -435,7 +435,7 @@
               "Value": "使用可"
             },
             "Params": [],
-            "ID": "02ebc51a05cb4f2a82485b0d64ce8c99"
+            "ID": "463d6e72e8584d0c89839a98d76b66bd"
           }
         ],
         "Text": "すべての計測機器",
@@ -537,7 +537,7 @@
               }
             },
             "Params": [],
-            "ID": "35eaef77911f48b7b4569853b42f4ded"
+            "ID": "65dab04ddea342c3bc64e5002a36e767"
           }
         ],
         "Text": "すべての記録文書",
@@ -568,30 +568,12 @@
               "Value": "社外"
             },
             "Params": [],
-            "ID": "133d54312516461a865a2cf2c638c68e"
+            "ID": "9615a6cbfe794fc2b39e4e5b62f8b22f"
           }
         ],
         "Text": "定期校正対象計測機器",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "Enabled": true,
-            "AllowRoles": [
-              "Administrator",
-              "品質保証課（編集者）",
-              "品質保証課",
-              "IT戦略室"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal2"
       }
     },
     "41,2": {
@@ -647,25 +629,7 @@
           }
         ],
         "Text": "管理番号マスター",
-        "ClickMode": 1,
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "Enabled": true,
-            "AllowRoles": [
-              "Administrator",
-              "品質保証課",
-              "品質保証課（編集者）",
-              "IT戦略室"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "ClickMode": 1
       }
     },
     "49,2": {
@@ -682,25 +646,7 @@
         ],
         "Text": "測定機器一覧マスター",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "Enabled": true,
-            "AllowRoles": [
-              "Administrator",
-              "品質保証課",
-              "品質保証課（編集者）",
-              "IT戦略室"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal2"
       }
     },
     "51,2": {
@@ -724,30 +670,12 @@
               }
             },
             "Params": [],
-            "ID": "095e3350a45c429085d263ff94d5eb3d"
+            "ID": "d567b37d347d4eb4baa51bfa23737033"
           }
         ],
         "Text": "校正・修理・廃棄履歴マスター",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "Enabled": true,
-            "AllowRoles": [
-              "Administrator",
-              "品質保証課",
-              "品質保証課（編集者）",
-              "IT戦略室"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal2"
       }
     },
     "53,2": {
@@ -770,29 +698,11 @@
               }
             },
             "Params": [],
-            "ID": "92cf0c4284fe41f88713b02663c3bc6a"
+            "ID": "5e5092d0bbe94b3096d4084ef095d1f1"
           }
         ],
         "Text": "記録文書マスター",
-        "ClickMode": 1,
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "Enabled": true,
-            "AllowRoles": [
-              "Administrator",
-              "品質保証課（編集者）",
-              "品質保証課",
-              "IT戦略室"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "ClickMode": 1
       }
     },
     "55,2": {
@@ -853,30 +763,12 @@
               }
             },
             "Params": [],
-            "ID": "9b8434e634364fb997c048c467b46061"
+            "ID": "02b71aa2244f4e368d340de6e86ed668"
           }
         ],
         "Text": "校正対象機器",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "Enabled": true,
-            "AllowRoles": [
-              "Administrator",
-              "IT戦略室"
-            ]
-          },
-          {
-            "Scope": 1,
-            "Enabled": true,
-            "AllowRoles": [
-              "Administrator",
-              "IT戦略室"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal2"
       }
     }
   },
@@ -1903,7 +1795,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
         },
-        "ID": "9a260a428db04b3f9b82f55f58365ed8"
+        "ID": "fbd55a7cf4844fd5b7c3a4021194f46e"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1912,7 +1804,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
         },
-        "ID": "93ea8efa128a4db797cb33748817d499"
+        "ID": "5bba410fbe024ba28af017510fca105b"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1921,7 +1813,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
         },
-        "ID": "c326477e91aa4ea2a781a09938811372"
+        "ID": "0bc9407b1f68459aabed60b08402e103"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2042,7 +1934,7 @@
             }
           }
         },
-        "ID": "7fc8ccf0b35342129644710cb7ae3088"
+        "ID": "628825c0862b4529a2b70e832be4951b"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2078,7 +1970,7 @@
             }
           }
         },
-        "ID": "db62dab0e1894ce892466848fb4dab3c"
+        "ID": "85009a4de4c242e6a96b591c01504c06"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2087,7 +1979,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)-1,\"yyyy/m\")"
         },
-        "ID": "c7ce2a58ad3e43229ccc40bef52e8731"
+        "ID": "363883ca6696493db90a15c2dcb28846"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2146,7 +2038,7 @@
             }
           }
         },
-        "ID": "a7b7e87e07de46f5b94bc94d32123619"
+        "ID": "7e4ab688f90f4130b9ebc91702ccb4c7"
       },
       {
         "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2219,4 +2111,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//6ElMC0cFCG9YZP2SP4INHaCmpyaqTdNa49hmd3CInLhDvQWWEc4JJSKOQbd4WwQGYoW2k0iThW74Q62hrhgWD0tBRd1C1EC/f7fkVGiILnhwZz48fn2fMFd/pG/3ttmDH8FjIinaiBYNe6A5jeI1Ifmo0CAlyFb4d9keExO1Ai9lY0SAAN12T6oPn92GV5uLMk7H35VQHFADq5gffvj9yqTRzlSndAA2d09nymy+eRQQ23td4NInFdGj4bqW1yexDDQcviuCdMRz3c2PDKLeayqUJgruQb+FAQ6FSQWA//6Kl1K95ZMHfRjwi2514PQ9IJKRe2r6G/CzeU2PqTAicYHJl4BC0IpTVa7DlTGMMbscRxohXpv4pk3Hzxg9ghhh391GgxqcRXrdyL37xj4IzTqO6qhfnI3COcpdWvfbV1t3IPGtxJc5y6s/yb3FMMEM5/gCY7BibtCJSa7C391uL+5qtRGAd/Xf2aRwqsRIZeLVbe0rSaALhMwRGcKsKYPCyQOUe4ELGZnkoTN+SDlqRR3owV75hWT5668ZgLvKEgKB8hEJ09Jt5CuIQxv0H9idTnnc0A1W3vLlgfkUPX4/hQVJZYg0veprRMh3N6P8pscS0GvBZxoLbWcakxpEFzgp96lDBilbzW2VF5HGEM+hbgD4WF4LahWp1jSLsyEzW74OeczdCyOo3EVJSscFqxBrQ2h8vyEMAgthkJ2/V6/4rsijoROISe2xmrTYxEjDLrFN7YWZpUo+irc8FuRCnub2xPF+g2HR2NnraU7HSR8MCoc0rjahLvuPZTTRkRdN33xHlnY0LIuFxM/XcjM1DvYWM7sfRJxfOTK8CliUOOR2whyiYlfGWarYiUUkiVXRahq7BzLdU2SMbvIxKwrXAX3oNOgwF2NNjE3E4OxxI3rJdQ==|920
+}//J8DYDUmkbZj0T/EaK+HZBhopUX9BSNjO5InifEd87EyZdIDR0MT0Zp3jbQaA6CIzSIYZ0ka1uzPx19fT5sxtEuKznxuuLBXowZuKIgqfzFP0sNqbBohHSA8+uD2T4+t4LzDdDCjPVGBW6/jvXe9iAl47ZNJdk11X10ukEer3tiBCjvf37O8t8jfRQPkoUOFJi9p1incqvnlh1cZPUxVawIio/fy1j35bAHooolokJWHKRKu7P93P65SByxxSyzZBfNsklzJIpbeMh2EtB5O+zJ7kf8PwEQMwq8h6WkheRfIcbyrTj4pnC3J2igwiogiQZKNuPLCB1B4SljCIhAVngJNE/HJFD2bkHa9c/seYeLulL67fa6GG6cGBpIAH6dpRzB210VigGsXMiaHn2FAvaDMiA5ZICZvrPpNaD824FmO9n4dTT7In6DacEbmvt0gUzFv1/ubNKT7y3hy7LiiKkqjgdcLntkZf1IbvOwT5S8Luxf6mYmUz/XjPTjGqBMrxDOlaJdshG8M0SNlksMsJcQ+gYJ2XkMREMrLyT1Z99/rhg7Kl2qk3TVP3Ln1YWSIkSw4QwdrTIpZ5lqQN5i49As3SBRu7wt/ZlBwQ1bjVbxI4/ip9ZbUknLBA+PBoiHMWXg9SWKeldCTMFNW/x4EiKRqGoukkrx740cZVhM4CaACd1dr77YNDLTnW5d0h0YSiCGJ9NlWq+Wu+FhSQiRJB7cYl3ha4FdDWWD7chPuEgctDX2jfcSuV9mCeV7Bsg6DdqTczmuF9kaibFhYKtd9IqO0Q/ad1D//PO9jPHxLcvvREY2LAOzo1HXAyuYqyBOii95NxJ/lOpdfRV1c/z/f+tyzH+5+hdNz+DzEiYb7QYMkcm40yiFrnJbyoVPDtgKBke1ASL7U5IcJeihRsHcLCxw==|920
