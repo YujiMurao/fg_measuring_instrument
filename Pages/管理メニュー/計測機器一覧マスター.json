@@ -210,9 +210,14 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 75.0
         }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 75.0
+        }
       }
     },
-    "Count": 38,
+    "Count": 39,
     "DefaultSize": 80.0
   },
   "Values": {
@@ -249,7 +254,8 @@
     "1,32": "校正有効期限",
     "1,33": "通知日",
     "1,36": "ファイル",
-    "1,37": "校正要否"
+    "1,37": "校正要否",
+    "1,38": "0非公開1公開"
   },
   "AttachInfos": {
     "0,6": {
@@ -374,7 +380,7 @@
                     "NewOtherName": ""
                   }
                 ],
-                "ID": "8fc63ef5-5c2e-4149-afff-aa8e62389855"
+                "ID": "2a7cf919-a383-46ad-90ec-b360f3d3e2fb"
               }
             ]
           }
@@ -437,7 +443,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "286a61e7-c07e-42a3-8ac9-972f3aea7e66"
+                    "ID": "0d266814-bea9-40a9-91ae-0b6644ef0c59"
                   },
                   {
                     "Condition": {
@@ -473,7 +479,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "66f99276-044c-498a-a4d3-f4bfa3a73ab3"
+                    "ID": "87a1c7fa-258e-4ec1-8786-cc6e30ddbddb"
                   }
                 ]
               },
@@ -498,7 +504,7 @@
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_tools",
         "RowIndex": 2,
-        "ColumnCount": 38,
+        "ColumnCount": 39,
         "RowCount": 34,
         "IsTotalRowVisible": true,
         "IsTotalRowAtFirstRow": true,
@@ -757,6 +763,13 @@
         "TableName": "trn_insptool_tools",
         "ColumnName": "calibration_enabled"
       }
+    },
+    "3,38": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "公開"
+      }
     }
   },
   "StyleDatas": {
@@ -780,10 +793,10 @@
         "Formatter": 4
       },
       {
-        "FontSize": -1.0,
         "HorizontalAlignment": 5
       },
       {
+        "FontSize": -1.0,
         "HorizontalAlignment": 6
       }
     ],
@@ -794,8 +807,8 @@
         "Right",
         "000",
         "yyyy/MM/dd",
-        "General",
         "Center",
+        "General",
         "Body"
       ]
     },
@@ -812,46 +825,47 @@
       "3,29": 4,
       "3,31": 4,
       "3,32": 4,
-      "3,33": 4
+      "3,33": 4,
+      "3,38": 5
     },
     "RowStyles": {
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 5,
-      "10": 5,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
-      "18": 5,
-      "19": 5,
-      "20": 5,
-      "21": 5,
-      "22": 5,
-      "23": 5,
-      "24": 5,
-      "25": 5,
-      "26": 5,
-      "27": 5,
-      "28": 5,
-      "29": 5,
-      "30": 5,
-      "31": 5,
-      "32": 5,
-      "33": 5,
-      "34": 5,
-      "35": 5,
-      "36": 5
+      "4": 6,
+      "5": 6,
+      "6": 6,
+      "7": 6,
+      "8": 6,
+      "9": 6,
+      "10": 6,
+      "11": 6,
+      "12": 6,
+      "13": 6,
+      "14": 6,
+      "15": 6,
+      "16": 6,
+      "17": 6,
+      "18": 6,
+      "19": 6,
+      "20": 6,
+      "21": 6,
+      "22": 6,
+      "23": 6,
+      "24": 6,
+      "25": 6,
+      "26": 6,
+      "27": 6,
+      "28": 6,
+      "29": 6,
+      "30": 6,
+      "31": 6,
+      "32": 6,
+      "33": 6,
+      "34": 6,
+      "35": 6,
+      "36": 6
     },
     "ColStyles": {
-      "21": 6,
-      "22": 6
+      "21": 5,
+      "22": 5
     },
     "SheetStyle": {
       "FontFamily": 7,
@@ -859,7 +873,7 @@
     }
   },
   "Spans": [
-    "4,0,32,38"
+    "4,0,32,39"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -881,4 +895,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//u9tVlCtdLKHpSoyhTcZ17i44qJmLjOgPt/Bcqzv7d+crocGkY98/5abvgKsl+5a9jY1HGK35GDu7aH+Cx4LXgLXs54ZpsBC/56m0dlHqpNyhlEhBKs2+c9jDpMcXzoHn8xIs1kIeQYnhj+PKENqnwbrMgYyrhUF5vMZnsSOcB4pPrulJwXKLoHtTSbcUXU7XN15xu8fMkbw2Lon4NXk+CB4M7iHNBgB/tk4LD6atPhtrUIzI/v0A4uv4H+HOHgnqC5jYaZYYylLh8RTh/u9+tM7kCD4/6/LxVcs8E1SRRRF+Um2BeynhT2+IGfcFp5pTjDHlCDYlitV/VjV4CY7o2droLW4DF6YGYZndLcoEPNOok20q3h04t+c6vxWORX6qfFSGZ2hkXziMT7vu7qj4Ghy77ZGwtwNemhmlypelKtdEfp7wDiWr9osXMXYIPTP4cYGHyn2UK4E6RIIIslzMb4N+OIe8DMO7OfPIYyHz1ZsT2maYOt2E+qt+WG0rwMXyqWn3NvDN3CjvYHJsfeYelmECqSl5ORfFVpM7/5WHOy4AoHFJMLmKAbQfX+PTvJ5ytsdL4wNE9SZVGhA+Y8zvO2tSDzJkeOF9ntKiFBMF6zoIdMD26BeczfH+iabzwQhKuuOq6/yYMEFZGeRHvpSL/Pc0yQFjN9YE79suvPJveHdb9HkQQtEP3nsSDeOnkzxMGgNdW//1pFFm3XSNNWDu2Kw9xPB8GSo/NkVyYNo0ioWAfRjGakkHpMhwMVznpv/UwnyX1zDSR+R/USZ9J+548TYWLPvewSf0x5XT5xP1615GgWVgT1jV9zG4lutbW74nJ6nUrTvcuE1SfIbCMbjy7yEFr6UBtaCEUCJ+iWygxz8x300oChcDvw4r7oLODBjOsTv7BZAxRvrMuR3K1zPK9A==|920
+}//bSaHEaS9GKJ12OkEAcD01sYs1c0m4GpJqNlGxtg183xdbfKqCIEMMUIeC/WRBhoF9WjQnsM+BOG9OI3S3kqTmwVDXaWhuwnTWtRciTPoBVKt3VgyAu+/6E8OjLjrFDodtNU0/ZVVOOG68Gg6LFmZ5eBwm0aUNsCkWNYfGk2NsMBLfCoi2cb0P+dYjPiPaFJBBYg09j2VmHCY6m267KbhYunQbwI4dmfoUA8XcsMQZP44ExJnf699Y0oMZe1LVF8zNlYk2BJMuhH75EXA9vhFUE7cOBLbE9ABiZnu60YC49MfUvM7qVsls2h35P+tiKZmqtF83oaJRvNiB+53AbXMEOFQA+SlVAikgNoQT6Ehyqqq1CAqcLFffIntzLb1EJmq8OLMa/itCdipaR6Zbatz6Ji7ZE9XawaPtR6y5s5jrOfJObeG0a6vk3PF58UVM9dx47x1K1yZh27Tx6ZAPlFRl+EC4c2xtA0yE+66DA/4CKHWxeFxnINDXxFl2bn+uGf28KAzWig9Tye90F1KSizpbRG7UYeHenmFM6mC87RlCzbGP48nVlbyPglretE6LPKBWLVqUmEJkaTh8IZ9pRSjatoosX4b2oMhaW9Ge3RTUIl1PQ40CggfP3pS4lVm9BlAR783DPERCehPIV2CPqcZ9G5xJnWiLA58taWiijR1NXPrguAKdqS9gSp/LgbEwHwB7akE3COPm2qtuizIyzbMP/+uUY/YW4dy7GZILla1mCTrbxhiBgWD6kdGLDUWD0vWhe4cbM/oLZ9CSytQIaOzYC9N0cgQoUiq7I8gNoZ+ajvzZrluQTr8jRR0O7Cwmnuv1FHeZG4kHMzd6QnDZlxX41EE6wzWWFnfm6oyPESVwV89nBAPxlqe7zIIXPTmE0hedLmZb9bIcdBIYr0FFW+4bg==|920
