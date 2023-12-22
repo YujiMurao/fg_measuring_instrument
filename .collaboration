@@ -310,7 +310,16 @@
   },
   {
     "ModuleName": "PCPage/計測機器一覧マスター",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-12-22T09:57:05.6639927+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\管理メニュー\\計測機器一覧マスター.json"
+    ]
   },
   {
     "ModuleName": "PCPage/校正修理廃棄履歴一覧マスター",
@@ -342,7 +351,16 @@
   },
   {
     "ModuleName": "MasterPCPage/masterpage",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-12-22T09:57:05.6729953+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\masterpage.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/校正切れメール送信",
