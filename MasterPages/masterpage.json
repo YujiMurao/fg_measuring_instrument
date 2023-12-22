@@ -299,6 +299,7 @@
     "2,44": 50,
     "12,1": "計測機器一覧",
     "14,2": "すべての計測機器",
+    "16,2": "すべての計測機器(品証用)",
     "19,1": "計測機器一覧(担当者向け）",
     "21,2": "校正対象リスト",
     "23,2": "今月校正対象機器リスト",
@@ -363,7 +364,7 @@
                   }
                 },
                 "Params": [],
-                "ID": "6827b0da14e649afbd981c31c6cc44bc"
+                "ID": "f1eda13342144806bc0382696c8c85b6"
               }
             ],
             "CanVisitRoleList": [
@@ -427,20 +428,80 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "trn_insptool_tools",
             "SqlCondition": {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "ColumnBindingInfo": {
-                "TableName": "trn_insptool_tools",
-                "ColumnName": "usage"
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 1,
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "usage"
+                },
+                "Value": "使用禁止"
               },
-              "Value": "使用可"
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 3,
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "公開"
+                },
+                "Value": "1"
+              }
             },
             "Params": [],
-            "ID": "463d6e72e8584d0c89839a98d76b66bd"
+            "ID": "9835b0ee2ebf4d7187d373985c768623"
           }
         ],
         "Text": "すべての計測機器",
         "ClickMode": 1,
         "TemplateKey": "_RS_Normal2"
+      }
+    },
+    "16,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "測定機器検索",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_insptool_tools",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "usage"
+              },
+              "Value": "使用禁止"
+            },
+            "Params": [],
+            "ID": "caedc493754246e39615b251bd2041df"
+          }
+        ],
+        "Text": "すべての計測機器(品証用)",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal2",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "FGC_Anonymous",
+              "IT戦略室"
+            ]
+          }
+        ]
       }
     },
     "21,2": {
@@ -537,7 +598,7 @@
               }
             },
             "Params": [],
-            "ID": "65dab04ddea342c3bc64e5002a36e767"
+            "ID": "8ec4393647134c4bbf262fa5270cb667"
           }
         ],
         "Text": "すべての記録文書",
@@ -568,7 +629,7 @@
               "Value": "社外"
             },
             "Params": [],
-            "ID": "9615a6cbfe794fc2b39e4e5b62f8b22f"
+            "ID": "eb249d13f0ca46b9a0811d9fc527d306"
           }
         ],
         "Text": "定期校正対象計測機器",
@@ -670,7 +731,7 @@
               }
             },
             "Params": [],
-            "ID": "d567b37d347d4eb4baa51bfa23737033"
+            "ID": "51b6393fbd6441d8bf29573940ef6ef5"
           }
         ],
         "Text": "校正・修理・廃棄履歴マスター",
@@ -698,7 +759,7 @@
               }
             },
             "Params": [],
-            "ID": "5e5092d0bbe94b3096d4084ef095d1f1"
+            "ID": "e3ea1013ce5c4be592685f3902bc2683"
           }
         ],
         "Text": "記録文書マスター",
@@ -763,7 +824,7 @@
               }
             },
             "Params": [],
-            "ID": "02b71aa2244f4e368d340de6e86ed668"
+            "ID": "764e3c339a7d426b8ccf0a617a0162e4"
           }
         ],
         "Text": "校正対象機器",
@@ -916,10 +977,6 @@
       },
       {
         "Background": 18,
-        "FontFamily": 10
-      },
-      {
-        "Background": 18,
         "FontFamily": 10,
         "Formatter": 14
       },
@@ -935,6 +992,10 @@
         "FontFamily": 10,
         "Foreground": 13,
         "Underline": false
+      },
+      {
+        "Background": 18,
+        "FontFamily": 10
       },
       {
         "Background": 18,
@@ -1197,7 +1258,7 @@
       "15,65": 25,
       "16,0": 25,
       "16,1": 25,
-      "16,2": 29,
+      "16,2": 28,
       "16,3": 25,
       "16,4": 25,
       "16,5": 25,
@@ -1235,7 +1296,7 @@
       "18,12": 25,
       "18,65": 25,
       "19,0": 25,
-      "19,1": 30,
+      "19,1": 29,
       "19,2": 25,
       "19,3": 25,
       "19,4": 25,
@@ -1248,7 +1309,7 @@
       "19,12": 25,
       "19,65": 25,
       "20,0": 25,
-      "20,1": 30,
+      "20,1": 29,
       "20,2": 25,
       "20,3": 25,
       "20,4": 25,
@@ -1261,8 +1322,8 @@
       "20,12": 25,
       "20,65": 25,
       "21,0": 25,
-      "21,1": 30,
-      "21,2": 31,
+      "21,1": 29,
+      "21,2": 30,
       "21,3": 25,
       "21,4": 25,
       "21,5": 25,
@@ -1288,7 +1349,7 @@
       "22,65": 25,
       "23,0": 25,
       "23,1": 25,
-      "23,2": 32,
+      "23,2": 31,
       "23,3": 25,
       "23,4": 25,
       "23,5": 25,
@@ -1314,7 +1375,7 @@
       "24,65": 25,
       "25,0": 25,
       "25,1": 25,
-      "25,2": 32,
+      "25,2": 31,
       "25,3": 25,
       "25,4": 25,
       "25,5": 25,
@@ -1339,8 +1400,8 @@
       "26,12": 25,
       "26,65": 25,
       "27,0": 25,
-      "27,1": 29,
-      "27,2": 32,
+      "27,1": 32,
+      "27,2": 31,
       "27,3": 25,
       "27,4": 25,
       "27,5": 25,
@@ -1366,7 +1427,7 @@
       "28,65": 25,
       "29,0": 25,
       "29,1": 25,
-      "29,2": 31,
+      "29,2": 30,
       "29,3": 25,
       "29,4": 25,
       "29,5": 25,
@@ -1404,7 +1465,7 @@
       "31,12": 25,
       "31,65": 25,
       "32,0": 25,
-      "32,1": 30,
+      "32,1": 29,
       "32,2": 34,
       "32,3": 25,
       "32,4": 25,
@@ -1519,11 +1580,11 @@
       "40,9": 25,
       "40,10": 25,
       "40,11": 10,
-      "40,12": 29,
+      "40,12": 32,
       "40,65": 25,
       "41,0": 25,
       "41,1": 25,
-      "41,2": 31,
+      "41,2": 30,
       "41,3": 25,
       "41,4": 25,
       "41,5": 25,
@@ -1533,11 +1594,11 @@
       "41,9": 25,
       "41,10": 25,
       "41,11": 10,
-      "41,12": 29,
+      "41,12": 32,
       "41,65": 25,
       "42,0": 25,
       "42,1": 25,
-      "42,2": 29,
+      "42,2": 32,
       "42,3": 25,
       "42,4": 25,
       "42,5": 25,
@@ -1547,11 +1608,11 @@
       "42,9": 25,
       "42,10": 25,
       "42,11": 10,
-      "42,12": 29,
+      "42,12": 32,
       "42,65": 25,
       "43,0": 25,
       "43,1": 25,
-      "43,2": 31,
+      "43,2": 30,
       "43,3": 25,
       "43,4": 25,
       "43,5": 25,
@@ -1561,11 +1622,11 @@
       "43,9": 25,
       "43,10": 25,
       "43,11": 10,
-      "43,12": 29,
+      "43,12": 32,
       "43,65": 25,
       "44,0": 25,
       "44,1": 25,
-      "44,2": 29,
+      "44,2": 32,
       "44,3": 25,
       "44,4": 25,
       "44,5": 25,
@@ -1575,11 +1636,11 @@
       "44,9": 25,
       "44,10": 25,
       "44,11": 10,
-      "44,12": 29,
+      "44,12": 32,
       "44,65": 25,
       "45,0": 25,
       "45,1": 25,
-      "45,2": 31,
+      "45,2": 30,
       "45,3": 36,
       "45,4": 25,
       "45,5": 25,
@@ -1589,7 +1650,7 @@
       "45,9": 25,
       "45,10": 25,
       "45,11": 10,
-      "45,12": 29,
+      "45,12": 32,
       "45,65": 25,
       "46,0": 25,
       "46,1": 25,
@@ -1603,11 +1664,11 @@
       "46,9": 25,
       "46,10": 25,
       "46,11": 10,
-      "46,12": 29,
+      "46,12": 32,
       "46,65": 25,
       "47,0": 25,
       "47,1": 25,
-      "47,2": 32,
+      "47,2": 31,
       "47,3": 25,
       "47,4": 25,
       "47,5": 25,
@@ -1617,11 +1678,11 @@
       "47,9": 25,
       "47,10": 25,
       "47,11": 10,
-      "47,12": 29,
+      "47,12": 32,
       "47,65": 25,
       "48,0": 25,
       "48,1": 25,
-      "48,2": 29,
+      "48,2": 32,
       "48,3": 25,
       "48,4": 25,
       "48,5": 25,
@@ -1631,7 +1692,7 @@
       "48,9": 25,
       "48,10": 25,
       "48,11": 10,
-      "48,12": 29,
+      "48,12": 32,
       "48,65": 25,
       "49,0": 25,
       "49,1": 25,
@@ -1645,11 +1706,11 @@
       "49,9": 25,
       "49,10": 25,
       "49,11": 10,
-      "49,12": 29,
+      "49,12": 32,
       "49,65": 25,
       "50,0": 25,
       "50,1": 25,
-      "50,2": 29,
+      "50,2": 32,
       "50,3": 25,
       "50,4": 25,
       "50,5": 25,
@@ -1659,7 +1720,7 @@
       "50,9": 25,
       "50,10": 25,
       "50,11": 10,
-      "50,12": 29,
+      "50,12": 32,
       "50,65": 25,
       "51,0": 25,
       "51,1": 25,
@@ -1673,7 +1734,7 @@
       "51,9": 25,
       "51,10": 25,
       "51,11": 10,
-      "51,12": 29,
+      "51,12": 32,
       "51,65": 25,
       "52,0": 25,
       "52,1": 25,
@@ -1687,11 +1748,11 @@
       "52,9": 25,
       "52,10": 25,
       "52,11": 10,
-      "52,12": 29,
+      "52,12": 32,
       "52,65": 25,
       "53,0": 25,
       "53,1": 25,
-      "53,2": 32,
+      "53,2": 31,
       "53,3": 25,
       "53,4": 25,
       "53,5": 25,
@@ -1701,7 +1762,7 @@
       "53,9": 25,
       "53,10": 25,
       "53,11": 10,
-      "53,12": 29,
+      "53,12": 32,
       "53,65": 25,
       "54,0": 25,
       "54,1": 25,
@@ -1715,7 +1776,7 @@
       "54,9": 25,
       "54,10": 25,
       "54,11": 10,
-      "54,12": 29,
+      "54,12": 32,
       "54,65": 25,
       "55,0": 25,
       "55,1": 25,
@@ -1729,11 +1790,11 @@
       "55,9": 25,
       "55,10": 25,
       "55,11": 10,
-      "55,12": 29,
+      "55,12": 32,
       "55,65": 25,
       "56,0": 25,
       "56,1": 25,
-      "56,2": 29,
+      "56,2": 32,
       "56,3": 25,
       "56,4": 25,
       "56,5": 25,
@@ -1743,7 +1804,7 @@
       "56,9": 25,
       "56,10": 25,
       "56,11": 10,
-      "56,12": 29,
+      "56,12": 32,
       "56,65": 25
     },
     "SheetStyle": {
@@ -1795,7 +1856,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
         },
-        "ID": "fbd55a7cf4844fd5b7c3a4021194f46e"
+        "ID": "ae72ac7208444d2082a094085da9d028"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1804,7 +1865,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
         },
-        "ID": "5bba410fbe024ba28af017510fca105b"
+        "ID": "a75aae6149da47a6a323165752de58b5"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1813,7 +1874,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
         },
-        "ID": "0bc9407b1f68459aabed60b08402e103"
+        "ID": "fbb78ccf21214e6a8fff0d2f8cbe6bde"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1934,7 +1995,7 @@
             }
           }
         },
-        "ID": "628825c0862b4529a2b70e832be4951b"
+        "ID": "1175a94d16724a3192180aa06fc3acf0"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1970,7 +2031,7 @@
             }
           }
         },
-        "ID": "85009a4de4c242e6a96b591c01504c06"
+        "ID": "153a3ed73d3247b88a68323cb2a4383e"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1979,7 +2040,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)-1,\"yyyy/m\")"
         },
-        "ID": "363883ca6696493db90a15c2dcb28846"
+        "ID": "e9ea84bf3ae047f4a313bca4ed70214e"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2038,7 +2099,7 @@
             }
           }
         },
-        "ID": "7e4ab688f90f4130b9ebc91702ccb4c7"
+        "ID": "735348e16fd64b2685d280f5106454be"
       },
       {
         "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2111,4 +2172,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//J8DYDUmkbZj0T/EaK+HZBhopUX9BSNjO5InifEd87EyZdIDR0MT0Zp3jbQaA6CIzSIYZ0ka1uzPx19fT5sxtEuKznxuuLBXowZuKIgqfzFP0sNqbBohHSA8+uD2T4+t4LzDdDCjPVGBW6/jvXe9iAl47ZNJdk11X10ukEer3tiBCjvf37O8t8jfRQPkoUOFJi9p1incqvnlh1cZPUxVawIio/fy1j35bAHooolokJWHKRKu7P93P65SByxxSyzZBfNsklzJIpbeMh2EtB5O+zJ7kf8PwEQMwq8h6WkheRfIcbyrTj4pnC3J2igwiogiQZKNuPLCB1B4SljCIhAVngJNE/HJFD2bkHa9c/seYeLulL67fa6GG6cGBpIAH6dpRzB210VigGsXMiaHn2FAvaDMiA5ZICZvrPpNaD824FmO9n4dTT7In6DacEbmvt0gUzFv1/ubNKT7y3hy7LiiKkqjgdcLntkZf1IbvOwT5S8Luxf6mYmUz/XjPTjGqBMrxDOlaJdshG8M0SNlksMsJcQ+gYJ2XkMREMrLyT1Z99/rhg7Kl2qk3TVP3Ln1YWSIkSw4QwdrTIpZ5lqQN5i49As3SBRu7wt/ZlBwQ1bjVbxI4/ip9ZbUknLBA+PBoiHMWXg9SWKeldCTMFNW/x4EiKRqGoukkrx740cZVhM4CaACd1dr77YNDLTnW5d0h0YSiCGJ9NlWq+Wu+FhSQiRJB7cYl3ha4FdDWWD7chPuEgctDX2jfcSuV9mCeV7Bsg6DdqTczmuF9kaibFhYKtd9IqO0Q/ad1D//PO9jPHxLcvvREY2LAOzo1HXAyuYqyBOii95NxJ/lOpdfRV1c/z/f+tyzH+5+hdNz+DzEiYb7QYMkcm40yiFrnJbyoVPDtgKBke1ASL7U5IcJeihRsHcLCxw==|920
+}//LFb+hYSnVnT9r2M3Z4U61CfqLo4hEu5EmtAKZVSm9ovrbd006QS0i+LQLgtPH9L2UcWpc8gyZZmxCT9KmrLDpKyP2qJ0n0DabCy6bIpmhRO5MkGU5FqGxQh5p2MPcPzlPKlMdQoSjUMx+j4IYvwQn4OASfhKzSJIFCuIGqfwBe2YdICJxDIjks1tPV73RgylGdsMlOi7QvgZ4ffpwYbGJmAvfKNWaEMxkY/PKFWbOAPh506aF21yf0OL2MpkOQld5ip7aETmf6P/C8pbVaftrhOj+q5FKRNx/zwNq3WOBJ/ASGT8/T6BLGR1e/EFLMXLP1h88vwWkBVabPaL3Mgx/b/xfo/vJF+RpoU3RsO34pspo+4Bk3bajQaz0JGOhnIIuEP8oL8deWlvSj0uUlvoJQjeLSuGt3vJ4aB1117JRDdYGpnquE04YLiCH5PVQaMsDe/v/WHoiwPeP121T+xXEa/TSHbqWIemF9W1ldg6qL4zVRl1Pa4tOQg6wNRLk92h6x0lPZAAiSJSng2VvU+6RTYlI6LQshtPafAItUt6nCldfv59k8es7LNYZwW0kD9VMOgScGLb++kNB6dTrRmoqlgZFR2DAE04R035ceAm/qIGCoEmTg8NI2nXsnqSO/rSzzBWOzxLfWMb6L82wchy0NPyXovuBoL3BnCnwB/IVmh/H+eukXUx823X2On9qIlx1FPRpu1PerKgbNG7mLRD6zZEU7tEmvSFxMCcb6t0LtrmzfmoUj9uY2EsBM+ZQeUozfQB9f2NfODYZglJ98N6F56yNseA3FrMPR9c/Fag5egheK8OfV6nHZHRgdDLInlC8j6MBVHN8xAK4a8GRZP26I15Y6DzFio5roz5SAINvuY+zDzkinDZi2B6pRmGijmz4E3m8sSPzxj1zojnQj3HIg==|920

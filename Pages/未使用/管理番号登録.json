@@ -84,38 +84,32 @@
       },
       "27": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
+          "DesignLengthInPixel": 20.0
         }
       },
       "28": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
+          "DesignLengthInPixel": 20.0
         }
       },
       "29": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
+          "DesignLengthInPixel": 20.0
         }
       },
       "30": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
+          "DesignLengthInPixel": 20.0
         }
       },
       "31": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
+          "DesignLengthInPixel": 20.0
         }
       },
       "32": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
+          "DesignLengthInPixel": 20.0
         }
       }
     },
@@ -1059,7 +1053,10 @@
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "計測機器の新規登録",
     "AuthorizeInfo": {
-      "VisitMode": 2
+      "VisitMode": 4,
+      "AllowVisitedRoles": [
+        "Administrator"
+      ]
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
@@ -1070,4 +1067,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//A4FyAm1S9Rl8h7+ZwjtoLY9u4C9PxmF3BU1Kb/h5iRICAYnhZcX98ssTeuyfudQc9IvIfjJ/VDTJfMQ5DaklNaasCRHXJgKNszkZ2++h9nfyj/JmVT5Y8xHohyUX2wgm2F/x5DGw3ppYz+M8428X4CXvR7+f7Y3LhUeFoFMI6CDOAdF06Omxq3M3SdDYqZF9k1gpD0VCW0x/dQdllUyn1NMcrWl+EJDDNjlaHoDMTLwwcqn10gfw3t0nTQt64VL2jwm2Axuh2XRhV1DLhXY0FtIHS9d7pT5pXqdqa1LccreLhjiXlpUl0CDvClB/RLv3RHDvm2FF0HLvRwmsu1FSu6wspfPnYu8Ai75iLCX8yfHwO3ke9X+tab0zVcI8I1WXguu4iqSgnErFdvj0nAc/rVI4R92KrJuoUX/lC6wH6etbpfmPrJQArYOniipl7SPi33DTPJnlHTyDLxEMBd5Gdig5vj5NC+IRW/GkekadWYmk+vItphP20m+ylAf4B9zvm/x3YsYNjSwHZPdWMJZtPdvS+J3t2pq37vLDgqCLV9CQxtUKs6cTvwqwj7C1APpmW2FtA20n4WgNKoInDtD7hm2tfpIT2lUVotdWd3wxMs+jgJFgB13hW2ocmVxnzEKio8AEyW9QUward/dLldIqiqu5NMy6vsndyk+1ut8GZ5G+G0miiRqOtHffZkVnNy6klxz5K8mOR2hcBDfirK3pWHVW/TTAF8h4kMmK8nPnJ5eqW+j8GnaQw36fLAL07W9w8AYclRIXM/0schaU5cBNM0ZTfHyRDzbHJIFRwSNmK/0NvvRFWVoe4fU9hbDhurdzzP7R+z/vctLEoPdFEVgIrP61fdPJSvuLoOFxzTfzOAGk2Z1oILGyEdUyZcTWrC8nsc5Z7gzxubOaBKJOsCBGSw==|920
+}//42CtUKR9lzUtx3DF2K8puvHn1dxyx3akw0h9Q212wXx3Rlvo9elVeBdLkeqPHeo13jw6paTFG0GSIN7iYDIvMaLqQQrVQ9+Ou1IT4CCLVcS/sthBxAm6gjtFxNsSRGmvmQat99V3r5Pula+3hYEb6LlINDldLjgPLJcq+9NqsAB7Bg1gZC/rLK2gq1RdjV3Vr/XmEetC2byUvScD1qMhFOvkEM8m2nk2sY9tWuoQF6hfbm80wG2xvHEUpqgFCSINCt6g1oNXZ8Xu732ugPk64hAUK6DYOhw/WxmNO9NGYxhxjJYcvBTHyHbbnCDY2Hw5Ez5KDa6u2MQjAlJ99+ztGZKifoNkcQLLMYzdFayo34Rtwv9A8J73BnzlO6DYggXHFGjNNRBzEKTJgn1hfhCbBUrjJ15/joRA9lKH84s7AARXa1xfKBcURl7/Qcky40wmBw70g8Ylo2c/Im/aQPJtgWfhLzXnZfxfYISZ+BJlK5gXhvjdQXPp+qiKTrfRQ58k2fMbePImXRrLe2IKBojsRIsjHjlKDN8pzDAG/jN0goOk40jO38LG02KSvl1EV840DV3YFdSTw04IaWiTBEGOwmnj24Z3MVmSU4Sj4wzus2waoCjxyIrYxTIvcuDMUb5h0H3gNEUiqluuVBYZO4fUPUjAmCBvloe+k86zOVLof6jRhSbwIzUQuGW9iddNtWSmbka40zoXktc0RraL8cM7YdzR77cWsB/2o0e95G+p+qO5Y9wbqYQ+aghgbz3cu7PyMRq4qTeA6q+bXaqnWQV0QPvf5thysu4u3k3j873hymKznrv5UsC1DDpfbRUaYO6H4OLyR/Q6vf5B+BTyp4oSiXW5yrWcE0sqRapqSypmC4FMC5zpu6S6I4vAxpn7+qmcwqFdEkfEhRyCempb8YIfTg==|920

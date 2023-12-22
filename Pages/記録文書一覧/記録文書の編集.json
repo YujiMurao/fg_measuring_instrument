@@ -242,7 +242,7 @@
                     "ParamNameToSaveNewRowValue": "NewRow"
                   }
                 ],
-                "ID": "f8da2c97-9af1-421c-8499-3cc992e7ac13"
+                "ID": "178b8c69-32c1-4528-bb6b-8dcd1d66b6aa"
               }
             ]
           }
@@ -362,10 +362,6 @@
     "16,6": {
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
-        "UploadLimit": {
-          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
-          "ReplaceWhenOneFile": true
-        },
         "ReadOnly": true,
         "TemplateKey": "_RS_Normal_Style2"
       },
@@ -411,7 +407,7 @@
                     ]
                   }
                 ],
-                "ID": "6cb84a50-672b-4d54-9ddb-2f0e2e26d201"
+                "ID": "8978a887-4fa3-4cb6-80b6-61f7cf1fae80"
               },
               {
                 "CommandList": [
@@ -429,7 +425,7 @@
                     ]
                   }
                 ],
-                "ID": "8a471c65-ad43-470f-b9ae-c11595407bfe"
+                "ID": "978cc542-26dc-4a09-a60a-9b2ac02c1cba"
               }
             ]
           }
@@ -484,7 +480,7 @@
                     ]
                   }
                 ],
-                "ID": "f17d0b1b-b754-47ff-afc5-bcdcfd134309"
+                "ID": "84c0f354-5e2b-4896-b79b-c1d9466a484d"
               },
               {
                 "CommandList": [
@@ -502,7 +498,7 @@
                     ]
                   }
                 ],
-                "ID": "a07772cd-0280-4e99-951f-2c55242e1ebf"
+                "ID": "be5f8550-a711-49a6-9fcd-a15aeb856854"
               }
             ]
           }
@@ -2347,8 +2343,8 @@
     "16,1,3,5",
     "19,1,1,4",
     "6,1,2,4",
-    "4,1,1,4",
-    "16,6,4,33"
+    "16,6,4,33",
+    "4,1,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2371,11 +2367,24 @@
         "Params": [
           "=AO2"
         ],
-        "ID": "ddce0a5ae15f4d21bfa94025c1745b62"
+        "ID": "e47fa2b055b54a41974137a51a781a46"
       }
     ],
     "AuthorizeInfo": {
-      "VisitMode": 2
+      "VisitMode": 4,
+      "AllowVisitedRoles": [
+        "Administrator",
+        "IT戦略室",
+        "製造課",
+        "九州製造課",
+        "業務管理課",
+        "製造部",
+        "品質保証課",
+        "基礎開発課",
+        "電気設計課",
+        "サービス部",
+        "品質保証課（計測機器チーム）"
+      ]
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
@@ -2386,4 +2395,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//iAdIQUOIeeX7HOqi2vJPYBGky7nJuEfiHhfl76SfpXChFMVET9P6xyWElxfQUjH/+o7XxCBbaqxQE87/Ojv1526dYvWtHL31DXq2LiOqynyY39fI2BVsRLPEEpZV5GOFs9qRhdR/Y2pZEKm3J+tEW6eiz6altW0LvvOIZCFGW1PjOypM679MY7P6xjZLft9xh+plAOCy7dWKijY1RuMqjQsrI9quegTuLhaBDI9Wu3b2nS7cGiyyZYq6KQTUFSu1q0nqE/o/OKPRm3J3HGFe7OVFS1ecrBx7xhOusBBrZKMOBVXjWxjAnN0xWYbildqVUt4ATe/75ztZhrmc34MogHxKxfzrrY0ixdRQvl0YXwpl3T7kCxyl9eAcHNjmPOyaJ9UMN5E9fuZOa3H5/oavwhTEsemv68ey0SscMl4hm8t9vrjnQSpadCcxaxlqnMvRJwQA/kzY9DPEbKB5XE6Hmgl8BvHlJwsEYr38U5MfmlKwtKQv3ji1bJSusMYlr5IekmCpspxeyQLur0cxXF6a7Kq/Vrqw3d4V2nhTtHQugCukPVqLsyObEJ85GaeapAZ+7V6li8u2zcLnBGWXArgExAVdTickAE6lhYchqLAHimkFHnXiwRrWyGwCSCVMCN9u10pKRRdX29AcQCerOyKZ8y7GjON9/pRddUqedJPqaOO7aXRGpblmJFZEu9Jf5PkbWPGr5KX+b0ruCMCa+5l3Jy8FeVVr29QBo3xILPTkBldXMHWvWXsX+3ak2HG5pkO+cGcrBz32K5xKwlpac6Qop0sauqcy80OlDkgvXNrjBvhfpfrndAoQPjMOSRe2ZR14wkintnP61GDVteAEbBWog581maVx5Z95aMN0PtxztfFraqvZCyW3AOciqNcchHOpl5CseOm2Z3Mv3Po7loaR5w==|920
+}//K5GgEftIK4J15O/LCKzSoHg6+0khZRUEvlh+/envAkdMWbfih83z4iygk5uLv6q8GHVLhgJHRGnbzbeEH/jOLkk+WTqk+mTEtJoj7pQ3gOvog92Iru+/0pRHgIyRkLmYI7QlZqt8oT/I2CunKsEtZspJKgmCntbnGCaT3/zec6miVA7xWSr4SSgf3nQYGSXVZgSLWrHuyPg3JOfxdomL/3Fm9c5vu0jrI7TnzK4SnlcRfWUeYvOB7PXNBCyse4F9hh+NL0mbcUGpzPyJ8V4o1rmgVtndKynpernSHQs/PuLqMZWyvVt+YcTxBHMHUCszS2kv5kayA/i4QyTgOghyMpY5MuPalBd2oiRBiXmPhaga5wWjzSYX4vWlKnb77aJbgYQMM0EaATjBpdtmuHFLpPLlQEPIZDOqB5AU+EtA3xJa/wnfEKbYxOw2uuyxktSkgF4SJMisiinZ1I8WVriqkmQy6+X3+Jzp8vSWHXmXwZnwBlexxd4IdYwcbPDBNMIwIRqWN3nSigRuYx/MPaJYOfCiSic2ygIp7Kb87/fOz5vqsyWgF8WUmwJHmY1t7XQX6dgfkjwy13EOnz2lHK/HVYvd1kgHhORjjGqhhnLJFp+rmIxN3NJDfWh3bjFFNXprmd/pNopyjxyuF94t4JNrDlmccUy8P8wjAIpJD/Ecu7sB6aF0dBaRrR7MA5DNB5j6vuSxV1pRMWg86ltMTxHOBzmR3j63uYlm+TIFjkxL0QR2axdBlSp+QWREkn6cl7WS/bexjb0bZ+BbOiBLwKmhsdX2IbqTCTauaz76GKITrU/N/dCUT39ci0wquFtjxxgWuA6WeRH9Y90qfBLsI0/TyyrfPhKBp6WlSAfj5BDkCKRqp1O9W+9htJVAzrUAAiBELk7tQwPwSKspDT9nH1Ypng==|920

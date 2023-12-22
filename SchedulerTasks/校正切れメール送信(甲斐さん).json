@@ -16,7 +16,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
       },
-      "ID": "e2f7c7e379f541418ef1249a9be4628e"
+      "ID": "de84980fa93e477d926d35b54cad573e"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -25,7 +25,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
       },
-      "ID": "5902d090991d476987cba48d512b134f"
+      "ID": "9b9667b05af046c39224f2427e9a08e9"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -34,7 +34,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
       },
-      "ID": "17ebdeedb3e049558868924b1feea313"
+      "ID": "d0c0f1b2b1c94ea2a1229bbea9ac920e"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -43,7 +43,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-2)+1,\"yyyy/m/d\")"
       },
-      "ID": "20b8d99526f14805b550da3b8713a4cf"
+      "ID": "3c89e019b526483891755b777effc690"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -52,7 +52,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1),\"yyyy/m/d\")"
       },
-      "ID": "b4e644cf7ada4b1c86363798630ce324"
+      "ID": "fc72067a5df34736bd319ee1f7cc1a3e"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -188,7 +188,7 @@
           }
         }
       },
-      "ID": "fa78850a24bd4c6692bf48037130828f",
+      "ID": "a80dbe344f854785a308184a363f5bb8",
       "Comments": "校正月の案内用"
     },
     {
@@ -240,7 +240,7 @@
           }
         }
       },
-      "ID": "f14fbd4b7845417aa165ea739f23ea63",
+      "ID": "2001125780ab47769141c36ccaef4ae0",
       "Comments": "有効期限が切れる案内"
     },
     {
@@ -269,11 +269,12 @@
               },
               "Condition2": {
                 "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 1,
                 "ColumnBindingInfo": {
                   "TableName": "trn_insptool_tools",
                   "ColumnName": "usage"
                 },
-                "Value": "使用可"
+                "Value": "使用禁止"
               }
             },
             "Condition2": {
@@ -300,7 +301,7 @@
           }
         }
       },
-      "ID": "7a64aee8ca2c4640959c5e696e925a9a",
+      "ID": "9675e4810500485eb5eab7b42b7f9b0b",
       "Comments": "校正切れの案内用"
     },
     {
@@ -360,15 +361,16 @@
           },
           "Condition2": {
             "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 1,
             "ColumnBindingInfo": {
               "TableName": "trn_insptool_tools",
               "ColumnName": "usage"
             },
-            "Value": "使用可"
+            "Value": "使用禁止"
           }
         }
       },
-      "ID": "6fe349016d4d4d51b743cd08894dc440",
+      "ID": "09f27529e46c400b8722edcd86328872",
       "Comments": "校正切れの案内用"
     },
     {
@@ -435,10 +437,10 @@
                 "CommonValue": "murao.yuji@rorze.com"
               },
               "Priority": "high",
-              "ID": "0d29fc5e26674bdca7e4f179ff0f72b0"
+              "ID": "bec36488df2e4ecb9da8e91b74329533"
             }
           ],
-          "ID": "c1553489-9b59-4c0c-9527-b5548e01680d"
+          "ID": "2bcfe1c0-278b-4a25-9ad1-522cd354867f"
         }
       ]
     }
