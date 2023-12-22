@@ -447,7 +447,17 @@
   },
   {
     "ModuleName": "UserService",
-    "ModuleType": 11
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-12-22T11:54:15.6774502+09:00",
+    "ModuleType": 11,
+    "ToRemoveFiles": [
+      "UserServiceDB.sqlite3",
+      "CloudStorageProvider\\data.json"
+    ]
   },
   {
     "ModuleName": "CustomLibrary",
