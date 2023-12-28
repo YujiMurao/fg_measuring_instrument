@@ -378,7 +378,16 @@
   },
   {
     "ModuleName": "MasterPCPage/masterpage",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2023-12-28T15:53:44.0189673+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\masterpage.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/校正切れメール送信",
