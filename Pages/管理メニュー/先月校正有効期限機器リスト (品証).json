@@ -310,7 +310,8 @@
             "Params": [
               "=BO5"
             ],
-            "ID": "c9aed96c82294c7d8a2334c0d115cc82"
+            "ID": "b67d48ae19834295af4657c1a018c4bf",
+            "Disabled": true
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -398,7 +399,7 @@
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='先月校正有効期限機器リスト (品証)'!P2"
+                  "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1),\"yyyy/m/d\")"
                 }
               }
             },
@@ -414,11 +415,12 @@
           },
           "Condition2": {
             "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 1,
             "ColumnBindingInfo": {
               "TableName": "trn_insptool_tools",
               "ColumnName": "usage"
             },
-            "Value": "使用可"
+            "Value": "使用禁止"
           }
         },
         "TopCondition": null,
@@ -561,6 +563,7 @@
       "TotalRowSetting": {}
     },
     "4,66": {
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "ID"
@@ -1726,4 +1729,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//sk4nJIed1s/2CAOEPPCXgyyxz3qpEqF++WRXJUVmTeiIrSsovsDZj3yPaXPa4rnSUnYloYUvVPJqJJp6T+nD+Rs/+Dar4C+eBn0GUlbWoBfBQAf4Kyih1oJcjTuUFqD7a3sblUc41yvyWEIxdDuZIvlbreuU0nOxszIJZxrLTenoXK2cDGU+8G7kCORiWiL/NRNAcMvu+DPUsvFgAE58GAcqOMInrL9owt4dFj1qjlgFeDzsmDx1Cv0DlQyCLk/LvCyjAmuq+HugUUKsrdbjNDEb0U7zGqp+1/IvTWf8f0HYoss/Y0WMuw6qyjGL9mrayskDClAAAUKjgwTEVUqcHLjDytwUmoyQ7ljvih1nM6Y4QW0bM3/lnw2+Q+aaNdmVs8vE9oFdMeqGRVJm3DJlFetn5qiFmQstHoph0xZBuF8yV9Q62/pf5rnvCGDqkkpjvJJSJOBCVGVHgytvb10BkxgC9czeXrHN3iSXH8HlyDXk+aGbj8D0/WhMTN4NEy6yTf/zmrVwKrW6r7PYvYfQcFh+jJ5x6Gxl/tg+Tv5pbyqgfKPqgQVmZNBv6q1rwUCVxZwZyKPTsTbYqvquMctg646U5PqljjWF18WMBsoLXVYdmTGCvYJyTxl5io0kPsTHkuUrb71NNfEeVaoFr/E3tHYxXlXf3z4mJWNrBgA7DXx51hzHAaQavA252MeONWvTL0Rp+856N8M1GddQP8iW2kkjvQ9792ryw0hXZLnAenHkrQj1NmDSbOmy5s1Gh4BT6cfgzWbbispQJoflJ5ICGVnRIfPuP2jZSUZVeF56hS/MZ9Eq8Y0bwGwLVd/ZxF070Ygn1VJXMEyNCxgicqcBXPGcI5lGQlnqVmp7dEN2fYgjZD9AvlIHZFjIRNLLUYMMLcqTds/xp8lLWmkT2Sz1FQ==|920
+}//YGkcsmwVc7hptLrHJ7qFxSUlFDk2o0dSoL3xjJIknBHKdsClWkPmOwHd+oFA0TkkE4htWiWsfeRoWbHEEJbhsS/WODz05LBUpu1ySZ5QaRv8Ad2jmJ4AIem/hSpDHB64KVgsq3ct26JKGUFc5Ziut1tnZKtTGBT5amTGfHaPzTyrCUrBOWhEc+GcKX0OMrJS0eEh+YQPJ8+QN/kR8gpRQFXyZSy25hXrAiz7nH4xQ9adkSd4ivQMLo0kg9Hw6WNZknnK3hstTh63E/RECzv0Eimuu1LEnngcfyy5v0/8ThPZarkbs1ziljNjbSaGpt1gBariGN/4kg4Fdvfd3DyIyaJFDs70j3rx9wOHtLM2yOEDIX+1FcruTzvLa8blqVde2Bi5gbPZ+QjdpPaKGY8C28miJeyd8O+aGA34xx0sMgTrAPGiUcEPFjWQEPfXdC+W5A/DmUsdw3Im+Dfq263bUUZjhtigSBs8DCDOqDC7ynTzcOffTKjP5Perli4gGQvO9BtMvQt++e3W4AZhIwqyNAlBqkfKMCUUTmvaor5gInoTgP3NqHHFXD3YasxBhBh3KY2dtH09MUTUHvUzGHWm7SriGafjblXYgEM7ZFe7OFPPvW5Nzi6OTL5Wgxbm7mEivUomWbO6RMWGKtuFGUVh2BGqKc+ZkR2QSEqWJq0ocUQbfX2afk6GqsghszC2TfjIEBWUKgicCy/YB/FOSVgAUtLG85ERLLCT1pOtac8rlr1wfP86Tyuj4d012kenCpKeU6kfv8bVJEdshI6MZxzC9wkoYH8N+FvErq4X4diPVoD22D+YVTPZJ5FAU00lODP8n+quvZY/z+vdKmc+piOA69BGV1lDtlyxIrIifobHfwNOrx7p2aWxmnsqvttUZssoMSOeXHDLa3nrOBFRak96PA==|920

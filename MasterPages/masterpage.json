@@ -364,7 +364,7 @@
                   }
                 },
                 "Params": [],
-                "ID": "d26d59ef0fa74de59588c30be98ed440"
+                "ID": "2d7344b40f8241959d97dee4b75df9ef"
               }
             ],
             "CanVisitRoleList": [
@@ -449,7 +449,7 @@
               }
             },
             "Params": [],
-            "ID": "18a0a2b0ab604d4eb40832c12df09d1a"
+            "ID": "c494d0e4dde044ed9ec9231d631388f2"
           }
         ],
         "Text": "すべての計測機器",
@@ -480,7 +480,7 @@
               "Value": "使用禁止"
             },
             "Params": [],
-            "ID": "ea35476e9ae24149932922e36e293e15"
+            "ID": "9982b6d9ba244eee9cf57fb8a0e252c2"
           }
         ],
         "Text": "すべての計測機器(品証用)",
@@ -583,7 +583,7 @@
               }
             },
             "Params": [],
-            "ID": "b1a5a76c809e4adc96c1d4767582fad5"
+            "ID": "184a2d0c790f41ea8b734d4d269c7f45"
           }
         ],
         "Text": "すべての記録文書",
@@ -614,12 +614,27 @@
               "Value": "社外"
             },
             "Params": [],
-            "ID": "de585b9c9a584066b9a4103e7d2c6704"
+            "ID": "15a5d1e4b9ab4162b87f2dc6690dcc90"
           }
         ],
         "Text": "定期校正対象計測機器",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
+        "TemplateKey": "_RS_Normal2",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "41,2": {
@@ -629,11 +644,27 @@
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "今月校正対象機器リスト (品証)",
-            "PassValues": []
+            "PassValues": [],
+            "DeleteCachedQuery": true
           }
         ],
         "Text": "今月校正対象機器",
-        "ClickMode": 1
+        "ClickMode": 1,
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "43,2": {
@@ -643,11 +674,27 @@
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "今月校正有効期限機器リスト (品証)",
-            "PassValues": []
+            "PassValues": [],
+            "DeleteCachedQuery": true
           }
         ],
         "Text": "今月校正有効期限機器",
-        "ClickMode": 1
+        "ClickMode": 1,
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "45,2": {
@@ -657,11 +704,27 @@
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "先月校正有効期限機器リスト (品証)",
-            "PassValues": []
+            "PassValues": [],
+            "DeleteCachedQuery": true
           }
         ],
         "Text": "先月校正有効期限機器",
-        "ClickMode": 1
+        "ClickMode": 1,
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "47,2": {
@@ -675,7 +738,22 @@
           }
         ],
         "Text": "管理番号マスター",
-        "ClickMode": 1
+        "ClickMode": 1,
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "49,2": {
@@ -692,7 +770,22 @@
         ],
         "Text": "測定機器一覧マスター",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
+        "TemplateKey": "_RS_Normal2",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "51,2": {
@@ -716,12 +809,27 @@
               }
             },
             "Params": [],
-            "ID": "b5d4737d9f144355bd6b37e9221049f3"
+            "ID": "1403afea12f547c88b602bf44bae6333"
           }
         ],
         "Text": "校正・修理・廃棄履歴マスター",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
+        "TemplateKey": "_RS_Normal2",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "53,2": {
@@ -744,11 +852,26 @@
               }
             },
             "Params": [],
-            "ID": "c14ca7d304c04aafa8628b51064d78df"
+            "ID": "fd8e348edeaf4d16bf723c5b3e852a7f"
           }
         ],
         "Text": "記録文書マスター",
-        "ClickMode": 1
+        "ClickMode": 1,
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     },
     "55,2": {
@@ -809,12 +932,27 @@
               }
             },
             "Params": [],
-            "ID": "e97965de6cba41ffaddd1dee234b3174"
+            "ID": "a97cd8f97a2049e48df427530ca423bf"
           }
         ],
         "Text": "校正対象機器",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2"
+        "TemplateKey": "_RS_Normal2",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
       }
     }
   },
@@ -1841,7 +1979,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
         },
-        "ID": "d5e91b8568114c35a07267cd6b3441c9"
+        "ID": "8c7ab13d94594e2790aa12c616a53e0a"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1850,7 +1988,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
         },
-        "ID": "9e9819593b2245a58c6f7a098189cd99"
+        "ID": "bb3dd38baa074bacb6373e4ab797c3cd"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1859,7 +1997,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
         },
-        "ID": "cc386a51364740f0a7061f31e6ff61ad"
+        "ID": "72e5dc6035f7476d8d92a1d499e151e6"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1980,7 +2118,7 @@
             }
           }
         },
-        "ID": "8c885b7f1057491380f3bb80ea8586df"
+        "ID": "088513f19a0f4b919c7375ed14bf3ec2"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2016,7 +2154,7 @@
             }
           }
         },
-        "ID": "fe8ca144f7894408b348bf809392df1c"
+        "ID": "11926f33ffc842c1b1e897a1093e5497"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2025,7 +2163,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)-1,\"yyyy/m\")"
         },
-        "ID": "1723cd53dc6d467ab0967bf1ec4cd5a0"
+        "ID": "fa32d57e56ca4c8c972c0a4ece5e1529"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2038,34 +2176,20 @@
             "Condition1": {
               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
               "Condition1": {
-                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                "Condition1": {
-                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 3,
-                  "ColumnBindingInfo": {
-                    "TableName": "trn_insptool_tools",
-                    "ColumnName": "kouseiyuukoukigenymd"
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-2)+1,\"yyyy/m/d\")"
-                  }
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 5,
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "kouseiyuukoukigenymd"
                 },
-                "Condition2": {
-                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 5,
-                  "ColumnBindingInfo": {
-                    "TableName": "trn_insptool_tools",
-                    "ColumnName": "kouseiyuukoukigenymd"
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1),\"yyyy/m/d\")"
-                  }
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1),\"yyyy/m/d\")"
                 }
               },
               "Condition2": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 6,
                 "ColumnBindingInfo": {
                   "TableName": "trn_insptool_tools",
                   "ColumnName": "usage"
@@ -2084,7 +2208,7 @@
             }
           }
         },
-        "ID": "5abaafee0a8c4c74acc233e073b1657a"
+        "ID": "21a866b5de6e4c338b593412ab7c9562"
       },
       {
         "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2157,4 +2281,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//EyhTNLGBnMdolE6kaKVjJYspjc+t8lMav8UqgMwOMlv6gemnRiP80wc8qeWPWvXUxBI+/twUETTAXij3emFiTIVY2j4IZdBskw2UKrkh32sv/0O4macLFCqYHfksMGbaR5VmRtS9bKjiezSV38ZGHLxmkiAPcn2hYp/aJ8MH7hHWLcUXWWcQQdNVmHBnfahIJTk32vkStL3Isjgf/H3g2IMX1QJq9sBxq5bW0ksMJV91maV2ctTHWpqqw+BSneh5eYo+eeRmcGa917EoZYTvfBQLpKORYOr8etF3HRtqytQJzT5Mz+EiVfbNN8IgWt7rf7a8Tta5cDSZGb4UVHmNd4sp14uZM7Qyvd7Dwk0g2fqHHDnzAN8ebNK9kCar/PCpFNfT5t+s6r73UqcNe9jRftOjmQQW1TYWZpLlG7TipRHYxE0TivhHJ54IvT+J0ryzyUhZ/Fu/QfNBxn5VoPl3P4ZA5fAktMQyr1Gmf5ObmcqkbhgL06/TiMoTQ/yLC3aJfm7t/9yrWgnO6kzhVbvR8Revxj6WPrzryYUoBknS6ND2VXNqPdn5RuFYnDeRH9IbxoPZqewhIDHx1D6atOuzGtJ8fMWUUInUfr3Sfw6iex++QTjLG5o4Fo+v4rCmG93Ss+w80hz6TavzJnHjYluUD2Cl/rteT6PaOzbfQ+Umm6DpSCv8JjSz9VjgtvlL6LIgi+nSgLMKP4gx67bdVxxDWuDaUf4EV4FICiHnyykhttXZUxkloH2fnN78pbVPA6gDA8rKGvcfCCDlY76DvjFGBTxzRITz0MyAAoOGW5fn0ouk+PnZM/J95BqwnDMTE9tQU2tukLyk9WiJ1pXQBiYO91bql3vmPk0gA7mLOTA8KkpABg6V9ZZygnoDwPyr0R/70HZOXQcP2sl4gF6Km+BaWA==|920
+}//zqfq5UdpjIxJ/0QflgXoXR0MOvAx0ZizbDZD5a9lAYyPYGlBvb7BpR1mrwtMMZ+VenkkGe4gELgiprnMT4nWOxY6/EdA6UZDXTEVofpcuheCAhXo8w9iuS/7HZgKp09S7hyr/wVxEqBGBEBXmeYwYgQhjbRLgLeVs0+ca1BTcKXPOeQag0AkCm8j+QKjwMjM33Fx6+FlomhrOp98etbDxBrtFsV+MmHKQ9PJjUM0XFwoZSBBB+3gDoLlKFLgABvjESh/xQRhcw0HktlI7/ffIb2GvVsZecZKfmL6rsyNkpt8nRvoH6AO6dUMOBw9tIn86qD6teZB+PcDmGOk9B/hzGgqyiDBTv9MyvW1GxWrwwRvu3u9NOxnOF+D9BelqDoSqW15fc0qwcbrMujV4YYUyD8Ln1szx8sCk5iAPcH6oEmK1B/zL2hUURocBaURt9YtMlW66cGD8Xf/zTCThpbbru/A5piGBSaHFtST9jVCcLe5bFDOn8lUGQvL9X6EBW3isIil5Xoq2yURzX9d3kds+qM5DD0C9kvih7fyZZK4sj+ySdcww8WQbE7Upnyq0PcydlYpWclAeHTKAUwDLEkaF1g2ULrK1Fb6oia3iZB549kF8e6OLAQiLkrHqTKcXuVwqRDTWH8b5vVdqAZwcFOH8eFaLr3JhFbSnRMWY5PU921z/EpX0b4osX1odUNCsFGiIrxIXF13MboWHsDxaQKiDi7Gvf+r02d7jqo0JemL7pTyMqrta2A42doN681uXORbvhPgKgNDBkifUGEyGXJzjVxk8iWsB5yvK8PDsPIIKQS4UigMSha1nsP5Ef1UyqT1AuQTs8uRATVIbIsGPs9hLQcWz9I6my5Z54Y/gLfP8bVkhH2URj57tshsTQt8BiL3ektA/eqao8OKNteBXekTzw==|920

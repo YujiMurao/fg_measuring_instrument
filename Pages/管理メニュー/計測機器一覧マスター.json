@@ -215,9 +215,19 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 75.0
         }
+      },
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 75.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 75.0
+        }
       }
     },
-    "Count": 39,
+    "Count": 41,
     "DefaultSize": 80.0
   },
   "Values": {
@@ -380,7 +390,7 @@
                     "NewOtherName": ""
                   }
                 ],
-                "ID": "2a7cf919-a383-46ad-90ec-b360f3d3e2fb"
+                "ID": "6240e8a7-a946-4437-9e25-e90b1569aa0c"
               }
             ]
           }
@@ -443,7 +453,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "0d266814-bea9-40a9-91ae-0b6644ef0c59"
+                    "ID": "a7a2ea6d-5b04-49f6-b26a-ceb48d67c998"
                   },
                   {
                     "Condition": {
@@ -479,7 +489,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "87a1c7fa-258e-4ec1-8786-cc6e30ddbddb"
+                    "ID": "d822c32b-f42d-4276-a672-6def75410450"
                   }
                 ]
               },
@@ -504,7 +514,7 @@
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_tools",
         "RowIndex": 2,
-        "ColumnCount": 39,
+        "ColumnCount": 41,
         "RowCount": 34,
         "IsTotalRowVisible": true,
         "IsTotalRowAtFirstRow": true,
@@ -770,6 +780,20 @@
         "TableName": "trn_insptool_tools",
         "ColumnName": "公開"
       }
+    },
+    "3,39": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "FGC_LastModifyDate"
+      }
+    },
+    "3,40": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "FGC_LastModifier"
+      }
     }
   },
   "StyleDatas": {
@@ -873,7 +897,7 @@
     }
   },
   "Spans": [
-    "4,0,32,39"
+    "4,0,32,41"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -895,4 +919,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//bSaHEaS9GKJ12OkEAcD01sYs1c0m4GpJqNlGxtg183xdbfKqCIEMMUIeC/WRBhoF9WjQnsM+BOG9OI3S3kqTmwVDXaWhuwnTWtRciTPoBVKt3VgyAu+/6E8OjLjrFDodtNU0/ZVVOOG68Gg6LFmZ5eBwm0aUNsCkWNYfGk2NsMBLfCoi2cb0P+dYjPiPaFJBBYg09j2VmHCY6m267KbhYunQbwI4dmfoUA8XcsMQZP44ExJnf699Y0oMZe1LVF8zNlYk2BJMuhH75EXA9vhFUE7cOBLbE9ABiZnu60YC49MfUvM7qVsls2h35P+tiKZmqtF83oaJRvNiB+53AbXMEOFQA+SlVAikgNoQT6Ehyqqq1CAqcLFffIntzLb1EJmq8OLMa/itCdipaR6Zbatz6Ji7ZE9XawaPtR6y5s5jrOfJObeG0a6vk3PF58UVM9dx47x1K1yZh27Tx6ZAPlFRl+EC4c2xtA0yE+66DA/4CKHWxeFxnINDXxFl2bn+uGf28KAzWig9Tye90F1KSizpbRG7UYeHenmFM6mC87RlCzbGP48nVlbyPglretE6LPKBWLVqUmEJkaTh8IZ9pRSjatoosX4b2oMhaW9Ge3RTUIl1PQ40CggfP3pS4lVm9BlAR783DPERCehPIV2CPqcZ9G5xJnWiLA58taWiijR1NXPrguAKdqS9gSp/LgbEwHwB7akE3COPm2qtuizIyzbMP/+uUY/YW4dy7GZILla1mCTrbxhiBgWD6kdGLDUWD0vWhe4cbM/oLZ9CSytQIaOzYC9N0cgQoUiq7I8gNoZ+ajvzZrluQTr8jRR0O7Cwmnuv1FHeZG4kHMzd6QnDZlxX41EE6wzWWFnfm6oyPESVwV89nBAPxlqe7zIIXPTmE0hedLmZb9bIcdBIYr0FFW+4bg==|920
+}//CtD2oMUQevyX6shcKvgGgq0Niidlfg/2/Pdl8stxvn9wtoq6hoZtVMyZVvaqbkhYeDtpH6mJSjR4kA7f6k9WdHiwMa+Wb4wiD76JVMnCOeciAvj1pYakzTBpjyGYdCsrXWlOHzO6Z/ymO+q/ckAR/cvtJuCNtovP4mlyfUXSwb8hmN/HdZEU2hU/+GFTT3eJtwW8Li3DO+mlwB+TX5/9AhJn2VdhdqqsO5D2lyH50myLp5clfdDUI5BAENRAc/2A35mnYuRYNSU5MgS+TP3fo79gfPAkwxfTssOJUh9/CJ9JxSvt5HLOmLPKRkFYIeWwP55gfdDsEAwTLaCLnFyReh7vmElu8Rh3EhKBK5H0Im6ac22j/8U6T5VTWrePz+lyIrJViEqV5b0EM+EJN+0IKKuhnD2/jumfKYv0OXcFCXm9hNHrg/Rv/RYD+a8+PDHm6JMxxozSjyDwIlItnV+K7DmNXiVzpNdqjaQshGgiLGEfYLBt4vNqVt+rwrfuml/EKsNLGJKUbGk/75qsQTz6x9h2R8uEOCEvjWgonYsxrNIHt0tuS2gkULGtRhQA7mZall7xudl22j3+UBGtvJCpFWhhjYIw1l0JfNGo9YI1QeDeU4Qa9jsA45vMmRXCRP/Z68TGQaZtfoe8w5JNJRsJNFjuEp73oDFpu5jJSLSc3bbLutuffFvqY4bxKC86l+p4uGAO5RTRv0Kfqr/Z5A/Jf3fyssN84gSrC/u2auNX5jxn+KDM73I3VbEyX3tav1DkhmMes4OXLIr2pyIUMxIE7rlwYwWwMs2XqmUxSLsvM3cWK0sPSD0fjriFHlVVyY/4GUrAYoj0X/+A2ERt745bhkvUJQ5qO12+YyibxYrhlqg72IRQGkgJSfg7yelYxmNyEVRGi+3HaUd2TudNVGKFqQ==|920
