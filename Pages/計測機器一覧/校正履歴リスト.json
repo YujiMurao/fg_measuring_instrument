@@ -108,6 +108,18 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=校正履歴リスト!A1"
+                },
+                "Value": "%Null%"
+              }
+            ]
+          },
+          {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
             "PageName": "校正履歴の作成",
             "PassValues": [
@@ -246,7 +258,7 @@
             "Params": [
               "=F3"
             ],
-            "ID": "d362db0025f04143b54fd2b9ad7cbc15"
+            "ID": "b96c31cde44e406a9926b79159d6eb0d"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -2183,13 +2195,12 @@
             }
           ]
         },
-        "ID": "96422d481a1342f988bf95289cc822a4"
+        "ID": "8759d0a66c7c44c4a259d7400a87bdf7"
       }
     ],
     "AuthorizeInfo": {
-      "VisitMode": 4,
+      "VisitMode": 6,
       "AllowVisitedRoles": [
-        "Administrator",
         "IT戦略室",
         "製造課",
         "九州製造課",
@@ -2198,8 +2209,7 @@
         "品質保証課",
         "基礎開発課",
         "電気設計課",
-        "サービス部",
-        "品質保証課（計測機器チーム）"
+        "サービス部"
       ]
     },
     "RowBreakLines": [],
@@ -2211,4 +2221,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//x9OEpMop+7edGcItDNmPE+wRw8JoacPqAvVqqLgDFe1DFs5D6UaxL1yDzx8i1wSzxoOI0DyJeJ4gNSS7C0ohZ7kd68LDzlYDqnUh4Z4lyDDlfZvGhrNk/QjhqQQZ4GPSpTpXlWgNWDP/iFcjy4gvNPKQ3LBLE9YkRUgf6aogCGYWcUBc30cJR4WKLDYcVZvmbPQZi0cQzZN6z3yAUgu9UEWMX/MbOkPu60pgv82+RJbSxS5nd7FvMMvfrtPNyqy41BOPdqBlcJiLAeTFYQuosHScAGGZl5sLPsUuUpkbB9TI6fgPv9BEcGaLVXstYn7l4OmhgKWp5WLT2Qm1DSnl2czr+eaNgZXCL0T8IjVOGp1RUGyG1jNQASyKUc/vzRT//m/dMNPMe8qIdxDivCF+L941eaMxerLjQc/iex0zjXY40jhtHsP125pCd+Zf/K2CWq8SWPghqGwUTCS1eAGm/CoOvtCp2mlaWRSRyuc2M7ahDbVVImovOkrp2cOg58k1JzZiHCGt3qhyULiPnotbgjC7/PPV6SbKT4R7aKZ/VVZGb0sr6jgEj2cQh7hRs5lpURa/bRNNKbrH03YxkD+NzzWGCPt7Sar+/VW2YjsXcVmhJ1sQLOcqA4h6a7SIUYU4/vCXWE8ouNQtE1Wk429bADRuo30f4TH2yyuKcaDM+1u0Z20SIfr+bhZAai1NHKQHBEYkX6V9U+QpaSQMuAlYxUQY0sP+26ZDtg0dq6vOB9xjHuN7x8cwI+Zo8dEcf72C1yZYxnyOiP5ZKXYwVlWHHqgnKBagZvoVLuaWFYVVRlOuGC5T512G47bMDS/Zyb8pzYUakxvCuDRXSzzO4otEZNpIwAEV+lvEpO0htp2rYUgzFaZiCbcwEKcj7MU4C2FHL3+mXzUpd0O/rMFphOC/QQ==|920
+}//cTS/NXexH/AFHnUMwepQyn3k/B5U8yp14qSbqq1tTOyY5h9LN6ggqCQSCG2fkyERIxT/UkjDt9IIn+mx3SCxVqgNoNv57pKNLWdlB2vKsyYTiuW+vls5rAeISuM/4NUFMxjyNDrNONbLT/dbMVQqNcvDrhClrNz3IrJaCSxU6cmMjBsyMwYara9IQPHuNh/sjVeW6OsuKBflTZhX7BShwNl5DRN7joRERd2KjBXQBWRc5qSaOe3ZyS05sqK/z5Iwx2th5Avyv1yuw0v8Y0Pok0X0sLd9ryfuHzvH65VCGCdlWzNCX63wyC23+pBv9qE7Tj4WA+94DTDXTHbuNtSlh23719TVxV3YAt/pvbsCbGwnAa9/SAiO3G1oYG6TtLWjXkwv0fM+H0xioxAi+jfLyh4OFSbNHP5cQlQKqTNT8FGr49kgKfmDNUcBzvJOi4zGqWwRrvVOk4HVtqvdAS54CbBnZvCQNJKqdEzmxC4jVu+JUZeieoYMOSrSpJbD61WcrcJB47iVOP1kbGJ3u6xAh/BCYw6j4o/sSRFtCg5T33/xWPU+zBolyl/AvDMx3BvtGXe3VWUSDnJMaQIF/fUcfmKeBxAPNLQNu0cinGzKtdmBaRe5dtcyh00eRGdOwP222KsE3hew1Iuny4D9eZvFVBCCm/dn1+bWF1GGHpQb4NtpDo3v4l4fdeW43o+03qcxkGE+lumAlyUxPYpbDB3GX8VCj0CTQAOgXddq3HaPfPCWmPCLuasc30uqDOBSimqPrpWXgHQ2wXeVuucvbHz1cNfSDXkr9SpmvYeoooIhveZ2hUXSzbnls5sroPMheniUUBfVuFkNjp5ttHmhG1PYDT6ISmclQiMA3HhvGy6PzHALM7D+v7PBwZdYJ2Hc+u7yGuFciL7XtWPqGWZTDjlVPw==|920

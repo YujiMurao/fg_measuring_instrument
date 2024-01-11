@@ -189,58 +189,147 @@
                 },
                 "CommandList": [
                   {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "trn_insptool_calibration_history",
-                    "UpdateType": "add",
-                    "ShowConfirm": false,
-                    "ConfirmText": "本当に追加してもよろしいですか？",
-                    "UpdateValues": [
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
                       {
-                        "ColumnName": "処理年月日",
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=校正履歴の作成!H13"
-                        }
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=校正履歴の作成!A1"
+                              }
+                            ]
+                          },
+                          "value": "%Null%"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "trn_insptool_calibration_history",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "ConfirmText": "本当に追加してもよろしいですか？",
+                            "UpdateValues": [
+                              {
+                                "ColumnName": "処理年月日",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!H13"
+                                }
+                              },
+                              {
+                                "ColumnName": "項目",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!H11"
+                                }
+                              },
+                              {
+                                "ColumnName": "業者名",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!H15"
+                                }
+                              },
+                              {
+                                "ColumnName": "内容",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!H17"
+                                }
+                              },
+                              {
+                                "ColumnName": "attachment",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!H19"
+                                }
+                              },
+                              {
+                                "ColumnName": "記録文書へのリンク",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!H21"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!A1"
+                                },
+                                "Value": "edit"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "e4add73c-65b6-4a81-8ed6-6c2f77b555e0"
                       },
                       {
-                        "ColumnName": "項目",
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=校正履歴の作成!H11"
-                        }
-                      },
-                      {
-                        "ColumnName": "業者名",
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=校正履歴の作成!H15"
-                        }
-                      },
-                      {
-                        "ColumnName": "内容",
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=校正履歴の作成!H17"
-                        }
-                      },
-                      {
-                        "ColumnName": "attachment",
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=校正履歴の作成!H19"
-                        }
-                      },
-                      {
-                        "ColumnName": "記録文書へのリンク",
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=校正履歴の作成!H21"
-                        }
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "trn_insptool_calibration_history",
+                            "ShowConfirm": false,
+                            "ConfirmText": "本当に更新してもよろしいですか？",
+                            "UpdateValues": [
+                              {
+                                "ColumnName": "処理年月日",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!H13"
+                                }
+                              },
+                              {
+                                "ColumnName": "項目",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!H11"
+                                }
+                              },
+                              {
+                                "ColumnName": "業者名",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!H15"
+                                }
+                              },
+                              {
+                                "ColumnName": "内容",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!H17"
+                                }
+                              },
+                              {
+                                "ColumnName": "attachment",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!H19"
+                                }
+                              },
+                              {
+                                "ColumnName": "記録文書へのリンク",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=校正履歴の作成!H21"
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "dd53f3c3-d2c3-499b-989c-effd9dd80f7d"
                       }
                     ]
                   }
                 ],
-                "ID": "bbfe6cb3-3175-44b1-a677-450a175f6011"
+                "ID": "98c5937e-db28-499d-83bf-f9e18ca8fe7f"
               }
             ]
           }
@@ -1609,9 +1698,8 @@
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "定期校正・修理再校正・修理・廃棄の作成",
     "AuthorizeInfo": {
-      "VisitMode": 4,
+      "VisitMode": 6,
       "AllowVisitedRoles": [
-        "Administrator",
         "IT戦略室",
         "製造課",
         "九州製造課",
@@ -1620,8 +1708,7 @@
         "品質保証課",
         "基礎開発課",
         "電気設計課",
-        "サービス部",
-        "品質保証課（計測機器チーム）"
+        "サービス部"
       ]
     },
     "RowBreakLines": [],
@@ -1632,4 +1719,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//q7rTvwkCLRPjaUz7QSFKjCvKz9FKrn1E8XUoGQi1N+8q/dR+641D2MA/0MHdF4aAXU5/mVdlT1AHX+/nZzbX9QCBjBVE6LuGrDrDvBhJqdP1Ev1Nddi8rZwvmw9tZ5IzvWsTgfhEr1k7WAHY+QI+oBl3zfNfujsY1qquUdJ0eiQMKG+Q3hyKFRUdUf4ZGA/Hq0/285tjYGSNmKAJ1wiiuUoZphAcRFwLJ9acBF7408RlzNNuCz1XV+mEvMPjT9esGcaBdq465VgQnlVyE9VPjTZrpw9yL7Zq49VhvQq8syZRfIEpanWRxw9EFgcu6iL2TemKjzbV6BdjRb0bg+++AOkT2KO5a+7chjE3jMesp5wGNu5StG0wcPDqBxLqV8NJGZ9NrIc2gE7SrqrBjqHF2iLAgWfPF91TAuj8hBuuAyyFzAiyM4AQtI2F2nuyyAR0GqePcTbapwa1JosWZ8ffTMuLRPTamCfgQIqf6tZOx3PER1dvALmN9iGAsCn5hKu+b9dq8PLJ2KcK0xNT78+TfRWZnxABXjlbsTEaU+7480aL/oJiPw0QRE24Y2iSXybm+eJuCpAFOnGz0H+uexXYRboVU/yGTOr8gzuwM3cr8vzJU2w4lgV5gjPrSai5t5QJJoYgSDOs1YR3qlB+rSm4EgfdmR+uQOr3Qn4j0biUNugIeTMoctBtxmTuyLWPWNipPnRRXLXJ/eFLKoTNFRPYJQHRYW9KWd/OX8dRtQPAIvspfjS4rx24L3GTgTpGeq2V5jOwbFBBZ6a4Ps+HO5SIdON25QiHBXWxTMoNSJCrqkqoG4gpzD7jK+PAI0y3/Yo+Lf10/yQfv4YEUnQhLJOmVxh9xyqwylr5DLPsu5/Eb/Batky0Go87Gqvwq+6vI8c/gWF9WqRW8r2Ad7aEf0zAzw==|920
+}//mxP9BzofmGKDEboLP415oOKhEIXZBUiRNFeb/5hGoxjJ8UdYMGVcQfpJ23ANhrnCmWj5DBzPHW7bWA2iTs4sHdBYOzMo115LdzlGolGoxcrw/rOqImy1NJhCpp10Zr8XADNYvfvSvz9n/cA5bYGyNrWNfnq5U0Mgfipfu5HjGWGh9vuxS5p5Mv2OzFIQmdxnWrLrMNoZoznRFJp+tRC2QYkWPIEktvQja/keGMc8u/Y4WkZS8aZUmSz1Ggnt7S5ZY8kS9ftFar1L54Tji4d9cvE1M6VSN7JUUN58ZQlyzGBiQUmXK+IuSaQXHSxJU0eWYL+Dt9KRj0XBREpJEKSECSgChcINfo2KrQYeadJrR5TFan+lKMu7zfA5Q0JJfSP8hhZ9vVb16wUz+7sEZF840jVzW2W1EURWDUcqRwy5qxZs3mAeJRYYj1FtabzH9DLZVUFlcTCQ0K2EibF2MIhsDVUc0K9WNTvWk9JWuLpSPDdSDRQ02C65TvmLPOKyJ78SQn7XPAHbGPvjrzZJhBZKk/4mQ5A2kBiU9lGn4AXg69k+Lipo2MUKybMJ6vTKtmdgJaHEp1hGI9xUW8CzTUL/2N1+SPvEv7qba6MEV6J4Aj9Phs76dDIPXeUUBmA7t3g3WxxKxpgS2ggAjMBqL6X+6F8taSFI0qeCrArCWWqm2Qnh2a+/QFacY2jAVs6niypE/N34wdbHu61fMG1yvN14hkVU+ubEGgT22tgumDYW5sXqVh1Gw2HfRJC2RiQ8/uYGe0uhVSDLdbfIqKIRwkdBqIfm/mRdsebQsaz1ema5YSouy/7gmie5J5so51Ctd7j76Z4DnO7UQvydYom1symAc/wa5vQP2q/Ewq+TEV/FcYC3rINLwuUelsl0UpQZcjKvMWcEMI/wgG1O+3bbQxacZw==|920
