@@ -310,8 +310,7 @@
             "Params": [
               "=BO5"
             ],
-            "ID": "35ed49c0a4ec49b5a5fceddb7c20e77c",
-            "Disabled": true
+            "ID": "7d93724c9800405aabf0d63a21a18625"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -441,12 +440,6 @@
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
-          {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "計測機器の編集",
-            "PassValues": [],
-            "Disabled": true
-          },
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
             "PageName": "計測機器詳細",
@@ -1694,6 +1687,7 @@
     "4,1,1,2",
     "1,15,1,5",
     "1,13,1,2",
+    "5,1,31,66",
     "3,1,1,2",
     "3,3,1,4",
     "3,7,1,3",
@@ -1707,8 +1701,7 @@
     "3,50,1,4",
     "3,54,1,5",
     "3,59,1,4",
-    "3,63,1,2",
-    "5,1,31,66"
+    "3,63,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1728,4 +1721,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//a7siJudAtN5ezl6r7PMxQAJjwGS3R9xD1rrRUuiSpp0AWfLpOTukrtZAuQ7moQ0SSL1YAL+4/YHlSL+wgkWusdkuOZ5q5zS5Crs6ioWnGR63fBdvmwYD0Npd/b1OiDjUgCXk4/v9xKR+O+QcxhkOIdneVEg1Iob+mjJV+5/yS1/isPwomJvW+AlE/VugA2ChVY2Ygj6IzeNJgdUsk9rQBX6dQAEGd2EMHLtPQvK2bnIuHCVh9bp71mSRNKBxfoiFSwVmYYP9DAgHKgzvWjPHjD2KGgP+ZgBbyfneozjDn4nwc2177orYZBY3YnPRSxC+hniHqmxupE5ekxoMdK93UiMKAIwtWTvTNIzNCxO7+rgLXNsvNe+LniuMFpTANM/zDI5s6vrppxIURv52hFQp7dI7xRh6HXEc1r6RNvgve/1hNHiR5gDHqPJOoWMGiGjBcD43E5R+bQoiZA2n0DYui91Avv4XYL/ssCPCVb2SS3XG4rFMIocvdNFTtFQfijC2d8qBRKmtUby1VTe1+yRgpdPjWlrNimcVRkI0Cjnxgtbejo4lSQKQu2By2+edW3fvWk4zwiNsGAu+LKnTYJFl+JygsZSO8+0gMASxqgtK/IkQ+vQbDDZoKLOW5Zq+2yOHw1lTvVUpsuoaPAmCRGh2Fc+EEpZNIM0lkK69x1FjPsy589T/4z0dIOaEKWVxF1Izm9+kq5X/EZv8u+VrI4T6TS8iSsM6Hs37qHwmQ5+tgrz8ULLS3eCsXAnWw8liToAbOdDIPON1YV+WePXspyHUHjWtXoWoIKW6DjmcdGshAIP5irwPkoKb1/PdqV4Z/mTf1kFYtminlSezFsaKr1esdK5QIa6oSzHMKVnvGOOJPtOkhDjylv347svKdrFIDWZt+i+/7RfccL+aNd1Ypkpiog==|920
+}//dldneFCTyNOZmXg4WMq0ZkOxvJ2WQ6ziVuNsZSRALUWYi1Xjz0gSLDIexbggKHqLy5fmYogbXKX819KO45mVYmQnCgY8WQws1Od4UWkjNiPta5aNBThTBAG0uejyYRjvJYXC392rk0TPy1dKgVOe2dQdYh2RVKCZzwzews+ihcvC1X5bGUM3L+8bOHcBPupleTm2eJMLOv4lL5x/4gw7FIn/R7Ysg1P49BQBBLGqVnCvwYoafmnFpKHv2pYBybJruaoTHAUW9pnHaQbB+ZxXNOiFi1ZhDJ6ovFZxVxLXfJHo5dfPx61TGrCUflIPDZg9hwzHIxRuHg2AGnSDTXmSH5tNyegzYkIpzyKd0Adytk9BkIPAGUiuxNWynm9s6hN37oPjFAZSDgOqNY95synhWH0LI9Y2ucAYARCF7gAOKbPfDkfK+UAjhAB7EVYFvCdJxQc5q4rmZYFCvonMpexu9MxpqkIYqy4/QeJv+o6wPrOKo6tWFBCBh3VG1fPgQ6HUuTSA8me2vJBS3/fKOKo4kun6ecQ8v6ohrxOKyZBV+sqDvNW/3y4BTimA+NXuCU/2SpOieF/kC2FcBk3nTTqC2LL8xT1ZHvjQjRwKSk4dj1WcataMq+7+FEd9sTLkGytXbN7PkiVjI3bjl8eDO42EnQaWNkM6c2Jr4goXElcMsYi/mqVkxCkQG4fFNuTfm7kLfcrc0J4LKjKYcdPDBQyHwwWlxnFTyqVoPwYfHmejwwmjcVLLCNA3FfiQbnWai5+s8YvClZlOhxrYgRPsuFWL9uKQ7Z/QEWZ8rxt0L3pr/1AdUEz1THDGlEDe8KtUsvncGk362daTjLsncq/kwGqM3TOBcTNPpC+1CaX5rfUPdphuzky0owJPX48dgncag5dP//dh1lWdd3sBSWXeuXg6fQ==|920
