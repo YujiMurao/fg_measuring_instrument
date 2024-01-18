@@ -332,6 +332,7 @@
     "0,0": "定期校正・修理再構成・修理・廃棄の履歴",
     "0,20": "→",
     "0,31": "import",
+    "0,35": "export",
     "1,3": "計測機器ID",
     "1,6": "管理番号",
     "1,10": "使用可否",
@@ -501,13 +502,55 @@
                     "SuccessMessage": "Excelファイルのインポートが正常に完了しました。"
                   }
                 ],
-                "ID": "79fccf3a-fcea-48e3-8050-608daf9a36d5"
+                "ID": "d4842e74-5cdd-4b03-ae57-82d7d2bee158"
               }
             ]
           }
         ],
         "Text": "import",
         "TemplateKey": "_RS_Normal_Style3",
+        "Icon": {
+          "Name": "Navigation/193_download_8.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "0,35": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+                    "ListViewName": "リストビュー1",
+                    "ExportExcelListviewNameMode": 1,
+                    "IsOnlyExportValue": false,
+                    "NewOtherName": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=校正修理廃棄履歴一覧マスター!A1"
+                    }
+                  }
+                ],
+                "ID": "35901e75-7fda-4952-8dd2-22d2cbd19f48"
+              }
+            ]
+          }
+        ],
+        "Text": "export",
+        "TemplateKey": "_RS_Normal_Style4",
         "Icon": {
           "Name": "Application/103_upload_3.svg",
           "BuiltIn": true,
@@ -996,10 +1039,7 @@
       "0,18": 5,
       "0,27": 6,
       "0,31": 7,
-      "0,35": 6,
-      "0,36": 6,
-      "0,37": 6,
-      "0,38": 6,
+      "0,35": 7,
       "0,39": 8,
       "0,40": 9,
       "0,41": 10,
@@ -2123,7 +2163,6 @@
     "2,18,1,4",
     "2,22,1,10",
     "2,32,1,9",
-    "0,45,1,4",
     "2,6,1,4",
     "2,84,1,4",
     "2,61,1,4",
@@ -2154,7 +2193,8 @@
     "1,73,1,6",
     "1,79,1,5",
     "1,84,1,4",
-    "1,88,1,5"
+    "1,88,1,5",
+    "0,35,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2174,4 +2214,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//BAOnuQDkKkra7Jo4ARFSBJCqDcwkwE/chaP+GwwpVGjZEyO9ljrI6Nkod2tA47qIQayfNLD7f6BJFaNGPuU0VjSRaENrh2aLG6tnTFQg5Grok4SNJrze+msGkRdZ7lPC48WyqSaTvgeyy1RvefWowF5kDzRubItmLMCZCbTSfomUhKiKRIG5Kkpg3RqpnTdUj3rgRFACA8HQm5Qr/3075vuGdot6jgSw/rPf6/p61XYejr+UwL7KgdRNj5SBDFpkplEOqlmI54oKWvz7QssCe8gnGoSnx9FnY00hV2/pgW0u1b3i/OhnDtB48Wlaf+DK7JT2FmPxRHbbBMDVtbYTFDsBqh2jHcHyelQKr0d1hMVL60IBFdqLsBU0Y5o6wvOx0hErpHmEBPGYlph1+Y/dXd+sTLFN5sdemCE9lcjSYZUrykRONr0dfLSVFN5fBplIF0etJFAmCqmzOkQDQICTHlC19brNJILDs8XmJnpPSTerUg93Fu0XACCxJ7P3pA3Tqi3C5OuA7Uj57YLI6ldtRqZSKmEIyc46yapseLQAE8W1I34ggg4QcWubLexMMBBcmS23h+qQMHHCGHNs+0adZiUA58x/3cawCYcCusB8ZHtT8n/77xmmU3aXizijH6eDgrBntGv0ajQe6T7YElA1j4+JXOz97ceGpV6t/JQcIKw3PsgfeotUfaEzI9k/SDeXyOD1Oz+nh/h6sj2TTHKCvvefj80pPotDFkYKG3xdJiBsrpluLrN/uU/3afGhn9NRXWBmjFBJR6ay4eO3aZQjACPFd6aiC3Vntjuw/6k5jsKm0ht87e0L5SU2yBAlTPyXtyV/RfKI6o05GIvlX580XIXCxun9BksjVsfYfl7gbwqIwG2GxIrrJKikXesJXmGM6r9JYfcMthuEFRN++OVj8g==|920
+}//O6e6wXMwmJolRWlu6AVfgdAwJuts++ghfUYj9CWtinyBi2TStI9Uyzxg37v2e33mACfCG/WPE1sUdJIz4GH53JTwrAXkLWfJgsW4ovWuzcgpiURDb+xSQjOFLxb3E6ea+exjaL/EExTlRgByka21srZI7wmmLs3PgyvcjA1OYkhuzG53pLFgregs2opZmF7XqxSa6kmWm+e2PwwvC/O81v1kQap/Xz23iMQHWl97uPcXOCdeuYfEj5kPUBUZDyiKWvaYFGhPH2kHnyq8utUuDZNg2fXrQgpViBXl0g3pwSYhoSZQIJFGBJF4Vq65M8N+JaXS0pjhyrPw27+LmR2d/53Wxr/bb/+LjYRaJQGgricubktCe2BQDjy4loMDiiVvEgmf9vuqVPcAMe4r7cs+YWbvEoZYy5Nj1wUfma7IuKYkrboikQ0x99jCXbt+aqgk9FwYjGykYpZOSq/agBOcLNrL6oJmlL1syPEUmR7hzk55Q8a4jScr5iDiNWwWk/oph1Gr2PddF1k2VDdJMGciSGy2Y9RkLK6U93KTjcGp7G9Y9cUPYoR6uX4W+bFoioyxP7vXKZqwFNpsbJ2LvT3TYLW9LQa/QIh+OFIePL4lBkqPoeDYvkEkvF/YYUv2h7KjRoQw0h3acsb6AqR6F7jw9Y9dL0WZX4gDlfX66xbakqPJtOt3VoCDvJV3SrJHhCzB4wZhWp68nz3I35Run6xhQUX/N0XYLh3Jww8rpVBNRf4y+nthk+NADv/8UwEkMpOhbmh5mg3LgW6/SxoIM9M5/owlTygPvfFtY25KsZtU1NXpaEwF0L6B7hQlj/94jfGJ0cI9A7SVrOg5ROI2oqvlg1mU0PQQttzdZD8Fw8kz10rG10hWvoNKjiOs7W4PBxOA1gDUSKZL4+gkOVUsXAFzMA==|920
