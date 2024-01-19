@@ -204,14 +204,10 @@
     "6,2": "メモ",
     "9,1": "Excelエクスポート",
     "9,10": "記録文書作成",
-    "9,48": "登録数:",
     "11,1": "登録日",
     "11,6": "件名",
     "11,7": "件名",
     "11,34": "メモ"
-  },
-  "Formulas": {
-    "9,49": "COUNT(B13)"
   },
   "AttachInfos": {
     "2,5": {
@@ -312,7 +308,7 @@
               "=M3",
               "=F7"
             ],
-            "ID": "b722ddd2a4a84c9c81dffaa1bbea19e5"
+            "ID": "baefa6918e13421cb15df07a12aa4aed"
           }
         ],
         "Text": "検索",
@@ -340,7 +336,7 @@
               }
             },
             "Params": [],
-            "ID": "e949068d064145e6940cb8b1b058573b"
+            "ID": "e904480384454caa8ba25abe0a8bcbbd"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -411,7 +407,7 @@
                     "NewOtherName": "記録文書リスト"
                   }
                 ],
-                "ID": "8f685d66-84ed-4f49-b660-0884c858972e"
+                "ID": "9b8d576e-e770-49f7-8b20-cdcc4a2b75ea"
               }
             ]
           }
@@ -472,6 +468,7 @@
         "ColumnIndex": 1,
         "ColumnCount": 51,
         "RowCount": 25,
+        "IsAutoReload": true,
         "IsTotalRowVisible": true,
         "IsTotalRowAtFirstRow": true,
         "ColumnOperation": 2,
@@ -2298,7 +2295,6 @@
     "9,1,1,8",
     "9,10,1,8",
     "6,5,1,26",
-    "9,49,1,3",
     "12,1,1,5",
     "12,6,1,28",
     "12,46,1,6",
@@ -2348,7 +2344,7 @@
           }
         },
         "Params": [],
-        "ID": "0e23da8954b244bda61b85ab6847f751"
+        "ID": "9d7704cb000a4318873be1afc1f9754d"
       }
     ],
     "AuthorizeInfo": {
@@ -2373,4 +2369,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//pqbQkq6epm2XX/8G29W0VTDrEmH5VhXL5Pflr3DiBaQ3wvSzVQtBdHPiIw2gaUnfHsQasyO8g7w9pYUyBf1us2WLaAB8hN0h11tneokQW0E/Tr4LyI64D75M1N7fIizineos4e2blLzvQtutIn7WTlgeJM6MvtXkljGrM1SdmTafXU1a7d2U2zzCCbkeE13WuxgN+kg2aezfItA9ZQBLGqZrjaz9DLdzmBceGOmJHi9bxHJoRmrP9TawiaMDd/TtLunZxS4MSq3DHt4L8HTsK+D2FjT3cgFeePqD1ZhdWBZG962shdpM2fZeGYiUvBio4yCb0pnyjzXgTyrEzQx/vQ7w+9IQ3MjMo9Kx9vpJoI++YyQuU/8/g/M7fCebXdhZs7FcQvpYLMPLRFVlkmjt79wxrdZD0Gn0HDvrZBCrN6CmVNrXL28w8cLIo1mmguUXRyTVfLlqRY3PrhgrM8yClbzhGR0efHISG1IrYcI0qyuLIhiFzZC5x71FY/FraVnP54v98FPNmM/TIqZFPskgBYEnIfltlVCcP+sG816MD2bhICVWYx3TQUDLvOmLJXnsPOp6afY98hyckHRHreZTRpMgGrVIUP8IfjNRM4JhSAlQV+ol8MTxhHDPRGUS7mObqrLWdaX5S0n+j/2jTgdznTe0tZI+QaemxYNRRddS0JbefDUHFCTftMTtyWMBFNlsekYBuOyIYYXEoP/4ot3aPVYJSi4qjA0FtRvgogHK1/juQ0wrWJhaWAmivOJnqKq/FKVSemejgDqFGorqAeXJ7Vnk+rRJu6yhKNwfDNL2IElizC7roY1sZyFhdagYfo/HiZUTSwSc3fIWhStS84IWtHD4JxaCn7S/J39hPMXq7nGbba/Wjm2MruWkxX6DVGzociQUojZpZvYuvhx3L713+Q==|920
+}//Zl0dqlTtmDTma+ljeuAvOnhjfmRUJYNeSFwjfGJbi5yiSOoTmA1SrnPCjpQCSTm/Ggz+0BpOUGCQnu4TGIHCVUzEu5E0v3xO55AjkREqleXKoHdXbuHo4I+FuhaLliT9TRSxsLKRHmiF48RabCfdFnVLsj7n0cgNZbJaAm29nK3eDZUDRw4k80h5GOG3ffvwLmpbbbWzW1qtoSgWFZdQqAXsQyGwtd2k+J95sMkWIqfJcq8Yn9TnoZEGe9LPMFjs3ER6+Yw8SIJlEe+JJDbpIc6hXhVvOMKljVe03On4WEFa6ITwZx21Cob5TFsJZpec0Xub1UJdwWftpep57lY8ZPCibC4Ai63arKzBHAJoIsIyqbHfF8Xrrd//n2iwVaBiRLHlfPHqvEoPLUpxA5baQzPm4TY0upMuQNGIdgmW0yyXaOG+zVq6HUlbOu3E/RzRqnDRc4/8a/HmJKrAPInSSOmK0cysMHbF7BZKsSV5Udt+UuGvy1SsCeQ4cqSmLOS7RQOnLPlJQg+S16pJ6kD7yGAkUWO1jIggNAyVkBI023+OD1+gltRsAY6k2XXiCVTxM4Y5OrsZAeFoWF39U+tVAJqdcGee18rQm4BX5X86qPmjRYMfr6p0wPeYpG5egQ+aHn21yJ8fP24BFKlZai6o/Me0KOygFg5cChe3a1oC82tMEOKNtEyZzZoKeA+bACPNXoDvIGlxchRDWE7nj1uL7AIhpTgAzG+g56/iKeanAzVzUMg8WEChO2K40xVVNonOHExbFg1GTqzsiNP5UXQUCHuSW+Eu84H9RaIZ1MRr4Rg3x8h3Db6t7UieJ2kpasKjL4cZ+gnnazXE5/kUhxdPP2o9UnkEAemFSlMLyRgisCiY6kFZYfZ7OSWBe7afFl3Zyqa3snGZ+/ji2qudRol4Rw==|920
