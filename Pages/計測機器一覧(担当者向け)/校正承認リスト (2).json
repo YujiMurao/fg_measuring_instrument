@@ -102,7 +102,8 @@
                     "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
                     "TargetTableName": "trn_insptool_calibration_history",
                     "SqlCondition": {
-                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 6,
                       "ColumnBindingInfo": {
                         "TableName": "trn_insptool_calibration_history",
                         "ColumnName": "FGC_AssignTo"
@@ -110,10 +111,10 @@
                       "Value": "%CurrentUser%"
                     },
                     "Params": [],
-                    "ID": "e15440fdea6f4ca0a7393dda48b1e0d7"
+                    "ID": "ba062373fc9d4620b2e042451c828a27"
                   }
                 ],
-                "ID": "56f19c06-ed34-45e4-a56e-bc926a70cd58"
+                "ID": "0dabbf37-23ce-4b07-969e-3a630c20b048"
               },
               {
                 "CommandList": [
@@ -131,7 +132,8 @@
                         "Value": "%CurrentUser.FullName%"
                       },
                       "Condition2": {
-                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                        "CompareType": 6,
                         "ColumnBindingInfo": {
                           "TableName": "trn_insptool_calibration_history",
                           "ColumnName": "承認者"
@@ -141,10 +143,10 @@
                       "RelationType": 1
                     },
                     "Params": [],
-                    "ID": "740940795f284db88730002a59d68628"
+                    "ID": "bd9d657c3f5a4e4688f8e7d548db4433"
                   }
                 ],
-                "ID": "fd8fd6fa-71b5-4aa4-86b8-d5e58a14ae00"
+                "ID": "d625179d-7a05-4f7a-abe0-adf10c901369"
               }
             ]
           }
@@ -209,7 +211,8 @@
           "Condition1": {
             "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
             "Condition1": {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_calibration_history",
                 "ColumnName": "FGC_AssignTo"
@@ -2872,13 +2875,13 @@
     "4,13,1,8",
     "4,21,1,4",
     "4,25,1,3",
+    "5,1,31,27",
     "3,1,1,4",
     "3,5,1,4",
     "3,9,1,4",
     "3,13,1,8",
     "3,21,1,4",
-    "3,25,1,3",
-    "5,1,31,27"
+    "3,25,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2914,10 +2917,10 @@
                   "Value": "%CurrentUser%"
                 },
                 "Params": [],
-                "ID": "fb4a02f5951d4d40a5750443d2bb4e62"
+                "ID": "081b035fe09d46b6a176c20d0f22d883"
               }
             ],
-            "ID": "6b20544e-9f0a-47c7-81f9-465c0721d78c"
+            "ID": "3b8e538d-48f6-40d4-9ed6-821ad0799578"
           },
           {
             "CommandList": [
@@ -2945,10 +2948,10 @@
                   "RelationType": 1
                 },
                 "Params": [],
-                "ID": "7d9a533f09d74952b44e9bae442011fb"
+                "ID": "7392a026256e4f13b909097bf8c52389"
               }
             ],
-            "ID": "ba821e14-a4d4-44c8-a6e9-38c8053ea0a8"
+            "ID": "42c65d22-5831-4b98-86ea-2f8a2d31caa2"
           }
         ]
       },
@@ -2966,7 +2969,7 @@
             }
           ]
         },
-        "ID": "76185758a4cd4d519963af713c7d863d"
+        "ID": "90aaccbb057c4951ae40cd01d66ba3c4"
       },
       {
         "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -3010,4 +3013,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//q0oZ5vszPdrNeLLCNRoLpicw0QngtopPdEB7jrgp0SgAjx3Li0vgpJoDUwJYPnLp8TKqWlsGKIuN7hh8ZMmI9eut6V/XHD87VbIDGzJI27fHWZcGE8Rjhope0bB8DC3FSEfj/KB2OeZJpnYyQRdyCiOyrcKppG0mwnrpL5r5m2Nq3UwNQvkcmUzwM99osR6x6XD53RRyjmU1uwX0Bj3l8bVPJwq9wcCVVCtI2COoluXyG8XM4yn5cFAcMhmW8GKN7LZboGseLlWOm8AEnOYSmWQtzEDLNN3J6aFtpES7mlpompHaly6WlaEWIudTZamxTATlsLx5/9VQAtT8U3X0bFRz+n+oe3o+IMsRAMgmafa1p18F4A6ATfw6w6HGN2/U0Vaf053ZHqs+6FwQcYphQ9bIJGiZ6RiDYefboiyhq7tBuUAlEvI07Q0Jy3B1WZXNA1t66sAsf2cRRrqIPjqBjfc6/K1HpirlP1CqYxjhoMTSzcRQa+DfqCllaB53UCY/a5PhvpX0meopwuQrAvKJAHuhMNicKlNg1oD3V+747I+rG0WVp6POapy0ZHkkqNJ4p/SHroEvUWGpigy4k9fWPGX9ggGcWn8de/FQwBJrX+5KIKtTwpHj44V+l5SIdgsnpawDwNzrvtMqppb8yXYh3d43HoDXd7Gy0KPl0ZJ3Z3jWpDrPxbJdCiMj8K5y9Gx6fBz0GnGlJJtR/n8q0OOMBY0MtizGtyE/7Pevwwsvsn3bYC58CE5euhJauKK4NinOkyUj6Z96lHAaB1Oo8YqkG+lfhQGqPjIHTPho4nB0UbCyyvQkWJ5pc0qfqMcHBbQOKXDuyIjfQDOdlmZ4Yr8GREzz/YawhQNRATPW+uIFEYw/FH+sNlnRV99eB854FrbqHdj2wVh6/oOse1hzXjtS0A==|920
+}//qo2GNtgGFJmI5yo340Q+u7pIlW7uPPuT+LC2fsg1Pr3GBL2IpSZDjH1z3DvZxpZt7khZHU6xpTs5wDTmlcMgefikI0thRZ5gjxYon4IrTzQQvgqfBwbWEeTL+s3SpoBNy628c0nKV0b/U9FBZ/EjLrzBkoffOmKzg3+Ia2DZ844RHq0Jua6mt/FDf4i3VVw5fCI7fqS8wPPB/NBVFwYPZKScif9g609WOw52/ji2rwlAbdHhfLdexDaMtCVEOAvhIr7cC4awP/iTW3kLNQqiSYR7DqOiZJygSLSRA+srCHlxNP8FiZvm3Zi60UzM+HzHmqe+j7a+DbAP3Dp5/Xz3tuHf5fpKjfhaMdfMvanHPBSGoB/qHO6z1xA5Ilp+bsN/Stdn2Qm4uMB8bxOnZbioZugUDDTufQD6/GzHekze1RKEA3qRAZeea5kJrc8dqFZA2CrG5rbnoAiYQCV+1sVAzgIWvtGdYPjvymj3VP3U3Fw+lROr7aDFRUk7UKmPqGnPEpKftn+y4vup1jwAzvp9P+nD2qfWYGyqYREGv1hsDhh9+meU5kiM2alCGhZxnZXYqsTU3oN/yNxqlAkDSB427UFc+QQeMD4gozylVwAzx1Jq6bS2zVi3mXpb98pQ6ymkMKcY1RDaDutHMsrDbWh868yBA6fgvMxc0FCDeewtRr5M/uYWSG77QAxsbSES43lqRqzRz5d+lHvYlk7Zx5/DgtICeu3XNLw/tze4rWagKR//eh65x3KVRwXSN5wM4MkDj6DzMiu9uTn7zk/qkzfdElc7vCu3MyKuRgd1oQB2smEKaDpRYYPPJQkq++5JULRMT2bgl1hqHAqIu4+DhJ0ymxyc/u4wM/ptPNvOUi3iNy7d2VRtaPXq1ABEtW4RSwH8TU8Qmz9TBwR52eCCRHmf8A==|920
