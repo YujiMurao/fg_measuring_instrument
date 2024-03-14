@@ -16,7 +16,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
       },
-      "ID": "de84980fa93e477d926d35b54cad573e"
+      "ID": "52b1d3c0381841e8926692cf9630a7ed"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -25,7 +25,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
       },
-      "ID": "9b9667b05af046c39224f2427e9a08e9"
+      "ID": "d1b6afe557e04a9d9ebabe3bf2e2eec3"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -34,7 +34,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
       },
-      "ID": "d0c0f1b2b1c94ea2a1229bbea9ac920e"
+      "ID": "ade1e88d839f4baa92d3f83659c8b4aa"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -43,7 +43,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-2)+1,\"yyyy/m/d\")"
       },
-      "ID": "3c89e019b526483891755b777effc690"
+      "ID": "23219f57f64548dab1fdbd8a2bd5cb2a"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -52,7 +52,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1),\"yyyy/m/d\")"
       },
-      "ID": "fc72067a5df34736bd319ee1f7cc1a3e"
+      "ID": "b10408e20d794dc3b0368807b2954788"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -188,7 +188,7 @@
           }
         }
       },
-      "ID": "a80dbe344f854785a308184a363f5bb8",
+      "ID": "a4f4c6fdf20742b384f636a9441bdf67",
       "Comments": "校正月の案内用"
     },
     {
@@ -240,7 +240,7 @@
           }
         }
       },
-      "ID": "2001125780ab47769141c36ccaef4ae0",
+      "ID": "5afa9bc60ff3461c8ded58fdb99224fd",
       "Comments": "有効期限が切れる案内"
     },
     {
@@ -301,7 +301,7 @@
           }
         }
       },
-      "ID": "9675e4810500485eb5eab7b42b7f9b0b",
+      "ID": "65a8de5c58a943e397e64cddf9710330",
       "Comments": "校正切れの案内用"
     },
     {
@@ -370,7 +370,7 @@
           }
         }
       },
-      "ID": "09f27529e46c400b8722edcd86328872",
+      "ID": "ce164455c5bd4033bde7c5c27d1c4d79",
       "Comments": "校正切れの案内用"
     },
     {
@@ -426,7 +426,7 @@
               "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
               "From": "equipment@rorze.com",
               "Subject": "校正測定機器の期限について",
-              "Content": "甲斐　理恵 さま\r\n\r\nForguncy計測機器タスクからの自動送信メールです。([=今月])\r\n①今月の校正対象測定機器は[=今月校正数]件あります。\r\n[%PageNavigate=(今月校正対象機器リスト,こちらをクリック)%]\r\n②今月の校正有効期限が切れる測定機器は[=今月期限数]件あります。\r\n[%PageNavigate=(今月校正有効期限機器リスト,こちらをクリック)%]\r\n③先月の校正有効期限が切れた測定機器は[=校正切れ数]件あります。\r\n[%PageNavigate=(先月校正有効期限機器リスト,こちらをクリック)%]\r\n\r\n以上\r\n",
+              "Content": "甲斐　理恵 さま\r\n\r\nForguncy計測機器タスクからの自動送信メールです。([=今月])\r\n①今月の校正対象測定機器は[=今月校正数]件あります。\r\n[%PageNavigate=(今月校正対象機器リスト,こちらをクリック)%]\r\n②今月の校正有効期限が切れる測定機器は[=今月期限数]件あります。\r\n[%PageNavigate=(今月校正有効期限機器リスト,こちらをクリック)%]\r\n③校正有効期限が切れた測定機器は[=校正切れ数]件あります。\r\n[%PageNavigate=(先月校正有効期限機器リスト,こちらをクリック)%]\r\n\r\n以上\r\n",
               "EnhancedRecipient": {
                 "CommonValue": "kai.rie@rorze.com"
               },
@@ -437,10 +437,10 @@
                 "CommonValue": "murao.yuji@rorze.com"
               },
               "Priority": "high",
-              "ID": "bec36488df2e4ecb9da8e91b74329533"
+              "ID": "967509baca7449ddb4a57940cfbd7b39"
             }
           ],
-          "ID": "2bcfe1c0-278b-4a25-9ad1-522cd354867f"
+          "ID": "638972e7-5966-4e60-a071-0497b04d4b56"
         }
       ]
     }
