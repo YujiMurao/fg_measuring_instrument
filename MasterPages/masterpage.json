@@ -305,6 +305,7 @@
     "23,2": "今月校正対象機器リスト",
     "25,2": "今月校正有効期限機器リスト",
     "27,2": "先月校正有効期限機器リスト",
+    "29,1": "N",
     "29,2": "申請・承認待ちリスト",
     "32,1": "記録文書一覧",
     "34,2": "すべての記録文書",
@@ -364,7 +365,7 @@
                   }
                 },
                 "Params": [],
-                "ID": "c2ff2afeead34a389dc7bc04df0c9b18"
+                "ID": "7e8d0a8241774145b7b2ca0482f9edda"
               }
             ],
             "CanVisitRoleList": [
@@ -449,7 +450,7 @@
               }
             },
             "Params": [],
-            "ID": "1f46b4f1b0b64792a9e18886ddf9072f"
+            "ID": "4884cd6e8a2640a69f77181313937f12"
           }
         ],
         "Text": "すべての計測機器",
@@ -480,7 +481,7 @@
               "Value": "使用禁止"
             },
             "Params": [],
-            "ID": "f4753d0926f44e7a90c456711c0021c0"
+            "ID": "c600c26b70664b3f9be504e0c18dce6c"
           }
         ],
         "Text": "すべての計測機器(品証用)",
@@ -547,6 +548,21 @@
         "ClickMode": 1
       }
     },
+    "29,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "校正承認リスト (3)",
+            "PassValues": [],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "N",
+        "ClickMode": 1
+      }
+    },
     "29,2": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
@@ -583,7 +599,7 @@
               }
             },
             "Params": [],
-            "ID": "70b3c18ea40d4eb5bf7667a40adac18b"
+            "ID": "81498236ccab45a797f934981d734dee"
           }
         ],
         "Text": "すべての記録文書",
@@ -614,7 +630,7 @@
               "Value": "社外"
             },
             "Params": [],
-            "ID": "3220324d24ea42a09f44aa9a96f7ffb5"
+            "ID": "00e5b120c3404f73a886127266705a68"
           }
         ],
         "Text": "定期校正対象計測機器",
@@ -809,7 +825,7 @@
               }
             },
             "Params": [],
-            "ID": "878395b11b9743a3bc1e75df746f3c82"
+            "ID": "67d80012c95449709453f9e0166ec2ac"
           }
         ],
         "Text": "校正・修理・廃棄履歴マスター",
@@ -852,7 +868,7 @@
               }
             },
             "Params": [],
-            "ID": "7e705aef018e42a3a273b89dd66b3dc9"
+            "ID": "ec2fcff1a3a944668aede979d1e03d79"
           }
         ],
         "Text": "記録文書マスター",
@@ -932,7 +948,7 @@
               }
             },
             "Params": [],
-            "ID": "aa150d874a1c405bb4701d940c442bc9"
+            "ID": "8736824fb30c49309774ba66293838ec"
           }
         ],
         "Text": "校正対象機器",
@@ -1122,6 +1138,11 @@
       },
       {
         "Background": 18,
+        "Foreground": 21,
+        "Underline": true
+      },
+      {
+        "Background": 18,
         "FontFamily": 10,
         "BorderBottom": 1
       },
@@ -1135,11 +1156,6 @@
         "FontFamily": 10,
         "Formatter": 14,
         "Underline": false
-      },
-      {
-        "Background": 18,
-        "Foreground": 21,
-        "Underline": true
       },
       {
         "Background": 0
@@ -1549,7 +1565,7 @@
       "28,12": 25,
       "28,65": 25,
       "29,0": 25,
-      "29,1": 25,
+      "29,1": 33,
       "29,2": 30,
       "29,3": 25,
       "29,4": 25,
@@ -1563,13 +1579,13 @@
       "29,65": 25,
       "30,0": 25,
       "30,1": 25,
-      "30,2": 33,
-      "30,3": 33,
-      "30,4": 33,
-      "30,5": 33,
-      "30,6": 33,
-      "30,7": 33,
-      "30,8": 33,
+      "30,2": 34,
+      "30,3": 34,
+      "30,4": 34,
+      "30,5": 34,
+      "30,6": 34,
+      "30,7": 34,
+      "30,8": 34,
       "30,9": 25,
       "30,10": 25,
       "30,12": 25,
@@ -1589,7 +1605,7 @@
       "31,65": 25,
       "32,0": 25,
       "32,1": 29,
-      "32,2": 34,
+      "32,2": 35,
       "32,3": 25,
       "32,4": 25,
       "32,5": 25,
@@ -1615,7 +1631,7 @@
       "33,65": 25,
       "34,0": 25,
       "34,1": 25,
-      "34,2": 35,
+      "34,2": 36,
       "34,3": 25,
       "34,4": 25,
       "34,5": 25,
@@ -1680,7 +1696,7 @@
       "38,65": 25,
       "39,0": 25,
       "39,1": 25,
-      "39,2": 35,
+      "39,2": 36,
       "39,3": 25,
       "39,4": 25,
       "39,5": 25,
@@ -1764,7 +1780,7 @@
       "45,0": 25,
       "45,1": 25,
       "45,2": 30,
-      "45,3": 36,
+      "45,3": 33,
       "45,4": 25,
       "45,5": 25,
       "45,6": 25,
@@ -1819,7 +1835,7 @@
       "48,65": 25,
       "49,0": 25,
       "49,1": 25,
-      "49,2": 35,
+      "49,2": 36,
       "49,3": 25,
       "49,4": 25,
       "49,5": 25,
@@ -1847,7 +1863,7 @@
       "50,65": 25,
       "51,0": 25,
       "51,1": 25,
-      "51,2": 35,
+      "51,2": 36,
       "51,3": 25,
       "51,4": 25,
       "51,5": 25,
@@ -1889,7 +1905,7 @@
       "53,65": 25,
       "54,0": 25,
       "54,1": 25,
-      "54,2": 34,
+      "54,2": 35,
       "54,3": 25,
       "54,4": 25,
       "54,5": 25,
@@ -1903,7 +1919,7 @@
       "54,65": 25,
       "55,0": 25,
       "55,1": 25,
-      "55,2": 35,
+      "55,2": 36,
       "55,3": 25,
       "55,4": 25,
       "55,5": 25,
@@ -1979,7 +1995,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
         },
-        "ID": "23501f6485654a8dabc5e54248aaa541"
+        "ID": "87fed3f44ca5460fbc8c32efa299d2b7"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1988,7 +2004,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
         },
-        "ID": "942c0c7a89854bc7b30cd35e2220a622"
+        "ID": "1f5b61ad85f14dba8e60b049153a35e7"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1997,7 +2013,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
         },
-        "ID": "678825f1096543d398712da185e5def5"
+        "ID": "37826d3f0cec48a0807c7da533332b98"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2118,7 +2134,7 @@
             }
           }
         },
-        "ID": "291ab473e614405d82673b342d3d17e6"
+        "ID": "d0673f0a68324730b4f976819d769206"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2226,7 +2242,7 @@
             }
           }
         },
-        "ID": "21a4315771584b98bd977520c915ff01"
+        "ID": "712c4872c3bf4bf6957144411ff90be1"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2235,7 +2251,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)-1,\"yyyy/m\")"
         },
-        "ID": "d428979c7aae4bee912218cd11187f31"
+        "ID": "b51020a9423647f999872a865ce9c430"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2280,7 +2296,7 @@
             }
           }
         },
-        "ID": "f788ed9f4fb94086bd68be9248607219"
+        "ID": "dc90763a528b4d0e98ad8e513179153b"
       },
       {
         "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2353,4 +2369,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//Z3JcSvkU7Sh6ycsiBRvK9ypX8LxEP53kC00dTviW2oF7xypal3KBWbRrqcNFE2wKBD13Vb9/d0+OXreYYQoBvcGqT6IY2EIA6RwA58tb1Q8oBsL58Ef5cSLbpX87Aiz4m/7HKQadZLunJJfT6FP6WznUxQSh6OvwtvTTTSuwKpnXPMAhPP9gt4eUgf4Q9GLiKi2AzE+s8vSS1HAWcZ1YKqJiDQ+NdMln5tmbg+oHofa9nJNwbD7pBpmd+kKTH6StotVQkteaZe7EswUFQ8lKm8LEGclwER8t9X/M4fyHNsmpq7Du0GURWd7E4AN1wj8iWl5fFTm/bvyjFMX62A5nOVu/bpmLY5WdI2Rlynxr5KrWFnKVezfpQ1ZvlSfwWoHuRPTU6lRbIawFcpes/1W2xAC8LnwnbUMoFQ+6+GB2WxMiorn1zp1EkdNX82/CINahhOYMOzBkMwzt+hJIlXELlNsNdpkSmAuZTbl0Phjtk7gdw0RsuMymc3Veu4lIhBghqCCNyUWbDOWnG/ZCcEYuB3LSBnFIOlg35xJE/UIRiG1kl1bAcMgqcCTt27AX4ocB/JLFgKa2D8O3SnnbvND34cgKZYlJIznSElBvTR179DLNuA+eSIkiMFfnC65MKLikoWDZO3blIzxh6IOPet9kvyro+GVqjSmYBrexMTqERZGSgIj+cIZ8yBRB9whuVfq3umhdQgAMZRuvlE+vPnmenl/cF96Lm7PYQMUOcIOAbCr4uWflRXKEiQ8mRfOQESGg8Mw6s8jRn5vJDZ51ecw/0LeowDixNVgnIzrvrpKwezcw8d9JyBGxYMiOaMUD2jMn4kH1zCs9ebihRhczpQmfMDlHAmGU5Gx+pE27nENQKPExobQUMeTyLlgnJTsshBL6xJ59aOZIZ92LWhtQ6DNXNg==|920
+}//C3yDSws/MQMf5p17IOKcrn0R4y1kUhDSSIHtc3rby86b44+ZDRoy10Bo0CCityaxsTrkLXtYuVTJIskKRXcPQwRPEUFIbFeDEC9DgisOjUS6PLl+1c2Fbw57JKD57PNmCKdcJ/B9FVJ9aWb8j+uggAIHADTcIOuqdTS6RGf6vMepZSn00GmOIhjTuyF7S9ckJQ30dI4gsNI5p3jypwjgsOYj/0vh6/E6KM1yjTnqpziP5ce9eVpktJtCRQY1W/19n4OAFdsCQuxIH8ISn3ltmPu7A0utQxCIgr/ql1IaISTnsmv5dN/A2es2ro/XO2HraCw9Atsd9ac8wX/LFj001YTZnHKc7RzZdjSdKKdtf3Sd0chZteR4gMeaqVKISKLIC9r8IIgYEIwMC3wvI4bDYAmVW1j++USkFnPJ4+2TxmEiNL+mkYLFSfNVZSP5duEzwUFpkmDgvuL39gnzrmlfd+SARF+uwwnpoAh7Ia8dmp8SWKz6dZGO7ODIq9Xls7jCAiX4ekxjip7tZXYhFBEapyVkuR8Fj/fLKCD6+EEPOxwlk/MFHN0jmoxj/wQqLB93dUj4O01gzYfj6N3iqhAMxpfkqfQ9jwuhyZGTQduehNjVICuZ5LW1KLPLraFZRIi8TfsuImARTeXCGu726PXL4NG2t/jty8O1N5wB6u3vkEHdhP0RIVTFj7xK2AekJYmnyhIscKzLDdgjWt8KVRkaOBM2lX5/Bt02r1dOtihmCilda1CMQpFTJZ4bztzOvuf1PnE0x15jeJHBM+lV+ZsbYbZumYJ0hIS0x0T5R+FbZjeFq2vWIpLKyqQ03odPkFQ4CEvwssswe+0rZaIuGzlY5DeUXHMSsi5S6iKl6AgJmPZsg2FD6hAAynyLfkqnFe4q6/GDX4lntb7/JIpw9gwAFA==|920
