@@ -439,21 +439,142 @@
             },
             "Condition2": {
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_tools",
-                "ColumnName": "pic"
+                "ColumnName": "category"
               },
-              "Value": "%CurrentUser.UserName%"
+              "Value": "非校正"
             }
           },
           "Condition2": {
-            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "CompareType": 1,
-            "ColumnBindingInfo": {
-              "TableName": "trn_insptool_tools",
-              "ColumnName": "category"
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_insptool_tools",
+                            "ColumnName": "pic"
+                          },
+                          "Value": "%CurrentUser.UserName%",
+                          "LeftBracket": 1
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_insptool_tools",
+                            "ColumnName": "n2",
+                            "RelationBinding": {
+                              "RelatedTable": "mst_insptool_management_department",
+                              "RelatedColumn": "code",
+                              "DisplayColumn": "supervisor"
+                            }
+                          },
+                          "Value": "%CurrentUser.UserName%"
+                        },
+                        "RelationType": 1
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "trn_insptool_tools",
+                          "ColumnName": "n2",
+                          "RelationBinding": {
+                            "RelatedTable": "mst_insptool_management_department",
+                            "RelatedColumn": "code",
+                            "DisplayColumn": "leader"
+                          }
+                        },
+                        "Value": "%CurrentUser.UserName%"
+                      },
+                      "RelationType": 1
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "trn_insptool_tools",
+                        "ColumnName": "n2",
+                        "RelationBinding": {
+                          "RelatedTable": "mst_insptool_management_department",
+                          "RelatedColumn": "code",
+                          "DisplayColumn": "staff1"
+                        }
+                      },
+                      "Value": "%CurrentUser.UserName%"
+                    },
+                    "RelationType": 1
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "trn_insptool_tools",
+                      "ColumnName": "n2",
+                      "RelationBinding": {
+                        "RelatedTable": "mst_insptool_management_department",
+                        "RelatedColumn": "code",
+                        "DisplayColumn": "staff2"
+                      }
+                    },
+                    "Value": "%CurrentUser.UserName%"
+                  },
+                  "RelationType": 1
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_insptool_tools",
+                    "ColumnName": "n2",
+                    "RelationBinding": {
+                      "RelatedTable": "mst_insptool_management_department",
+                      "RelatedColumn": "code",
+                      "DisplayColumn": "staff3"
+                    }
+                  },
+                  "Value": "%CurrentUser.UserName%"
+                },
+                "RelationType": 1
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "n2",
+                  "RelationBinding": {
+                    "RelatedTable": "mst_insptool_management_department",
+                    "RelatedColumn": "code",
+                    "DisplayColumn": "staff4"
+                  }
+                },
+                "Value": "%CurrentUser.UserName%"
+              },
+              "RelationType": 1
             },
-            "Value": "非校正"
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "n2",
+                "RelationBinding": {
+                  "RelatedTable": "mst_insptool_management_department",
+                  "RelatedColumn": "code",
+                  "DisplayColumn": "staff5"
+                }
+              },
+              "Value": "%CurrentUser.UserName%",
+              "RightBracket": 1
+            },
+            "RelationType": 1
           }
         },
         "TopCondition": null,
@@ -2021,4 +2142,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//y22gZdCRB8gjrskf9xbMLaKM2U8IKxz9GVm4C0SXRKVToMFiMvXgGpQjryjpWdYgrEvJS5W52lPJK+uoEz5qRCeBs+XEUqrAD/qnz9poEr1x94vL5BMH0hPOwV0xidmiHOdJKHeIrp+yWTmmWoHfHH/iaCAl7fJj8qs0yC014sABSgnh05UQx32FACMA+WryHYEDtWA61cW+ofqxJgbScLix8wcX9jynTRi7U8LOkZQTxBtBR0ph9g+3oOJc74mZ75egyZusDPsfZwB4/PU66iRKtQvIVtL2C5xMbpDJvplUty2O07EiGpcrawq1kHN7CJlvEepCc495Y/+ReMx6I6xYJZy88pETDw/j4RL4M70j2mt3b5mLHqbPhWYd98lvstfWFS1Yws4pbBLV/LDPXkSne0gOldZkjk9fjI02EHEtsXpyLT5hihAciGairljhKV8BqbLpYvwoEV7k7B4YRqcdUuadD/xQbAKVrtpuWyEcT6DUEsGmmxV0KdoW0OD5i7ZkFd9nl4cb4+u7bYXiJ45mw1lDbBIeX1rNRXM1Ri/2EmGEL0aI80g2D275kEpeJDir+SMKnajr7AjYXQir0l5UfMsqfR4UK5oF2eEfzEiIIylGzp4NFwWGAtFlka8ymVpYFjMsl8lgYQUW9s8yiRBPktbcALgzETuDWHfDOV85n8LdPhV4SqrfneiJBc88miXI8Bb2yivtC+fI4YACoczKhFeLW2c1gVPT0yOOebj3yejPWDkKPftVbd5Lj6wMUsOBU2OkV+7b6LEJ77IZpiZ+R/44L3L5IjdSAM/oAQGZSBQ5UED0WE4No88R2mNE/DCNoURcGSnO2AM44rhjPn9FGlHE63TG929WkAbzWA8SZAR+sCcpIj7o8YB/jr99XSb/MsyrYM8QLLf0aUI6Dg==|920
+}//v7FJe5blqf8FqqLgQ0j5cj6r7ylNharK7e59Q9DkwdzrbHIUmva5H9n6+bLvGqsL0w93msVVn3CTw+moSbqGa4Ts1foa+TtOj5+J0K6n1bLo51Hj/RHHdIcAM6qBx7huWQ3C9o9bViQ0NgshS2sWJOfmgqbmQFUdyS3BZrh53e/UYu+L9pUKHHG1env1XKF52iAcX7ZRoLWHhxv1e1uKjwDzj5V5Hdq7Mhr/r128DRMIOSqsATy0RwCOIpSz1X5FS10ZxTht1p9VdYCtNS08wB91IlPJ54PcnT5XJIfUv/hft/06FMfp7otmUPbK9d+vRXKJMmibwXoOGyzgM1ii/mFXqu8zgiiL6Sz+TPH1c/X6f2Yf7C3R4PhSWDPEhGRb6SmkPitQOX+ySbi9GPiPrPilJSX+s4ijaFf+L9YX/fIw4qknA6VnRnv8ROStV3Cs89Tx7acTMYjM+26tHF00vIa8SOJVveHDumuMY/4ZIeR+eKOLZP8rhNtvKCAHVc+p5e/oxi0kmWmuX9Hg2aqk0/2um0aQrjuDm/Rl9KhX0fXjQOzB19iTXvmt8A4mB4apByNuqHM5VCJDrw1FqzOYSETReftKfhEVeURNDkNiOgduMbEv9IEC+Hjdm/qpV0qffO4akuyrac+y0e6QWRG2AD4RAQxpbRay2pq9rinPH58ZNoZ01OpBTNv5RtwwesEV09e3XMBZ69GYHPJzFV7aDdxFM6zgFs6CTL+pcwIMVnNehOwWfbIO20i0Cb2J4jRW9lCzr50WgyFF1f4n8yzWdaaMVcusmVjGuKnM2L8ntEQuY1lSB5iLwNqVhDwIsDWnG1pnH1EBZixRb2acPD03ZNDRfV9gEBn09mqwfTcph99O6rGzOpD8GPWRDwl58bUvvBVi0BLER9HDNf/z+ssH7Q==|920
