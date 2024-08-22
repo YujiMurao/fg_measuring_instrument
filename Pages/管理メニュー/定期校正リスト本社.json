@@ -385,7 +385,7 @@
               "=I2",
               "=Q2"
             ],
-            "ID": "fe92c59154cb4bb0933f55c9cb1b533d"
+            "ID": "1e1d3b3492d64124a92409c314eabb4f"
           }
         ]
       }
@@ -435,7 +435,7 @@
               "=I2",
               "=Q2"
             ],
-            "ID": "b0fb3b32386240aea4d97fe0e11901e2"
+            "ID": "8dd7f9336b3048359b6214b8c5e7b4e7"
           }
         ]
       }
@@ -467,7 +467,7 @@
                     }
                   }
                 ],
-                "ID": "65678cac-5542-4703-8159-73cba3c83a07"
+                "ID": "0f334e4a-b058-4a45-b0a2-7f379e0861e2"
               }
             ]
           }
@@ -505,6 +505,11 @@
                 "Value": "必要"
               }
             ]
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "リストビュー1"
           }
         ],
         "Text": "一括⇒必要",
@@ -527,6 +532,11 @@
                 "Value": "不要"
               }
             ]
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "リストビュー1"
           }
         ],
         "Text": "一括⇒不要",
@@ -548,6 +558,11 @@
                 }
               }
             ]
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "リストビュー1"
           }
         ],
         "Text": "一括クリア",
@@ -574,7 +589,7 @@
             "Params": [
               "=BU7"
             ],
-            "ID": "09829752e4724b94b337d54e9515da53"
+            "ID": "a29ad3c2094c4c088eec4742390cd75f"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -807,6 +822,7 @@
       }
     },
     "6,63": {
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "n2",
@@ -839,6 +855,7 @@
           }
         ]
       },
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "calibration_enabled"
@@ -2238,4 +2255,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//JYUAgiJC4AY92E4nUVXNh4kweDTr4DV5WFTlDmHD6sIgvICMgxu5r6jWZOBj2ZfKedwwRDZBAAZ/OCHDCRmRpD8fpiXACzuPzBEWYP5D1pLUUGA+jlhhE/H08YwJj3pK4KLwGIDjIY/2WwI4EI3bmD7DAgv1Z1cC+3RdGyQho04QcYrQrAKNQbnfY639H2Gx3OUiAJoh6zr3WiZzncMh7ehkK91IXoFmKybLzwedFOuKdRzR5v+NB+jOBYSiq/t7HePhIM9iCDez1sh11wvxHuSUkM03QwCnsoQeGSZLfxArR3jnLC5xzk31SkP+WPp+oVKRAyNjVGQA6x3eD0dp+uON03R2LmXEplh7zQFnhLVH6Pa3Glue6BYjgx8vTx93BNfnptVCzHPGCjmrVaEOgGtaAWBlxuCnM7y4IZVrmbGQP8o/rxVSRcWRuJ/qKvJ8Xzkl2VACOdolngKZP+edEyUUz0AKyGgwUtsEOsX75z+Ms+SPApWb6POzcF3MTBp2UFjCBbG6QHKet8b4B1+QHkI3grJj5c3w92+deDZtZxddI0wOLI5ajSfw+bcr0/f1rZJhjSCo33nVhj/FMZCFqU5Uj1+1UnwsHM6sbvBcxw+waNqRADpeQNdOjpUAZmk9t2rkaJVWTZi24e87oTJ946RJd6GY1DyjXk9ehoY0ioLMgS+K7F1D0BBNafK5Jovp3sbc4I+/EOk9iCGwFollg2mF4DUAxxe015yKRgD/SQnCr47PxXtdSxv35wXFfNyf8dt7TX2fv/eblfYBqiChB09lbalE8MlkeqlCM7Lp1BA6OlqhFFn1JlNPwWsK1m0ZR8CoW6yLOTBekgc9Yo4hBVWZwrfsKstsxjGmaBwtw4GkgNAEWKHKQZPTbRAKqlQfXwiTVukMS+eLzOmtYYx4bg==|920
+}//1LEwTBiY7HiFAYfG9TSvUWx3XeFsdE9dryHtZNeQCD70E/kEeB6LxG6lv3zlTATXcEHWwOBDFNmItPbDoUGEusAlNvcWp2nB9RU2MfOxZICfxnrfMB2lID5hloEIeZrZBkLzdAYaywSNwjiJ29MVV0+j/rVz9hyn5d0eSiexX6KRv8ZArUOKVwA6SMX3bw+MgzhPiKsNstITWCf/Gy0YFL8vW1XznwrVp3AUtxs25W1bBmD2bIXSBBwCCkfFXhKgDraJRK4FQEyovYoUl3VNauojKbNEvoNkWY9vXO6aw7iU5qEzc6MRVzxIoZgzWRaQu2I+4x0PrAVqFjagJr+kBJxJOcJ0j7THovNfYMzrcsix7QNr11kIbKjrWzHXh6N6dPIcZtGuP45NH64d1Oc0/PvbgEUIboDClUsj3gKFzeotM5uWeNh5KZE1KhwvDX+17IAbdosoDg3OCYVti2lhT8FwzQKiv8F1i+YzXfLCzk4Xoc/4ni4xC+jmVk5pNENZWe0R7Iuwx25H1L41qxfcttahdZEY/iTTw3Y22RRmDWIRZeyQcdpjDTIDLy+kCNKHLoDW6mvNEldAqq3W2KVgu0/gAWOsDffcp3s/RA4gUW7KtfN1k0QMDTeJZx62U0jgXcnmZl+REtpQhHAIgfp7E1NZDZ2FBq4PTHFL6iN7fEbMy1jnSgj6fHCmm1Bv9jBJgNaC6Ez4WvxGV9TpJHMLKLVQzfK09jdISyqMo2gQIq4Xb/haENbhkJcPZqj22ExGYIq5KyqRlrbAzu0dLB5UdeFjt5Gd2zD0CsSJ4Zp0POFl1t2g4eXT3eSHCcT5y7dWa8koZ8KRjYbQhlnmzYP7yoAdET0Yql/kX81Rk/c78WHT7UghSHiksO/QxZzZA5brcm0gF/YeIlpJXyKGCvaidQ==|920

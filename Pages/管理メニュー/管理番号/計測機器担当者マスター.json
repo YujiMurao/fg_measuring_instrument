@@ -136,7 +136,9 @@
     "Count": 71
   },
   "Values": {
+    "0,2": "コード",
     "0,4": "カテゴリー",
+    "0,12": "ロール",
     "1,28": "追加...",
     "1,34": "削除",
     "2,40": "選択した行を削除します。",
@@ -152,6 +154,7 @@
         "TableName": "mst_insptool_personincharge",
         "ColumnCount": 27,
         "RowCount": 46,
+        "SelectionMode": 1,
         "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
@@ -926,7 +929,7 @@
       "7,30": 11,
       "7,31": 11,
       "7,32": 16,
-      "7,33": 7,
+      "7,33": 19,
       "7,34": 7,
       "7,35": 7,
       "7,36": 7,
@@ -1012,7 +1015,7 @@
       "9,30": 2,
       "9,31": 2,
       "9,32": 16,
-      "9,33": 5,
+      "9,33": 17,
       "9,34": 5,
       "9,35": 5,
       "9,36": 5,
@@ -3669,7 +3672,7 @@
           }
         },
         "Params": [],
-        "ID": "1d24f4d3ab0a431cb9d9a8f3aab9c8ee"
+        "ID": "fd62d358dfad49a9abc1d2258e553875"
       }
     ],
     "AuthorizeInfo": {
@@ -3687,4 +3690,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//Vh6/4VRiqcK3BqlQyPN9t3ePIH4H8n7jJyr3pfN3hgmzPn3+myRtWTZxVOJIjy3PWsQkKsc3hnutDY21NYHr9jF8RJNYgu5kY8WFW47l6F4+P45rAdnTrM1MmH/JLS+OnCkNI1n+MAFqY2fSy7y7ImhDOYmhyAMr0GXCvGPGcPA8ounQteMQMYWJR6u4701nJbTJ6aCY5n6FxHKU+SudnLRc50xZwU92CxmAvRKvDkGwEAyS4vbqsswqGJJux3dPxgzVzcT7mHdXjQ/aj8FuEa84Qg+/GO2/NrgqfgCVMSOK634wX7vQ15sdm66jaTaGYc5Mo+/T4RiJ0fs28K6VqEBecyyLsxK+HYlQeL1ir2kBtY2UDRkENmDMlGQeNeC+c6z2fAw11b3YF0J76AP5epN+pIAKpVKXhGHx68X3O5uONu08OvKCOeL/Xj0mEHosrQcVhjMEBRJUQSIWGC6/I4A0dd84kA5GfAYzz2B8xBrbYDUkIHyqj+Js0N9jnu37K6jQPKvIGl1JSfO7jifZE1cK6PRVgSuANxJEXFMVNGAwcJwzFYUEIOB23NCnEsFDqCUCopQ2P0PlRSPbJ6PhxPBkhwxP8Z5XB7LCBosPkefASTiktqHS/zr3Ig1RR32cI+4YhuDVXz6WF1Iei1PxfpY/Q/vR/TJ9al5unXBpytWxh6ih/WJM/mSecX9d1fflPXNligIxX8gXeJ8pd8OSO8x1J2NybPJXZXjc5e8NJoYCDh20MyPXwvDTXVYAEEv0qyTDKM0tpy2dS9h3uNThup/qUHH7Gk8yZK2OUq6DaMruvfgqv0A/YE/T802qpCafZdGSbeeQzYwrSKLGK2UcCJqwtlAcep85JAX7691eF29Ku/VvhQ0dwuX2dtk8zN27gLtAd3h357EjGzcbILmQmw==|920
+}//MLdINMqvzI5knQ0S0uETOCNJx7cgV/gDUinjudmjyxKjUQxI7v6JhNSz3ELOXkjYlMf/XNGx/Ab3ITEr+xBCoGQMUf319kXDoThzCEt1zmM3VBk+HSV/U96VmxtS46eg9lEB/CIzZqSQqS3AIYnDPb9AOYYjN852905jCPMec8bwoamxi3nM1GZ/S71vwsoDI+Nya1gjC/k2YfudXeK0EDw9F/3grCCZQ1J/3+N28Mqw3e8aMMQeQZy9uSLHbrq/esigzsXhadgeMGjZfTCJGNpo7s2f4ieC5v8IKwrMUXGa2GsWNUV1PUj0hm8ds13wtTW7M/+2CA+6x2pjoazbc584nLwVb+/E2bYGI7chDJktEr4hfdKSKVb8SyBqgbPE81rtbJ2TEZlaIwf7crlB49CvDQtoRawwiV4T2Cmp1lIlcggocy7nt1k/IgVGLqShgkIQV2d7tu9y0XanXcPULOqLJfmM1v7ltD8ep9b1mM/bRP7FWNU9PZmNV0DvRi/Ej8K7zwahuIaU67W610wsTtKcuPoxgONAFE/XLOobzAPJDu7nIVKWOnYh0LDwpO8yd02i9aTooHtVVjQpcohLzsFemD2grLC9K8THZCm/u5KD2wt8ZL5h+QlMy9J24NE0AxX3ZujfP8JqQZORYGoaGqH8zXudgl4M32XiaobewDfJKfZe/jQeldAOh7jPPXmvkWBv208RODGOrU6SJqP9ncxcvgoPc3od/rPmUL5QzGorCLXn0jayj4uFyms41xYOPcHxaL7C2a3KtQb46GZNh+x1EktSbepdfl/clGEykLGhpCEGmtwXIbR8ATgUndnlwv9SPOWMKN7oGnloNTplPr0lC2g0KJ5yqnoaFcts0lMt1TP8aMp1SSAS/3PGeUGpxajkdqNZy3sRTvBZVD/vuw==|920
