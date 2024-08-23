@@ -301,8 +301,7 @@
     "5,50": "次回校正月",
     "5,54": "校正有効期限",
     "5,59": "担当者",
-    "5,63": "校正要否",
-    "23,1": "校正履歴リスト"
+    "5,63": "校正要否"
   },
   "Formulas": {
     "1,68": "\"校正対象計測機器一覧(\"&TEXT(TODAY(),\"yyyymmdd\")&\")_校正有無確認\"",
@@ -337,10 +336,10 @@
                     "EnhancedBCC": {
                       "CommonValue": "murao.yuji@rorze.com"
                     },
-                    "ID": "92a095ddc8cf4e539dd19ba3e9ad398b"
+                    "ID": "ffbbbdaf76744f278ffd91359fee59a6"
                   }
                 ],
-                "ID": "96db9caf-a8db-4b43-b51f-369d4efe0e90"
+                "ID": "1a3f871f-2b34-47c8-80df-a00bde0cb67d"
               }
             ]
           },
@@ -384,7 +383,7 @@
                     }
                   }
                 ],
-                "ID": "f7aa983c-bc43-41b9-a13c-2566c7ef6ebf"
+                "ID": "73df32a4-14a1-4b30-b97a-bf1fd7874035"
               }
             ]
           }
@@ -506,7 +505,7 @@
             "Params": [
               "=BO7"
             ],
-            "ID": "71b24fa2b8b84a7c82520d7ac8986063"
+            "ID": "4768d7a4bf1b4718b2416005a628358a"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -514,7 +513,7 @@
         "RowIndex": 5,
         "ColumnIndex": 1,
         "ColumnCount": 67,
-        "RowCount": 18,
+        "RowCount": 35,
         "IsRowHeaderCheckBoxVisible": true,
         "IsTotalRowVisible": true,
         "IsTotalRowAtFirstRow": true,
@@ -995,13 +994,6 @@
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "ID"
-      }
-    },
-    "23,1": {
-      "CellType": {
-        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
-        "PageName": "校正履歴リスト",
-        "OverflowMode": 1
       }
     }
   },
@@ -3151,12 +3143,11 @@
     "6,54,1,5",
     "6,59,1,4",
     "6,63,1,3",
-    "7,1,16,67",
-    "23,1,17,72",
     "3,15,1,4",
     "3,20,1,4",
     "3,25,1,4",
     "1,62,2,4",
+    "7,1,33,67",
     "5,1,1,2",
     "5,3,1,4",
     "5,7,1,3",
@@ -3198,4 +3189,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//NGcw2H6xkVvgPF8VqqK6A9hDrCjOCZsRGVnkzxhmzINiFF6VVWYY3i3svBOu9LjUzqFVyqwwjfaV1Dh0OIlgzcOMlnZCF3YxW+Bh4jc58BCzdaXUywQlB2nIF92lPXVZ0/gtlG9WIbdgb58xuQigf4qvA309E5rCHsjJ5pNVYm8aCRMZgKTYEdIx4sBlDHcew1tq393rguVpxo+XOaeSxbz1lfbuil3kKwHDiXpRcUJb0I3M0YrynyG++nUqhiXmj7icrxIeYgbYuXGJpOCRgpR+ce3sFZcq/7PJ931HfdT8J95pVrsM3K4OTMdAl7fp+MRxMdlMBkCnIjj5gn8WxqZ5uwijCtOes+9tPq6/vb8V0SEiuSlxbeLCq4sawo+xuS12w02MqLBFy8MKYVxrfucfuXXNmbin+6o+zaYHAFCzm29k3jtmo9x9qARO9zShroJ9XHkpHZoLbvq2WredXaQyZp0YTocAvvJUKVllf9cvTNEKXsjeV1S+HLDc/fMEkt3lxBcDDjyy3ccIP1+4t7eQ81jrmgEPxkypqmNnakswz907lsmzor1SRmeY0FI/2bF1C5d8DyxRCh2qbymoIcrZkW4MDTEiSUVGnGv3l9+ZIFSOp+huvPNf8RdzsV6FJjbQ6T6TTO0/9zFXnXWT7PZuWaYLsjSmdFVMquKUa4uHkRbaaOjrFiANfBNJJ5JDy9SKbha4+4JjVTg+jaJ6L227b2WCMFhw+IyaWErscOt9mDzKjMJCyqOXhhABBo4XGjAtJ5IxXc0i0P3SUjCYkU3oiT6b9vQZHn0wUG49POfG5WyHq5MQzDfOOi5A1SBTfjd3FFVx4bf3XdazHajdCx2qca5mH01fxskEwsdwNaaOxDKqNXwufjv/898cwt+ZzEhTSHU8sblzpJdmYL95gg==|920
+}//VehgCthfSVfP/zKekDAJdYxEKuTHFQ+ulJQpNYxh1sz/H+4dhGCaUm4lMHC0FD2DvG+zgU96SEex3YzfemrqBrlCUhSaGGqSw9FnxIgr/cmB86NcaZjMQ0cvsOci380Y/u01+I8iZYpSx6Le8hLXKLSgHxj7ifeJx8WiOsHwsFaBBkjJKj+9ZfCaoPbDmQmkshvhcjkL6ZT7s5eLEQPhwP9b2cdjoTbWsPJDNnYQREL2aSUaDYdyxOgJV//gckPo5F6Kv6sy5y6HbUixnOScyS09ZjSlHxDXqOoxVviXngB/gIHe/T9V8Sk7fcWFkbN/wuCl5M/xEfyc3z8gG0QJCCcpraPr2V6YVIH0mrWb/zCutyTXtFKr0u6a9TlX8VUkINsfPnPvqXcLgvuyDBfNyiZoeX7Dzj3PsUxld02TvcR1gIBhNeSHS8WrQPIR2gWCR3UJo87EY6kK0CBjo3VjLOdFhxvh3JbWeFHzdnO7GIVETArT01Gz/r6xo9Ggqd1yuSfUPsJEyxPaVtwmsWWCEB75Ejp1JYiiFHxIc4BLB14BurTxXt2OOOWNFk7EJyRUP3JIy5MrfgoCDt16Pt9LRS7XF3ULzcWxMAoeliFGSQ7jno3e6fMSuL6/De+VplaBcczSbEDJn1vjL2Aj53/dl8SEha0pIxq6GIKApkwsWPcaT+66MB20mI2BoQbl2p+QCeAfqkZDSihF2w7WnuLydngsbRF7GllpuSnzoicXeXIrnFdyz1rPOImKiic4Lwone6DB0tppdL5r5UmKFELDG1d7on93335w3KcChwoQvkZKprvj2ENX9TdJ1WJqczY9DZ7+le23wN+UD9FJQd8N0XCHRFx6/T+VfC4HXk6MnDa+L700cqdg6EyelCPZTt2vtPJ9nfGWPa+jynhSfOKi2g==|920
