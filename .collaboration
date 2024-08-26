@@ -243,7 +243,16 @@
   },
   {
     "ModuleName": "PCPage/校正切れリスト本社",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-08-26T18:19:49.9804732+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\管理メニュー\\校正切れリスト本社.json"
+    ]
   },
   {
     "ModuleName": "PCPage/校正対象機器",
@@ -256,7 +265,7 @@
       "UserName": "RORZE_CO\\ymurao",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2024-08-26T18:19:35.1010869+09:00",
+    "LockDateTime": "2024-08-26T18:19:49.9804732+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\管理メニュー\\社外校正リスト.json"
@@ -425,7 +434,7 @@
       "UserName": "RORZE_CO\\ymurao",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2024-08-26T18:19:35.1010869+09:00",
+    "LockDateTime": "2024-08-26T18:19:49.9804732+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\計測機器一覧(担当者向け)\\社外校正対象リスト(部署).json"
@@ -447,6 +456,16 @@
       "Email": "example@example.com"
     },
     "LockDateTime": "2024-08-26T18:19:35.100087+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/校正切れリスト",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-08-26T18:19:49.9804732+09:00",
     "ModuleType": 1
   }
 ]
