@@ -341,12 +341,12 @@
   },
   {
     "ModuleName": "PCPage/校正リスト(個人)",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "RORZE_CO\\ymurao",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2024-08-26T14:27:51.4491252+09:00",
+    "LockDateTime": "2024-08-26T14:35:05.1547713+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\計測機器一覧(担当者向け)\\校正リスト(個人).json"
@@ -394,7 +394,16 @@
   },
   {
     "ModuleName": "MasterPCPage/masterpage",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-08-26T14:35:05.1717736+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\masterpage.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/校正切れメール送信(坂下さん)",
@@ -447,5 +456,15 @@
   {
     "ModuleName": "Upload",
     "ModuleType": 26
+  },
+  {
+    "ModuleName": "PCPage/外部校正リスト(部署)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-08-26T14:35:05.1717736+09:00",
+    "ModuleType": 1
   }
 ]
