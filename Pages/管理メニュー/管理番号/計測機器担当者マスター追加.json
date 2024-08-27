@@ -81,14 +81,14 @@
     "Count": 20
   },
   "Values": {
-    "1,5": "管理部署：",
-    "2,5": "ロール：",
-    "3,5": "担当者：",
+    "1,4": "管理部署：",
+    "2,4": "ロール：",
+    "3,4": "担当者：",
     "6,8": "追加",
     "6,14": "キャンセル"
   },
   "AttachInfos": {
-    "1,6": {
+    "1,5": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
@@ -121,13 +121,16 @@
       },
       "BindingInfo": {
         "TableName": "mst_insptool_personincharge",
-        "ColumnName": "control_code"
+        "ColumnName": "ctrl_id",
+        "RelationBinding": {
+          "RelatedTable": "mst_insptool_management_department",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "name"
+        }
       },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
-      }
+      "DataValidationInfo": {}
     },
-    "2,6": {
+    "2,5": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "AutoFilter": 0,
@@ -157,7 +160,7 @@
         "IgnoreBlank": false
       }
     },
-    "3,6": {
+    "3,5": {
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
         "DisplayColumnName": "FullName",
@@ -224,7 +227,19 @@
       {
         "FontFamily": 2,
         "FontSize": 14.666666984558105,
-        "HorizontalAlignment": 3
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.666666984558105,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "FontFamily": 2,
@@ -237,20 +252,8 @@
       },
       {
         "FontFamily": 2,
-        "FontSize": 14.666666984558105
-      },
-      {
-        "FontFamily": 2,
         "FontSize": 14.666666984558105,
         "HorizontalAlignment": 4,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 2,
-        "FontSize": 14.666666984558105,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -267,59 +270,85 @@
       ]
     },
     "CellStyles": {
-      "1,5": 0,
-      "1,6": 1,
+      "1,4": 0,
+      "1,5": 1,
+      "1,6": 2,
+      "1,7": 2,
+      "1,8": 2,
+      "1,9": 2,
+      "1,10": 2,
+      "1,11": 2,
+      "1,12": 2,
+      "1,13": 2,
+      "1,14": 2,
+      "1,15": 2,
+      "1,16": 2,
+      "1,17": 2,
+      "1,18": 2,
+      "2,4": 3,
       "2,5": 2,
-      "2,6": 3,
-      "3,5": 2,
-      "3,6": 4,
-      "3,7": 5,
-      "3,8": 5,
-      "3,9": 5,
-      "3,10": 5,
-      "3,11": 5,
-      "3,12": 5,
-      "3,13": 5,
-      "3,14": 5,
-      "3,15": 5,
-      "3,16": 5,
-      "3,17": 5,
-      "3,18": 5,
-      "3,19": 5,
-      "4,1": 5,
-      "4,6": 5,
-      "4,7": 5,
-      "4,8": 5,
-      "4,9": 5,
-      "4,10": 5,
-      "4,11": 5,
-      "4,12": 5,
-      "4,13": 5,
-      "4,14": 5,
-      "4,15": 5,
-      "4,16": 5,
-      "4,17": 5,
-      "4,18": 5,
-      "6,8": 5,
-      "6,9": 5,
-      "6,10": 5,
-      "6,11": 5,
-      "6,12": 5,
-      "6,14": 5,
-      "6,15": 5,
-      "6,16": 5,
-      "6,17": 5,
-      "6,18": 5,
-      "7,8": 5,
-      "7,9": 5,
-      "7,10": 5,
-      "7,11": 5,
-      "7,12": 5,
-      "7,14": 5,
-      "7,15": 5,
-      "7,16": 5,
-      "7,17": 5,
-      "7,18": 5
+      "2,6": 2,
+      "2,7": 2,
+      "2,8": 2,
+      "2,9": 2,
+      "2,10": 2,
+      "2,11": 2,
+      "2,12": 2,
+      "2,13": 2,
+      "2,14": 2,
+      "2,15": 2,
+      "2,16": 2,
+      "2,17": 2,
+      "2,18": 2,
+      "3,4": 3,
+      "3,5": 4,
+      "3,6": 2,
+      "3,7": 2,
+      "3,8": 2,
+      "3,9": 2,
+      "3,10": 2,
+      "3,11": 2,
+      "3,12": 2,
+      "3,13": 2,
+      "3,14": 2,
+      "3,15": 2,
+      "3,16": 2,
+      "3,17": 2,
+      "3,18": 2,
+      "4,1": 2,
+      "4,6": 2,
+      "4,7": 2,
+      "4,8": 2,
+      "4,9": 2,
+      "4,10": 2,
+      "4,11": 2,
+      "4,12": 2,
+      "4,13": 2,
+      "4,14": 2,
+      "4,15": 2,
+      "4,16": 2,
+      "4,17": 2,
+      "4,18": 2,
+      "6,8": 2,
+      "6,9": 2,
+      "6,10": 2,
+      "6,11": 2,
+      "6,12": 2,
+      "6,14": 2,
+      "6,15": 2,
+      "6,16": 2,
+      "6,17": 2,
+      "6,18": 2,
+      "7,8": 2,
+      "7,9": 2,
+      "7,10": 2,
+      "7,11": 2,
+      "7,12": 2,
+      "7,14": 2,
+      "7,15": 2,
+      "7,16": 2,
+      "7,17": 2,
+      "7,18": 2
     },
     "SheetStyle": {
       "FontFamily": 2,
@@ -333,9 +362,9 @@
   "Spans": [
     "6,14,2,5",
     "6,8,2,5",
-    "3,6,1,14",
-    "1,6,1,14",
-    "2,6,1,14"
+    "1,5,1,14",
+    "2,5,1,14",
+    "3,5,1,14"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -354,4 +383,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//O06rbz8iLmTS5FYzPaQfcUajUkpsq/kQLq5McBYRgmYvKsr55kIZsRTbLgEQTZ86uZfGnMKlzyWtUCsQ9+GaDkt+OVLwbcG73aogkCqjbxEfuuHOEaxqG66/R1OZeAkWJ5CbkWcb2A4CWQQ6bDIByDrG7ZQCBFx/7b94wwaGbLo/7d3IwyPUjGsQx5ni4Ap9/lZ/eX5eyXbSTx+hICTYEMV8uh1r6rqIcbxFvJHrLMlFHuS0/iA5CozA1hrse0wX+EnC1ilJOCZdwYXDAtHZ6YYB3Vk9UXIonpjOA1cee1DiEr8r6lOAEQ4eE1x3fsRN3/3LCkeZhDVhw4MUUSXa+lHNx5mDylW+ytStXYCGefXSoVUq7HvPOj+vkff2LXgQuAipg4xG/EJ2pe5OJ35UzACcCZz7bHeAmFCpXue4DtgkiKUwBVNjgO/GMO5sc5NEcP2MXVArz6YNxwPhHEH0A2KHpXpeoUsvDSP+iQ+5mLB1dwRelV8RpMnKa7XlcpXkGuxlTB3VuAkGipIoYXpYqjXZDuKOUAZAV0VJBq+uOpCbGWgYrs8Q9IwF9IVPLI3Ca0odDUmBJm3OWZUEUNWTPuVXx+LMdThaAO6wg2Rn52p00aW9AO45eTr/moVG4ID1lmPZhHE4ehjDcAH7IJ/spa4reS5Wkt2OOgVTMfQGsd7JBtwKb8zwDhn3AnOO7jeWWVnej0nuSVBkrGc4ZxNILfW0XCT6VVAehIt6yq+pJOub87jmLuwEnVmRxSFd8J3gqe4W0W1TV2V4ExePV+RIiMvjs4o+KtxVGNGVEMGI3FLHsRZmioyCS3KFUNgPO4Ct7pO/YS6xBOvukgLyCZx01pgWm4jGJ8NZKn0sGXJYIYa6c6o9oWyOTqJG7G46pSZDHoqr9QN96icbXZDVKHkpMQ==|920
+}//0OGG8Ei7oCSi64RU/hJ6mZrQjrPXDCPIM0B6RaJ3WRj6ulAsGflGW7T0wWfdspC8Eughi7aJxyfQ6HyfSKM9fddXVWGYpWA41PqXtptO8xJQ1UyKjmB+QEp8nlbOoCVdWnXjIBsoocopgw4Op6NA1McNioyoAA+3XiDCX4vAtdGjf8Pth0T/WPveDgJWOQRbVcxWOp0qiC3Kya64aMqjfi/96i2hhvTAkPsOx3DPsn2+dgjjdi2ZbvLDRXdMqSGgxb4h4gPOgc+v3DCctCB/AIITrz7jNg4DsghJwS7ZBXQqzFP+9MjThztT5cjdShP7VvLcyvzdXJo/dyzJ3ApKzNSizppUNmIOvCjpHZcLNU3LW5NnnapV7c+qy9h4yHK211RMQ3YoqYZPaYUxsF4BDStb8WIeWy84KtuJZmzZQhJkr15NkoN+4O3AlqTENAMEJFqbDrOjfod1FXN0oySO1qUiuNT06d4hDFAfmCcmZAWFX11FV16rmRpcNMrPVjplJ/qEe2xEiFlfSwiA9jeb6n1kbQyASOibNeDO59Y9oh4w1yr/de9eoE9tgOqSD1oeGe/5Yw9P31nTSYun+Ka7d+P1ZGEpdvoGlMCojvrERTz+nZH2TsOKOrkzvLPZMVfbE03fhaCw9ZMsuvcIZU9DiIs+jzkrGpy1huSuLvoa+wTI6W6zuJrJl6uDf+n0OMRJ5+62T2F/wLkrX78eyE7Dt+bW4cNXijGHqotghz/SKRSA7XA7sodIHXCuzq+P/n65BATHFFNbfD5wf98+I/hxbhLyiUato5dXhNO7hJg6PNPRjZfoqM8q0GWXFg3hwI7inHifmBeKXY9BghSFIRhXTHIOkx6Nk6DmK0SqaabOvkRzn0XEroAeIkaoWGyvoj1wi+lGJj0KfdvUppySzpws7Q==|920

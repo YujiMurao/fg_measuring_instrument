@@ -206,7 +206,7 @@
     "9,10": "記録文書作成",
     "11,1": "登録日",
     "11,6": "件名",
-    "11,7": "件名",
+    "11,24": "作業者",
     "11,34": "メモ"
   },
   "AttachInfos": {
@@ -308,7 +308,7 @@
               "=M3",
               "=F7"
             ],
-            "ID": "87b055c741cc43e6aa822b9522386dac"
+            "ID": "5e2b1d0c460641b7b7ab2cd7cfc31c5c"
           }
         ],
         "Text": "検索",
@@ -336,7 +336,7 @@
               }
             },
             "Params": [],
-            "ID": "a1c6dad6d05146aea7b000718eff2a50"
+            "ID": "bf39e89d25474f55b55ca39e71aab719"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -407,7 +407,7 @@
                     "NewOtherName": "記録文書リスト"
                   }
                 ],
-                "ID": "a8f24ff2-558d-4a5b-a9b3-e67a791b337d"
+                "ID": "d9ef16d6-1650-4f89-a897-5fbb3f018c40"
               }
             ]
           }
@@ -505,11 +505,25 @@
         ],
         "ClickMode": 1
       },
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "subject"
       },
       "NameUsedInJavaScript": "件名"
+    },
+    "12,7": {
+      "TotalRowSetting": {}
+    },
+    "12,8": {
+      "TotalRowSetting": {}
+    },
+    "12,24": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "calibrator"
+      }
     },
     "12,34": {
       "BindingInfo": {
@@ -758,11 +772,7 @@
         "FontFamily": 9,
         "FontSize": 14.666666984558105,
         "Foreground": 15,
-        "Underline": true,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "Underline": true
       },
       {
         "FontFamily": 9,
@@ -1148,33 +1158,7 @@
       "11,1": 28,
       "12,1": 29,
       "12,6": 30,
-      "12,7": 14,
-      "12,8": 14,
-      "12,9": 14,
-      "12,10": 14,
-      "12,11": 14,
-      "12,12": 14,
-      "12,13": 14,
-      "12,14": 14,
-      "12,15": 14,
-      "12,16": 14,
-      "12,17": 14,
-      "12,18": 14,
-      "12,19": 14,
-      "12,20": 14,
-      "12,21": 14,
-      "12,22": 14,
-      "12,23": 14,
-      "12,24": 14,
-      "12,25": 14,
-      "12,26": 14,
-      "12,27": 14,
-      "12,28": 14,
-      "12,29": 14,
-      "12,30": 14,
-      "12,31": 14,
-      "12,32": 14,
-      "12,33": 14,
+      "12,24": 18,
       "12,46": 31,
       "13,1": 12,
       "13,2": 12,
@@ -2296,14 +2280,16 @@
     "9,10,1,8",
     "6,5,1,26",
     "12,1,1,5",
-    "12,6,1,28",
     "12,46,1,6",
     "12,34,1,12",
     "13,1,23,51",
     "11,1,1,5",
-    "11,6,1,28",
     "11,34,1,12",
-    "11,46,1,6"
+    "11,46,1,6",
+    "12,6,1,18",
+    "11,6,1,18",
+    "12,24,1,10",
+    "11,24,1,10"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2344,7 +2330,7 @@
           }
         },
         "Params": [],
-        "ID": "f76c720bdb0c4020a79a779e717503a3"
+        "ID": "04eeb0ce80c4469eba379fdff97ca1b4"
       }
     ],
     "AuthorizeInfo": {
@@ -2369,4 +2355,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//+FHb196gsZ7hN5iq2opDp2dQH+7pCTbljTJkUEKVFgi5cuFZYL/lVDubBBUADP0o/ueeFhYGz9sHzWAO0sDP7St8HfwCPSVebtNZeMis2wE4zVG6/bKZ+bEB2pY8WijAy9J22qwOsbw6iTN0eI+xW421aW9s8jUFBAOeRqkoQeJMNWeFjZq4anmecewseE6SWf/ZXC4zGTgOBXSP10Fn//WlA/EStgj2JktmzGdoOFN7TbJKBpnFOalCle8oCaru1JrqLdbLShfanRlz7OA+jzqnCoC9dfFQu6ySSE7PP96I0bbbckOHCMiMk8CkDbbWLK0ow5EzhV3zgkSD49wF7i/NSLv4CAiBrNZiXPYbI5lquzldiZBy0lL0zpEGrzHJRn+rsbOu0dFXkjR3PsDGvkG9oijzlCFlCMxXT8At21eal3uvuvl3q8BrZiRmBAmo4MnJ76rsq4onBCn8PoOOGNlLhFoDLIYGWhmN5hw/YNrMIoiwjD7G1yCUk3F1y7rgNCnHEYnMjUfwP/GDsD8wGdhUyyWtLOBkRUHpiBVDMIOgyZEHo9NmsqfYni1T1RhWmf/u7uzT0P+JwAKh06xxIyMx34CWeIEIpMocGDZFVeB5Y+ReSLyui8iV8hcTs8/r1korhspkEQ3HFc4R5viYFwk3xNIylKho+MJaCkjhEq3CSRm3OKk8YC3dB5CHOZrcnCFHM/RxGFTo469NQHYOVZCNS+my27gZRs8Yfy1qHm5wmVnA745zxzZp85DskK1jvFbkpiFnvP4bvr8BbVwhvIGyqsRREd4qDAgiK9qsZJ1h6MzKVGPbehjPMk0OzTBDJ32LpivF5fY/vIBdYzRB6qkJZqFLzEnjHR5hVCt42YJXcP/mhbx37k6+i4IHnI6dMJGqGG6Ru4w1WZBo0QGyyA==|920
+}//wXq2YaFSeEOzzEsOrgc82Ov50Qq6vNlwDgm+1RJUz73RWmneCsp93a4fdjxwAyGpAqDuKZiw36tEibc5CJwqjp39VYgd64r6am+PsZIVvP2vxMwC0X1favq6Gzv5WWC8cbRchDDUzzUuFW4bUC3Uv1ZZGu50jJXTxKfa3WAVgQAiJOvliBJjEpp3kGO5TIGcAIkq0efCloBPIGZS6gun6fGu4C6GKb7cxchL77ky9pTRd7E4dP5Yu4Fxo+3ZlhsZo+J2T+tyhyWH4YLvEPylsKRuOKbCKtXJ6xaWtSL8ALlu1Vtbv1u7G01y8OgfzyKK11oPkWDi9vphzMWGQxW4SRWgSBKLnG3q7cWk4tFq6DXO+HZ66GEoMNg2cbNoqB3VywJZg0G+oID7drKqFwTB7KMulD9EGaT8OFZZWwrhDgf5cXZQiSeQO1oPe9EN+f7ms7OovkJzO03eHrwgmsCbwQCWUEuLsONDoEzn/t+s1L+BqJVhSrH8+meormWXSDMWohwqfMqX44id1P3UfC/k1tyKklfLK/7ZvSTYyvbvVaZFUZJY9zCBYheCoeHUALnrQv4IT+3lbJVE5RhlBvHj1i+Koqm2gsVCbkjZmo8cBxSpNZXeaeGrMEzIPI4aSNxesQm/x2ieobx72NWGO2gOfzJyTJmPnZ8s7T/+hclBBoGkRedmnk6it3G7OykYEbAsrVWnOwBT8PASOMLIQVhV326zmi0X0kVTbzaKjbOAyuBIh1c3WRaOfEls2KyYDASOSUrTWPewINNY3NVAUBVcXAp2tIEHf3EGJ1gYW3XI6XoukUIL6BabPiznRdnkX+ll07UWRXOi0/+tXcP82Jtg2vgH+j+0/sapwxhPKnorjfE5D1V2OrHew4nMSBfHRUPFyI98FGGojJRa35ozOLkIPg==|920

@@ -26,11 +26,6 @@
           "DesignLengthInPixel": 318.0
         }
       },
-      "3": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 143.0
-        }
-      },
       "4": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 143.0
@@ -38,30 +33,41 @@
       },
       "5": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 104.0
+          "DesignLengthInPixel": 143.0
         }
       },
       "6": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 80.0
+          "DesignLengthInPixel": 104.0
         }
       },
-      "8": {
+      "7": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 80.0
         }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 143.0
+        }
       }
     },
-    "Count": 10,
+    "Count": 11,
     "DefaultSize": 90.0
   },
   "Values": {
     "0,0": "記録文書一覧マスター",
     "0,1": "登録日",
     "0,2": "件名",
-    "0,3": "メモ",
-    "0,4": "添付ファイルリスト",
-    "0,5": "添付ファイル"
+    "0,3": "作業者",
+    "0,4": "メモ",
+    "0,5": "添付ファイルリスト",
+    "0,6": "添付ファイル"
   },
   "AttachInfos": {
     "1,0": {
@@ -69,7 +75,7 @@
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_certifications",
         "RowIndex": 1,
-        "ColumnCount": 10,
+        "ColumnCount": 11,
         "RowCount": 34,
         "IsTotalRowVisible": true,
         "IsTotalRowAtFirstRow": true,
@@ -116,18 +122,25 @@
       }
     },
     "2,3": {
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
-        "ColumnName": "memo"
+        "ColumnName": "calibrator"
       }
     },
     "2,4": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
-        "ColumnName": "attachment_list"
+        "ColumnName": "memo"
       }
     },
     "2,5": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "attachment_list"
+      }
+    },
+    "2,6": {
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "UploadLimit": {
@@ -140,7 +153,7 @@
         "ColumnName": "attachment"
       }
     },
-    "2,6": {
+    "2,7": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_Creator",
@@ -150,13 +163,13 @@
         }
       }
     },
-    "2,7": {
+    "2,8": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_CreateDate"
       }
     },
-    "2,8": {
+    "2,9": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_LastModifier",
@@ -166,7 +179,7 @@
         }
       }
     },
-    "2,9": {
+    "2,10": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_LastModifyDate"
@@ -221,9 +234,10 @@
       "2,2": 4,
       "2,3": 4,
       "2,4": 4,
-      "2,5": 5,
-      "2,7": 3,
-      "2,9": 3
+      "2,5": 4,
+      "2,6": 5,
+      "2,8": 3,
+      "2,10": 3
     },
     "RowStyles": {
       "3": 6,
@@ -265,7 +279,8 @@
       "2": 1,
       "3": 1,
       "4": 1,
-      "5": 1
+      "5": 1,
+      "6": 1
     },
     "SheetStyle": {
       "FontFamily": 7,
@@ -273,7 +288,7 @@
     }
   },
   "Spans": [
-    "3,0,32,10"
+    "3,0,32,11"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -291,7 +306,7 @@
           }
         },
         "Params": [],
-        "ID": "454ea5c0f6d144c2a26bb1c7baa5d469"
+        "ID": "0afc75288a4948dc8f95e837a06c2e77"
       }
     ],
     "AuthorizeInfo": {
@@ -308,4 +323,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//I2tn/0aHnJxNpDewwiUa3PPo75C9161LTUVwGp44wm94vM0smUR7rqMr/wAur3sxbLH++G/yFVDR9k/mBmt2mPlUPPJsAo4kUhjt21k5vtzwZ/Ty1Fl/VTx2m56N9Jbj0hgJR9rNXgKoEkklyDyPUvL9bAeBydAU5xWbTgZgEr/AT/IPucpY/7EPGR1jm47eWfM/W7Lj/xrnW73zIFrE9oFXJ8h/XgcgKfH+p+6aVeKZVFPCg3let/GzybsqoupD2EPTcphdKB0VzWtzu4RY6QASBOKMpSdyosJ7hh/FQ9dw4LJr+uTrxXow130RYIM+Kzc8FZVD3vC5gdTwTSkNpCXk9Z+es9o+jNsSrLr04BtauvIPgr1bP3CvZqX1LGlIo3VK+09kVIuN1x4yxPdUfBasD/EyY7SM82BiafTz5NDelsocr3sVhhnUWebynI6os2gRv7i5y8T7I+QlA+Yg9Uyanu5dovy2xZCVH4A0tFeZIyReBQI4SLqcfX4+XgvcuT6vzpPmuaZzre9FBPC6gqnf185OBHDM2V/+Lr5FdF1hWlqq97MaLXYa6pj+yrkwuw6xTxW8VGXk2olcQ9efYBlKCnzE+TR+81Y7t/HvOeGEHn/o/d7ShZmL0rO744GIHT6NoizJCi9BAlais5VoOsy9gS68wfVF4x593Ch/sSzKE3XLZ8Q1Ent3dHmnISnHKFNh5L3AfkHZOwaheCn0qf1RNOLck15gOF/DymUhIFSgqVeeNXbO+TN15rHWgrV8EgTezZi+XnL/dYiG5p8SzpThuSTM2OJk0eSmFx/J0fbYwUbPwzx/vQEJI0XjwUBBcIk0CN2sIxu+H5bSwwFB/xavgOUd8W6PQH/Fq6S8Q+C6lW+Dyme5BZ402lzCHpTrO6nVbYM/WpfLEjMpBJpdyw==|920
+}///dqB55Eg/XIi97Qm/15VhFKnSfywMDvxB9SE+u7k6W8j3z41eQN/MFjpgUDrdT6/UlnR39KZ5FcXK26P/6x5q0yP7WBAVv8ZOqbp0ZmxyL57vbOCiC0HnAjtbyTX0lPo2LRMOIflC0HS7M2TJhTR4HrW6YVMFVEqK1GRIed+DLtk72TsGhyXLZsSegpjXkdFBjWPe5EHTHPer04PFi/4o+hgK9L83urSFSy/Yt8Vv35RrxJFBoj5OFP/LDrKa2rIev+b0xi4IRKnEJU7FZCGfLncv6jZYs6VEvXgIS5T+Di4SNbSI9H6JOgwxCcwzghKddVD4l2Hg4NzF/R+ocBqD/pZJ/OVd9gYujBKgsNDDPjBIi2FkvCcXza9A/x9M+kBAvX8SvljWm+8NqCvHDZ+Yb2sx5cs6UGSvw3jm7Wk0Ic8LC04n11UbEiOycNEnDF2v0dTC9z84LcR0kY/gh16bqUFFQB6rptt62Ya+Lr1kGEd7INqJwPSqipIk6vT9d+Oy9EWmegCpeGLY/DnMf7j+4ZqZvHmT39FRs7yp0/3tmVu3oVep9Vph0YxmFtdr+GVFAIgwlaVB1QD/Evg5p9ZKn8YEuaDiLJ9fNPrWn9PeoyxIjdieVeFLNB29nKP9vMrAa2yCLtDTEwt9nWhrFyZHVs4ILDKbN8W2vyOob88K8D0EBVw4j3iMV1lijfAl06+8yDZNShg41cVO30Y4RjsJG9/lKiG62hAJELJagO2JacJ6obuI/Bdc8frnaPXMC2rWtClTNoQF2rfYfBfYJzKDwMgB51dadSMbBkLNU/xwAqEy0ZRg1PwGNaCyNAMMqSOe5CAUGcqhnXlkmkMxkvP6clrrCiHtgpnlVbai3Vs5ywr2Ld7qLg6t5LLvqLfz4emo/wnI8QN9ggLNryay2I/9g==|920
