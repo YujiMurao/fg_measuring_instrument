@@ -308,7 +308,7 @@
               "=M3",
               "=F7"
             ],
-            "ID": "5e2b1d0c460641b7b7ab2cd7cfc31c5c"
+            "ID": "d1a53275efbf4c5b88b722aef0b7e925"
           }
         ],
         "Text": "検索",
@@ -336,7 +336,7 @@
               }
             },
             "Params": [],
-            "ID": "bf39e89d25474f55b55ca39e71aab719"
+            "ID": "62580f7251fd4e95939b518541c1fd77"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -407,7 +407,7 @@
                     "NewOtherName": "記録文書リスト"
                   }
                 ],
-                "ID": "d9ef16d6-1650-4f89-a897-5fbb3f018c40"
+                "ID": "c6d4b4c8-352d-4b47-95ba-879b17e841cc"
               }
             ]
           }
@@ -468,7 +468,6 @@
         "ColumnIndex": 1,
         "ColumnCount": 51,
         "RowCount": 25,
-        "IsAutoReload": true,
         "IsTotalRowVisible": true,
         "IsTotalRowAtFirstRow": true,
         "ColumnOperation": 2,
@@ -2283,13 +2282,13 @@
     "12,46,1,6",
     "12,34,1,12",
     "13,1,23,51",
-    "11,1,1,5",
-    "11,34,1,12",
-    "11,46,1,6",
     "12,6,1,18",
-    "11,6,1,18",
     "12,24,1,10",
-    "11,24,1,10"
+    "11,1,1,5",
+    "11,6,1,18",
+    "11,24,1,10",
+    "11,34,1,12",
+    "11,46,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2297,40 +2296,23 @@
     "Title": "記録文書一覧",
     "PageLoadedCommandList": [
       {
-        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-        "TargetTableName": "trn_insptool_certifications",
-        "SqlCondition": {
-          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-          "Condition1": {
-            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-            "Condition1": {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+        "ListViewName": "リストビュー1",
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_certifications",
                 "ColumnName": "registration_date"
               },
-              "Value": "%Null%"
-            },
-            "Condition2": {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "ColumnBindingInfo": {
-                "TableName": "trn_insptool_certifications",
-                "ColumnName": "subject"
-              },
-              "Value": "%Null%"
+              "Order": 1
             }
-          },
-          "Condition2": {
-            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "ColumnBindingInfo": {
-              "TableName": "trn_insptool_certifications",
-              "ColumnName": "memo"
-            },
-            "Value": "%Null%"
-          }
+          ]
         },
-        "Params": [],
-        "ID": "04eeb0ce80c4469eba379fdff97ca1b4"
+        "ID": "3697670f6fac4e89ac4453c9fb6cf17e"
+      },
+      {
+        "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand"
       }
     ],
     "AuthorizeInfo": {
@@ -2355,4 +2337,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//wXq2YaFSeEOzzEsOrgc82Ov50Qq6vNlwDgm+1RJUz73RWmneCsp93a4fdjxwAyGpAqDuKZiw36tEibc5CJwqjp39VYgd64r6am+PsZIVvP2vxMwC0X1favq6Gzv5WWC8cbRchDDUzzUuFW4bUC3Uv1ZZGu50jJXTxKfa3WAVgQAiJOvliBJjEpp3kGO5TIGcAIkq0efCloBPIGZS6gun6fGu4C6GKb7cxchL77ky9pTRd7E4dP5Yu4Fxo+3ZlhsZo+J2T+tyhyWH4YLvEPylsKRuOKbCKtXJ6xaWtSL8ALlu1Vtbv1u7G01y8OgfzyKK11oPkWDi9vphzMWGQxW4SRWgSBKLnG3q7cWk4tFq6DXO+HZ66GEoMNg2cbNoqB3VywJZg0G+oID7drKqFwTB7KMulD9EGaT8OFZZWwrhDgf5cXZQiSeQO1oPe9EN+f7ms7OovkJzO03eHrwgmsCbwQCWUEuLsONDoEzn/t+s1L+BqJVhSrH8+meormWXSDMWohwqfMqX44id1P3UfC/k1tyKklfLK/7ZvSTYyvbvVaZFUZJY9zCBYheCoeHUALnrQv4IT+3lbJVE5RhlBvHj1i+Koqm2gsVCbkjZmo8cBxSpNZXeaeGrMEzIPI4aSNxesQm/x2ieobx72NWGO2gOfzJyTJmPnZ8s7T/+hclBBoGkRedmnk6it3G7OykYEbAsrVWnOwBT8PASOMLIQVhV326zmi0X0kVTbzaKjbOAyuBIh1c3WRaOfEls2KyYDASOSUrTWPewINNY3NVAUBVcXAp2tIEHf3EGJ1gYW3XI6XoukUIL6BabPiznRdnkX+ll07UWRXOi0/+tXcP82Jtg2vgH+j+0/sapwxhPKnorjfE5D1V2OrHew4nMSBfHRUPFyI98FGGojJRa35ozOLkIPg==|920
+}//5ebLxVK4Jk7ICrXZBYkl4G1RQKheys9sJq3/a6mQNyovgFTElR30NEsUIKRJ4yjKvrD++O8f3dIuMkEMCST1LQggLi5yDXBCWhNcYEChGwT+2Kx3yJH7+gkWcNWoPlpm9ys8YPQAocVQVyP68npRiKVTGmNYv09HZddb7iRXem3KRMIaJ5m6Ywo6lUMMsKhrFJ38b2BWPYWNXmAvWMggCD/4Y/0Qmzw2T0nOLLiHp00N6ulgdwLSUNbKHP/cu86hyLi+BmbXRsfCJIMG4fyXyAdGEz535TgOh587KP+RUaT6N1vD9k88fL5TMb9YUmBDniWA1tZw9k9dbzt+FDg9GEM3e51SyqxeGzH1AJLBA/3rcPgLcsnukmH7RmCbQ59Ey9bYeDIm+DQqmbSOdBP7lq1VrL11jRGOOjvlV8w/cxYCZawTXEwND0PeWgg3U3fwydg/ovb28tfx8p2V6irI2yTmAJ8ju0s3yqMsLKZXk8tjL5kTHhEJ+6uzR7nSM4wiyzo6tmw8MCDdgUphkgbLVyWCpRkIqYOjLJtbG3wTphy19xL4KvqNUvlHj2o+gRk7lDOKg14HJPXj/faoxxx82nbzBv50efGKdUbSMgBf3yRqKi9+4jwO6oG8r3/nNgnCIbfm7QLwCmFPGWopAopI2DYLOxwQnNGvkaunbPhOM4SdBEaNTG+XWrw7AUWRLosoywTrDYPegFG2oNfSNz+DAetUgKAYLSK2HPZmfONa7QRtngKpWsB65tUWyRCAtQaEY09ARQnN/rqOpvyVlpzHB4QtPSEfMf8u8ktLLwOy4v1/nFBSWyfLZsnYxgUzYzRKJu5r+aPh9Q2tfbazh7T87gPRSLd8h2VHATUnB+wk1LIZCE2XDl8LYhxA2Ocuc7EbxTKUQ03dqCRUS6q7cektrQ==|920

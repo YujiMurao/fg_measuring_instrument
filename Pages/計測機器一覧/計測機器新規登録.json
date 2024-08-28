@@ -80,6 +80,11 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 6.0
         }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
       }
     },
     "Count": 31,
@@ -259,7 +264,7 @@
     },
     "1,1": {
       "CellType": {
-        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -273,7 +278,7 @@
                       "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                       "cellLocations": [
                         {
-                          "SerializeProperty": "=計測機器新規登録!AH5"
+                          "SerializeProperty": "=計測機器新規登録!AF5"
                         }
                       ]
                     },
@@ -285,7 +290,7 @@
                       "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                       "cellLocations": [
                         {
-                          "SerializeProperty": "=計測機器新規登録!AT5"
+                          "SerializeProperty": "=計測機器新規登録!AR5"
                         }
                       ]
                     },
@@ -298,7 +303,7 @@
                     "MessageFormula": "使用禁止理由を設定してください。"
                   }
                 ],
-                "ID": "4e5ae419-7032-4c67-92f4-de56c4b1f4ea"
+                "ID": "cf7a6bfb-35f9-437c-a01c-275ddb58f8fa"
               },
               {
                 "CommandList": [
@@ -324,7 +329,7 @@
                                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                                     "cellLocations": [
                                       {
-                                        "SerializeProperty": "=計測機器新規登録!A1"
+                                        "SerializeProperty": "=#REF!"
                                       }
                                     ]
                                   },
@@ -344,196 +349,196 @@
                                         "ColumnName": "n1",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G6"
+                                          "SerializeProperty": "=計測機器新規登録!E6"
                                         }
                                       },
                                       {
                                         "ColumnName": "n2",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G7"
+                                          "SerializeProperty": "=計測機器新規登録!E7"
                                         }
                                       },
                                       {
                                         "ColumnName": "n3",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G8"
+                                          "SerializeProperty": "=計測機器新規登録!E8"
                                         }
                                       },
                                       {
                                         "ColumnName": "n4",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!N5"
+                                          "SerializeProperty": "=計測機器新規登録!L5"
                                         }
                                       },
                                       {
                                         "ColumnName": "usage",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH5"
+                                          "SerializeProperty": "=計測機器新規登録!AF5"
                                         }
                                       },
                                       {
                                         "ColumnName": "codateymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AV2"
+                                          "SerializeProperty": "=計測機器新規登録!AT2"
                                         }
                                       },
                                       {
                                         "ColumnName": "kind",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G10"
+                                          "SerializeProperty": "=計測機器新規登録!E10"
                                         }
                                       },
                                       {
                                         "ColumnName": "prohibition_reason",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AT5"
+                                          "SerializeProperty": "=計測機器新規登録!AR5"
                                         }
                                       },
                                       {
                                         "ColumnName": "item_name",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G11"
+                                          "SerializeProperty": "=計測機器新規登録!E11"
                                         }
                                       },
                                       {
                                         "ColumnName": "type",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G12"
+                                          "SerializeProperty": "=計測機器新規登録!E12"
                                         }
                                       },
                                       {
                                         "ColumnName": "serial",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G13"
+                                          "SerializeProperty": "=計測機器新規登録!E13"
                                         }
                                       },
                                       {
                                         "ColumnName": "maker",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G14"
+                                          "SerializeProperty": "=計測機器新規登録!E14"
                                         }
                                       },
                                       {
                                         "ColumnName": "s1",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G15"
+                                          "SerializeProperty": "=計測機器新規登録!E15"
                                         }
                                       },
                                       {
                                         "ColumnName": "s2",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G16"
+                                          "SerializeProperty": "=計測機器新規登録!E16"
                                         }
                                       },
                                       {
                                         "ColumnName": "s3",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G17"
+                                          "SerializeProperty": "=計測機器新規登録!E17"
                                         }
                                       },
                                       {
                                         "ColumnName": "madeymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G19"
+                                          "SerializeProperty": "=計測機器新規登録!E19"
                                         }
                                       },
                                       {
                                         "ColumnName": "asset_no",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH19"
+                                          "SerializeProperty": "=計測機器新規登録!AF19"
                                         }
                                       },
                                       {
                                         "ColumnName": "purchaseymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G20"
+                                          "SerializeProperty": "=計測機器新規登録!E20"
                                         }
                                       },
                                       {
                                         "ColumnName": "retailer",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH20"
+                                          "SerializeProperty": "=計測機器新規登録!AF20"
                                         }
                                       },
                                       {
                                         "ColumnName": "storage_location",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH21"
+                                          "SerializeProperty": "=計測機器新規登録!AF21"
                                         }
                                       },
                                       {
                                         "ColumnName": "category",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G23"
+                                          "SerializeProperty": "=計測機器新規登録!E23"
                                         }
                                       },
                                       {
                                         "ColumnName": "lastrevisionymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH23"
+                                          "SerializeProperty": "=計測機器新規登録!AF23"
                                         }
                                       },
                                       {
                                         "ColumnName": "calibration_cycle",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G24"
+                                          "SerializeProperty": "=計測機器新規登録!E24"
                                         }
                                       },
                                       {
                                         "ColumnName": "next_caribration_ymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH24"
+                                          "SerializeProperty": "=計測機器新規登録!AF24"
                                         }
                                       },
                                       {
                                         "ColumnName": "automaticnotificationymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G25"
+                                          "SerializeProperty": "=計測機器新規登録!E25"
                                         }
                                       },
                                       {
                                         "ColumnName": "etc",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G27"
+                                          "SerializeProperty": "=計測機器新規登録!E27"
                                         }
                                       },
                                       {
                                         "ColumnName": "kousei_tsuuchibi",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH25"
+                                          "SerializeProperty": "=計測機器新規登録!AF25"
                                         }
                                       },
                                       {
                                         "ColumnName": "kouseiyuukoukigenymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH25"
+                                          "SerializeProperty": "=計測機器新規登録!AF25"
                                         }
                                       },
                                       {
@@ -543,28 +548,28 @@
                                         "ColumnName": "外観",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AB7"
+                                          "SerializeProperty": "=計測機器新規登録!Z7"
                                         }
                                       },
                                       {
                                         "ColumnName": "添付ファイル",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH13"
+                                          "SerializeProperty": "=計測機器新規登録!AF13"
                                         }
                                       },
                                       {
                                         "ColumnName": "ctrl_no",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G5"
+                                          "SerializeProperty": "=計測機器新規登録!E5"
                                         }
                                       },
                                       {
                                         "ColumnName": "公開",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AB2"
+                                          "SerializeProperty": "=計測機器新規登録!Z2"
                                         }
                                       }
                                     ]
@@ -575,14 +580,14 @@
                                       {
                                         "TargetCells": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!A1"
+                                          "SerializeProperty": "=#REF!"
                                         },
                                         "Value": "edit"
                                       },
                                       {
                                         "TargetCells": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!L2"
+                                          "SerializeProperty": "=計測機器新規登録!J2"
                                         },
                                         "PropertyType": 1,
                                         "Value": true
@@ -590,7 +595,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "a56e0c10-70c9-4b84-913a-c074fda91614"
+                                "ID": "8962ffe5-7092-4fe5-98a3-5c8ec33acc9f"
                               },
                               {
                                 "CommandList": [
@@ -605,196 +610,196 @@
                                         "ColumnName": "n1",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G6"
+                                          "SerializeProperty": "=計測機器新規登録!E6"
                                         }
                                       },
                                       {
                                         "ColumnName": "n2",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G7"
+                                          "SerializeProperty": "=計測機器新規登録!E7"
                                         }
                                       },
                                       {
                                         "ColumnName": "n3",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G8"
+                                          "SerializeProperty": "=計測機器新規登録!E8"
                                         }
                                       },
                                       {
                                         "ColumnName": "n4",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!N5"
+                                          "SerializeProperty": "=計測機器新規登録!L5"
                                         }
                                       },
                                       {
                                         "ColumnName": "usage",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH5"
+                                          "SerializeProperty": "=計測機器新規登録!AF5"
                                         }
                                       },
                                       {
                                         "ColumnName": "codateymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AV2"
+                                          "SerializeProperty": "=計測機器新規登録!AT2"
                                         }
                                       },
                                       {
                                         "ColumnName": "kind",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G10"
+                                          "SerializeProperty": "=計測機器新規登録!E10"
                                         }
                                       },
                                       {
                                         "ColumnName": "prohibition_reason",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AT5"
+                                          "SerializeProperty": "=計測機器新規登録!AR5"
                                         }
                                       },
                                       {
                                         "ColumnName": "item_name",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G11"
+                                          "SerializeProperty": "=計測機器新規登録!E11"
                                         }
                                       },
                                       {
                                         "ColumnName": "type",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G12"
+                                          "SerializeProperty": "=計測機器新規登録!E12"
                                         }
                                       },
                                       {
                                         "ColumnName": "serial",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G13"
+                                          "SerializeProperty": "=計測機器新規登録!E13"
                                         }
                                       },
                                       {
                                         "ColumnName": "maker",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G14"
+                                          "SerializeProperty": "=計測機器新規登録!E14"
                                         }
                                       },
                                       {
                                         "ColumnName": "s1",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G15"
+                                          "SerializeProperty": "=計測機器新規登録!E15"
                                         }
                                       },
                                       {
                                         "ColumnName": "s2",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G16"
+                                          "SerializeProperty": "=計測機器新規登録!E16"
                                         }
                                       },
                                       {
                                         "ColumnName": "s3",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G17"
+                                          "SerializeProperty": "=計測機器新規登録!E17"
                                         }
                                       },
                                       {
                                         "ColumnName": "madeymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G19"
+                                          "SerializeProperty": "=計測機器新規登録!E19"
                                         }
                                       },
                                       {
                                         "ColumnName": "asset_no",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH19"
+                                          "SerializeProperty": "=計測機器新規登録!AF19"
                                         }
                                       },
                                       {
                                         "ColumnName": "purchaseymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G20"
+                                          "SerializeProperty": "=計測機器新規登録!E20"
                                         }
                                       },
                                       {
                                         "ColumnName": "retailer",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH20"
+                                          "SerializeProperty": "=計測機器新規登録!AF20"
                                         }
                                       },
                                       {
                                         "ColumnName": "storage_location",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH21"
+                                          "SerializeProperty": "=計測機器新規登録!AF21"
                                         }
                                       },
                                       {
                                         "ColumnName": "category",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G23"
+                                          "SerializeProperty": "=計測機器新規登録!E23"
                                         }
                                       },
                                       {
                                         "ColumnName": "lastrevisionymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH23"
+                                          "SerializeProperty": "=計測機器新規登録!AF23"
                                         }
                                       },
                                       {
                                         "ColumnName": "calibration_cycle",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G24"
+                                          "SerializeProperty": "=計測機器新規登録!E24"
                                         }
                                       },
                                       {
                                         "ColumnName": "next_caribration_ymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH24"
+                                          "SerializeProperty": "=計測機器新規登録!AF24"
                                         }
                                       },
                                       {
                                         "ColumnName": "automaticnotificationymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G25"
+                                          "SerializeProperty": "=計測機器新規登録!E25"
                                         }
                                       },
                                       {
                                         "ColumnName": "etc",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G27"
+                                          "SerializeProperty": "=計測機器新規登録!E27"
                                         }
                                       },
                                       {
                                         "ColumnName": "kousei_tsuuchibi",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH25"
+                                          "SerializeProperty": "=計測機器新規登録!AF25"
                                         }
                                       },
                                       {
                                         "ColumnName": "kouseiyuukoukigenymd",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH25"
+                                          "SerializeProperty": "=計測機器新規登録!AF25"
                                         }
                                       },
                                       {
@@ -804,45 +809,50 @@
                                         "ColumnName": "外観",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AB7"
+                                          "SerializeProperty": "=計測機器新規登録!Z7"
                                         }
                                       },
                                       {
                                         "ColumnName": "添付ファイル",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!AH13"
+                                          "SerializeProperty": "=計測機器新規登録!AF13"
                                         }
                                       },
                                       {
                                         "ColumnName": "ctrl_no",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器新規登録!G5"
+                                          "SerializeProperty": "=計測機器新規登録!E5"
                                         }
                                       }
                                     ]
                                   }
                                 ],
-                                "ID": "18b7dd57-5313-4c78-b229-214da5a57f5f"
+                                "ID": "322166ce-bc32-4412-a684-10d33718bf10"
                               }
                             ]
                           }
                         ],
-                        "ID": "3c69b419-e223-46c0-9f13-bbf8b098e8bb"
+                        "ID": "82ebbedf-b4ab-4084-b0b0-fa7985e277e8"
                       }
                     ]
                   }
                 ],
-                "ID": "39bc1b27-c954-4502-9088-7fb5f1976355"
+                "ID": "86bf4977-b433-48f7-a0eb-ff0a312e3536"
               }
             ]
           }
         ],
-        "ImageSizeMode": 0,
-        "ImagePath": "Application/069_save_6.svg",
-        "BuiltIn": true,
-        "Color": "Accent 1"
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/069_save_6.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 30.0
       }
     },
     "1,11": {
@@ -1050,7 +1060,7 @@
                     ]
                   }
                 ],
-                "ID": "8bceb18d-527a-4ce6-b7f9-56dfe6c8870f"
+                "ID": "34335033-8285-42d5-9046-9b958051cb89"
               },
               {
                 "Condition": {
@@ -1095,7 +1105,7 @@
                     ]
                   }
                 ],
-                "ID": "467200a8-1619-4b85-ac46-4bb09a411fab"
+                "ID": "214b3638-322f-47f2-b3c1-897dd240aec1"
               },
               {
                 "CommandList": [
@@ -1121,7 +1131,7 @@
                     ]
                   }
                 ],
-                "ID": "c49958fe-f0ad-491e-b38f-be30b694e0f9"
+                "ID": "daf5733b-47fb-47d6-8fea-300a018db8cb"
               }
             ]
           }
@@ -1264,7 +1274,7 @@
                     ]
                   }
                 ],
-                "ID": "d9c28d5b-f4ef-4336-bb29-07fcdc3c0183"
+                "ID": "ecf947c4-4c18-4033-8d1c-dc919891c55a"
               }
             ]
           }
@@ -1302,7 +1312,7 @@
                     ]
                   }
                 ],
-                "ID": "a1391b58-383b-4d13-8998-aa3612fce2e4"
+                "ID": "49e62bc0-5fce-4505-ad1e-5238c3f36f3f"
               }
             ]
           }
@@ -1567,7 +1577,7 @@
                     ]
                   }
                 ],
-                "ID": "1c67002f-2d0b-4711-89ec-3e631e55e74d"
+                "ID": "2adcc428-c542-46e6-b05f-e9733c290661"
               },
               {
                 "CommandList": [
@@ -1585,7 +1595,7 @@
                     ]
                   }
                 ],
-                "ID": "712657ae-c437-4cb6-b7b4-0c61d7d712ae"
+                "ID": "7cf13f76-0f60-4a91-92fb-c6b92f4eaa41"
               }
             ]
           }
@@ -1734,7 +1744,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器新規登録!G23"
             },
-            "ID": "23c2c1af8a75451a94efa8c9f0b1e60f"
+            "ID": "a55e53c9778148ffbb60ca747c0647ce"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1743,7 +1753,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器新規登録!G24"
             },
-            "ID": "37cc0634443749fc964c011fb20c169c"
+            "ID": "47265006b2b743f889e8a0ac172e621d"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1752,7 +1762,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器新規登録!AH23"
             },
-            "ID": "0accdb080c7645cc8e2a80fe46bdf3d0"
+            "ID": "1c9150fb1ffc4488914fb430c96631ba"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1825,7 +1835,7 @@
                             ]
                           }
                         ],
-                        "ID": "85de99e5-ae4f-4d84-a04c-2d4dd6e894f9"
+                        "ID": "ec4c9499-dd18-48a4-ac71-b907851a703c"
                       },
                       {
                         "Condition": {
@@ -1877,7 +1887,7 @@
                             ]
                           }
                         ],
-                        "ID": "ae5d95a0-aa40-4d41-9209-56768b32175d"
+                        "ID": "e93151d7-7cde-4e55-8a76-7f3cc9f26855"
                       },
                       {
                         "CommandList": [
@@ -1908,12 +1918,12 @@
                             ]
                           }
                         ],
-                        "ID": "58ae0b78-df1f-4b79-ad0e-268e4a6a0af8"
+                        "ID": "e1b1d27a-fa31-4d8e-999d-a70c51161aea"
                       }
                     ]
                   }
                 ],
-                "ID": "e1479c2f-d9df-4eb4-9d3b-fd4b09a299a6"
+                "ID": "44897346-edc5-45ae-afa1-669b30ac85f3"
               }
             ]
           }
@@ -1940,7 +1950,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器新規登録!G23"
             },
-            "ID": "64005b17155d4513822b534ba77ee615"
+            "ID": "8b27e43f9612414980fa91b9a517bbd0"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1949,7 +1959,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器新規登録!G24"
             },
-            "ID": "b455a1a93582406699514b34c44b94ae"
+            "ID": "9c6056acb119421498c217debdf9bee9"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1958,7 +1968,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器新規登録!AH23"
             },
-            "ID": "71477cf259ff4b718eb1118b364cf709"
+            "ID": "d2f2387885a947838fc91743886609e8"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -2047,7 +2057,7 @@
                             ]
                           }
                         ],
-                        "ID": "97c5c4b9-fb94-4d6e-a0de-a19bfebd256e"
+                        "ID": "c842fa05-e9f3-4266-b405-8c1c76b430b9"
                       },
                       {
                         "Condition": {
@@ -2099,7 +2109,7 @@
                             ]
                           }
                         ],
-                        "ID": "d2408a4d-ab9c-4d63-9f82-d77093d95288"
+                        "ID": "d0ad0a5b-4dd2-440e-8290-10c00489df10"
                       },
                       {
                         "CommandList": [
@@ -2130,12 +2140,12 @@
                             ]
                           }
                         ],
-                        "ID": "9f8c243a-c08c-433f-8909-aaa184436250"
+                        "ID": "553ec378-2690-48b2-b467-c9d2ad0ba064"
                       }
                     ]
                   }
                 ],
-                "ID": "27de9fde-8fbf-475f-9016-62f86d3160b3"
+                "ID": "7eb62b10-55ec-451e-973f-f485c3846c85"
               }
             ]
           }
@@ -2156,7 +2166,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器新規登録!G23"
             },
-            "ID": "14a653375add49c6a8f10f4b73c31f20"
+            "ID": "cda0602929cb4a0daa8deac9797501f9"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2165,7 +2175,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器新規登録!G24"
             },
-            "ID": "3150fe3574ff46eb87cf71c0c6be60d7"
+            "ID": "4abdd678ec8f4c0fb1b27b8b498bc87e"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2174,7 +2184,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器新規登録!AH23"
             },
-            "ID": "accbab597ed14461803ddd84d1caad8a"
+            "ID": "1677149af0de4d3895efb1b2530b4a56"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -2247,7 +2257,7 @@
                             ]
                           }
                         ],
-                        "ID": "1f21dbce-72a0-4683-993b-e98d847decc8"
+                        "ID": "eeb8c686-26ef-4996-9582-bf85877c9bb5"
                       },
                       {
                         "Condition": {
@@ -2299,7 +2309,7 @@
                             ]
                           }
                         ],
-                        "ID": "a442e4cc-0161-48ca-a4ca-abaf50020bf1"
+                        "ID": "0b513d78-0c9c-45fa-aeb7-e615d2247568"
                       },
                       {
                         "CommandList": [
@@ -2330,12 +2340,12 @@
                             ]
                           }
                         ],
-                        "ID": "c6e9362d-bb9c-484b-984e-892e240b09dd"
+                        "ID": "1a00355a-ffde-40ed-9d1b-e3a1007b8ae9"
                       }
                     ]
                   }
                 ],
-                "ID": "0d9d6faf-a302-4c49-9cf9-20cfd46bd0a3"
+                "ID": "003b21ce-e9d3-4f40-9031-3f6922df3350"
               }
             ]
           }
@@ -2474,25 +2484,6 @@
       },
       {
         "Background": 0,
-        "FontFamily": 7,
-        "FontSize": 14.666666984558105,
-        "Foreground": 8,
-        "Formatter": 6,
-        "TextIndent": 5,
-        "HorizontalAlignment": 10,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 0,
-        "Foreground": 11,
-        "Formatter": 6,
-        "Underline": true
-      },
-      {
-        "Background": 0,
         "Formatter": 6,
         "BorderBottom": null,
         "BorderTop": null,
@@ -2528,9 +2519,9 @@
         "Background": 0,
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 12,
+        "Foreground": 10,
         "Formatter": 6,
-        "HorizontalAlignment": 10,
+        "HorizontalAlignment": 11,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -2541,7 +2532,7 @@
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
         "Foreground": 8,
-        "Formatter": 13,
+        "Formatter": 12,
         "TextIndent": 5,
         "HorizontalAlignment": 9,
         "BorderBottom": null,
@@ -2628,16 +2619,16 @@
         "Foreground": 8,
         "Formatter": 6,
         "TextIndent": 5,
-        "HorizontalAlignment": 10,
+        "HorizontalAlignment": 11,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null
       },
       {
-        "Background": 15,
+        "Background": 14,
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 12,
+        "Foreground": 10,
         "Formatter": 3,
         "BorderBottom": 2,
         "BorderTop": 2,
@@ -2669,22 +2660,22 @@
         "Strikethrough": false
       },
       {
-        "Foreground": 12
+        "Foreground": 10
       },
       {
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Formatter": 17
+        "Formatter": 16
       },
       {
-        "Formatter": 17
+        "Formatter": 16
       },
       {
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 18,
-        "HorizontalAlignment": 10,
-        "VerticalAlignment": 19,
+        "Foreground": 17,
+        "HorizontalAlignment": 11,
+        "VerticalAlignment": 18,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -2694,7 +2685,7 @@
         "Background": 0,
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 12,
+        "Foreground": 10,
         "Formatter": 6,
         "BorderBottom": null,
         "BorderTop": null,
@@ -2713,9 +2704,9 @@
       {
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 18,
-        "HorizontalAlignment": 10,
-        "VerticalAlignment": 19,
+        "Foreground": 17,
+        "HorizontalAlignment": 11,
+        "VerticalAlignment": 18,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null
@@ -2731,7 +2722,7 @@
         "Background": 0,
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 12,
+        "Foreground": 10,
         "Formatter": 6
       },
       {
@@ -2756,7 +2747,7 @@
         "Background": 0,
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 21,
+        "Foreground": 20,
         "Formatter": 3,
         "HorizontalAlignment": 9,
         "BorderBottom": null,
@@ -2815,7 +2806,7 @@
       },
       {
         "Background": 0,
-        "Foreground": 12,
+        "Foreground": 10,
         "Formatter": 6,
         "BorderBottom": null,
         "BorderTop": null,
@@ -2827,8 +2818,8 @@
         "BorderRight": null
       },
       {
-        "Background": 22,
-        "Foreground": 12,
+        "Background": 21,
+        "Foreground": 10,
         "Formatter": 6,
         "BorderBottom": 4,
         "BorderTop": 4,
@@ -2848,8 +2839,8 @@
         "BorderRight": 4
       },
       {
-        "Background": 22,
-        "Foreground": 12,
+        "Background": 21,
+        "Foreground": 10,
         "BorderBottom": 4,
         "BorderTop": 4,
         "BorderLeft": 4,
@@ -2857,20 +2848,20 @@
       },
       {
         "Background": 0,
-        "Foreground": 12,
+        "Foreground": 10,
         "Formatter": 6,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null
       },
       {
-        "Formatter": 24
+        "Formatter": 23
       },
       {
         "Background": 0,
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 12,
+        "Foreground": 10,
         "Formatter": 6,
         "TextIndent": 5,
         "HorizontalAlignment": 9,
@@ -2892,11 +2883,11 @@
         "FontSize": 14.666666984558105,
         "FontStyle": 1,
         "FontWeight": 1,
-        "Foreground": 25,
+        "Foreground": 24,
         "Formatter": 3,
         "TextIndent": 0,
         "HorizontalAlignment": 9,
-        "VerticalAlignment": 19,
+        "VerticalAlignment": 18,
         "WordWrap": false,
         "Underline": true,
         "Strikethrough": false,
@@ -2918,8 +2909,8 @@
       },
       {
         "FontSize": 12.0,
-        "Foreground": 12,
-        "Formatter": 26,
+        "Foreground": 10,
+        "Formatter": 25,
         "TextIndent": 5,
         "HorizontalAlignment": 9
       },
@@ -2945,16 +2936,16 @@
         "BorderLeft": null
       },
       {
-        "Formatter": 24,
-        "VerticalAlignment": 19,
+        "Formatter": 23,
+        "VerticalAlignment": 18,
         "WordWrap": true
       },
       {
         "Background": 0,
         "FontFamily": 7,
         "FontSize": 13.333333333333332,
-        "Foreground": 12,
-        "Formatter": 27,
+        "Foreground": 10,
+        "Formatter": 26,
         "TextIndent": 5,
         "HorizontalAlignment": 9,
         "BorderBottom": null,
@@ -2966,8 +2957,8 @@
         "Background": 0,
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 21,
-        "Formatter": 27,
+        "Foreground": 20,
+        "Formatter": 26,
         "TextIndent": 5,
         "HorizontalAlignment": 9
       },
@@ -3013,10 +3004,10 @@
         "HorizontalAlignment": 9
       },
       {
-        "Background": 22,
+        "Background": 21,
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 12,
+        "Foreground": 10,
         "Formatter": 3,
         "BorderBottom": 4,
         "BorderTop": 4,
@@ -3024,17 +3015,17 @@
         "BorderRight": null
       },
       {
-        "Formatter": 27,
+        "Formatter": 26,
         "HorizontalAlignment": 9
       },
       {
-        "Foreground": 18,
-        "HorizontalAlignment": 10,
-        "VerticalAlignment": 19
+        "Foreground": 17,
+        "HorizontalAlignment": 11,
+        "VerticalAlignment": 18
       },
       {
-        "Background": 28,
-        "Foreground": 12,
+        "Background": 27,
+        "Foreground": 10,
         "Formatter": 3,
         "BorderBottom": 5,
         "BorderTop": 5,
@@ -3054,10 +3045,10 @@
         "BorderRight": 5
       },
       {
-        "Background": 28,
+        "Background": 27,
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 30,
+        "Foreground": 29,
         "Formatter": 3,
         "BorderBottom": 5,
         "BorderTop": 5,
@@ -3065,25 +3056,25 @@
         "BorderRight": null
       },
       {
-        "Formatter": 13,
+        "Formatter": 12,
         "HorizontalAlignment": 9
       },
       {
-        "Formatter": 31,
+        "Formatter": 30,
         "HorizontalAlignment": 9
       },
       {
         "FontFamily": 7,
         "FontSize": 12.0,
         "Foreground": 5,
-        "VerticalAlignment": 19,
+        "VerticalAlignment": 18,
         "WordWrap": true
       },
       {
-        "Background": 28,
+        "Background": 27,
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 12,
+        "Foreground": 10,
         "Formatter": 3,
         "BorderBottom": 5,
         "BorderTop": 5,
@@ -3091,10 +3082,10 @@
         "BorderRight": null
       },
       {
-        "Formatter": 32
+        "Formatter": 31
       },
       {
-        "Formatter": 13
+        "Formatter": 12
       },
       {
         "Background": 0,
@@ -3126,23 +3117,23 @@
       },
       {
         "Background": 0,
-        "Foreground": 12,
+        "Foreground": 10,
         "Formatter": 6
       },
       {
         "Background": 0,
         "FontFamily": 7,
         "FontSize": 14.666666984558105,
-        "Foreground": 21,
+        "Foreground": 20,
         "Formatter": 6
       },
       {
-        "Foreground": 12,
-        "Formatter": 17
+        "Foreground": 10,
+        "Formatter": 16
       },
       {
         "Background": 0,
-        "Foreground": 21,
+        "Foreground": 20,
         "Formatter": 6,
         "BorderBottom": null,
         "BorderLeft": null,
@@ -3150,7 +3141,7 @@
       },
       {
         "Background": 0,
-        "Foreground": 21,
+        "Foreground": 20,
         "Formatter": 6
       }
     ],
@@ -3166,9 +3157,8 @@
         "Meiryo UI",
         "#FF8C8C8C",
         "Left",
-        "Right",
-        "Blue",
         "#FF6D6D6D",
+        "Right",
         "yyyy/MM/dd",
         "#FFCCCCCC",
         "Accent 1 80",
@@ -3195,19 +3185,19 @@
           "Color": 5
         },
         {
-          "Color": 14
+          "Color": 13
         },
         {
-          "Color": 16
+          "Color": 15
         },
         {
-          "Color": 20
+          "Color": 19
         },
         {
-          "Color": 23
+          "Color": 22
         },
         {
-          "Color": 29
+          "Color": 28
         }
       ]
     },
@@ -3273,43 +3263,41 @@
       "0,58": 5,
       "0,59": 6,
       "1,0": 7,
-      "1,1": 8,
-      "1,2": 9,
-      "1,3": 10,
-      "1,4": 11,
-      "1,5": 11,
-      "1,6": 11,
-      "1,7": 11,
-      "1,8": 11,
-      "1,9": 11,
-      "1,10": 11,
-      "1,11": 12,
-      "1,22": 13,
-      "1,23": 11,
-      "1,24": 11,
-      "1,25": 11,
-      "1,26": 11,
-      "1,27": 14,
-      "1,31": 11,
-      "1,32": 11,
-      "1,33": 11,
-      "1,34": 11,
-      "1,35": 11,
-      "1,36": 11,
-      "1,38": 11,
-      "1,39": 11,
-      "1,41": 11,
-      "1,42": 11,
-      "1,43": 11,
-      "1,44": 11,
-      "1,45": 15,
-      "1,46": 16,
-      "1,47": 17,
-      "1,48": 11,
-      "1,49": 11,
-      "1,50": 11,
-      "1,51": 11,
-      "1,52": 11,
+      "1,3": 8,
+      "1,4": 9,
+      "1,5": 9,
+      "1,6": 9,
+      "1,7": 9,
+      "1,8": 9,
+      "1,9": 9,
+      "1,10": 9,
+      "1,11": 10,
+      "1,22": 11,
+      "1,23": 9,
+      "1,24": 9,
+      "1,25": 9,
+      "1,26": 9,
+      "1,27": 12,
+      "1,31": 9,
+      "1,32": 9,
+      "1,33": 9,
+      "1,34": 9,
+      "1,35": 9,
+      "1,36": 9,
+      "1,38": 9,
+      "1,39": 9,
+      "1,41": 9,
+      "1,42": 9,
+      "1,43": 9,
+      "1,44": 9,
+      "1,45": 13,
+      "1,46": 14,
+      "1,47": 15,
+      "1,48": 9,
+      "1,49": 9,
+      "1,50": 9,
+      "1,51": 9,
+      "1,52": 9,
       "1,53": 8,
       "1,54": 5,
       "1,55": 6,
@@ -3317,236 +3305,236 @@
       "1,57": 6,
       "1,58": 5,
       "1,59": 6,
-      "2,0": 11,
-      "2,1": 18,
-      "2,2": 11,
-      "2,3": 11,
-      "2,4": 11,
-      "2,5": 11,
-      "2,6": 11,
-      "2,7": 11,
-      "2,8": 11,
-      "2,9": 11,
-      "2,10": 11,
+      "2,0": 9,
+      "2,1": 16,
+      "2,2": 9,
+      "2,3": 9,
+      "2,4": 9,
+      "2,5": 9,
+      "2,6": 9,
+      "2,7": 9,
+      "2,8": 9,
+      "2,9": 9,
+      "2,10": 9,
       "2,11": 6,
       "2,12": 6,
       "2,13": 6,
       "2,14": 6,
       "2,15": 6,
       "2,16": 6,
-      "2,17": 11,
-      "2,18": 11,
-      "2,19": 11,
-      "2,20": 11,
-      "2,21": 11,
-      "2,22": 11,
-      "2,23": 11,
-      "2,24": 11,
-      "2,25": 11,
-      "2,26": 11,
-      "2,27": 11,
-      "2,28": 11,
-      "2,29": 11,
-      "2,30": 11,
-      "2,31": 11,
-      "2,32": 11,
-      "2,33": 11,
-      "2,34": 11,
-      "2,35": 11,
-      "2,36": 11,
-      "2,37": 11,
-      "2,38": 11,
-      "2,39": 11,
-      "2,40": 11,
-      "2,41": 11,
-      "2,42": 11,
-      "2,43": 11,
-      "2,44": 11,
-      "2,45": 11,
-      "2,46": 11,
-      "2,47": 11,
-      "2,48": 11,
-      "2,49": 11,
-      "2,50": 11,
-      "2,51": 11,
-      "2,52": 11,
+      "2,17": 9,
+      "2,18": 9,
+      "2,19": 9,
+      "2,20": 9,
+      "2,21": 9,
+      "2,22": 9,
+      "2,23": 9,
+      "2,24": 9,
+      "2,25": 9,
+      "2,26": 9,
+      "2,27": 9,
+      "2,28": 9,
+      "2,29": 9,
+      "2,30": 9,
+      "2,31": 9,
+      "2,32": 9,
+      "2,33": 9,
+      "2,34": 9,
+      "2,35": 9,
+      "2,36": 9,
+      "2,37": 9,
+      "2,38": 9,
+      "2,39": 9,
+      "2,40": 9,
+      "2,41": 9,
+      "2,42": 9,
+      "2,43": 9,
+      "2,44": 9,
+      "2,45": 9,
+      "2,46": 9,
+      "2,47": 9,
+      "2,48": 9,
+      "2,49": 9,
+      "2,50": 9,
+      "2,51": 9,
+      "2,52": 9,
       "2,53": 8,
-      "2,54": 19,
-      "2,55": 19,
-      "2,56": 19,
-      "2,57": 19,
-      "2,58": 19,
-      "2,59": 19,
-      "3,0": 20,
-      "3,1": 21,
-      "3,2": 22,
-      "3,3": 22,
-      "3,4": 22,
-      "3,5": 22,
-      "3,6": 22,
-      "3,7": 22,
-      "3,8": 22,
-      "3,9": 22,
-      "3,10": 22,
-      "3,11": 22,
-      "3,12": 22,
-      "3,13": 22,
-      "3,14": 22,
-      "3,15": 22,
-      "3,16": 22,
-      "3,17": 22,
-      "3,18": 22,
-      "3,19": 22,
-      "3,20": 22,
-      "3,21": 22,
-      "3,22": 22,
-      "3,23": 22,
-      "3,24": 22,
-      "3,25": 22,
-      "3,26": 22,
-      "3,27": 22,
-      "3,28": 22,
-      "3,29": 22,
-      "3,30": 22,
-      "3,31": 22,
-      "3,32": 22,
-      "3,33": 22,
-      "3,34": 22,
-      "3,35": 22,
-      "3,36": 22,
-      "3,37": 22,
-      "3,38": 22,
-      "3,39": 22,
-      "3,40": 22,
-      "3,41": 22,
-      "3,42": 22,
-      "3,43": 22,
-      "3,44": 22,
-      "3,45": 22,
-      "3,46": 22,
-      "3,47": 22,
-      "3,48": 22,
-      "3,49": 22,
-      "3,50": 22,
-      "3,51": 22,
-      "3,52": 22,
-      "3,53": 23,
-      "3,54": 19,
-      "3,55": 19,
-      "3,56": 19,
-      "3,57": 19,
-      "3,58": 19,
-      "3,59": 19,
-      "4,0": 24,
-      "4,1": 25,
-      "4,2": 26,
-      "4,3": 26,
-      "4,4": 26,
-      "4,5": 27,
-      "4,6": 28,
-      "4,11": 29,
-      "4,13": 30,
-      "4,17": 31,
-      "4,26": 32,
-      "4,27": 33,
+      "2,54": 17,
+      "2,55": 17,
+      "2,56": 17,
+      "2,57": 17,
+      "2,58": 17,
+      "2,59": 17,
+      "3,0": 18,
+      "3,1": 19,
+      "3,2": 20,
+      "3,3": 20,
+      "3,4": 20,
+      "3,5": 20,
+      "3,6": 20,
+      "3,7": 20,
+      "3,8": 20,
+      "3,9": 20,
+      "3,10": 20,
+      "3,11": 20,
+      "3,12": 20,
+      "3,13": 20,
+      "3,14": 20,
+      "3,15": 20,
+      "3,16": 20,
+      "3,17": 20,
+      "3,18": 20,
+      "3,19": 20,
+      "3,20": 20,
+      "3,21": 20,
+      "3,22": 20,
+      "3,23": 20,
+      "3,24": 20,
+      "3,25": 20,
+      "3,26": 20,
+      "3,27": 20,
+      "3,28": 20,
+      "3,29": 20,
+      "3,30": 20,
+      "3,31": 20,
+      "3,32": 20,
+      "3,33": 20,
+      "3,34": 20,
+      "3,35": 20,
+      "3,36": 20,
+      "3,37": 20,
+      "3,38": 20,
+      "3,39": 20,
+      "3,40": 20,
+      "3,41": 20,
+      "3,42": 20,
+      "3,43": 20,
+      "3,44": 20,
+      "3,45": 20,
+      "3,46": 20,
+      "3,47": 20,
+      "3,48": 20,
+      "3,49": 20,
+      "3,50": 20,
+      "3,51": 20,
+      "3,52": 20,
+      "3,53": 21,
+      "3,54": 17,
+      "3,55": 17,
+      "3,56": 17,
+      "3,57": 17,
+      "3,58": 17,
+      "3,59": 17,
+      "4,0": 22,
+      "4,1": 23,
+      "4,2": 24,
+      "4,3": 24,
+      "4,4": 24,
+      "4,5": 25,
+      "4,6": 26,
+      "4,11": 27,
+      "4,13": 28,
+      "4,17": 29,
+      "4,26": 30,
+      "4,27": 31,
       "4,28": 6,
       "4,29": 6,
       "4,30": 6,
       "4,31": 6,
       "4,32": 6,
-      "4,40": 29,
-      "4,45": 14,
-      "4,53": 34,
-      "4,54": 19,
-      "4,55": 19,
-      "4,56": 19,
-      "4,57": 19,
-      "4,58": 19,
-      "4,59": 19,
-      "5,0": 35,
-      "5,1": 25,
-      "5,2": 26,
-      "5,3": 26,
-      "5,4": 26,
-      "5,5": 27,
-      "5,6": 14,
-      "5,26": 36,
-      "5,27": 37,
+      "4,40": 27,
+      "4,45": 12,
+      "4,53": 32,
+      "4,54": 17,
+      "4,55": 17,
+      "4,56": 17,
+      "4,57": 17,
+      "4,58": 17,
+      "4,59": 17,
+      "5,0": 33,
+      "5,1": 23,
+      "5,2": 24,
+      "5,3": 24,
+      "5,4": 24,
+      "5,5": 25,
+      "5,6": 12,
+      "5,26": 34,
+      "5,27": 35,
       "5,29": 6,
       "5,30": 6,
-      "5,34": 38,
-      "5,35": 38,
-      "5,36": 38,
-      "5,37": 38,
-      "5,38": 38,
-      "5,39": 38,
-      "5,40": 38,
-      "5,41": 38,
-      "5,42": 38,
+      "5,34": 36,
+      "5,35": 36,
+      "5,36": 36,
+      "5,37": 36,
+      "5,38": 36,
+      "5,39": 36,
+      "5,40": 36,
+      "5,41": 36,
+      "5,42": 36,
       "5,44": 6,
       "5,45": 6,
-      "5,46": 38,
-      "5,47": 38,
-      "5,48": 38,
-      "5,49": 38,
-      "5,50": 38,
-      "5,51": 38,
-      "5,52": 39,
-      "5,53": 34,
-      "5,54": 19,
-      "5,55": 19,
-      "5,56": 19,
-      "5,57": 19,
-      "5,58": 19,
-      "5,59": 19,
-      "6,0": 35,
-      "6,1": 25,
-      "6,2": 26,
-      "6,3": 26,
-      "6,4": 26,
-      "6,5": 27,
-      "6,6": 40,
-      "6,27": 41,
-      "6,28": 42,
-      "6,29": 42,
-      "6,30": 42,
-      "6,31": 42,
-      "6,32": 42,
-      "6,33": 42,
-      "6,34": 42,
-      "6,35": 42,
-      "6,36": 42,
-      "6,37": 42,
-      "6,38": 42,
-      "6,39": 42,
-      "6,40": 43,
-      "6,41": 42,
-      "6,42": 42,
-      "6,43": 42,
-      "6,44": 42,
-      "6,45": 42,
-      "6,46": 42,
-      "6,47": 42,
-      "6,48": 42,
-      "6,49": 42,
-      "6,50": 42,
-      "6,51": 42,
-      "6,52": 44,
-      "6,53": 34,
-      "6,54": 19,
-      "6,55": 19,
-      "6,56": 19,
-      "6,57": 19,
-      "6,58": 19,
-      "6,59": 19,
-      "7,0": 35,
-      "7,1": 25,
-      "7,2": 26,
-      "7,3": 26,
-      "7,4": 26,
-      "7,5": 27,
-      "7,6": 45,
-      "7,27": 46,
+      "5,46": 36,
+      "5,47": 36,
+      "5,48": 36,
+      "5,49": 36,
+      "5,50": 36,
+      "5,51": 36,
+      "5,52": 37,
+      "5,53": 32,
+      "5,54": 17,
+      "5,55": 17,
+      "5,56": 17,
+      "5,57": 17,
+      "5,58": 17,
+      "5,59": 17,
+      "6,0": 33,
+      "6,1": 23,
+      "6,2": 24,
+      "6,3": 24,
+      "6,4": 24,
+      "6,5": 25,
+      "6,6": 38,
+      "6,27": 39,
+      "6,28": 40,
+      "6,29": 40,
+      "6,30": 40,
+      "6,31": 40,
+      "6,32": 40,
+      "6,33": 40,
+      "6,34": 40,
+      "6,35": 40,
+      "6,36": 40,
+      "6,37": 40,
+      "6,38": 40,
+      "6,39": 40,
+      "6,40": 41,
+      "6,41": 40,
+      "6,42": 40,
+      "6,43": 40,
+      "6,44": 40,
+      "6,45": 40,
+      "6,46": 40,
+      "6,47": 40,
+      "6,48": 40,
+      "6,49": 40,
+      "6,50": 40,
+      "6,51": 40,
+      "6,52": 42,
+      "6,53": 32,
+      "6,54": 17,
+      "6,55": 17,
+      "6,56": 17,
+      "6,57": 17,
+      "6,58": 17,
+      "6,59": 17,
+      "7,0": 33,
+      "7,1": 23,
+      "7,2": 24,
+      "7,3": 24,
+      "7,4": 24,
+      "7,5": 25,
+      "7,6": 43,
+      "7,27": 44,
       "7,28": 6,
       "7,29": 6,
       "7,30": 6,
@@ -3559,7 +3547,7 @@
       "7,37": 6,
       "7,38": 6,
       "7,39": 6,
-      "7,40": 46,
+      "7,40": 44,
       "7,41": 6,
       "7,42": 6,
       "7,43": 6,
@@ -3571,36 +3559,36 @@
       "7,49": 6,
       "7,50": 6,
       "7,51": 6,
-      "7,52": 47,
-      "7,53": 34,
-      "7,54": 19,
-      "7,55": 19,
-      "7,56": 19,
-      "7,57": 19,
-      "7,58": 19,
-      "7,59": 19,
-      "8,0": 48,
-      "8,6": 49,
-      "8,7": 49,
-      "8,8": 49,
-      "8,9": 49,
-      "8,10": 49,
-      "8,11": 49,
-      "8,12": 49,
-      "8,13": 49,
-      "8,14": 49,
-      "8,15": 49,
-      "8,16": 49,
-      "8,17": 49,
-      "8,18": 49,
-      "8,19": 49,
-      "8,20": 49,
-      "8,21": 49,
-      "8,22": 49,
-      "8,23": 49,
-      "8,24": 49,
-      "8,25": 49,
-      "8,27": 46,
+      "7,52": 45,
+      "7,53": 32,
+      "7,54": 17,
+      "7,55": 17,
+      "7,56": 17,
+      "7,57": 17,
+      "7,58": 17,
+      "7,59": 17,
+      "8,0": 46,
+      "8,6": 47,
+      "8,7": 47,
+      "8,8": 47,
+      "8,9": 47,
+      "8,10": 47,
+      "8,11": 47,
+      "8,12": 47,
+      "8,13": 47,
+      "8,14": 47,
+      "8,15": 47,
+      "8,16": 47,
+      "8,17": 47,
+      "8,18": 47,
+      "8,19": 47,
+      "8,20": 47,
+      "8,21": 47,
+      "8,22": 47,
+      "8,23": 47,
+      "8,24": 47,
+      "8,25": 47,
+      "8,27": 44,
       "8,28": 6,
       "8,29": 6,
       "8,30": 6,
@@ -3613,7 +3601,7 @@
       "8,37": 6,
       "8,38": 6,
       "8,39": 6,
-      "8,40": 46,
+      "8,40": 44,
       "8,41": 6,
       "8,42": 6,
       "8,43": 6,
@@ -3625,21 +3613,21 @@
       "8,49": 6,
       "8,50": 6,
       "8,51": 6,
-      "8,52": 47,
-      "8,53": 34,
-      "8,54": 19,
-      "8,55": 19,
-      "8,56": 19,
-      "8,57": 19,
-      "8,58": 19,
-      "8,59": 19,
-      "9,0": 35,
-      "9,1": 50,
-      "9,2": 51,
-      "9,3": 51,
-      "9,4": 51,
-      "9,5": 52,
-      "9,27": 46,
+      "8,52": 45,
+      "8,53": 32,
+      "8,54": 17,
+      "8,55": 17,
+      "8,56": 17,
+      "8,57": 17,
+      "8,58": 17,
+      "8,59": 17,
+      "9,0": 33,
+      "9,1": 48,
+      "9,2": 49,
+      "9,3": 49,
+      "9,4": 49,
+      "9,5": 50,
+      "9,27": 44,
       "9,28": 6,
       "9,29": 6,
       "9,30": 6,
@@ -3652,7 +3640,7 @@
       "9,37": 6,
       "9,38": 6,
       "9,39": 6,
-      "9,40": 46,
+      "9,40": 44,
       "9,41": 6,
       "9,42": 6,
       "9,43": 6,
@@ -3664,21 +3652,21 @@
       "9,49": 6,
       "9,50": 6,
       "9,51": 6,
-      "9,52": 47,
-      "9,53": 34,
-      "9,54": 19,
-      "9,55": 19,
-      "9,56": 19,
-      "9,57": 19,
-      "9,58": 19,
-      "9,59": 19,
-      "10,0": 35,
-      "10,1": 53,
-      "10,2": 51,
-      "10,3": 51,
-      "10,4": 51,
-      "10,5": 52,
-      "10,27": 46,
+      "9,52": 45,
+      "9,53": 32,
+      "9,54": 17,
+      "9,55": 17,
+      "9,56": 17,
+      "9,57": 17,
+      "9,58": 17,
+      "9,59": 17,
+      "10,0": 33,
+      "10,1": 51,
+      "10,2": 49,
+      "10,3": 49,
+      "10,4": 49,
+      "10,5": 50,
+      "10,27": 44,
       "10,28": 6,
       "10,29": 6,
       "10,30": 6,
@@ -3691,7 +3679,7 @@
       "10,37": 6,
       "10,38": 6,
       "10,39": 6,
-      "10,40": 46,
+      "10,40": 44,
       "10,41": 6,
       "10,42": 6,
       "10,43": 6,
@@ -3703,21 +3691,21 @@
       "10,49": 6,
       "10,50": 6,
       "10,51": 6,
-      "10,52": 47,
-      "10,53": 34,
-      "10,54": 19,
-      "10,55": 19,
-      "10,56": 19,
-      "10,57": 19,
-      "10,58": 19,
-      "10,59": 19,
-      "11,0": 54,
-      "11,1": 50,
-      "11,2": 51,
-      "11,3": 51,
-      "11,4": 51,
-      "11,5": 52,
-      "11,27": 46,
+      "10,52": 45,
+      "10,53": 32,
+      "10,54": 17,
+      "10,55": 17,
+      "10,56": 17,
+      "10,57": 17,
+      "10,58": 17,
+      "10,59": 17,
+      "11,0": 52,
+      "11,1": 48,
+      "11,2": 49,
+      "11,3": 49,
+      "11,4": 49,
+      "11,5": 50,
+      "11,27": 44,
       "11,28": 6,
       "11,29": 6,
       "11,30": 6,
@@ -3730,7 +3718,7 @@
       "11,37": 6,
       "11,38": 6,
       "11,39": 6,
-      "11,40": 46,
+      "11,40": 44,
       "11,41": 6,
       "11,42": 6,
       "11,43": 6,
@@ -3742,465 +3730,465 @@
       "11,49": 6,
       "11,50": 6,
       "11,51": 6,
-      "11,52": 47,
-      "11,53": 34,
-      "11,54": 19,
-      "11,55": 19,
-      "11,56": 19,
-      "11,57": 19,
-      "11,58": 19,
-      "11,59": 19,
-      "12,0": 54,
-      "12,1": 50,
-      "12,2": 51,
-      "12,3": 51,
-      "12,4": 51,
-      "12,5": 52,
-      "12,6": 55,
-      "12,26": 36,
-      "12,27": 56,
+      "11,52": 45,
+      "11,53": 32,
+      "11,54": 17,
+      "11,55": 17,
+      "11,56": 17,
+      "11,57": 17,
+      "11,58": 17,
+      "11,59": 17,
+      "12,0": 52,
+      "12,1": 48,
+      "12,2": 49,
+      "12,3": 49,
+      "12,4": 49,
+      "12,5": 50,
+      "12,6": 53,
+      "12,26": 34,
+      "12,27": 54,
       "12,28": 6,
       "12,29": 6,
       "12,30": 6,
       "12,31": 6,
-      "12,32": 57,
-      "12,33": 58,
-      "12,34": 59,
-      "12,35": 59,
-      "12,36": 59,
-      "12,37": 59,
-      "12,38": 59,
-      "12,39": 59,
-      "12,40": 59,
-      "12,41": 59,
-      "12,42": 59,
-      "12,43": 59,
-      "12,44": 59,
-      "12,45": 59,
-      "12,46": 59,
-      "12,47": 59,
-      "12,48": 59,
-      "12,49": 59,
-      "12,50": 59,
-      "12,51": 59,
-      "12,52": 60,
-      "12,53": 34,
-      "12,54": 19,
-      "12,55": 19,
-      "12,56": 19,
-      "12,57": 19,
-      "12,58": 19,
-      "12,59": 19,
-      "13,0": 35,
-      "13,1": 50,
-      "13,2": 51,
-      "13,3": 51,
-      "13,4": 51,
-      "13,5": 52,
-      "13,26": 61,
-      "13,27": 62,
-      "13,32": 63,
-      "13,33": 64,
-      "13,52": 65,
-      "13,53": 34,
-      "13,54": 19,
-      "13,55": 19,
-      "13,56": 19,
-      "13,57": 19,
-      "13,58": 19,
-      "13,59": 19,
-      "14,0": 66,
-      "14,1": 50,
-      "14,2": 51,
-      "14,3": 51,
-      "14,4": 51,
-      "14,5": 52,
-      "14,6": 67,
-      "14,26": 61,
-      "14,27": 68,
+      "12,32": 55,
+      "12,33": 56,
+      "12,34": 57,
+      "12,35": 57,
+      "12,36": 57,
+      "12,37": 57,
+      "12,38": 57,
+      "12,39": 57,
+      "12,40": 57,
+      "12,41": 57,
+      "12,42": 57,
+      "12,43": 57,
+      "12,44": 57,
+      "12,45": 57,
+      "12,46": 57,
+      "12,47": 57,
+      "12,48": 57,
+      "12,49": 57,
+      "12,50": 57,
+      "12,51": 57,
+      "12,52": 58,
+      "12,53": 32,
+      "12,54": 17,
+      "12,55": 17,
+      "12,56": 17,
+      "12,57": 17,
+      "12,58": 17,
+      "12,59": 17,
+      "13,0": 33,
+      "13,1": 48,
+      "13,2": 49,
+      "13,3": 49,
+      "13,4": 49,
+      "13,5": 50,
+      "13,26": 59,
+      "13,27": 60,
+      "13,32": 61,
+      "13,33": 62,
+      "13,52": 63,
+      "13,53": 32,
+      "13,54": 17,
+      "13,55": 17,
+      "13,56": 17,
+      "13,57": 17,
+      "13,58": 17,
+      "13,59": 17,
+      "14,0": 64,
+      "14,1": 48,
+      "14,2": 49,
+      "14,3": 49,
+      "14,4": 49,
+      "14,5": 50,
+      "14,6": 65,
+      "14,26": 59,
+      "14,27": 66,
       "14,28": 6,
       "14,29": 6,
       "14,30": 6,
-      "14,32": 63,
-      "14,33": 64,
-      "14,52": 65,
-      "14,53": 34,
-      "14,54": 19,
-      "14,55": 19,
-      "14,56": 19,
-      "14,57": 19,
-      "14,58": 19,
-      "14,59": 19,
-      "15,0": 66,
-      "15,1": 50,
-      "15,2": 51,
-      "15,3": 51,
-      "15,4": 51,
-      "15,5": 52,
-      "15,6": 67,
-      "15,27": 69,
-      "15,32": 63,
-      "15,33": 64,
-      "15,52": 65,
-      "15,53": 34,
-      "15,54": 19,
-      "15,55": 19,
-      "15,56": 19,
-      "15,57": 19,
-      "15,58": 19,
-      "15,59": 19,
-      "16,0": 66,
-      "16,1": 50,
-      "16,2": 51,
-      "16,3": 51,
-      "16,4": 51,
-      "16,5": 52,
-      "16,6": 67,
-      "16,26": 36,
+      "14,32": 61,
+      "14,33": 62,
+      "14,52": 63,
+      "14,53": 32,
+      "14,54": 17,
+      "14,55": 17,
+      "14,56": 17,
+      "14,57": 17,
+      "14,58": 17,
+      "14,59": 17,
+      "15,0": 64,
+      "15,1": 48,
+      "15,2": 49,
+      "15,3": 49,
+      "15,4": 49,
+      "15,5": 50,
+      "15,6": 65,
+      "15,27": 67,
+      "15,32": 61,
+      "15,33": 62,
+      "15,52": 63,
+      "15,53": 32,
+      "15,54": 17,
+      "15,55": 17,
+      "15,56": 17,
+      "15,57": 17,
+      "15,58": 17,
+      "15,59": 17,
+      "16,0": 64,
+      "16,1": 48,
+      "16,2": 49,
+      "16,3": 49,
+      "16,4": 49,
+      "16,5": 50,
+      "16,6": 65,
+      "16,26": 34,
       "16,27": 8,
       "16,28": 8,
       "16,29": 8,
       "16,30": 8,
       "16,31": 8,
-      "16,32": 70,
-      "16,33": 71,
-      "16,34": 72,
-      "16,35": 72,
-      "16,36": 72,
-      "16,37": 72,
-      "16,38": 72,
-      "16,39": 72,
-      "16,40": 72,
-      "16,41": 72,
-      "16,42": 72,
-      "16,43": 72,
-      "16,44": 72,
-      "16,45": 72,
-      "16,46": 72,
-      "16,47": 72,
-      "16,48": 72,
-      "16,49": 72,
-      "16,50": 72,
-      "16,51": 72,
-      "16,52": 73,
-      "16,53": 34,
-      "16,54": 19,
-      "16,55": 19,
-      "16,56": 19,
-      "16,57": 19,
-      "16,58": 19,
-      "16,59": 19,
-      "17,0": 11,
-      "17,1": 18,
-      "17,2": 74,
-      "17,3": 74,
-      "17,4": 74,
-      "17,5": 75,
-      "17,6": 49,
-      "17,7": 49,
-      "17,8": 49,
-      "17,9": 49,
-      "17,10": 49,
-      "17,11": 49,
-      "17,12": 49,
-      "17,13": 49,
-      "17,14": 49,
-      "17,15": 49,
-      "17,16": 49,
-      "17,17": 49,
-      "17,18": 49,
-      "17,19": 49,
-      "17,20": 49,
-      "17,21": 49,
-      "17,22": 49,
-      "17,23": 49,
-      "17,24": 49,
-      "17,25": 49,
-      "17,26": 36,
-      "17,27": 76,
-      "17,53": 34,
-      "17,54": 19,
-      "17,55": 19,
-      "17,56": 19,
-      "17,57": 19,
-      "17,58": 19,
-      "17,59": 19,
-      "18,0": 35,
-      "18,1": 50,
-      "18,2": 51,
-      "18,3": 51,
-      "18,4": 51,
-      "18,5": 52,
-      "18,6": 77,
-      "18,26": 61,
-      "18,27": 78,
-      "18,28": 51,
-      "18,29": 51,
-      "18,30": 51,
-      "18,31": 51,
-      "18,32": 52,
-      "18,33": 55,
-      "18,53": 34,
-      "18,54": 19,
-      "18,55": 19,
-      "18,56": 19,
-      "18,57": 19,
-      "18,58": 19,
-      "18,59": 19,
-      "19,0": 35,
-      "19,1": 50,
-      "19,2": 51,
-      "19,3": 51,
-      "19,4": 51,
-      "19,5": 52,
-      "19,6": 79,
-      "19,26": 35,
-      "19,27": 78,
-      "19,28": 51,
-      "19,29": 51,
-      "19,30": 51,
-      "19,31": 51,
-      "19,32": 52,
-      "19,53": 76,
-      "19,54": 19,
-      "19,55": 19,
-      "19,56": 19,
-      "19,57": 19,
-      "19,58": 19,
-      "19,59": 19,
-      "20,0": 35,
-      "20,1": 50,
-      "20,2": 51,
-      "20,3": 51,
-      "20,4": 51,
-      "20,5": 52,
-      "20,26": 80,
-      "20,27": 78,
-      "20,28": 51,
-      "20,29": 51,
-      "20,30": 51,
-      "20,31": 51,
-      "20,32": 52,
-      "20,53": 34,
-      "20,54": 19,
-      "20,55": 19,
-      "20,56": 19,
-      "20,57": 19,
-      "20,58": 19,
-      "20,59": 19,
-      "21,0": 18,
-      "21,1": 18,
-      "21,2": 18,
-      "21,3": 18,
-      "21,4": 18,
-      "21,5": 18,
-      "21,26": 18,
-      "21,27": 76,
-      "21,28": 76,
-      "21,29": 76,
-      "21,30": 76,
-      "21,31": 76,
-      "21,32": 76,
-      "21,53": 76,
-      "21,54": 19,
-      "21,55": 19,
-      "21,56": 19,
-      "21,57": 19,
-      "21,58": 19,
-      "21,59": 19,
-      "22,0": 35,
-      "22,1": 81,
-      "22,2": 82,
-      "22,3": 82,
-      "22,4": 82,
-      "22,5": 83,
-      "22,27": 84,
-      "22,28": 82,
-      "22,29": 82,
-      "22,30": 82,
-      "22,31": 82,
-      "22,32": 83,
-      "22,33": 85,
-      "22,53": 76,
-      "22,54": 19,
-      "22,55": 19,
-      "22,56": 19,
-      "22,57": 19,
-      "22,58": 19,
-      "22,59": 19,
-      "23,0": 18,
-      "23,1": 81,
-      "23,2": 82,
-      "23,3": 82,
-      "23,4": 82,
-      "23,5": 83,
-      "23,6": 86,
-      "23,14": 87,
-      "23,27": 88,
-      "23,28": 82,
-      "23,29": 82,
-      "23,30": 82,
-      "23,31": 82,
-      "23,32": 83,
-      "23,33": 89,
-      "23,53": 76,
-      "23,54": 19,
-      "23,55": 19,
-      "23,56": 19,
-      "23,57": 19,
-      "23,58": 19,
-      "23,59": 19,
-      "24,0": 18,
-      "24,1": 81,
-      "24,2": 82,
-      "24,3": 82,
-      "24,4": 82,
-      "24,5": 83,
-      "24,6": 90,
-      "24,27": 88,
-      "24,28": 82,
-      "24,29": 82,
-      "24,30": 82,
-      "24,31": 82,
-      "24,32": 83,
-      "24,33": 85,
-      "24,53": 76,
-      "24,54": 19,
-      "24,55": 19,
-      "24,56": 19,
-      "24,57": 19,
-      "24,58": 19,
-      "24,59": 19,
-      "25,0": 11,
-      "25,1": 18,
-      "25,2": 91,
-      "25,3": 91,
-      "25,4": 91,
-      "25,5": 92,
-      "25,6": 49,
-      "25,7": 49,
-      "25,8": 49,
-      "25,9": 49,
-      "25,10": 49,
-      "25,11": 49,
-      "25,12": 49,
-      "25,13": 49,
-      "25,27": 93,
-      "25,28": 93,
-      "25,29": 93,
-      "25,30": 93,
-      "25,31": 93,
-      "25,32": 94,
-      "25,53": 34,
-      "25,54": 19,
-      "25,55": 19,
-      "25,56": 19,
-      "25,57": 19,
-      "25,58": 19,
-      "25,59": 19,
-      "26,0": 11,
-      "26,1": 95,
-      "26,6": 67,
-      "26,53": 34,
-      "26,54": 19,
-      "26,55": 19,
-      "26,56": 19,
-      "26,57": 19,
-      "26,58": 19,
-      "26,59": 19,
-      "27,0": 18,
-      "27,1": 18,
-      "27,2": 18,
-      "27,3": 18,
-      "27,4": 18,
-      "27,5": 18,
-      "27,53": 76,
-      "27,54": 19,
-      "27,55": 19,
-      "27,56": 19,
-      "27,57": 19,
-      "27,58": 19,
-      "27,59": 19,
-      "28,0": 11,
-      "28,53": 96,
-      "28,54": 96,
-      "28,55": 96,
-      "28,56": 96,
-      "28,57": 96,
-      "28,58": 96,
-      "28,59": 96,
-      "29,0": 18,
-      "29,1": 18,
-      "29,2": 18,
-      "29,3": 18,
-      "29,4": 18,
-      "29,5": 18,
-      "29,53": 96,
-      "29,54": 96,
-      "29,55": 96,
-      "29,56": 96,
-      "29,57": 96,
-      "29,58": 96,
-      "29,59": 96,
-      "30,0": 11,
-      "30,1": 18,
-      "30,2": 11,
-      "30,3": 11,
-      "30,4": 11,
-      "30,5": 11,
-      "30,6": 95,
-      "30,7": 29,
-      "30,8": 29,
-      "30,9": 29,
-      "30,10": 97,
-      "30,12": 91,
-      "30,13": 91,
-      "30,14": 91,
-      "30,15": 91,
-      "30,16": 98,
-      "30,17": 98,
-      "30,18": 98,
-      "30,19": 98,
-      "30,20": 98,
-      "30,21": 98,
-      "30,22": 98,
-      "30,23": 98,
-      "30,24": 98,
-      "30,25": 98,
-      "30,26": 98,
-      "30,27": 98,
-      "30,28": 98,
-      "30,29": 91,
-      "30,30": 91,
-      "30,31": 91,
-      "30,32": 91,
-      "30,33": 98,
-      "30,34": 98,
-      "30,35": 98,
-      "30,36": 98,
-      "30,37": 98,
-      "30,38": 98,
-      "30,39": 98,
-      "30,40": 98,
-      "30,41": 98,
-      "30,42": 98,
-      "30,43": 98,
-      "30,44": 98,
-      "30,45": 98,
-      "30,46": 98,
-      "30,47": 98,
-      "30,48": 98,
-      "30,49": 98,
-      "30,50": 98,
-      "30,51": 98,
-      "30,52": 98,
-      "30,53": 99,
-      "30,54": 99,
-      "30,55": 99,
-      "30,56": 99,
-      "30,57": 99,
-      "30,58": 99,
-      "30,59": 99
+      "16,32": 68,
+      "16,33": 69,
+      "16,34": 70,
+      "16,35": 70,
+      "16,36": 70,
+      "16,37": 70,
+      "16,38": 70,
+      "16,39": 70,
+      "16,40": 70,
+      "16,41": 70,
+      "16,42": 70,
+      "16,43": 70,
+      "16,44": 70,
+      "16,45": 70,
+      "16,46": 70,
+      "16,47": 70,
+      "16,48": 70,
+      "16,49": 70,
+      "16,50": 70,
+      "16,51": 70,
+      "16,52": 71,
+      "16,53": 32,
+      "16,54": 17,
+      "16,55": 17,
+      "16,56": 17,
+      "16,57": 17,
+      "16,58": 17,
+      "16,59": 17,
+      "17,0": 9,
+      "17,1": 16,
+      "17,2": 72,
+      "17,3": 72,
+      "17,4": 72,
+      "17,5": 73,
+      "17,6": 47,
+      "17,7": 47,
+      "17,8": 47,
+      "17,9": 47,
+      "17,10": 47,
+      "17,11": 47,
+      "17,12": 47,
+      "17,13": 47,
+      "17,14": 47,
+      "17,15": 47,
+      "17,16": 47,
+      "17,17": 47,
+      "17,18": 47,
+      "17,19": 47,
+      "17,20": 47,
+      "17,21": 47,
+      "17,22": 47,
+      "17,23": 47,
+      "17,24": 47,
+      "17,25": 47,
+      "17,26": 34,
+      "17,27": 74,
+      "17,53": 32,
+      "17,54": 17,
+      "17,55": 17,
+      "17,56": 17,
+      "17,57": 17,
+      "17,58": 17,
+      "17,59": 17,
+      "18,0": 33,
+      "18,1": 48,
+      "18,2": 49,
+      "18,3": 49,
+      "18,4": 49,
+      "18,5": 50,
+      "18,6": 75,
+      "18,26": 59,
+      "18,27": 76,
+      "18,28": 49,
+      "18,29": 49,
+      "18,30": 49,
+      "18,31": 49,
+      "18,32": 50,
+      "18,33": 53,
+      "18,53": 32,
+      "18,54": 17,
+      "18,55": 17,
+      "18,56": 17,
+      "18,57": 17,
+      "18,58": 17,
+      "18,59": 17,
+      "19,0": 33,
+      "19,1": 48,
+      "19,2": 49,
+      "19,3": 49,
+      "19,4": 49,
+      "19,5": 50,
+      "19,6": 77,
+      "19,26": 33,
+      "19,27": 76,
+      "19,28": 49,
+      "19,29": 49,
+      "19,30": 49,
+      "19,31": 49,
+      "19,32": 50,
+      "19,53": 74,
+      "19,54": 17,
+      "19,55": 17,
+      "19,56": 17,
+      "19,57": 17,
+      "19,58": 17,
+      "19,59": 17,
+      "20,0": 33,
+      "20,1": 48,
+      "20,2": 49,
+      "20,3": 49,
+      "20,4": 49,
+      "20,5": 50,
+      "20,26": 78,
+      "20,27": 76,
+      "20,28": 49,
+      "20,29": 49,
+      "20,30": 49,
+      "20,31": 49,
+      "20,32": 50,
+      "20,53": 32,
+      "20,54": 17,
+      "20,55": 17,
+      "20,56": 17,
+      "20,57": 17,
+      "20,58": 17,
+      "20,59": 17,
+      "21,0": 16,
+      "21,1": 16,
+      "21,2": 16,
+      "21,3": 16,
+      "21,4": 16,
+      "21,5": 16,
+      "21,26": 16,
+      "21,27": 74,
+      "21,28": 74,
+      "21,29": 74,
+      "21,30": 74,
+      "21,31": 74,
+      "21,32": 74,
+      "21,53": 74,
+      "21,54": 17,
+      "21,55": 17,
+      "21,56": 17,
+      "21,57": 17,
+      "21,58": 17,
+      "21,59": 17,
+      "22,0": 33,
+      "22,1": 79,
+      "22,2": 80,
+      "22,3": 80,
+      "22,4": 80,
+      "22,5": 81,
+      "22,27": 82,
+      "22,28": 80,
+      "22,29": 80,
+      "22,30": 80,
+      "22,31": 80,
+      "22,32": 81,
+      "22,33": 83,
+      "22,53": 74,
+      "22,54": 17,
+      "22,55": 17,
+      "22,56": 17,
+      "22,57": 17,
+      "22,58": 17,
+      "22,59": 17,
+      "23,0": 16,
+      "23,1": 79,
+      "23,2": 80,
+      "23,3": 80,
+      "23,4": 80,
+      "23,5": 81,
+      "23,6": 84,
+      "23,14": 85,
+      "23,27": 86,
+      "23,28": 80,
+      "23,29": 80,
+      "23,30": 80,
+      "23,31": 80,
+      "23,32": 81,
+      "23,33": 87,
+      "23,53": 74,
+      "23,54": 17,
+      "23,55": 17,
+      "23,56": 17,
+      "23,57": 17,
+      "23,58": 17,
+      "23,59": 17,
+      "24,0": 16,
+      "24,1": 79,
+      "24,2": 80,
+      "24,3": 80,
+      "24,4": 80,
+      "24,5": 81,
+      "24,6": 88,
+      "24,27": 86,
+      "24,28": 80,
+      "24,29": 80,
+      "24,30": 80,
+      "24,31": 80,
+      "24,32": 81,
+      "24,33": 83,
+      "24,53": 74,
+      "24,54": 17,
+      "24,55": 17,
+      "24,56": 17,
+      "24,57": 17,
+      "24,58": 17,
+      "24,59": 17,
+      "25,0": 9,
+      "25,1": 16,
+      "25,2": 89,
+      "25,3": 89,
+      "25,4": 89,
+      "25,5": 90,
+      "25,6": 47,
+      "25,7": 47,
+      "25,8": 47,
+      "25,9": 47,
+      "25,10": 47,
+      "25,11": 47,
+      "25,12": 47,
+      "25,13": 47,
+      "25,27": 91,
+      "25,28": 91,
+      "25,29": 91,
+      "25,30": 91,
+      "25,31": 91,
+      "25,32": 92,
+      "25,53": 32,
+      "25,54": 17,
+      "25,55": 17,
+      "25,56": 17,
+      "25,57": 17,
+      "25,58": 17,
+      "25,59": 17,
+      "26,0": 9,
+      "26,1": 93,
+      "26,6": 65,
+      "26,53": 32,
+      "26,54": 17,
+      "26,55": 17,
+      "26,56": 17,
+      "26,57": 17,
+      "26,58": 17,
+      "26,59": 17,
+      "27,0": 16,
+      "27,1": 16,
+      "27,2": 16,
+      "27,3": 16,
+      "27,4": 16,
+      "27,5": 16,
+      "27,53": 74,
+      "27,54": 17,
+      "27,55": 17,
+      "27,56": 17,
+      "27,57": 17,
+      "27,58": 17,
+      "27,59": 17,
+      "28,0": 9,
+      "28,53": 94,
+      "28,54": 94,
+      "28,55": 94,
+      "28,56": 94,
+      "28,57": 94,
+      "28,58": 94,
+      "28,59": 94,
+      "29,0": 16,
+      "29,1": 16,
+      "29,2": 16,
+      "29,3": 16,
+      "29,4": 16,
+      "29,5": 16,
+      "29,53": 94,
+      "29,54": 94,
+      "29,55": 94,
+      "29,56": 94,
+      "29,57": 94,
+      "29,58": 94,
+      "29,59": 94,
+      "30,0": 9,
+      "30,1": 16,
+      "30,2": 9,
+      "30,3": 9,
+      "30,4": 9,
+      "30,5": 9,
+      "30,6": 93,
+      "30,7": 27,
+      "30,8": 27,
+      "30,9": 27,
+      "30,10": 95,
+      "30,12": 89,
+      "30,13": 89,
+      "30,14": 89,
+      "30,15": 89,
+      "30,16": 96,
+      "30,17": 96,
+      "30,18": 96,
+      "30,19": 96,
+      "30,20": 96,
+      "30,21": 96,
+      "30,22": 96,
+      "30,23": 96,
+      "30,24": 96,
+      "30,25": 96,
+      "30,26": 96,
+      "30,27": 96,
+      "30,28": 96,
+      "30,29": 89,
+      "30,30": 89,
+      "30,31": 89,
+      "30,32": 89,
+      "30,33": 96,
+      "30,34": 96,
+      "30,35": 96,
+      "30,36": 96,
+      "30,37": 96,
+      "30,38": 96,
+      "30,39": 96,
+      "30,40": 96,
+      "30,41": 96,
+      "30,42": 96,
+      "30,43": 96,
+      "30,44": 96,
+      "30,45": 96,
+      "30,46": 96,
+      "30,47": 96,
+      "30,48": 96,
+      "30,49": 96,
+      "30,50": 96,
+      "30,51": 96,
+      "30,52": 96,
+      "30,53": 97,
+      "30,54": 97,
+      "30,55": 97,
+      "30,56": 97,
+      "30,57": 97,
+      "30,58": 97,
+      "30,59": 97
     },
     "SheetStyle": {
       "FontFamily": 7,
@@ -4280,7 +4268,8 @@
     "15,6,1,20",
     "16,6,1,20",
     "0,54,1,4",
-    "0,58,1,2"
+    "0,58,1,2",
+    "1,1,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -4331,4 +4320,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//0omU1JGyl5HZS3YAGiqSQ5svitCGZI7j+xnNEF5H+u48NJHfwVSEmEOpNLg1voyvBl1OVQ+VMgYO2AQViNqy9lpVhQQcB8wI4PQOgAk02LwQm7lcgmW8XHexgV4ytnyDEJBTjl0rOS44PoIUnyVsypLLdeSOcvPwa1vM78N/HV2vgEgs02BtW72MF5r66+H63RAwfkD0v3/GvqCuoS1grMehj2enzrq7XrqZEf3uzLi05A0c6K47vYYMO44Mw4ovUABxHYOo989qKbUYgzKwtuS65+eVZ40E05ZJPnajy+7Nyw6zXNh2RqlL2ZOlRvUwNrVR9RF61Lm83ew379ucaGEJdcKSESugzAlW8mLOJ7n9Hwzj0JcXDY0VoKW333f90M9iDRAbyR4SoQaxiAXpXJNr4oF/syF/t9R1+EtZGwU9JrWsZvXBqRCuBss5jeh3Hx/U3qbd8AQnY9V1QLHdTHxwpDS+v1X7SGzVOC67Tom0xiHdgOL1RjZ3t5YDKAc8vclWHnNUo5bVlXhakB8UbDygB8lpVOBMn7NfM1ktw3qd/l5quKegTDVak+XRi//mJBBN0ut0MBysxCOxEldBmWEI1TQJa51Pka9E14lM7vrIJm5XP71u62zKjJ5Jma/gDeNWMFjZn6Hfsl6MlHtCKmef8JLBY7c/lrNSl2eIpRJiAr/J7eV73d5C6RVxVcgubbq4pMAXC5cm9FWEoDMFGT0qu5TgR03J5kJ9Xg1ecKWGOi/8Sf/+Rfv22YK6yzqveouJhL2PxQzC6rwDqiS/c9WDM3kJJwFNtveIL44tKr1VO9z4U66i1nKU2U+4N1TBtqBIlGjnvQDQEhWoiivXejELjoyEq9eNxr/iKo1/cxuIRCBkUeo3fmUWCS4bX7Jy3oNhclg1nnQMlIgqHRwK5g==|920
+}//H3P+15SeAeJgyG/sZi6mn1LfK6J9FBqKY6hLrL5vVAaBX7mjNUr78jFD1UVrWC2jN4M6s0l7g3dKhhFVwEMFIuzacpyKZaAXsX1DU/GeiH/4vYfdStvZ29+N6qrqLg/WqW8/pwW8nmnEV6+D/A1gDEQd2gOe1mq/yUOdX9/KqCnMUhQ0NAKyPetU5hgQxz9kt1nJiHlxqQMDi27ZF6wW3+KsCurF8HzYt2M/l+wmnPaHc2878dKLUBmZn/cFZJHY6mvpD3inSkajVQQzpF1e+GegJGeYMQ9XLLWNFTp1gUIWOGfqEkEcfpdQfl+zRQwBp6RihEoei6CjGQxqecz/QN/T9lgB/7HFJOc6e/MVVOnf8yC3KMGyVwqE1OVDi/Oy70c5enyWiRM7X1pZep03Tqtc/vF4kXrLt8sV608/eJ7nf9bUQY12bD76zQl6Vq0x65bWUminczb06kfxeWrQUaUA9TB5l3f6cZwc1pJANBUnFnVzNXdqA+eQem+q3sr5KUSlE20PmsWgBx6zOx7SAL0O1d2keLS+7pElWoIKneBrcVXcQJdl/8gXXfinsmphX+LiCoeBMyf01pUtFhfmUvRLV1xzz+2VgpgkJyYY0VDre48mBHsui5rRls0sMx1VpQ2F2/pRlmQmnJAY2kfN4Gc6SvzckL2wzoU8nzLSP3u/6s4rrZtowS8o4f6MJtQGofD/OIq5Ls/UpBi7SYSO1OPbhJtw0AaGHQqve7SRQ80HcvKNkxFar9UzSV3rOOqtnQWyw75N6vZ6mnPTZBk3vRpBkryeBCLbFsVa3eS+xWi3eKe843knUKuckHULNaowUmRbwILkLPUWjXpzKi6dxtabuBL19A5a3KyAliwTI08XxKAXW5BvzaNxSlx9sitIGstGX5SkczSqf6Tk+KtHng==|920
