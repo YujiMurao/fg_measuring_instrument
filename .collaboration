@@ -347,7 +347,16 @@
   },
   {
     "ModuleName": "TaskScheduler/校正切れメール送信(西永さん)",
-    "ModuleType": 16
+    "State": 2,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-08-29T15:58:59.0138586+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\校正切れメール送信(西永さん).json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/校正切れメール送信",
@@ -530,5 +539,15 @@
     },
     "LockDateTime": "2024-08-29T12:07:54.0037991+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "TaskScheduler/校正切れメール送信(品質保証課)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-08-29T15:58:59.0138586+09:00",
+    "ModuleType": 16
   }
 ]
