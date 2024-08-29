@@ -86,7 +86,7 @@
     "Count": 21
   },
   "Values": {
-    "1,1": "番号：",
+    "1,1": "コード：",
     "3,1": "管理部署：",
     "5,1": "ロール：",
     "7,1": "管轄：",
@@ -173,7 +173,8 @@
     "9,6": {
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
-        "Columns": 1,
+        "DisplayColumnName": "FullName",
+        "Columns": 3,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
@@ -184,7 +185,8 @@
     "11,6": {
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
-        "Columns": 1,
+        "DisplayColumnName": "FullName",
+        "Columns": 3,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
@@ -195,7 +197,8 @@
     "13,6": {
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
-        "Columns": 1,
+        "DisplayColumnName": "FullName",
+        "Columns": 3,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
@@ -206,7 +209,8 @@
     "15,6": {
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
-        "Columns": 1,
+        "DisplayColumnName": "FullName",
+        "Columns": 3,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
@@ -217,7 +221,8 @@
     "17,6": {
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
-        "Columns": 1,
+        "DisplayColumnName": "FullName",
+        "Columns": 3,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
@@ -228,7 +233,8 @@
     "19,6": {
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
-        "Columns": 1,
+        "DisplayColumnName": "FullName",
+        "Columns": 3,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
@@ -239,7 +245,8 @@
     "21,6": {
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
-        "Columns": 1,
+        "DisplayColumnName": "FullName",
+        "Columns": 3,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
       "BindingInfo": {
@@ -594,4 +601,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//hIYQYpctCXf0Fu1zbsJj/0AFMf0q/z4hqbeBcG4eQBgpUv2pZK0eKmKPXu+os6fgR2NhMXeGKHxBkb/kR93AAU4q4eZTdCrVlveWVEPLioTUarTfJy6u9/kvgsutF+CoxQ8LgnlTEbE0LxzyCrQLPxzPLuzXoYtqfOjDF6IG2/kjlB2rntzFllO3opOAItWeqTA/Czx06GoQQMb2nf0rBR5ROwrkG0sWmjIjTjmaBU/ddiqLyvGMANz2i1M44gPoxIwlkum4HlTfa9tdULisD2GT05zj8pZfnEJT0Pi//mnSJkuTaLTHn8wh+1Ho1qz0N9fu+4mrUzKAv6CvX9huBQpHKj56Hzeaqiw5qtjGWUf/6oqXkis6iwbwUcYnUB0MSIvmNO45fzhcvQZk1lm4/YWzz0tRsoE2OOiIVeHpuqD/tIcBF1UuhCDS4P9k+0UmNFisfipCnPIrOzhu5JrXtC7j3CIw2pW1j1unt+wjZ9SbhhDQHf0cOTyJHurQUqwwhcV85CRUtTLc/Bf5voxvMi0CLOdea5iar434XUQ7br7yXaQe/aLLVairWGKMEDbu3NUdyNqgwCSWqkKdQly+I2g80/QsApBunSgatjfXBJTRXuH2SkaLAQRmqaUwwE2hm0jViih+ND5tQMuKkme60CYRXDZki8boqWfPxO+spcbzJY5XH8iTeUM9lHs47V+zK4m0aC0iJw8UNC9kLwmgQERB2fR8XkcXZiZ9lOeQhu5D4GlTUfQDXemueI+fc46VaPz/hxzdSeB8yKYFJzpB/QoGoQelbx3pg7FtjIS4ZR0IRnSkzJvOLLnvNMp4Ze+PnG8UV0Hb1zhoJYi3lZTPl2D8fLYT/4K8YKGnjOJCnTUC4Y3DvVncJvN3pNdpnEutMukknz3a7KFXId1UfaJrbw==|920
+}//w+kyjqMelKiaKMs3OH1I6uXU6yABrxCjPCaFnSTzmRJ3K6Ku/SWOCg7MLYaBU4cS3uBJHMm/KycHljmkRfsvj6fiLa+geVg3W+8OBs4/4vh6MsHRfsKtUvIFAVRknii4ssKAxU//bex/C5+e6lp+XTol5voTIYM/iwMNXtiLoytHm/RDZuub+X75RgMDiXev0WPPKbXztdPv4/rTz0pPHZC2Wlg+8riC+r6jC6cu6fhc6835ApH3kQYBZMN5SI1iEIZ/22dnP6QowZFNIMUVAOoF6IMQ9W9N4xXH6rjjKwBfMUVv8o2CpPAj5brtDr+TRdimb7G2kk6h0CKFJ/8DvLY9S4/GbY/teFWdtRe9vE3SxVpDcp1CnyG8eaUeZf0+kdN0NtGxgb6tyhWpZam+50+zhVprUuo7FBVU5J/QZQ7eJzhYMJRvWMgGjL5N9f5Fvlkm46V+Pror8crCreeyqoyJltmbO94B0xQF6Na856TrPjK3rU4cfuWVMSJ9Vbo1od09Aw6aqVb1iItD9EwrI77y+yTVPPPUYNdskYPNUeFc/6l9ouZr/WFRs/8hdFl3Kk8/jLmisisLKoJVa1qgAenLmDT9hd67xWoyk7Pqd1ZQLGVqNtu/qsIvcaecwRrbZtrzRxS9j1j3ssBdMheNJELroorQ3swtzZGszXe2RFs0F4ev6c5ZN+EwEYuS7eq0psaTslf8Rlw7W6CuXIdI8ny8xbC2m8SkUulcLPirggcYOkM1GlGsBY9oXdXf2kR+xpn/X4tYXZDCA/joVXSp6Lk6QqArUTbJe9PKLHxAJ1RKqroxbsQG3qsamKto8zkYxWd9pyqRhjB9tHrRCtKKleQ7fP5vbW3nETA/0/LRIxg47YRQu4iMTJhAaifCdu/Y11/65XklWHaw+wLEysj3zQ==|920
