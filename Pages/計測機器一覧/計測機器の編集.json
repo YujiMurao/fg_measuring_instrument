@@ -189,10 +189,13 @@
     "15,1": "最小目盛",
     "15,27": "導入時検討資料等",
     "16,1": "仕様",
+    "18,0": "*",
     "18,1": "製造年月日",
     "18,27": "資産番号",
+    "19,0": "*",
     "19,1": "購入年月日",
     "19,27": "購入先",
+    "20,0": "*",
     "20,1": "管理者",
     "20,17": "旧データ：",
     "20,26": "*",
@@ -249,551 +252,27 @@
                     "MessageFormula": "使用禁止理由を設定してください。"
                   }
                 ],
-                "ID": "11a3eec2-6246-4419-b094-f3ca74e4e272"
+                "ID": "00f6c25d-7647-45a1-a8b1-6f660b7afc30"
               },
               {
                 "CommandList": [
                   {
-                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-                    "ConditionAndCommandPairList": [
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "trn_insptool_tools",
+                    "ShowConfirm": true,
+                    "ConfirmText": "機器を更新してもよろしいですか？",
+                    "UpdateValues": [
                       {
-                        "ConfirmDialogSettings": {
-                          "Title": "確認",
-                          "FormulaText": "計測機器を新規に登録します。よろしいでしょうか？",
-                          "YesButtonText": "はい",
-                          "NoButtonText": "いいえ",
-                          "ConfirmIcon": 1
-                        },
-                        "CommandList": [
-                          {
-                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-                            "ConditionAndCommandPairList": [
-                              {
-                                "Condition": {
-                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                                  "param": {
-                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                                    "cellLocations": [
-                                      {
-                                        "SerializeProperty": "=計測機器の編集!A1"
-                                      }
-                                    ]
-                                  },
-                                  "value": "edit",
-                                  "compareType": 1
-                                },
-                                "CommandList": [
-                                  {
-                                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                                    "TableName": "trn_insptool_tools",
-                                    "UpdateType": "add",
-                                    "ShowConfirm": false,
-                                    "CheckDataValidation": false,
-                                    "ConfirmText": "本当に追加してもよろしいですか？",
-                                    "UpdateValues": [
-                                      {
-                                        "ColumnName": "n1",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E6"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "n2",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E7"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "n3",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E8"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "n4",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!L5"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "usage",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF5"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "codateymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AT2"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "kind",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E10"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "prohibition_reason",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AR5"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "item_name",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E11"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "type",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E12"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "serial",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E13"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "maker",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E14"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "s1",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E15"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "s2",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E16"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "s3",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E17"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "madeymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E19"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "asset_no",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF19"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "purchaseymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E20"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "retailer",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF20"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "storage_location",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF21"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "category",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E23"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "lastrevisionymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF23"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "calibration_cycle",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E24"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "next_caribration_ymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF24"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "automaticnotificationymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E25"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "etc",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E27"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "kousei_tsuuchibi",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF25"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "kouseiyuukoukigenymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF25"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "tsuucibi_ymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!G25"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "外観",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!Z7"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "添付ファイル",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF13"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "ctrl_no",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E5"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "公開",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!Z2"
-                                        }
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-                                    "PropertyItemsList": [
-                                      {
-                                        "TargetCells": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!A1"
-                                        },
-                                        "Value": "edit"
-                                      },
-                                      {
-                                        "TargetCells": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!J2"
-                                        },
-                                        "PropertyType": 1,
-                                        "Value": true
-                                      }
-                                    ]
-                                  }
-                                ],
-                                "ID": "b7d9b67a-6ef4-40a9-bc89-52bad0f22773"
-                              },
-                              {
-                                "CommandList": [
-                                  {
-                                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                                    "TableName": "trn_insptool_tools",
-                                    "ShowConfirm": false,
-                                    "CheckDataValidation": false,
-                                    "ConfirmText": "本当に更新してもよろしいですか？",
-                                    "UpdateValues": [
-                                      {
-                                        "ColumnName": "n1",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E6"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "n2",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E7"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "n3",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E8"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "n4",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!L5"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "usage",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF5"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "codateymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AT2"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "kind",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E10"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "prohibition_reason",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AR5"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "item_name",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E11"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "type",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E12"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "serial",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E13"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "maker",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E14"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "s1",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E15"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "s2",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E16"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "s3",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E17"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "madeymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E19"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "asset_no",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF19"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "purchaseymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E20"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "retailer",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF20"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "storage_location",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF21"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "category",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E23"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "lastrevisionymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF23"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "calibration_cycle",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E24"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "next_caribration_ymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF24"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "automaticnotificationymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E25"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "etc",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E27"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "kousei_tsuuchibi",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF25"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "kouseiyuukoukigenymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF25"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "tsuucibi_ymd",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!G25"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "外観",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!Z7"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "添付ファイル",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!AF13"
-                                        }
-                                      },
-                                      {
-                                        "ColumnName": "ctrl_no",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=計測機器の編集!E5"
-                                        }
-                                      }
-                                    ]
-                                  }
-                                ],
-                                "ID": "cd3e2021-978d-49e6-82fc-b0d2d163a13b"
-                              }
-                            ]
-                          }
-                        ],
-                        "ID": "900a0b31-663b-44ff-86d9-efb8f51d1f87"
+                        "ColumnName": "lastrevisionymd",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=計測機器の編集!AH23"
+                        }
                       }
                     ]
                   }
                 ],
-                "ID": "233d8bb8-571f-4f0b-8a02-b8a031f1819b"
+                "ID": "b7024e3a-3554-41ea-ba75-feb50e4d1501"
               }
             ]
           }
@@ -1870,7 +1349,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器の編集!G23"
             },
-            "ID": "1b29d345b0a546a7b3ea266ee37a8eab"
+            "ID": "617291bccf1444d885e00bf948277189"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1879,7 +1358,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器の編集!G24"
             },
-            "ID": "4b85ae51a059476190555957bc391172"
+            "ID": "c432c182df4e4ce78344856199e7210c"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1888,7 +1367,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器の編集!AH23"
             },
-            "ID": "f0d620da40e741a59004ea31d16a62bc"
+            "ID": "3e652ac9e5a244d980beb911074f7fc8"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1977,7 +1456,7 @@
                             ]
                           }
                         ],
-                        "ID": "511ad00d-3ec9-498b-ad4c-cfa88d7e8ac2"
+                        "ID": "d5fe3a0d-6b7e-4615-8b56-104332b5f920"
                       },
                       {
                         "Condition": {
@@ -2029,7 +1508,7 @@
                             ]
                           }
                         ],
-                        "ID": "8276c125-6647-46f0-936e-cf1c8802b0d5"
+                        "ID": "b008919e-0925-41c7-9b9f-27b990f8637b"
                       },
                       {
                         "CommandList": [
@@ -2060,12 +1539,12 @@
                             ]
                           }
                         ],
-                        "ID": "6ae73a8b-7f8d-4d4c-a6ef-9cbe526b094a"
+                        "ID": "29dfed76-93ad-4ef9-91cd-afb9403bac00"
                       }
                     ]
                   }
                 ],
-                "ID": "44bf0cef-7d85-4002-985b-4f06263d400a"
+                "ID": "ec5c53b5-ce5e-4df6-8ce6-d637413f2cb7"
               }
             ]
           }
@@ -3064,13 +2543,6 @@
         "FontFamily": 6,
         "FontSize": 14.666666984558105,
         "Formatter": 2,
-        "BorderTop": null,
-        "BorderLeft": null
-      },
-      {
-        "Background": 0,
-        "Formatter": 2,
-        "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null
       },
@@ -4121,13 +3593,13 @@
       "17,52": 85,
       "17,53": 32,
       "17,54": 17,
-      "18,0": 92,
+      "18,0": 29,
       "18,1": 58,
       "18,2": 59,
       "18,3": 59,
       "18,4": 59,
       "18,5": 60,
-      "18,6": 93,
+      "18,6": 92,
       "18,26": 33,
       "18,27": 66,
       "18,28": 63,
@@ -4155,13 +3627,13 @@
       "18,50": 16,
       "18,51": 16,
       "18,52": 16,
-      "19,0": 9,
+      "19,0": 29,
       "19,1": 58,
       "19,2": 59,
       "19,3": 59,
       "19,4": 59,
       "19,5": 60,
-      "19,6": 94,
+      "19,6": 93,
       "19,26": 33,
       "19,27": 66,
       "19,28": 63,
@@ -4189,13 +3661,13 @@
       "19,50": 16,
       "19,51": 16,
       "19,52": 16,
-      "20,0": 92,
+      "20,0": 29,
       "20,1": 58,
       "20,2": 59,
       "20,3": 59,
       "20,4": 59,
       "20,5": 60,
-      "20,17": 95,
+      "20,17": 94,
       "20,18": 31,
       "20,26": 33,
       "20,27": 66,
@@ -4230,12 +3702,12 @@
       "21,3": 9,
       "21,4": 9,
       "21,5": 9,
-      "21,27": 96,
-      "21,28": 96,
-      "21,29": 96,
-      "21,30": 96,
-      "21,31": 96,
-      "21,32": 96,
+      "21,27": 95,
+      "21,28": 95,
+      "21,29": 95,
+      "21,30": 95,
+      "21,31": 95,
+      "21,32": 95,
       "21,33": 16,
       "21,34": 16,
       "21,35": 16,
@@ -4257,19 +3729,19 @@
       "21,51": 16,
       "21,52": 16,
       "22,0": 33,
-      "22,1": 97,
-      "22,2": 98,
-      "22,3": 98,
-      "22,4": 98,
-      "22,5": 99,
+      "22,1": 96,
+      "22,2": 97,
+      "22,3": 97,
+      "22,4": 97,
+      "22,5": 98,
       "22,6": 61,
-      "22,27": 100,
-      "22,28": 101,
-      "22,29": 101,
-      "22,30": 101,
-      "22,31": 101,
-      "22,32": 102,
-      "22,33": 103,
+      "22,27": 99,
+      "22,28": 100,
+      "22,29": 100,
+      "22,30": 100,
+      "22,31": 100,
+      "22,32": 101,
+      "22,33": 102,
       "22,34": 16,
       "22,35": 16,
       "22,36": 16,
@@ -4290,20 +3762,20 @@
       "22,51": 16,
       "22,52": 16,
       "23,0": 9,
-      "23,1": 97,
-      "23,2": 98,
-      "23,3": 98,
-      "23,4": 98,
-      "23,5": 99,
-      "23,6": 104,
-      "23,14": 105,
-      "23,27": 106,
-      "23,28": 101,
-      "23,29": 101,
-      "23,30": 101,
-      "23,31": 101,
-      "23,32": 102,
-      "23,33": 107,
+      "23,1": 96,
+      "23,2": 97,
+      "23,3": 97,
+      "23,4": 97,
+      "23,5": 98,
+      "23,6": 103,
+      "23,14": 104,
+      "23,27": 105,
+      "23,28": 100,
+      "23,29": 100,
+      "23,30": 100,
+      "23,31": 100,
+      "23,32": 101,
+      "23,33": 106,
       "23,34": 16,
       "23,35": 16,
       "23,36": 16,
@@ -4315,19 +3787,19 @@
       "23,42": 16,
       "23,43": 16,
       "24,0": 9,
-      "24,1": 97,
-      "24,2": 98,
-      "24,3": 98,
-      "24,4": 98,
-      "24,5": 99,
-      "24,6": 108,
-      "24,27": 106,
-      "24,28": 101,
-      "24,29": 101,
-      "24,30": 101,
-      "24,31": 101,
-      "24,32": 102,
-      "24,33": 103,
+      "24,1": 96,
+      "24,2": 97,
+      "24,3": 97,
+      "24,4": 97,
+      "24,5": 98,
+      "24,6": 107,
+      "24,27": 105,
+      "24,28": 100,
+      "24,29": 100,
+      "24,30": 100,
+      "24,31": 100,
+      "24,32": 101,
+      "24,33": 102,
       "24,34": 16,
       "24,35": 16,
       "24,36": 16,
@@ -4349,10 +3821,10 @@
       "24,52": 16,
       "25,0": 7,
       "25,1": 9,
-      "25,2": 109,
-      "25,3": 109,
-      "25,4": 109,
-      "25,5": 110,
+      "25,2": 108,
+      "25,3": 108,
+      "25,4": 108,
+      "25,5": 109,
       "25,6": 89,
       "25,7": 89,
       "25,8": 89,
@@ -4361,17 +3833,17 @@
       "25,11": 89,
       "25,12": 89,
       "25,13": 89,
-      "25,27": 96,
-      "25,28": 96,
-      "25,29": 96,
-      "25,30": 96,
-      "25,31": 96,
-      "25,32": 111,
+      "25,27": 95,
+      "25,28": 95,
+      "25,29": 95,
+      "25,30": 95,
+      "25,31": 95,
+      "25,32": 110,
       "25,53": 32,
       "25,54": 17,
       "26,0": 7,
       "26,1": 81,
-      "26,6": 112,
+      "26,6": 111,
       "26,53": 32,
       "26,54": 17,
       "27,0": 9,
@@ -4383,19 +3855,19 @@
       "27,53": 17,
       "27,54": 17,
       "28,0": 7,
-      "28,53": 113,
-      "28,54": 113,
+      "28,53": 112,
+      "28,54": 112,
       "29,0": 9,
-      "29,53": 113,
-      "29,54": 113,
+      "29,53": 112,
+      "29,54": 112,
       "30,0": 9,
       "30,1": 9,
       "30,2": 9,
       "30,3": 9,
       "30,4": 9,
       "30,5": 9,
-      "30,53": 113,
-      "30,54": 113
+      "30,53": 112,
+      "30,54": 112
     },
     "SheetStyle": {
       "FontFamily": 6,
@@ -4499,4 +3971,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//LbA4+WlOie5pxGXNjOficX2YAB1uG0UbJ7Hvs2ZO/8DIsWAfyZPs2lJuHmtjhc7nZmkS29xX4nEfJBgVmMmBnCfoZ2vms9cnpdUdFuEyg3nwaOfGESjdK/Ebab/LyRX/hXNCaEZNEdTaYqQk11z/gygmr6I9HzsFKDeEYK7p9uBSxNT9ugjFIgDI0hondGQmkBPSrR5inydedtpZs71ng9T5Rj06Olnsi4DjGueMQ9gSe9Cn+9MKHr10mLwfvKFBD3lRzy42vJ+q6FhXWDey0+y3Du9kde3g7DwPS3oEXSugG10gf4fk8VnXWKAoTbzarOZwsTJyjwqrgRUfkre1n41jankjzBXGlFkLbZ9+V29PsEYf+rZZsh7AhZCcoQvoS55kwtvSbkkgxLDP8G61wVGmzZ+kPEmiDWy6FxhdJqcWPxlr2R0BtJJp/Uh6Diur4NzRoqL9FXxpZbAvQDmB+1kMJ3uEa+kth1c4W8QRFrFDRSwc2gi4gkdUCDKw3WDCKUKZngF7+H4fdnRmTus/Yp8Cem5rgkFpCNAthBv+3antvCUhzsWg4tELejpStZgt8PJ5U3IXS3zLBBeCOlhxmscTETGCyftzY1UKZUwU+jFe3O2mw+TGGThynxDCycXL5FVWVgIhNgsfL8mpQE5m9VfHXgNwQk5Xduiydpu8Lq5AM7LFRKQC/hIivqNsscmUmm4vLfq59HS9IX8+8jJkF+D6OhblS3hB1JLb5koRtuznq6qgJIzZAz9414+K9KPSZTL/1D3RqSV8+2a45aS1hmyXNhVElkUOv0oYf2yWh3ldKa3CLkChs0PyOpyRbQfkFXcjQU7Dcc9pUVnZJ31RZlRMf43Md49Fs7OjwWhFyYYlcWeWbcLPALa8dPe/a0CzeIK5wXIkWK0XhPQ563QuIQ==|920
+}//QUFG6UoSQTmvdLLFVQVoo+uCJsdsathsBkiCJO+IPNH+4HY5Yyh0rMBFIfcD82OuWKZ8/YtYPLmpYd/ycH4q6ntBJVcVez9YzNvWcCFhBCXDyUHWnOR1GQZwy6Il8glsecOYWktQi0GGkbMARjIiJp8HhgJnB0in5KcVqOvM7HSp4tTG4CbdUVQkqzvLHdoDY0gWrzGdxyc6xlDpDLXa+VxhrCczRv1tjmu953SK/I8P5pyU55xo2pfNpZixitd4SLTwW+KqcVa479NOysHe4YgDGr3aI1oyKPVgtLW5DoiVYLuNqPBgLrBsmXXBHxDMj7dvdbIRbWd9dEoq99NfK7lN4sH/Ex2dyzmn4dM6P6m4pYZq2zdZmjC47YyBIg6/A3iY0zYDLw5f3SCJyi8QhVhcSoMQNbCHf6xw5qtd8RTcbVryeinuKTgaMyjx1S2k92CF8M2RlNoDa0IrqM6pYkS+IUYgti5/Fovcw2FAmCfzVGYH51Cs2wWPXrH81yHGtqmYIPUhVEzor9gGcotLUruYzqQGWp/l6urQoDBXcPhZHW9L6uWWqfnVdCvlJNJSx3kblPzFybeZi3lsAyDRmH5NUfC2IpP1Ace8a02Iq0ejN67Da+BJBoT7NkU+ETGyfAweNu7grQ+KORa0Sb8QvHAy7HSr+fEIhmrbGijLnr0tLrdtGEwvHgUrF5seRC1E/m86SACMSn33UCYt3EFavoJeU0gyOjTeQaOUWKlAGVLK94Ghi80KyddxH0Y1bydmZHrDhGfZjWNiK1LfzYpA/ZxdR9gW3ivLc8dshLbZUspvlzuTbramBhu+lxj5rb54oVFSsk3iIrnvf1axI5iNVz6rXCcMxjkO6wcAbwZMRlQENDMu915ezC8Kwn5Nw+zDBb2mGH86Ted4bJJovMMyzw==|920

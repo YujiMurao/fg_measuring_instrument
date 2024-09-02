@@ -378,7 +378,7 @@
             "Params": [
               "=I2"
             ],
-            "ID": "3e7a9ad98fbc4b3a8e9f6dc2eacbfd0f"
+            "ID": "22049e531b6045e5a968fce072a6381b"
           }
         ]
       },
@@ -397,7 +397,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=校正切れリスト!BS4"
             },
-            "ID": "790de4f6288f4b529f4e62a951473753"
+            "ID": "2fe6153730714dfa83127482e560ac03"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -422,7 +422,7 @@
                     "MessageFormula": "定期校正機器の校正要否がすべて設定されいません。\r\nすべて”必要”又は”不要”を設定してください。"
                   }
                 ],
-                "ID": "4c13ede2-8aca-4cd1-a644-9fad680a8aaf"
+                "ID": "8c9c2b34-9572-4558-bc6a-62519d190969"
               },
               {
                 "CommandList": [
@@ -449,7 +449,7 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "b87b97f6bd594ed8b847c7f2431ed1de"
+                            "ID": "a0b0cd31e4574c878a37c57599846330"
                           },
                           {
                             "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
@@ -462,16 +462,16 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "4f8293af82e84ab2ab2e3e12c5af5105",
+                            "ID": "e6df5f2f2b2a4bddb8596ce75b7b4c91",
                             "Disabled": true
                           }
                         ],
-                        "ID": "d1554a6e-a88f-48a6-91da-be1d85ac8b97"
+                        "ID": "4cbbb8bf-20ef-44ec-b232-d737b77e2921"
                       }
                     ]
                   }
                 ],
-                "ID": "4a686e1a-ff3c-40c3-bf28-835b7cfbf745"
+                "ID": "5268d48c-2d38-48f4-9548-e8519c043c28"
               }
             ]
           },
@@ -485,6 +485,7 @@
           }
         ],
         "Text": "通知送信",
+        "IsInvisible": true,
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
@@ -515,7 +516,7 @@
                     }
                   }
                 ],
-                "ID": "a7e9ca95-4e57-4834-b92b-e69b8354c878"
+                "ID": "2c6a0f32-017a-4e73-aefd-76914c78f688"
               }
             ]
           }
@@ -741,7 +742,8 @@
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
             "PageName": "計測機器詳細",
-            "PassValues": []
+            "PassValues": [],
+            "LoadBindingDataOption": 1
           }
         ],
         "ClickMode": 1
@@ -2589,4 +2591,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//S3tpYM5S42ze/YJoYlqK/M2zYBwAHazrpPPcNNWMm5YW9gM/FBPincXlTbnH8K/xULLtBPHjuaKmKM6hVKmO62yixz6RGMJmFWjLcxifaDPc/UWCuXwG7dS54+ClNZEOq5yKrFi4icWjwsc0EZjL5c2UnNmqkL3r+mhKqeoYJCXaIai+X2Y/h3G9HYfU2xxsV1DpD3HCw+kXpWL8+OtQpBz7ltRATY9T4fMclNTfqhw7ov96bko25oCQmUURE1F1/HAzobikqfZwWQ6AaLaUTZHFwMC74YATpmKuMKY8KNkhT5K/NS+vmQOM2GjwZOSBG8nRdbtXUioeEV/XEEbKMYIJ1MUaLEZLnPdQfwc7r2/DdisGF0fwYyP7782HVNrwwxF8+i16A3tssDckh25r2oYl/AUmSG1wUit1hD7jM84dLuCm16OATRrRj6bMi3UNJxp+lcl0gHge8eA4/qPFg0IldW98eHyxjGuYDKAjAfcdNoWedviPQ6+I+TANM9VMbNI/xWhC4UXhS+Bya8L8YThExrOTlpcwHpz6dF0jvc/NDhazgzQ5DiUvCPtI7zBtm3EHq8pmUOVJ9BN0jK5FrwUFjpPpOXA5L+C5uTZeGuwJsiQWiTvWzbynhbEgxt4c5TQ79dk0mbtgnixwWMusKHUemuyll/idi+W2PEooCtmdvp0QfFCUJdV71zn+21qrRLVZJRevaS2v/ASPjn0ZOxpSCQZmoOkdgv2TLPtedKc4NceQcfKvO9V6Enjabp9OvX8l42W2iQJ0knTBRBDoIYxn4Cn3Zvy65yGtIArTRbMgBSEN3zemNKS/35amowX1MHSWYo2/hyb4HvAOfNk1fhSbxkiA3Njir70NlTN7X88TjR1SHSN4JkBx8TBo0NqDuuGOBC9dd1FLAwUdDPmLHQ==|920
+}//Hj0cVnZkPtu4/GV8gMme5ILn+64BkpTjsQTmd3edr9wAnZIeWTL5dMBv7XkOcehLSEmV9AZnV7M0FRbsjrxKGjnK5eE23ZjCrEu0ivtZVSBB/Jfe3UH4tdMgQGnihW93qpUU4Di8cluZ9/Cndnb9/iYalDTdxpjpHA5aqygcQ37z2RHclLHCxE3CqWplQ9AEkJ2B8fGr668Fh6jnxP+Xs9T1wRkHAH8J0CUwKGC1IbwwqEn1bB3FckcJLNv9AsnE25E5omNbBtZ0uq9mkD5W7NJE9lGCyQSCKvYOY2sRRGODHUc2LDU5X+zN26wDGLJaowjjM8iATi20CEv418x+Q6tp+gXzttj16qhnaQLrz4TqlyDciiANy0AZd5EhmbOJ32CAa7ClufQlJY74+X3o+watmjSjF1OWl+BLWFYoDuLGXoWwyk/iFrNB4AQLnhY3H2DawWD17PQqu4yMcWP2eIzoXwYBc40zQvEO517W2P2K9AiCW62922FQWH1YfwmLcpivrOEG2vnDKxKESLgd3xoWzGRjRDQNXfmBFNlKHAeuYdOn998JE84M3zy4bki/EIIouq3Sage+Jld07kXm870AnH7D2744POMK3z3IQ9VMMhgf8nd1dw9WHgyx5xJRYXwz3VvGSMK3OnvrmYqgoww1gVKzBPRUH14GgT+25QxeAMsKV17TfWwBjkGzIdnZdRt0J/dR+rmr5zafA9rFJ2cso2D/OO/3zk5NUPBu6qCA1Z5ng1zKQvztk5DUUVMUDobgADhORY2qoIn5Kt/oYdkVfu8M9xXuWq3OUIDUg6AiIvDXRdJ7sxW+UCyn5jdeZxN+rX/r1FR/lHOk56neDenJd4MfXlI3W6XaJXu5re9+lilX+RCLHxUpn7P5Zs+IPwE5+GSWiPNE4/8/GFleag==|920
