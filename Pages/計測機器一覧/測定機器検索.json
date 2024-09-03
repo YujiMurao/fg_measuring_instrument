@@ -379,7 +379,7 @@
                       }
                     },
                     "Params": [],
-                    "ID": "c9cfb862f39b4d1183bb155bdb4e5a5d"
+                    "ID": "4a876a7eeecf460ca9d7953a3d002881"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -394,7 +394,7 @@
                     ]
                   }
                 ],
-                "ID": "cb8fbdb2-1ac6-41d1-8aa6-9a98b015cc66"
+                "ID": "fea7d854-611b-47b4-b06b-922e78d76925"
               },
               {
                 "CommandList": [
@@ -410,7 +410,7 @@
                       }
                     },
                     "Params": [],
-                    "ID": "88f1d33b17f1474d9db5d2ecf38606b7"
+                    "ID": "3a148bc05396465dabdade69e498464d"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -425,7 +425,7 @@
                     ]
                   }
                 ],
-                "ID": "09619be2-8b79-48c7-8428-b4efb03b952a"
+                "ID": "3d71d3ef-5b24-449d-8796-a35b1bba9676"
               }
             ]
           },
@@ -873,7 +873,7 @@
                     "NewOtherName": "計測機器リスト"
                   }
                 ],
-                "ID": "7abc16bd-2189-47c2-9f94-fcc5bb8d2e3c"
+                "ID": "401e3f0b-7b4d-4083-9ecf-4600ae789f56"
               }
             ]
           }
@@ -916,7 +916,7 @@
               }
             },
             "Params": [],
-            "ID": "241018a533684bdebfbde6fa32ab6365"
+            "ID": "b94d57a42e734f7bbcbf457b981482c0"
           }
         ],
         "Text": "計測機器新規登録",
@@ -1081,7 +1081,7 @@
               }
             },
             "Params": [],
-            "ID": "6ae4a785b39c49f9a0174cb5c9f35154"
+            "ID": "513dcee73e12438db44ceb52e798b643"
           }
         ],
         "Text": "コピーして新規登録",
@@ -1341,10 +1341,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "894fda999b324d74aa324c0c986b783e"
+                    "ID": "1b201880fd4a431089c22f442fc1bcb3"
                   }
                 ],
-                "ID": "02eeb302-188e-4ab8-a14f-664b57e5c79a"
+                "ID": "ef89567a-78d2-47b0-b1ee-c90901f5b99e"
               },
               {
                 "CommandList": [
@@ -1533,10 +1533,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "62649db24fa24c55bd80a117494e8d87"
+                    "ID": "56473c4f96734703aa95edcad1ea5f9b"
                   }
                 ],
-                "ID": "724fec59-e812-4682-8978-adb026ffb06b"
+                "ID": "fc0d3752-c154-4f6a-be29-d30cbd4d788d"
               }
             ]
           }
@@ -1662,7 +1662,7 @@
               }
             },
             "Params": [],
-            "ID": "17352f182dcc4359b55881221c7e3ba6",
+            "ID": "7e393909c04043e6b2c5e492c400a732",
             "Disabled": true
           },
           {
@@ -1704,14 +1704,14 @@
                       }
                     },
                     "Params": [],
-                    "ID": "d870c2d4de0e4a44a5310f7357442280"
+                    "ID": "d9e771eca6e044f5b096c22a920a7915"
                   }
                 ],
-                "ID": "1bc1d82f-73f5-44db-bb85-068378a6eae7"
+                "ID": "01509fab-ce22-4b9c-a362-aab3adeaff31"
               },
               {
                 "CommandList": [],
-                "ID": "ccbb36ed-1b9e-4d8a-8ebc-7e33b6944fba"
+                "ID": "f74844c3-e897-4532-a2aa-ce47a9d7900c"
               }
             ]
           }
@@ -1741,7 +1741,7 @@
             "Params": [
               "=BY23"
             ],
-            "ID": "cd4cafd37abd48f280095f1999303cab"
+            "ID": "42e47c1bc1ae4659b6a345190983cb1b"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -3864,7 +3864,7 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "masterpage",
-    "Title": "条件を指定して検索 - 測定機器",
+    "Title": "すべての計測機器",
     "PageLoadedCommandList": [
       {
         "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
@@ -3891,7 +3891,7 @@
           }
         },
         "Params": [],
-        "ID": "2f0681bda338466e8e3ccd685ac758d5"
+        "ID": "d465023a7d974f2589794ffdc931a446"
       },
       {
         "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -3909,7 +3909,7 @@
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
         "ParameterName": "今月初め",
         "ParameterValue": "EOMONTH(TODAY(),0)",
-        "ID": "3a7b9d2456a6474a907c651a692bf7dc"
+        "ID": "9eebd0038d3f4591ac0e9093ec47fb18"
       }
     ],
     "AuthorizeInfo": {
@@ -3934,4 +3934,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//aFjtQzhBGak3+Wh6sqxG97bFi6Ih9hrxOpUJ1hwzvvSh4E5KsoJr9bzfnm3QJITkzVbNpM8lUBLgre/+Tzf0fwz0nnQeeeixa14qv+a3Bfawd8fcO7pVVIKa3TFTCjyF4Ssn5XWxGy7NuOTFhBNs1CCix+3Mrae+n0D/fsijElz7Qn5VV67nQUIi0J+dsKZUNEt8hGzftCOa4bB2b/5drVWNVIOvl3ntTLX3OE2nImHevwLWwpTdhSckMm44g209h67b3QLeoleIqJS0hzS2C5x/OZzZ7YZhDyy9bE0NNnHPKPL7mu4iNUr3fq66ne626dvPw19O8/hEsK05ajxn8DZ2xYa4wHu51daIfNyMBiFEUweaEHRKozLSILNLNDvrPNfuDjFcYCUy5O08fiTnNjwNo59o1apcFKKo6YDa3F6iqeP4rJi+fsUeUdw6ZlGCxSYxa0qmsgnb5j/pLaIDkq4fk2jmWOzEoUSUTx9X+diExGNDJeqrPjM6URb1n6PbLyHgqKYoq9GOOMk2gFau559C9mLWsVCQAeMM5wTscWSYxpou5gMSpJG+c8m/5rFLu41L+nNOyaCLp2aIHx3GIXKAzjYvYxFTtqFNtW7nCscGicOmSfi2eBlwvdkBAPDvIOYVCBuGS5GgWL/5aU3kAZDgY0frFmizp5o9i5lY9eGTSwOM1dUOIbkc/Vvxk6Tvha6uqHe7hgqB7yuBGLcf3jbDt+eavRNThc2GJaOutbqx2+6boeVY3qbaOm/shRlABDfpM42//NgstX8Qnl5z68iymyQTVu0yJZEbcYKIOp3XBdxWwZ4RWugKaa98RRKUx4lT9bv/u1B36Hgcqe2jEZ5o5aQSJzLO7RNFMmwO1FPJtsZZKFoo4HQfsDn5yFYu6eSy+rIpgKngL4Gz9pXx3A==|920
+}//M6il0SPv2ufDlAWpnRxxqSfikSZnG679E7AeH9GwpoiBW1SicMe/oTpT3picNR1jW8EEWjkHKJwKzzURiizCFCmrL+a7AoMgDRxmxv2XafD9EF9xJfXdIQ2sMSze+fCx1aLW/BKFiUV1kIPs8pRMy651XMVDv/alt+xtHIhWv2TPfJzCDUWkBZsCXc/8DSWdcJ+5GoopD+57tYscjgo6PbRXa/KR7Yjgi4oIrNDP9JloBXx10lFLeTpa7XLyINqZrZICUfRwQ9wgw4Y2KSa1J8HdM4G91ij9OYqSh2hSBs5fKAFb0WmZ06MVG8eDVKwtkZY8EMbEcZ0LuIjNQ026GXlTh1dRXsdsQYpFPjrns3FvSFUa9dVMlNb9AcgANSJSfmEcpIFg8bBYG0iKem3wpgNxpAZDn+8l0IZiD4K03e8tM5QLM29XKVEuOh1tE3uOL4HpgD7Yu4GrWcUYbevP2fVrpbB6LM0TQRNTtF2+Ylc1/3Q2FXm4f0z4uu2iKxXDPUd6kysKZ+1Cmig6cQMngw89p9wqYgfZC3cxVQ/RqPxv+fsuUsjglflk9RIwCYrn6RmvJqus7GgeAjhjNA+WNYI3Suad31gk7RTWuQppynEYkc8jjpZ06zbXVqMC+KIERcE1EBgMPFYrLIfldcOmtFRVtRBqXeuhc4md+GzDWPhP6AYLXqh5fFh84yFK9ao1Jkd3T7x9bmucV61h9lLQS1i1Ma6suTSocgfK/xO0n7UWmPTNCJNRY9Z8Jm42FbZwNrtgARekNoIooK+blwSEbvo3c1wAtleDsnWOhSRAypP5J9UigthvTG+YWBNUoeXD/Yb55tmkXWBca4P2cAp5chrwX+A7blJBrSFwaUtlcumSw9yLwDBkqzDPLMWSKrWqjcXlreppmGbstY566PX+aw==|920
