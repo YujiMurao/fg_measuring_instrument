@@ -327,11 +327,11 @@
     "5,57": "次回校正月",
     "5,60": "校正有効期限",
     "5,65": "担当者",
-    "5,69": "校正"
+    "5,68": "校正"
   },
   "Formulas": {
     "1,73": "\"校正対象計測機器一覧(\"&TEXT(TODAY(),\"yyyymmdd\")&\")_校正有無確認\"",
-    "3,70": "COUNTBLANK(BR7)"
+    "3,70": "COUNTBLANK(BQ7)"
   },
   "AttachInfos": {
     "1,8": {
@@ -596,7 +596,7 @@
               {
                 "Column": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='定期校正リスト(部署)'!BR7"
+                  "SerializeProperty": "='定期校正リスト(部署)'!BQ7"
                 },
                 "Value": "必要"
               }
@@ -623,7 +623,7 @@
               {
                 "Column": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='定期校正リスト(部署)'!BR7"
+                  "SerializeProperty": "='定期校正リスト(部署)'!BQ7"
                 },
                 "Value": "不要"
               }
@@ -650,7 +650,7 @@
               {
                 "Column": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='定期校正リスト(部署)'!BR7"
+                  "SerializeProperty": "='定期校正リスト(部署)'!BQ7"
                 }
               }
             ]
@@ -1071,7 +1071,10 @@
         }
       }
     },
-    "6,69": {
+    "6,67": {
+      "TotalRowSetting": {}
+    },
+    "6,68": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "Items": [
@@ -1553,7 +1556,8 @@
         "BorderRight": null
       },
       {
-        "FontSize": 13.333333333333332
+        "FontFamily": 6,
+        "FontSize": 12.0
       },
       {
         "FontFamily": null,
@@ -1934,6 +1938,7 @@
       "5,52": 30,
       "5,57": 31,
       "5,60": 31,
+      "5,68": 10,
       "6,3": 32,
       "6,7": 33,
       "6,8": 8,
@@ -1986,11 +1991,8 @@
       "6,62": 8,
       "6,63": 8,
       "6,64": 8,
-      "6,65": 34,
-      "6,66": 8,
-      "6,67": 8,
-      "6,68": 8,
-      "6,69": 40,
+      "6,65": 40,
+      "6,68": 40,
       "6,74": 8,
       "7,69": 41,
       "7,70": 41,
@@ -3664,7 +3666,6 @@
     }
   },
   "Spans": [
-    "6,65,1,4",
     "6,60,1,5",
     "6,47,1,5",
     "6,43,1,2",
@@ -3679,7 +3680,6 @@
     "1,16,1,6",
     "1,14,1,2",
     "1,8,1,6",
-    "6,69,1,3",
     "3,23,1,4",
     "3,28,1,4",
     "3,33,1,4",
@@ -3691,6 +3691,7 @@
     "3,1,1,7",
     "3,66,2,4",
     "3,70,2,3",
+    "6,65,1,3",
     "5,1,1,2",
     "5,3,1,4",
     "5,7,1,3",
@@ -3705,8 +3706,9 @@
     "5,52,1,5",
     "5,57,1,3",
     "5,60,1,5",
-    "5,65,1,4",
-    "5,69,1,3"
+    "5,65,1,3",
+    "6,68,1,4",
+    "5,68,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3726,4 +3728,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//H++F5M2197sTlPJug//YGef9i1PYMw4gncefdd4xe9g9rMeHnwDiOf8AasEz49j6r4ZmJ241wZO+stOkT7JyB/U1SfjZJGGf7oGpYmt+jjkZk6ztGPlglWKw3mbAk1ufc4QdVZzU0JkxEqUZiF32KwnwyrlgcAeTQ135vz5qnzhira4a4xdFJac3ngm0iixDc1MF0SawsMhWsW7f6Y9M9521EMaR6j++ZmUSFHanIxi6aCUR/LVn2WPxegnLuwouYgkYC/IdTkwprFhYJG5vNr5D04TSqnsU2t9VmznySAa0pyPw0q8iVMItZlF7WuULtJ8zSp52DtgnxFOH2XH6HjV/VYVyRICdl55ra/s3aYafED4lo6Cx+aprIeTuC2h6uXzzji6sxayfe3EuIeXXynEN7PKhlfi0QLgauLWoEehn6wYE9uOkzKf/T5UBUJjbemQi1K3qvZX3VM0/+mhMgI0/R+MQR8JdMvFdNfiiRrROhY4PBiTjZz+RPl75Ctc7nD5q9MyQ8KQ2p7p5D5NU20wTY6Y9V7TaGRh0qxAUU7mfP1doMNw6xvqigBY8hUpG3yizJpbLSMXuIpmNZoj8sBR9cyZaw0TOZi8WKKUdkVYQd5mVTnF/elyMNxawUiI3zJlMxvGOnyz4A+hhoDR6r5GsS7/FldgkGkqTBcK1fwrT3qMSNN6+w4agzKAxjuxgts1N1wtc7LagLyy2QVScAy6OmS2nJ/LWDGrlsDMhTOi6bDcxAdAvExLfrado3pKd5kw7k3rzf6RaXS2ZC3csE/buxu0FJ5wou/mtv95iHCv//TzzL6b1WsAcFVBKlSrFXKwgsb/y07tD/nT6F7uFGBvnvd9B3h3dTWRtY0ovGHA7sADhaK5PqUlwolRPYjCJ1sEVe3/E75AJyaG9hCjPwQ==|920
+}//wc2SQTdhfwILIU9AUXfPybytw1XSP3jRMars2b908RD5cS1DsUujOjNeztiDK+GNzK+snlQnVrzHimRVti50SypcU/Iq3agH2uLraTWd/hY5P79D2q181iaTbUxVm9h+5CKAFw7Tg6ShLZov1oXQdQ2TitQiJV3pQpPGFpkseSIq5aUWSgO1hMZm0dwxrPvDVyIucz4VN7gKL90+j3O8ln23htRJulwvkcWgZ6RPKarztvzXPhe5OYA3N6uqsTByU8vKxOMYcSAKh1W2Z1VbE62aH5cSnddZPJTf9pHjzU1EKicqNmnwgy1mib/IKE9khgk6i+hkJOz5s11ut9G5YmPTuuuHPdRT/AB+6E3Et3bOpZ56nsyRbjzXccy3ec29y4dkSQe53FZr68ChhjSYok048lVj7KzqkYJCXQmAf5567+y8frLKyGlCJXPwX3CYONRG4RlMEP64NPXE/Ckx6+Urw4sBa2fBsGMCROng4TP+oFhSpHEoUsgHjNxtDFU7Ngesgk+gCY2UMo27JZG9QeFhfNRX2BPcBAcIkaZMRwAiD2cxgot6klsOgedK67qGwvg7FcItQVVCoCvZ7EFM2+M9ek2nd+v7DCy1emEi2hX+/SX9DNRPlGy5CTgollaEtLzNc8NEh4F1UfKrJrp8wCIcnq5J5diAUtqU/vKxZvGE1RqCuYUdNpLHSiasVzUBBg7STtwpsNH5cSxrzg1gu7213kkjinJ3uhrAxkZtdZsxwQ/0GfS1dvMsv1vxP/LBxxGoU/AXADMhk5Ocwa07iDoarKzGZJOARBfgm64jbkeux3Recv7xSw/KzpUYFzOS+kT3IOP30KJ2ydCCK/gqIJpSr6oEC5aF6RQJbZFM6652AaemJBp5vp89c8gkosxjJpsOnN2uCycjMyxhj1ioIA==|920
