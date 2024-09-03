@@ -190,28 +190,11 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
-                "ConfirmDialogSettings": {
-                  "Title": "確認",
-                  "FormulaText": "本当に実行してもよろしいですか？",
-                  "YesButtonText": "はい",
-                  "NoButtonText": "いいえ",
-                  "ConfirmIcon": 1
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "trn_insptool_calibration_history",
-                    "ShowConfirm": false,
-                    "ConfirmText": "本当に更新してもよろしいですか？",
-                    "UpdateValues": []
-                  }
-                ],
-                "ID": "afbdfd37-22d1-419d-b39b-4da984e65149"
-              }
-            ]
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "trn_insptool_calibration_history",
+            "ShowConfirm": true,
+            "ConfirmText": "本当に更新してもよろしいですか？",
+            "UpdateValues": []
           }
         ],
         "AutoExecute": true,
@@ -501,7 +484,7 @@
                     ]
                   }
                 ],
-                "ID": "1a0b188b-0f8d-481f-aa04-1729a2830df8"
+                "ID": "722088e4-60b6-4528-89c9-3e8a2c8bd1bf"
               },
               {
                 "CommandList": [
@@ -521,7 +504,7 @@
                     ]
                   }
                 ],
-                "ID": "fa30229e-4ee4-4e0c-b2e4-7293c43415cc"
+                "ID": "b77839f2-0144-41c7-97ab-16f138b74089"
               }
             ],
             "Disabled": true
@@ -1814,4 +1797,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//mczyMQq5eJINVcE2XDDX+N8fYlSQ2temUBxvsnlocreEZGT6qcGgQAblNQUHqDqIGCxEF25ZRhxC/kYc5RU6WP8GE6FA9VJwsf1s0JdcyN0+SGBdrNeW/odcfiAxGB8TZUajhp8hYrNN6THO26A9vNZQUGt8MRIXCNenAocaCI8wUrfv8Icml+MFvy+9JRJen3qgU1zCi86PmsciEcSv5hxcUTM/MPPcFc+pggvTokdl6he210Oy3WB9YZTiW9ZuaHsN3C4bIE7Xo0r9CapZCBeb+8OiK9j2lst9BKsVA3hS759rcr3MN56UE2SJmEVpuC7xStYaWpMhMT/jno4Q+DmaRXxeuW2j8WK92B3tnZbHjyMQc64lY8PIGpNDK0JpaETgTfjdyLHzw2bg91Vd+ZmGw1v71BwVDRM6rUucUQYtRNLlFMmwgJAB4JfDGkt3mDjpoQClp/ETgTViFCKDNC0qABlPJhy899DOLo1DmKZvMis8dzRJ56ZsCXCEDa+Dn8R33Z6t6kESLu4ZmKbV+AGAcTVxRKAlvq1Ck39/a/sTTHrTTXejygaUhz9ZbX+sOVZ94pQPakvgci73z++ULcnrnpHe1bSVq0OYy3U3l82LF2NaLUw771brFyt4A5GD6J7I/UvJ1NcE6qrNJ3NtMVmPvy/C9MqNYHGM6MzXlcl0ox85KUkAijjd3Z4bp06NvwXSJvZW+dpuSJzwcVhHPHNf3zR8AnOBJ95rywh0mh318VIJ/sNjRt9lKL6QgDJvnCtY0kKwr9CglW4Z3zlgH3PCe+MwtA2r307+3n/tiuk6DHvEh4S9hRZZ7w37NyKCtEVzGLnxfPFiRFCfLKmkKqB4QWy5myz/X1+Y93vUvz+TYcPSD3KQR9acQiBh9iARQGAh76GB9kwI4clGW0EcEQ==|920
+}//4B+UJgI8CmYpYHGUDsfHbZp/8q3wRQpiRfDOuCNSGRcqQLWQNnTGwUZ7HlZwIU91hm/Cj/XLnWpT/TjjFZTFGlZFy0MaLoqaQSZH1Mku1pBKcmAJv805Z+/S4DYL1Q5Hs/xbW/6TX46jpSwy7Ya2qUhjlNq+m0H6QS1q+npxElOM+0myW6hefp1Aw1d+3u2JAI+xOmAehVtGYWF0r+DNLfG6qt2ARTcqlR+69k6FgArpRvuuEyWUoWdujY4LXjjBc5vz1oa27/Kca5OZ5EVytEAqhFuZSZkLP6Lc4tla0pP30F/DmmWHXB4qqJfjCOZljOwQW+Ic+Rwh6EzgZSewXjVK8FGGXrnh4EscShrPGkBX6qORWcb5xHTWmh6vQgCiDTxMFe0Im7xnZEqj36Zp4OTybXsyBZ586eHmgHGP8UBWdnsjiJPGXLcxcDepNzAStcXn3pdIGaAoasXGVlOOMoxNXQ0ub1ExP7TE7Uaqqs3c1VS1i83lRIEnnc/mW5WYAdw3HhVTnvpsMG+8cFwH22Aq/Fz75kXRPW0mxe0qDac/HIntPgxGkzwBXQqqhi/9uwO+T1Dhs1BSoM26Ieh3pP71P/6O3VQYs2u8Giy544bqWa9W+48JYFhezkvjeXzaKucN1YFdTNPs0UIHCBs2mWXIXejmwfDRAbD9vgCN89vhMVS4GZDkEwmm6l86kDg7+QrIf2tmz31KZ0/Y2UCLAfuZBPz6eSlbDZFyCq9156m4Mx/FNHJFOSb46TTKRUni+RS8b9M0OaCFm3ijn4+lGgH2llizPN8Ox5XfDR/oUon99QxohMCFZFZScTkwLRzG5iE4OSGDTdrhnWMDnVwf1KrJ3YAnBqERw7kWHefIfNAxKUwYWu+lfR4AYwqYV7pQmSw/nw2ZcNzs8sumoKoqzg==|920

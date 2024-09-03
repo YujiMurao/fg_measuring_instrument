@@ -378,7 +378,7 @@
             "Params": [
               "=I2"
             ],
-            "ID": "22049e531b6045e5a968fce072a6381b"
+            "ID": "0c413bb6346d4623af6aa17eeee28628"
           }
         ]
       },
@@ -397,7 +397,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=校正切れリスト!BS4"
             },
-            "ID": "2fe6153730714dfa83127482e560ac03"
+            "ID": "21ce1e4fb0da457e97a5f39ba8616fe2"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -422,7 +422,7 @@
                     "MessageFormula": "定期校正機器の校正要否がすべて設定されいません。\r\nすべて”必要”又は”不要”を設定してください。"
                   }
                 ],
-                "ID": "8c9c2b34-9572-4558-bc6a-62519d190969"
+                "ID": "7b11d8da-ff13-4b9c-9b9a-7f309ee2e4da"
               },
               {
                 "CommandList": [
@@ -449,7 +449,7 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "a0b0cd31e4574c878a37c57599846330"
+                            "ID": "93a57ab20c9f438dba8d932820ecf7cb"
                           },
                           {
                             "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
@@ -462,16 +462,16 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "e6df5f2f2b2a4bddb8596ce75b7b4c91",
+                            "ID": "3e45e219d7764c1180ef694bd3bf3024",
                             "Disabled": true
                           }
                         ],
-                        "ID": "4cbbb8bf-20ef-44ec-b232-d737b77e2921"
+                        "ID": "ece27ded-0d94-4fdc-94fc-2a411e4ff689"
                       }
                     ]
                   }
                 ],
-                "ID": "5268d48c-2d38-48f4-9548-e8519c043c28"
+                "ID": "8094514f-9306-40de-863d-c1dbe618a0c6"
               }
             ]
           },
@@ -516,7 +516,7 @@
                     }
                   }
                 ],
-                "ID": "2c6a0f32-017a-4e73-aefd-76914c78f688"
+                "ID": "2329b2f2-22b8-4854-b052-a213b93b4829"
               }
             ]
           }
@@ -878,6 +878,10 @@
           {
             "Value": "不要",
             "DisplayValue": "不要"
+          },
+          {
+            "Value": "その他",
+            "DisplayValue": "その他"
           }
         ],
         "CommandList": [
@@ -1645,6 +1649,7 @@
       "6,66": 7,
       "6,67": 7,
       "6,68": 7,
+      "6,69": 28,
       "7,69": 38,
       "7,70": 38,
       "7,71": 38,
@@ -2591,4 +2596,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//Hj0cVnZkPtu4/GV8gMme5ILn+64BkpTjsQTmd3edr9wAnZIeWTL5dMBv7XkOcehLSEmV9AZnV7M0FRbsjrxKGjnK5eE23ZjCrEu0ivtZVSBB/Jfe3UH4tdMgQGnihW93qpUU4Di8cluZ9/Cndnb9/iYalDTdxpjpHA5aqygcQ37z2RHclLHCxE3CqWplQ9AEkJ2B8fGr668Fh6jnxP+Xs9T1wRkHAH8J0CUwKGC1IbwwqEn1bB3FckcJLNv9AsnE25E5omNbBtZ0uq9mkD5W7NJE9lGCyQSCKvYOY2sRRGODHUc2LDU5X+zN26wDGLJaowjjM8iATi20CEv418x+Q6tp+gXzttj16qhnaQLrz4TqlyDciiANy0AZd5EhmbOJ32CAa7ClufQlJY74+X3o+watmjSjF1OWl+BLWFYoDuLGXoWwyk/iFrNB4AQLnhY3H2DawWD17PQqu4yMcWP2eIzoXwYBc40zQvEO517W2P2K9AiCW62922FQWH1YfwmLcpivrOEG2vnDKxKESLgd3xoWzGRjRDQNXfmBFNlKHAeuYdOn998JE84M3zy4bki/EIIouq3Sage+Jld07kXm870AnH7D2744POMK3z3IQ9VMMhgf8nd1dw9WHgyx5xJRYXwz3VvGSMK3OnvrmYqgoww1gVKzBPRUH14GgT+25QxeAMsKV17TfWwBjkGzIdnZdRt0J/dR+rmr5zafA9rFJ2cso2D/OO/3zk5NUPBu6qCA1Z5ng1zKQvztk5DUUVMUDobgADhORY2qoIn5Kt/oYdkVfu8M9xXuWq3OUIDUg6AiIvDXRdJ7sxW+UCyn5jdeZxN+rX/r1FR/lHOk56neDenJd4MfXlI3W6XaJXu5re9+lilX+RCLHxUpn7P5Zs+IPwE5+GSWiPNE4/8/GFleag==|920
+}//0OWwcZ6h1wyq99eRyemCIKLfmE47RQAHOVw/Ovmp+DYOGlDwOdgiUAtOOA752+TKLj6TJrv0Vsl//r+iBKKfP8weNEJBcUgTt8DFWNsezSk297LigdVYIHhiY5HiK1Pp3s0wamM346mU33ckhvVMRkOQ3+1bGZpL0qqhBNQMBjUmI0gTzpjqo7VxxSY2w5wxKPZOzuwMi1FkDwMLiLiPLWkmKHv/zRjJX8umlZkXDEUwfxN+khyagFCCWKGNpfaX/xzYVlj39istWe0miqqCh9D5iHr3HNCRo56IzlFHzwqCVSt8tBkAwRjUOLLcXV3IYM6fSAGDn6UVZ5r7Oz/dnKjmi+Hwzs2TM7V0WvyFhFFqFtWZ4OrDmF6ofdHUwLYQhCQvxJ7k9XMG1sHIHKE4EnOXWYVyyFwbqhNcvCu/TQgzjQeWzXK2kEH6kEt20y9AEphox3zFtjho2Zwt3J9Lon3G70vXJqlsW3guniUJqeXHyiEgBtwcU/MPY6GBluafI+dABfO1rwvGfOnl6upw6GtJzo6tfQeB1/y+PSff6SydHykZ/xWwYqB4Vl+5i0Iouw6edF8RNOvbfCAKhngfmyppZKCEwYho4LDy/BoxL2C5sDVYoMdIpT4w72yF8CiE5AxN0tQJVY/AZloij09j3Yozz5l1SCGFp+lKsVatsGKScFRG8v8i8G+ScH4TPewiFq/5RwYMvYmC8a2/QONY2h/9I6UKgC8JgG6J2dR4NXZnEt5VvsJ24VcmZauxYnc+p+K81SS6BmePF/7aUYFQ+FzfKoghWtNVAC+DM+jw+ZZBrj1LEThi1Iqh5pqR9AOH4nME+R6obKWwXMchGSmKDqwIG5OsWKp/juhfQrT4pXRioZzJrI7cX6FXmb4T7M69FxkpC+KcYIXtkgUkooRArg==|920

@@ -47,7 +47,7 @@
         }
       }
     },
-    "Count": 9,
+    "Count": 12,
     "DefaultSize": 22.0
   },
   "Cols": {
@@ -81,14 +81,31 @@
     "Count": 20
   },
   "Values": {
-    "1,4": "管理部署：",
-    "2,4": "ロール：",
-    "3,4": "担当者：",
-    "6,8": "追加",
-    "6,14": "キャンセル"
+    "1,4": "担当者：",
+    "3,4": "管理部署：",
+    "5,4": "ロール：",
+    "7,4": "連絡対象者：",
+    "9,8": "追加",
+    "9,14": "キャンセル"
   },
   "AttachInfos": {
     "1,5": {
+      "CellType": {
+        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "DisplayColumnName": "FullName",
+        "Columns": 7,
+        "CustomColumns": [],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "chart_in_person"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "3,5": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
@@ -112,7 +129,7 @@
         "DataSource": "mst_insptool_management_department",
         "ValueColumnBindingInfo": {
           "TableName": "mst_insptool_management_department",
-          "ColumnName": "code"
+          "ColumnName": "ID"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "mst_insptool_management_department",
@@ -121,21 +138,15 @@
       },
       "BindingInfo": {
         "TableName": "mst_insptool_personincharge",
-        "ColumnName": "ctrl_id",
-        "RelationBinding": {
-          "RelatedTable": "mst_insptool_management_department",
-          "RelatedColumn": "ID",
-          "DisplayColumn": "name"
-        }
+        "ColumnName": "ctrl_id"
       },
       "DataValidationInfo": {}
     },
-    "2,5": {
+    "5,5": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "AutoFilter": 0,
         "ValidateItem": true,
-        "MaxDropDownItemCount": 3,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "Items": [
           {
@@ -143,8 +154,12 @@
             "DisplayValue": "担当部署所属長"
           },
           {
-            "Value": "測定機器担当者",
-            "DisplayValue": "測定機器担当者"
+            "Value": "測定機器メイン担当者",
+            "DisplayValue": "測定機器メイン担当者"
+          },
+          {
+            "Value": "計測機器担当者",
+            "DisplayValue": "計測機器担当者"
           },
           {
             "Value": "品証担当",
@@ -160,24 +175,17 @@
         "IgnoreBlank": false
       }
     },
-    "3,5": {
+    "7,5": {
       "CellType": {
-        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
-        "DisplayColumnName": "FullName",
-        "Columns": 7,
-        "CustomColumns": [],
-        "SelectOnly": true,
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1
       },
       "BindingInfo": {
         "TableName": "mst_insptool_personincharge",
-        "ColumnName": "chart_in_person"
-      },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
+        "ColumnName": "contact"
       }
     },
-    "6,8": {
+    "9,8": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -186,7 +194,6 @@
             "TableName": "mst_insptool_personincharge",
             "UpdateType": "add",
             "ShowConfirm": true,
-            "CheckDataValidation": false,
             "ConfirmText": "本当に追加してもよろしいですか？",
             "UpdateValues": []
           },
@@ -199,7 +206,7 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "6,14": {
+    "9,14": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -215,9 +222,35 @@
   "StyleDatas": {
     "Styles": [
       {
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "HorizontalAlignment": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
         "FontFamily": null,
         "FontSize": -1.0,
-        "Formatter": 0,
+        "Formatter": 3,
         "HorizontalAlignment": 1,
         "BorderBottom": null,
         "BorderTop": null,
@@ -225,48 +258,21 @@
         "BorderRight": null
       },
       {
-        "FontFamily": 2,
+        "FontFamily": 0,
         "FontSize": 14.666666984558105,
-        "HorizontalAlignment": 3,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "HorizontalAlignment": 4
       },
       {
-        "FontFamily": 2,
-        "FontSize": 14.666666984558105,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 2,
-        "FontSize": 14.666666984558105,
-        "HorizontalAlignment": 1,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 2,
-        "FontSize": 14.666666984558105,
-        "HorizontalAlignment": 4,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "HorizontalAlignment": 1
       }
     ],
     "Types": {
       "Strs": [
-        "[AUTO]General",
-        "Right",
         "Meiryo UI",
-        "Center",
-        "Left"
+        "Right",
+        "Left",
+        "[AUTO]General",
+        "Center"
       ]
     },
     "CellStyles": {
@@ -285,36 +291,8 @@
       "1,16": 2,
       "1,17": 2,
       "1,18": 2,
-      "2,4": 3,
-      "2,5": 2,
-      "2,6": 2,
-      "2,7": 2,
-      "2,8": 2,
-      "2,9": 2,
-      "2,10": 2,
-      "2,11": 2,
-      "2,12": 2,
-      "2,13": 2,
-      "2,14": 2,
-      "2,15": 2,
-      "2,16": 2,
-      "2,17": 2,
-      "2,18": 2,
       "3,4": 3,
       "3,5": 4,
-      "3,6": 2,
-      "3,7": 2,
-      "3,8": 2,
-      "3,9": 2,
-      "3,10": 2,
-      "3,11": 2,
-      "3,12": 2,
-      "3,13": 2,
-      "3,14": 2,
-      "3,15": 2,
-      "3,16": 2,
-      "3,17": 2,
-      "3,18": 2,
       "4,1": 2,
       "4,6": 2,
       "4,7": 2,
@@ -329,29 +307,45 @@
       "4,16": 2,
       "4,17": 2,
       "4,18": 2,
-      "6,8": 2,
-      "6,9": 2,
-      "6,10": 2,
-      "6,11": 2,
-      "6,12": 2,
-      "6,14": 2,
-      "6,15": 2,
-      "6,16": 2,
-      "6,17": 2,
-      "6,18": 2,
-      "7,8": 2,
-      "7,9": 2,
-      "7,10": 2,
-      "7,11": 2,
-      "7,12": 2,
-      "7,14": 2,
-      "7,15": 2,
-      "7,16": 2,
-      "7,17": 2,
-      "7,18": 2
+      "5,4": 0,
+      "5,5": 2,
+      "5,6": 2,
+      "5,7": 2,
+      "5,8": 2,
+      "5,9": 2,
+      "5,10": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,14": 2,
+      "5,15": 2,
+      "5,16": 2,
+      "5,17": 2,
+      "5,18": 2,
+      "7,4": 5,
+      "9,8": 2,
+      "9,9": 2,
+      "9,10": 2,
+      "9,11": 2,
+      "9,12": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "9,16": 2,
+      "9,17": 2,
+      "9,18": 2,
+      "10,8": 2,
+      "10,9": 2,
+      "10,10": 2,
+      "10,11": 2,
+      "10,12": 2,
+      "10,14": 2,
+      "10,15": 2,
+      "10,16": 2,
+      "10,17": 2,
+      "10,18": 2
     },
     "SheetStyle": {
-      "FontFamily": 2,
+      "FontFamily": 0,
       "FontSize": 14.666666984558105,
       "BorderBottom": null,
       "BorderTop": null,
@@ -360,15 +354,15 @@
     }
   },
   "Spans": [
-    "6,14,2,5",
-    "6,8,2,5",
+    "5,5,1,14",
     "1,5,1,14",
-    "2,5,1,14",
+    "9,14,2,5",
+    "9,8,2,5",
     "3,5,1,14"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "Title": "分類コード",
+    "Title": "計測機器担当者マスター追加",
     "AuthorizeInfo": {
       "VisitMode": 6,
       "AllowVisitedRoles": [
@@ -383,4 +377,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//0OGG8Ei7oCSi64RU/hJ6mZrQjrPXDCPIM0B6RaJ3WRj6ulAsGflGW7T0wWfdspC8Eughi7aJxyfQ6HyfSKM9fddXVWGYpWA41PqXtptO8xJQ1UyKjmB+QEp8nlbOoCVdWnXjIBsoocopgw4Op6NA1McNioyoAA+3XiDCX4vAtdGjf8Pth0T/WPveDgJWOQRbVcxWOp0qiC3Kya64aMqjfi/96i2hhvTAkPsOx3DPsn2+dgjjdi2ZbvLDRXdMqSGgxb4h4gPOgc+v3DCctCB/AIITrz7jNg4DsghJwS7ZBXQqzFP+9MjThztT5cjdShP7VvLcyvzdXJo/dyzJ3ApKzNSizppUNmIOvCjpHZcLNU3LW5NnnapV7c+qy9h4yHK211RMQ3YoqYZPaYUxsF4BDStb8WIeWy84KtuJZmzZQhJkr15NkoN+4O3AlqTENAMEJFqbDrOjfod1FXN0oySO1qUiuNT06d4hDFAfmCcmZAWFX11FV16rmRpcNMrPVjplJ/qEe2xEiFlfSwiA9jeb6n1kbQyASOibNeDO59Y9oh4w1yr/de9eoE9tgOqSD1oeGe/5Yw9P31nTSYun+Ka7d+P1ZGEpdvoGlMCojvrERTz+nZH2TsOKOrkzvLPZMVfbE03fhaCw9ZMsuvcIZU9DiIs+jzkrGpy1huSuLvoa+wTI6W6zuJrJl6uDf+n0OMRJ5+62T2F/wLkrX78eyE7Dt+bW4cNXijGHqotghz/SKRSA7XA7sodIHXCuzq+P/n65BATHFFNbfD5wf98+I/hxbhLyiUato5dXhNO7hJg6PNPRjZfoqM8q0GWXFg3hwI7inHifmBeKXY9BghSFIRhXTHIOkx6Nk6DmK0SqaabOvkRzn0XEroAeIkaoWGyvoj1wi+lGJj0KfdvUppySzpws7Q==|920
+}//pWx7KnC6yWqb9sXcVaqJdyFWtPyPkNNzN6wWzDXJ7MhtVf39yiBoTQ40w+eg3ttlfhKRc1l56BdrRwLuyXsnFKlQzfAjxCMv8zflE9r/LlOKhLS2efQD0iZ1SrenI1hI9S4Oz/zjtuKTno5kgHDDjI2En4UVBSVX+3l5CK7ByKz3n3aaNJcbcpqta/1lDM8dS4T+NW3YCTkRLdnLuG8EDavxNXnooxCUzyFnoEsBSI9bRzYdNupRRVoD1FdgfQgsGJNdtFkvPaG+fTXPz9688l4DwVht6W4VWTYgfje6YtzkWYIzvJUsX4nXvHG9wQxunyn4SQ6w1wDuLl5gZIbIxeO6qJPZlUDuQ8rIDlaGvzDUco5SRNK2570AlWD5pNNQw4mvBmpaInoIiGvg5uy/DKyzAX9XCe+p1H01D7gcDsNAXBtfgOi1kN1Z7lIIHF6+vRbqQCBiXWpAg4DgeKD9UJJwaTMPEtHKC0bKF8n0Gf9wyoqmYCbHIWCvPScCheD17j8XadxYbx8JshUNt+AgflnEt4yh529mgpqTos1MG5IA5n0wjx9IZXchaONJ8iyDUgWj445qvNiA8/iP2z0EJ4wV4vu34xM4hTIslyAfNPv3V8sC/UJBjN5nP1SlIPcZ+B/EnPTZ+1ZOtm7TM9++yALsHxzPrl3GKB31mWL5GdWXASZNhOPFf6pqXSMiJfQ9c/D3j8ilEEk7Q+p3eIZUv6QfTXiwra1smXbaKq6lnZltMFrDLuYfnib+Pk9DQWA1JOMCC0UfzyRHM5/DUCz60sDSDGx1BXRxe1W2oyb3g7VZeb12LnEgp1LVsKhze9naelbqJ5FQKnElUitAsQxTXrFaw/1hQB0tWEylKaiONBXzj59FK22kFzvI8teLaJBtMxGxrpBZBzA65aSUxh2YIQ==|920
