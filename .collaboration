@@ -416,7 +416,16 @@
   },
   {
     "ModuleName": "TaskScheduler/校正切れメール送信",
-    "ModuleType": 16
+    "State": 2,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-09-03T17:00:01.0169493+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\校正切れメール送信.json"
+    ]
   },
   {
     "ModuleName": "ApplicationSetting",
