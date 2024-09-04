@@ -351,7 +351,7 @@
                     }
                   }
                 ],
-                "ID": "92b18d11-87c9-449d-9c0b-c9e57f943cdd"
+                "ID": "8c04e957-3648-43f6-adfd-ff2a9cd19002"
               }
             ]
           }
@@ -385,7 +385,7 @@
             "Params": [
               "=BU7"
             ],
-            "ID": "719155534bfd4c8eb75945c68bc1099e"
+            "ID": "789900d85f1c434aa31f54d889686562"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -473,12 +473,26 @@
             }
           },
           "Condition2": {
-            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "ColumnBindingInfo": {
-              "TableName": "trn_insptool_tools",
-              "ColumnName": "calibration_enabled"
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "calibration_enabled"
+              },
+              "Value": "必要",
+              "LeftBracket": 1
             },
-            "Value": "必要"
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "calibration_enabled"
+              },
+              "Value": "別途校正",
+              "RightBracket": 1
+            },
+            "RelationType": 1
           }
         },
         "TopCondition": null,
@@ -1918,4 +1932,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//h/BlgDx0QLzMeiK1nR1hkFzxU5W8eY8vKYS2L5vFX57uQRA3sFrwUZzeycU+NnbUmP/wYdykZtDLfQJcH4WGaLv2t+clFol3dYQZY3pRUfaOdR7knOdxuPbRVEbzx8doOiMQBfFagxkaeyVf1FTav/0x5pPoy/azXGFdBlad+ac5DnBeZaVo58MQ/VIIYsDbSjlcFvFTkvSbUph66NMBVrtHjPaUAAW7NcKzZ6u2HsuIzqriDE3xOL6wcIU7/hWEn77LTmXqPjqtrojel8MOvwrTXNbG1FNvWcqayVF0LZo1F8hEx2D2cBO1NUW1xnVXKEh7zyPXiaqfhgk21HxWkWsHdU56aejPKc/khFx8ouUIYNAgPRkrQymPNu5p/Nql4mZn6sG3irgPfn0nD06gmkFT26Ny3ft53M/CuNoW/GmCQtw57lsB0+/dECevMjoXVWaOJBPJ/wcPyk2mUFzOVFCPODyU08hOxaBdsBoygRlWxZLzbPtAMyTO8mF+iu+heaKmDR+ef4E0imEKOuFlmG/kiaNmhaVijm5pQsuUejmk00FH/DFX4VgNZPHUIV3PueTPuD0Jo/KJuM72uFgUfDUzutyhfnANBOupNRv3Vyp9DV1WJvOMftVx2XWPzvhpVCXrdZgnI3p/OD+P/su8KR73WgsvUCH5GSmJgR7Oo9jqLba5vIylbYnS58gxEgigdowe6o/SiXG4Wxoh507mr3QJdUnjmajvlM/ufxp17c6JmtQOhcbyoy/CKfhR+bDMM4aEX2vz5wQtqKKo0pp1RiAzZftc75DnHbL7lqnHHk/wmkr7K2LUEuk9k358RpnMkAaqgyGmNEycHThFOdDAmrsMv3/j7uBIO1fKiwvnZI+AArMz1v7IKlM8TEaDGn10YA19v0qnLkareR4csMKVhA==|920
+}//NxZkexqyyo+pXUjEXrSAgGMr5HGTzxGcfrT383Dv1XuL6TEgB0SL0b+2nIuCrOMTd16IhU4iuU6Bwsp88w5qR1m3j8I2dEx77Hi5NzuepSJNdC9yGSuEAOi+hZUGhUMZvpD7mhWEWMA5BgbiKXMNIZ7H/Cn4YYpSklb4caUbJqSuALlyKIPiLB5kJh6sPFij+cot5PFYhPb55i16q40/G9qSfJHITM9o4do3DOdHcC+cAymDfyBPiSskDERiOlqWjNVkI70z8zW68YpFvYtd48XQ9L12ryMPZ3pedntIxZNzTtLDEg+ymwJ2DcAx+6gyPTWL3tITqyWDWM9XPkz7a1EKtkok7LlN//d3CmLY8AMm5y8WYIIhSpmLh6DMaDa0eGrBOo2aZ7wzaKajP67LzaIEgIx+07DfovZ3tj5qH0YuTOWg8gZ5i8h6/H3VGe5wl1GN0c0lF3GmCyCF4LV31xrvv3T6yPWdXDNwP44v/AXtx/RpA3AUnOjapw2UZBhe7jYPXP2jNxionoLnk0FvKbzGajEVxj5JW7ZO/sUE4b1/eIFV766ANwpeEHEZ/soj4IL3dmeAa08JGr18H3JPtQWCVG1MITJ9+d8IHOqnX/oBPSzcfQX3v1Re9W8xr4GomSFFoMal37Ztk+jQLwQgrgAm62Gf5ASCH/x38/fTX0bDjF5sgN9Q+64FJ0WIeOksfCJop8J3I/dm4+v2n5lz+zbBEHSwltDqc1YPyKx56vwqSVRFhlnBlyn8XlTWBMrmJFft4gwBQr0HfpwXlfCUkNQMR3WG1waGCJxKeu9twGeRgG8/haRwIoT+m5Xwiyj6ue4wQysXmNMYs44qyGBVPgmz+NPeRUVEVCrGWB8gJKCwcc6z+uqVrMAGHA2WyPkoYREibcRBFpX4Md823KSzRQ==|920
