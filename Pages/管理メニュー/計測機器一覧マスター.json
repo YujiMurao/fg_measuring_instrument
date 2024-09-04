@@ -199,25 +199,25 @@
       },
       "32": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 80.0,
+          "DesignLengthInPixel": 70.0,
           "IsHidden": true
         }
       },
       "33": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 80.0,
+          "DesignLengthInPixel": 70.0,
           "IsHidden": true
         }
       },
       "34": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 70.0,
+          "DesignLengthInPixel": 75.0,
           "IsHidden": true
         }
       },
       "35": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 70.0,
+          "DesignLengthInPixel": 75.0,
           "IsHidden": true
         }
       },
@@ -240,17 +240,6 @@
         }
       },
       "39": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 75.0,
-          "IsHidden": true
-        }
-      },
-      "40": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 75.0
-        }
-      },
-      "41": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 15.0
         }
@@ -279,11 +268,9 @@
       35,
       36,
       37,
-      38,
-      39,
-      40
+      38
     ],
-    "Count": 42,
+    "Count": 40,
     "DefaultSize": 80.0
   },
   "Values": {
@@ -316,12 +303,10 @@
     "1,28": "次回校正日",
     "1,29": "自動通知日",
     "1,30": "備考",
-    "1,31": "校正通知日",
-    "1,32": "校正有効期限",
-    "1,33": "通知日",
-    "1,36": "ファイル",
-    "1,37": "校正要否",
-    "1,38": "0非公開1公開"
+    "1,31": "校正有効期限",
+    "1,34": "ファイル",
+    "1,35": "校正要否",
+    "1,36": "0非公開1公開"
   },
   "AttachInfos": {
     "0,6": {
@@ -446,7 +431,7 @@
                     "NewOtherName": ""
                   }
                 ],
-                "ID": "75dd1b5c-12f4-46cf-92be-a932dd98cc3d"
+                "ID": "28162652-c656-445a-b7a7-756f02cda37e"
               }
             ]
           }
@@ -509,7 +494,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "92dc4279-265d-49d7-b00d-155d28e3e4af"
+                    "ID": "f71e52ac-4def-4ae6-b41e-b64395c4f376"
                   },
                   {
                     "Condition": {
@@ -545,7 +530,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "f906bae4-c51d-4dc9-82bd-ac61921d3046"
+                    "ID": "c505324a-24c0-48ef-911d-a73cf3d8bda9"
                   }
                 ]
               },
@@ -589,7 +574,7 @@
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_tools",
         "RowIndex": 2,
-        "ColumnCount": 42,
+        "ColumnCount": 40,
         "RowCount": 34,
         "FrozenIndex": 7,
         "FrozenLineColor": "Accent 6 0",
@@ -830,52 +815,38 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "kousei_tsuuchibi"
+        "ColumnName": "kouseiyuukoukigenymd"
       }
     },
     "3,32": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "kouseiyuukoukigenymd"
+        "ColumnName": "外観"
       }
     },
     "3,33": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "tsuucibi_ymd"
+        "ColumnName": "その他画像"
       }
     },
     "3,34": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "外観"
+        "ColumnName": "添付ファイル"
       }
     },
     "3,35": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "その他画像"
-      }
-    },
-    "3,36": {
-      "IsCellIgnoreHideInListview": true,
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
-        "ColumnName": "添付ファイル"
-      }
-    },
-    "3,37": {
-      "IsCellIgnoreHideInListview": true,
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
         "ColumnName": "calibration_enabled"
       }
     },
-    "3,38": {
+    "3,36": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -883,7 +854,7 @@
         "ColumnName": "公開"
       }
     },
-    "3,39": {
+    "3,37": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -891,7 +862,7 @@
         "ColumnName": "FGC_LastModifyDate"
       }
     },
-    "3,40": {
+    "3,38": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -899,7 +870,7 @@
         "ColumnName": "FGC_LastModifier"
       }
     },
-    "3,41": {
+    "3,39": {
       "TotalRowSetting": {}
     }
   },
@@ -959,10 +930,8 @@
       "3,28": 4,
       "3,29": 4,
       "3,31": 4,
-      "3,32": 4,
-      "3,33": 4,
-      "3,38": 5,
-      "3,40": 6
+      "3,36": 5,
+      "3,38": 6
     },
     "RowStyles": {
       "4": 7,
@@ -1009,7 +978,7 @@
     }
   },
   "Spans": [
-    "4,0,32,42"
+    "4,0,32,40"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1029,4 +998,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//UBTpW7UrN885/Qp0bJuPONM0QoWkQfhbM/cEbdri9KW7MfvKALVHYOLTHCUHLPz99ij1KkgrrnHxK1H3HCvTKieY/85LCa4NcBopeO7x/+FJHWcSf5XEo35NAcSKe4A0u0ACaIM4k7O9JRGsZxL70Jh9SIUD0OHLo4Y0OvD0YKdq4ZhjjiAXs60Qj0w5eC9htsrkjpODoWkrunTyk9ZO/MeNzNTKzgOO9nQmj9VAgNTKlQUprWoPkiV7xcP/Zl3CF2r7+tpBX162v+7GzsDDv6Zppr7q/WHYZPw1vHQLrQ6VVfrw7EV/hka2gMVKz6Rx0Kw3udo+cRSswiJegmcPKWwOpcSUGSxycytRZXONGKxMF6lUvWL6vXi/w1BuQ3YkSfVagHFbpRXMV8ry3QYMXNMxZVSHn0sKEQABZnvPAGPKeUJXYB78LMqpkQPJXY+Z1B2OhNWXcYASLarpCY+G2T2wm8mm5gRbRazwoN5H6eFd9pB437a7N7S8mr8PT4FiAwKtOP3EZ5/9N3N01LAQX5V3BLK77kpsbtLwU/4adYFhZrLG5UmPiISpFwAZ3dzR4m6TyDzwABxbm83kEpCaEF3xvEP77fny/eNgE6+K+z3/YqrK9R5sBGdxvCe+pC4QB723qSE5vuvCHYbpzTPLcAkt5pc3OEkiH11FtpJ6C3OHR771FGNomljzcYMNTSQ3iVG09mQv08eFAOt9OgDf4AtmQspsZNsjoWTTtpkFJuV1HNpFSeLVTb6X4pd063NpoKUGW1zpRq9iTU2wOy1BjEgBGZIoeOFTaCy7tOaqrGL0kZv0Wo8AHuq+BhbLS7oqD74Wb/d0T96/Kgefaf6B0EBd5NNmjrwJUdRcOgS51tSF0i4e9jxuMgfKhxbxTpHmdKQDkhOHKcAEsTi9jNiU0g==|920
+}//sDl5Qk1jfDROv7hLEN3x9ixUQqjGpnsRL6CnCGzcA4xQgmyKoYxYiGGYIUWdU1yrEeIRcbwcRLbma5EzNWqNW/sa0Yc7QxSWqoR0YDC0Nxrq3dD+mhjELG7Qxhw4xylZU4qPxpTxjCKd0QGGsauoYjWdFWiXD8K9r5WEubHVvz0TAplJinzmjf2PnreNC5+vzwf12d0UXoPH2XVLuEvmgX+PrToZXn49ahDl8OGua8l8xf2mk8fnXJ15fH4AeUtHkI1xO1AkT5Ng/gOz7dLRD+CJluxsyUFB+0S/7cFSLpnNd9a2V7PoAegxNbQy1jfcLHfxk/2/VdTQB2Fq+KACm6k7Y+SMD4fIS+GsO4x/HpOqhb/4gNTCmbH67iRSwxAfqSo5W0xT3gFV5dtg+BMLzUY0pETf1deIcazKacqhHqUU4kg844UUP4rT16ha9Tx5j8ChMm4HmBeQ2NhhdGZlTfw1ADq+onamk+m/9go4sImAk0VHZwhbnSy02re4e383ta5aXpFHAQjzuSnU3HK6zyIgk/nGpN92LWqFUGDmhkKAbQzuwV7n+8xXzoCH76dCJUP4IrGdJVVneb8TKsyVxieoZh9kHHJ1v70f3I0cAJkHUThuWG67yGsTOs0sG76UCp/UzkxoktfZCmSZysu7XKncEDqOLbRdJrptvygoaFJQ4ujs7d/yCnNAiv0vOPfsK8mnWGCcaVRnfGgd//76/xUT3+VmnL/8YLFOTAHG4aYj9euDjsADqhlUMAVlJF+U+AB+oJdk2baXSDve9qgKWTFdjyah0h5jobm7aH1ebRwZ9kyRgFKIqoSxCuYbWEWuk937ebb8m26JWAyIPtPDw4IW8r5XfzsRra/L5wG6dpjpZo1JIJijsjGfDAtN5HfrQ+QgyzSk39TECE9CxQJ+Hw==|920
