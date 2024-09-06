@@ -379,7 +379,7 @@
               "=I2",
               "=Q2"
             ],
-            "ID": "b3da2e97756e4de19c3353d5ca37f858"
+            "ID": "f741f8a73538492dba448a94b1b5443c"
           }
         ]
       }
@@ -395,7 +395,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=定期校正リスト!BS4"
             },
-            "ID": "bf53044b65d44134aa51409f9e3377f1"
+            "ID": "339b5880fa1c4e78836df97e53ce939e"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -420,7 +420,7 @@
                     "MessageFormula": "定期校正機器の校正要否がすべて設定されいません。\r\nすべて”必要”又は”不要”を設定してください。"
                   }
                 ],
-                "ID": "fedb3511-6421-4f2f-8317-9c96c3b55199"
+                "ID": "d0430154-b7a1-4eaa-b345-38fd3aacfed8"
               },
               {
                 "CommandList": [
@@ -447,7 +447,7 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "e3bd49456d0047feb90d06435a4b5a6c"
+                            "ID": "46c550df26794a89b3d1289ecfc45c22"
                           },
                           {
                             "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
@@ -460,16 +460,16 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "ef048d314643485e89f17382e37ecdf4",
+                            "ID": "f25582315dc94dc4b8833f3a44674127",
                             "Disabled": true
                           }
                         ],
-                        "ID": "b2b29daa-eac9-4d9d-bea8-fa632807d631"
+                        "ID": "df9aaf21-5162-411c-9805-7140eded49c4"
                       }
                     ]
                   }
                 ],
-                "ID": "0887c341-d2db-4358-83e8-869d5379a91b"
+                "ID": "0e8093c7-cbf5-47f9-ab18-ea271f908e6d"
               }
             ]
           },
@@ -514,7 +514,7 @@
                     }
                   }
                 ],
-                "ID": "289b4b6b-9e75-4edc-956b-c85ef722327e"
+                "ID": "60bb8850-aed8-42b2-a7e6-0fa79714a59e"
               }
             ]
           }
@@ -636,7 +636,7 @@
             "Params": [
               "=BW7"
             ],
-            "ID": "23972f250a8a4be39188a8959b0c0cfc"
+            "ID": "2f8326d561fb4ed68a1c1fe3aac5a39d"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -3466,6 +3466,7 @@
     "3,70,2,3",
     "6,65,1,3",
     "6,68,1,4",
+    "1,16,1,6",
     "5,1,1,2",
     "5,3,1,4",
     "5,7,1,3",
@@ -3481,12 +3482,29 @@
     "5,57,1,3",
     "5,60,1,5",
     "5,65,1,3",
-    "5,68,1,4",
-    "1,16,1,6"
+    "5,68,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "使用可リスト",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+        "ListViewName": "リストビュー1",
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "ctrl_no"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "ID": "306da02fd1684156ab88546f271af3bd"
+      }
+    ],
     "AuthorizeInfo": {
       "VisitMode": 6,
       "AllowVisitedRoles": [
@@ -3502,4 +3520,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//vwCW3Dz9TzEDrcwbE2tItzgLRejCZynxEQdzxCnJYe5nq6BNp/raBw48kiPOkQWVslMMhVysBoYuvxI2rVk6RzM6Phk6moRkVfpRf2512hxBHi4B0VyWyE17c6xYr0MgHvCLsKQsZRWmOwh7t6s5mbKvb81Gx5j2auGVfM5EBfqvHSpWvgfxbaV+YlmXFtLorOc5PWgzd98bjL8mtxICOmKRxFGKKX8NrPzj1L/UQuZ21k22Tjb8ipEzjc4583p7a7bF912UWIXhEEj9oCG6Ax8BPMIaVJvad8TbV61Az+EBRdvAQQMFOa9YrvXj/xXUIVZE6gl4P99IVzoQEHU9r8lbJcbFM7IbclQTbEUoynjqW96PW5Ks0MNeIJi1w8Z3qksNBEnDPpU52lQPxqR0EcX+rkzYG0cKdVaUffoMl1paKYufDvWIIesmXIDnSrvVsHKssIaO56jka0HmmeASQ6HqBfjgCcgKM9A/iCrsSdMwmOILFafrxG6M9fcFRh+9nCX7GwLo8Y3m8ix7u1m+Hy89iE059tsWyiFMnonc39LKOk3q0ShGV9W7CQv8pvri/Zu7340Goi7dee/pO5Aks3Hq9PaY+ryRbMZPq1nGG0PP4rQUUzn7+idSeWte68rfrKlLTzr+k+zLMCY9NfGFofLHKAA8+Z0FeeuCXqvE3ngigMHfam2Vsvxaupz1cF9fYLWZeBXO+6iFl7KKJdxdZCoG5Nom0vCwpK3UKM+kZG2/li41LHwx8lEeTYPwfaVOGnbVYAV3P26+vlzW2O8qAnztNJjvO9YFUngrJJqqwG8ObhJLmJhgGziH7gyfHphF52uwD5t49KdmygZJpykP8pcauZ9A1GZm3oMZ/w8yIZf0iYF8YTvN3r7Uw/6VYcODoDt137BQNIYumZSm6Y1YWw==|920
+}//qaeCqpqbSgdzzsYMLd6RrWHUseaPU6tzxT9eS9bhT4iiebG/YH9+OadHMdMqh9psdTg7Fq+taOnnYXDTGfLn9Rg9k7SuDb8s44J/HBsp2CMCv8lQi77q0cNVUfSEVeXNXevo0/aC8VlJbGfTE0TR0VJbdwUin3udi881RSryZZa1PjXm4kSfL+ql9Upz4RL0uk7Bj1uTS70EHcDt/3UqxYhp3FWcrnP/z/xjEn1G+PbVRVVOdSkwpWz0DxoSu7wLAj283i7lMe54BhCfO/WNdOjENJpKTqRWjuUSYc4PtqtbT68OYcklHLQ3Yst48z9wLhX59tHJ9YRVGI3ovrWy/KHHZFe+sX2XWSJb4+YaxqaQKOelCZnNge6dO7HMY2jWBaVJ3umFZEudY1ggqIh0nkUIcmR5Cmfgx17yTbzbvvn1OJwoAfJ/9W6Tflc4QdZ2VOpbinzx2Tqzu6GBuqY3EwzqKtWuNene5RGfRHifW87nSDv9re+H8sXJIPDhPo6ThPFeR+DwHedGPcX/5Js0z7KuMi0kDOMvKwPnxyP8E+WuhHJMfEo5pbdne8QQ/Lrtk9YpzmRb0vPMFd+u7m+LMV88czHORDr0AomQkOTXFLnD6wpDAv0Uy0i8FPj/he5uZ6KE8CliU4L/MGkXgtFOMhGmhpg03gZpBSolcJVt5MbIosa5fa7pzEbdKS7Cz6X9QzckFs2mzTRSh6Yfdov916HZ4sner7UiHVr1wTDhmdOlpBX7SdC10occg9WZIlPvweb2o8ZlbCrrmRwxvWvlJybb1sfLwFoPLntvBW8zo4r65PHFF8FHHDYn3RdPFTAxHvFBQpNAhGvw5Dwktbr6pmrxuNnz/T7qvck4f2YP0UaYQE6l80KqpkLeuqBe3QPzrkzkhigzg0bscGbH3vwapw==|920
