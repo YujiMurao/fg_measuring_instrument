@@ -395,7 +395,16 @@
   },
   {
     "ModuleName": "PCPage/定期校正リスト不要(部署)",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-09-06T15:25:14.0537832+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\計測機器一覧(担当者向け)\\定期校正リスト不要(部署).json"
+    ]
   },
   {
     "ModuleName": "PCPage/社外校正対象リスト",
