@@ -111,26 +111,14 @@
           "DesignLengthInPixel": 20.0
         }
       },
-      "36": {
+      "38": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
-        }
-      },
-      "51": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "52": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
         }
       },
       "53": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
+          "DesignLengthInPixel": 20.0
         }
       },
       "54": {
@@ -151,13 +139,13 @@
           "IsHidden": true
         }
       },
-      "60": {
+      "57": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "IsHidden": true
         }
       },
-      "61": {
+      "58": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "IsHidden": true
@@ -199,13 +187,13 @@
           "IsHidden": true
         }
       },
-      "82": {
+      "68": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "IsHidden": true
         }
       },
-      "83": {
+      "69": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "IsHidden": true
@@ -271,21 +259,31 @@
           "IsHidden": true
         }
       },
+      "94": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
       "95": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "IsHidden": true
         }
       },
-      "96": {
+      "97": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "98": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
       }
     },
     "InLogicalVisibleIndexes": [
-      52,
-      53,
       54,
       55,
       56,
@@ -327,24 +325,27 @@
       92,
       93,
       94,
-      95
+      95,
+      96,
+      97
     ],
-    "Count": 97
+    "Count": 99
   },
   "Values": {
     "0,0": "定期校正・修理再構成・修理・廃棄の履歴",
     "0,20": "→",
-    "0,31": "import",
-    "0,35": "export",
+    "0,33": "import",
+    "0,37": "export",
     "1,3": "計測機器ID",
     "1,6": "管理番号",
     "1,10": "使用可否",
-    "1,32": "業者名・作業者名",
-    "1,45": "承認者",
-    "1,49": "判定旧データ",
-    "1,68": "添付ファイル",
-    "1,73": "記録文書番号",
-    "1,76": "記録文書リンク"
+    "1,22": "概要",
+    "1,34": "業者名・作業者名",
+    "1,47": "承認者",
+    "1,51": "判定旧データ",
+    "1,70": "添付ファイル",
+    "1,75": "記録文書番号",
+    "1,78": "記録文書リンク"
   },
   "AttachInfos": {
     "0,15": {
@@ -431,7 +432,7 @@
         "ColumnName": "id_tool"
       }
     },
-    "0,31": {
+    "0,33": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -482,21 +483,21 @@
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AG3"
+                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AI3"
                         },
                         "ColumnName": "業者名"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AT3"
+                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AV3"
                         },
                         "ColumnName": "承認者"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AX3"
+                          "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AZ3"
                         },
                         "ColumnName": "判定"
                       }
@@ -505,7 +506,7 @@
                     "SuccessMessage": "Excelファイルのインポートが正常に完了しました。"
                   }
                 ],
-                "ID": "19d42cf8-1cf4-4b3d-83ff-539a2d29bb58"
+                "ID": "3e9a28e4-2fdd-4755-a802-f8597613674e"
               }
             ]
           }
@@ -520,7 +521,7 @@
         }
       }
     },
-    "0,35": {
+    "0,37": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -547,7 +548,7 @@
                     }
                   }
                 ],
-                "ID": "15b3052d-a996-4ed6-8271-5cab8022d079"
+                "ID": "c2f40a98-de26-4ca7-9ca9-c1bc188cf0a1"
               }
             ]
           }
@@ -585,7 +586,7 @@
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_calibration_history",
         "RowIndex": 1,
-        "ColumnCount": 97,
+        "ColumnCount": 99,
         "RowCount": 33,
         "FrozenIndex": 4,
         "FrozenLineColor": "Accent 6 0",
@@ -664,20 +665,28 @@
       }
     },
     "2,22": {
+      "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "内容"
       }
     },
-    "2,32": {
+    "2,27": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "備考"
+      }
+    },
+    "2,34": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "業者名"
       }
     },
-    "2,41": {
+    "2,43": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -685,7 +694,7 @@
         "ColumnName": "申請者"
       }
     },
-    "2,45": {
+    "2,47": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -693,7 +702,7 @@
         "ColumnName": "承認者"
       }
     },
-    "2,49": {
+    "2,51": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -701,7 +710,7 @@
         "ColumnName": "判定"
       }
     },
-    "2,53": {
+    "2,55": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -713,7 +722,7 @@
         }
       }
     },
-    "2,57": {
+    "2,59": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -721,7 +730,7 @@
         "ColumnName": "FGC_AssignTo"
       }
     },
-    "2,60": {
+    "2,62": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -729,7 +738,7 @@
         "ColumnName": "FGC_State"
       }
     },
-    "2,64": {
+    "2,66": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
@@ -740,7 +749,7 @@
         }
       }
     },
-    "2,68": {
+    "2,70": {
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "UploadLimit": {
@@ -754,14 +763,14 @@
         "ColumnName": "attachment"
       }
     },
-    "2,73": {
+    "2,75": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク"
       }
     },
-    "2,76": {
+    "2,78": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "ClickMode": 1
@@ -777,14 +786,14 @@
         }
       }
     },
-    "2,82": {
+    "2,84": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "FGC_CreateDate"
       }
     },
-    "2,87": {
+    "2,89": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
@@ -795,7 +804,7 @@
         }
       }
     },
-    "2,91": {
+    "2,93": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -803,7 +812,7 @@
         "ColumnName": "FGC_LastModifyDate"
       }
     },
-    "2,96": {
+    "2,98": {
       "IsCellIgnoreHideInListview": true
     }
   },
@@ -1069,17 +1078,15 @@
       "0,15": 4,
       "0,18": 5,
       "0,27": 6,
-      "0,31": 7,
-      "0,35": 7,
-      "0,39": 8,
-      "0,40": 9,
-      "0,41": 10,
-      "0,42": 10,
+      "0,33": 7,
+      "0,37": 7,
+      "0,41": 8,
+      "0,42": 9,
       "0,43": 10,
       "0,44": 10,
-      "0,51": 11,
-      "0,52": 12,
-      "0,53": 12,
+      "0,45": 10,
+      "0,46": 10,
+      "0,53": 11,
       "0,54": 12,
       "0,55": 12,
       "0,56": 12,
@@ -1119,10 +1126,12 @@
       "0,90": 12,
       "0,91": 12,
       "0,92": 12,
-      "0,93": 13,
-      "0,94": 13,
-      "0,95": 10,
-      "0,96": 10,
+      "0,93": 12,
+      "0,94": 12,
+      "0,95": 13,
+      "0,96": 13,
+      "0,97": 10,
+      "0,98": 10,
       "1,0": 14,
       "1,1": 15,
       "1,2": 15,
@@ -1138,20 +1147,20 @@
       "2,13": 22,
       "2,18": 20,
       "2,22": 21,
-      "2,32": 23,
-      "2,41": 24,
-      "2,45": 20,
-      "2,49": 20,
-      "2,53": 20,
-      "2,57": 20,
-      "2,60": 20,
-      "2,64": 20,
-      "2,68": 25,
-      "2,73": 20,
-      "2,76": 26,
-      "2,82": 22,
-      "2,87": 20,
-      "2,91": 22,
+      "2,34": 23,
+      "2,43": 24,
+      "2,47": 20,
+      "2,51": 20,
+      "2,55": 20,
+      "2,59": 20,
+      "2,62": 20,
+      "2,66": 20,
+      "2,70": 25,
+      "2,75": 20,
+      "2,78": 26,
+      "2,84": 22,
+      "2,89": 20,
+      "2,93": 22,
       "3,0": 27,
       "3,1": 27,
       "3,2": 27,
@@ -1200,6 +1209,8 @@
       "3,45": 27,
       "3,46": 27,
       "3,47": 27,
+      "3,48": 27,
+      "3,49": 27,
       "4,0": 27,
       "4,1": 27,
       "4,2": 27,
@@ -1248,6 +1259,8 @@
       "4,45": 27,
       "4,46": 27,
       "4,47": 27,
+      "4,48": 27,
+      "4,49": 27,
       "5,0": 27,
       "5,1": 27,
       "5,2": 27,
@@ -1296,6 +1309,8 @@
       "5,45": 27,
       "5,46": 27,
       "5,47": 27,
+      "5,48": 27,
+      "5,49": 27,
       "6,0": 27,
       "6,1": 27,
       "6,2": 27,
@@ -1344,6 +1359,8 @@
       "6,45": 27,
       "6,46": 27,
       "6,47": 27,
+      "6,48": 27,
+      "6,49": 27,
       "7,0": 27,
       "7,1": 27,
       "7,2": 27,
@@ -1392,6 +1409,8 @@
       "7,45": 27,
       "7,46": 27,
       "7,47": 27,
+      "7,48": 27,
+      "7,49": 27,
       "8,0": 27,
       "8,1": 27,
       "8,2": 27,
@@ -1440,6 +1459,8 @@
       "8,45": 27,
       "8,46": 27,
       "8,47": 27,
+      "8,48": 27,
+      "8,49": 27,
       "9,0": 27,
       "9,1": 27,
       "9,2": 27,
@@ -1488,6 +1509,8 @@
       "9,45": 27,
       "9,46": 27,
       "9,47": 27,
+      "9,48": 27,
+      "9,49": 27,
       "10,0": 27,
       "10,1": 27,
       "10,2": 27,
@@ -1536,6 +1559,8 @@
       "10,45": 27,
       "10,46": 27,
       "10,47": 27,
+      "10,48": 27,
+      "10,49": 27,
       "11,0": 27,
       "11,1": 27,
       "11,2": 27,
@@ -1584,6 +1609,8 @@
       "11,45": 27,
       "11,46": 27,
       "11,47": 27,
+      "11,48": 27,
+      "11,49": 27,
       "12,0": 27,
       "12,1": 27,
       "12,2": 27,
@@ -1632,6 +1659,8 @@
       "12,45": 27,
       "12,46": 27,
       "12,47": 27,
+      "12,48": 27,
+      "12,49": 27,
       "24,0": 27,
       "24,1": 27,
       "24,2": 27,
@@ -1683,6 +1712,8 @@
       "24,48": 27,
       "24,49": 27,
       "24,50": 27,
+      "24,51": 27,
+      "24,52": 27,
       "25,0": 27,
       "25,1": 27,
       "25,2": 27,
@@ -1734,6 +1765,8 @@
       "25,48": 27,
       "25,49": 27,
       "25,50": 27,
+      "25,51": 27,
+      "25,52": 27,
       "26,0": 27,
       "26,1": 27,
       "26,2": 27,
@@ -1785,6 +1818,8 @@
       "26,48": 27,
       "26,49": 27,
       "26,50": 27,
+      "26,51": 27,
+      "26,52": 27,
       "27,0": 27,
       "27,1": 27,
       "27,2": 27,
@@ -1836,6 +1871,8 @@
       "27,48": 27,
       "27,49": 27,
       "27,50": 27,
+      "27,51": 27,
+      "27,52": 27,
       "28,0": 27,
       "28,1": 27,
       "28,2": 27,
@@ -1887,6 +1924,8 @@
       "28,48": 27,
       "28,49": 27,
       "28,50": 27,
+      "28,51": 27,
+      "28,52": 27,
       "29,0": 27,
       "29,1": 27,
       "29,2": 27,
@@ -1938,6 +1977,8 @@
       "29,48": 27,
       "29,49": 27,
       "29,50": 27,
+      "29,51": 27,
+      "29,52": 27,
       "30,0": 27,
       "30,1": 27,
       "30,2": 27,
@@ -1989,6 +2030,8 @@
       "30,48": 27,
       "30,49": 27,
       "30,50": 27,
+      "30,51": 27,
+      "30,52": 27,
       "31,0": 27,
       "31,1": 27,
       "31,2": 27,
@@ -2040,6 +2083,8 @@
       "31,48": 27,
       "31,49": 27,
       "31,50": 27,
+      "31,51": 27,
+      "31,52": 27,
       "32,0": 27,
       "32,1": 27,
       "32,2": 27,
@@ -2091,6 +2136,8 @@
       "32,48": 27,
       "32,49": 27,
       "32,50": 27,
+      "32,51": 27,
+      "32,52": 27,
       "33,0": 27,
       "33,1": 27,
       "33,2": 27,
@@ -2141,7 +2188,9 @@
       "33,47": 27,
       "33,48": 27,
       "33,49": 27,
-      "33,50": 27
+      "33,50": 27,
+      "33,51": 27,
+      "33,52": 27
     },
     "RowStyles": {
       "1": 21,
@@ -2190,49 +2239,51 @@
   "Spans": [
     "2,0,1,3",
     "2,3,1,3",
-    "2,45,1,4",
-    "2,49,1,4",
-    "2,53,1,4",
-    "2,60,1,4",
-    "2,82,1,5",
+    "2,47,1,4",
+    "2,51,1,4",
+    "2,55,1,4",
+    "2,62,1,4",
+    "2,84,1,5",
     "2,13,1,5",
     "2,18,1,4",
-    "2,22,1,10",
-    "2,32,1,9",
+    "2,34,1,9",
     "2,6,1,4",
-    "2,87,1,4",
-    "2,64,1,4",
-    "0,31,1,4",
+    "2,89,1,4",
+    "2,66,1,4",
+    "0,33,1,4",
     "2,10,1,3",
-    "2,68,1,5",
-    "2,73,1,3",
-    "2,76,1,6",
-    "2,41,1,4",
-    "3,0,31,97",
-    "2,91,1,5",
-    "0,35,1,4",
-    "2,57,1,3",
+    "2,70,1,5",
+    "2,75,1,3",
+    "2,78,1,6",
+    "2,43,1,4",
+    "3,0,31,99",
+    "2,93,1,5",
+    "0,37,1,4",
+    "2,59,1,3",
     "1,0,1,3",
     "1,3,1,3",
     "1,6,1,4",
     "1,10,1,3",
     "1,13,1,5",
     "1,18,1,4",
-    "1,22,1,10",
-    "1,32,1,9",
-    "1,41,1,4",
-    "1,45,1,4",
-    "1,49,1,4",
-    "1,53,1,4",
-    "1,57,1,3",
-    "1,60,1,4",
-    "1,64,1,4",
-    "1,68,1,5",
-    "1,73,1,3",
-    "1,76,1,6",
-    "1,82,1,5",
-    "1,87,1,4",
-    "1,91,1,5"
+    "1,34,1,9",
+    "1,43,1,4",
+    "1,47,1,4",
+    "1,51,1,4",
+    "1,55,1,4",
+    "1,59,1,3",
+    "1,62,1,4",
+    "1,66,1,4",
+    "1,70,1,5",
+    "1,75,1,3",
+    "1,78,1,6",
+    "1,84,1,5",
+    "1,89,1,4",
+    "1,93,1,5",
+    "2,22,1,5",
+    "1,22,1,5",
+    "2,27,1,7",
+    "1,27,1,7"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2252,4 +2303,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//SPMCy/OIvRhDyJvygxJ6qt5xaZ2Dvsu2l2ObSrW81nVdGFpSo5GRXBqccQXi/QCtOWMnoQKrHyem9KkdpNcTPMSv6XQFatOxb3o3wuOY7H3EfDpDs57ZkRU4YwW3ZdrKMhli77fTaPqhA1BNqSUCaOnTdabuNC1fHDBJKoh3aNpPyW7Z9FlkEPWzP06UAne8UEfEGzWLFISV9WY1vFtw3BpRCkFQMoGWTJOUka0T1u8witLzMHSUBfdec4NYQWT2RcTW7cKGfzhewGgkxKZKrTtUXDVUtE1QiUctP2JjwgWFeqa4ve0mG1bOvEChMfafYgPFCqYuX3Bs8ywBCvd/3e+dSnbNWdBfOAh83MyvwbN+UGjw4UjyMP6um131HnKAnloojzREojLSeXEnzJXa0NgqERhJRFhf2WXGykiQU5Rwxqln1wYDbO5uuzxaxWVZujUkBgM1MpfR4gRK+/ACmei61AoJ4rXHsHbpvY4y+a9Edr11p2os0jRh0czTtbkL3O6kx//Q42G1U4gQXPWcjn0CeKmhSFkJ4snycppFeMyh5Ce+XsVS7JnOkXY+qzJ1bKKZOHe83GT5zDrnOLTmOfsi+zHgHnq7Xb7pAg645FLu5xQ92CCQnSUlynv0ymTPL9E6RJudJWdVqKv+OP7Dtl1i61Ao6uzCvUsJI1NULoseO4uEApJc9htssUHZ5YAYd5do9eSBoHlt71dc97GYZo5ACD4KZB/MnvPGYi7C0saPkcwWjuRAA5zm4jf5Y5knvh+dwl6XdQkyw7RuCq3Wc949YcOrS59gfkM/WqTQuwW/yJORNGcrWl+7zEakPG8mjjYJBwibc657YRzWE7343mPHBFUFr8S3E8cUgAmWyUamBMdSDi5aM4UwoEla0UDr9i9j6oKtrs5/VUckhzJGbA==|920
+}//16cUh9oXVGvS/6eOpC59/zrc1LOcQtTPjkVXAwhu/tV1ulfn1INV2IBzEHbnWwWuMoRfclURT9/oPT8hbb7V6WYCrd5N9kMSDCRkewAW0CGWH+AlvqG9snbe4GYhoUeHolMU9owYD2b9BywkADDToVJTDeXVYQzx0/7bKVq5y8JIc+FQbi7wIcEr3Hwq9ShdUZnzGa6FP/2ZDHt1gxzOFUxDtTrWs/4NyXQfOK2tugWYygbk/i7QOLxrmmozyMswcJ/PGu2j4J2kDcIETn/oqutqA6e1ZW1v3c9+1UQxIb56rNqMBTx568ptkdsqV/YxGGUj7g8mjbu5mHfnIjMbpL7E60dvMbTwdOw+9mCCUA9F4kAKTp7ix+6mLNkkQ8RAQRrGZ1JQeEohINXUJewkemQgPoqxKp2gfJ8VYGYcu4/hUFAIb2G73aEueAk0UdPHy+o83Jjlll8LkFlKknAguwwcDacwsYIOwgC/ddn4ATI9WwH/65gdi1DgJlcQptRhZSyK7mK2hqNi9WAtfd5VLVtCke9PiV5co5nhPtcqymAQNt0CAodlV1a56/QLgR1q/5YFQJ3blU4xEAR2r5oPu7zDkJRAK2dsO9IG88PPIY36rHkK/Sg9uteV1iEXEr4bSvAmDutrpN9ep9ab9JYOilZb/9g9OUC1VbmJ6ks2IpbloV1f8l15jKlc3wDw/BDQoU2gBjnogqcTU2Pgdy/hCHy94XoffrrvTSmr6ZNsGsPAA2tWyco3NtvBf5rvMJLK54SB6Ulv/wTyxMTvcxH94d654vrDRE+7HwVPKiJPwZ6WPa6VYkrb0B0bcF76Hd+U1aUeosGeYffwo6jIpZJDaLhQsInm95UT6Dy9nDwYhKJN3qjhWLmoVKDHPXT3BJuNedYgBkJARN/1XWqFGlUy+Q==|920
