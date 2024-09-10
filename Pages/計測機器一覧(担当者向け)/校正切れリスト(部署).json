@@ -352,7 +352,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "='校正切れリスト(部署)'!BS4"
             },
-            "ID": "46f566189e174ac98d55b21e7130b48c"
+            "ID": "9c24a7eeab794dd08641677385be1b37"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -377,7 +377,7 @@
                     "MessageFormula": "定期校正機器の校正要否がすべて設定されいません。\r\nすべて”必要”又は”不要”を設定してください。"
                   }
                 ],
-                "ID": "7d50e525-15b2-4013-bd2e-d0f7e33dd4ab"
+                "ID": "a858b203-31df-4f66-862f-e74092b703dc"
               },
               {
                 "CommandList": [
@@ -396,37 +396,37 @@
                           {
                             "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
                             "From": "equipment@rorze.com",
-                            "Subject": "校正切れリスト要否登録完了のご連絡",
-                            "Content": "品質保証課　担当者様\r\n\r\n校正切れ要否判定の登録が終わりましたので通知します。\r\n担当者　[%CurrentUser.FullName%]（[%CurrentUser.Role%]）",
+                            "Subject": "使用禁止リスト要否登録完了のご連絡",
+                            "Content": "品質保証課　担当者様\r\n\r\n定期校正要否判定の登録が終わりましたので通知します。\r\n担当者　[%CurrentUser.FullName%]（[%CurrentUser.Role%]）",
                             "EnhancedRecipient": {
                               "CommonValue": "kai.rie@rorze.com"
                             },
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "a4050408e9124676a8f00f6c4b0c75e7",
+                            "ID": "fde77c199a87487cb4eb8eec8dc6628f",
                             "Disabled": true
                           },
                           {
                             "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
                             "From": "equipment@rorze.com",
-                            "Subject": "校正切れリスト要否登録完了のご連絡",
-                            "Content": "品質保証課　担当者様\r\n\r\n校正切れ要否判定の登録が終わりましたので通知します。\r\n担当者　[%CurrentUser.FullName%]（[%CurrentUser.Role%]）",
+                            "Subject": "使用禁止リスト要否登録完了のご連絡",
+                            "Content": "品質保証課　担当者様\r\n\r\n定期校正要否判定の登録が終わりましたので通知します。\r\n担当者　[%CurrentUser.FullName%]（[%CurrentUser.Role%]）",
                             "EnhancedRecipient": {
                               "CommonValue": "qa-kousei@rorze.com"
                             },
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "47084a58a8874c00b9879669e8899f54"
+                            "ID": "f25f3d155889495480acb09139bb3e5f"
                           }
                         ],
-                        "ID": "b3d0d3ba-c7d2-4df1-9b3b-1f3cd0ee5dde"
+                        "ID": "dde2dd22-ac14-4b20-9bb3-0c03bc498694"
                       }
                     ]
                   }
                 ],
-                "ID": "18fe4435-9083-4928-b248-5821d75f3b41"
+                "ID": "d70cc8bc-2c42-495d-a451-ee0172a4c93a"
               }
             ]
           },
@@ -470,7 +470,7 @@
                     }
                   }
                 ],
-                "ID": "2e0a6d29-e4d2-4aff-8143-520fd3aa6ca8"
+                "ID": "fb4dad93-5534-49df-8dab-0b85d4b96665"
               }
             ]
           }
@@ -592,7 +592,7 @@
             "Params": [
               "=BU7"
             ],
-            "ID": "1d6fd7c53df44594b2025c3314618a9d"
+            "ID": "6cee339cca734c17a58ff35ed297104a"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -2684,7 +2684,7 @@
             }
           ]
         },
-        "ID": "d3ce09aca44340f8a83abf5bdb147998"
+        "ID": "6600644ff9e747969014147214f7004b"
       }
     ],
     "AuthorizeInfo": {
@@ -2702,4 +2702,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//JCfCYjHbzAtuLSdJLzUkzmWR1PDeTSiis5uZH58H3/1dok3TlUzCI347w1DJQIzCksdYuI/xEwr5oIaN+m88mJLiNcVbk0Ex8JDtUCZt9B8F3lzQ+yMsr6S4e5jQOk0cBT8jJQ33tyJuKCJKdnEjIpe+TwdUn5TDMwDl46XoE8yXOdkqfAAQ3+LCQIj4GrnYzaJcHkJejBKQ8O67YQm/4i9JfpiZXqMYzmKPXbYgPPoOn1kXY6cXFtBBpF1/A2oImGvFpwDa7x4Msly4XhaC+Iu9LAwlfg0rND7whhi9Qgn3XIRXf0JWtE0FJ9CRTJ2eMmnl5JXenM5kYw/3lFIGhvWfN+7d8cJPOTDHum8pwoVhmHVUodc83AnPxi7yISjunJNRYcEapsMW6O7rDiBuuhfFcqyDYYPRO7iM+c+CRY3BaASXxyBWKwWifB6hkGppAtwGOJGgGUWYOdNt6JDJeUPO6I//ZhiewG2v0g57nQUYfPYEyrYnVH4DYJBBYPHCD3X+RQaLlIGSZh08DbFAfKmTGr57+fxcriA/ErEKMZyl6HUn89Gli8MbtfI2uii98AXp2bibSRtI9E/lMfgD6uWwosv17M7xXsGp4b+MWt93t8W3lXW9JE/0ELbiuZziqv06z7xYUBZYK217HMZvW6jMI1F379WYP6DJ3IFUCiyLCzNtdJVrbR7Df80Mnw+u8TcvzQWMrkvkpgd0AMsaiWA6m5xIrwRc6yOGTd5fZtjg1yN2Gf7tmh+5xhqmF/vM7znw8XKVP06R61Q6RfvCQt4ujmWUkOsFjej/DDc1Nq7UC+NX5NfCrBWHVDC9axLRpSu6ifzJUa9AIXnhOw4LkNH848ILBu5OOxQxAkw6Lv88jo8CJa8Oo5obkIUjKfMdYAhTvBu4+K7S1M8Dd2rFWQ==|920
+}//TLypx5CAcJXgGyjIJX117AZymyuPYCRAUpV6rG69LC476FOyZGtNjh2z+MHjytGvbcUegQMXUzgeds+jJixmz0Q/KsfZPiWk7o76coz6XnXagJXrqztaZVz5Rt7txK5j9oIE12zFcDbrvFV/HZCmpJdYq2tn7Rc/fXf/SZfZhpYxBwmxyw2PQAanoNI/n5vnrTpml5fg3/TJa4KnbEElXBbgqPzeoY04BCVZUdBOgqCgqPq77/3qdcI/lCzz8sF/1MUmi5NLFuwfYViryszBOnLmXySbAK/YtjfPQalfbiG4uOqjT/HhHGYMQLCGSj5zZDzY4YL8jjdMEVyKpcdwNzpTeqTdsmMCydIKGr2PXla/weq//pH/zwRh9BaDDPEwq1u6Aj3waME1bluU76ltst46JS5Tb+3EojyUQNPWXKfH/677uwLtPnwV2rRnd/Yg3/ur9J6230RDoBVGa/bW+N2YPoCG5ND9Za3Hmb8tmHsixAptzZVUH51WcibH9rmXzHrqTYGFCCvP8OR1seByQEJySCV5rfMPhqRvsvJMCDQ50GoSK1JhVue4MEqF/v+zFS/rQgULRkO1uSHvKwI4OJnBggg/D72M/OVpohes7OE6LL26qCTVreSDODaDeDaN7EW5FoIMoIyi6glRuDPBttI1MMJTbq6jYlmAK4mmswRZ60at16+XZeQC/2vJtoD7iyVm79Ca+B2OFB15cOsh2waG5MYrhBO2WRSqPxcc6BKv8XFIUQvI5r0VM4APgPrYBAQ10XXmUMUu1uJKRYInTidCqSrSgVkSJnrz4SCx4TMu62xKOr4fK/aA6g47kbD1zSfzlOXdzAOOdEeBqeSa/HL5wUnqGQrKb5mMGbBmQWqMjWL9Rkz6PB+hUwJSgbl5rvKN6qxmg4f12RGOtetCyQ==|920
