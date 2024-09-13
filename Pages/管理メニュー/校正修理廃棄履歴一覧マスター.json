@@ -339,7 +339,7 @@
     "1,3": "計測機器ID",
     "1,6": "管理番号",
     "1,10": "使用可否",
-    "1,22": "概要",
+    "1,22": "摘要",
     "1,34": "業者名・作業者名",
     "1,47": "承認者",
     "1,51": "判定旧データ",
@@ -506,7 +506,7 @@
                     "SuccessMessage": "Excelファイルのインポートが正常に完了しました。"
                   }
                 ],
-                "ID": "3e9a28e4-2fdd-4755-a802-f8597613674e"
+                "ID": "fcf3c522-b80d-49ae-bc57-37dcb34a86fe"
               }
             ]
           }
@@ -548,7 +548,7 @@
                     }
                   }
                 ],
-                "ID": "c2f40a98-de26-4ca7-9ca9-c1bc188cf0a1"
+                "ID": "8cd3b0bf-3feb-425e-a8a0-346ec6409f10"
               }
             ]
           }
@@ -2260,12 +2260,16 @@
     "2,93,1,5",
     "0,37,1,4",
     "2,59,1,3",
+    "2,22,1,5",
+    "2,27,1,7",
     "1,0,1,3",
     "1,3,1,3",
     "1,6,1,4",
     "1,10,1,3",
     "1,13,1,5",
     "1,18,1,4",
+    "1,22,1,5",
+    "1,27,1,7",
     "1,34,1,9",
     "1,43,1,4",
     "1,47,1,4",
@@ -2279,11 +2283,7 @@
     "1,78,1,6",
     "1,84,1,5",
     "1,89,1,4",
-    "1,93,1,5",
-    "2,22,1,5",
-    "1,22,1,5",
-    "2,27,1,7",
-    "1,27,1,7"
+    "1,93,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2303,4 +2303,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//16cUh9oXVGvS/6eOpC59/zrc1LOcQtTPjkVXAwhu/tV1ulfn1INV2IBzEHbnWwWuMoRfclURT9/oPT8hbb7V6WYCrd5N9kMSDCRkewAW0CGWH+AlvqG9snbe4GYhoUeHolMU9owYD2b9BywkADDToVJTDeXVYQzx0/7bKVq5y8JIc+FQbi7wIcEr3Hwq9ShdUZnzGa6FP/2ZDHt1gxzOFUxDtTrWs/4NyXQfOK2tugWYygbk/i7QOLxrmmozyMswcJ/PGu2j4J2kDcIETn/oqutqA6e1ZW1v3c9+1UQxIb56rNqMBTx568ptkdsqV/YxGGUj7g8mjbu5mHfnIjMbpL7E60dvMbTwdOw+9mCCUA9F4kAKTp7ix+6mLNkkQ8RAQRrGZ1JQeEohINXUJewkemQgPoqxKp2gfJ8VYGYcu4/hUFAIb2G73aEueAk0UdPHy+o83Jjlll8LkFlKknAguwwcDacwsYIOwgC/ddn4ATI9WwH/65gdi1DgJlcQptRhZSyK7mK2hqNi9WAtfd5VLVtCke9PiV5co5nhPtcqymAQNt0CAodlV1a56/QLgR1q/5YFQJ3blU4xEAR2r5oPu7zDkJRAK2dsO9IG88PPIY36rHkK/Sg9uteV1iEXEr4bSvAmDutrpN9ep9ab9JYOilZb/9g9OUC1VbmJ6ks2IpbloV1f8l15jKlc3wDw/BDQoU2gBjnogqcTU2Pgdy/hCHy94XoffrrvTSmr6ZNsGsPAA2tWyco3NtvBf5rvMJLK54SB6Ulv/wTyxMTvcxH94d654vrDRE+7HwVPKiJPwZ6WPa6VYkrb0B0bcF76Hd+U1aUeosGeYffwo6jIpZJDaLhQsInm95UT6Dy9nDwYhKJN3qjhWLmoVKDHPXT3BJuNedYgBkJARN/1XWqFGlUy+Q==|920
+}//hZJr19q5VY/uD7exx3GBEdw6jGgLconjNCpYbucT6ubrYOzEA5PQ62ovB1+nYxGl5ud9L2LtBvWgwG84Se15scSrqJulyLPNtHfvkC1mL9CgLJlhzPzZ/cv4Udzd+U53JaA2QrSUNV9IDnKbYEn5BGlUMxWoqARL6M1I1BAHBNb8rph/MrQ5VnUG0dhLWog7VyN9C2ZDqeMNTjsO2/Tn3Q9EFw0KpAp2cR+Z3n4/ZGYhnxxRoU0+0BbTN0a1mIdfCXW2BGeSCVQT9Tx231HJlUEVZecwQg0K9OyqVRGc1vwoNzHFtX95GA+qMV8cW4Xbp9iTutFHzUfRvbNKJ48pcG/B9GX5u5WMdPH/3K7zfK/UeCg9Gu0q/OBPu/rgCAZluubOIeFNl8ymErMSqEJH559Lq9TXNqvoMT0lzDaV81GNy566geX6CrKxgzbIWfHjBMGJlIBesdJMHgbq1DDOklKanNt0MNmiIqjK2WwAMWqShy19hDieU0jRkcuKknJHkhGwehahodiUYOr+9YGpgUz8mnYs3jBWc//WOgt5Sq0qGqGEtlTfIF1gAIXLBht0j2FJMikkSZJvcaX7zsRQoSvtmxoetin2n2brBWDinE07P1LA4yS8HvRVJ1/kYtrPrZ74diSED+z5g0mkkuTfiLOi24ZoID/ZHkTpFEg5EG/YiTU+eGK5acfN03z82WMboqIJQ1iIVsTK5YrCkqA1eCt/MmYH1pLiUDS37kNsX9iwZQyvuZlCQM0J7UfZDO9+h3ikm9TdeI1hpldkTEApWEQYAE9iQCiqMxyDNWypT3XteVJrtms4KU3qjnyCOaLzH0zvsUe7fIZdmzY0X7UG6c1T7xLVNFXEi99yBdjavntG5m9Zk32/gVp7vEKE2Zln2nTpvh6dqbtCnOicAKWQCQ==|920
