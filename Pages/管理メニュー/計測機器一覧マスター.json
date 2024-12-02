@@ -3,21 +3,16 @@
     "RowColumnAttachedInfos": {
       "0": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 15.0
+          "DesignLengthInPixel": 20.0
         }
       },
-      "1": {
+      "35": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 13.0
-        }
-      },
-      "36": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
+          "DesignLengthInPixel": 20.0
         }
       }
     },
-    "Count": 37
+    "Count": 36
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -276,37 +271,8 @@
   "Values": {
     "0,0": "計測機器一覧マスター",
     "0,6": "create control no",
-    "0,8": "excel export",
-    "1,5": "管理番号",
-    "1,6": "使用可否",
-    "1,7": "登録日",
-    "1,8": "種類",
-    "1,9": "理由",
-    "1,10": "名称",
-    "1,11": "型式",
-    "1,12": "シリアル№",
-    "1,13": "メーカー",
-    "1,14": "測定範囲",
-    "1,15": "最小目盛",
-    "1,16": "仕様",
-    "1,17": "製造年月日",
-    "1,18": "資産番号",
-    "1,19": "購入日",
-    "1,20": "購入先",
-    "1,21": "社員ID",
-    "1,22": "担当者氏名",
-    "1,23": "管理者",
-    "1,24": "保管場所",
-    "1,25": "校正区分",
-    "1,26": "前回校正日",
-    "1,27": "周期",
-    "1,28": "次回校正日",
-    "1,29": "自動通知日",
-    "1,30": "備考",
-    "1,31": "校正有効期限",
-    "1,34": "ファイル",
-    "1,35": "校正要否",
-    "1,36": "0非公開1公開"
+    "0,10": "Excel export",
+    "0,13": "Excel import"
   },
   "AttachInfos": {
     "0,6": {
@@ -328,7 +294,7 @@
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=計測機器一覧マスター!B4&計測機器一覧マスター!C4&\"-\"&計測機器一覧マスター!D5&TEXT(計測機器一覧マスター!E4,\"000\")"
+                  "SerializeProperty": "=計測機器一覧マスター!B3&計測機器一覧マスター!C3&\"-\"&計測機器一覧マスター!D4&TEXT(計測機器一覧マスター!E3,\"000\")"
                 }
               }
             ]
@@ -361,7 +327,7 @@
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=計測機器一覧マスター!B4&計測機器一覧マスター!C4&\"-\"&計測機器一覧マスター!D5&TEXT(計測機器一覧マスター!E4,\"000\")"
+                      "SerializeProperty": "=計測機器一覧マスター!B3&計測機器一覧マスター!C3&\"-\"&計測機器一覧マスター!D4&TEXT(計測機器一覧マスター!E3,\"000\")"
                     }
                   }
                 ]
@@ -409,7 +375,7 @@
         "ColumnName": "ctrl_no"
       }
     },
-    "0,8": {
+    "0,10": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -428,15 +394,79 @@
                   {
                     "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
                     "ListViewName": "リストビュー1",
-                    "NewOtherName": ""
+                    "ExportExcelListviewNameMode": 1,
+                    "NewOtherName": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=計測機器一覧マスター!A1"
+                    }
                   }
                 ],
-                "ID": "28162652-c656-445a-b7a7-756f02cda37e"
+                "ID": "ac77aef5-1495-4105-b323-ce8a588ead91"
               }
             ]
           }
         ],
-        "Text": "excel export",
+        "Text": "Excel export",
+        "TemplateKey": "_RS_Normal_Style3",
+        "Icon": {
+          "Name": "File/349_excel_file_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "0,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "リストビュー1",
+            "ImportExcelToListViewMode": 1,
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=計測機器一覧マスター!F3"
+                },
+                "ColumnName": "ctrl_no",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=計測機器一覧マスター!AA3"
+                },
+                "ColumnName": "lastrevisionymd"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=計測機器一覧マスター!AF3"
+                },
+                "ColumnName": "kouseiyuukoukigenymd"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=計測機器一覧マスター!AD3"
+                },
+                "ColumnName": "automaticnotificationymd"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=計測機器一覧マスター!AC3"
+                },
+                "ColumnName": "next_caribration_ymd"
+              }
+            ],
+            "IsShowSuccessAlert": true,
+            "SuccessMessage": "Excelファイルのインポートが正常に完了しました。"
+          }
+        ],
+        "Text": "Excel import",
         "TemplateKey": "_RS_Normal_Style3",
         "Icon": {
           "Name": "File/349_excel_file_2.svg",
@@ -494,7 +524,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "f71e52ac-4def-4ae6-b41e-b64395c4f376"
+                    "ID": "6f9b3d3b-a059-48e0-b0d0-a3ccdb16c7d3"
                   },
                   {
                     "Condition": {
@@ -530,7 +560,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "c505324a-24c0-48ef-911d-a73cf3d8bda9"
+                    "ID": "2fb680a7-015e-4ef8-88ac-afa05023c3be"
                   }
                 ]
               },
@@ -550,7 +580,7 @@
         "ColumnName": "category"
       }
     },
-    "2,0": {
+    "1,0": {
       "ListViewInfo": {
         "RowHeaderContextMenu": {
           "ContextMenuItems": [
@@ -573,7 +603,7 @@
         },
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_tools",
-        "RowIndex": 2,
+        "RowIndex": 1,
         "ColumnCount": 40,
         "RowCount": 34,
         "FrozenIndex": 7,
@@ -591,7 +621,7 @@
         "ListViewStyleName": "_RS_Medium2"
       }
     },
-    "3,0": {
+    "2,0": {
       "TotalRowSetting": {
         "StaticText": "[登録数]",
         "StyleInfo": {
@@ -603,32 +633,32 @@
         "ColumnName": "id"
       }
     },
-    "3,1": {
+    "2,1": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "n1"
       }
     },
-    "3,2": {
+    "2,2": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "n2"
       }
     },
-    "3,3": {
+    "2,3": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "n3"
       }
     },
-    "3,4": {
+    "2,4": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "n4"
       }
     },
-    "3,5": {
+    "2,5": {
       "TotalRowSetting": {
         "FormulaType": 2,
         "StyleInfo": {
@@ -641,67 +671,67 @@
         "ColumnName": "ctrl_no"
       }
     },
-    "3,6": {
+    "2,6": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "usage"
       }
     },
-    "3,7": {
+    "2,7": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "codateymd"
       }
     },
-    "3,8": {
+    "2,8": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "kind"
       }
     },
-    "3,9": {
+    "2,9": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "prohibition_reason"
       }
     },
-    "3,10": {
+    "2,10": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "item_name"
       }
     },
-    "3,11": {
+    "2,11": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "type"
       }
     },
-    "3,12": {
+    "2,12": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "serial"
       }
     },
-    "3,13": {
+    "2,13": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "maker"
       }
     },
-    "3,14": {
+    "2,14": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "s1"
       }
     },
-    "3,15": {
+    "2,15": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "s2"
       }
     },
-    "3,16": {
+    "2,16": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -709,42 +739,42 @@
         "ColumnName": "s3"
       }
     },
-    "3,17": {
+    "2,17": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "madeymd"
       }
     },
-    "3,18": {
+    "2,18": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "asset_no"
       }
     },
-    "3,19": {
+    "2,19": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "purchaseymd"
       }
     },
-    "3,20": {
+    "2,20": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "retailer"
       }
     },
-    "3,21": {
+    "2,21": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "pic"
       }
     },
-    "3,22": {
+    "2,22": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
@@ -755,98 +785,102 @@
         }
       }
     },
-    "3,23": {
+    "2,23": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "administrator"
       }
     },
-    "3,24": {
+    "2,24": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "storage_location"
       }
     },
-    "3,25": {
+    "2,25": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "category"
       }
     },
-    "3,26": {
+    "2,26": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "lastrevisionymd"
       }
     },
-    "3,27": {
+    "2,27": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "calibration_cycle"
       }
     },
-    "3,28": {
+    "2,28": {
+      "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "next_caribration_ymd"
       }
     },
-    "3,29": {
+    "2,29": {
+      "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "automaticnotificationymd"
       }
     },
-    "3,30": {
+    "2,30": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "etc"
       }
     },
-    "3,31": {
+    "2,31": {
+      "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "kouseiyuukoukigenymd"
       }
     },
-    "3,32": {
+    "2,32": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "外観"
       }
     },
-    "3,33": {
+    "2,33": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "その他画像"
       }
     },
-    "3,34": {
+    "2,34": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "添付ファイル"
       }
     },
-    "3,35": {
+    "2,35": {
+      "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "calibration_enabled"
       }
     },
-    "3,36": {
+    "2,36": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -854,7 +888,7 @@
         "ColumnName": "公開"
       }
     },
-    "3,37": {
+    "2,37": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -862,7 +896,7 @@
         "ColumnName": "FGC_LastModifyDate"
       }
     },
-    "3,38": {
+    "2,38": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -870,7 +904,7 @@
         "ColumnName": "FGC_LastModifier"
       }
     },
-    "3,39": {
+    "2,39": {
       "TotalRowSetting": {}
     }
   },
@@ -881,104 +915,113 @@
         "Formatter": 1
       },
       {
-        "Formatter": 1,
-        "HorizontalAlignment": 2
+        "Background": 2,
+        "FontFamily": 3,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 4,
+        "FontFamily": 3,
+        "FontSize": 12.0
       },
       {
         "FontSize": 12.0,
-        "HorizontalAlignment": 2
-      },
-      {
-        "Formatter": 3
-      },
-      {
-        "Formatter": 4
-      },
-      {
         "HorizontalAlignment": 5
       },
       {
-        "FontFamily": 6,
+        "Formatter": 6
+      },
+      {
+        "Formatter": 7
+      },
+      {
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 3,
         "FontSize": 12.0
       },
       {
         "FontSize": -1.0,
-        "HorizontalAlignment": 7
+        "HorizontalAlignment": 9
       }
     ],
     "Types": {
       "Strs": [
         "Accent 1 0",
         "[AUTO]General",
+        "#FFFFC000",
+        "Body",
+        "#FF92D050",
         "Right",
         "000",
         "yyyy/MM/dd",
         "Center",
-        "Body",
         "General"
       ]
     },
     "CellStyles": {
       "0,0": 0,
-      "1,1": 1,
-      "3,0": 2,
-      "3,4": 3,
-      "3,7": 4,
-      "3,17": 4,
-      "3,19": 4,
-      "3,26": 4,
-      "3,28": 4,
-      "3,29": 4,
-      "3,31": 4,
-      "3,36": 5,
-      "3,38": 6
+      "0,10": 1,
+      "0,13": 2,
+      "2,0": 3,
+      "2,4": 4,
+      "2,7": 5,
+      "2,17": 5,
+      "2,19": 5,
+      "2,26": 5,
+      "2,28": 5,
+      "2,29": 5,
+      "2,31": 5,
+      "2,36": 6,
+      "2,38": 7
     },
     "RowStyles": {
-      "4": 7,
-      "5": 7,
-      "6": 7,
-      "7": 7,
-      "8": 7,
-      "9": 7,
-      "10": 7,
-      "11": 7,
-      "12": 7,
-      "13": 7,
-      "14": 7,
-      "15": 7,
-      "16": 7,
-      "17": 7,
-      "18": 7,
-      "19": 7,
-      "20": 7,
-      "21": 7,
-      "22": 7,
-      "23": 7,
-      "24": 7,
-      "25": 7,
-      "26": 7,
-      "27": 7,
-      "28": 7,
-      "29": 7,
-      "30": 7,
-      "31": 7,
-      "32": 7,
-      "33": 7,
-      "34": 7,
-      "35": 7,
-      "36": 7
+      "3": 8,
+      "4": 8,
+      "5": 8,
+      "6": 8,
+      "7": 8,
+      "8": 8,
+      "9": 8,
+      "10": 8,
+      "11": 8,
+      "12": 8,
+      "13": 8,
+      "14": 8,
+      "15": 8,
+      "16": 8,
+      "17": 8,
+      "18": 8,
+      "19": 8,
+      "20": 8,
+      "21": 8,
+      "22": 8,
+      "23": 8,
+      "24": 8,
+      "25": 8,
+      "26": 8,
+      "27": 8,
+      "28": 8,
+      "29": 8,
+      "30": 8,
+      "31": 8,
+      "32": 8,
+      "33": 8,
+      "34": 8,
+      "35": 8
     },
     "ColStyles": {
-      "21": 5,
-      "22": 5
+      "21": 6,
+      "22": 6
     },
     "SheetStyle": {
-      "FontFamily": 6,
+      "FontFamily": 3,
       "FontSize": 12.0
     }
   },
   "Spans": [
-    "4,0,32,40"
+    "3,0,32,40"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -998,4 +1041,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//sDl5Qk1jfDROv7hLEN3x9ixUQqjGpnsRL6CnCGzcA4xQgmyKoYxYiGGYIUWdU1yrEeIRcbwcRLbma5EzNWqNW/sa0Yc7QxSWqoR0YDC0Nxrq3dD+mhjELG7Qxhw4xylZU4qPxpTxjCKd0QGGsauoYjWdFWiXD8K9r5WEubHVvz0TAplJinzmjf2PnreNC5+vzwf12d0UXoPH2XVLuEvmgX+PrToZXn49ahDl8OGua8l8xf2mk8fnXJ15fH4AeUtHkI1xO1AkT5Ng/gOz7dLRD+CJluxsyUFB+0S/7cFSLpnNd9a2V7PoAegxNbQy1jfcLHfxk/2/VdTQB2Fq+KACm6k7Y+SMD4fIS+GsO4x/HpOqhb/4gNTCmbH67iRSwxAfqSo5W0xT3gFV5dtg+BMLzUY0pETf1deIcazKacqhHqUU4kg844UUP4rT16ha9Tx5j8ChMm4HmBeQ2NhhdGZlTfw1ADq+onamk+m/9go4sImAk0VHZwhbnSy02re4e383ta5aXpFHAQjzuSnU3HK6zyIgk/nGpN92LWqFUGDmhkKAbQzuwV7n+8xXzoCH76dCJUP4IrGdJVVneb8TKsyVxieoZh9kHHJ1v70f3I0cAJkHUThuWG67yGsTOs0sG76UCp/UzkxoktfZCmSZysu7XKncEDqOLbRdJrptvygoaFJQ4ujs7d/yCnNAiv0vOPfsK8mnWGCcaVRnfGgd//76/xUT3+VmnL/8YLFOTAHG4aYj9euDjsADqhlUMAVlJF+U+AB+oJdk2baXSDve9qgKWTFdjyah0h5jobm7aH1ebRwZ9kyRgFKIqoSxCuYbWEWuk937ebb8m26JWAyIPtPDw4IW8r5XfzsRra/L5wG6dpjpZo1JIJijsjGfDAtN5HfrQ+QgyzSk39TECE9CxQJ+Hw==|920
+}//vDGKXz5DQwSUVDMY6MkISSAdw5lbeV5nK8QxSAovkVN4AV9ZpO+0lDUkADPbdUDvPwzIJhARRsrjtUQs5glP9/nizz+N9vQ9bJYi6ID3Tzv2HLNjKmSprqxQXNqCY+UVWXI2PptnZEbEvw8syY6zU9xuKzQ0b9wjD7sMLsV+ocUCiXbQSxot/tsAr84uOK0/3cha0frBDoKz2R2G/XmWBxphdpnDQvpVwEOLZ97Vt0FGTBxMz2+/FnUCtjEC+fCBc4poZK4m2biu+yZRXLaGdE891VeYSBFTtuB8iqXDKSU08PKuwpjUvdW7pUGV9BcyqhKUzwAeP6lOD1yYmSZnF/flC0sz/7UTcWN1gHFucK4RJwjGbHAks9yLk7iGwve50SS3ghlEqZnyBcTser5AjfO0V0xABLtSuBQ+wOjANG3Nss5oKbkDJ5Sy0gY5OQhabLpRVEyteeKHZHQovQgYc9j3jDpMNt4lVj6J6XXfIOPxKCAnMLdN6roL2igMWJfyJ02LiY4lJUhz0AoGFHuP31N8BRk98IGmrmPNDtU1uFi5VnW5cBXZk3M7FNNCBkytBo9TClN/gHouQ0KWnXk7lj3Co7yLHkfaNYlmFdTwT6VXubgjOlrIlAlqn2JbV9Ac8EvogyCVUQGqxxlPut2s26puMWf5e/hX2MLZemZAL+rA3PmLDfEgPhLEODjt98G+pNAQi9Yml3UdnuH8AB1PEm4TmD7p+LijEMCAPueSZ7aNEBrjY9NyIPXrn2QqybRMuZmZL7WKj+SL2AdhOfyeTMLA3KvwBGJQJcbLm/48gYTvzNhwE3tNKwrkR27DoqBojjo4TZzqMY09js9yrr9QPrAXxQCa9EgXj7JBPgvEI2YmdQDxVsubqO2GFQp5HhpGrQN6+Hs+GnkClOqNxzd5lw==|920
