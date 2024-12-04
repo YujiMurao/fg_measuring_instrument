@@ -435,7 +435,7 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=校正修理廃棄履歴一覧マスター!D3"
                 },
-                "ColumnName": "計測機器ID"
+                "ColumnName": "id_tool"
               },
               {
                 "Column": {
@@ -463,21 +463,21 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=校正修理廃棄履歴一覧マスター!AI3"
                 },
-                "ColumnName": "業者名・作業者名"
+                "ColumnName": "業者名"
               },
               {
                 "Column": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=校正修理廃棄履歴一覧マスター!BX3"
                 },
-                "ColumnName": "記録文書番号"
+                "ColumnName": "記録文書へのリンク"
               },
               {
                 "Column": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=校正修理廃棄履歴一覧マスター!BS3"
                 },
-                "ColumnName": "添付ファイル"
+                "ColumnName": "attachment"
               }
             ],
             "IsShowSuccessAlert": true,
@@ -521,7 +521,7 @@
                     }
                   }
                 ],
-                "ID": "d8c7adb6-f3c5-4589-a6ec-8e05f28de291"
+                "ID": "2c8307e0-e8ee-4a51-b320-9b759586c721"
               }
             ]
           }
@@ -2223,6 +2223,7 @@
     "2,22,1,5",
     "2,27,1,7",
     "0,37,1,6",
+    "0,31,1,6",
     "1,0,1,3",
     "1,3,1,3",
     "1,6,1,4",
@@ -2244,8 +2245,7 @@
     "1,78,1,6",
     "1,84,1,5",
     "1,89,1,4",
-    "1,93,1,5",
-    "0,31,1,6"
+    "1,93,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2265,4 +2265,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//6EfjqwpeqHceDd2zCFY8M7jmp7GHV3nbuQD4uYtgjc8K94Q9OtnAnIcinYkFBnRZdxpHg/dQnIEKanN5p+UXkttBZzRsoaSMw6LDmKQ1lLnuB/C0DiXMihV+esYHl3glzlABMjlcvt2zQekjBp2doI+sWv2MICzPkjearPMPasAvHA0US2L20mnnICBlggPToKKuu5hgQu3HSF3ekkq/ScS6z9bZfwTI0z7XI9NZlxxZNGQOVteN2ZezcYQAo5/l9bAfJ7XcJRB/09SMOacpzEmEqgCz54XcXEpw449/Iju357ctOlW8MmC2FZkFub19figVC1p17jpL5LtzDaJL+GfqPkzPu9YFyUrcAoWyYrytSZgsoKSE4oXATd1s1BPbivSm5P8Usp3++uqY/cPevXtu6INEvJuP//LyD3FzipQ7eIfUtrmeoIyDKqwE/V6XN0rrFLbQxBslA4B4xUhDzfs/mMJcEOB76GEIF9UJxyJVOFpDyzBABx+GRFCrUzCJCa5gaXBMIn2smDj8wiRKh0Zg04SzX54e/W0MSep908O37GF0Liq74BuIxA4qiPPdH8TBqx1WSaPShfNKQTB3Aq4K81g4d3jxHQcdo9ypM649+m1NoMO8arQJevtw9T8Jv6CDWzY6kPESOp9vlMA+iNf9qmmsWDiFNxhe4kkRjXlT1KYK+4ODkYO7yD77T1/tBxFeuwj8+l8QIXxcRZc0USAKtftHTRaMIzccExlH4H6KRfBtuIsIUzSp2AHg6hE+2c9526Cz25aNfudmsfxq857TNgsGcOEWBL4+7YoUxgNzMY+DHPe7LeVIdTcvYJbXHtwQqnfgWrnRD2SSt9aRudlXUXf1ZqZaYNgEkQcSI2i7av8cs2qLVwdrJdVjaBss8yKvCUIk11wsHPPhBK/k7w==|920
+}//eyZ9/goxJ5ifohIUVCo8obZrgDfZ7XQnVHAX7Zl33sArIh+wcYSTbe6tGgNZWIMEtym0i3+HctD7uFMKnpKjIouVKhazf4NRkBrKq+9iiY/JHOHR9bofvOZhb9pYDn6qygrOssyJH+1n5WajiFEBCOXFS6uo/Sc0r0omFRmLh48T455hegwb2i/tDHZzsHNCQd0JNzzDsyq5w4oGCkID9/f7LN6oFbOBlrkQymOwZvWnS/b5Qfrve9C91nYezn5Y0LMH8luEGzyHva6bsZHy208HYP1GEwRVW1DGYa8BDsyNvoYegEhwCZ5jsZOkMcV3kWAk9tiYguFSqNSWZvwvcif6gIURfMjoqXT77mYkMqvnokXA5D/gNdMPQUFFcvB1Vjlj5HajdH97vOu1uk0zynF7W8vRiVlyQbgM4ib08l3n/DB8TbXKQD/MMKeAgq10CJBV2nPZrSMLiJAIlsHQLGP0uh92aFZ7JcZ2nABBGcAY/ovSHswxv4vd0dxh89j1o89HQUHKO42hVbJFmieGjroG/3s55nm1JZiAmvRscD0kdDzcqhtPUwDyI9rlNXRH12hReclYH7eRwFFYSCqO7cLGTS4teLCtJqwJniJ00Mpzf0hxFzNBO5/9gSn4zgmRScxMC63gWnpmjCbBi1fE2Ew/+v8jWeWo9iWpJnFmvHq5f+Am5Qm2BqgCSiLnJTWai3hZyHyCQDpzFoi8tSZFQY6LdCfyd26q6LbzKr7+eTm8LWaU+xwBJvkRGSaRJG08BMwNk5xDFQi+xpxCRcthfaSPWwbVdrpxS8akeKaDKGhHS/ERt9Rvr7RWeF2D8dGIgOss05w/D4eSfJgRziUQgyHcX2ClWlgRDVY6g/w21BBl39apn6Mug/LEGsWrJOAEFyD9198LY3wof/NYc7OYZg==|920
