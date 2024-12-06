@@ -222,7 +222,16 @@
   },
   {
     "ModuleName": "PCPage/校正対象機器",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-12-06T11:03:49.8650977+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\管理メニュー\\校正対象機器.json"
+    ]
   },
   {
     "ModuleName": "PCPage/計測機器一覧マスター",
