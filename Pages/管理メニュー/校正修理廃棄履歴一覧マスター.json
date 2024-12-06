@@ -199,24 +199,6 @@
           "IsHidden": true
         }
       },
-      "84": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
-        }
-      },
-      "85": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
-        }
-      },
-      "86": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
-        }
-      },
       "87": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
@@ -271,6 +253,12 @@
           "IsHidden": true
         }
       },
+      "96": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
       "97": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
@@ -278,6 +266,18 @@
         }
       },
       "98": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "100": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "101": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
@@ -327,9 +327,12 @@
       94,
       95,
       96,
-      97
+      97,
+      98,
+      99,
+      100
     ],
-    "Count": 99
+    "Count": 102
   },
   "Values": {
     "0,0": "定期校正・修理再構成・修理・廃棄の履歴",
@@ -468,14 +471,14 @@
               {
                 "Column": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正修理廃棄履歴一覧マスター!BX3"
+                  "SerializeProperty": "=校正修理廃棄履歴一覧マスター!CA3"
                 },
                 "ColumnName": "記録文書へのリンク"
               },
               {
                 "Column": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正修理廃棄履歴一覧マスター!BS3"
+                  "SerializeProperty": "=校正修理廃棄履歴一覧マスター!BV3"
                 },
                 "ColumnName": "attachment"
               }
@@ -521,7 +524,7 @@
                     }
                   }
                 ],
-                "ID": "2c8307e0-e8ee-4a51-b320-9b759586c721"
+                "ID": "643f8832-d02f-4c07-98bc-bd3de2c9e088"
               }
             ]
           }
@@ -559,7 +562,7 @@
         "ShowColumnHeaderInDesigner": true,
         "TableName": "trn_insptool_calibration_history",
         "RowIndex": 1,
-        "ColumnCount": 99,
+        "ColumnCount": 102,
         "RowCount": 33,
         "FrozenIndex": 4,
         "FrozenLineColor": "Accent 6 0",
@@ -712,6 +715,7 @@
       }
     },
     "2,66": {
+      "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
@@ -723,6 +727,14 @@
       }
     },
     "2,70": {
+      "TotalRowSetting": {},
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "FGC_Creator"
+      }
+    },
+    "2,73": {
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "UploadLimit": {
@@ -736,7 +748,7 @@
         "ColumnName": "attachment"
       }
     },
-    "2,75": {
+    "2,78": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -744,7 +756,7 @@
         "ColumnName": "記録文書へのリンク"
       }
     },
-    "2,78": {
+    "2,81": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "ClickMode": 1
@@ -760,14 +772,14 @@
         }
       }
     },
-    "2,84": {
+    "2,87": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "FGC_CreateDate"
       }
     },
-    "2,89": {
+    "2,92": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
@@ -778,7 +790,7 @@
         }
       }
     },
-    "2,93": {
+    "2,96": {
       "TotalRowSetting": {},
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
@@ -786,7 +798,7 @@
         "ColumnName": "FGC_LastModifyDate"
       }
     },
-    "2,98": {
+    "2,101": {
       "IsCellIgnoreHideInListview": true
     }
   },
@@ -1090,10 +1102,13 @@
       "0,92": 11,
       "0,93": 11,
       "0,94": 11,
-      "0,95": 12,
-      "0,96": 12,
-      "0,97": 9,
-      "0,98": 9,
+      "0,95": 11,
+      "0,96": 11,
+      "0,97": 11,
+      "0,98": 12,
+      "0,99": 12,
+      "0,100": 9,
+      "0,101": 9,
       "1,0": 13,
       "1,1": 14,
       "1,2": 14,
@@ -1117,12 +1132,12 @@
       "2,59": 19,
       "2,62": 19,
       "2,66": 19,
-      "2,70": 24,
-      "2,75": 19,
-      "2,78": 25,
-      "2,84": 21,
-      "2,89": 19,
-      "2,93": 21,
+      "2,73": 24,
+      "2,78": 19,
+      "2,81": 25,
+      "2,87": 21,
+      "2,92": 19,
+      "2,96": 21,
       "3,0": 26,
       "3,1": 26,
       "3,2": 26,
@@ -2205,20 +2220,20 @@
     "2,51,1,4",
     "2,55,1,4",
     "2,62,1,4",
-    "2,84,1,5",
+    "2,87,1,5",
     "2,13,1,5",
     "2,18,1,4",
     "2,34,1,9",
     "2,6,1,4",
-    "2,89,1,4",
+    "2,92,1,4",
     "2,66,1,4",
     "2,10,1,3",
-    "2,70,1,5",
-    "2,75,1,3",
-    "2,78,1,6",
+    "2,73,1,5",
+    "2,78,1,3",
+    "2,81,1,6",
     "2,43,1,4",
-    "3,0,31,99",
-    "2,93,1,5",
+    "3,0,31,102",
+    "2,96,1,5",
     "2,59,1,3",
     "2,22,1,5",
     "2,27,1,7",
@@ -2240,12 +2255,14 @@
     "1,59,1,3",
     "1,62,1,4",
     "1,66,1,4",
-    "1,70,1,5",
-    "1,75,1,3",
-    "1,78,1,6",
-    "1,84,1,5",
-    "1,89,1,4",
-    "1,93,1,5"
+    "1,73,1,5",
+    "1,78,1,3",
+    "1,81,1,6",
+    "1,87,1,5",
+    "1,92,1,4",
+    "1,96,1,5",
+    "2,70,1,3",
+    "1,70,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2265,4 +2282,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//eyZ9/goxJ5ifohIUVCo8obZrgDfZ7XQnVHAX7Zl33sArIh+wcYSTbe6tGgNZWIMEtym0i3+HctD7uFMKnpKjIouVKhazf4NRkBrKq+9iiY/JHOHR9bofvOZhb9pYDn6qygrOssyJH+1n5WajiFEBCOXFS6uo/Sc0r0omFRmLh48T455hegwb2i/tDHZzsHNCQd0JNzzDsyq5w4oGCkID9/f7LN6oFbOBlrkQymOwZvWnS/b5Qfrve9C91nYezn5Y0LMH8luEGzyHva6bsZHy208HYP1GEwRVW1DGYa8BDsyNvoYegEhwCZ5jsZOkMcV3kWAk9tiYguFSqNSWZvwvcif6gIURfMjoqXT77mYkMqvnokXA5D/gNdMPQUFFcvB1Vjlj5HajdH97vOu1uk0zynF7W8vRiVlyQbgM4ib08l3n/DB8TbXKQD/MMKeAgq10CJBV2nPZrSMLiJAIlsHQLGP0uh92aFZ7JcZ2nABBGcAY/ovSHswxv4vd0dxh89j1o89HQUHKO42hVbJFmieGjroG/3s55nm1JZiAmvRscD0kdDzcqhtPUwDyI9rlNXRH12hReclYH7eRwFFYSCqO7cLGTS4teLCtJqwJniJ00Mpzf0hxFzNBO5/9gSn4zgmRScxMC63gWnpmjCbBi1fE2Ew/+v8jWeWo9iWpJnFmvHq5f+Am5Qm2BqgCSiLnJTWai3hZyHyCQDpzFoi8tSZFQY6LdCfyd26q6LbzKr7+eTm8LWaU+xwBJvkRGSaRJG08BMwNk5xDFQi+xpxCRcthfaSPWwbVdrpxS8akeKaDKGhHS/ERt9Rvr7RWeF2D8dGIgOss05w/D4eSfJgRziUQgyHcX2ClWlgRDVY6g/w21BBl39apn6Mug/LEGsWrJOAEFyD9198LY3wof/NYc7OYZg==|920
+}//HnXzhfQu794zH4pvhojRhUW0LMxcdUaaR9JSUPk/t4owbsKC9pb5NFGmNrCKKWIX+Vaatoo7WHkECKHH6TeOiu4i+jOxl7YCSOq95vl+zbLk52Z4WjQ7fa+LseRPYCrEvl+VHDP8WfY/CGfgF5AoNRWI7b3y3aQM8HwsHcnIf1/wicX7jBgbm8RdnP54uN0eF0gmX66Hl6xkHs6SjN3SFg71IyKmsvIOHYgXKk9m7pl65EO1jwznu4+iKS2wP+1o+aAWhb99kBCxDj9B6xXOWcpnDYnfyEuNijw+IIwklZiAOGQZoFW/DKs3FEiEotslg+oT3sUakeWtW0mTJLefcJMbmtrt6jSB7N8pCEjbquQiZQaUi7YxDt2fM5BAaph8MfPEt8PxZO4vqEEyHx5CiNdxMq0WM8aFetfcQU2js8eZVAHg52KLDDPjOf1HVBdxINLB4A2WAHnHxezdsfpqBLh1Qij0oy+NGrwvr8HLK59y9gH216/qLZnCXkuli6BrKGb8LPuNO8k+ynF+rKi68s03q96ZXeMN3L7pbfcs3ruDyBXQ2F82HXWbozN/7H9aNrUGr+bxj3YFO2bUYdpSiKcdVcOnIPKJ0KdQ+XCl8ierJl6tr3EbEa9kQW/W/Xac34umd+g9KZAXmBG+7AYn3IsndhciVTDM5boKHhBmaY0L3ybUKxwV0sEv3Usem2ydtniBu2adAgCrmj3RA0mpeWziN3INo5pAUc4pxgirWeoXnWM7ALzlbs6s4qhhBrk8B5O7PyHeqSGDXSz+vizcIoveBgAZCCEEu/x/WOe8ovrWjd3cn7uWIDGyWfEPZPSKr6UFTk4ajPQwKgXoS6iBTLOyaTXufSp2sSBeXgWbQ1ib02bZQCjV8kGoMViEXvis+Wt7vAAvlBdWIkDqF1/BMQ==|920
