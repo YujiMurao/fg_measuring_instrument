@@ -81,6 +81,11 @@
           "DesignLengthInPixel": 8.0
         }
       },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
       "17": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
@@ -260,11 +265,6 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 8.0
         }
-      },
-      "16": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 8.0
-        }
       }
     },
     "Count": 58
@@ -322,8 +322,7 @@
     "48,2": "管理番号マスター",
     "50,2": "測定機器一覧マスター",
     "52,2": "校正・修理・廃棄履歴マスター",
-    "54,2": "記録文書マスター",
-    "56,2": "校正対象機器"
+    "54,2": "記録文書マスター"
   },
   "AttachInfos": {
     "1,1": {
@@ -370,7 +369,7 @@
                   }
                 },
                 "Params": [],
-                "ID": "b5e34e7075b94268a379059ecf56638f"
+                "ID": "c0f0a4e5342446d7b02c9a6fcbe07730"
               }
             ],
             "CanVisitRoleList": [
@@ -440,7 +439,7 @@
               "Value": "使用禁止"
             },
             "Params": [],
-            "ID": "321b953b209d42feb292e1a9b388a5d9"
+            "ID": "3e4b85ad8fe24f42af371abe429219b6"
           }
         ],
         "Text": "すべての計測機器(品証用)",
@@ -487,7 +486,7 @@
               }
             },
             "Params": [],
-            "ID": "dcc60872708841f886460f58e7eec556"
+            "ID": "992c2e7b263d46c8b6f0b99b38a4a142"
           }
         ],
         "Text": "すべての計測機器",
@@ -622,7 +621,7 @@
               }
             },
             "Params": [],
-            "ID": "efb0f7b4ad7648949346de7c35ceb531"
+            "ID": "bb19a8e7c05d4f35adea1fa608ee73e5"
           }
         ],
         "Text": "すべての記録文書",
@@ -653,7 +652,7 @@
               "Value": "社外"
             },
             "Params": [],
-            "ID": "5429e18e18d4459d8482907959d1f555"
+            "ID": "110f78cffc5947c7960e830d31305787"
           }
         ],
         "Text": "社外校正対象リスト",
@@ -848,7 +847,7 @@
               }
             },
             "Params": [],
-            "ID": "b2f15fa7c9f146d99dc6072a46980e1b"
+            "ID": "ab78ae35224042bca2af42334b581794"
           }
         ],
         "Text": "校正・修理・廃棄履歴マスター",
@@ -891,92 +890,11 @@
               }
             },
             "Params": [],
-            "ID": "f221353d7d4e417ba8da8053edd028a0"
+            "ID": "4b9a16089b464cc989395989ed53f4c9"
           }
         ],
         "Text": "記録文書マスター",
         "ClickMode": 1,
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "Enabled": true,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
-      }
-    },
-    "56,2": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "校正対象機器",
-            "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false
-          },
-          {
-            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "trn_insptool_tools",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-              "Condition1": {
-                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                "Condition1": {
-                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                  "ColumnBindingInfo": {
-                    "TableName": "trn_insptool_tools",
-                    "ColumnName": "category"
-                  },
-                  "Value": "社内"
-                },
-                "Condition2": {
-                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                  "ColumnBindingInfo": {
-                    "TableName": "trn_insptool_tools",
-                    "ColumnName": "next_caribration_ymd",
-                    "AttachType": {
-                      "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
-                      "ColumnAttachType": 1
-                    }
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=YEAR(TODAY())"
-                  }
-                }
-              },
-              "Condition2": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "ColumnBindingInfo": {
-                  "TableName": "trn_insptool_tools",
-                  "ColumnName": "next_caribration_ymd",
-                  "AttachType": {
-                    "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
-                    "ColumnAttachType": 4
-                  }
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=MONTH(TODAY())"
-                }
-              }
-            },
-            "Params": [],
-            "ID": "cb1afff2af0f44c1a37b6f47c4eaca69"
-          }
-        ],
-        "Text": "校正対象機器",
-        "ClickMode": 1,
-        "TemplateKey": "_RS_Normal2",
         "UIPermissions": [
           {
             "Scope": 2,
@@ -1965,7 +1883,7 @@
       "55,65": 25,
       "56,0": 25,
       "56,1": 25,
-      "56,2": 39,
+      "56,2": 30,
       "56,3": 25,
       "56,4": 25,
       "56,5": 25,
@@ -2041,7 +1959,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
         },
-        "ID": "4c67c580993145d0b9a1985213bc5304"
+        "ID": "8fabbde59df54ac38bb7e3c27336645a"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2050,7 +1968,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
         },
-        "ID": "bb71d4cd79da460394086e94c7204046"
+        "ID": "f237f3c65fa2416686306d774da20cd5"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2059,7 +1977,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
         },
-        "ID": "43fb9d0ba9d34815ac2da5ef083f3842"
+        "ID": "4f34a387e5b9497190c0d2ec3b581c3a"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2180,7 +2098,7 @@
             }
           }
         },
-        "ID": "5788dc8ef6334eafabdb50d20074a1ec"
+        "ID": "9460b6346aa54bffa68ef5dd2d69dcd3"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2288,7 +2206,7 @@
             }
           }
         },
-        "ID": "898d1ceeada44deba65abeb5a6fe5f47"
+        "ID": "86013abefac1449f90eb739961c2670c"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2297,7 +2215,7 @@
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
           "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)-1,\"yyyy/m\")"
         },
-        "ID": "83abe60650594b4ea4bfabae7a6a975c"
+        "ID": "6001e16cd37b40ada2b023a61c8cc5c4"
       },
       {
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -2342,7 +2260,7 @@
             }
           }
         },
-        "ID": "bd3148c20ef743e8bf672aaa08029836"
+        "ID": "7d8370ef17a444e3a829e65a67e4007b"
       },
       {
         "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2415,4 +2333,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//1e7ZLMZYaROcVrZ4TWvgXr7/4i2hpjUn04PK8MaorDiFrqOU6YCI6HiIqNEaPzKlARF0OJ6rNb6sqBY8he8H7lGJG7Co5B76R0R7+lNVvd5Iu6r65q5VwPzYC9LKG4uiWqtTdm4tNXx/3wuLskslP3y2o/RGpGjAc+SX/lLnOiU/qC83IfgZgO1FYyxtIjZBJk2/gvN5kUz+2Q2e4nulzJNW8afh7eTKybjjr8HSzLLvxtwIgFPmYPn/o3wAeCu+6itxiXs5SO9llSmW1E8PtWMUVncNr/Rwvx3pNKN0zSYiOp6a9eVKFAiz0LAb1fMlOfz/b9r/Vyk4IOk4JUa793yWqCxFqF08BqciGTzOF3trY6AKYveWUKpq0k7VYmcQhSUVFkaDDfggvbkiHd+X5VSS4iqb/IcMf8LxI3W+g2JMsdoFIwal3gBkwVcjxbdKBA1oI5nvVheDo1PRGrEPLJwv1s8OkgJF5hOAqtp4KSbcwdOssp9JFkBFDwXt88tTzxey3Ty4nn18iyh/7MeGcmuZWGQ/ZuaJYlAHk2m6khQ4e4q6o5JOX0PrWEM9QLWtFoP2E1l+pJEBKIjjWUUmoPe2ImgU6PMVPsENNmDlekVMOzAJ/hDZ1E2V0EAQaCnms/txyqXrVePOTF1rAO/OqZDti5gqE9wS7lqSve0iZr/zX4aNSw3xhOhKVaRKgx9BzWBJFcf6JPhMjDcoUg5HZsl0EQTyBn0DBoeSwQjdIX0GH96AgwB3cUb3Yee2JQVR12oJGFWOS4v/PPpg2WYznwd75PSBOUSpaduZmhqe9fetZLNXX+4r3NS9gs5/OZTvFBjsQ7A0qhDkWULkJJXpjk+2LY9y3d2vS+OrM23ZQsMe8TNSyutIMniOjTrtNy30s1v2nAgSnR7cao2YMaaqVA==|920
+}//rxPkAO6OpIYeQlM7e5511polC8qu7kpx3eKqBLbqpLYutIXQ7ltOVEoD3SDHiRcC503iTZxp+zjCeBO2CtlAeRqPQ5Qw1qmzu/60LWPJhwe5iaGyLSxeRxYVdSq7Gptg0IZfc7CR/zwB6vD1J2kROO2bhKbn+UyaPnNkimcv6gdS1r7A5mnyJn1dLcOHw97mhNhUJAtkCNDnMZnzEZcmlsRQPFFf3pOB+8+lb2KZ5/kv3AU9ybYd4UrgbZmg/NZawEfhs1hi27ZbrvQTKUYERifP92hm/g/hlcSZIp62VCwAR2SU/JLNBQQtGluXXzXyV7O4jP+i3ksuScZswzH3OH9YkdC/JdZRk8NOBr5OAY7V7KegkrUJKRNZEGyeGar55BzMpcF1qbBF6Q6hRPY5HiiHz8sghwpyzq46Lz2X0oq7ymAWtt5ijJ38ATJxwlk1QT2PB+YURzXtW78f/n8S4mygFSyIiuoAU4GGkhtLD1vlWwelh8Rm4jnI6sHN15mSvavF1jS52GQeoS2GnJqgMNUyYO/0E6L6r8HjE8bzZmHngFJEKNNAkyO5FpkDzom6kAkYCnUMWx6Eht7+v5ufZ4k7VXhIpJU+vS3Lan/3xab3FKNX5rAqGRVcjOYI4IJW7UaKiVNpM8bGUlNNAPZj/fjdoqlU0fUJdcv2RWwetKVnT7EpbH94uX395o7CqiI40dEQ0KmK1xiwbQl5YvNJfZl9ROrwg12fQmZKUGQB/AXvk0Pu0DA6J8NC3n14MXwaf7gGNyy2ARluHcAvQJUjDcDZekFQ6XExvrm7HXcb1sod7Qdtl52A9VQz5M+3KhIDV0LUud1R4T/flND/5BfynwmrKxPwfqHMd9p84Q80iKMpHOIaTbwYyNSQX8SEJXg/3OrUoc9QYzas4YWOHtb0Kg==|920
