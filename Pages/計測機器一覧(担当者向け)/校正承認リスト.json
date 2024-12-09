@@ -258,10 +258,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "90b463162d1f4ef5bd20b2c993497cbd"
+                    "ID": "6664359255d5463c9c8b9ad641c6c771"
                   }
                 ],
-                "ID": "82c17402-d911-4c4d-a9bc-487892395e0f"
+                "ID": "300e8911-46c0-40f2-9e47-3baf557f3fce"
               },
               {
                 "Condition": {
@@ -311,10 +311,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "693bf7f0ac3f46dd981e6289b32b4508"
+                    "ID": "8b768b0ca0b74efa9d4fcb4fefbe7277"
                   }
                 ],
-                "ID": "c04ca7bd-eb14-44d9-81f3-d08aac051b15"
+                "ID": "f343c4d3-6ce5-43c7-b2a4-51dae38d40bf"
               },
               {
                 "Condition": {
@@ -364,10 +364,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "31981e42758042a7bed4ff335a08bae5"
+                    "ID": "93200022f4b94fefb22d04c150fc75a1"
                   }
                 ],
-                "ID": "e4ca0688-7b7d-432f-9498-91b91a929a7e"
+                "ID": "a3ab2def-9136-4bc2-94c1-5db8e8d1592d"
               },
               {
                 "CommandList": [
@@ -405,10 +405,10 @@
                       }
                     },
                     "Params": [],
-                    "ID": "a0f7ad3bbf224effbae14fe5d48d3aba"
+                    "ID": "0d7bbd943af546f99f9e8edd46be31cc"
                   }
                 ],
-                "ID": "45310081-69fc-4298-b3d3-ba005d693f1e"
+                "ID": "27903597-a738-4e8d-8c4e-f7d367da1fa6"
               }
             ]
           }
@@ -871,11 +871,11 @@
             "Params": [
               "=AL29"
             ],
-            "ID": "5fb12ed9cf1d41b0b05cae30d953378d"
+            "ID": "15ab9759373f44cab3c45a05d70457d3"
           },
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "記録文書の編集",
+            "PageName": "記録文書の閲覧",
             "PassValues": [
               {
                 "Source": {
@@ -883,61 +883,7 @@
                   "SerializeProperty": "=校正承認リスト!AL29"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=記録文書の編集!AO2"
-                }
-              },
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正承認リスト!AL29"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=記録文書の編集!AE10"
-                }
-              },
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正承認リスト!BM29"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=記録文書の編集!G10"
-                }
-              },
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正承認リスト!BM30"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=記録文書の編集!G12"
-                }
-              },
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正承認リスト!BM31"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=記録文書の編集!G13"
-                }
-              },
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正承認リスト!BM32"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=記録文書の編集!G17"
-                }
-              },
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=校正承認リスト!BM33"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=記録文書の編集!G21"
+                  "SerializeProperty": "=記録文書の閲覧!AE10"
                 }
               },
               {
@@ -946,7 +892,52 @@
                   "SerializeProperty": "=校正承認リスト!AO29"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=記録文書の編集!G11"
+                  "SerializeProperty": "=記録文書の閲覧!G11"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=校正承認リスト!BM29"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=記録文書の閲覧!G10"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=校正承認リスト!BM30"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=記録文書の閲覧!G12"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=校正承認リスト!BM31"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=記録文書の閲覧!G13"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=校正承認リスト!BM32"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=記録文書の閲覧!G17"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=校正承認リスト!BM33"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=記録文書の閲覧!G21"
                 }
               },
               {
@@ -955,7 +946,7 @@
                   "SerializeProperty": "=校正承認リスト!BM34"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=記録文書の編集!AE5"
+                  "SerializeProperty": "=記録文書の閲覧!AE5"
                 }
               },
               {
@@ -964,7 +955,7 @@
                   "SerializeProperty": "=校正承認リスト!BM35"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=記録文書の編集!AE6"
+                  "SerializeProperty": "=記録文書の閲覧!AE6"
                 }
               },
               {
@@ -973,7 +964,7 @@
                   "SerializeProperty": "=校正承認リスト!BM36"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=記録文書の編集!AE7"
+                  "SerializeProperty": "=記録文書の閲覧!AE7"
                 }
               },
               {
@@ -982,7 +973,7 @@
                   "SerializeProperty": "=校正承認リスト!BM37"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=記録文書の編集!AE8"
+                  "SerializeProperty": "=記録文書の閲覧!AE8"
                 }
               }
             ],
@@ -3634,6 +3625,7 @@
     "4,22,1,3",
     "4,25,1,3",
     "28,37,1,3",
+    "28,40,1,24",
     "3,1,1,3",
     "3,4,1,4",
     "3,8,1,3",
@@ -3641,8 +3633,7 @@
     "3,16,1,3",
     "3,19,1,3",
     "3,22,1,3",
-    "3,25,1,3",
-    "28,40,1,24"
+    "3,25,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3719,10 +3710,10 @@
                   }
                 },
                 "Params": [],
-                "ID": "4c38779f87cd4d2cafe74f4123b2b689"
+                "ID": "6b9471f8d4df43e69739dc90da28dd11"
               }
             ],
-            "ID": "ea2b192f-6199-4573-a43d-f07f2037f159"
+            "ID": "5124f006-c3f4-48a6-823e-707d50cd4917"
           },
           {
             "Condition": {
@@ -3772,10 +3763,10 @@
                   }
                 },
                 "Params": [],
-                "ID": "3d745c4387cf4bde9ac3a3061992bfeb"
+                "ID": "f111d89b897941b2bf73f5931313c5ba"
               }
             ],
-            "ID": "31344159-8479-4e9e-aeb6-d49d87547615"
+            "ID": "ecced085-77cc-4842-a11f-7d67e5b676f9"
           },
           {
             "Condition": {
@@ -3825,10 +3816,10 @@
                   }
                 },
                 "Params": [],
-                "ID": "c84de859e42745cb86e9f8ff933a2c22"
+                "ID": "14bddf5eb2764dbaa45facad3c81055b"
               }
             ],
-            "ID": "52889f16-1b8e-46eb-bc8f-2f725f49b0e9"
+            "ID": "d073a565-8f79-4525-841c-9ac877443917"
           },
           {
             "CommandList": [
@@ -3866,10 +3857,10 @@
                   }
                 },
                 "Params": [],
-                "ID": "38578aa63ae6431a99e8fd2f2d0b0b9a"
+                "ID": "fcf32e7d95a1478f8256687f2ad1ac48"
               }
             ],
-            "ID": "ad054e5f-991e-4a18-bbbc-9e1888853b5e"
+            "ID": "1501582b-0217-4e7a-8bd2-7482e2cd4ebc"
           }
         ]
       },
@@ -3887,7 +3878,7 @@
             }
           ]
         },
-        "ID": "63d164575ab54e4a9dd3f021c054e474"
+        "ID": "c2c5db7a598c465485801b8546d1c44f"
       },
       {
         "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -3939,4 +3930,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//Kt3/95BGS8GQvCwowgAgr/cqleKkfcsLAANtoAsgr2FVE8e7lDe777SW6wJOJ+lPqp2fks6m7wbW67MhWvmXpHK02PxarO/k3jkUarOE/IOkvLcai9mpoj8qXarM1LmkYCHtWCb0Bv2r4IOHOjSoGLygntIgEd6eWMYekZwAAB9BcvMqdKMr4SDrbsXe7IXlmfuQQCuAyHIONpi1vaAl3bggsmf5RclOZ6ta9oT5zVCBap4vq8qtNtwOELf43Ixsge2BB5jv4VXLjn5D0qhHX67VTL4Wp6nS4CkGmICudV5hA47adlIlnZ/20mDTbrsRIOJ+g5WSmYs217AmVnKB/Ije7JVEkWeQDlFWCpuBSan1VBs2VrEkJfNXuy81rSKUNVuF8pHRP+/8vqhXZYlFK+O28wGOl6vpnhaZCAa3JsTp5u8f2Chycqmd1jOqQMT4Uma/fvDaQ5HHe6l4wOcPvDrZP+z18HrRijFZVDsWP4CVdXCgotxbazDIv/5JYwEjbPUOedRjv41djk3L1L2dwCpCbQt2XQV5yhG2mwTnjopJqFCVr0fx4cYN+OoPlYJTnxFkSj/rkSb8T2HIParPutjR0I0HUhEFhxit/vr1zPSRSiQIDVT4JbHGDkVSl3prqMS8Q49+Gdkd/L54h2eD09c/U9yqjz7H9WHJNwnFrVoPhOuu+v2UDTJ3pS2ZYjhEtPjd+5uEN2mjiZbA7p26WnLEdjATAin2TsDqD/k92a0hAgCi7v+EIp+CVqUOBe9uaM+BPNc3zB7287YxHsIcI+dUgiovWbHnbnJUme8u8uByQSGLtJxMHAAjAf37VW7Jxh68SNbvwDwg8C3HR28bmd0pFXTGfwkADli4QtytH8pD/6gjLq30ZvAnhfu7Bpxe6MPNyKDiy1QwgAvzhT6O8A==|920
+}//iotbg4ytn2RC8SFiZhdXZsMJGf0e8xVPFzs7ob6+d8GGJiYJE6devK/p5nNLeold0mg1jEyEiBAS1hrxUmuYH67o7RD4BK8x9eLHuUY8FeBsW2ts0vtjitQB4ZKD97FRWjL8KBN1Wmq/t/RmgAykZpmBUz2aTH7gmfZK+K7uqFJD25pf00vNNhsH4nEuA9lfNAawfFJihyjnJxhC1kpqRxzU6cE6zSi8YPEALSWV6qG1GoDbFo5de2q3FLX/JXufMzrqTHhi3c+m1FzXdRFAcQcUenq52VrvtJetPACAOMF6Y6Oml/YJZeozplC5OzeAzFeJGZHvsAuBOWH9kH7xFefuZHwE8rXWQJHMEARgluAGdaiE/9/7y550pO5sT+q62uY7AvHUn4iCeLhj6Xy7fMVxuiT02fQVTa2Rz9X+Ey/ycAGQEYNofh3iNOzrqoJfNw44WVBRoHbVkOUhWiGEj4JUaXkMFdDcwtzAk1Fr8Y5DPZth/zvKdif19tCnVpp4u0AbNL7hC9PaNTWDvqnFCnMY+0Geot57brbMFpJADfWd20oew784UGoq1iKKZDcei5AlH5W1MOF6zLVUipZQLcZpxzdAa+zzDP/1yU++GO4YSYe9j7Vkkfhb6m9Xt0mCOOT6fLqGqaavHIOBnze/J0w2Z2i0UGTG2Wr/gfKVrzdW9CcmgtpOSWU5bWfJwMPMc7BxIaHsIFuJ2LomtXBfJDwDHuyMgo5CWl45ac5cqnUOrV1yF/FaZxc7QiLGcOUl1sbwNAgCSBvYXKX7j42v5x17BMM1aHFbZweWCWPrFn4bRHZCSP1OeiSzMCCURfUzPpJhP50Tg88nN/WLCYWOyERRTjh//MHi3NBtY1xsaSwrkqK+57duQvxN96GkSglfWM1eRgGEGoKMS0CsnS3Xww==|920
