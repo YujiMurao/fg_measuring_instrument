@@ -379,7 +379,7 @@
                       }
                     },
                     "Params": [],
-                    "ID": "4a876a7eeecf460ca9d7953a3d002881"
+                    "ID": "735d2f207c4d46b095b5674e3cbc1a45"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -394,7 +394,7 @@
                     ]
                   }
                 ],
-                "ID": "fea7d854-611b-47b4-b06b-922e78d76925"
+                "ID": "d0bc65e2-5834-493a-af2a-d42752b28d11"
               },
               {
                 "CommandList": [
@@ -410,7 +410,7 @@
                       }
                     },
                     "Params": [],
-                    "ID": "3a148bc05396465dabdade69e498464d"
+                    "ID": "4e07af79cfc04f229714fbcfe73f8028"
                   },
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -425,7 +425,7 @@
                     ]
                   }
                 ],
-                "ID": "3d71d3ef-5b24-449d-8796-a35b1bba9676"
+                "ID": "a83f412f-3aba-4ad4-b32f-2115082d56b9"
               }
             ]
           },
@@ -606,6 +606,8 @@
     "7,43": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "WaterMark": "指定値と等しい",
         "IsBounding": true,
@@ -873,7 +875,7 @@
                     "NewOtherName": "計測機器リスト"
                   }
                 ],
-                "ID": "401e3f0b-7b4d-4083-9ecf-4600ae789f56"
+                "ID": "d66f4042-0ea9-47cd-a991-da263d68d508"
               }
             ]
           }
@@ -916,7 +918,7 @@
               }
             },
             "Params": [],
-            "ID": "b94d57a42e734f7bbcbf457b981482c0"
+            "ID": "cc9ea00275d748d28b484c4c265fd6e6"
           }
         ],
         "Text": "計測機器新規登録",
@@ -1081,7 +1083,7 @@
               }
             },
             "Params": [],
-            "ID": "513dcee73e12438db44ceb52e798b643"
+            "ID": "b96931b90b4649d5be2143a371f76f9f"
           }
         ],
         "Text": "コピーして新規登録",
@@ -1341,10 +1343,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "1b201880fd4a431089c22f442fc1bcb3"
+                    "ID": "25504c1ecb6d45e8a4444fd7021dadc7"
                   }
                 ],
-                "ID": "ef89567a-78d2-47b0-b1ee-c90901f5b99e"
+                "ID": "c6f61bab-e21a-4567-ad59-07ea12333bab"
               },
               {
                 "CommandList": [
@@ -1533,10 +1535,10 @@
                       "=T17",
                       "=L6"
                     ],
-                    "ID": "56473c4f96734703aa95edcad1ea5f9b"
+                    "ID": "ab99fee5ce9e4befbb382da9095b0ea7"
                   }
                 ],
-                "ID": "fc0d3752-c154-4f6a-be29-d30cbd4d788d"
+                "ID": "533052a4-1ce7-4c86-8425-afe733251f29"
               }
             ]
           }
@@ -1662,7 +1664,7 @@
               }
             },
             "Params": [],
-            "ID": "7e393909c04043e6b2c5e492c400a732",
+            "ID": "a011bdcc0cae4db1ba4e99322ca6f521",
             "Disabled": true
           },
           {
@@ -1704,14 +1706,14 @@
                       }
                     },
                     "Params": [],
-                    "ID": "d9e771eca6e044f5b096c22a920a7915"
+                    "ID": "1102d6f99a1e49c7bb9f0f1756692336"
                   }
                 ],
-                "ID": "01509fab-ce22-4b9c-a362-aab3adeaff31"
+                "ID": "7010f6d4-8bcc-4f4b-af24-a7646df20fed"
               },
               {
                 "CommandList": [],
-                "ID": "f74844c3-e897-4532-a2aa-ce47a9d7900c"
+                "ID": "1be3fbac-7d1f-499a-bc5e-31b19709a950"
               }
             ]
           }
@@ -1741,7 +1743,7 @@
             "Params": [
               "=BY23"
             ],
-            "ID": "42e47c1bc1ae4659b6a345190983cb1b"
+            "ID": "a23fef4befb74ef4be2a18de8ade340e"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -3891,7 +3893,7 @@
           }
         },
         "Params": [],
-        "ID": "d465023a7d974f2589794ffdc931a446"
+        "ID": "308b1c8c32b1451ba62456c57bf9136f"
       },
       {
         "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -3909,7 +3911,7 @@
         "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
         "ParameterName": "今月初め",
         "ParameterValue": "EOMONTH(TODAY(),0)",
-        "ID": "9eebd0038d3f4591ac0e9093ec47fb18"
+        "ID": "976f09ba881a4ba58eacdec4a34a1dfc"
       }
     ],
     "AuthorizeInfo": {
@@ -3934,4 +3936,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//M6il0SPv2ufDlAWpnRxxqSfikSZnG679E7AeH9GwpoiBW1SicMe/oTpT3picNR1jW8EEWjkHKJwKzzURiizCFCmrL+a7AoMgDRxmxv2XafD9EF9xJfXdIQ2sMSze+fCx1aLW/BKFiUV1kIPs8pRMy651XMVDv/alt+xtHIhWv2TPfJzCDUWkBZsCXc/8DSWdcJ+5GoopD+57tYscjgo6PbRXa/KR7Yjgi4oIrNDP9JloBXx10lFLeTpa7XLyINqZrZICUfRwQ9wgw4Y2KSa1J8HdM4G91ij9OYqSh2hSBs5fKAFb0WmZ06MVG8eDVKwtkZY8EMbEcZ0LuIjNQ026GXlTh1dRXsdsQYpFPjrns3FvSFUa9dVMlNb9AcgANSJSfmEcpIFg8bBYG0iKem3wpgNxpAZDn+8l0IZiD4K03e8tM5QLM29XKVEuOh1tE3uOL4HpgD7Yu4GrWcUYbevP2fVrpbB6LM0TQRNTtF2+Ylc1/3Q2FXm4f0z4uu2iKxXDPUd6kysKZ+1Cmig6cQMngw89p9wqYgfZC3cxVQ/RqPxv+fsuUsjglflk9RIwCYrn6RmvJqus7GgeAjhjNA+WNYI3Suad31gk7RTWuQppynEYkc8jjpZ06zbXVqMC+KIERcE1EBgMPFYrLIfldcOmtFRVtRBqXeuhc4md+GzDWPhP6AYLXqh5fFh84yFK9ao1Jkd3T7x9bmucV61h9lLQS1i1Ma6suTSocgfK/xO0n7UWmPTNCJNRY9Z8Jm42FbZwNrtgARekNoIooK+blwSEbvo3c1wAtleDsnWOhSRAypP5J9UigthvTG+YWBNUoeXD/Yb55tmkXWBca4P2cAp5chrwX+A7blJBrSFwaUtlcumSw9yLwDBkqzDPLMWSKrWqjcXlreppmGbstY566PX+aw==|920
+}//TNCVukb6LTSnVdPV9MXwZD5o38Fwapk8xAcoZFByEWypNQwCOqTpCCONKPgONwu1rUgCN8sK03nWJzcbCBszwqH/V07znYO0JY5LS/R5d+opWqp6ks3P7WiLN4xN+Zw7hpFLULIr5I2yxUXf3KKMZaZ+9d5s1KHHoAo5yY/0GgLaYvBwGpcxhI3H56Fcs58QLasEIn6NmxffcRdZnfIjsByD/kyI3+MSemFf/SfArG8GxHtFzVwWy3blgAl3vUFQo93T8BNsUDJ+Z/kyZPv3KYzBVBQlU8o9FCLePhI1GY8o2T3vwG/k0eLYq5+Wv6qMN0j1FpET2uW/XOu7jBgadzfgfNX2hpVWusrCLht8Kjua9XuHJQPap8NQPZJ/4AMrTvYd9a9xRlg1/PvsSq1jeYkMMqMjvGaURK9iAWneoR/2UYuphs88tBgemDQpxdAK+FAPI46U4nubr714nu+bh86b7ONEwO7qrVE7RVY6eqt9yJ4ewvgw2rO3mslI0kvCpHgXjWvz1bJ6f8JgmiTCXHP0hH+eXY4enpWIV5C6FvtbjvmfhiJqLKjcxaFU/Ou3q7Mfeo+h0ttavoBYPDSSlhsehlAhFq+suFoDAWUZ1Fefv4Vas77XdO8qNIno3OHqmtlkxmubcg3zI85bgaKysed/mD9HiZCQUqkjoghBGhrihq8Ll1qWKNyHrZ5RZEnp/c3igyzStm59ZBawdgumbNrQs/eENwzEYveeyhPj7jQoBmH+yxgv45KaKZyldXCx9jz9hE5NK+yWyhC61ftDbNUNIKa+IgALCWs7axlMH8+2QDwe0YAziDzyunuTxEyNWG7Su2eD0qXG0sseumnQicywHhnaLVo9dnMzIlwdiMkpjK4QNv6QeGmlxzwhNpzTnQ0geCMdIc/OIo1uWr5LCg==|920
