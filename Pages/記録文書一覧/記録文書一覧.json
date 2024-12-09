@@ -204,8 +204,9 @@
     "6,2": "メモ",
     "9,1": "Excelエクスポート",
     "9,10": "記録文書作成",
-    "11,1": "登録日",
-    "11,6": "件名",
+    "11,1": "ID",
+    "11,3": "登録日",
+    "11,7": "件名",
     "11,24": "作業者",
     "11,34": "メモ"
   },
@@ -308,7 +309,7 @@
               "=M3",
               "=F7"
             ],
-            "ID": "bf9dc2dd56d34a249294bc30885187dd"
+            "ID": "a9c1d314901147fa80189a1aa59d70a0"
           }
         ],
         "Text": "検索",
@@ -336,7 +337,7 @@
               }
             },
             "Params": [],
-            "ID": "2412c792966e4864903692b64c4c047a"
+            "ID": "8c4648fa8d6d45f3b9ca81603258c0a8"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -407,7 +408,7 @@
                     "NewOtherName": "記録文書リスト"
                   }
                 ],
-                "ID": "7b113188-b12c-4698-af3f-cd42e113d623"
+                "ID": "ca826e72-cd91-4104-8e13-58f339e4829c"
               }
             ]
           }
@@ -469,7 +470,6 @@
         "ColumnCount": 51,
         "RowCount": 25,
         "IsTotalRowVisible": true,
-        "IsTotalRowAtFirstRow": true,
         "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
@@ -481,6 +481,20 @@
     "12,1": {
       "TotalRowSetting": {
         "FormulaType": 2,
+        "StaticText": "",
+        "StyleInfo": {
+          "FontSize": 8.0,
+          "HorizontalAlignment": 1,
+          "Foreground": "#FF00B0F0"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "id"
+      }
+    },
+    "12,3": {
+      "TotalRowSetting": {
         "StyleInfo": {
           "FontSize": 13.333333333333332,
           "Foreground": "Accent 1 0"
@@ -493,6 +507,9 @@
       "NameUsedInJavaScript": "登録日"
     },
     "12,6": {
+      "TotalRowSetting": {}
+    },
+    "12,7": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
@@ -510,9 +527,6 @@
         "ColumnName": "subject"
       },
       "NameUsedInJavaScript": "件名"
-    },
-    "12,7": {
-      "TotalRowSetting": {}
     },
     "12,8": {
       "TotalRowSetting": {}
@@ -764,13 +778,19 @@
         "BorderLeft": 1
       },
       {
-        "Formatter": 10,
+        "FontSize": 8.0,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 9,
+        "FontSize": 12.0,
+        "Formatter": 15,
         "HorizontalAlignment": 8
       },
       {
         "FontFamily": 9,
         "FontSize": 14.666666984558105,
-        "Foreground": 15,
+        "Foreground": 16,
         "Underline": true
       },
       {
@@ -797,6 +817,7 @@
         "General",
         "Bottom",
         "DarkGray",
+        "yyyy/m/d",
         "Blue"
       ],
       "Borders": [
@@ -1155,10 +1176,13 @@
       "9,51": 2,
       "9,52": 27,
       "11,1": 28,
+      "11,3": 24,
+      "11,7": 18,
       "12,1": 29,
-      "12,6": 30,
+      "12,3": 30,
+      "12,7": 31,
       "12,24": 18,
-      "12,46": 31,
+      "12,46": 32,
       "13,1": 12,
       "13,2": 12,
       "13,3": 12,
@@ -2278,17 +2302,19 @@
     "9,1,1,8",
     "9,10,1,8",
     "6,5,1,26",
-    "12,1,1,5",
     "12,46,1,6",
     "12,34,1,12",
     "13,1,23,51",
-    "12,6,1,18",
     "12,24,1,10",
-    "11,1,1,5",
-    "11,6,1,18",
+    "12,1,1,2",
+    "11,1,1,2",
     "11,24,1,10",
     "11,34,1,12",
-    "11,46,1,6"
+    "11,46,1,6",
+    "12,7,1,17",
+    "11,7,1,17",
+    "12,3,1,4",
+    "11,3,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2309,7 +2335,7 @@
             }
           ]
         },
-        "ID": "77a3ad61260a4dd2ac7695582e788cca"
+        "ID": "08b0079a086e4eeb9fb6c6ea6b8ce0b4"
       },
       {
         "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand"
@@ -2337,4 +2363,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//Aog2wm3i55d5OLEH6hdKZDAS53b8MuRdhpWd5hy8FUvk/4k7+hiAZcln6C6mFNi8D4DYMpEK9rdlr2lKRSU9Thzmav7RASjKKvstFDcHNmO3vos/uP7c/0aS7L/LRnfScMT0R+52TaBUmHqHMkPtyTwOrnIQD+KnWI9D7Fx8uBOH5mTv2LPKtFB+U2GvaId1T48T+ISaLDherMr5v37V7QB60QMtH1FNv04C2t7x77eqmDXDVa8EXCklzj5PEoF2PhLmB/BdoROuiyFkPpk617TUpQkKJyhpjxJAtPYg9mdzcnjVQUg5ZnyA9JJR3Ur38CioqkiZ8O4DVlrIFdmi/JdvJIfXALfWOXHgKuy8BCxWn50xbjyF4LA1SrvoY3g+Wp4hrTqwmsCI3nv+gIjEvoZA7s2708+U5TcU1kRSxcD5GQimZw5SCxVxYcD8ivT3sFqgyRYNTjsCB8oPyzcl3BlL61ozZFKfag7+iUUzZo79/XdTwV/Kg+c76cWZrAzGA81Sae4yLnKoI21aPgeBlPiArag22CaRXGJ+tHlL+ENRWnDYD0Euj+PX5qvXDI7IP/QP3ywWaDZ19rULXVhozJQ5SCXiL2n/fvc151xGZnSW+En+sTzhKgIcXntlO/zilksL36JtYt7UXMoJsMlCHxi/IwmJP5TG8HRtYNha3kFWWm15RksNO4vbxLoyCqAEDMYodg3QnxatDI1x0cCAWoCSqbAShfsu5P+iMtKRYt7FZaVtU1ECa3Vx4ZGMhZDMTbUeDza4Huz8SK2nrMy+t3qie6F0ICrC1WrlwEwk08gN6i2ZNSuIR0ajkrbQVScWxlHQPog77M2KAtEbCOFAdi3wNl7lrLZCP8/ZfxaFO+Etl8p688mHQQ40OrUyBPidUMzOq/V8StCMdaf9wNpSOA==|920
+}//BTmWzFzoy4vxVaLaJl8Jzw7ZI27tEEpp+vI6v+FIrOhGjl6EBj3G7EE2Gshc3bndw2+oLMvu+OYBcUNnSUaxBvAZQbvFO56u0NOk/Cxkr1Cs/VCtO+s7zP4h9nk7MUbrJqMfnqzAB8u4KCKxc5CbpEVFh8gFNhjeoEukOj/t5/D9uMit+QThogBfL3CtqROunTWlTgZj1q5qQRhtNuqGqUD0WOw9h5GtTP57FiwNOOpqOgRDTwBwHHFw4iG3b4HZuIKJjDrYkwbbU3UBNXX8+wvb29iFHKGO5F7D6ZgXP3NIpuVzx6aLvfQwmKAX6c1ASg4P/FK1KMepjQpmnweCBpL0YoqXc4XGESYc+tNL8nKN2W8BpPa5l1IOQsUPNYKaFBHvislnV2DR3xwTJcBNgdWk89kYcvsQIb1feQDLKEeVhqE8P/RVe8N3Xblov7OJu2b70YAuU6CXiLWcjLhfq7jlUbonr+YC+IJybi1GlXnwiERf3GFuMAJ7RhM9RAnweu+GtLGNoemUJHqRukie9Eo0wvEm2r5cROkFFtcF6iACEEhTfjDXq5YchzD7RV1P0Cy3Gi/tIoBeHbP8E9ffyLJNk6bViKkpu8ir8MP1zvNbAs3Cqm0Zev2cxlejEcK+s9RxFbbO8hh5mKNOgpojpHktjZd4m9vxuYvvpgni4ILLCYjIvyl345Q/XbA4y3y+NffUJZokoRUUQpU8imlAAptV6MZdKPIePYmZElK6tmCiLr4gTCXMTh90eM8IDSW+C0GqEOkcCcgz83nkKF6EjMkIxOoQYo+XjSxRB8j81BYHo32ZIncSiBEc4mcSwjVPgRITv4z7iPl+9xOyF+MzoI+XtGLsg0f82dEWpiGCEh5dpiHjOHj1w+OsUU7ljQ9XsPW8CT+Gln/+aSs5BlaNPw==|920
