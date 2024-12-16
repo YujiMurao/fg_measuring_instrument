@@ -252,7 +252,7 @@
                     "MessageFormula": "使用禁止理由を設定してください。"
                   }
                 ],
-                "ID": "f709a58a-a4fd-4e05-8ec7-6a5b37d7bb3d"
+                "ID": "39957dbf-794d-4e22-985c-65fe489a4f4f"
               },
               {
                 "CommandList": [
@@ -314,7 +314,7 @@
                     ]
                   }
                 ],
-                "ID": "20dff2ae-6df7-4878-b23a-b5f5e2fab8f4"
+                "ID": "0c3a1bfc-7c20-4cf7-93e7-538bccedceeb"
               }
             ]
           }
@@ -489,7 +489,7 @@
                     ]
                   }
                 ],
-                "ID": "a93a7422-0511-4585-aadb-bd862546d50b"
+                "ID": "6d3d4af7-ffb8-4055-a137-9b12f7228059"
               },
               {
                 "Condition": {
@@ -534,7 +534,7 @@
                     ]
                   }
                 ],
-                "ID": "1bd5f1f2-04fb-41bc-b676-0f4a41a95ed1"
+                "ID": "cb3e2c7e-99a3-4547-8210-12d0deb15239"
               },
               {
                 "CommandList": [
@@ -560,7 +560,7 @@
                     ]
                   }
                 ],
-                "ID": "60ce44dc-ad04-417c-ba46-1426d6c7232d"
+                "ID": "fe206df8-f974-4e54-8bbb-6870c7bf8c75"
               }
             ]
           }
@@ -579,6 +579,7 @@
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "SortOrderForUnbindCombo": 2,
         "Items": [
           {
             "Value": "",
@@ -609,20 +610,12 @@
             "DisplayValue": "校正切れ"
           },
           {
-            "Value": "使用禁止",
-            "DisplayValue": "使用禁止"
-          },
-          {
             "Value": "取消",
             "DisplayValue": "取消"
           },
           {
             "Value": "重複",
             "DisplayValue": "重複"
-          },
-          {
-            "Value": "条件付き",
-            "DisplayValue": "条件付き"
           },
           {
             "Value": "保管",
@@ -703,7 +696,7 @@
                     ]
                   }
                 ],
-                "ID": "3fe6f1ab-f15f-446a-907a-b727d577e403"
+                "ID": "7d6a30d4-dbe7-44df-9bba-a957f3c35ea9"
               }
             ]
           }
@@ -741,7 +734,7 @@
                     ]
                   }
                 ],
-                "ID": "f10cde35-1a80-4eac-8714-8a6786235c21"
+                "ID": "1869b510-e2cc-4ca4-9fdb-68be2baf7d05"
               }
             ]
           }
@@ -1011,7 +1004,7 @@
                     ]
                   }
                 ],
-                "ID": "896191a3-ee96-4a65-ada2-75cc3f3fbb01"
+                "ID": "9aaf9198-ee12-4ac7-9d4f-30a49bed00a8"
               },
               {
                 "CommandList": [
@@ -1029,7 +1022,7 @@
                     ]
                   }
                 ],
-                "ID": "373b2d41-ce53-465c-8258-aa701bead74b"
+                "ID": "2cbbea4c-6b32-4e9a-9a26-a35dbd0c9ef5"
               }
             ]
           }
@@ -1185,7 +1178,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器の編集!G23"
             },
-            "ID": "b8b9c9ee78864ff98181d33a3ae61044"
+            "ID": "cb9f9adf1a1d4a76975c03c870f561e2"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1194,7 +1187,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器の編集!G24"
             },
-            "ID": "866a1aff6582493d8dd5dfbdf85f71cc"
+            "ID": "5744dcc873fc45f5acffae44ab6d6a22"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1203,7 +1196,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器の編集!AH23"
             },
-            "ID": "6876435653104421b5da75898b8847ea"
+            "ID": "827cb14850ce4272943cd9fbf2873366"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1276,7 +1269,7 @@
                             ]
                           }
                         ],
-                        "ID": "f711e853-f90f-462c-8a2e-79dda6f9fd29"
+                        "ID": "a2568e41-6540-4409-bc34-49813ed1f061"
                       },
                       {
                         "Condition": {
@@ -1328,7 +1321,7 @@
                             ]
                           }
                         ],
-                        "ID": "56263a4b-c4d5-4eff-acd0-3614f1ecee81"
+                        "ID": "e6976ab2-f806-48f2-8df0-7e1e2676777a"
                       },
                       {
                         "CommandList": [
@@ -1359,12 +1352,12 @@
                             ]
                           }
                         ],
-                        "ID": "732582eb-d39f-4957-a758-75615f745f1e"
+                        "ID": "99e4b61e-0d59-40a8-9612-a30371cd4e98"
                       }
                     ]
                   }
                 ],
-                "ID": "4b7ec571-e0c3-461f-9318-9dc89a06651d"
+                "ID": "237dce8a-4b02-4ae8-a31a-9d15aabe2585"
               }
             ]
           }
@@ -1391,7 +1384,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器の編集!G23"
             },
-            "ID": "5a7d25e254d449d28e434b600f9ce4c2"
+            "ID": "a7bb8c2c92394b9ab40f39cd313568fb"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1400,7 +1393,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器の編集!G24"
             },
-            "ID": "1dfe4403f30c49ea832c1467edaee544"
+            "ID": "6fe380e09b52446f964df605b02ba64a"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1409,7 +1402,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器の編集!AH23"
             },
-            "ID": "d614c4988b3e418fba58b264f3a4c4af"
+            "ID": "4acf25d7938a4b8488a1e71cd2067928"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1498,7 +1491,7 @@
                             ]
                           }
                         ],
-                        "ID": "4ebce598-6636-40ec-a360-6178be2d64ba"
+                        "ID": "c76a8276-fa0a-42db-90ba-76291416eb0c"
                       },
                       {
                         "Condition": {
@@ -1550,7 +1543,7 @@
                             ]
                           }
                         ],
-                        "ID": "3b964d30-101e-4ac5-9031-26c18921c1f0"
+                        "ID": "bdea7735-a567-4c2d-9965-5a7e2fb4c038"
                       },
                       {
                         "CommandList": [
@@ -1581,12 +1574,12 @@
                             ]
                           }
                         ],
-                        "ID": "cbfbb7a9-923e-466c-9d84-ab0d70fa4510"
+                        "ID": "9a95d183-8810-4900-882d-4b6d6c02674c"
                       }
                     ]
                   }
                 ],
-                "ID": "b404763d-26c7-4613-a3ea-f5c2450a4d38"
+                "ID": "b5b375c9-ea26-4d0c-8591-52799b3ee194"
               }
             ]
           }
@@ -1610,7 +1603,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器の編集!G23"
             },
-            "ID": "5d79ec5127b94a96a03d320df66f18ba"
+            "ID": "8363c1204dc3422db37e0fdc99401c78"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1619,7 +1612,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器の編集!G24"
             },
-            "ID": "788bc4cf5e6d4be0a1663fc0e221aae0"
+            "ID": "24c60ce6081047819ecee176f88fa00e"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1628,7 +1621,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=計測機器の編集!AH23"
             },
-            "ID": "94abcb34a5ba4a22b29ad8c41d9c7421"
+            "ID": "9e9f93592a454562b162591a59a65870"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1701,7 +1694,7 @@
                             ]
                           }
                         ],
-                        "ID": "a11b9d40-2179-440d-b4ea-14b9186a3c56"
+                        "ID": "8eab34dc-d960-434a-a7b7-755cb2a8d4a1"
                       },
                       {
                         "Condition": {
@@ -1753,7 +1746,7 @@
                             ]
                           }
                         ],
-                        "ID": "d5dd970d-7fdb-45bb-88d1-023803b2c092"
+                        "ID": "909c7781-73fc-44fa-8c66-ed4465ca8181"
                       },
                       {
                         "CommandList": [
@@ -1784,12 +1777,12 @@
                             ]
                           }
                         ],
-                        "ID": "8bc476df-9cbc-43f5-acd5-a4b8ed71da4b"
+                        "ID": "bb51e94e-ca4b-405a-9528-0b78e441ce0f"
                       }
                     ]
                   }
                 ],
-                "ID": "10638d4a-b42d-4f4a-b306-cc7a944195f4"
+                "ID": "64327202-1b78-4e97-b0d7-e4bfcbc5b844"
               }
             ]
           }
@@ -4013,4 +4006,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//yVBNAY5FEysNOnmOn0gGSrEOtZyvLcrXIxEzU6Sgu6fBPQ92aIfTWDlygGj8tg1x3bXQ56J5jVpFPA4KLiKD+V4NHrZcwF2nT0cafUon2c6qHJGHY/N4HMssEy++7WzpyEbmYBdq7QUUogvUvViWYYFMo8b+L1j3wKUXI4izOoecAqYEUBjpXQ7fa8Wu7QWffyy9yd/hWjsq7uc3qt4wu/E8b3PpfcJkGJH3jJ0YxkpYfzQKNr2BeRsH5NG9/THOgrMSYAZGyh2GpMa7chg9eoCVcznk7DPV19QhLrrFgY2eefxrAmN5NLov9NAoj6aNSXP3M5ekY6ZpPFF0ic7N8fFnz5SUDf0gHm31Yy43VLFPz0Vm7WgzwFvU6dg5wCsR4UChn3g12b5HXOLjvvv6VsPPHtPJYDeJKgbtLhdXw3SX/6lqR0TI9tB5lrGbu4SITMOwqmNpHeSuUaILN3PenxQgd7m7C2bv4lj++w0GGWbmc9//rd4b9Epl8rAyDG/7SFuzLdI9oOYD533vt5JHtqMa1cz1U1OnGXXSC5ZsuKiI9/Yo2xp0g2GTYOUv1Jp35E2TEM4XBEnrCRKbZb4DmYe70sNP68aIYTwc03Lrblbixs0J1oqjf1KUkP5oUeHEpiLJC/DAqyUGP9mfGHaTqH/ZmCHR2RrVnvZyVBzEhMJqlMjOkdKNef+iOuZZGTd3aXKjHYA410X/L+qyk1BYS4mlmVN7r73h2LhuF9vT1NGACD0y65ctpG5q5Pxp5LEWWOuHkEgLGRmrxeAR8gQx45yYFxbMIOXQ/bMy4cjpNdAupRmyPglj36NXjxLdYv/puHQaXTuqeQLCCYeR7MOgjkn/0orSkGuIaWcQ7ZocWwCGf3exC4CVLmUHdpxR0KxdQCDkZOGw2lEDXDpIEniKdw==|920
+}//RnUqNTHudlI2+9uzu0ezAphjPFl6JJ7zABShrTM6DsrBtA6njlcyJFAAlBVTpf3bT5vioJmsR4gFZhAiiszWPs55geNNtWvh8m2x1piuJgWAyjqz1yvIXuwS4mu2xq1uv7yBiFcx+6iRwKkm3pAo8Ka+0njRhSfn/AVRm6A7/6TgojPcF8cSFZf7OYdyCKRi3vDXzcbpP1DVspfi8xX2YeUT5swZxvmQ9aiU+lW4zoi9Qvb27oEAeM9d0RdK9tbnzRgPlkSmGQAOm86rEpYl2m0/ougjACwP+PIjEszfTyvgfc3oatuHs1p8AyrmJDvdKWhXWpbJq83iRk8eQvu7zM9zZnl1qv6BlNam8LRejx3yizsuqWrGymDxgGh5F5kLmM3avTPRuuHDE/pDjc2FzOywvZgp9MCJrqhgRIOJfIJ9VBppU364SuD1ZLwdrc82NFZyXN8lviCofsTBaObIyxQzdlw7AXJINyT7y3kIr15VLCQ5Xxkjkg/P046ZIlpCImw2dWj3oiI7B3dylA9AM2FuOvGqHBO4h2ZiCJt2SgA6wwZXIEcghncKCuQ9N1XZ5c7PgmNkYKLORdl7lOZe98uh1hmtEb3HceVjbOl8ca6EwoAEeO+wkHN/uFfJfmfgCV0REbPPJ9h1pjdTnbVvgP3m9vGpdCTu0gfiHGhbjhQz6JcYJiuyQuzsW8enZoOUrC9sEyXq8KbyigocUrer/xgaVRng8w49sgQk35bHe9wPQbThnYMaeYEvK7lhxwJK4Ht9xMQVTkcSUZxa3cwOw6kXAy9AXmvNb7eRxZ1EGBALM7rm4hXqLcfh3KrcEihvGvQFobNigrrC+SA8vHBVHp7IT3GCP0xeDYMkMp6bHSG7xuQFcyt/8chTHwYbAbJ5bC5Wt9A64JWXDrTv1BdsXw==|920
