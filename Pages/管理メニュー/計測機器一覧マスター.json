@@ -1012,7 +1012,7 @@
                     }
                   }
                 ],
-                "ID": "e5f30d7a-b5d8-442f-a709-4ba6de8a86af"
+                "ID": "6188ead2-351d-43a7-ade9-0a56973fda58"
               }
             ]
           }
@@ -1085,6 +1085,13 @@
                   "SerializeProperty": "=計測機器一覧マスター!CS3"
                 },
                 "ColumnName": "calibration_cycle"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=計測機器一覧マスター!W3"
+                },
+                "ColumnName": "prohibition_reason"
               }
             ],
             "IsShowSuccessAlert": true,
@@ -1149,7 +1156,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "65aff53e-2c40-490d-9106-896dab2ea62b"
+                    "ID": "2474d278-c130-4242-81bf-3b6b9ec7988d"
                   },
                   {
                     "Condition": {
@@ -1185,7 +1192,7 @@
                         "UpdateValues": []
                       }
                     ],
-                    "ID": "66c8b8c9-966f-4533-8256-2c52208c47d8"
+                    "ID": "a897b702-9042-423d-8a8c-05357f24eac9"
                   }
                 ]
               },
@@ -1720,6 +1727,8 @@
     "2,132,1,4",
     "2,136,1,4",
     "2,140,1,4",
+    "0,31,1,6",
+    "0,37,1,6",
     "1,0,1,2",
     "1,5,1,2",
     "1,7,1,3",
@@ -1755,9 +1764,7 @@
     "1,128,1,4",
     "1,132,1,4",
     "1,136,1,4",
-    "1,140,1,4",
-    "0,31,1,6",
-    "0,37,1,6"
+    "1,140,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1777,4 +1784,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//fA3YF+WPZz3m2dgQCKDsIH7AvZUehIZDuRl0s0dJurBr5JzHGYhWyNq4sWmC9vOnAjzRr+numv+SY67J4NnAq54IMQKBkQaPJisp/pAKRn7wXKt0TYxSoDC/1MH5m8cuRlQYjjBQ0vehclT9kA1Moa9/Qo9/oaHokj+knPetbbjVHuIBiGaFwYKXlk2wec4dViK33Z78d5kMo9eRsE9ne5OXGDFTRZjEVcr0njUa5BIasUF3KyJBA3pNziz92qi29XpQSW6HL/5oDUoywaM2yBVaEtfjPaDXU1q6ck8zyeQffPxiph3v5ORUgfBJ84AjN0WP86vSbXwYlat+VEtSSttME1HrMu1ege3AtsvE4FK/XmeHKZS1hIGSeM/k95pMJS/H45kRpGtD4kJDwHkljpZa7GJLye4LFBHI+IGi1E3TzSAd138tP4OOM9gAMDxUK3p6MT1d8oeWRdnO8vu70B21CaD5Yf/YMMECg0mW9yOhx8sG5MEN16tuNnoTZe3Pzle6erJEx3MwDsV7XexnLlsnmiuR32fYfgtR8zGoxzhXG9z5z3vjyTUYZVdg8k9GWjn9QuBBWODB2dL7SyAidawnNKo1qFH5vI3AwFIOxQdy0ryN/PfR+M3RlQg2Sk03vzGSsduWAy9t6fXN1srv1KEZjbBPmYGfvORH+nGXk3gDIBXFOsmtK3+QQauJ5jZr8X4bRht4fDAFSFLlu0xBK4LvSCWb5ZjFmETmXs5e3PkWHnqSLejE1FdhquC/Ke1pRLlCtxk/liCe+f2BaopdoBil0z4gQuOqeYUE9AFvGHw0wgrfjeXCduXeuQ9iduYw1aUobbZcoPNMQY1O+JaxySKDPHSZnUFLQDi/ictPMwRC/veL5kXoZjr503PVVyHM0XfFaioQrnfv0K46ZkxtAw==|920
+}//6NVrXH/oZZkFhlbwbeOe7Iz2MXyzsCyeu0WCBOYMeJhihObBKDW+QJm6pEwLI6kF6rWZwe+4aPVpF2XjuP0N1kfBYetjh7XZexj0M9v2KKw44jgV+5nnrwip1MjvREGKWytwNVJP5MuoR1xI0X7D37uTeLZNxX3IYgcSHIvSL/BzPw/41lkgRDknu3BWr5E0/XLUOxI2ryHwOXeg6dEOVU3FYZfnhBBCpxh4EZ1OFzucgHxXcalDUPr2X+L11CjrdeJgzlWVQXZpurhqlhVTq9Xzxyx3H9ib9zARZTxlct6AjK5UxBVLod1xNgSuR7e+IoNPZa8g4Upi/NuHN7/QouVsQkULffpPnaRTa0dNsf8P77K27KvA9t8i2w/Ym1Hf2waUWVoAfCSx+OJpWaMWAbSlBHhoOaP8zidVPT8p5b5AtapkrPjRti/ZAEUqDf59z9bs+w/OgEtjfz1qobYyszHxzOqGyNrbrM/x3Z9j0T2zC1p4YHEPi03RO3tI1jD5bwWq60V1x8876DupkkUROYUg3VR7oYTSBoO+TCSZZ4v9t9CERan4cSgfEnTeRLWd4XHyjP31Pe1Rr6eIdHaa9Qq+dGhMyqUKMeWWAUV4MhIaMNYzuf2SCsjnMw0vZSB1pXPK9KWI+VKckb8MupmXLYnH/h2OaQSgc+a/JvSaI9tTEI/1PD9HT2DGsq6ekQJHSKavuAec8ZFVHZ16PoCSwGNZfPQC53ZpgFA0ED6sXG6yA5DNmwoYYOKVbI3afEQHOgouaervRgEpYNDF9n88MbhRweokevhf+ZlXLneteGikdJ/DIm5zD2RYwuCOD+uFEs5zxEZLvStfsv1XsG6qJALVcwejh/V0FyWALVKuTtnZDUUELmfkvwMarS+uSOIWuBgWeQdnFCMyg0fveyPV1g==|920
