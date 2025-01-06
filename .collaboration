@@ -406,7 +406,16 @@
   },
   {
     "ModuleName": "TaskScheduler/校正切れメール送信(品質保証課)",
-    "ModuleType": 16
+    "State": 2,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2025-01-06T13:54:28.5852783+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\校正切れメール送信(品質保証課).json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/校正切れメール送信(品質保証課テスト)",
@@ -467,5 +476,15 @@
   {
     "ModuleName": "PCPage/校正承認リスト (管理)",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "TaskScheduler/校正切れメール送信(品質技術課)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2025-01-06T13:54:28.5852783+09:00",
+    "ModuleType": 16
   }
 ]
