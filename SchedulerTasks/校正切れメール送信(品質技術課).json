@@ -5,8 +5,7 @@
     {
       "$type": "Forguncy.ServerCommands.Models.MonthlyAndDaysOfMonthScheduleTrigger, ServerDesignerCommon",
       "DaysOfMonth": [
-        1,
-        6
+        1
       ],
       "Months": [
         1,
@@ -22,8 +21,7 @@
         11,
         12
       ],
-      "StartDateTime": 45663.625,
-      "ScheduleRunInDebugServer": false
+      "StartDateTime": 45663.333333333336
     }
   ],
   "Commands": [
@@ -68,7 +66,7 @@
           "RelationType": 1
         }
       },
-      "ID": "89fc0cf3f03b4adcb6baa6c34fdd5799"
+      "ID": "492b574a2a2441989faf32e8d5d3304d"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -111,7 +109,7 @@
           "RelationType": 1
         }
       },
-      "ID": "23fd9b4819e149efa14ec6a6c5ecf370"
+      "ID": "c90d3b984a8c4394be244f7b5a2bbb27"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -154,7 +152,7 @@
           "RelationType": 1
         }
       },
-      "ID": "c21891cb1ef14515814e0e75d5f88e6a"
+      "ID": "620f88e540e6435ca8ca43e82c38a9a1"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -197,7 +195,7 @@
           "RelationType": 1
         }
       },
-      "ID": "0d1b555057694f4ea800490e53603084"
+      "ID": "d0ed90f8d1534b5fa01653ab49d75b09"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -240,7 +238,7 @@
           "RelationType": 1
         }
       },
-      "ID": "0abc6a2db70e4014bc039f14720ad93e"
+      "ID": "65857565fc9e41cd88b4c1d49f9f491e"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -283,7 +281,7 @@
           "RelationType": 1
         }
       },
-      "ID": "0d0192394df4494f85c06a5949162ad1"
+      "ID": "a057550a581f42d69271accbd19ea00e"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -326,7 +324,7 @@
           "RelationType": 1
         }
       },
-      "ID": "944c7708d7d94ed8960d17072736f060"
+      "ID": "3877bca1c0d2487c9ff47822f50b5754"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -335,7 +333,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
       },
-      "ID": "61197e84a5e64ea4902897717609ecc9"
+      "ID": "f3a1768efcd34a8a9120b8dd0f50eea4"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -344,7 +342,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
       },
-      "ID": "0bf85e4b03794e56985b557aef9c197d"
+      "ID": "7fed33e44d044049a191b7affc775efb"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -353,7 +351,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
       },
-      "ID": "8897009911264da4a90b64ca109c6b25"
+      "ID": "35bde60b34a7458aacbeaf84afa6a25a"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -362,7 +360,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-2)+1,\"yyyy/m/d\")"
       },
-      "ID": "febf8066265a4820a73fb2b1c5879698"
+      "ID": "1d2939fb843f439e97ee36860e89ff4e"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -371,7 +369,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1),\"yyyy/m/d\")"
       },
-      "ID": "b656d702f16c47b4a68f6dea3d141b04"
+      "ID": "1313039341f0476cabb7eb0c01017574"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -527,7 +525,7 @@
           }
         }
       },
-      "ID": "b227767d75a8471b914d3114b23c8726",
+      "ID": "698e006a9ccf4c179e5aec9b8c2b40e0",
       "Comments": "校正月の案内用"
     },
     {
@@ -599,7 +597,7 @@
           }
         }
       },
-      "ID": "f7c70a0756aa4e629515d0f10752abf0",
+      "ID": "8046cf632c524f47bcec12160cdfac28",
       "Comments": "有効期限が切れる案内"
     },
     {
@@ -680,7 +678,7 @@
           }
         }
       },
-      "ID": "c4ac843d72ca4180a047401f7d4723dc",
+      "ID": "ce54aceae2be41fb9dc4532017b28830",
       "Comments": "校正切れの案内用"
     },
     {
@@ -747,10 +745,10 @@
                 "CommonValue": "murao.yuji@rorze.com,qa-kousei@rorze.com"
               },
               "Priority": "high",
-              "ID": "0377ce6315474bba83d7a63c43221c9c"
+              "ID": "77c006a5211f4091aa0edeeeb9009f49"
             }
           ],
-          "ID": "c4f36a27-a34c-4863-89db-1722991309fb"
+          "ID": "4382ffa9-084d-4af0-81e7-65acfb8a6ae6"
         },
         {
           "CommandList": [
@@ -763,10 +761,10 @@
                 "CommonValue": "murao.yuji@rorze.com"
               },
               "Priority": "high",
-              "ID": "0d332b9bfd454a64a7f8612ea687ea30"
+              "ID": "994d4a3ed8264c8abd341a91ab678589"
             }
           ],
-          "ID": "04d95016-f021-446a-8b7c-9767d4d37d14"
+          "ID": "e76b7674-1be5-40cf-9ecb-a3a45b52e990"
         }
       ]
     }
