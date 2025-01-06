@@ -21,7 +21,8 @@
         11,
         12
       ],
-      "StartDateTime": 45663.333333333336
+      "StartDateTime": 45664.333333333336,
+      "ScheduleRunInDebugServer": false
     }
   ],
   "Commands": [
@@ -66,7 +67,8 @@
           "RelationType": 1
         }
       },
-      "ID": "492b574a2a2441989faf32e8d5d3304d"
+      "ID": "a80139ea634346bfb8dff48c1d15a3c6",
+      "Disabled": true
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -109,7 +111,8 @@
           "RelationType": 1
         }
       },
-      "ID": "c90d3b984a8c4394be244f7b5a2bbb27"
+      "ID": "78070bd098934d0ca7fbaf8641a9d320",
+      "Disabled": true
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -152,7 +155,8 @@
           "RelationType": 1
         }
       },
-      "ID": "620f88e540e6435ca8ca43e82c38a9a1"
+      "ID": "6b2cb638e349431481b61c6fbe22d524",
+      "Disabled": true
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -195,7 +199,8 @@
           "RelationType": 1
         }
       },
-      "ID": "d0ed90f8d1534b5fa01653ab49d75b09"
+      "ID": "07ee78211d5845f288b4e6f1a086e9b4",
+      "Disabled": true
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -238,7 +243,8 @@
           "RelationType": 1
         }
       },
-      "ID": "65857565fc9e41cd88b4c1d49f9f491e"
+      "ID": "9b890fa21560417b920a5f3b7f60aa25",
+      "Disabled": true
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -281,7 +287,8 @@
           "RelationType": 1
         }
       },
-      "ID": "a057550a581f42d69271accbd19ea00e"
+      "ID": "87884e89d58b4de6a5470a63896736bd",
+      "Disabled": true
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -324,7 +331,8 @@
           "RelationType": 1
         }
       },
-      "ID": "3877bca1c0d2487c9ff47822f50b5754"
+      "ID": "60e5c0e900cd4e79a352978492ff31dc",
+      "Disabled": true
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -333,7 +341,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
       },
-      "ID": "f3a1768efcd34a8a9120b8dd0f50eea4"
+      "ID": "dd07927e0653495ba4ab4d4bb0960290"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -342,7 +350,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
       },
-      "ID": "7fed33e44d044049a191b7affc775efb"
+      "ID": "4eaf14d8b2784b11826aa82621b91b65"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -351,7 +359,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
       },
-      "ID": "35bde60b34a7458aacbeaf84afa6a25a"
+      "ID": "19b9493401dc4e88a4d7aeb59901feff"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -360,7 +368,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-2)+1,\"yyyy/m/d\")"
       },
-      "ID": "1d2939fb843f439e97ee36860e89ff4e"
+      "ID": "2607773355de45bc9937776499f9db49"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -369,7 +377,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1),\"yyyy/m/d\")"
       },
-      "ID": "1313039341f0476cabb7eb0c01017574"
+      "ID": "44068a271689479bafc0aa3214c4b53e"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -525,7 +533,7 @@
           }
         }
       },
-      "ID": "698e006a9ccf4c179e5aec9b8c2b40e0",
+      "ID": "eac0361c9b0245f5befb06c7cf6ec97c",
       "Comments": "校正月の案内用"
     },
     {
@@ -597,7 +605,7 @@
           }
         }
       },
-      "ID": "8046cf632c524f47bcec12160cdfac28",
+      "ID": "59587f341e064a4c86908f3cf687c030",
       "Comments": "有効期限が切れる案内"
     },
     {
@@ -678,7 +686,7 @@
           }
         }
       },
-      "ID": "ce54aceae2be41fb9dc4532017b28830",
+      "ID": "792c8b29efc44840b7077b806111fa68",
       "Comments": "校正切れの案内用"
     },
     {
@@ -736,19 +744,68 @@
               "Subject": "校正測定機器の期限について",
               "Content": "品質技術課　担当者 さま\r\n\r\nForguncy計測機器タスクからの自動送信メールです。([=今月])\r\n①今月の校正対象測定機器は[=今月校正数]件あります。\r\n[%PageNavigate=(今月校正対象機器リスト,こちらをクリック)%]\r\n②今月の校正有効期限が切れる測定機器は[=今月期限数]件あります。\r\n[%PageNavigate=(今月校正有効期限機器リスト,こちらをクリック)%]\r\n③校正有効期限が切れた測定機器は[=校正切れ数]件あります。\r\n[%PageNavigate=(先月校正有効期限機器リスト,こちらをクリック)%]\r\n\r\n以上\r\n",
               "EnhancedRecipient": {
-                "CommonValue": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=管理者メアド&\",\"&担当者メアド&\",\"&担当者メアド_1&\",\"&担当者メアド_2&\",\"&担当者メアド_3&\",\"&担当者メアド_4&\",\"&担当者メアド_5"
-                }
+                "TableName": "mst_insptool_personincharge",
+                "TableColumn": {
+                  "TableName": "mst_insptool_personincharge",
+                  "ColumnName": "chart_in_person",
+                  "AttachType": {
+                    "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+                    "UserColumnAttachType": 2
+                  }
+                },
+                "QueryCondition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "mst_insptool_personincharge",
+                        "ColumnName": "ctrl_id",
+                        "RelationBinding": {
+                          "RelatedTable": "mst_insptool_management_department",
+                          "RelatedColumn": "ID",
+                          "DisplayColumn": "code"
+                        }
+                      },
+                      "Value": "D",
+                      "LeftBracket": 1
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "mst_insptool_personincharge",
+                        "ColumnName": "ctrl_id",
+                        "RelationBinding": {
+                          "RelatedTable": "mst_insptool_management_department",
+                          "RelatedColumn": "ID",
+                          "DisplayColumn": "code"
+                        }
+                      },
+                      "Value": "E",
+                      "RightBracket": 1
+                    },
+                    "RelationType": 1
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "mst_insptool_personincharge",
+                      "ColumnName": "contact"
+                    },
+                    "Value": "1"
+                  }
+                },
+                "IsMultiRecipient": true
               },
               "EnhancedBCC": {
                 "CommonValue": "murao.yuji@rorze.com,qa-kousei@rorze.com"
               },
               "Priority": "high",
-              "ID": "77c006a5211f4091aa0edeeeb9009f49"
+              "ID": "8c8a1b0d69214dfbb72bd7ca36369d82"
             }
           ],
-          "ID": "4382ffa9-084d-4af0-81e7-65acfb8a6ae6"
+          "ID": "e9119fff-a374-46b9-9505-78285e54a3d4"
         },
         {
           "CommandList": [
@@ -761,10 +818,10 @@
                 "CommonValue": "murao.yuji@rorze.com"
               },
               "Priority": "high",
-              "ID": "994d4a3ed8264c8abd341a91ab678589"
+              "ID": "8fbf9660cf474456abc96b3d97856037"
             }
           ],
-          "ID": "e76b7674-1be5-40cf-9ecb-a3a45b52e990"
+          "ID": "a388166b-8a12-433d-8107-95476cc2a323"
         }
       ]
     }
