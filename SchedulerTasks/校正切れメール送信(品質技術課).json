@@ -1,11 +1,12 @@
 {
-  "Description": "毎月一回\r\n品質保証課（D)\r\n品質保証課（E)",
+  "Description": "毎月一回\r\n品質技術課（D)\r\n品質技術課（E)",
   "Enabled": true,
   "Triggers": [
     {
       "$type": "Forguncy.ServerCommands.Models.MonthlyAndDaysOfMonthScheduleTrigger, ServerDesignerCommon",
       "DaysOfMonth": [
-        1
+        1,
+        6
       ],
       "Months": [
         1,
@@ -21,7 +22,7 @@
         11,
         12
       ],
-      "StartDateTime": 45566.333333333336,
+      "StartDateTime": 45663.625,
       "ScheduleRunInDebugServer": false
     }
   ],
@@ -67,7 +68,7 @@
           "RelationType": 1
         }
       },
-      "ID": "220f3d692665496fa72b45d73261d8f4"
+      "ID": "89fc0cf3f03b4adcb6baa6c34fdd5799"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -110,7 +111,7 @@
           "RelationType": 1
         }
       },
-      "ID": "bd2d5b02acbf480092ed609bc031ded0"
+      "ID": "23fd9b4819e149efa14ec6a6c5ecf370"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -153,7 +154,7 @@
           "RelationType": 1
         }
       },
-      "ID": "a9453fcbd94a4348a539e32beeb39b75"
+      "ID": "c21891cb1ef14515814e0e75d5f88e6a"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -196,7 +197,7 @@
           "RelationType": 1
         }
       },
-      "ID": "82913b45c5a54cc19c4c55f79820bc64"
+      "ID": "0d1b555057694f4ea800490e53603084"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -239,7 +240,7 @@
           "RelationType": 1
         }
       },
-      "ID": "2b2a3c8bb8854cb189633d6045318409"
+      "ID": "0abc6a2db70e4014bc039f14720ad93e"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -282,7 +283,7 @@
           "RelationType": 1
         }
       },
-      "ID": "7649349727084f8a8e8ccb9d0bf83f60"
+      "ID": "0d0192394df4494f85c06a5949162ad1"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -325,7 +326,7 @@
           "RelationType": 1
         }
       },
-      "ID": "aa32268f5959436394ad9d1b04f9dc19"
+      "ID": "944c7708d7d94ed8960d17072736f060"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -334,7 +335,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
       },
-      "ID": "4a48c32a55c14b469206fa387a06009d"
+      "ID": "61197e84a5e64ea4902897717609ecc9"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -343,7 +344,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
       },
-      "ID": "20806dda7505478bbc0d68671ca93b9c"
+      "ID": "0bf85e4b03794e56985b557aef9c197d"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -352,7 +353,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
       },
-      "ID": "89758d51e74b4af38b8e8737a55559cf"
+      "ID": "8897009911264da4a90b64ca109c6b25"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -361,7 +362,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-2)+1,\"yyyy/m/d\")"
       },
-      "ID": "198f90a4618941ecbb01ba69b3f93584"
+      "ID": "febf8066265a4820a73fb2b1c5879698"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -370,7 +371,7 @@
         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
         "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1),\"yyyy/m/d\")"
       },
-      "ID": "7d17ed285ea041a6a20e35a5ca4c3e87"
+      "ID": "b656d702f16c47b4a68f6dea3d141b04"
     },
     {
       "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -526,7 +527,7 @@
           }
         }
       },
-      "ID": "93a0cba2bbbd4f32a0fe5c62eb6032c5",
+      "ID": "b227767d75a8471b914d3114b23c8726",
       "Comments": "校正月の案内用"
     },
     {
@@ -598,7 +599,7 @@
           }
         }
       },
-      "ID": "b9b5e1014e7b472aad8a86af79d8c684",
+      "ID": "f7c70a0756aa4e629515d0f10752abf0",
       "Comments": "有効期限が切れる案内"
     },
     {
@@ -679,7 +680,7 @@
           }
         }
       },
-      "ID": "47ea2a70d99843e097c97b4b45b18fda",
+      "ID": "c4ac843d72ca4180a047401f7d4723dc",
       "Comments": "校正切れの案内用"
     },
     {
@@ -746,13 +747,29 @@
                 "CommonValue": "murao.yuji@rorze.com,qa-kousei@rorze.com"
               },
               "Priority": "high",
-              "ID": "f2946fad15524310b0c3f1c3f4f2ccc7"
+              "ID": "0377ce6315474bba83d7a63c43221c9c"
             }
           ],
-          "ID": "ca2353d6-8da5-45fd-9fdc-4a8d9e572712"
+          "ID": "c4f36a27-a34c-4863-89db-1722991309fb"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+              "From": "equipment@rorze.com",
+              "Subject": "「ゼロ」校正測定機器の期限について",
+              "Content": "品質技術課　担当者 さま\r\n\r\nForguncy計測機器タスクからの自動送信メールです。([=今月])\r\n①今月の校正対象測定機器は[=今月校正数]件あります。\r\n[%PageNavigate=(今月校正対象機器リスト,こちらをクリック)%]\r\n②今月の校正有効期限が切れる測定機器は[=今月期限数]件あります。\r\n[%PageNavigate=(今月校正有効期限機器リスト,こちらをクリック)%]\r\n③校正有効期限が切れた測定機器は[=校正切れ数]件あります。\r\n[%PageNavigate=(先月校正有効期限機器リスト,こちらをクリック)%]\r\n\r\n以上\r\n",
+              "EnhancedRecipient": {
+                "CommonValue": "murao.yuji@rorze.com"
+              },
+              "Priority": "high",
+              "ID": "0d332b9bfd454a64a7f8612ea687ea30"
+            }
+          ],
+          "ID": "04d95016-f021-446a-8b7c-9767d4d37d14"
         }
       ]
     }
   ],
-  "Name": "校正切れメール送信(品質保証課)"
+  "Name": "校正切れメール送信(品質技術課)"
 }
