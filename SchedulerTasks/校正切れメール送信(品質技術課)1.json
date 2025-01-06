@@ -1,0 +1,775 @@
+{
+  "Description": "毎月一回\r\n品質技術課（D)\r\n品質技術課（E)",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.MonthlyAndDaysOfMonthScheduleTrigger, ServerDesignerCommon",
+      "DaysOfMonth": [
+        1
+      ],
+      "Months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "StartDateTime": 45664.333333333336,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "管理者メアド",
+      "TableValue": {
+        "TableName": "mst_insptool_management_department",
+        "OnlyGetValue": true,
+        "TableValueType": 0,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "supervisor",
+              "AttachType": {
+                "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+                "UserColumnAttachType": 2
+              }
+            },
+            "ColumnName": "supervisor"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "D"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "E"
+          },
+          "RelationType": 1
+        }
+      },
+      "ID": "0a0b09cf4e2c4551af60e6719ddd8c5b",
+      "Disabled": true
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "担当者メアド",
+      "TableValue": {
+        "TableName": "mst_insptool_management_department",
+        "OnlyGetValue": true,
+        "TableValueType": 0,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "leader",
+              "AttachType": {
+                "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+                "UserColumnAttachType": 2
+              }
+            },
+            "ColumnName": "leader"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "D"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "E"
+          },
+          "RelationType": 1
+        }
+      },
+      "ID": "ac4ad722956846bc98ecdf5e03f68ac6",
+      "Disabled": true
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "担当者メアド_1",
+      "TableValue": {
+        "TableName": "mst_insptool_management_department",
+        "OnlyGetValue": true,
+        "TableValueType": 0,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "staff1",
+              "AttachType": {
+                "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+                "UserColumnAttachType": 2
+              }
+            },
+            "ColumnName": "staff1"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "D"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "E"
+          },
+          "RelationType": 1
+        }
+      },
+      "ID": "3c6ee60ee8d948c4b7e4b2318b13d572",
+      "Disabled": true
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "担当者メアド_2",
+      "TableValue": {
+        "TableName": "mst_insptool_management_department",
+        "OnlyGetValue": true,
+        "TableValueType": 0,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "staff2",
+              "AttachType": {
+                "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+                "UserColumnAttachType": 2
+              }
+            },
+            "ColumnName": "staff2"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "D"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "E"
+          },
+          "RelationType": 1
+        }
+      },
+      "ID": "7b952672870d4754888d0af7b17a7d5e",
+      "Disabled": true
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "担当者メアド_3",
+      "TableValue": {
+        "TableName": "mst_insptool_management_department",
+        "OnlyGetValue": true,
+        "TableValueType": 0,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "staff3",
+              "AttachType": {
+                "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+                "UserColumnAttachType": 2
+              }
+            },
+            "ColumnName": "staff3"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "D"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "E"
+          },
+          "RelationType": 1
+        }
+      },
+      "ID": "cdcb07b2c8ed41da8a1e21dbf6159e28",
+      "Disabled": true
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "担当者メアド_4",
+      "TableValue": {
+        "TableName": "mst_insptool_management_department",
+        "OnlyGetValue": true,
+        "TableValueType": 0,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "staff4",
+              "AttachType": {
+                "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+                "UserColumnAttachType": 2
+              }
+            },
+            "ColumnName": "staff4"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "D"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "E"
+          },
+          "RelationType": 1
+        }
+      },
+      "ID": "e0f462f1397143efb236e1f68d6974c7",
+      "Disabled": true
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "担当者メアド_5",
+      "TableValue": {
+        "TableName": "mst_insptool_management_department",
+        "OnlyGetValue": true,
+        "TableValueType": 0,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "staff5",
+              "AttachType": {
+                "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+                "UserColumnAttachType": 2
+              }
+            },
+            "ColumnName": "staff5"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "D"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mst_insptool_management_department",
+              "ColumnName": "code"
+            },
+            "Value": "E"
+          },
+          "RelationType": 1
+        }
+      },
+      "ID": "9f721c35024b4482bdccd892ca2f1c6a",
+      "Disabled": true
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "今月",
+      "ParameterValue": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m\")"
+      },
+      "ID": "783cd02ca8104bee8480c7f06d3a83c0"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "今月初日",
+      "ParameterValue": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1)+1,\"yyyy/m/d\")"
+      },
+      "ID": "084c4089b2d94230a511cd9b0dd3d156"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "今月末日",
+      "ParameterValue": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=TEXT(EOMONTH(TODAY(),0),\"yyyy/m/d\")"
+      },
+      "ID": "81bc009c43904b2593b7afc26f038f8b"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "先月初日",
+      "ParameterValue": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-2)+1,\"yyyy/m/d\")"
+      },
+      "ID": "e66d74a15fa84c109244757d301ebec0"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "先月末日",
+      "ParameterValue": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=TEXT(EOMONTH(TODAY(),-1),\"yyyy/m/d\")"
+      },
+      "ID": "194f211441cd4226b075c01fcf8d2f4f"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "今月校正数",
+      "TableValue": {
+        "TableName": "trn_insptool_tools",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 3,
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_insptool_tools",
+                            "ColumnName": "next_caribration_ymd"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=今月初日"
+                          }
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 5,
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_insptool_tools",
+                            "ColumnName": "next_caribration_ymd"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=今月末日"
+                          }
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_insptool_tools",
+                            "ColumnName": "category"
+                          },
+                          "Value": "社内",
+                          "LeftBracket": 1
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_insptool_tools",
+                            "ColumnName": "category"
+                          },
+                          "Value": "社外",
+                          "RightBracket": 1
+                        },
+                        "RelationType": 1
+                      }
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 1,
+                      "ColumnBindingInfo": {
+                        "TableName": "trn_insptool_tools",
+                        "ColumnName": "prohibition_reason"
+                      },
+                      "Value": "廃棄"
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 1,
+                    "ColumnBindingInfo": {
+                      "TableName": "trn_insptool_tools",
+                      "ColumnName": "prohibition_reason"
+                    },
+                    "Value": "故障"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 1,
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_insptool_tools",
+                    "ColumnName": "prohibition_reason"
+                  },
+                  "Value": "紛失"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 1,
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "prohibition_reason"
+                },
+                "Value": "移管"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "prohibition_reason"
+              },
+              "Value": "不適合"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "n2",
+                "RelationBinding": {
+                  "RelatedTable": "mst_insptool_management_department",
+                  "RelatedColumn": "code",
+                  "DisplayColumn": "code"
+                }
+              },
+              "Value": "D",
+              "LeftBracket": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "n2",
+                "RelationBinding": {
+                  "RelatedTable": "mst_insptool_management_department",
+                  "RelatedColumn": "code",
+                  "DisplayColumn": "code"
+                }
+              },
+              "Value": "E",
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        }
+      },
+      "ID": "39efb0c2fecc4d6d999dba30861855db",
+      "Comments": "校正月の案内用"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "今月期限数",
+      "TableValue": {
+        "TableName": "trn_insptool_tools",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "kouseiyuukoukigenymd"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=今月初日"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "kouseiyuukoukigenymd"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=今月末日"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "n2",
+                "RelationBinding": {
+                  "RelatedTable": "mst_insptool_management_department",
+                  "RelatedColumn": "code",
+                  "DisplayColumn": "code"
+                }
+              },
+              "Value": "D",
+              "LeftBracket": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "n2",
+                "RelationBinding": {
+                  "RelatedTable": "mst_insptool_management_department",
+                  "RelatedColumn": "code",
+                  "DisplayColumn": "code"
+                }
+              },
+              "Value": "E",
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        }
+      },
+      "ID": "939323daa57146858b9f1fce5c640a21",
+      "Comments": "有効期限が切れる案内"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "校正切れ数",
+      "TableValue": {
+        "TableName": "trn_insptool_tools",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 5,
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "kouseiyuukoukigenymd"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=先月末日"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 1,
+                "ColumnBindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "usage"
+                },
+                "Value": "使用禁止"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "category"
+              },
+              "Value": "非校正"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "n2",
+                "RelationBinding": {
+                  "RelatedTable": "mst_insptool_management_department",
+                  "RelatedColumn": "code",
+                  "DisplayColumn": "code"
+                }
+              },
+              "Value": "D",
+              "LeftBracket": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "n2",
+                "RelationBinding": {
+                  "RelatedTable": "mst_insptool_management_department",
+                  "RelatedColumn": "code",
+                  "DisplayColumn": "code"
+                }
+              },
+              "Value": "E",
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        }
+      },
+      "ID": "6db02addadf84020bf26f021263bde83",
+      "Comments": "校正切れの案内用"
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=今月校正数"
+                  }
+                },
+                "value": "0",
+                "compareType": 2
+              },
+              "Condition2": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=今月期限数"
+                  }
+                },
+                "value": "0",
+                "compareType": 2
+              },
+              "RelationType": 1
+            },
+            "Condition2": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                "ParamObject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=校正切れ数"
+                }
+              },
+              "value": "0",
+              "compareType": 2
+            },
+            "RelationType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+              "From": "equipment@rorze.com",
+              "Subject": "校正測定機器の期限について",
+              "Content": "品質技術課　担当者 さま\r\n\r\nForguncy計測機器タスクからの自動送信メールです。([=今月])\r\n①今月の校正対象測定機器は[=今月校正数]件あります。\r\n[%PageNavigate=(今月校正対象機器リスト,こちらをクリック)%]\r\n②今月の校正有効期限が切れる測定機器は[=今月期限数]件あります。\r\n[%PageNavigate=(今月校正有効期限機器リスト,こちらをクリック)%]\r\n③校正有効期限が切れた測定機器は[=校正切れ数]件あります。\r\n[%PageNavigate=(先月校正有効期限機器リスト,こちらをクリック)%]\r\n\r\n以上\r\n",
+              "EnhancedRecipient": {
+                "CommonValue": "murao.yuji@rorze.com"
+              },
+              "Priority": "high",
+              "ID": "b8710ae4894d48dfac7cb2c9b4260bf1"
+            }
+          ],
+          "ID": "118da64b-5f2c-4029-adc1-2c18ab5dbbb0"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+              "From": "equipment@rorze.com",
+              "Subject": "「ゼロ」校正測定機器の期限について",
+              "Content": "品質技術課　担当者 さま\r\n\r\nForguncy計測機器タスクからの自動送信メールです。([=今月])\r\n①今月の校正対象測定機器は[=今月校正数]件あります。\r\n[%PageNavigate=(今月校正対象機器リスト,こちらをクリック)%]\r\n②今月の校正有効期限が切れる測定機器は[=今月期限数]件あります。\r\n[%PageNavigate=(今月校正有効期限機器リスト,こちらをクリック)%]\r\n③校正有効期限が切れた測定機器は[=校正切れ数]件あります。\r\n[%PageNavigate=(先月校正有効期限機器リスト,こちらをクリック)%]\r\n\r\n以上\r\n",
+              "EnhancedRecipient": {
+                "CommonValue": "murao.yuji@rorze.com"
+              },
+              "Priority": "high",
+              "ID": "c8c245510aee4a4aa629accf27f99069"
+            }
+          ],
+          "ID": "416e44c4-4544-4e29-a91c-f35dcb9ff814"
+        }
+      ]
+    }
+  ],
+  "Name": "校正切れメール送信(品質技術課)1"
+}
