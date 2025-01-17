@@ -337,7 +337,7 @@
     "5,68": "校正"
   },
   "Formulas": {
-    "1,74": "\"校正対象計測機器一覧(\"&TEXT(TODAY(),\"yyyymmdd\")&\")_校正切れ本社\"",
+    "1,74": "\"校正対象計測機器一覧(\"&TEXT(TODAY(),\"yyyymmdd\")&\")_使用禁止リスト\"",
     "3,70": "COUNTBLANK(BQ7)"
   },
   "AttachInfos": {
@@ -352,7 +352,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=校正切れリスト!BS4"
             },
-            "ID": "d430eea0b6d64c489a1e2e5737bd90e8"
+            "ID": "68ca561635224df4b16e36acf7ac3219"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -377,7 +377,7 @@
                     "MessageFormula": "定期校正機器の校正要否がすべて設定されいません。\r\nすべて”必要”又は”不要”を設定してください。"
                   }
                 ],
-                "ID": "91014dae-7693-4127-9965-f1f0bab0b6bf"
+                "ID": "1b67a6b8-24a9-4874-9e44-290ec4036d34"
               },
               {
                 "CommandList": [
@@ -404,7 +404,7 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "b2c0e29c861640af942ffe909b753174"
+                            "ID": "573e3ae0ae024d469889bfdd97ccbd96"
                           },
                           {
                             "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
@@ -417,16 +417,16 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "0d80c46a57f64c6b9591f4d99adda6a2",
+                            "ID": "afea41046b8043bb9cc3424b7b7c894a",
                             "Disabled": true
                           }
                         ],
-                        "ID": "9777fc88-396f-4989-928e-9bd06091c012"
+                        "ID": "e62da3da-245c-42c8-8c3d-3a3a7dcce99f"
                       }
                     ]
                   }
                 ],
-                "ID": "08804e90-6dc7-467c-9f4f-b2741e6be181"
+                "ID": "7b7d1265-99cd-4a68-a7c0-6f9f940a699d"
               }
             ]
           },
@@ -471,7 +471,7 @@
                     }
                   }
                 ],
-                "ID": "ba1c55ea-7a09-4895-9772-d1b39fdb247d"
+                "ID": "0ce9287c-8598-48b9-8127-9e3315f83849"
               }
             ]
           }
@@ -593,7 +593,7 @@
             "Params": [
               "=BU7"
             ],
-            "ID": "5e63ead34326494897a3815274fc069e"
+            "ID": "3ca86f2e934147419300b94a11ed0686"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -2536,7 +2536,7 @@
             }
           ]
         },
-        "ID": "f29e2182336d4c04bba3f04eba471a00"
+        "ID": "8b34f5af9c8b48dbad832e3800b996b3"
       }
     ],
     "AuthorizeInfo": {
@@ -2554,4 +2554,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//eeQbhO5Iagf/HXN/EwT6g0cQABDqTh0LzC/PrL2ZP4yo5b5AsT8Qa/BeFVRJKAfsaNsepzF4Iak5Tak3+n7Mlnn+g0ZHGqR63DzXuzzB0AcBwLuT6whqmVM3yUOHHkONMuzWNYSqxxAldeUh32TCJSVKSAkttKAkcKEz2J2W+qGSrMm1AXm+3WwO69uGnqt/tZ/Cs8+hdzRpZpiTtR35VK/hBOs9uAAAbibWQZAeULIWVJUAW5XlShyg4xaepM+hjig7PJRqb1Qi6XyZybXKKjvdhLZUUVPlBVftNB+p+G77g80Z0wyoM8l4aQhaB9tcARFWbwq9lFO4kILmOx5CWt3heL3/t/wkCVsplb3ksibbQzq62oNc2C2Wej8G9w9luaHO19Zxr8CU9jRuZhdUw33gw6EV3tM/E/HGJsxpSLXfjolmw/0bu3nareCAVrKP0dFABlJmmEVwSspjEd9EgLAS8xjSCN9hCK1vRRrW2Fro5L0flqSAKIHrHh3HDOkQXs3CQqRAueWYvUzWU9HrsIGyrSuIaurQPe3T+g8YqOsSbprM3hOHzIiLmVIjIVKFutr4dvnlvD8dc1/BFRDPOyx2O6d1aq/k5WVEXtwmeH+2YSrbD4G/cip9RM7q5wrI8lHDQYS665cyF/lPsnx1HUz5+/7PdhOAD1XXuBMRWS5Ls6Xe03BnHvef6OjpGweMBIR2GYIJ8f8YFEemlqcDXrwrnPXbl21R5yX/6zdNojwPkR7ZHo8ayQVaNYihirrbZzbOc8Y+sJ5YA1BQh4TgH7g4k2h3rHlEvzJ7P0ZD6ISsXqJJS+naPBl2okamQCwGchlgWWKrCa7z/UB6BnuEJOIC0swXB05c4/P7KS6ocMUcj6INUjJJnAD139L7E5iknmRie61ejIU/DJzXf1Ye2g==|920
+}//7lY1dPXvHHFewH107iOTGhQcO66MUQQLqOQGVKyKZZ5H+vq+bDo2TVokBAw1Gl2G/8VBqC9+VPbl7qFOH3RsATxUIblauIfFFdg2pu0/x27xwdE9AIDJLQ2WLjWr62AY+nKgDBe22l+7vNNSxBTmdiOFlEVYQ95gzFnwytN654v8pYKIXlOfj6Wl+A0lXCTOzrLX5UEgNWMIG1fTdAGzVydkUuRbEzJf7eHrzVFpAED1Y9JtfBh9LWFJsAXLMIEXw/7xwPFVO/FW6sFfilgUyM9BA2w3qW1xYBLgmgiyb22A4JEaUceLgibjOcikJ8uulYwEo80wHEa2p2qjCbSKiMQnkU8zk+Qo63gRv9SriCRptzBjNigmNekc2fB+NorFEYrd+UYgxnv8+vMutsxtlCRtueppMxiJwXFLSyrdAGucAtQdTWMXPBv5CtXFs6aCAe6tOkp+YN7nUMpp+v44l/h5LnXx0XAfxWFMuvcWPeK0vsZGTKonrlG7LzszE6so79g+Z+lD7hJ7RXAjHNp7Gap2bSiwvTmPC53wd/pi8+PuN8wgZZjrwd9tR1yGwpvPT3lzyXTH3p8FADh7l54a5cue0ud68FiqkjUqI77NOsceHb8i9imHhf6DBqSQ4zgJqP36qkmsjFa7O2MmY5sddZoYVF/QRrePwnwWO3tfQA+MrXjASm9hMp9ooCkbpE+TP8qF9SxD7v4M3eQyk6Q8Ify/GP6iLTZnVkomS7IEgNQypeYTPLlohzRUcRYs1Tw2FvCcxPgM9LJtt2WsdFxTIicMHrnrQGpEqLa/AlIMWPWGWk3Y5lmCbroeSI4UeTrI/p7RxvSbzLzBUTWwpP8Y/jnsAJiVKxQwULLqA7epvgrK+jeu3F1j8akqupinC5kEvFPhpR72YWsnyHER8KY7UQ==|920

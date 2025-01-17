@@ -216,11 +216,6 @@
           "DesignLengthInPixel": 20.0
         }
       },
-      "73": {
-        "GridRowColumnDefinition": {
-          "IsHidden": true
-        }
-      },
       "75": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
@@ -280,15 +275,14 @@
           "DesignLengthInPixel": 20.0,
           "IsHidden": true
         }
-      }
+      },
+      "73": {}
     },
     "InVisibleIndexes": [
       73
     ],
     "InLogicalVisibleIndexes": [
       73,
-      74,
-      75,
       76,
       77,
       78,
@@ -305,7 +299,7 @@
     "1,15": "※次回校正月が",
     "1,22": "までのアイテム",
     "1,68": "通知送信",
-    "1,73": "校正対象計測機器一覧()_校正有無確認",
+    "1,76": "校正対象計測機器一覧()_校正有無確認",
     "3,1": "Excelエクスポート",
     "3,17": "",
     "3,18": "チェック行操作",
@@ -330,7 +324,7 @@
     "5,68": "校正"
   },
   "Formulas": {
-    "1,73": "\"校正対象計測機器一覧(\"&TEXT(TODAY(),\"yyyymmdd\")&\")_校正有無確認\"",
+    "1,76": "\"校正対象計測機器一覧(\"&TEXT(TODAY(),\"yyyymmdd\")&\")_使用可リスト\"",
     "3,70": "COUNTBLANK(BQ7)"
   },
   "AttachInfos": {
@@ -379,7 +373,7 @@
               "=I2",
               "=Q2"
             ],
-            "ID": "d246e5721f974b1980f3dc158d5e9bb1"
+            "ID": "c50749b8a746430dbc373b40917d4609"
           }
         ]
       }
@@ -395,7 +389,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "='定期校正リスト(部署)'!BS4"
             },
-            "ID": "a435086760a94b19bfc644553567438d"
+            "ID": "e7e767c73182421597a4e73d1b52d7ef"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -420,7 +414,7 @@
                     "MessageFormula": "定期校正機器の校正要否がすべて設定されいません。\r\nすべて”必要”又は”不要”を設定してください。"
                   }
                 ],
-                "ID": "a2fc81d0-37f4-46db-b8e2-4223ecef8304"
+                "ID": "b111c0db-5a24-416e-8ada-42bad4dc78c3"
               },
               {
                 "CommandList": [
@@ -447,7 +441,7 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "3b85e8297ca74bf297b612e431437590",
+                            "ID": "28d52b58eb61489399b90ad9ab1fecb1",
                             "Disabled": true
                           },
                           {
@@ -461,15 +455,15 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "dafd50148bf341e699f59f9cb48be886"
+                            "ID": "dc9d7fd077c44706bf5cb5d348712dbb"
                           }
                         ],
-                        "ID": "2d7179fe-0101-403f-99c2-dd6be48713d7"
+                        "ID": "7d46eccb-c0e4-4e46-ab8e-2f6fa771b63d"
                       }
                     ]
                   }
                 ],
-                "ID": "2f10abeb-a42a-40f4-8209-f61a14399e9e"
+                "ID": "677cfe6c-38f1-408f-9c77-00234361fd15"
               }
             ]
           },
@@ -509,11 +503,11 @@
                     "IsOnlyExportValue": false,
                     "NewOtherName": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='定期校正リスト(部署)'!BV2"
+                      "SerializeProperty": "='定期校正リスト(部署)'!BY2"
                     }
                   }
                 ],
-                "ID": "01811379-7350-4e91-af2d-a309d8993334"
+                "ID": "b0e69c30-d049-4643-a926-3c6d48207fef"
               }
             ]
           }
@@ -635,7 +629,7 @@
             "Params": [
               "=BW7"
             ],
-            "ID": "c701f6a9d4da4e15b6bf3e1f97070bfd"
+            "ID": "efcab93c6c7847d8a7e91c0a1ad2b986"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -1259,11 +1253,19 @@
         "VerticalAlignment": 3,
         "WordWrap": false,
         "Underline": false,
-        "Strikethrough": false,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "Strikethrough": false
+      },
+      {
+        "FontStyle": 0,
+        "FontWeight": 0,
+        "Foreground": 9,
+        "Formatter": 2,
+        "TextIndent": 0,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 3,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false
       },
       {
         "FontFamily": 6,
@@ -1277,19 +1279,11 @@
         "VerticalAlignment": 3,
         "WordWrap": false,
         "Underline": false,
-        "Strikethrough": false
-      },
-      {
-        "FontStyle": 0,
-        "FontWeight": 0,
-        "Foreground": 9,
-        "Formatter": 2,
-        "TextIndent": 0,
-        "HorizontalAlignment": 2,
-        "VerticalAlignment": 3,
-        "WordWrap": false,
-        "Underline": false,
-        "Strikethrough": false
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Formatter": 1,
@@ -1611,18 +1605,17 @@
       "1,70": 8,
       "1,71": 8,
       "1,72": 12,
-      "1,73": 14,
-      "1,74": 15,
-      "1,75": 16,
+      "1,74": 14,
+      "1,75": 15,
       "1,76": 16,
-      "1,77": 16,
-      "1,78": 16,
-      "1,79": 16,
-      "1,80": 16,
-      "1,81": 16,
-      "1,82": 16,
-      "1,83": 16,
-      "1,84": 16,
+      "1,77": 15,
+      "1,78": 15,
+      "1,79": 15,
+      "1,80": 15,
+      "1,81": 15,
+      "1,82": 15,
+      "1,83": 15,
+      "1,84": 15,
       "2,1": 17,
       "2,2": 17,
       "2,3": 17,
@@ -3642,7 +3635,7 @@
             }
           ]
         },
-        "ID": "836e28d4ba85438ba7db9a065c6f1b83"
+        "ID": "fc487d20cc214da8a789e39c9a6d4020"
       }
     ],
     "AuthorizeInfo": {
@@ -3660,4 +3653,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//BIITdiCzlSK+lABjJTwy6Bd1iPJ0fLRO2CbARl9CkknbRIJuwlMyrGLpABXyI59J6J1cv7JOkpRubB1MGf57kTjfusxZbc3vabUfvKrpLP+ApzL75AJnk4hbJ9kY3A7EVtY7NEHuI+l/sbTpQHqkPW7QWbz1gSWre2qF7+zNSD/kQqdY30SYcsCGxaM4RBPfVVIMy1kj/16KD4RbPV/EsQFkhPAGvLf+Sgt0CE0yjIkn5H/+Qj7hFXn1W9dg2yYBZ75p0DlfNFrSD1KfZ5SYc3U7HqnjNAwopyIfZ3hDWYJyTYh6TlpmqJtBm+hMeqQZux77SV3QdzU2TGPRS1hnidO1JLrTeT7qeMm8fuHGBYTtaPRuhqfwVJJq29oVd3TdDTs8JjZkWPcjtasjW3c+G1fNBkISiGyczRLRTFo5ZrkL+FvcLvkyVyuoVe3HBHcICkB+qe9KmRTyLoKa3yjh+qetfZVTxZGQPgnVTFxoVrhv1uN8k+pavwtsMGGTWKnFcRhUFbrOZa3mclBbfbXmoa8Isx01/udQIM5q8E4cN6JgXEJ9s1DNuhPl9ml7ptEUih3o7ewLMqTDHn2eCraUBaeeAeDeRsujgMTRirw//wJnKGC9dNyG9b2bt4codobWvEX6eZaqEpbwSIx7jMHUv6ln5Squ3kaaNnjjkn3YZajCUlVUMbybtVQ4lvfO3AtJFfGEznpA+c9rupB+xj7E0k8lAUUSOFLtk59JAF0pJ/meANQHKBwQ26EiUskajioXFPcFd0Zs6mF4OXDxQDAnvnGkR5OO2arB36uKqcnwNEn0IfDKg4X2VX67BdwPwsQpVQd/52yYZdfOGKhcarzE4BreGZPCAOIWdqRKha67KBvPL4bH5l8r1fOiCVUt4mrHyLN2p3Vg5BqIGqPSFlbKgA==|920
+}//Xelea5hoU9kVFZ/tNdtWUrGoZ9HaLRTVLW0ZLM7BrguwT0+WCyS2buythUUjIr8RH3WbRkQMt4CsBIuTvNBCXBUFHEKdNq051CoOdfgvp1XpKsYkrb46DW576uDfcITZe/5KkNlerp4y769caq11LjVOnDvy4RtoX1b+KESi3rUrfJ/PrL9u1X/Zu9h/KnNJtCFpP2mLqqPREVA+kilSUCyLvq00wYDWKQRPZEpjh+OPK44kTt8OKT3UStZ98rNy/+pf9wNCVK9PIBHWHRs+7t3MjXjnui316fF6bBoRqrm4fECDfbeQb6psGgAi6ZE8hVyFCBbSREEpMigh7BWBBduB9zmI3lF5KvFviWihQQaXpWzk/SH3a0909YEaOJQQz8jgx8mA3sSj7NeJ8uM13atwE2SwCxxbzye8lilXY7mxMZ8ZOG1XrQpQbMk3C1dX4uYmdbVlMd16e2mIEfcMnc+DPnwIcCotav4XgP9iZelhWfPalmm7EGknejsV9MHk8bR8v+s+UIbbqla1Tnp2oGzLt4W3NJAhh/AzgWxanamgoHtkI5OeSB19EV7oDy9UJAN1t4JCBk6paqa3FHzEkHJzNoPc6cnxBeW9uOjUJh9HqCMkSxPMjUEDJWPQBVM5sMJN74HPo7t/pwAkcqDUwqkJTF7PTbSwm5xPpVnrn+hXCLxuBMh7/GA1YJcOSscgco1OcWsbwTp3TTUYERVL5m/baBSCW4qqIa4d+hgkn8RETPb0MLiLyF1R6yXUCisUC+VHQFAVL4YV6Q0rTu0bb59r8TzGNqgISM08BUDhhLxyAnSA9jf+0DLlLNKFrrnxx1TPpEZh6hxVp0OyJCJLL9gUkiwMsLjyFxXHmsWBC4AfcXsaXjL476edbTCmBhxCThl2t0hovLeHuWw9AGt8Rw==|920

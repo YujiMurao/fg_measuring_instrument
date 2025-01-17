@@ -218,6 +218,7 @@
       },
       "73": {
         "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
           "IsHidden": true
         }
       },
@@ -282,10 +283,8 @@
         }
       }
     },
-    "InVisibleIndexes": [
-      73
-    ],
     "InLogicalVisibleIndexes": [
+      72,
       73,
       74,
       75,
@@ -305,7 +304,7 @@
     "1,15": "※次回校正月が",
     "1,22": "までのアイテム",
     "1,68": "通知送信",
-    "1,73": "校正対象計測機器一覧()_校正有無確認",
+    "1,76": "校正対象計測機器一覧()_校正有無確認",
     "3,1": "Excelエクスポート",
     "3,17": "",
     "3,18": "チェック行操作",
@@ -330,7 +329,7 @@
     "5,68": "校正"
   },
   "Formulas": {
-    "1,73": "\"校正対象計測機器一覧(\"&TEXT(TODAY(),\"yyyymmdd\")&\")_校正有無確認\"",
+    "1,76": "\"校正対象計測機器一覧(\"&TEXT(TODAY(),\"yyyymmdd\")&\")_使用可リスト\"",
     "3,70": "COUNTBLANK(BQ7)"
   },
   "AttachInfos": {
@@ -379,7 +378,7 @@
               "=I2",
               "=Q2"
             ],
-            "ID": "f741f8a73538492dba448a94b1b5443c"
+            "ID": "b44abaa254964e428011db88c0af948a"
           }
         ]
       }
@@ -395,7 +394,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=定期校正リスト!BS4"
             },
-            "ID": "339b5880fa1c4e78836df97e53ce939e"
+            "ID": "f9e8c863847547eeb9506894553a7c9f"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -420,7 +419,7 @@
                     "MessageFormula": "定期校正機器の校正要否がすべて設定されいません。\r\nすべて”必要”又は”不要”を設定してください。"
                   }
                 ],
-                "ID": "d0430154-b7a1-4eaa-b345-38fd3aacfed8"
+                "ID": "bee9a96d-d2b1-43b6-aa7f-dc1acf65fdce"
               },
               {
                 "CommandList": [
@@ -447,7 +446,7 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "46c550df26794a89b3d1289ecfc45c22"
+                            "ID": "d830a5c0b76947aab42d7748ddcb8b70"
                           },
                           {
                             "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
@@ -460,16 +459,16 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "f25582315dc94dc4b8833f3a44674127",
+                            "ID": "2c0ab1f32ea94a06b822c8728c0c46f1",
                             "Disabled": true
                           }
                         ],
-                        "ID": "df9aaf21-5162-411c-9805-7140eded49c4"
+                        "ID": "7d5bec51-70a4-4bc7-8d75-20918af542b8"
                       }
                     ]
                   }
                 ],
-                "ID": "0e8093c7-cbf5-47f9-ab18-ea271f908e6d"
+                "ID": "c46adf5d-6f53-4fc7-a53e-2da33d62e0c5"
               }
             ]
           },
@@ -510,11 +509,11 @@
                     "IsOnlyExportValue": false,
                     "NewOtherName": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=定期校正リスト!BV2"
+                      "SerializeProperty": "=定期校正リスト!BY2"
                     }
                   }
                 ],
-                "ID": "60bb8850-aed8-42b2-a7e6-0fa79714a59e"
+                "ID": "e4d9b62f-941f-403f-b6fc-dfbad138d8e0"
               }
             ]
           }
@@ -636,7 +635,7 @@
             "Params": [
               "=BW7"
             ],
-            "ID": "2f8326d561fb4ed68a1c1fe3aac5a39d"
+            "ID": "4fca36103f894e6194546a6809211c59"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -1119,11 +1118,19 @@
         "VerticalAlignment": 3,
         "WordWrap": false,
         "Underline": false,
-        "Strikethrough": false,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "Strikethrough": false
+      },
+      {
+        "FontStyle": 0,
+        "FontWeight": 0,
+        "Foreground": 9,
+        "Formatter": 2,
+        "TextIndent": 0,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 3,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false
       },
       {
         "FontFamily": 6,
@@ -1137,19 +1144,11 @@
         "VerticalAlignment": 3,
         "WordWrap": false,
         "Underline": false,
-        "Strikethrough": false
-      },
-      {
-        "FontStyle": 0,
-        "FontWeight": 0,
-        "Foreground": 9,
-        "Formatter": 2,
-        "TextIndent": 0,
-        "HorizontalAlignment": 2,
-        "VerticalAlignment": 3,
-        "WordWrap": false,
-        "Underline": false,
-        "Strikethrough": false
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       },
       {
         "Formatter": 1,
@@ -1471,18 +1470,17 @@
       "1,70": 8,
       "1,71": 8,
       "1,72": 12,
-      "1,73": 14,
-      "1,74": 15,
-      "1,75": 16,
+      "1,74": 14,
+      "1,75": 15,
       "1,76": 16,
-      "1,77": 16,
-      "1,78": 16,
-      "1,79": 16,
-      "1,80": 16,
-      "1,81": 16,
-      "1,82": 16,
-      "1,83": 16,
-      "1,84": 16,
+      "1,77": 15,
+      "1,78": 15,
+      "1,79": 15,
+      "1,80": 15,
+      "1,81": 15,
+      "1,82": 15,
+      "1,83": 15,
+      "1,84": 15,
       "2,1": 17,
       "2,2": 17,
       "2,3": 17,
@@ -3502,7 +3500,7 @@
             }
           ]
         },
-        "ID": "306da02fd1684156ab88546f271af3bd"
+        "ID": "1c52dab247e745fb843ba944cd89ded9"
       }
     ],
     "AuthorizeInfo": {
@@ -3520,4 +3518,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//qaeCqpqbSgdzzsYMLd6RrWHUseaPU6tzxT9eS9bhT4iiebG/YH9+OadHMdMqh9psdTg7Fq+taOnnYXDTGfLn9Rg9k7SuDb8s44J/HBsp2CMCv8lQi77q0cNVUfSEVeXNXevo0/aC8VlJbGfTE0TR0VJbdwUin3udi881RSryZZa1PjXm4kSfL+ql9Upz4RL0uk7Bj1uTS70EHcDt/3UqxYhp3FWcrnP/z/xjEn1G+PbVRVVOdSkwpWz0DxoSu7wLAj283i7lMe54BhCfO/WNdOjENJpKTqRWjuUSYc4PtqtbT68OYcklHLQ3Yst48z9wLhX59tHJ9YRVGI3ovrWy/KHHZFe+sX2XWSJb4+YaxqaQKOelCZnNge6dO7HMY2jWBaVJ3umFZEudY1ggqIh0nkUIcmR5Cmfgx17yTbzbvvn1OJwoAfJ/9W6Tflc4QdZ2VOpbinzx2Tqzu6GBuqY3EwzqKtWuNene5RGfRHifW87nSDv9re+H8sXJIPDhPo6ThPFeR+DwHedGPcX/5Js0z7KuMi0kDOMvKwPnxyP8E+WuhHJMfEo5pbdne8QQ/Lrtk9YpzmRb0vPMFd+u7m+LMV88czHORDr0AomQkOTXFLnD6wpDAv0Uy0i8FPj/he5uZ6KE8CliU4L/MGkXgtFOMhGmhpg03gZpBSolcJVt5MbIosa5fa7pzEbdKS7Cz6X9QzckFs2mzTRSh6Yfdov916HZ4sner7UiHVr1wTDhmdOlpBX7SdC10occg9WZIlPvweb2o8ZlbCrrmRwxvWvlJybb1sfLwFoPLntvBW8zo4r65PHFF8FHHDYn3RdPFTAxHvFBQpNAhGvw5Dwktbr6pmrxuNnz/T7qvck4f2YP0UaYQE6l80KqpkLeuqBe3QPzrkzkhigzg0bscGbH3vwapw==|920
+}//2OjOWWdgaI9Ha96slzpU4z6i+xzcNqlpfClAhr6x+J4RRjs7rNxekSmJnYS83B60FrY8/uUI4MBvLkRW52Y9boZNsLe2HoTEZEIE9u2zg4eTJ+B9qSyPt7JIuGUd4wFwV1lN5B2oUQdKjrgpgkkbk4PQgjkVuf1o1j56ZT6NGTwug43dyJUyKRDU4zgSKUp9LW5gsCbfn08tMFffGn38R5W7lW2qOf7I0lYwH0prpDkpBLbYUUQKKLQq13bYzorlErMTt4SdfWd4iF55Zold9YF2P3rXmIMUKKmSt1HvfI+IcYi8n2eZ65MQd5BgaidzLJhpoxLkDo1MibToUt4tZ9Vm+B2JDvHMWpYnQHyEkg71c+plmiC0kwHcbUyY1M36DKzrdZV4Xwm3dx+Iywsx9yoN8tCvYYs93qDnR5T+O2nr07I9uc/FyBToqkWkLf004fLSP/CGSznFZt74I4e2D0S5bjgni5Ghxaeh6JdEcGA5Wjp3msLYQLXmSV859s1f7WT94ADeaIPKdeCM6yx5ou5XhPpapz7Snr29IyrGPlLABGN5uEaVluYg/QHqNJociRHhlr6VfJjOIIMgEjNY8ygXzYPwZaL6dI7Wj8JN8yG/vBwJ/hxCnka5KL7nLKN5lbwd/NZMR3jMXwTlWZHMnOAcs9SwDSrOr1405gXkHqiXiqwII8fhlvPLPJLdZlYSjobv5c0OeKLTyVr9t+3BSGP0Yi6fDytmV6Xb74Uu7GK4NMAnO0WahTJcIsqPzpiyfX8lItvw9dBSmRFLH1Hdg4FlSP0dtTPkUo44BCcfZadxX7ye4yLAlRNO61UwjIZxhNaiWOi1WLvVMadtUc8ys8Ei/8FKU2yJiLqhkc7gBfiGA08J3HmkDJKQUMsAab4xgESRolDIsfBAagJJz0rqaA==|920
