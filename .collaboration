@@ -438,7 +438,16 @@
   },
   {
     "ModuleName": "PCPage/定期校正リスト不要",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2025-01-17T10:43:50.7691413+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\管理メニュー\\定期校正リスト不要.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/校正切れメール送信(品質保証課テスト)",
