@@ -491,7 +491,16 @@
   },
   {
     "ModuleName": "PCPage/校正承認リスト",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2025-02-04T11:51:24.2922363+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\計測機器一覧(担当者向け)\\校正承認リスト.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/校正切れメール送信(電気)",
