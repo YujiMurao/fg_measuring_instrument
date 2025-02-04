@@ -155,19 +155,9 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0
         }
-      },
-      "38": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
-      },
-      "39": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0
-        }
       }
     },
-    "Count": 40
+    "Count": 38
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -216,10 +206,14 @@
           "DesignLengthInPixel": 20.0
         }
       },
+      "73": {
+        "GridRowColumnDefinition": {
+          "IsHidden": true
+        }
+      },
       "75": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "IsHidden": true
+          "DesignLengthInPixel": 20.0
         }
       },
       "76": {
@@ -275,8 +269,7 @@
           "DesignLengthInPixel": 20.0,
           "IsHidden": true
         }
-      },
-      "73": {}
+      }
     },
     "InVisibleIndexes": [
       73
@@ -373,7 +366,7 @@
               "=I2",
               "=Q2"
             ],
-            "ID": "c50749b8a746430dbc373b40917d4609"
+            "ID": "5b6077b3879a4f71924390ab80894631"
           }
         ]
       }
@@ -389,7 +382,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "='定期校正リスト(部署)'!BS4"
             },
-            "ID": "e7e767c73182421597a4e73d1b52d7ef"
+            "ID": "69ec699b92654efd8a60bce0698d03a4"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -414,7 +407,7 @@
                     "MessageFormula": "定期校正機器の校正要否がすべて設定されいません。\r\nすべて”必要”又は”不要”を設定してください。"
                   }
                 ],
-                "ID": "b111c0db-5a24-416e-8ada-42bad4dc78c3"
+                "ID": "394317ce-de7f-4383-9c06-fea222fb5ca1"
               },
               {
                 "CommandList": [
@@ -441,7 +434,7 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "28d52b58eb61489399b90ad9ab1fecb1",
+                            "ID": "a2f6abbc90eb4e728dad2f97cb263984",
                             "Disabled": true
                           },
                           {
@@ -455,15 +448,15 @@
                             "EnhancedBCC": {
                               "CommonValue": "murao.yuji@rorze.com"
                             },
-                            "ID": "dc9d7fd077c44706bf5cb5d348712dbb"
+                            "ID": "091e908b334646939e3454578fbff8e5"
                           }
                         ],
-                        "ID": "7d46eccb-c0e4-4e46-ab8e-2f6fa771b63d"
+                        "ID": "2d0ba052-afd0-420c-af1f-b3387fa0da83"
                       }
                     ]
                   }
                 ],
-                "ID": "677cfe6c-38f1-408f-9c77-00234361fd15"
+                "ID": "107ad38f-a6a0-4049-ba91-d168a86944b9"
               }
             ]
           },
@@ -507,7 +500,7 @@
                     }
                   }
                 ],
-                "ID": "b0e69c30-d049-4643-a926-3c6d48207fef"
+                "ID": "4a6e7267-dafd-4137-9ac1-70a32080be62"
               }
             ]
           }
@@ -629,7 +622,7 @@
             "Params": [
               "=BW7"
             ],
-            "ID": "efcab93c6c7847d8a7e91c0a1ad2b986"
+            "ID": "3e41b0609a8d452a8bd77f64bf5db3f7"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
@@ -637,7 +630,7 @@
         "RowIndex": 5,
         "ColumnIndex": 1,
         "ColumnCount": 74,
-        "RowCount": 35,
+        "RowCount": 33,
         "IsRowHeaderCheckBoxVisible": true,
         "IsTotalRowVisible": true,
         "IsTotalRowAtFirstRow": true,
@@ -3380,155 +3373,7 @@
       "37,71": 43,
       "37,72": 43,
       "37,73": 43,
-      "37,74": 43,
-      "38,1": 43,
-      "38,2": 43,
-      "38,3": 43,
-      "38,4": 43,
-      "38,5": 43,
-      "38,6": 43,
-      "38,7": 43,
-      "38,8": 43,
-      "38,9": 43,
-      "38,10": 43,
-      "38,11": 43,
-      "38,12": 43,
-      "38,13": 43,
-      "38,14": 43,
-      "38,15": 43,
-      "38,16": 43,
-      "38,17": 43,
-      "38,18": 43,
-      "38,19": 43,
-      "38,20": 43,
-      "38,21": 43,
-      "38,22": 43,
-      "38,23": 43,
-      "38,24": 43,
-      "38,25": 43,
-      "38,26": 43,
-      "38,27": 43,
-      "38,28": 43,
-      "38,29": 43,
-      "38,30": 43,
-      "38,31": 43,
-      "38,32": 43,
-      "38,33": 43,
-      "38,34": 43,
-      "38,35": 43,
-      "38,36": 43,
-      "38,37": 43,
-      "38,38": 43,
-      "38,39": 43,
-      "38,40": 43,
-      "38,41": 43,
-      "38,42": 43,
-      "38,43": 43,
-      "38,44": 43,
-      "38,45": 43,
-      "38,46": 43,
-      "38,47": 43,
-      "38,48": 43,
-      "38,49": 43,
-      "38,50": 43,
-      "38,51": 43,
-      "38,52": 43,
-      "38,53": 43,
-      "38,54": 43,
-      "38,55": 43,
-      "38,56": 43,
-      "38,57": 43,
-      "38,58": 43,
-      "38,59": 43,
-      "38,60": 43,
-      "38,61": 43,
-      "38,62": 43,
-      "38,63": 43,
-      "38,64": 43,
-      "38,65": 43,
-      "38,66": 43,
-      "38,67": 43,
-      "38,68": 43,
-      "38,69": 43,
-      "38,70": 43,
-      "38,71": 43,
-      "38,72": 43,
-      "38,73": 43,
-      "38,74": 43,
-      "39,1": 43,
-      "39,2": 43,
-      "39,3": 43,
-      "39,4": 43,
-      "39,5": 43,
-      "39,6": 43,
-      "39,7": 43,
-      "39,8": 43,
-      "39,9": 43,
-      "39,10": 43,
-      "39,11": 43,
-      "39,12": 43,
-      "39,13": 43,
-      "39,14": 43,
-      "39,15": 43,
-      "39,16": 43,
-      "39,17": 43,
-      "39,18": 43,
-      "39,19": 43,
-      "39,20": 43,
-      "39,21": 43,
-      "39,22": 43,
-      "39,23": 43,
-      "39,24": 43,
-      "39,25": 43,
-      "39,26": 43,
-      "39,27": 43,
-      "39,28": 43,
-      "39,29": 43,
-      "39,30": 43,
-      "39,31": 43,
-      "39,32": 43,
-      "39,33": 43,
-      "39,34": 43,
-      "39,35": 43,
-      "39,36": 43,
-      "39,37": 43,
-      "39,38": 43,
-      "39,39": 43,
-      "39,40": 43,
-      "39,41": 43,
-      "39,42": 43,
-      "39,43": 43,
-      "39,44": 43,
-      "39,45": 43,
-      "39,46": 43,
-      "39,47": 43,
-      "39,48": 43,
-      "39,49": 43,
-      "39,50": 43,
-      "39,51": 43,
-      "39,52": 43,
-      "39,53": 43,
-      "39,54": 43,
-      "39,55": 43,
-      "39,56": 43,
-      "39,57": 43,
-      "39,58": 43,
-      "39,59": 43,
-      "39,60": 43,
-      "39,61": 43,
-      "39,62": 43,
-      "39,63": 43,
-      "39,64": 43,
-      "39,65": 43,
-      "39,66": 43,
-      "39,67": 43,
-      "39,68": 43,
-      "39,69": 43,
-      "39,70": 43,
-      "39,71": 43,
-      "39,72": 43,
-      "39,73": 43,
-      "39,74": 43
+      "37,74": 43
     },
     "RowStyles": {
       "7": 43,
@@ -3561,9 +3406,7 @@
       "34": 43,
       "35": 43,
       "36": 43,
-      "37": 43,
-      "38": 43,
-      "39": 43
+      "37": 43
     },
     "SheetStyle": {
       "FontFamily": 6,
@@ -3592,7 +3435,6 @@
     "6,45,1,2",
     "6,52,1,5",
     "6,57,1,3",
-    "7,1,33,74",
     "1,68,2,4",
     "3,1,1,7",
     "3,66,2,4",
@@ -3600,6 +3442,7 @@
     "6,65,1,3",
     "6,68,1,4",
     "1,16,1,6",
+    "7,1,31,74",
     "5,1,1,2",
     "5,3,1,4",
     "5,7,1,3",
@@ -3635,7 +3478,7 @@
             }
           ]
         },
-        "ID": "fc487d20cc214da8a789e39c9a6d4020"
+        "ID": "8797c1bef61a449e912f09b4b73f286a"
       }
     ],
     "AuthorizeInfo": {
@@ -3653,4 +3496,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//Xelea5hoU9kVFZ/tNdtWUrGoZ9HaLRTVLW0ZLM7BrguwT0+WCyS2buythUUjIr8RH3WbRkQMt4CsBIuTvNBCXBUFHEKdNq051CoOdfgvp1XpKsYkrb46DW576uDfcITZe/5KkNlerp4y769caq11LjVOnDvy4RtoX1b+KESi3rUrfJ/PrL9u1X/Zu9h/KnNJtCFpP2mLqqPREVA+kilSUCyLvq00wYDWKQRPZEpjh+OPK44kTt8OKT3UStZ98rNy/+pf9wNCVK9PIBHWHRs+7t3MjXjnui316fF6bBoRqrm4fECDfbeQb6psGgAi6ZE8hVyFCBbSREEpMigh7BWBBduB9zmI3lF5KvFviWihQQaXpWzk/SH3a0909YEaOJQQz8jgx8mA3sSj7NeJ8uM13atwE2SwCxxbzye8lilXY7mxMZ8ZOG1XrQpQbMk3C1dX4uYmdbVlMd16e2mIEfcMnc+DPnwIcCotav4XgP9iZelhWfPalmm7EGknejsV9MHk8bR8v+s+UIbbqla1Tnp2oGzLt4W3NJAhh/AzgWxanamgoHtkI5OeSB19EV7oDy9UJAN1t4JCBk6paqa3FHzEkHJzNoPc6cnxBeW9uOjUJh9HqCMkSxPMjUEDJWPQBVM5sMJN74HPo7t/pwAkcqDUwqkJTF7PTbSwm5xPpVnrn+hXCLxuBMh7/GA1YJcOSscgco1OcWsbwTp3TTUYERVL5m/baBSCW4qqIa4d+hgkn8RETPb0MLiLyF1R6yXUCisUC+VHQFAVL4YV6Q0rTu0bb59r8TzGNqgISM08BUDhhLxyAnSA9jf+0DLlLNKFrrnxx1TPpEZh6hxVp0OyJCJLL9gUkiwMsLjyFxXHmsWBC4AfcXsaXjL476edbTCmBhxCThl2t0hovLeHuWw9AGt8Rw==|920
+}//iJMnSTCOEPJ554ZUNyEy8I5Qe0G7jZnsuZtXyZ3pQbE+c+R3Okzu5hvA9AmnTcy2FV4wON0DgMN0OrUa5iGvqZQeZsSG6iPPxdIEUZ/MmvMFpluo6G8/MS90TTeFXH7WN9Cgg9LyuVTfpWzLqApT53sI4oWSqPl9usxNZGE6ZnXq1599/HXAPoMSsiB8ySxuDS+kqS2k+H/qbjB7H8MeDHlC05nwoq/qTNaDtnrzlMNOrGRtUYIGHfdn8y3+oQlbbHeH6UEzGMBaMxvSJBm/rCjqgAONc6tOZGq2OWgfLblFgjECr3x5dX2eLqASTabbxn3iD623Sps/xQjR9tCbeJWHYMj35W48xtr8+3d2vUoLi9l/d4h+c4qnlLvM20z6GOYwnMdABpBuxr0acBUbEWkU+qwY28NemvktrKTL6WSRttqMxgMXUH6NJTwPHGE5NxbrbcgI3eKQA+8RI7EQLLnySOcOI26CULmHaXFr1XpOdDiu8mMtwQAKthpc1xUnyQ/m2pcj3sRjrHxu86wR0GbcuT51qdHwVFM1WbBtnLE18RuOyHAohjpBxQG/nNkINDN/BdmLJO4Ic3cyDJGowZ+NMt6Sx/ZAblP2oWqIRnJIl2D9OntTkUuObkk3QQgw92gCUOBPaqfgieUCJHr1mOjppfn6NmNORY1IFFehoQHe99Rsye6OGKGLG9qPnYWqfcgNAk0ZGvvHYwSqbfFB0aimOsuBUKIVMXupmr0LiMwKxPEXJnNzwDV66wmW4gWnSRorXMuS00cUcKrtro1pSBA1RZY+pvzw0LuqHJOzTNu00l6F1Qe2n5+IxPHIUEtneUkHm2H3dMufdNR151GC9oVD35EoZHpVXZjnJIKBhr3X13IHyMuC0yN1MW/1H0yffLuo1dVGTB3Y8DYeFdZ2Vw==|920
