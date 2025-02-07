@@ -293,6 +293,105 @@
   "AttachInfos": {
     "3,1": {
       "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "trn_insptool_tools",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 33,
+        "ColumnCount": 66,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "prohibition_reason",
+                "GUID": "61144110-342a-4d55-be86-7565f9ea7faf"
+              },
+              "Value": "廃棄"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "prohibition_reason",
+                "GUID": "c8a2dab0-88ce-4ed4-a730-25a5ce22cb6f"
+              },
+              "Value": "故障"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "prohibition_reason",
+                "GUID": "9aef6a7b-7858-4898-a84e-cce5418995cd"
+              },
+              "Value": "紛失"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "prohibition_reason",
+                "GUID": "36904003-93b3-4a16-a588-9746e629a4ce"
+              },
+              "Value": "移管"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "prohibition_reason",
+                "GUID": "8da2db3c-55d0-42ad-993a-695060baa45c"
+              },
+              "Value": "不適合"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "next_caribration_ymd",
+                "GUID": "42813c29-1484-4201-81ac-ed0b6f715879"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='今月校正対象機器リスト (品証)'!I2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "next_caribration_ymd",
+                "GUID": "27a7fc77-103d-4eeb-a6ae-7bdaf1b1c37b"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='今月校正対象機器リスト (品証)'!P2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "category",
+                "GUID": "c71131b1-6209-4f2a-8631-f59c73deb2c2"
+              },
+              "Value": "非校正"
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
         "CurrentRowChangedCommandList": [
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
@@ -301,133 +400,24 @@
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_calibration_history",
-                "ColumnName": "id_tool"
+                "ColumnName": "id_tool",
+                "GUID": "414303c6-8112-4939-897b-07d2e0d67e4e"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "='今月校正対象機器リスト (品証)'!BO5"
               }
             },
-            "Params": [
-              "=BO5"
-            ],
             "ID": "0afbf6c65aaa45f19613546bce32cc8d"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
-        "TableName": "trn_insptool_tools",
-        "RowIndex": 3,
-        "ColumnIndex": 1,
-        "ColumnCount": 66,
-        "RowCount": 33,
-        "IsAutoReload": true,
         "IsTotalRowVisible": true,
         "IsTotalRowAtFirstRow": true,
-        "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
-        "Name": "リストビュー1",
-        "SqlCondition": {
-          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-          "Condition1": {
-            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-            "Condition1": {
-              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-              "Condition1": {
-                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                "Condition1": {
-                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                  "Condition1": {
-                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                    "Condition1": {
-                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                      "Condition1": {
-                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                        "CompareType": 1,
-                        "ColumnBindingInfo": {
-                          "TableName": "trn_insptool_tools",
-                          "ColumnName": "prohibition_reason"
-                        },
-                        "Value": "廃棄"
-                      },
-                      "Condition2": {
-                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                        "CompareType": 1,
-                        "ColumnBindingInfo": {
-                          "TableName": "trn_insptool_tools",
-                          "ColumnName": "prohibition_reason"
-                        },
-                        "Value": "故障"
-                      }
-                    },
-                    "Condition2": {
-                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                      "CompareType": 1,
-                      "ColumnBindingInfo": {
-                        "TableName": "trn_insptool_tools",
-                        "ColumnName": "prohibition_reason"
-                      },
-                      "Value": "紛失"
-                    }
-                  },
-                  "Condition2": {
-                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                    "CompareType": 1,
-                    "ColumnBindingInfo": {
-                      "TableName": "trn_insptool_tools",
-                      "ColumnName": "prohibition_reason"
-                    },
-                    "Value": "移管"
-                  }
-                },
-                "Condition2": {
-                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 1,
-                  "ColumnBindingInfo": {
-                    "TableName": "trn_insptool_tools",
-                    "ColumnName": "prohibition_reason"
-                  },
-                  "Value": "不適合"
-                }
-              },
-              "Condition2": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "CompareType": 3,
-                "ColumnBindingInfo": {
-                  "TableName": "trn_insptool_tools",
-                  "ColumnName": "next_caribration_ymd"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='今月校正対象機器リスト (品証)'!I2"
-                }
-              }
-            },
-            "Condition2": {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "CompareType": 5,
-              "ColumnBindingInfo": {
-                "TableName": "trn_insptool_tools",
-                "ColumnName": "next_caribration_ymd"
-              },
-              "Value": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='今月校正対象機器リスト (品証)'!P2"
-              }
-            }
-          },
-          "Condition2": {
-            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "CompareType": 1,
-            "ColumnBindingInfo": {
-              "TableName": "trn_insptool_tools",
-              "ColumnName": "category"
-            },
-            "Value": "非校正"
-          }
-        },
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2"
+        "ColumnOperation": 2,
+        "IsAutoReload": true
       }
     },
     "4,1": {
@@ -441,23 +431,6 @@
       }
     },
     "4,3": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "計測機器の編集",
-            "PassValues": [],
-            "Disabled": true
-          },
-          {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "計測機器詳細",
-            "PassValues": []
-          }
-        ],
-        "ClickMode": 1
-      },
       "TotalRowSetting": {
         "FormulaType": 2,
         "StaticText": "",
@@ -469,7 +442,23 @@
       },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "ctrl_no"
+        "ColumnName": "ctrl_no",
+        "GUID": "71d6e658-c7aa-43f6-acaf-f9ffd42867f3"
+      },
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "計測機器の編集",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "計測機器詳細"
+          }
+        ],
+        "ClickMode": 1
       }
     },
     "4,7": {
@@ -478,63 +467,73 @@
       },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "usage"
+        "ColumnName": "usage",
+        "GUID": "50c5181e-d89c-4b16-9194-e647793e8022"
       }
     },
     "4,10": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "kind"
+        "ColumnName": "kind",
+        "GUID": "10873764-ec6d-4b4a-a99f-a40fc1b0902e"
       }
     },
     "4,15": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "item_name"
+        "ColumnName": "item_name",
+        "GUID": "de450a00-f413-406a-8666-2e7cdf915b88"
       }
     },
     "4,27": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "type"
+        "ColumnName": "type",
+        "GUID": "7b1834c7-30f1-497f-9a0c-5a7c5ccfec09"
       }
     },
     "4,32": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "serial"
+        "ColumnName": "serial",
+        "GUID": "85f7298a-1591-4d73-9546-07639342da24"
       }
     },
     "4,36": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "maker"
+        "ColumnName": "maker",
+        "GUID": "7e272050-0abb-455d-9ec5-6d7b5a27633b"
       }
     },
     "4,43": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "calibration_cycle"
+        "ColumnName": "calibration_cycle",
+        "GUID": "546cfdfb-995a-4b9c-98ae-6e6640c24043"
       }
     },
     "4,45": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "storage_location"
+        "ColumnName": "storage_location",
+        "GUID": "dfc50e36-f2fe-445d-928e-fa550abf76ea"
       }
     },
     "4,50": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "next_caribration_ymd"
+        "ColumnName": "next_caribration_ymd",
+        "GUID": "5308203c-7222-4b1e-be59-746c784734a2"
       }
     },
     "4,54": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "kouseiyuukoukigenymd"
+        "ColumnName": "kouseiyuukoukigenymd",
+        "GUID": "be8c4c1c-5050-4068-93b7-daf23f6cdb06"
       }
     },
     "4,59": {
@@ -542,6 +541,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "pic",
+        "GUID": "3836a750-4b5f-43fb-84fd-e8348f58fe3c",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -549,27 +549,26 @@
       }
     },
     "4,63": {
+      "TotalRowSetting": {},
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "機器の履歴リスト",
-            "PassValues": []
+            "PageName": "機器の履歴リスト"
           }
         ],
         "TemplateKey": "_RS_Small",
         "ImagePath": "Application/157_historyvis_1.svg",
         "BuiltIn": true,
-        "Color": "Accent 1",
         "UseCellForeColor": true
-      },
-      "TotalRowSetting": {}
+      }
     },
     "4,66": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "ID"
+        "ColumnName": "ID",
+        "GUID": "d27c8fe1-16cd-42f4-af1e-559e913c3bac"
       }
     }
   },
@@ -1712,10 +1711,19 @@
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "masterpage",
     "Title": "今月校正対象機器リスト",
-    "AuthorizeInfo": {
-      "VisitMode": 6,
-      "AllowVisitedRoles": [
-        "IT戦略室"
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "IT戦略室"
+          ]
+        }
       ]
     },
     "RowBreakLines": [],
@@ -1723,7 +1731,7 @@
     "RelatedDataTableName": "trn_insptool_tools"
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//gsb0klJEdYnqcsMNwNWSgJ8fgHpC+Z/1228HHv0a0uq/PmAiwMwG6Gzxv0jz5GlJh82ADDjmW4n8gEMgdiLXXPuGXBRJp1nObZzG+n0PU+o2rhMYK9nco2VowuIWxEuZx+HQ0PWwinnCCVdVMuBCERHUSF3k59yjEr9tjEF0vnL9JPWqStUZ4IaADPEgcXrdepJBtk0yutU026ZmsAnzbsUAxJsOyhI6iRfEc8WQGPqyzsc91ba3TEz+tPfeMkUel8qZhavb9xtMfHqyphcKE4Bgm/MVhghFoAx8SfWNsfYjhIcsQ9cHbwdiA8fHCB9mLvTbpek1PMToChw8CAmjJdoa2ezheI8uQbCjNR3imlgGk5gQj8kuCtVo9RHKPAvyOqc7mtuXh6vZ2S7FJlVaYYrkxVpTRg9hP3grkjdUpNGMdHMbY3gBgGMt0wc0psEP+uGDAl03G/4sE++ZztH84NqY/Q9stS92LJ5lSAKl/nD+1m8KZS4ODnDjaQVmt1QSry7CtSkZpBQK+yJNURj4F5pLoh1UH/M7/J+K3ODR7gNXyPjnE+K5xOCMypZX6tVnLq/AKHxGnvSQ6udOAzz4VrybY2mR9khIFgezra3DpUCORa9tXRZ0eNxrd9TcjJSwM9sAxuQ3+3IQ7wr8yEJd+DVJksFR3ywdU4m47b6qzoy3nVh5X8ouPswunDnAoGOmQtfywwIPm/+RLuYjRYQcrQjHch9paJGVgTTPVFaRiznhr5Afso3bkwERvKndUfu5KpG2i9mXyWwrUWuT5rtpvlYNuqi1VJYPuM7/HNrd8Ip7WV4n9Um305VZfAyaLUQR3aZ5UXAHnslRs4QTAcoUXA8pT2iZjcwviFy5GKd0ZCc0JM5Y90/bT2RXiLY1NTJC4gvLDsSkqv/m0SdM8rInMg==|920
+}//SVz4/bmDXP9WyyFBIyY6DFHqgsFvUiTRP28xgvQHobGIIBakSSK8+uhcExqqx27z9ubP0KTaYaNX8HpeDkM6LMHhrt/8olmeGNR7eblIXxEsDM4/qMZ9hHzwLz8OB4EXhbLzA+o+Y1GRW1LvKOpLCPfX855qdcWqViy+cHRlQtsBEhWPBWmcuvzvG3UP1w7bMwbvVnQG/YmqqS+IVYgazSJNAF/KDC/AA8cthJmPqm/Yc4rIkUVOhC0GEpuEc54tXYbVGgUG/VKBZepZ52vePkQKmqA0YstYXPMRJt6IRcAbd9/ZN/uoYT4CvK4BvQJGwO7GhKO6YlY04fj9B0EMxmOStoMAXLCoDx+DZ3djLUrU7oP7j421dZrpoOS3llzrb+i6/1x6gwG09A3oU95LQtlU76pXbXVI2FX3RlEj7kQvleafySKD3HmFmQtocScUsdUtZK1T/sM0XVekVwl999Mz+FFm7CIpq3WQZXprinyQ36ly4mYRr48ZTUIBUSwFxCrtx7XE+49pa+XwYtOUs3h16xakMDCjNE1mYxTwHNaXdHij0hcYMOnruXERPK5QK+hYLmpxpwg/G1jheaOCLqJxEZRKTZhqeX6DlNn2QUK+Dw2+0ONJuMFX8C8b35g+qtQs4l4L8Y0pxRIIQ6up2b4dbYsjOUc/5CB6UcXo5hp0y3Gewb2OEo2Ezk3KHBDxafwleY1LEH+a9OnVXHbuSP9XP3Foa9ryp4I55YVg36PJBQgUODq8mToDWfPPigMM9C4yv2gcQkwsNkLhPffMbWbLD3vvVWymiqv77VKwLODlzR9VtXLyTJRoAnvPl9esszSfJ7qMKdNLJFTGu5JiCcVW9wETp03q2pDhUoseu/NFrQQejI6r73nl/EHjt+3tTMr7YDNhWgerGYGZzqTedQ==|920

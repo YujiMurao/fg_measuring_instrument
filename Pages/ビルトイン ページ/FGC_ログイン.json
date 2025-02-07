@@ -100,7 +100,6 @@
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "FGC_パスワードを忘れた場合",
-            "PassValues": [],
             "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
@@ -116,7 +115,7 @@
         "Formatter": 0
       },
       {
-        "FontSize": 37.333333333333329,
+        "FontSize": 37.33333333333333,
         "Foreground": 1,
         "HorizontalAlignment": 2
       },
@@ -171,29 +170,6 @@
     "21,21,1,14",
     "5,21,4,14"
   ],
-  "BackgroundPictures": [
-    {
-      "FitToBrowserWidth": true,
-      "FitToBrowserHeight": true,
-      "DisplayName": "背景画像1",
-      "ForguncyPictureName": "PCLoginBackground",
-      "Stretch": 3,
-      "ForguncyPictureSourceType": 2,
-      "Name": "d7c41f6d-8542-49f9-a003-8fb0bd9de009.png",
-      "Size": "1120,535"
-    },
-    {
-      "DisplayName": "背景画像2",
-      "StyleInfo": {
-        "CornerRadius": 8.4375,
-        "Fill": "#FFFFFFFF"
-      },
-      "IsAutomaticFill": false,
-      "Name": "BackgroundPicture0",
-      "Location": "319,220",
-      "Size": "481,335"
-    }
-  ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MobilePageName": "FGC_ログイン_モバイル",
@@ -206,7 +182,30 @@
     "IsBuiltInPage": true
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
-  }
-}//7Wz5GLzimXdNrxbCSFQibOojuAt2/ASCnqJS3VhtW2IE5PHe7Bec+IlJoMCjO4jC9Zo1bpkiMCX9ZUUoy9RBEbN3cgr98O6gzLEgcc9KsxAui+e9q3jot1NxY7svPu2++NefUzxFzg1I7F3laeRXy4egkMKHMqkArBF7zzduM5Ep7rTtrtPKfmKEQirZDuod2VRRz3sMWYCuBPHTu4BN/7/ZHyrr1YLUfTTj4hmL8ejwB/4gK6EHXK+lOd98zOjxvFShvzJwSpXzPCFp3TkPgVtfGhg/a0zMSJIThqXTWaaZl53cHFRHGhoGIhsNba0nLyZbmAmzHl4vBoJ5qAPoIIE8ao8fpQAU826hOXjbJdC/tyJUnM4Fu/S0zqOrWufseSRcqeBCOdFf+4JYSo4c16ezCt63i+CAXZqq7wgTmiqm7ypi3ROf4SB7wH9GJo/DBz75mSclGr7yIjxxH75chIrKzxOJ7CuH1KEKi2hC70gej/DZ/A32lp7Tg4QjyTetCRAqaylHwDU/sbpdpUrAlV8dPEQMbxUsHjgXbOEm9qtYyo9FRHwpY9NVJx5GxUhWl3rEYbg15A//qqCRSU3RFPeMogdz7SwtDLoXHMyKYGLHfMeZMnRy6x4HVdrXzC3UU3F77x1NiHwTmKbNFoJ0ZrXY2TjJ5nCyMaYKOSyXo0UefKIGlVXXQK/9Q7fAfOl8zV6MyVU6W9qK5JhGTMux9KFAIgacPVccSsYkUrxz6rNSGxhnHCJymv/lo/vatMtRbJMkUV32O9cbgZVTLepz1+tdrCSPGNReu9LllEUCI8GZ9UFRo2MFaV/Q+qj/LrqG+6U+xtOPlatta+FdBqlGIHVm9SM5XXUPTqWLL4QUaFcjA+T15lcncvEPTF9hJxXG0ONGo9YRqRZ6ULmGrPVjPQ==|920
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Name": "d7c41f6d-8542-49f9-a003-8fb0bd9de009.png",
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "PCLoginBackground",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "1120,535"
+    },
+    {
+      "Name": "BackgroundPicture0",
+      "DisplayName": "背景画像2",
+      "StyleInfo": {
+        "CornerRadius": 8.4375,
+        "Fill": "#FFFFFFFF"
+      },
+      "IsAutomaticFill": false,
+      "Location": "319,220",
+      "Size": "481,335"
+    }
+  ]
+}//BgJ7qf1mRaB7kkp1IVs4SgoBb0pn8x6WIsNRor2QmvVRk2sNti0jw9l0w3M9ik8PmmWQwKefq6ITJYpx7GAMPT4wkODeoLHqMDDHh7Ce7FoJ/Z4qIrfrf2anE8pZbQNsN3RCfqVLP4C4WWgGq0zPODzkMbyUahARK+8mPPGkcNM3KbKOnMnstl1BBjnpLSGxYkMlXgSaaDw6Z4VbgE9SEnk2voYO60chcGXQkUUvz0BLox9acqGwuZXv23UL8N2xkQejdTIYsdSdz8qS62i4+35FX09T34xxRfFIFkmFSOWMxjzgAAV0CpswBaDdWqvN2UK6kDnvFVjEIp9V8O8Him1vYCgnYQ8vyZ74i9ie8xweVciGhEB0gmaMLlDkCZX0N2SnY1CjdBmHT6/ySHIFz9JC4Fu30rs1iXTIx7wIADZ0fGMOO7s//n1C8mOwVZbKmXq6U3JfNPBZLqmAEtOGJRJo31IKZEzsoIoHWb2RsRVWQ/8KrxSEsAXCkNfpUFqRFL32wK7PeamKqP9j6e/ceCFuS1FuLtCbl1srxfZkVUvjNNG4Nfl+t0lzFuubL6aRaDL9bkr2jFJvpWtHoL9SlgDV4TvZOTn7UH3JnwHB+4ORSyLD3DocOQzfWkgeu9+DsO4E87+Vy1tQojcD1GeziWOm6gzJbVg9PPkFZYzbH99lVeI/ncHSg7BAS4Idly23Xbf/D9umPCj2g3dPSm7gXI6ma79F/+no/EtoXVZiXPykqB23FUseMOzpS3rshv6hpr8vQ6xAIF/d5xGL1BhWNPNiWLx7ktFKhqPEJTXlmrVzcXQUEJbr+/B7+wwKgd3FHqNuoxA8s6Sf5r1hyopRovf02CsSWj1V/A65C+ZxjWeHOGyXucp7yO5ci2SRo5wkaYSGNeB8Uoxr3ca8V68yUQ==|920

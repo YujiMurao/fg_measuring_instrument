@@ -68,7 +68,6 @@
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "NavigateType": "back",
-            "PassValues": [],
             "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
@@ -80,7 +79,7 @@
   "StyleDatas": {
     "Styles": [
       {
-        "FontSize": 37.333332061767578,
+        "FontSize": 37.33333206176758,
         "Foreground": 0
       },
       {
@@ -144,20 +143,6 @@
     "14,20,1,15",
     "13,12,3,7"
   ],
-  "BackgroundPictures": [
-    {
-      "StyleInfo": {
-        "Fill": "Background 1 -5",
-        "Stroke": "Background 1 -25",
-        "StrokeThickness": 1.0
-      },
-      "IsAutomaticStroke": false,
-      "IsAutomaticFill": false,
-      "Name": "0b03a0d4-cfe9-4e90-8373-4c372736e704.png",
-      "Location": "200,80",
-      "Size": "540,360"
-    }
-  ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "FGC_ユーザーマスターページ",
@@ -168,7 +153,21 @@
     "IsBuiltInPage": true
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
-  }
-}//fWQ8P3m9wkm3ZvLNth45brOQkzlZ/6BrDoCVfK7air9+cvKYQAfRQJXpTSxhJooA8yfOFmiswNqdUpB1DMw9WWOpVUDnivd/CxYKthfmdjuXiCM+4mi8H5IO14Q2w5V8WL11HkQ8RZp3mjJt0ougfVLg2sn3zxkY70bF0Axg+dw0q6RjA6jp+r1xR3wlYWfYad+9bMFc5fdA73tV/+XZ+mduVKjwu3nUwoq0O23ht0AkCKRSY1/Gc62LHQa0K1+C9sqCWtmbk9sKrTCe2qgWXWyZDrRsJn4V1TBua/q/82YaOrICHyXN0Xo5l+f0sdhR4bE5ncWfH8IzosVXs1Y45+I/VDdkYwyh4duNTW3Z5ZllRcR8x1U0YKbYa15KVZTGqbs81xmyo0uT573L1cTHYWr3e0CpVbL3zIa4cMIdssX2Mjlk9GSWG3+hNRmA4eJmcjY0pICI6QtmISIeZsWbwYFSY0dDSN8YDs90tSXIFl5iarCHYzWcQ0gbkDm5Y9RCC7QH6sxhPqrWwDsSohhxA/xwb6aEngxQPRF5n2cku2FYsfdfabLoeMRSK9p2IkTw8yGu6oYNolIRREtNBlhp5BxtKZGVCeRJnmVlPpLcXmU9GmqIrti3L6sgAc6chpWPjaCxKq+QzjD+RA2h3BDuFWK5E99DW0lorCaJ1WyW4Wf2HQ8veOhkZwMNpXuLbrk03i0ZB5MskY/UUuKlXZ7+e2mogfHgwfW1KiZlrOMprTwoWDS0ob97TqlG+9ryRTuiZxMfJxmv8R+ZrCuJ6MJaxu6/aRW4XowpiRNDPm8AEGpaARu7/AnqfPeAvFinG/dikPQXnN4wkHIGQ4JgZHm3Fw8vkxuo5Dc0kmIZTlQnn9I7DTIR++SPAjtg/9emqaPh9n3ZGdy8kkLgafWCOrST1g==|920
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "0b03a0d4-cfe9-4e90-8373-4c372736e704.png",
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "Stroke": "Background 1 -25",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "200,80",
+      "Size": "540,360"
+    }
+  ]
+}//d+G/TRm2/QpBUTIXKaZ4amnUvegZoP05Dn+fpBhEuLXQHj6gJsUT5qtUASBHNJvSbGxwmH1YaF7AdNbB6jDdtrmfE3fjOb7pm5AQNNryzxbz9UTKDSbA6EjStLTiQyqQ5h0F5yCreOzGyAHCTOnLKImLwByV9yuzeugs0Ds+4VnhFAVVfedkXe98GMk3lX66M6Nb+0d751AewgowP0q7XlQLDQdTkQmnK6pjuIFvfFCkViYihWOaAbVi7Pr974O162I9HC5eseYaMzejBZJGVbG5u+/o4WSs+RX6ttd+SOGkbYRTYuWeJEVgTw/2A2vjdPo1nWgW9af6mLzPjvXQW75mUQwYKggKTKuHo+qQfBK2h2SvvLdht5P5hTFEZwnjj12vmBRuThv42XMqjxUi6hBFuop4jAgxnYWbV86WB+pvtsc0W5C2BChgAuymdMXpZfu0K+EVV4duIKnUrgXX2rFtSgJDvpV7lHqkkMLoqPoQtCN2cnt/mbfQ49qMgmlvT9AeGSDTgfUF/FGJhrMwXwLMS/TCu9zdkXoAwW5Mn3YSBOCBRUnhO9aO/wFV1bjpYO3Fy7bljjW49m26DylUQ3AV+QtoqSehdnh8MagL3WMmAQEUZCM+x7u87/yUc59jAN3ZvVXhypIDLN+Qz9+zFdHGWNa3hdNT7xuUXFG2NICLw1mNbmVl3P52EYoUWSWzx1/lMsmQ5u37VFnRjydjLpVh9iDbyr49Owy04KhT5GphjM1tvhaZN//DtU5M4Pr846DnUISpceGi2cU9htDlisL7gUATUHFvO7bQ3bS30ubC4eGUZasfqUzSSEexj9lkfj8lNFwhx+SqMvHQO98wzPi7pFqpkzlEsDEq8+1vXKUwW/9lAAl2YIDvX7cmU2QbJnaiJvVmlfudFuFyz5Q+5w==|920

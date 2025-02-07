@@ -157,77 +157,84 @@
   "AttachInfos": {
     "0,0": {
       "ListViewInfo": {
-        "ShowColumnHeaderInDesigner": true,
+        "Name": "リストビュー1",
         "TableName": "mst_insptool_personincharge",
-        "ColumnCount": 27,
         "RowCount": 34,
-        "SelectionMode": 1,
-        "ColumnOperation": 2,
+        "ColumnCount": 27,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
-        "Name": "リストビュー1",
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2"
+        "SelectionMode": 1,
+        "ColumnOperation": 2
       }
     },
     "1,0": {
       "BindingInfo": {
         "TableName": "mst_insptool_personincharge",
-        "ColumnName": "id"
+        "ColumnName": "id",
+        "GUID": "4cb37c9a-2468-4101-8375-e8b68ce69dfd"
       }
     },
     "1,2": {
+      "NameUsedInJavaScript": "ｺｰﾄﾞ",
       "BindingInfo": {
         "TableName": "mst_insptool_personincharge",
         "ColumnName": "ctrl_id",
+        "GUID": "6013bc63-0e1d-4ed9-ab00-e802f180f73d",
         "RelationBinding": {
           "RelatedTable": "mst_insptool_management_department",
           "RelatedColumn": "ID",
           "DisplayColumn": "code"
         }
-      },
-      "NameUsedInJavaScript": "ｺｰﾄﾞ"
+      }
     },
     "1,4": {
+      "NameUsedInJavaScript": "管理部署",
       "BindingInfo": {
         "TableName": "mst_insptool_personincharge",
         "ColumnName": "ctrl_id",
+        "GUID": "ddff41e8-0d99-4423-9167-adab99617971",
         "RelationBinding": {
           "RelatedTable": "mst_insptool_management_department",
           "RelatedColumn": "ID",
           "DisplayColumn": "name"
         }
-      },
-      "NameUsedInJavaScript": "管理部署"
+      }
     },
     "1,11": {
       "BindingInfo": {
         "TableName": "mst_insptool_personincharge",
-        "ColumnName": "role"
+        "ColumnName": "role",
+        "GUID": "c40a56f5-2cb7-4b1f-af02-8ec2513c07af"
       }
     },
     "1,18": {
+      "NameUsedInJavaScript": "担当者",
       "BindingInfo": {
         "TableName": "mst_insptool_personincharge",
         "ColumnName": "chart_in_person",
+        "GUID": "5cb3e85e-284a-4e0a-827a-4af360bb0f15",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
         }
-      },
-      "NameUsedInJavaScript": "担当者"
+      }
     },
     "1,22": {
+      "NameUsedInJavaScript": "ID",
       "BindingInfo": {
         "TableName": "mst_insptool_personincharge",
-        "ColumnName": "chart_in_person"
-      },
-      "NameUsedInJavaScript": "ID"
+        "ColumnName": "chart_in_person",
+        "GUID": "b5c9207c-4dc5-406c-8cdc-dc520318194d"
+      }
     },
     "1,25": {
       "BindingInfo": {
         "TableName": "mst_insptool_personincharge",
-        "ColumnName": "contact"
+        "ColumnName": "contact",
+        "GUID": "192cb816-0230-42be-bb1e-b3cffedaad8a"
       }
     },
     "1,28": {
@@ -236,8 +243,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "計測機器担当者マスター追加",
-            "PassValues": []
+            "PageName": "計測機器担当者マスター追加"
           }
         ],
         "Text": "追加...",
@@ -255,8 +261,7 @@
             "ShowConfirm": true,
             "ConfirmText": "本当に削除してもよろしいですか？",
             "RowsToUpdate": 2,
-            "RowsToUpdateListViewName": "リストビュー1",
-            "UpdateValues": []
+            "RowsToUpdateListViewName": "リストビュー1"
           }
         ],
         "Text": "削除",
@@ -270,41 +275,35 @@
       }
     },
     "5,33": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "ctrl_id",
+        "GUID": "e1c1552f-8e32-4599-a74d-7d0b01399068"
+      },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "MaxDropDownItemCount": 10,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
-        "Items": [
-          {
-            "Value": "項目1",
-            "DisplayValue": "項目1"
-          },
-          {
-            "Value": "項目2",
-            "DisplayValue": "項目2"
-          },
-          {
-            "Value": "項目3",
-            "DisplayValue": "項目3"
-          }
-        ],
         "DataSource": "mst_insptool_management_department",
         "ValueColumnBindingInfo": {
           "TableName": "mst_insptool_management_department",
-          "ColumnName": "ID"
+          "ColumnName": "ID",
+          "GUID": "80908782-8ec5-43d7-b5dd-0f6fea47b764"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "mst_insptool_management_department",
-          "ColumnName": "name"
+          "ColumnName": "name",
+          "GUID": "9554e2c2-0ef9-4dd5-9816-9f15a9821548"
         }
-      },
-      "BindingInfo": {
-        "TableName": "mst_insptool_personincharge",
-        "ColumnName": "ctrl_id"
       }
     },
     "7,33": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "role",
+        "GUID": "646435b9-a05d-4118-9df3-e199d86ccfcf"
+      },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "AutoFilter": 0,
@@ -329,15 +328,16 @@
           }
         ]
       },
-      "BindingInfo": {
-        "TableName": "mst_insptool_personincharge",
-        "ColumnName": "role"
-      },
       "DataValidationInfo": {
         "IgnoreBlank": false
       }
     },
     "9,33": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "chart_in_person",
+        "GUID": "2d0d1a58-5264-4e6c-9b6f-00537cf06f25"
+      },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
         "DisplayColumnName": "FullName",
@@ -347,10 +347,6 @@
         ],
         "AutoFilter": 0,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "mst_insptool_personincharge",
-        "ColumnName": "chart_in_person"
       }
     },
     "10,48": {
@@ -361,8 +357,7 @@
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
             "TableName": "mst_insptool_personincharge",
             "ShowConfirm": true,
-            "ConfirmText": "本当に更新してもよろしいですか？",
-            "UpdateValues": []
+            "ConfirmText": "本当に更新してもよろしいですか？"
           }
         ],
         "Text": "更新",
@@ -376,13 +371,14 @@
       }
     },
     "11,33": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "contact",
+        "GUID": "1d8608c6-d096-4287-965e-df895befc7d1"
+      },
       "CellType": {
         "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
         "Style": 1
-      },
-      "BindingInfo": {
-        "TableName": "mst_insptool_personincharge",
-        "ColumnName": "contact"
       }
     }
   },
@@ -2758,10 +2754,19 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "担当者",
-    "AuthorizeInfo": {
-      "VisitMode": 6,
-      "AllowVisitedRoles": [
-        "IT戦略室"
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "IT戦略室"
+          ]
+        }
       ]
     },
     "RowBreakLines": [],
@@ -2770,7 +2775,7 @@
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//g9rlR7ODoh5hhRTeu3fy4PrLMc9NGI5MNpatz2VLqXpJqaDJ0sC/upzXlaHy/Nriojvo+5BYMPcIro0KvW6b7TgohaIM/hQaEIda3hmySwZV+aexYlW/OnuDUkl2LjzPfLgGyYiXYFc8Nbq4Of5qOa5ipAS+5d2VUpmdTaQTeSJApnHqokQSFr/edTnrnCK2gJbEh9kKor89YqekTr9wOTWpUoOXNT6AHRbro9SgGOfq+1uUs1rbH2Tj5g8Op77TcLVUlX64ePJ48hWFJOgGgdmO5Tdi1D5ToxTAC1TsHvv8J6O9tfLV+/Fguna+fEgcU2r6jXTPuKoSMzSLsvB1tkHbsABD0PV1etUPzMG5fHWYixJdxJ8quPDbnC4sJMd+iZkLE2pLpc/oiYHHPpt9SqwYm6uS+9bnTm5FVyHoVUSGQ1m3N8g/5ZHjMIvCBpaCwg8Bese5hM+R0DDU6pMr7YDmpKbCsfOmIhPpD+xcZjfFVTa0XxF2eyKozxSkkElrysIQVZmzgdLQBjshzoWL5QRG6TmKA6FjAB5ZwrW3OWqwz2oBdK/UsH1wtquTgDgznX3dorSKJTSzEC6eYtr3su2mmgOzADJRT5D8HUFeroOpR+bIReS5fQvwyD/0o4aQWtW62JVowcf25aQWYeJFC2vtrBHEHiB4DuJXmQ+4PRDLw546kP8YLBsAAH7yAg5Cyfi6VeLOgOR/jPFqO0fJZMs1nEYr7LcFPLL46JhAiX1pj2np2jlEDPR5ROg3+51I68Cedz4m/JlRCryFD5AcQ+W3fxQxAC9VhzFQwSgq2s66RlDH8+MoOsN4TJJSRSkc3DCd7Y3R6ESWkL/6HH3fqCjTIEpgEFNcfQz2UVa3FPsrFXQhywSp7GqoIYuzLgquijqPH9Y8B3z+39GTXdI7EA==|920
+}//wzD3z3DW5NT5+CTGjxScvXlsekbZjE7/beMXt15fjTcUW2to0YcZOtLksZ/DP48VukZPikYJkY3C8lrNKEcd7mjOkT20mfzu+L7RqcapdaP3qWOOJjjiCutRiJQj/ob1D4NpUvYJf6JdaTZyrMsRmTtrcMeMAzC8VyZvviDT5Oa9buOv/vkgj6k8KJGlEJOLMWz66DlDBjLRItkVX7W+9IzZKt0TnRNEDBqfsGPH/TFBk/iIGO0upy8DiJJXLz9xmsJn/lnxbNmCA9lw7aRVVYFIOoi+BM9gCLBQ+R6eT1cUtLF83Uu3e0884CitetOX1H2EfMZY7ev2HzOx4i4V9WoiPMoAKo9/pz4Fbuv3fDZzYBH4j3DbVq0BVlht2MDnCKnDDszftf+2pBMGJUU2RYYgGjXIFOXLPUsFVjTnLPf/Q/wOzTmkWM2jjO2ByGTmHY/5b5VjPG+I4S2Q7PePb7yhMkGG/TooeHMk5Us47SiYW5pUD5zMbfvnbw/RFcsNXpr2B4VIrAR1sbRTTIs/BAG17LUFjqbeSb263UZRd/GaOwwM6Gov0gVHx2Lf/PTkQtCozGEjfgGKdGdG7pYyGe0RQgqvZL9y5tYMnxJBGW0/TYxKMygzx4tPxyPsLB2j5aoJhn2I3YSMaJod0+H7NR+/7ycvJ3RF51qNazwu7Bo/1fSsvjYhpr8lpOamXfrBvu3KRa+hcMzgp8yXaGYhfd2vMWJneJHoP+Wwa7saFzXLTDYb7xR5hV12Vhj+F4Wnaf04Wz5wBS+0w1MOCBnl5Whv/NMbpEkEH0aWbFszCAmXfIXKgZFzrpkz9CBXUGGHh01y7sCzSPdvEZjPbuvcawV3umUL6U7Vf5NiWzdpoPo6Er5KqW2GH2r8wjIU5dkJev4aGQooJ5uCM3SHwT2zMQ==|920

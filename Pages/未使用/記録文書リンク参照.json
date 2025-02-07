@@ -13,6 +13,16 @@
   },
   "AttachInfos": {
     "1,5": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "記録文書へのリンク",
+        "GUID": "a1eda421-30a9-4b28-8269-20e87bb4fb2a",
+        "RelationBinding": {
+          "RelatedTable": "trn_insptool_certifications",
+          "RelatedColumn": "id",
+          "DisplayColumn": "registration_date"
+        }
+      },
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
@@ -22,21 +32,20 @@
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
-      "BindingInfo": {
-        "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "記録文書へのリンク",
-        "RelationBinding": {
-          "RelatedTable": "trn_insptool_certifications",
-          "RelatedColumn": "id",
-          "DisplayColumn": "registration_date"
-        }
-      },
       "DataValidationInfo": {
         "IgnoreBlank": false
       }
     },
     "1,22": {
       "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "trn_insptool_certifications",
+        "RowIndex": 1,
+        "ColumnIndex": 22,
+        "RowCount": 12,
+        "ColumnCount": 18,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
         "CurrentRowChangedCommandList": [
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -65,39 +74,44 @@
           }
         ],
         "ShowColumnHeaderInDesigner": true,
-        "TableName": "trn_insptool_certifications",
-        "RowIndex": 1,
-        "ColumnIndex": 22,
-        "ColumnCount": 18,
-        "RowCount": 12,
-        "SelectionMode": 1,
-        "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
-        "Name": "リストビュー1",
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2"
+        "SelectionMode": 1,
+        "ColumnOperation": 2
       }
     },
     "2,22": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
-        "ColumnName": "id"
+        "ColumnName": "id",
+        "GUID": "b45c40fa-f406-4b2d-b8b4-4310d452a083"
       }
     },
     "2,24": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
-        "ColumnName": "registration_date"
+        "ColumnName": "registration_date",
+        "GUID": "2c909f9c-2265-4757-b3cb-a950e906d811"
       }
     },
     "2,29": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
-        "ColumnName": "subject"
+        "ColumnName": "subject",
+        "GUID": "cf08fbe5-3f63-4893-b815-3023a5f3cf52"
       }
     },
     "4,5": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "記録文書へのリンク",
+        "GUID": "c998b2df-e41f-4a6f-8d92-45bf9115c909",
+        "RelationBinding": {
+          "RelatedTable": "trn_insptool_certifications",
+          "RelatedColumn": "id",
+          "DisplayColumn": "subject"
+        }
+      },
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
@@ -106,15 +120,6 @@
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "記録文書へのリンク",
-        "RelationBinding": {
-          "RelatedTable": "trn_insptool_certifications",
-          "RelatedColumn": "id",
-          "DisplayColumn": "subject"
-        }
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
@@ -127,9 +132,7 @@
           {
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
             "TableName": "trn_insptool_calibration_history",
-            "ShowConfirm": false,
-            "ConfirmText": "本当に更新してもよろしいですか？",
-            "UpdateValues": []
+            "ShowConfirm": false
           },
           {
             "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
@@ -324,15 +327,26 @@
         ]
       }
     ],
-    "AuthorizeInfo": {
-      "VisitMode": 2
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
     "RelatedDataTableName": "trn_insptool_calibration_history"
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//Rk03J3TJx8q+zMAg2EYqNoEtzOuQxxj1dV3d2YrlIkH6dn4bqBivSsnWfaxDWh7uIG35+SUCOnl1g28fRtQElW9FDaWb35ifbNyEGrPlEiwOvqVCGV9J/z9E2lrGT7O+n120wBbGckZuC29IisaBDo8Mz1xaRx2UX98kp+DIp7ri8tuFgOwIyUxusb5tSG14K+hO1oowEaCpBWabc0aFeXHqnyOLQQzAplamSAQflsE7g1e5Czjsu8qxq2TQRiZLBRxkSGbxXdwRqoJMjxI2w6nVS9I+OWzy9DZJFYd5QiM4laGHQDgnpTN9Hr/t/vuFGXWUsicHN0aBOkMjovxedy04VAXnBMn7F0E+vPc901vNRyx7coNZ4EeXthlga8ByR5CL6zcM4eRjYSn04W0/+SqggZId1QtIatNE/+JaPnwcWN1GyIMuefJ1yqZHsHegj/X/wIftmBPAuW+zCNhJThet3wy5d2cwUQL1Cw+G558+Dy+cfGRPDtbXUJajQmrzsbN/Sd9Dhgw29KZX7xjAo+nHm0wzX3EJN3kAzN97yCzxe50j/STxNYH7j3ITqeJLxnWO9S45kBRhPdczHOk71FZLpq/eG4ZZd4q3EqYTXbhsvzrV7IOu7+Xf0zHXjRdKaM45abxjHy2BE/89R4W5O3fWORnXAVrypo5a7Rb+bnDY4uin6pl0QZqmSqA6u3bOtgt3swXfEiHNvCdhN6FHSRSJMP9oh50EMxsiSV7WlXhyHYMSXm7uEJ5ag/85U4pNNGiagWrbcHUtJcXjXlerciD5UyFDB0+e8w69YQMT8K1Wk6tbWiM25yttYQd8AvJKBre7yITeUOjDYDkDEVOVeScfVjAYMSl7OYJ+r0Tp0Y3x8iJJ7aT/ldE8L26XiZczzWcpyVZVF1gQ+/JqqNX8OQ==|920
+}//fW42jqlKu4fQjXPWknOJbdMDmXTUDr92h8TjFySU4iXoCL2ISOzLtoU9T7HGISFs/3aOnLtvbV0q8xbrg8GBPoTc5GvJtDMqA1a1KkeG1FefF4TGaI7dGT8U8SlwaEM34M21NVsOCKzkETDvIisodvSo0Sb411JPAjF241eWljkRHrzd23Qq/rZ05B42JhUM31/5pEtJ7d4CXQ8JvdlcJabK2yCZXpiNHP5qSZo56l1Y7OyhyMtsdvvVpa00BN/uesnzoPi6hJCxPOYnH8Hnq/pTw6nfNM0senTDKAL9Yk/Zd/CRtg814LpEOTe2q4Y0Gizw96HTRZa7s+3sIwqUPo0AJl6Rl9PbRofK6AyqyqC4OxZuphp4Ctw/pyPX+jwHiN4OJSUyy3EXf8uosRnIlMfiP2vMleOanlSzSmc9VmRD61OBM59cFraTR+ylGLuzAX19MjyGosq1oPvKeZS8v71vEJuFcKI1jZIhuSExMwi8LqWKSHbihrGrm1tyCyxsofgzthfU+sd4/0Fulr2uDV9HH/WrDGwcQyE/EZtj9Yf3septblOxfTUpxkpatekXq0C8UXq7GgRj4n4iSk1OhrfymtptCl0vh5kUXVB6z5MJxdKMm9nSY6CHqV1UsWaDEefs51tan8kevO+TvoLVIBIAQgAM5vvNXc/ywnJTrTokn+nxvebB/Ku7oGSXfZF6CYGpxs3c3X/fa6KlXXVf5R4kF7tM2jKRKTccPQJO3RvS48j0e5JjIKi99fByYeNrLUIwANqU3A2445esxxeyxlx3zN766mm+L1/io5x/mvIQV//DlBZ12sORgulLCD7+kCcz4ODMYpxehZQsZCYgB2VGiHeqtrySWzFa2okbex+TKTwfhjFF0TKeIWU1Xi7xRiTBIFkHD08jyTK5wtmMlQ==|920

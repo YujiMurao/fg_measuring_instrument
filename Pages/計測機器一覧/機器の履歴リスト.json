@@ -228,8 +228,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "最終校正日登録",
-            "PassValues": []
+            "PageName": "最終校正日登録"
           }
         ],
         "Text": "校正日登録...",
@@ -241,66 +240,84 @@
     "2,5": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "ctrl_no"
+        "ColumnName": "ctrl_no",
+        "GUID": "78e42e19-8ff7-498e-91ca-ff02322b7d92"
       }
     },
     "2,23": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "lastrevisionymd"
+        "ColumnName": "lastrevisionymd",
+        "GUID": "4ce4fe1e-39df-4bc3-adb3-39dddf3683f6"
       },
       "DataValidationInfo": {}
     },
     "2,53": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "ID"
+        "ColumnName": "ID",
+        "GUID": "ae9570bd-5304-47be-a7c0-8fe44ce51812"
       }
     },
     "2,54": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "ctrl_no"
+        "ColumnName": "ctrl_no",
+        "GUID": "55e6eb10-8f60-458c-962e-30fb63509a83"
       }
     },
     "2,55": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "kind"
+        "ColumnName": "kind",
+        "GUID": "95200406-9d7f-48e1-bf5d-9be61dfb2208"
       }
     },
     "2,56": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "item_name"
+        "ColumnName": "item_name",
+        "GUID": "2460c481-0c17-4a9e-a065-d7fa0512d6d5"
       }
     },
     "2,57": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "type"
+        "ColumnName": "type",
+        "GUID": "48c60dba-c409-46ec-8aa1-bfef2140316a"
       }
     },
     "2,58": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "外観"
+        "ColumnName": "外観",
+        "GUID": "4dd0299f-3975-40bc-aa7e-b9d57d919502"
       }
     },
     "2,59": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "category"
+        "ColumnName": "category",
+        "GUID": "d4f30e40-853b-47bd-a9e6-8d91f04ba186"
       }
     },
     "2,60": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "calibration_cycle"
+        "ColumnName": "calibration_cycle",
+        "GUID": "5e30668e-f1c7-4c0d-ad11-6eeb8f78cf17"
       }
     },
     "4,1": {
       "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "trn_insptool_calibration_history",
+        "RowIndex": 4,
+        "ColumnIndex": 1,
+        "RowCount": 30,
+        "ColumnCount": 61,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
         "DoubleClickCommandList": [
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
@@ -310,6 +327,7 @@
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_calibration_history",
                 "ColumnName": "id_tool",
+                "GUID": "9749329e-d57f-4b05-bb4e-d8c53b06c67b",
                 "RelationBinding": {
                   "RelatedTable": "trn_insptool_tools",
                   "RelatedColumn": "ID",
@@ -321,30 +339,20 @@
                 "SerializeProperty": "=機器の履歴リスト!F3"
               }
             },
-            "Params": [
-              "=F3"
-            ],
             "ID": "2dd59d08f73f4afa8b1cede112549e7f"
           }
         ],
         "ShowColumnHeaderInDesigner": true,
-        "TableName": "trn_insptool_calibration_history",
-        "RowIndex": 4,
-        "ColumnIndex": 1,
-        "ColumnCount": 61,
-        "RowCount": 30,
-        "IsAutoReload": true,
         "IsTotalRowVisible": true,
         "IsTotalRowAtFirstRow": true,
-        "ColumnOperation": 2,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
-        "Name": "リストビュー2",
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2"
+        "ColumnOperation": 2,
+        "IsAutoReload": true
       }
     },
     "5,1": {
+      "NameUsedInJavaScript": "ID",
       "TotalRowSetting": {
         "FormulaType": 2,
         "StyleInfo": {
@@ -354,83 +362,102 @@
       },
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "ID"
-      },
-      "NameUsedInJavaScript": "ID"
+        "ColumnName": "ID",
+        "GUID": "1efac4f2-9417-47b4-9ba3-34e91bffc760"
+      }
     },
     "5,4": {
+      "NameUsedInJavaScript": "処理年月日",
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "処理年月日"
-      },
-      "NameUsedInJavaScript": "処理年月日"
+        "ColumnName": "処理年月日",
+        "GUID": "25248734-19a6-4dac-9bcd-ac8dd94cd29a"
+      }
     },
     "5,9": {
+      "NameUsedInJavaScript": "項目",
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "項目"
-      },
-      "NameUsedInJavaScript": "項目"
+        "ColumnName": "項目",
+        "GUID": "cf565db0-5ff4-4f66-ad7d-f21b8c6a664c"
+      }
     },
     "5,12": {
+      "NameUsedInJavaScript": "業者名",
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "業者名"
-      },
-      "NameUsedInJavaScript": "業者名"
+        "ColumnName": "業者名",
+        "GUID": "0181d285-ab3f-445b-a5b6-bc446fb5a40e"
+      }
     },
     "5,19": {
+      "NameUsedInJavaScript": "内容",
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "摘要"
-      },
-      "NameUsedInJavaScript": "内容"
+        "ColumnName": "摘要",
+        "GUID": "c5440b4c-84c8-4d29-92fe-339f290e9554"
+      }
     },
     "5,24": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "備考"
+        "ColumnName": "備考",
+        "GUID": "58987a4a-5b45-46cb-b87a-6ecc9d7dc4ed"
       }
     },
     "5,31": {
+      "NameUsedInJavaScript": "承認者",
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "承認者"
-      },
-      "NameUsedInJavaScript": "承認者"
+        "ColumnName": "承認者",
+        "GUID": "6fcbd544-1629-4df3-b0c9-d0011863d800"
+      }
     },
     "5,35": {
+      "NameUsedInJavaScript": "状態",
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "FGC_State"
-      },
-      "NameUsedInJavaScript": "状態"
+        "ColumnName": "FGC_State",
+        "GUID": "a7c1a556-fe76-4815-8f22-e3b459eb7175"
+      }
     },
     "5,38": {
+      "NameUsedInJavaScript": "担当者.氏名",
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "申請者"
-      },
-      "NameUsedInJavaScript": "担当者.氏名"
+        "ColumnName": "申請者",
+        "GUID": "1a8d092a-b764-4dbb-bd70-8a77d25ec2de"
+      }
     },
     "5,42": {
+      "NameUsedInJavaScript": "attachment",
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "attachment",
+        "GUID": "f048a3d2-0415-4086-905a-4c538d874e67"
+      },
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "UploadLimit": {
-          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
-          "ReplaceWhenOneFile": true
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
         }
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "attachment"
-      },
-      "NameUsedInJavaScript": "attachment"
+      }
     },
     "5,47": {
+      "NameUsedInJavaScript": "subject",
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "記録文書へのリンク",
+        "GUID": "2991d227-fef4-4556-b6e8-98ce08181735",
+        "RelationBinding": {
+          "RelatedTable": "trn_insptool_certifications",
+          "RelatedColumn": "id",
+          "DisplayColumn": "subject"
+        }
+      },
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
@@ -440,7 +467,8 @@
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_certifications",
-                "ColumnName": "id"
+                "ColumnName": "id",
+                "GUID": "d7faee3f-a735-40df-8fab-acc8cc33ba6f"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -466,69 +494,59 @@
           }
         ],
         "ClickMode": 1
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "記録文書へのリンク",
-        "RelationBinding": {
-          "RelatedTable": "trn_insptool_certifications",
-          "RelatedColumn": "id",
-          "DisplayColumn": "subject"
-        }
-      },
-      "NameUsedInJavaScript": "subject"
+      }
     },
     "5,52": {
+      "TotalRowSetting": {},
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
             "PageName": "校正履歴の編集",
-            "PassValues": [],
             "LoadBindingDataOption": 1
           }
         ],
         "TemplateKey": "_RS_Small",
         "ImagePath": "Application/024_edit_4.svg",
         "BuiltIn": true,
-        "Color": "Accent 1",
         "UseCellForeColor": true
-      },
-      "TotalRowSetting": {}
+      }
     },
     "5,53": {
+      "NameUsedInJavaScript": "記録文書へのリンク",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "記録文書へのリンク",
+        "GUID": "04530882-5208-4444-aeca-a81a158ff81d"
+      },
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "記録文書の編集",
-            "PassValues": []
+            "PageName": "記録文書の編集"
           }
         ],
         "ClickMode": 1
-      },
-      "TotalRowSetting": {},
-      "BindingInfo": {
-        "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "記録文書へのリンク"
-      },
-      "NameUsedInJavaScript": "記録文書へのリンク"
+      }
     },
     "5,54": {
+      "NameUsedInJavaScript": "id_tool",
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "id_tool"
-      },
-      "NameUsedInJavaScript": "id_tool"
+        "ColumnName": "id_tool",
+        "GUID": "06625e96-b7ad-41a7-b333-0556ab6ba7d8"
+      }
     },
     "5,55": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "aab39f70-cbdd-415a-a0bb-3c1661f74e78",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -541,6 +559,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "417228f6-c5d0-4566-8ede-64319bf23ca2",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -553,6 +572,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "efc1e3f9-652f-4139-ab5d-b1adc6f23b8a",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -565,6 +585,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "fe65040a-1324-423d-b5fb-c5642beb5144",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -577,6 +598,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "c81ca63e-24dd-4806-a54a-a7de4c099142",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -589,6 +611,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "f75b2742-a7f1-40d4-ba57-36e7f4476f6f",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -2381,7 +2404,8 @@
             {
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_calibration_history",
-                "ColumnName": "処理年月日"
+                "ColumnName": "処理年月日",
+                "GUID": "0afa4ad2-35e4-4e89-9f9f-edbb06469648"
               },
               "Order": 1
             }
@@ -2390,18 +2414,27 @@
         "ID": "2109cb1d63464cbdacdef05dbe669ad7"
       }
     ],
-    "AuthorizeInfo": {
-      "VisitMode": 6,
-      "AllowVisitedRoles": [
-        "IT戦略室",
-        "製造課",
-        "九州製造課",
-        "業務管理課",
-        "製造部",
-        "品質保証課",
-        "基礎開発課",
-        "電気設計課",
-        "サービス部"
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "IT戦略室",
+            "製造課",
+            "九州製造課",
+            "業務管理課",
+            "製造部",
+            "品質保証課",
+            "基礎開発課",
+            "電気設計課",
+            "サービス部"
+          ]
+        }
       ]
     },
     "RowBreakLines": [],
@@ -2410,7 +2443,7 @@
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//S5SXbNG1jH1qoiQbpzkdm61OHYz4vuaFakQ8QfWiJW9zLlvKJLN5C3ReFnsKLKg+8txtJtIkiuMDx+FY2UawaLzoL13JlrYOb0mAxvz0Pv+DyTzt3dteWBdf+4fDw/MF+rXzJSAP7aPwATu+4FwIk3mnpH8175DLTsj2t2ibItmbdKivGUha1nXPmJqMZ3APnu4pk0uv+LeFS4eipbvZKpTLRkETFo9FLJs4Q6NUMMDtm24sx/QJZWa4ADvMIvquOHH/wFx/0EWKq3ibz4SoUZ793N+ruPHgomvxZ7at8FYrq4303CBx1pa4vy+9hoJC78vXdZfiaGBfNTjJ1j3pXbTO5NBiVClI0AegBOCqeWRoQAVcltOESjSDHqLDqYxbaq7DlhoKlVqD78Qfj8QvD4v9GKiT8sZGV380Vm8bAJnnabquVMIIu1IPRS/+LlUZnrblX8baIwZKfPVKlQDaImM1Djk8m5nX33Le54ysbGAWVPP8K9xh5ba3vCv/ueqR1dKkyyiQIwZF37w+TtlJ+EpPMbHaWnj3Mh/+9U2VfEEUdkXCXNcZJ2G+OZaCto+CBvDRswSl9PU3IR13bPf75l6KJpIAO3qRq8H8n9hyqVe2G/51ESniofNiN4yNFneUUncCznEdBqwC5/3jUi8rRfhtw1OAHoAWjVSZMzDndg6OsFlrVoXg26LqsLcDofeZFu20EzSRIao3pmEHLu+VJNmH5/+Nlja3lk1lKFl4J6+QHubXoygmDXIh4h15o77yyRU/PrK5pNLG8EDwxd8ESx4/VhvTmQhOBGd04zZk177wiliC8q50plmLeO23/szV92KHEJR0io7H91k8auwPATYSaDamkMSSahd+m7RA4daP+LG2+dqGav1ZAOgxOD16DuxW4rYl+dOcWClAsLVmbg==|920
+}//JdIMQ55uEo9Kvg6nHLonq0ziftQBOj/+2SfMc1kS0eREvibN2moDo+xaaU9sHbxox2RXpSj3NI7/27g80SkgHZKamPZf254QLLrULtqjiB5/VwHIIY0tIn1Wg6ginKYiZJvMs5q3z7zUnTrIEERb1QlCW+j6P96U5ViDLd9AiH/SnC244gLXzCTbrml/PmI7dNv9Lp9BVJcaq51aA5eOv0VVPNaSFomMQ1d6pXT8khSsG7QlM+fN4qkMfAtSmdW2eJFGczXbHilwKNph5D/+Y6c4qOGV+TwY0L9T5whn5BvV6Yuoo4vO0PuAXBA/eg68u+SGVBt82ECQDJzxAqDaAx6y0h3003hpI7Ut0mNZdg0XxiwQMON4H7DyGWe1/TmmNgM/+hfyUo5zrQzmymGF9I8v8J59YO7LVzCWSPmpY+pbmo0l/ryOl21DoxBfD8/nP5lD1OAhH6PUSqMcJ8fhW1UsQG5yLx9PCiL8Z0vri4SBNSsvacW7mAFJcpUXxcgfIoaRhH8lAF7jLxHyv1rcJGiHOaZ/Qe2Fx+pIUVSrlWmdN2vZkO70TLwdnJCF73L2Dl4CzBwBg71yLV8jYrtladDkUI4feoceEscpxtTLBuRYYJR1pzxqFlve+V2UujCYx+EJuOjgSluqtu5gcIbsmV04jin0oYxy9ei4th3h/tlb09p5QC/wmyiZRynOGvRwArPCur/aGLaiW/S9bizyllLCTokbbGUPEh1T76BwZ+aryVufPDtdjF8xygWFFVuMDbuW9xVtpseNrTmtXonSjrInC5p29B4uiGo0cUYduCashcjfPBFMbTuODfsKJqROsfn5HlRfcwwFYBwFYrDN1q0iz+J1a2IsvS+p8/giGiKzycUCeoOoR5SHwZepg09NkKL3qDWkFtodyz9C6drzRA==|920

@@ -12,6 +12,7 @@
     "0,0": {
       "CellType": {
         "$type": "Forguncy.TabControlCellType, ServerDesignerCommon",
+        "TemplateKey": "スタイル1",
         "Tabs": [
           "計測機器の編集"
         ]
@@ -88,18 +89,27 @@
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "AuthorizeInfo": {
-      "VisitMode": 6,
-      "AllowVisitedRoles": [
-        "IT戦略室",
-        "製造課",
-        "九州製造課",
-        "業務管理課",
-        "製造部",
-        "品質保証課",
-        "基礎開発課",
-        "電気設計課",
-        "サービス部"
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "IT戦略室",
+            "製造課",
+            "九州製造課",
+            "業務管理課",
+            "製造部",
+            "品質保証課",
+            "基礎開発課",
+            "電気設計課",
+            "サービス部"
+          ]
+        }
       ]
     },
     "RowBreakLines": [],
@@ -107,7 +117,7 @@
     "RelatedDataTableName": "trn_insptool_calibration_history"
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//N1AN0lr9eXgAygsyU9nQA5TTpdg4/L/49rioEB5Eapl/ZgtV37csRTfmTQ19N9lTv0hRhnB5AIhRK9G5hgQbRr9l5JOotGOgJ3ihnRDZ+et7ryco7ffmqLqeVEbfG4/Tozr0/D5uFBuf8xp5raIQNX3se4vjuOMKY0nod1t0SHylv6ypKjcHCiMdAbMUirbwvNps6fgrB8eFt/8cWrHGFzyoIc1l3QSDR7vIhJiCAM9GDXQ0YBWljsNwKzrA40gSbfLYUxBu0n6J2RC2B/ahUuAzDaa11v784e9Ci0p2nYj75vVdi+Ny2B4ov89t5y9tzrGozXwTGExPhv9v8e16HOt9EirYZc+taeF18O9Ja74lHaO+VpoQT1oSL7r8DXZNUIvIdRFHJ/ODy/fMfWKp3hw4LAXktWFhDdYSVaa8bfpQcnMu706TYgilUxOHCmUQa+yqya6YjszA5sadt7bJf5KXfnO44l4oQ53SsQREWfz6U3FPOgkE/+AayoPTJkdM529dahi8DqiRyXrDEbpPrAH4T5DT6ev/uEWRkoAoumaq6X9PB97/CQ/aQ91tZVFxK/QorLFAhD2VGJI8aoQW8qzwFdr0ZEryFuMgz0AEcdIqCair6KazXGHyvUDu4BOpgs/Xd9/c2pbAR1nxfh4EOCugDeXb9uMHCHDx2s/XAFCnWzpqV70PL4EfTX6jhws2QTBpiyGRMVjC/P0ToygV0OpoIe6rGA6QsjPA8zLp8lI+6+/SgfSfW2dagoUHdzSsmESSNC5TCGpp3sAqK5eAmKSJFdST60L17Lx8T+lv3Xn5PhI209o4zsHIAGIqVbpf+LL3aEhMyYiQK0NI44QWtAzUHJu4K4iTNlPa+YNfqbqxtcaY8C6CAscfPg6EMILFgHfEFZPeBVmflgGB9pAfrQ==|920
+}//Q1zvHyTQ9Yf6m2zfWRCThb2l2XxYAIV3fuHBvkDpekR+rxr02tscMP/SgDHDB2GtGT991nzh9w9IfDu7/kIiMrjjNwpCZpwqpNJfvTyH6A725FO8PU/XRYZ4BnMfEz92c7okQp0/QPwN8K2z/+zENpbFVQFfGjKjyQ+jHzTQollLYc0tqnD9fbVgUwhDUS1o75EFqGeqzTGBRlAdwJtltkyk+L3HjRkuXWfrroftnuPIe3PHKS53PbiSvihShjdTpZh3SV3h+FVdm2el1ciu8XklVSduDzyJhOMlclYRWOHq2n4SV68qFCU/aDu5hkgM61WmQbNr6D3dG6CrgfVKxkaHteV8eaDRpj5Hs9hThMa7DlHBvohC16GY8MvGhS4qvE+2tzjVgUuuKKs1d7ResyP9Lmy4+7Ir+RQYN4+lQ/4JVzClts0RaWOpSs/7mnzd6U+B61HqEkASUGgQiTMhdLGMxs0YXjpulr1yXMlNcpyV4+0YLFk5Dvu1z3NWHunAY7QfEbeSBGXPwl/xXHPGrcb1F01tkDveMOpB6FIZXmYY/EcjApv5p5V1FdDZQMvnzvUC8s3feYO1BMeJdp1IQEni234mT9RATXtqtmnCdmmdWZ9pZ9Gfim9DZ3r64gAWEYAfOrFGYqsM2Y8beixYiFkmxjg5q1PdYR8bUAle5t+2jKTugtfdgygYTURPRMpGXaiDzAOvgHmXMVnOU5Lb0Vofy3Wi1Y323aB6zit5DDp40xIpVQYfIf/NcTLBVERxwF9N+x7rlgP7+mjcjjAk0a1EfZEARv0BXb2bH+mf7hpOFjrZ4PKo1mcNMgEXDvQdi8Iudet+pfH7bLCliGFHkahj8aSSCD6JCs/VqbMGg4p5XtQNvZ9Ada5kZdI1LpwAwZ8TJHYWQCIbyKnhuc4c6g==|920

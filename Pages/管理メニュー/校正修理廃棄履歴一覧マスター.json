@@ -370,9 +370,7 @@
               {
                 "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
                 "TableName": "trn_insptool_calibration_history",
-                "ShowConfirm": false,
-                "ConfirmText": "本当に更新してもよろしいですか？",
-                "UpdateValues": []
+                "ShowConfirm": false
               },
               {
                 "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
@@ -406,9 +404,7 @@
           {
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
             "TableName": "trn_insptool_calibration_history",
-            "ShowConfirm": false,
-            "ConfirmText": "本当に更新してもよろしいですか？",
-            "UpdateValues": []
+            "ShowConfirm": false
           },
           {
             "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
@@ -422,7 +418,8 @@
     "0,25": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "id_tool"
+        "ColumnName": "id_tool",
+        "GUID": "1b178205-a5d4-4d01-a3e5-943f9142c441"
       }
     },
     "0,31": {
@@ -522,16 +519,16 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
-                    "ListViewName": "リストビュー1",
                     "ExportExcelListviewNameMode": 1,
-                    "IsOnlyExportValue": false,
+                    "ListViewName": "リストビュー1",
                     "NewOtherName": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                       "SerializeProperty": "=校正修理廃棄履歴一覧マスター!A1"
-                    }
+                    },
+                    "IsOnlyExportValue": false
                   }
                 ],
-                "ID": "b63fec22-b511-432d-a1c5-996cbb4e59e1"
+                "ID": "5a345ba0-784f-43d3-9372-a64a8572b0d4"
               }
             ]
           }
@@ -548,6 +545,13 @@
     },
     "1,0": {
       "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "trn_insptool_calibration_history",
+        "RowIndex": 1,
+        "RowCount": 33,
+        "ColumnCount": 102,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
         "CurrentRowChangedCommandList": [
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -567,22 +571,15 @@
           }
         ],
         "ShowColumnHeaderInDesigner": true,
-        "TableName": "trn_insptool_calibration_history",
-        "RowIndex": 1,
-        "ColumnCount": 102,
-        "RowCount": 33,
-        "FrozenIndex": 4,
-        "FrozenLineColor": "Accent 6 0",
         "IsTotalRowVisible": true,
         "IsTotalRowAtFirstRow": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
         "AllowEditInListview": true,
         "ShowDeleteButton": true,
         "ColumnOperation": 2,
-        "ShowEditStatusIcon": true,
-        "UseSimpleBar": true,
-        "Name": "リストビュー1",
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2"
+        "FrozenIndex": 4,
+        "FrozenLineColor": "Accent 6 0"
       }
     },
     "2,0": {
@@ -592,7 +589,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "ID"
+        "ColumnName": "ID",
+        "GUID": "f35c130f-cc71-4245-b7c8-61db79742434"
       }
     },
     "2,3": {
@@ -606,7 +604,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "id_tool"
+        "ColumnName": "id_tool",
+        "GUID": "48ec7542-fee5-4240-9019-1b84a7ae14d2"
       }
     },
     "2,6": {
@@ -614,6 +613,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "57f332d3-6930-4143-ac82-c5630da2f2ae",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -626,6 +626,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "dfcd38f0-0307-425b-9fec-31b2bf1a96fc",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -637,14 +638,16 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "処理年月日"
+        "ColumnName": "処理年月日",
+        "GUID": "0475f01e-a6e3-466a-98df-bece6d497f7a"
       }
     },
     "2,18": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "項目"
+        "ColumnName": "項目",
+        "GUID": "fa7b2411-5336-447e-85b9-b55a0b602528"
       }
     },
     "2,22": {
@@ -652,21 +655,24 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "摘要"
+        "ColumnName": "摘要",
+        "GUID": "90f01698-c5be-4eca-b622-7f907b61b776"
       }
     },
     "2,27": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "備考"
+        "ColumnName": "備考",
+        "GUID": "c2df55b0-8c05-498b-9e15-a0da9306a266"
       }
     },
     "2,34": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "業者名"
+        "ColumnName": "業者名",
+        "GUID": "973ba4dd-4496-4425-bcd9-9338dc466c79"
       }
     },
     "2,43": {
@@ -674,7 +680,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "申請者"
+        "ColumnName": "申請者",
+        "GUID": "d6115d7b-463f-498c-b501-1d33275a64b1"
       }
     },
     "2,47": {
@@ -682,7 +689,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "承認者"
+        "ColumnName": "承認者",
+        "GUID": "f5f51ada-7ad6-4762-955a-9a602b04c94b"
       }
     },
     "2,51": {
@@ -690,7 +698,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "判定"
+        "ColumnName": "判定",
+        "GUID": "a676308f-f5c5-41c6-a685-55cfeb797079"
       }
     },
     "2,55": {
@@ -699,6 +708,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "FGC_AssignTo",
+        "GUID": "9a6546f4-aca1-466f-b4df-4511ba548b00",
         "AttachType": {
           "$type": "ForguncyDataAccess.AssignToColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -710,7 +720,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "FGC_AssignTo"
+        "ColumnName": "FGC_AssignTo",
+        "GUID": "f5389214-dffb-41f8-b962-11ca45639b58"
       }
     },
     "2,62": {
@@ -718,7 +729,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "FGC_State"
+        "ColumnName": "FGC_State",
+        "GUID": "bcfd7a51-6a0f-41f1-9339-0fe940c7c1bc"
       }
     },
     "2,66": {
@@ -727,6 +739,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "FGC_Creator",
+        "GUID": "ade1188c-665f-47a6-b2d0-496db00b1c94",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -738,21 +751,22 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "FGC_Creator"
+        "ColumnName": "FGC_Creator",
+        "GUID": "1d842d15-dc4d-442d-8775-abb2dbb88816"
       }
     },
     "2,73": {
-      "CellType": {
-        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
-        "UploadLimit": {
-          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
-          "ReplaceWhenOneFile": true
-        }
-      },
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "attachment"
+        "ColumnName": "attachment",
+        "GUID": "b2eae8d5-987c-459c-a9f0-05a5df5eabfe"
+      },
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
+        }
       }
     },
     "2,78": {
@@ -760,30 +774,33 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "記録文書へのリンク"
+        "ColumnName": "記録文書へのリンク",
+        "GUID": "551b3425-587c-4a6c-a19c-3343e8322efd"
       }
     },
     "2,81": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "ClickMode": 1
-      },
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク",
+        "GUID": "3eec9036-27a3-4c2f-839d-2b80b38ef897",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_certifications",
           "RelatedColumn": "id",
           "DisplayColumn": "subject"
         }
+      },
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "ClickMode": 1
       }
     },
     "2,87": {
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "FGC_CreateDate"
+        "ColumnName": "FGC_CreateDate",
+        "GUID": "78e1d958-ab2d-450e-a1fb-0020946d8cbd"
       }
     },
     "2,92": {
@@ -791,6 +808,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "FGC_LastModifier",
+        "GUID": "3c23349f-80f7-40ec-b352-c30ffca438c9",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -802,7 +820,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "FGC_LastModifyDate"
+        "ColumnName": "FGC_LastModifyDate",
+        "GUID": "be2813ce-63b0-4edb-822e-a59bc3b34111"
       }
     },
     "2,101": {
@@ -2275,10 +2294,19 @@
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "masterpage",
     "Title": "定期校正・修理再構成・修理・廃棄の履歴",
-    "AuthorizeInfo": {
-      "VisitMode": 6,
-      "AllowVisitedRoles": [
-        "IT戦略室"
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "IT戦略室"
+          ]
+        }
       ]
     },
     "RowBreakLines": [],
@@ -2286,7 +2314,7 @@
     "RelatedDataTableName": "trn_insptool_calibration_history"
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//ZVjK00fyqoLFEJdMgreFeklFEt8zyAoaqT4uOyzoArplXJNOtT4y0sZBsglQ9mwIBvanT4pCaTCv4ztEGJx1ATkxHgEnTq8PgxqzgTo+GT0Qn0CHCRu/Obv83AJlikI6WIYmlEeYhFsHM6KYDGRqoDx4E8hOA1BzXx3wyGNaeHplCKmiFNnSqXoJKHYdsz/j3IrDD5rYy3v0g8myxL11OTQYpzGqUa6Djg+1ylp4s5evLVK5wcccXNhkirSqCVHi5knLLCeO1oGkjunPU84ifqAo31CvLs0D3OEGXhIBDP6vWlv286BlJs04UJRCqIuSWrVo+YzvDAkLRevrxWWHZJMmbpj6v86DXW2kUBY8ZlGVmsSoVdocRWWKIGn5q/22SyDEUg2ZpHmm9SZopv9MEO6aGvFBy8IEyPd8S+pyuU3OUSDehCXi9Q4I4k+4MotCKrTJOXTlxsmxqLsixMKUFkrozKtrNINg2nkxqx93fuCQraIs5q9cjzWwkwEc9BcVQ0GpWs/htJ95UD0r5EkfNs/HM8yUgD1MsWD5o2xeBSplZKDUYNSY6drqwGcaeecuCXQ/1XZhYdJS8fNajwukvQdzmy9ENq0sLBlu0lIi67CTDafGH+a13+H25r0qSToY7jTVhKzfqaoq2BprmkSWh1DeE1fZWRJ9sIjNhCj7gLvbM/YW6wHchq3Mpn3U9dtBNg5AxCD9HGMOnh39csmeO8s13SC9qv7lxhOm6H2XKt1/Ww3Rc6H0s5BI+4xEreo6p2EJTwR7+iZlKWmgdsQhyeB1zVSU9WnMnDDb1IVSSzh9RLDO17oVvExZf8QGtm3rob34Tag5CnkLchDDP9QCv9Y/wxphWfdg2oqRmToaPhCMdzZ4VJtLCxjXcFlSOybAipF5RHkA0cBKp3sWLXad4Q==|920
+}//PEGJObDPlMHHQnLMs+GPGoG0YHdiqw/57stYTZ55Vuv1aM6tv0IzeRbZ9s77dXU37Q4lIiUOC7HfqOEr7mMaf3gG3Zwav+mPouDtw/mAzicaDFIetAImpefTrBaGjJjia4JgAWx1fSpxa8yaqUhLJvYZ56gRR5PsRFZMfUEdxDHczPVuITIXWQwV1Ama2xFHF3LhUAF++9OD/vo2YwoKmECK5AL7c0WK2fp9H0plXaPZroZC8RRd7w0QUfjHY9oL3kBjBj3xR+NWJJCnKp4knHg7KtXxXmu4NGK/LdM0K7hxiQd0MN8eKEz4WtptqvGfkVN8izzI9/eJCrQwq48OxzdogVNVnlREQb9C5/oREWXd2+Q+ZCBVnlOMvI33dtocsuBY8pFvxM5/rcwMAeB3tLzZynhYq+09KwnQy8sT2x7Gbp3M1cSl4ONBNbMPzzvh0mXX4ov4Cb+PgpYditRMFyUDWQN1YcwoX9zfdH18KhB7po0fti/PGDMKWWHox6cYwQY7Mqp5l9Kv348pWoU59GU9oaKT1S/Sfs7mXtc4e36ysubfVAuMD9YGXA/pGs3IsvAOuKjKdoNIh0ROzAM7nCF9jrQS7xAe0ol5G06ptVHRIcD4CSt7EvXduQRktGlAR1IPmIFam49ExmD2eyZfAQtSE2xcI8x2bvT6h+Vdzmu9EG/GcSZh5TLowRhhEmqqixKJ09upfYB8Ddtw9J1m44MExr5CD3aa7W1JbWhkr6fNLMjLcs6VD8js4uavTE3bgTgHGqmAFQKrpATcPPFRvbk4xJNZJlTeIYx4KmiqgRSTNZqi96nKeUM0G7JwtJ7k7DCkvxRepd2a+/2SPtNf4Vbb+d5KovGMSF6Q+rpQnQV9pG3h63vNdeZ7uVWCHA+NPMtU1NVybDWH63yMuAc5bA==|920

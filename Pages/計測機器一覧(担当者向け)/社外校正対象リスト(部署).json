@@ -12,6 +12,7 @@
     "0,0": {
       "CellType": {
         "$type": "Forguncy.TabControlCellType, ServerDesignerCommon",
+        "TemplateKey": "スタイル2",
         "Tabs": [
           "定期校正リスト(部署)",
           "校正切れリスト(部署)",
@@ -94,18 +95,27 @@
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "masterpage",
     "Title": "社外校正対象リスト",
-    "AuthorizeInfo": {
-      "VisitMode": 6,
-      "AllowVisitedRoles": [
-        "IT戦略室",
-        "製造課",
-        "九州製造課",
-        "業務管理課",
-        "製造部",
-        "品質保証課",
-        "基礎開発課",
-        "電気設計課",
-        "サービス部"
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "IT戦略室",
+            "製造課",
+            "九州製造課",
+            "業務管理課",
+            "製造部",
+            "品質保証課",
+            "基礎開発課",
+            "電気設計課",
+            "サービス部"
+          ]
+        }
       ]
     },
     "RowBreakLines": [],
@@ -113,7 +123,7 @@
     "RelatedDataTableName": "trn_insptool_calibration_history"
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//RQNzDXyvMa9m0LlSu1WDcWMcSB9bj0C01Vz9PHlw/m4I+yJoZAr8UTfd3akqf0e2KoK82qVZuNN9nRCHuD/jg8EHqi++awdQc9Q2leukPJw9bJ5WglGnfB00i4qoxQGjgneELt+NHCOwxIe1vM1feSo55Z9ypObfsV4Nt5PVFB5UDUAr4l07OGrY3fp81ZBDTs2nOsUCjVLx87OyRw9uvgiewtUR+fXV934NLjPEZvfTbN+QSvnul120EN8hE/JMg/F8fzklctV/I/FdI9ns0Vo+vPp9MaFR8VfZtX36sFxGzURwOvJp7tXJ76k85gACOt/NSXjo4mtW2tqWpOTEXxdy4c+rByRD2fpepR27Jyn5G86YG+kgZyRDPO14BRJP4B/R3jPdUh7CRPdnsig1M6R7/G9txddUVFa7rD5Hpav2U/YZz1SpDjBY38y5sz+njyJzWfgUNSWpvHMjJmJgJxxK3GjSXlW9hIJtH67d/anMSXMN8xvq64i+zI7qpdkovHSN8QesHPEaKdvs8/EXdf/4skRSbGnlOIlZi/shBoqLTMYqZJUbjT2kp2RuY4f+DcmfTcWGKT9Mq7MK5iLfgX5ojxlebSDOa4Mqdis+qMzn1GDj/iwFhykMZ9mdrUrc9KdVy3bYTLWTQb9VNBuKIreK8BRRcbstrDOncqrCTv3XjO6ANWC4vyXqV0CQyUtJsiV0H6rNYI8bupKOti93eBafME8y24TuR/jLdsmna/TB0IHoxQPyZ4ohLcPsbZvagk5FBo/yoaP2KqdoAmdmWCsnudr4wFGSYeDv/euBmqF6P3weVelQJxOi6SEYz1HELJHWG7e2czvh0svX8xzH0RO0wZx1bP0lAExZfrVW0FAHNaG6nz8lm20elE9+qPD+I2RFXereE/ESqe4dfOo1dQ==|920
+}//P4YhUBKWzCI5GmKDfhBXkOQzu9Mue3YtxkX9pN+4YHNtECEtx5mBvHxcHGhbawbYoBFUEVCWbsNmoRCytJ/ZjpTLv5JLajgvnL7xTtQzvEH00rc56Ze/OSwPWsA2pmgmmag4/ps9S8Ledb3IBHNO/GV5JCUeLaO8Lhdw3KUvlJeUVmUoSZyEWe9sq4JWa1kqeGScTeQbmdPQHGBaVBLjsk7iyyJ77rRx7fpFMIFcwTS1KB04aTa886CcO11tOtQ74RHAY8AlkuFu9ozdir3eUZZTkVLLEdVQzV1QDCp/R9L/+M3acD7c/PvanfHq7LzL4L46nZ81lwzVX1kYQuD0geA5HPt26RNLrJBEHIoRyLjEVQRWnlBoiD+ORoQr45end7JAtTqzHWxja10BGpWEGvAp568pTJaAoulKbbnRHQF+hGAN8oT8i7GHayKI/htS6O0R9VOJ1/UGhuQBrRuk6B2pEKUE/DoQFNbAlfF4gMqn/bd9Xo0ODIj5rrzy1hDVuXFseSYh4Mrz1tz9UBCJZ7nfiSsjTFdYD+R8F0ZErhAdzxgK6MzOsX5piOIpMa331heU7y0wc+Ef4D7Dsgicy7pepnTVkouL/UAudrXqCzL7RrUnlhKbUmwH5AO1qA5I2jeRGtKH+sL8ZX/QJsNhcApw9TqsIphZ5zm2lyD6IwBfcToLAHsLM28RUS/vZ5P3c76sOhHuSG2nuoLn9Q9nIXLcjMaZEofjeENhgSpZNL7qeL8mRQ7Mdgip8SzFVy3mbQfiJRe2an/jUYsxaFINJT/vM4End7FkKh09knFDQyXRdMh6JBPiXWHavS3CItJCulPRIiWhae46c4KfHkCQuzco2LghxKDo/liVMLv+8mSqJrx1wfmhB29ck+cRflRSVXZ5D2OziRVcDj22BJYC2A==|920

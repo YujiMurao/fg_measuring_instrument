@@ -39,7 +39,6 @@
     "10,18": {
       "CellType": {
         "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
-        "NoneItemText": "<None>",
         "Style": 1,
         "LayoutMode": 1,
         "Items": [
@@ -83,7 +82,6 @@
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "NavigateType": "back",
-            "PassValues": [],
             "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
@@ -94,7 +92,7 @@
   "StyleDatas": {
     "Styles": [
       {
-        "FontSize": 37.333332061767578,
+        "FontSize": 37.33333206176758,
         "Foreground": 0
       },
       {
@@ -144,20 +142,6 @@
     "19,27,2,5",
     "19,32,2,6"
   ],
-  "BackgroundPictures": [
-    {
-      "StyleInfo": {
-        "Fill": "Background 1 -5",
-        "Stroke": "Background 1 -25",
-        "StrokeThickness": 1.0
-      },
-      "IsAutomaticStroke": false,
-      "IsAutomaticFill": false,
-      "Name": "ceb28d52-85eb-4188-a272-9c46f964710c.png",
-      "Location": "253,80",
-      "Size": "540,360"
-    }
-  ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "masterpage",
@@ -168,7 +152,21 @@
     "IsBuiltInPage": true
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
-  }
-}//Ju1V7ELPtmZPHRWCgOb1BkTUnXATuitpbrSOCdgy9KHYWrKs/JWSj06rfNSyQ/uw49K+AoVcoyu94pVZ60qKq5+qucpk4neSmzK+9z0uJzawBwaaWuUEySrhWa3HK723N3BSHhGfrRLp+JlH1KFsh8UXl0vc1+Fix6lgSsLDMgx2lurp+AlbC7y/VOQ8lCrmMys3ZaA/Izh3dCXow6+gq4xtCvJN6ghTZ0iVy8YK8geMS7x5UBGIclAN4NCHcvwI/vo/UuICVi/9LTxFmExEJqmPr9DMRdAJDCFabd+NK4CKLkFce2YoeQHRfyRUHffYFSjRWVfPcndQQBI54KinpNDGzINwdc5qRGH9kN3LJB+MI2X90QWJx4JY8nd3+y6jMt14N6QZ6jKFhTtyiZKAdnXHs42EhXnHByasEOuJYTq0GQVKprgSJIGM/4muxuuO4RwEWWNtwsP0JZKCDeriBMkuWHzVV87gm8ukEsjuHhkZYuZX9suaSGilROZXCjUhgS1s3b97As0xnigD7wODYWBMoHw+OcZdYcopT4WiZKZ7joeJtNHoA6LBqYg7wD8CT5U4hEbwEdBWX56vcPqhKT49rGbeuHhuftOD4uKDu+REUvjrJmI2KpiTZF5QbD/4MNn0qn/6erj2rVSnPlGMFOT45qqEPwEnRl/cqdsxSDpZJax8DLS4l+obijrybWq9gPN/TlutaF7dI7K58VD1EGMtIY/RKzNs1Urt+hT0ttZ0KcyjgaqVccTjYU0b+2cSu/VQfWDMO/Btp2IDqnqqY2yc2d0IdJrCEYwESnHptP1trAMShWPfpNj/h7bSQIt+JJJwCtEMMiaiogwqvWdT2IaH3NqgzLFpjw+CMOD56JLLllZcFpukv7NRwbJjNHG92+G0nVL3/knaKSdVBpVy/A==|920
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "ceb28d52-85eb-4188-a272-9c46f964710c.png",
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "Stroke": "Background 1 -25",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "253,80",
+      "Size": "540,360"
+    }
+  ]
+}//QRUgwDg0dHPqtnQdZB4KkKmb/tZug9UCXXnzSzjr3payBzwy8tzFIf8zRP80PbzGzJ7+HYfsuhrKLUInKnLT0mN/joM9LLjgqQf2f1wMMsyl26AB8XJChVngyUPhyrjvYbI19wQ5Qf0myNUDdewPsWPhXRnRIxntY+EIf0/EmK46BIDtbf5bbRlOjXHl8gmYCIohX81euL3cGMKO5lNEoRpqEG1P4QGEWlbFDPn0jSHN+K5qn2dHiOxcgLNfJetYETo40x/puXnp8fGYHtlGsnixlOsFY2TVJ6QvplXrGXKn2ggpaOQGh8OHneBL5HcJgS6AZm6gK1aVHAqEZwUNAJHbaP55K0rfwpWXAQEnCtLdKQvcVUmuwiJw43BUuirXEk0MrTPEVmEbmh/KbC5P9l+Zfu/rqmykoaXLJd52YdeHL3+Hm5A16PdYKkINEIwfklaxgDuxdEDKe3s4S92CG7Aunf+wK8TY4zIaVEvpIgXoG17MWe0tSF4pI9/TjjIwtAH6i1z4PmRQp1WeUqvKCxJPnQ+d/bX0O012XehZvSwvI1zF58JUFgDAqVFg+FSxHjgxGNKAz1MuH7MHn2T6cypE+lOyPrKE1bie/FuEJQkRUzK4A574lMNRY39ptsXreh8cXXZEx0GpW/nN0mk2P3pLFJWdZwAqOGS5BFm8on3U8Z6appbOP7tnB43L8jdMeQBnut4uEJJsct+lv9G7Fcsp1pvZ9QHgPOuv4StsARJG3eqqUYucqFccmvK8iof4gYIHFQJbUrNgcYzcUFao3ittYrWsk+REP5d5MDkUGhtQI08YHmfiMMOxuFUdCxKtMU4n4FWUHitUXGxN+zt8S7SL9FXKJW6AgFBTrpOltZqu6WBEXrSJL9RZP+VV7vD7HHyg7OdxAIKmI3DO5VcmiQ==|920

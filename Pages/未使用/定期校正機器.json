@@ -244,7 +244,6 @@
     "2,5": {
       "CellType": {
         "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
-        "NoneItemText": "＜なし＞",
         "Style": 1,
         "CellDefaultValue": "定期校正",
         "Items": [
@@ -318,55 +317,53 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 3,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "40dcbcf5-643d-42e1-85c8-a0c96835cacd"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!F7"
                                   }
                                 },
-                                "Condition2": {
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 5,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "dff0a923-aba8-4054-a600-486c9aaa0a68"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!N7"
                                   }
-                                }
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
                                 },
-                                "Value": "本社"
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "trn_insptool_tools",
+                                    "ColumnName": "n2",
+                                    "GUID": "eb8136ff-df65-4a00-80e2-6c8d46383d31",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
+                                  },
+                                  "Value": "本社"
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7",
-                              "=N7"
-                            ],
                             "ID": "34dad252375847dbadb986f9fb7365e1"
                           }
                         ],
-                        "ID": "2932cfcc-61ac-4433-98c9-d6f2b029fe7c"
+                        "ID": "9936dd38-b7be-4172-93c6-205c9a73d76d"
                       },
                       {
                         "CommandList": [
@@ -375,60 +372,58 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 3,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "f1b96034-5d0b-410d-8f96-1ad0d90f0026"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!F7"
                                   }
                                 },
-                                "Condition2": {
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 5,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "5b4ab029-e918-4e56-b5f8-fc686c5260f8"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!N7"
                                   }
-                                }
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
                                 },
-                                "Value": "九州工場"
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "trn_insptool_tools",
+                                    "ColumnName": "n2",
+                                    "GUID": "a94e5db9-6aa0-4bb6-8e1a-a0953bc153f4",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
+                                  },
+                                  "Value": "九州工場"
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7",
-                              "=N7"
-                            ],
                             "ID": "d9c8ab46658a4402bb0c564fbd7fabd7"
                           }
                         ],
-                        "ID": "21e57c14-ec5c-4efb-983d-f6712d20a2d5"
+                        "ID": "7b514a43-33e1-4dca-9157-fc611c222af8"
                       }
                     ]
                   }
                 ],
-                "ID": "5b9dcb7a-be36-475f-97f9-fe837b94a58e"
+                "ID": "9487074c-5b13-4aa9-b807-568487a973ca"
               },
               {
                 "CommandList": [
@@ -475,53 +470,57 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
-                                },
-                                "Value": "本社"
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
-                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                  "CompareType": 4,
-                                  "ColumnBindingInfo": {
-                                    "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
-                                  },
-                                  "Value": {
-                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                    "SerializeProperty": "=定期校正機器!F7"
-                                  },
-                                  "LeftBracket": 1
-                                },
-                                "Condition2": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "n2",
+                                    "GUID": "121d3690-8bcc-465c-9af8-a995d630fb32",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
                                   },
-                                  "Value": "%Null%",
-                                  "RightBracket": 1
+                                  "Value": "本社"
                                 },
-                                "RelationType": 1
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "SubConditions": [
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "CompareType": 4,
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "00daf296-0382-44a4-8b90-43b859e018ba"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=定期校正機器!F7"
+                                      },
+                                      "LeftBracket": 1
+                                    },
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "885527bc-127d-47e2-b10b-c862baadf209"
+                                      },
+                                      "Value": "%Null%",
+                                      "RightBracket": 1
+                                    }
+                                  ],
+                                  "RelationType": 1
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7"
-                            ],
                             "ID": "fb57df3b840f42d592284c4a89f7e60a"
                           }
                         ],
-                        "ID": "0b5c51ab-88c5-42f1-8d51-b11df50ebac7"
+                        "ID": "93985f94-30d8-4024-8b7f-d399d0872c54"
                       },
                       {
                         "CommandList": [
@@ -530,58 +529,62 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
-                                },
-                                "Value": "九州工場"
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
-                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                  "CompareType": 4,
-                                  "ColumnBindingInfo": {
-                                    "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
-                                  },
-                                  "Value": {
-                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                    "SerializeProperty": "=定期校正機器!F7"
-                                  },
-                                  "LeftBracket": 1
-                                },
-                                "Condition2": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "n2",
+                                    "GUID": "d626fa4a-498a-42f9-8fbf-31a1460fdf53",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
                                   },
-                                  "Value": "%Null%",
-                                  "RightBracket": 1
+                                  "Value": "九州工場"
                                 },
-                                "RelationType": 1
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "SubConditions": [
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "CompareType": 4,
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "b75e0c4d-023f-486f-92c6-a9dd54ac054a"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=定期校正機器!F7"
+                                      },
+                                      "LeftBracket": 1
+                                    },
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "88d2c7f1-801c-4204-a9cf-2b254318f4aa"
+                                      },
+                                      "Value": "%Null%",
+                                      "RightBracket": 1
+                                    }
+                                  ],
+                                  "RelationType": 1
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7"
-                            ],
                             "ID": "014fb129766b47fa92e6a3ed363578e0"
                           }
                         ],
-                        "ID": "3441727c-0ef5-48a5-9379-024e6ded02e4"
+                        "ID": "a2a334c7-dbe1-4b09-9088-6a34d4dd7a9a"
                       }
                     ]
                   }
                 ],
-                "ID": "fe545ecb-328f-4ddb-a8f0-3f05057ed851"
+                "ID": "9bf05b3c-4096-4bfd-acd4-2806b9945bc0"
               }
             ]
           }
@@ -598,7 +601,6 @@
     "4,5": {
       "CellType": {
         "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
-        "NoneItemText": "＜なし＞",
         "Style": 1,
         "CellDefaultValue": "本社",
         "Items": [
@@ -672,55 +674,53 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 3,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "125215eb-5a2f-406f-a756-964db4bc2f86"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!F7"
                                   }
                                 },
-                                "Condition2": {
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 5,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "95f4e143-0a25-4586-9165-9044fff95a5c"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!N7"
                                   }
-                                }
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
                                 },
-                                "Value": "本社"
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "trn_insptool_tools",
+                                    "ColumnName": "n2",
+                                    "GUID": "c292b144-9298-4f74-9045-0969c32af403",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
+                                  },
+                                  "Value": "本社"
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7",
-                              "=N7"
-                            ],
                             "ID": "a6fa58f9c98b43b4aea2358df5b021af"
                           }
                         ],
-                        "ID": "4df74f56-aed2-46c8-8b50-f1c9b164cdda"
+                        "ID": "f69874c7-945a-4203-8bd1-4eb62f7b86d9"
                       },
                       {
                         "CommandList": [
@@ -729,60 +729,58 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 3,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "7e088b24-0a81-4656-9c6c-0e802c421993"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!F7"
                                   }
                                 },
-                                "Condition2": {
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 5,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "b2214ad0-39fe-49ba-bd6b-c1c9d43ed896"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!N7"
                                   }
-                                }
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
                                 },
-                                "Value": "九州工場"
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "trn_insptool_tools",
+                                    "ColumnName": "n2",
+                                    "GUID": "48aa7e99-ca67-4eb3-be99-fe8c753f5f63",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
+                                  },
+                                  "Value": "九州工場"
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7",
-                              "=N7"
-                            ],
                             "ID": "354cf8f375484c359a34950cdea3321c"
                           }
                         ],
-                        "ID": "bd4613e8-46ae-4e34-a575-2125b4cb8212"
+                        "ID": "6bff658a-f7e9-4375-a49c-eb87ba92070d"
                       }
                     ]
                   }
                 ],
-                "ID": "663074b3-950f-4577-8dc1-4064ff083b3e"
+                "ID": "368749a9-8220-40f6-9b9d-892ce0cd4079"
               },
               {
                 "CommandList": [
@@ -829,53 +827,57 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
-                                },
-                                "Value": "本社"
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
-                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                  "CompareType": 4,
-                                  "ColumnBindingInfo": {
-                                    "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
-                                  },
-                                  "Value": {
-                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                    "SerializeProperty": "=定期校正機器!F7"
-                                  },
-                                  "LeftBracket": 1
-                                },
-                                "Condition2": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "n2",
+                                    "GUID": "bac9cc02-f794-4cdf-aa23-3ffa39e059d7",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
                                   },
-                                  "Value": "%Null%",
-                                  "RightBracket": 1
+                                  "Value": "本社"
                                 },
-                                "RelationType": 1
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "SubConditions": [
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "CompareType": 4,
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "2923efdd-c200-47db-9d29-2388c9c1fb38"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=定期校正機器!F7"
+                                      },
+                                      "LeftBracket": 1
+                                    },
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "f51be98b-6178-46eb-a9e9-48253595ac72"
+                                      },
+                                      "Value": "%Null%",
+                                      "RightBracket": 1
+                                    }
+                                  ],
+                                  "RelationType": 1
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7"
-                            ],
                             "ID": "2b419bccff2c4aa19617ac019849b477"
                           }
                         ],
-                        "ID": "843f3fb3-da5f-4f49-a3bd-6d7141d2ea18"
+                        "ID": "7221e1bf-5192-4e37-94b7-e5fc5a96e8d0"
                       },
                       {
                         "CommandList": [
@@ -884,58 +886,62 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
-                                },
-                                "Value": "九州工場"
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
-                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                  "CompareType": 4,
-                                  "ColumnBindingInfo": {
-                                    "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
-                                  },
-                                  "Value": {
-                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                    "SerializeProperty": "=定期校正機器!F7"
-                                  },
-                                  "LeftBracket": 1
-                                },
-                                "Condition2": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "n2",
+                                    "GUID": "03fabf03-c9c7-4660-a2fb-dbcbf09dff5f",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
                                   },
-                                  "Value": "%Null%",
-                                  "RightBracket": 1
+                                  "Value": "九州工場"
                                 },
-                                "RelationType": 1
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "SubConditions": [
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "CompareType": 4,
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "1224e99c-942a-4b90-b664-fe229cfec484"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=定期校正機器!F7"
+                                      },
+                                      "LeftBracket": 1
+                                    },
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "3aa95b22-26f5-4ccb-b69f-44db7092f0ae"
+                                      },
+                                      "Value": "%Null%",
+                                      "RightBracket": 1
+                                    }
+                                  ],
+                                  "RelationType": 1
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7"
-                            ],
                             "ID": "276eddce823642629fbccee6c10875d5"
                           }
                         ],
-                        "ID": "1fcfbf2c-dcd0-41db-b02e-173ee09d3375"
+                        "ID": "49af4f5c-4658-445f-b171-b4221a62b809"
                       }
                     ]
                   }
                 ],
-                "ID": "24e292d2-9660-4866-9ee9-554bab1c400a"
+                "ID": "4a5d950e-ea46-45d4-9452-ec7af4644cde"
               }
             ]
           }
@@ -1016,55 +1022,53 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 3,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "58de76f6-42b4-4f91-aa49-8a8966e073a2"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!F7"
                                   }
                                 },
-                                "Condition2": {
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 5,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "c8080821-226f-4715-87b8-27e82c525133"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!N7"
                                   }
-                                }
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
                                 },
-                                "Value": "本社"
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "trn_insptool_tools",
+                                    "ColumnName": "n2",
+                                    "GUID": "67e8301f-64e6-4aa0-a0fe-629109f7fb7a",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
+                                  },
+                                  "Value": "本社"
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7",
-                              "=N7"
-                            ],
                             "ID": "4b31a7e5d4f249e992cc958d975534d1"
                           }
                         ],
-                        "ID": "27de6e27-3e7d-44bb-8cb0-2d9fc6676e1b"
+                        "ID": "9db62925-b436-4c39-af26-f7563af10e95"
                       },
                       {
                         "CommandList": [
@@ -1073,60 +1077,58 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 3,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "c78b1ee5-26ac-4ba7-a09f-17a1efb79357"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!F7"
                                   }
                                 },
-                                "Condition2": {
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 5,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "08037997-9671-49a0-9cbc-92faa03165b6"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!N7"
                                   }
-                                }
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
                                 },
-                                "Value": "九州工場"
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "trn_insptool_tools",
+                                    "ColumnName": "n2",
+                                    "GUID": "6e14dd97-8851-4cac-9ae3-ac73aca898ff",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
+                                  },
+                                  "Value": "九州工場"
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7",
-                              "=N7"
-                            ],
                             "ID": "846cca8450304a8a8a13e92ed987b409"
                           }
                         ],
-                        "ID": "e3fca689-e5a6-42ad-9419-5fcdac57d2c4"
+                        "ID": "095300b5-0b20-41a9-9fa0-7d1b08b904df"
                       }
                     ]
                   }
                 ],
-                "ID": "b38574c9-c9ad-4bcf-8d56-ea578bfff090"
+                "ID": "57ca6755-5046-4056-807c-6dab93df319b"
               },
               {
                 "CommandList": [
@@ -1173,53 +1175,57 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
-                                },
-                                "Value": "本社"
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
-                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                  "CompareType": 4,
-                                  "ColumnBindingInfo": {
-                                    "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
-                                  },
-                                  "Value": {
-                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                    "SerializeProperty": "=定期校正機器!F7"
-                                  },
-                                  "LeftBracket": 1
-                                },
-                                "Condition2": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "n2",
+                                    "GUID": "be9e7bbe-3c5d-454a-aeb3-1d5d288891cd",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
                                   },
-                                  "Value": "%Null%",
-                                  "RightBracket": 1
+                                  "Value": "本社"
                                 },
-                                "RelationType": 1
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "SubConditions": [
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "CompareType": 4,
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "6de2847f-0fba-4b07-9fac-6fbfd49b94b8"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=定期校正機器!F7"
+                                      },
+                                      "LeftBracket": 1
+                                    },
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "5882041d-09be-47b5-98e0-2b1f79d34f1a"
+                                      },
+                                      "Value": "%Null%",
+                                      "RightBracket": 1
+                                    }
+                                  ],
+                                  "RelationType": 1
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7"
-                            ],
                             "ID": "724b526e519f45e1abc31c6daaa49d9a"
                           }
                         ],
-                        "ID": "49a8647e-d9c7-4be6-87b8-42df1f90bf66"
+                        "ID": "f9da9c14-30aa-41c2-b226-00107cc157f2"
                       },
                       {
                         "CommandList": [
@@ -1228,58 +1234,62 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
-                                },
-                                "Value": "九州工場"
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
-                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                  "CompareType": 4,
-                                  "ColumnBindingInfo": {
-                                    "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
-                                  },
-                                  "Value": {
-                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                    "SerializeProperty": "=定期校正機器!F7"
-                                  },
-                                  "LeftBracket": 1
-                                },
-                                "Condition2": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "n2",
+                                    "GUID": "a606344a-96cd-40a9-86e7-1737bd38e160",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
                                   },
-                                  "Value": "%Null%",
-                                  "RightBracket": 1
+                                  "Value": "九州工場"
                                 },
-                                "RelationType": 1
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "SubConditions": [
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "CompareType": 4,
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "03482c99-0c03-403f-a266-9b4b16248dab"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=定期校正機器!F7"
+                                      },
+                                      "LeftBracket": 1
+                                    },
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "2abc1cc7-c32a-48ff-978a-03d26c591ff2"
+                                      },
+                                      "Value": "%Null%",
+                                      "RightBracket": 1
+                                    }
+                                  ],
+                                  "RelationType": 1
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7"
-                            ],
                             "ID": "5449bb831285468ba6c71b43f3a0c663"
                           }
                         ],
-                        "ID": "5bd0e497-faa4-40b6-ba8f-f97a600f90bd"
+                        "ID": "3bddc1a8-dbd9-4c3c-8e4a-54589ed9a435"
                       }
                     ]
                   }
                 ],
-                "ID": "bd039d42-1556-4c28-9e56-b561c1bdfdb1"
+                "ID": "9cc80301-de06-4f44-b651-6de4ef8f1987"
               }
             ]
           }
@@ -1357,55 +1367,53 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 3,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "19ff3be9-8a27-4131-b9fa-602a83263ca9"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!F7"
                                   }
                                 },
-                                "Condition2": {
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 5,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "f6d53818-18d3-4daf-ba9d-3edf6076b653"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!N7"
                                   }
-                                }
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
                                 },
-                                "Value": "本社"
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "trn_insptool_tools",
+                                    "ColumnName": "n2",
+                                    "GUID": "ca15e60a-72ca-491f-bde9-10b19c93cb95",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
+                                  },
+                                  "Value": "本社"
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7",
-                              "=N7"
-                            ],
                             "ID": "70bf5ae32d464d57805ed9e5b052c6ec"
                           }
                         ],
-                        "ID": "bd382036-ad53-4b76-9712-942085512105"
+                        "ID": "be7bcb28-95ab-4d21-9053-6b5c1fd5f59d"
                       },
                       {
                         "CommandList": [
@@ -1414,60 +1422,58 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 3,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "90788969-9d35-4078-a82d-c862ed608a3a"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!F7"
                                   }
                                 },
-                                "Condition2": {
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "CompareType": 5,
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "next_caribration_ymd",
+                                    "GUID": "a09919fb-fa2b-4fae-9852-c719acbf1e28"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                     "SerializeProperty": "=定期校正機器!N7"
                                   }
-                                }
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
                                 },
-                                "Value": "九州工場"
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "trn_insptool_tools",
+                                    "ColumnName": "n2",
+                                    "GUID": "7b23851f-1e96-456b-b1a3-0d6bd7d55720",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
+                                  },
+                                  "Value": "九州工場"
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7",
-                              "=N7"
-                            ],
                             "ID": "7e7427932480431a81a43c5bb6a22680"
                           }
                         ],
-                        "ID": "c106361f-0c96-4458-b745-5cd4d657daec"
+                        "ID": "cc160ba9-2d8a-445a-a2d6-91e3d518823e"
                       }
                     ]
                   }
                 ],
-                "ID": "2cc546a7-c8f6-4282-a95c-3a503b03efc0"
+                "ID": "3a56ffe8-5a84-4dc8-ac71-67c26bf362c6"
               },
               {
                 "CommandList": [
@@ -1514,53 +1520,57 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
-                                },
-                                "Value": "本社"
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
-                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                  "CompareType": 4,
-                                  "ColumnBindingInfo": {
-                                    "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
-                                  },
-                                  "Value": {
-                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                    "SerializeProperty": "=定期校正機器!F7"
-                                  },
-                                  "LeftBracket": 1
-                                },
-                                "Condition2": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "n2",
+                                    "GUID": "19eb5a9a-9c69-4f97-a0d2-69107441e7ce",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
                                   },
-                                  "Value": "%Null%",
-                                  "RightBracket": 1
+                                  "Value": "本社"
                                 },
-                                "RelationType": 1
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "SubConditions": [
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "CompareType": 4,
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "dff55614-4644-4629-be98-ecf69e3e0737"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=定期校正機器!F7"
+                                      },
+                                      "LeftBracket": 1
+                                    },
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "2843b257-a40a-4adc-9fb3-0524013326dc"
+                                      },
+                                      "Value": "%Null%",
+                                      "RightBracket": 1
+                                    }
+                                  ],
+                                  "RelationType": 1
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7"
-                            ],
                             "ID": "1d013f65481b4f6e94d9080791ac9bab"
                           }
                         ],
-                        "ID": "c18e4f54-c9af-4585-931b-66939bdf8fb1"
+                        "ID": "5a9d2a18-a9ad-42a4-b1b9-8b6b929c6542"
                       },
                       {
                         "CommandList": [
@@ -1569,58 +1579,62 @@
                             "TargetTableName": "trn_insptool_tools",
                             "SqlCondition": {
                               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                              "Condition1": {
-                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                "ColumnBindingInfo": {
-                                  "TableName": "trn_insptool_tools",
-                                  "ColumnName": "n2",
-                                  "RelationBinding": {
-                                    "RelatedTable": "mst_insptool_management_department",
-                                    "RelatedColumn": "code",
-                                    "DisplayColumn": "jurisdiction"
-                                  }
-                                },
-                                "Value": "九州工場"
-                              },
-                              "Condition2": {
-                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                                "Condition1": {
-                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                                  "CompareType": 4,
-                                  "ColumnBindingInfo": {
-                                    "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
-                                  },
-                                  "Value": {
-                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                    "SerializeProperty": "=定期校正機器!F7"
-                                  },
-                                  "LeftBracket": 1
-                                },
-                                "Condition2": {
+                              "SubConditions": [
+                                {
                                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                                   "ColumnBindingInfo": {
                                     "TableName": "trn_insptool_tools",
-                                    "ColumnName": "next_caribration_ymd"
+                                    "ColumnName": "n2",
+                                    "GUID": "8ec37e71-2aa3-47d5-a188-0ee86a7392cc",
+                                    "RelationBinding": {
+                                      "RelatedTable": "mst_insptool_management_department",
+                                      "RelatedColumn": "code",
+                                      "DisplayColumn": "jurisdiction"
+                                    }
                                   },
-                                  "Value": "%Null%",
-                                  "RightBracket": 1
+                                  "Value": "九州工場"
                                 },
-                                "RelationType": 1
-                              }
+                                {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "SubConditions": [
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "CompareType": 4,
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "d86f6653-386e-48a8-91e8-9fc60525f9d4"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=定期校正機器!F7"
+                                      },
+                                      "LeftBracket": 1
+                                    },
+                                    {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_insptool_tools",
+                                        "ColumnName": "next_caribration_ymd",
+                                        "GUID": "2c88d540-cacc-40e1-acef-a7e84fb635d8"
+                                      },
+                                      "Value": "%Null%",
+                                      "RightBracket": 1
+                                    }
+                                  ],
+                                  "RelationType": 1
+                                }
+                              ]
                             },
-                            "Params": [
-                              "=F7"
-                            ],
                             "ID": "72bb850fc2014119ab2bc5be47113c15"
                           }
                         ],
-                        "ID": "1ccb3726-24e9-4a98-9bc1-53c8b58e65ec"
+                        "ID": "2ed44b16-4cd1-4d81-86a0-c6d7f3634f2c"
                       }
                     ]
                   }
                 ],
-                "ID": "9c1c0a7e-5560-4bd4-80b7-93f19ed70689"
+                "ID": "41a50cfd-458c-43df-8170-25b449b4d7aa"
               }
             ]
           }
@@ -1667,36 +1681,36 @@
                         "CommandList": [
                           {
                             "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
-                            "ListViewName": "リストビュー1",
                             "ExportExcelListviewNameMode": 1,
-                            "IsOnlyExportValue": false,
+                            "ListViewName": "リストビュー1",
                             "NewOtherName": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                               "SerializeProperty": "=定期校正機器!BM5"
-                            }
+                            },
+                            "IsOnlyExportValue": false
                           }
                         ],
-                        "ID": "a979057f-1736-400a-89f3-4c245764ab56"
+                        "ID": "98c830bc-a960-4fd8-b490-79851a24663e"
                       },
                       {
                         "CommandList": [
                           {
                             "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
-                            "ListViewName": "リストビュー1",
                             "ExportExcelListviewNameMode": 1,
-                            "IsOnlyExportValue": false,
+                            "ListViewName": "リストビュー1",
                             "NewOtherName": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                               "SerializeProperty": "=定期校正機器!BM5&\"(校正切れ)\""
-                            }
+                            },
+                            "IsOnlyExportValue": false
                           }
                         ],
-                        "ID": "581255b4-5138-4a63-bef7-27de0969086a"
+                        "ID": "c3bd1553-2e83-4c6c-ae2e-eeb64daeb4e9"
                       }
                     ]
                   }
                 ],
-                "ID": "16deb5d8-365c-4a09-af52-25412ef81f6e"
+                "ID": "056ec0b1-634b-4f11-9fe5-1fcbdd8db26d"
               },
               {
                 "CommandList": [
@@ -1719,36 +1733,36 @@
                         "CommandList": [
                           {
                             "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
-                            "ListViewName": "リストビュー1",
                             "ExportExcelListviewNameMode": 1,
-                            "IsOnlyExportValue": false,
+                            "ListViewName": "リストビュー1",
                             "NewOtherName": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                               "SerializeProperty": "=定期校正機器!BM3"
-                            }
+                            },
+                            "IsOnlyExportValue": false
                           }
                         ],
-                        "ID": "d10eb69e-d416-45ff-b6fc-818a8735f295"
+                        "ID": "151e9557-6bd4-4a64-9afb-a2e6397ef5b7"
                       },
                       {
                         "CommandList": [
                           {
                             "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
-                            "ListViewName": "リストビュー1",
                             "ExportExcelListviewNameMode": 1,
-                            "IsOnlyExportValue": false,
+                            "ListViewName": "リストビュー1",
                             "NewOtherName": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                               "SerializeProperty": "=定期校正機器!BM3&\"(校正切れ)\""
-                            }
+                            },
+                            "IsOnlyExportValue": false
                           }
                         ],
-                        "ID": "d4bb3418-f7c5-42dd-a3d3-e601d3c9fde1"
+                        "ID": "2b9f1fed-609b-47e6-9613-099364c16c12"
                       }
                     ]
                   }
                 ],
-                "ID": "39607af6-a57a-436d-8269-36e9e46acdc5"
+                "ID": "6cba22c6-4309-4c15-9063-90ecd1d7203b"
               }
             ]
           }
@@ -1773,9 +1787,13 @@
             "ConfirmText": "校正要否データをクリアします。本当に更新してもよろしいですか？",
             "RowsToUpdate": 2,
             "RowsToUpdateListViewName": "リストビュー1",
-            "UpdateValues": [
+            "UpdateBindingValues": [
               {
-                "ColumnName": "calibration_enabled"
+                "BindingInfo": {
+                  "TableName": "trn_insptool_tools",
+                  "ColumnName": "calibration_enabled",
+                  "GUID": "20227789-7802-4d37-8385-f04bb2d4610f"
+                }
               }
             ]
           }
@@ -1786,189 +1804,194 @@
     },
     "11,0": {
       "ListViewInfo": {
-        "ShowColumnHeaderInDesigner": true,
+        "Name": "リストビュー1",
         "TableName": "trn_insptool_tools",
         "RowIndex": 11,
-        "ColumnCount": 64,
         "RowCount": 27,
-        "IsRowHeaderCheckBoxVisible": true,
-        "ColumnOperation": 2,
-        "ShowEditStatusIcon": true,
-        "UseSimpleBar": true,
-        "Name": "リストビュー1",
+        "ColumnCount": 64,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-          "Condition1": {
-            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-            "Condition1": {
-              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-              "Condition1": {
-                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                "Condition1": {
-                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                  "Condition1": {
-                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                    "Condition1": {
-                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                      "ColumnBindingInfo": {
-                        "TableName": "trn_insptool_tools",
-                        "ColumnName": "category"
-                      },
-                      "Value": "社外"
-                    },
-                    "Condition2": {
-                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                      "CompareType": 1,
-                      "ColumnBindingInfo": {
-                        "TableName": "trn_insptool_tools",
-                        "ColumnName": "prohibition_reason"
-                      },
-                      "Value": "廃棄"
-                    }
-                  },
-                  "Condition2": {
-                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                    "CompareType": 1,
-                    "ColumnBindingInfo": {
-                      "TableName": "trn_insptool_tools",
-                      "ColumnName": "prohibition_reason"
-                    },
-                    "Value": "故障"
-                  }
-                },
-                "Condition2": {
-                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 1,
-                  "ColumnBindingInfo": {
-                    "TableName": "trn_insptool_tools",
-                    "ColumnName": "prohibition_reason"
-                  },
-                  "Value": "紛失"
-                }
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "category",
+                "GUID": "c950ffb0-4d85-4d3a-ba24-b1caa470192f"
               },
-              "Condition2": {
-                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                "CompareType": 1,
-                "ColumnBindingInfo": {
-                  "TableName": "trn_insptool_tools",
-                  "ColumnName": "prohibition_reason"
-                },
-                "Value": "移管"
-              }
+              "Value": "社外"
             },
-            "Condition2": {
+            {
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "CompareType": 1,
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_tools",
-                "ColumnName": "prohibition_reason"
+                "ColumnName": "prohibition_reason",
+                "GUID": "f8d0b8a6-f7dd-4b69-8976-e440741b23d0"
+              },
+              "Value": "廃棄"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "prohibition_reason",
+                "GUID": "f9ae9e78-c72c-4158-a9a3-29a0714fdb52"
+              },
+              "Value": "故障"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "prohibition_reason",
+                "GUID": "9ac762a5-a7dc-4c5e-8bd3-cf9599d805ec"
+              },
+              "Value": "紛失"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "prohibition_reason",
+                "GUID": "43ba5bdf-6391-4446-8653-ae3a9ed03a8f"
+              },
+              "Value": "移管"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "prohibition_reason",
+                "GUID": "0da0297e-9f3e-4057-bda7-7189452406c8"
               },
               "Value": "不適合"
-            }
-          },
-          "Condition2": {
-            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "ColumnBindingInfo": {
-              "TableName": "trn_insptool_tools",
-              "ColumnName": "n2",
-              "RelationBinding": {
-                "RelatedTable": "mst_insptool_management_department",
-                "RelatedColumn": "code",
-                "DisplayColumn": "jurisdiction"
-              }
             },
-            "Value": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=定期校正機器!F5"
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "n2",
+                "GUID": "7e0cf0dc-5e7a-4aa5-9aed-43b2cec1669a",
+                "RelationBinding": {
+                  "RelatedTable": "mst_insptool_management_department",
+                  "RelatedColumn": "code",
+                  "DisplayColumn": "jurisdiction"
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=定期校正機器!F5"
+              }
             }
-          }
+          ]
         },
         "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2"
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
       }
     },
     "12,1": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "ctrl_no",
+        "GUID": "c750ae4d-8884-4534-9788-1a18cbe7ae08"
+      },
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "計測機器の編集",
-            "PassValues": []
+            "PageName": "計測機器の編集"
           }
         ],
         "ClickMode": 1
-      },
-      "TotalRowSetting": {},
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
-        "ColumnName": "ctrl_no"
       }
     },
     "12,4": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "usage"
+        "ColumnName": "usage",
+        "GUID": "cc4cf4b8-ee54-4b87-ab1c-fd185e41d10c"
       }
     },
     "12,7": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "kind"
+        "ColumnName": "kind",
+        "GUID": "3286a8d9-f5fd-42fc-be05-a4c30b99f4bb"
       }
     },
     "12,12": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "item_name"
+        "ColumnName": "item_name",
+        "GUID": "f645eb72-025f-4cf2-af48-b79391a4b5cf"
       }
     },
     "12,24": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "type"
+        "ColumnName": "type",
+        "GUID": "8e61a461-0af5-40fc-9127-c111e8f5bfe8"
       }
     },
     "12,29": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "serial"
+        "ColumnName": "serial",
+        "GUID": "808f2717-09e4-4134-9831-1e13ba706387"
       }
     },
     "12,33": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "maker"
+        "ColumnName": "maker",
+        "GUID": "ea91cd3e-547f-4177-b3d1-07ab7bf0e529"
       }
     },
     "12,40": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "calibration_cycle"
+        "ColumnName": "calibration_cycle",
+        "GUID": "56e0ceff-9bdc-48d9-a099-c427b0088744"
       }
     },
     "12,42": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "storage_location"
+        "ColumnName": "storage_location",
+        "GUID": "56c5cbdd-be13-4c73-8f71-c702469f3f65"
       }
     },
     "12,47": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "next_caribration_ymd"
+        "ColumnName": "next_caribration_ymd",
+        "GUID": "b2518933-b8a3-4f65-93c1-fcb3b275aff3"
       }
     },
     "12,51": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "kouseiyuukoukigenymd"
+        "ColumnName": "kouseiyuukoukigenymd",
+        "GUID": "ffa4a99c-c67c-4dbc-937c-2c6d43c1d77f"
       }
     },
     "12,56": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "n2",
+        "GUID": "e5bd31e8-c143-4b51-9415-ef36c3efc891",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -1983,7 +2006,8 @@
     "12,62": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "calibration_enabled"
+        "ColumnName": "calibration_enabled",
+        "GUID": "6673b63e-51a6-4605-9453-96830eac346f"
       }
     }
   },
@@ -4101,13 +4125,13 @@
         "TargetTableName": "trn_insptool_tools",
         "SqlCondition": {
           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-          "Condition1": {
-            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-            "Condition1": {
+          "SubConditions": [
+            {
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_tools",
                 "ColumnName": "n2",
+                "GUID": "80dfd324-5d1f-4272-a0d0-dbe202da79cd",
                 "RelationBinding": {
                   "RelatedTable": "mst_insptool_management_department",
                   "RelatedColumn": "code",
@@ -4116,36 +4140,34 @@
               },
               "Value": "本社"
             },
-            "Condition2": {
+            {
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "CompareType": 3,
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_tools",
-                "ColumnName": "next_caribration_ymd"
+                "ColumnName": "next_caribration_ymd",
+                "GUID": "056a37bc-9512-45ed-a168-171e4d361ad3"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=定期校正機器!F7"
               }
-            }
-          },
-          "Condition2": {
-            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "CompareType": 5,
-            "ColumnBindingInfo": {
-              "TableName": "trn_insptool_tools",
-              "ColumnName": "next_caribration_ymd"
             },
-            "Value": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=定期校正機器!N7"
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "trn_insptool_tools",
+                "ColumnName": "next_caribration_ymd",
+                "GUID": "902b8607-af75-435c-ba86-9452d4b5dc6c"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=定期校正機器!N7"
+              }
             }
-          }
+          ]
         },
-        "Params": [
-          "=F7",
-          "=N7"
-        ],
         "ID": "c91b838ad7db453cbce53ed5b333a8bf"
       },
       {
@@ -4156,7 +4178,8 @@
             {
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_tools",
-                "ColumnName": "ID"
+                "ColumnName": "ID",
+                "GUID": "f233206f-1287-484f-9c3d-020e1884d576"
               },
               "Order": 0
             }
@@ -4165,8 +4188,19 @@
         "ID": "7f464e60d77f449a911a4dfc6c7962b0"
       }
     ],
-    "AuthorizeInfo": {
-      "VisitMode": 2
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
@@ -4174,7 +4208,7 @@
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//0S/bDShTVXRMxulgxKtqlC2Sb+31803kcuC49zGki/BIWmV1IIbcHLZC+doxAtf000UBAa3TuXBbjRf6lzw8Qm8kpxie0kwkuWakjrQZ1FC7+WHVOyZ45Q8pHfjMQDjpipm3pQ6vfpFp7fPSJIv8UtT/E2xv2UTA3FMbTUeZN3FhjhDtTZGJuq8B88WISeEOweQQpo81k6epMk2u6u2SOdydAaf+3hrXt6IUkd6TkJqw7RnS3Qa89mT/Qd9hU1DHQNr9Dd4iJc2dHJLzy0FJSrkpxxuMKFzvPom2d5jq4S6AvQAtADhNPVB0LE/JvwWr0BQkCDf32sTSIjO6vGkAKy60cMq13XC8pJy8rXLYBEiuwwZj+bM9KPR+tyfYJgzAFvSfwZ3OlUGfLUy4FOmsAb3/+Y1SzeVYyypOCpUEoXWqOUw2cJnwtQajyIiKOONeDt9q7/WZVF+HAidFVCM2wSjn09BU0cao7ec7ylBXqAWYn0vXv4P9o2LUW9N1Bj9Dpkwx6kgXGMMum4cusRDxYWd/d4f7Sb5Q3fAahdwNeWH7XneRIb/1jEyaiQ4j5Q+34S4UKS/+XYMBgodsRhzh2veC5IvV1+Wmbby9485SEb6FLBzm+zYf/rAAxV/K1UMTb/Ycqj0vGt70O4D8jWvV3k4aWkBYkExth1NjVWuF/6VbqNv6A5LPLMli5uLOZM0hIFV5gye2aMmf5hffpF2RTP1rujQn05gy4RikfPpEYo0oYfFpjNzGAfXtCvbyRBexSWBRLBBf4YvU+dvErsBYmlZleSq2zuomIk/pTnvBqO1w5ddklt4yIyY1vwUhMMAo+7tMquu1ucUF20ch9MefHIWTMpPnKaDSf83OK9HoHORjh7ZT54f+lpXKZY41B7XWSWNEHWGKXcet/ZC1h8nJKg==|920
+}//F+r98I8bk/tFumq02BYoiLx1qTX+/EkI69xF/HSgFcLLCEiUssKUBlTZau25mSWsRJi813YGWqG6FjNbxrcPKSVRweJ4s4orA33UsOGcR0mSMzKWINwMNHLCDB/DZJxPqEwVgaw8N5L7wQKDbJZzdKP+8qyIEgnxrm+jgawsW0tYB0lklJCVB73vgAgO+G5pz3WoGT/IwqeX9O5cyO1/eD50dXQ8gCpRrUS94s6l9nBXU+ZajDaHljk/a2GUdxFzxdkBuZlzKOJGwqtPVbCIaOwGMM7Je8uYM1j4PWGsHEIM/NPNk+vWFsVF2IYKt4ffCRbNqSZjeSODYaVndua8bOVV6b7X5pi+Ge5c6Lh3YEW6SvKO4JFFiyJkmCWPAsKs+yGyZ8YuRm4w/0pwK0KncoB7S373GTwzSIVbSs1bnYB/dbCNkHlM9jukMdZMc2AM0JniwDvcbJUlsHzMzPY7aQiccV5x8DS9XvIRiUhiu7KZRE4tdP/QSBPsUG4IWVlZJmDU+fUJ1GprRwGn83e7ZGdjsbtzSosaEFjYXiCA1ckCsQ9DNcqSMCsbEblnxLU4lYiwbeLEsmrtCnUg8YtKp6xrJpTseGTMKK2A9ZRQFeUMpcfl7Gyit3XW2FdSBugpDly8MTI3FU6FHs+UXPPfjT4CkpUn/Lx9BnUaH9tCjMnb0HHR8y+eeq6vHsuulFXwDfInvzYUDYHNjtuax0JTupT6v8r222hxvxqBF0b/6nPp3mJ0jz6+4b6dJ4iQmnkSASXhvCMjB0xEAcpLM0/WwOU0qhnI6BQ0CkMywsUZzdrQRz+hj5YliqS08v9wTKoaSPsublDQin7n3ZEZE7WMWBXPAde3re+nDc7DsrZPzcYeEh6QsJ9kMuuiFLoiwOIVhmRDyWOBBVwg70E/0iJdxA==|920

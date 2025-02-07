@@ -309,41 +309,45 @@
   "AttachInfos": {
     "0,24": {
       "ListViewInfo": {
-        "ShowColumnHeaderInDesigner": true,
+        "Name": "リストビュー1",
         "TableName": "trn_insptool_calibration_history",
         "ColumnIndex": 24,
-        "ColumnCount": 29,
         "RowCount": 28,
-        "ColumnOperation": 2,
+        "ColumnCount": 29,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
-        "Name": "リストビュー1",
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2"
+        "ColumnOperation": 2
       }
     },
     "1,24": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "ID"
+        "ColumnName": "ID",
+        "GUID": "d51866d9-be3e-4806-955a-54e852cb79ec"
       }
     },
     "1,25": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "判定"
+        "ColumnName": "判定",
+        "GUID": "4b71339d-85a8-43bf-a592-4fb10b2ddfa5"
       }
     },
     "1,26": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "FGC_State"
+        "ColumnName": "FGC_State",
+        "GUID": "de29767c-fb81-456f-ba61-836ba06a3748"
       }
     },
     "7,6": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "129b1f65-8c46-4d52-8215-db22d663fe3f",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -354,7 +358,8 @@
     "9,6": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "判定"
+        "ColumnName": "判定",
+        "GUID": "8b81b0af-2549-4937-be65-2c2e8004f84e"
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
@@ -405,12 +410,10 @@
                       {
                         "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
                         "TableName": "trn_insptool_calibration_history",
-                        "ShowConfirm": false,
-                        "ConfirmText": "本当に更新してもよろしいですか？",
-                        "UpdateValues": []
+                        "ShowConfirm": false
                       }
                     ],
-                    "ID": "6a54fae6-7980-4ff6-91f6-8075b140647a"
+                    "ID": "345fd075-732c-4546-97b3-e3984d65e8e8"
                   }
                 ]
               },
@@ -439,7 +442,7 @@
                         "$type": "Forguncy.Model.EndLoopCommand, ServerDesignerCommon"
                       }
                     ],
-                    "ID": "327adc2c-ebc8-4c09-9c3b-fb297c15b5cb"
+                    "ID": "83d29b50-dc98-4c1d-9c1e-87cb1b003292"
                   }
                 ]
               }
@@ -453,7 +456,8 @@
     "11,6": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "FGC_State"
+        "ColumnName": "FGC_State",
+        "GUID": "9c6a83df-0bb9-42aa-95b6-69af5b2e3f5d"
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
@@ -2577,8 +2581,19 @@
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "masterpage",
     "Title": "不具合の新規登録、または編集 - 不具合管理",
-    "AuthorizeInfo": {
-      "VisitMode": 2
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
@@ -2586,7 +2601,7 @@
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//QSLNXNlBfzFqpoZu2xD5C7cLGUl0g4LKgsUnBcivPGW6vAf3gZFcu/M/NdNinRrOI0sl9iNJkMAVTncTDWUgd8pdLxSf40bGvFvX9Rj1fPXny7by1FKyHX05vwW1X+MiXu9rr/yq53nmbIyqNWdAawGX3+reg+8jQnNOcObT15xuSUyO9PsJTPHVngLmkqIWl+kiALFgyPprLwTE+lz9Ep76FufTVgUqApkH1SgQr26XKPiMRRrBdOwGe96vA3WVLRWNiDIxaSJ0PJeBDKAT7GkGkRGQz2nsQPpVtBU7c3g9zb8z+BoKBh5ZagmyOFrLLS/jv3xpSxpatuimCUq2jdbwhbz8P8qoy66TsuslVBPCaXe6WzzwKTH74NfixINaj+mtVLLPKwB0r8wmK9Y9xqpNG0CWVUo3OvrXqDJkY06zffuZ7v/xqsch73SzMEsMElr6WrRyEfiC8lk5Lg4zJzDTufEgAx1kbqIAkwmUZdKt1CwZu3LW5ki033IUwsH+nGviLJI6a3W+V5vFgdjOPWwP/mR+W1A9qz/YQ4vtw4DKABeitybpD1Q5mBY6Ih7WTQdLGr+71zd3wodL7tRvSvn3ix7cMxol+AIPjHIRUNxel/Ld1FmigSU1UR/KbJ2FgUG20yvPHu9Gmcc3Ht4exJCdyeWXcJmBQQXNSXMBPB+SjAn3QmagZScjQlbULvhAXQHw8QN6yxdIskP5Li5PJF1cL35gl8zvHsYJG0BAiSZYDr2z+YbQotw7wz89dos8UpWvyELn/BZESw8o7AztV4GsB6DQy9raz4H5FNwvbWiY7GNeimthofQ7ye4VMEzfbB+q7QnBK/d9RZ3Prvk3x6KOxJ9fUD6BrV8xxp/IOGPO9gZvkAFNvgz2ltmyeV2NqGhWIG3V1UpbgmnaCFjwPw==|920
+}//dIwWyED73drublkUQlaDsZM2pZggaPPDCM7QQJ0/C/2xaZ+QOZVpEtl0U9g8PIHTqdS6G6fkiADd5wDJ17oiD8p/rTHvBqPEIbzaRSH+P0AinGbDBI+eZjt3AQUP8gmPUCKEPp8oBs/ik/QON4haGziZmj5CMW1HGiYVsgVmStLwrLpAN3W4pVRpB262WGxgMDES0S2HfSeRTdMDByli6NhYVzuAHcG8BxOmZVyR+htRCvzVj1mOylvLVQgrHjoCf/X2h0oF9LoSlREjvuDm6wYLWkRfkgjMiOaHo6mflYHoBZOYbTz1f8fG8TRUzcv4wuRiujy+MBzdLQd0oixaKwgA+HP3qepabB5ApxIqPizfNcx8FhLPr5GnKifAV7K4rE4hDWcKFqRbVeuf97hpNAmy/ZgS+YaTjLaoSoEdRDXEVZcG9Fx20PZlvLUMCXobxwLQA42IVQdZP//QiIEtFGw0nt1SzrVZ0xwV3UxRrz+cZsxo8yI0LqmA1DmKQn2j3hHVE8UtJx8K96qSP7GHMgBpyN1LLbRJwh6noUKKVeYtSPQlspEiEtJreVJTVvXeeMg/dpx7Yz8O7vgrLNDWhwHv6nJ4V/D0gixL/agH4XmEV6vHhf4sGBLi6Tk7zu3yMI3TiwYyk+Snz0DTsK8et9kjdqVaxwBJdUH1+mW/Y7s7FLdzm1D9JeGonJu4HMXbKnsTejeVmJmpPquYsMd9aN1zVWdB8YxozjqgdfxSSXjaoHTsoevnynaQS4joOenG6Rpzk3ZzcuHxtmINsbcUXVyLXFMDZ2i07ZdiaQTnoAGQq3AKF0tBVlPTXOqK+G4heSHWDpX7Q1aslyq4u76ZeM67UpT/HNvG1W4G3NlKuQopz/u0iB0Ew3oAO8AHiqL53fOpgfYxp6HVfWfik6F1/A==|920

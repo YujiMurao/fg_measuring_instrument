@@ -90,6 +90,11 @@
   },
   "AttachInfos": {
     "1,5": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "chart_in_person",
+        "GUID": "7558f09e-c7ea-4acd-9107-aa613d803d9d"
+      },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
         "DisplayColumnName": "FullName",
@@ -97,52 +102,42 @@
         "CustomColumns": [],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       },
-      "BindingInfo": {
-        "TableName": "mst_insptool_personincharge",
-        "ColumnName": "chart_in_person"
-      },
       "DataValidationInfo": {
         "IgnoreBlank": false
       }
     },
     "3,5": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "ctrl_id",
+        "GUID": "1a5faa19-8891-4126-8f9a-6a3190d5ad74"
+      },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
         "ValidateItem": true,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
-        "Items": [
-          {
-            "Value": "項目1",
-            "DisplayValue": "項目1"
-          },
-          {
-            "Value": "項目2",
-            "DisplayValue": "項目2"
-          },
-          {
-            "Value": "項目3",
-            "DisplayValue": "項目3"
-          }
-        ],
         "DataSource": "mst_insptool_management_department",
         "ValueColumnBindingInfo": {
           "TableName": "mst_insptool_management_department",
-          "ColumnName": "ID"
+          "ColumnName": "ID",
+          "GUID": "54905557-dc80-4407-a696-0baf6648f414"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "mst_insptool_management_department",
-          "ColumnName": "name"
+          "ColumnName": "name",
+          "GUID": "52d00b6f-43b1-47bb-92c2-d71cac7dfb5e"
         }
-      },
-      "BindingInfo": {
-        "TableName": "mst_insptool_personincharge",
-        "ColumnName": "ctrl_id"
       },
       "DataValidationInfo": {}
     },
     "5,5": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "role",
+        "GUID": "df18215e-5e5a-4e8b-bee9-4550f15f5bec"
+      },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "AutoFilter": 0,
@@ -167,22 +162,19 @@
           }
         ]
       },
-      "BindingInfo": {
-        "TableName": "mst_insptool_personincharge",
-        "ColumnName": "role"
-      },
       "DataValidationInfo": {
         "IgnoreBlank": false
       }
     },
     "7,5": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_personincharge",
+        "ColumnName": "contact",
+        "GUID": "1f666f61-06fc-4bab-b6f0-416d368521d6"
+      },
       "CellType": {
         "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
         "Style": 1
-      },
-      "BindingInfo": {
-        "TableName": "mst_insptool_personincharge",
-        "ColumnName": "contact"
       }
     },
     "9,8": {
@@ -194,8 +186,7 @@
             "TableName": "mst_insptool_personincharge",
             "UpdateType": "add",
             "ShowConfirm": true,
-            "ConfirmText": "本当に追加してもよろしいですか？",
-            "UpdateValues": []
+            "ConfirmText": "本当に追加してもよろしいですか？"
           },
           {
             "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
@@ -363,10 +354,19 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "計測機器担当者マスター追加",
-    "AuthorizeInfo": {
-      "VisitMode": 6,
-      "AllowVisitedRoles": [
-        "IT戦略室"
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "IT戦略室"
+          ]
+        }
       ]
     },
     "RowBreakLines": [],
@@ -374,7 +374,7 @@
     "RelatedDataTableName": "mst_insptool_personincharge"
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//pWx7KnC6yWqb9sXcVaqJdyFWtPyPkNNzN6wWzDXJ7MhtVf39yiBoTQ40w+eg3ttlfhKRc1l56BdrRwLuyXsnFKlQzfAjxCMv8zflE9r/LlOKhLS2efQD0iZ1SrenI1hI9S4Oz/zjtuKTno5kgHDDjI2En4UVBSVX+3l5CK7ByKz3n3aaNJcbcpqta/1lDM8dS4T+NW3YCTkRLdnLuG8EDavxNXnooxCUzyFnoEsBSI9bRzYdNupRRVoD1FdgfQgsGJNdtFkvPaG+fTXPz9688l4DwVht6W4VWTYgfje6YtzkWYIzvJUsX4nXvHG9wQxunyn4SQ6w1wDuLl5gZIbIxeO6qJPZlUDuQ8rIDlaGvzDUco5SRNK2570AlWD5pNNQw4mvBmpaInoIiGvg5uy/DKyzAX9XCe+p1H01D7gcDsNAXBtfgOi1kN1Z7lIIHF6+vRbqQCBiXWpAg4DgeKD9UJJwaTMPEtHKC0bKF8n0Gf9wyoqmYCbHIWCvPScCheD17j8XadxYbx8JshUNt+AgflnEt4yh529mgpqTos1MG5IA5n0wjx9IZXchaONJ8iyDUgWj445qvNiA8/iP2z0EJ4wV4vu34xM4hTIslyAfNPv3V8sC/UJBjN5nP1SlIPcZ+B/EnPTZ+1ZOtm7TM9++yALsHxzPrl3GKB31mWL5GdWXASZNhOPFf6pqXSMiJfQ9c/D3j8ilEEk7Q+p3eIZUv6QfTXiwra1smXbaKq6lnZltMFrDLuYfnib+Pk9DQWA1JOMCC0UfzyRHM5/DUCz60sDSDGx1BXRxe1W2oyb3g7VZeb12LnEgp1LVsKhze9naelbqJ5FQKnElUitAsQxTXrFaw/1hQB0tWEylKaiONBXzj59FK22kFzvI8teLaJBtMxGxrpBZBzA65aSUxh2YIQ==|920
+}//qGh9bdPpxcwMFwG6sxbwlM/ymM6yzFOJgWASNQm4T2DZqWnXvEe/rl6lrGcATRusBNOP2xHCqZw+O/HoiIIXXlSy7SuA9dHJlbi5g4qqB7CSBIfmYEX+pN0YVvf0ZYFa8ppdvt2VE0/N5CW5tpGRwq4ffSo2eTev2kl3stgeogrljhkNm58kbqJYNQdVtP4Bf/9FDXSWexthQ1Eu3ViJTkegJlk/0cIAIrSwrccFGnhLaTlS1JINOtx/WOfUgIZxeHJTmH6TFmWlADM2jyebc3wAVBfcPUZDsGQPgIZwX5kOQ/rEbRXsjHAL8xVL5NAWQb/iwe8tXTnCly6D2xoTVTtYfLduX7kNMw0g2G95sngIfmbPJ/b/D3F7/M+ljbe9fEYZ8Wzed34qKaBfGsYQaTVCOq5atU12H/EBEV2k2rKvG4e0ACeYYFNP2rCUECWwXFELS9yng2WuEzbHRgvVDJtRi6BlGmUwdAll+b06Ha0GYYHA/I/ImQ7cC03jd69d5EOxyb2QW83XZ/HoXMw2MRrpNhUcwyw0MTq/FT+8IT9KnJl8cu5idO6RySDZGuJ/gWgOyKQ4A3PHtMcdX5jTrT2D8c1niob0OPxp8YbaiO+mejarxrE/qKZfdrkKVxkz4H0fWGCSsJQUTHhnEimTeOJzul2kykg5l+mIDuLJ8cxt/XTfni74LhccygfUoRwaM7OeaJDj46/AM8QxGFQyyzyi/Y/wNSJAxdWiLDEJb+5lZLa/lCFBHv/BFx9KVbiLGL4sup8CqoXQEc2kSAHLyt0o1auDQbszew+FV1SnW+5nMXDsTzBJvUH9018+uJHASe2it3z5aDZWY1mwztxXUQAm8VgCzbj7XOhPRqiiL2jSLtOo83+puInnL1wHxnxEf6eF9PZtpv3NngnUTiQNHA==|920

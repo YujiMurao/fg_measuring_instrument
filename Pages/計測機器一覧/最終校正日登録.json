@@ -108,8 +108,7 @@
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
             "TableName": "trn_insptool_tools",
             "ShowConfirm": true,
-            "ConfirmText": "本当に更新してもよろしいですか？",
-            "UpdateValues": []
+            "ConfirmText": "本当に更新してもよろしいですか？"
           }
         ],
         "AutoExecute": true,
@@ -126,10 +125,16 @@
     "5,5": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "ctrl_no"
+        "ColumnName": "ctrl_no",
+        "GUID": "3a355556-bad6-4ed1-b4ce-105174e01653"
       }
     },
     "7,7": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_tools",
+        "ColumnName": "lastrevisionymd",
+        "GUID": "39490961-18dd-49a2-936e-a13776a53c72"
+      },
       "CellType": {
         "$type": "Forguncy.DateCellType, ServerDesignerCommon",
         "ShowCalendarScrollBar": true,
@@ -168,32 +173,34 @@
               {
                 "Condition": {
                   "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                  "Condition1": {
-                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                    "param": {
-                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                      "cellLocations": [
-                        {
-                          "SerializeProperty": "=最終校正日登録!周期"
-                        }
-                      ]
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=最終校正日登録!周期"
+                          }
+                        ]
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
                     },
-                    "value": "%Null%",
-                    "compareType": 1
-                  },
-                  "Condition2": {
-                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                    "param": {
-                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                      "cellLocations": [
-                        {
-                          "SerializeProperty": "=最終校正日登録!校正区分"
-                        }
-                      ]
-                    },
-                    "value": "%Null%",
-                    "compareType": 1
-                  }
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=最終校正日登録!校正区分"
+                          }
+                        ]
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    }
+                  ]
                 },
                 "CommandList": [
                   {
@@ -249,7 +256,7 @@
                             ]
                           }
                         ],
-                        "ID": "382f73af-4bb0-4dea-8d9e-16e999de9a4f"
+                        "ID": "dc76618c-b4a7-462e-9d18-80ddfd17fbe8"
                       },
                       {
                         "Condition": {
@@ -301,7 +308,7 @@
                             ]
                           }
                         ],
-                        "ID": "907aca54-b435-4f99-9e76-23a3c12bfe71"
+                        "ID": "bd057694-3d03-4b35-a503-2f5eb0fc387d"
                       },
                       {
                         "CommandList": [
@@ -332,27 +339,24 @@
                             ]
                           }
                         ],
-                        "ID": "5f38edea-0d63-471e-8070-a90338d1c990"
+                        "ID": "28e8ddfc-d9e8-4651-9b61-7ffe700fde88"
                       }
                     ]
                   }
                 ],
-                "ID": "2ad856c6-2bef-4089-a813-22ee86779a58"
+                "ID": "6201b018-4bf7-405f-96ef-9ce441eb32a6"
               }
             ]
           }
         ]
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_tools",
-        "ColumnName": "lastrevisionymd"
       },
       "DataValidationInfo": {}
     },
     "9,7": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "category"
+        "ColumnName": "category",
+        "GUID": "afc482aa-cd5e-4d80-90d7-b752e3bf1912"
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
@@ -361,26 +365,30 @@
     "11,7": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "calibration_cycle"
+        "ColumnName": "calibration_cycle",
+        "GUID": "28de0dcc-d89c-4b3e-b463-37b3826b8ab4"
       },
       "DataValidationInfo": {}
     },
     "13,7": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "automaticnotificationymd"
+        "ColumnName": "automaticnotificationymd",
+        "GUID": "0090e48e-c6b9-4c2d-923e-4307aab92dbe"
       }
     },
     "15,7": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "next_caribration_ymd"
+        "ColumnName": "next_caribration_ymd",
+        "GUID": "8b7a3398-2ee7-4d26-8ab7-682bb4b9745e"
       }
     },
     "17,7": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "kouseiyuukoukigenymd"
+        "ColumnName": "kouseiyuukoukigenymd",
+        "GUID": "09a199b7-f7cc-4acc-8484-e6316d4d9267"
       }
     }
   },
@@ -1175,8 +1183,19 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "最終校正日登録",
-    "AuthorizeInfo": {
-      "VisitMode": 2
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
@@ -1184,7 +1203,7 @@
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//rAQl6hjS9MIoWhoOqevhi6lvc96U0e1ZB0TZvb9grWdfVkfrCyXPy+NlBiHHxxqAHtloHQl4NBJ0F1zwBNQ1rSQUE1muHu7MoTBRH3Yr+rbAHXRxcdiJTwyUOkKHSsex43dnA3ClYpc/NpDmsMeasc4i5J7uj/KrR8bk8OIu1cAcoa3AnFUhcZpj1QOvRd0igH5h7fEaU/05DANhHWHPLa2LakjMlkMYjmc75z0tAu7rHgIDZUNn8a9XNPX7AJqE0RRIiz2OhE/4BEpKlL1eX7tg4Aawm2olFqSwtu2bI2wbFGrhDwNQ+RauuINEy9Ml+/91rj3zL9BauIesQ1/aV74ehyruv0zNdLG87L+4TKBh9831upyNN4EfcKQiJiaWzxUAxsHtGfZAqvc4de/NM8hAEPY4axTk++tPk82FMpDfbjY3+jHUG/k1SCE+EFkJ7CByrhuxzLHE/K317wP+Q/n+FGOsUjm/iZCwSeyAAxTXggHiSe3MLzliSLetnxqRnSAlMB5fu2KRKPZSWXlBauB3PCE7iCHcw541keLdgJMtL0w+1B3+uQ4M+BEMR7ttSz7X6nlOS1qdTi7jsm6ClLPtoWy+A4Ep9d0KFVemXfyEdNcpO5IvsfKN2vpvWeBhDm9jMd6/s/W51sWud5T5m/WKPDQ+Tij4YKLjVDxUsDHXaKjiO1tUSDxnMNfzY64k/HuNb5+uZ06bVFN06mtOsfP95SI8EgbPjQmaV+TITvDl7jhy/EorCfz55kkOK6wdSJITMyigs03LEbOTCJ4FhKEEYXJRjpVqDgm/E3Lztul0gDCKqbBw1vVd5gF6+p6tIKVj6JVXHUz8iZrrXoxIaj4GrzAAinHdhWuAXUKiuVo6t6CgUxFig8Ov2Vag2/3L/xfw0LWj2woF3tXpMSGPfA==|920
+}//GhVQdQjS45/e6kOCEH3g0owKHNlwV/RBXyPXRiEvgV51g8a55mj16F6UyuKBJ2LaB2iX0NRfj3m3F8J1uKUDpL6Jko2+1RValoG53N41u51D9oyFkXsBFmKmSbHB/rbxcfBxLxJ7LOP8070WaUvOhasEmbSnWVjUKjIB1++xsHaMDfK65rOeJR8/65ixG4VA2du23e7nPOgP9WUwoLk9WPy4hdaJEWPdyW5fG2HPMcStTvrBgaAQTqYV0QV3VGev6WtllNgIlfvu160Zpx5PsDPKUc/xnqobOqJM7DR9P8Knwk79FPq6auBJE3LrL8I+KjKxy6bWOzl6D7YcfitQrXUbTqa5o6OHSLuH+gmO7jx9r5HEV1ha5Exu0zFRAyN5udGVolhb+IfgAb1TrMB8A+2crpFMOU45p7uOjyhNdlVbwE+x/myHE4sUzeYeY6t4jMQMnuPjUshUjhc9sN+bBn72k3kM4dQvModYMXPTIS4olt5fDDUKgzFk5naF8uZMZassNMBu1zvIxXsVMk3SugSrO2HX6RXA394B2ORcUFqL8ujJtbrKvl703aLQUmLKe92ADLS1Te6tNQhTb2CoXyx7zm9eboFj2+bNuI8V1Q4Rw8MwLavJb3oFnO91qlPLTi8PnkF8pjUsJL5xLOFgJY14b3Q3kOJa4i4Amqh+uNqvbrdI96VrUZvPGjNDybqcuxwW5o1QFB2fFxeumZaJqqUhQERJb0T6TpZsoc/3KcaZJ/5LYAhDMLgrWwV/0tRHxgO+Sm1Nk6rQErYnPMayKv7pUIhwmFxbzmDBDLVRr321GTJRn3/8JUopdRQygMUvFhnEVyiWloqkQGvM6TWhVuZcKRyg2wfFiX3wdo8yLs1EaejUO0Y1RRXq+QqlpYGU2Ig2ZEdQpQHErlkjwVSiXA==|920

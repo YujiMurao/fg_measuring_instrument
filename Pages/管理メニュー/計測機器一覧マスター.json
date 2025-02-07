@@ -913,9 +913,7 @@
           {
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
             "TableName": "trn_insptool_tools",
-            "ShowConfirm": false,
-            "ConfirmText": "本当に更新してもよろしいですか？",
-            "UpdateValues": []
+            "ShowConfirm": false
           },
           {
             "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
@@ -946,9 +944,7 @@
               {
                 "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
                 "TableName": "trn_insptool_tools",
-                "ShowConfirm": false,
-                "ConfirmText": "本当に更新してもよろしいですか？",
-                "UpdateValues": []
+                "ShowConfirm": false
               },
               {
                 "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
@@ -983,7 +979,8 @@
     "0,13": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "ctrl_no"
+        "ColumnName": "ctrl_no",
+        "GUID": "49a45682-603a-451d-ae24-791ba356b827"
       }
     },
     "0,31": {
@@ -1004,15 +1001,15 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
-                    "ListViewName": "リストビュー1",
                     "ExportExcelListviewNameMode": 1,
+                    "ListViewName": "リストビュー1",
                     "NewOtherName": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                       "SerializeProperty": "=計測機器一覧マスター!A1"
                     }
                   }
                 ],
-                "ID": "9ce5024b-6243-47e3-b808-7323e22a4001"
+                "ID": "4a6b3fcc-b3df-42cd-9a23-c68d3750fdb8"
               }
             ]
           }
@@ -1158,12 +1155,10 @@
                       {
                         "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
                         "TableName": "trn_insptool_tools",
-                        "ShowConfirm": false,
-                        "ConfirmText": "本当に更新してもよろしいですか？",
-                        "UpdateValues": []
+                        "ShowConfirm": false
                       }
                     ],
-                    "ID": "7e156700-71e0-4adf-809e-b34a67432e9f"
+                    "ID": "7d880321-ad8c-4d73-9709-4ce5cf6028f7"
                   },
                   {
                     "Condition": {
@@ -1194,12 +1189,10 @@
                       {
                         "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
                         "TableName": "trn_insptool_tools",
-                        "ShowConfirm": false,
-                        "ConfirmText": "本当に更新してもよろしいですか？",
-                        "UpdateValues": []
+                        "ShowConfirm": false
                       }
                     ],
-                    "ID": "36a41a98-1d1c-4afc-9bee-ab65570dcfa3"
+                    "ID": "d960c529-1eaa-44aa-b4e4-0d77aa082acd"
                   }
                 ]
               },
@@ -1216,11 +1209,27 @@
     "0,92": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "category"
+        "ColumnName": "category",
+        "GUID": "40a8e9ad-909a-4012-9db8-fe5f4d7b64da"
       }
     },
     "1,0": {
       "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "trn_insptool_tools",
+        "RowIndex": 1,
+        "RowCount": 34,
+        "ColumnCount": 145,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsTotalRowVisible": true,
+        "IsTotalRowAtFirstRow": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
         "RowHeaderContextMenu": {
           "ContextMenuItems": [
             {
@@ -1240,24 +1249,9 @@
             }
           ]
         },
-        "ShowColumnHeaderInDesigner": true,
-        "TableName": "trn_insptool_tools",
-        "RowIndex": 1,
-        "ColumnCount": 145,
-        "RowCount": 34,
-        "FrozenIndex": 7,
-        "FrozenLineColor": "Accent 6 0",
-        "IsTotalRowVisible": true,
-        "IsTotalRowAtFirstRow": true,
-        "AllowEditInListview": true,
-        "AllowAddNewRow": true,
-        "ShowDeleteButton": true,
         "ColumnOperation": 2,
-        "ShowEditStatusIcon": true,
-        "UseSimpleBar": true,
-        "Name": "リストビュー1",
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2"
+        "FrozenIndex": 7,
+        "FrozenLineColor": "Accent 6 0"
       }
     },
     "2,0": {
@@ -1269,33 +1263,38 @@
       },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "id"
+        "ColumnName": "id",
+        "GUID": "54afd707-014b-4224-83fb-6fa5e552719f"
       }
     },
     "2,2": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "n1"
+        "ColumnName": "n1",
+        "GUID": "88dc83a7-dbfb-4dc4-8faa-979f6fd4f2f8"
       }
     },
     "2,3": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "n2"
+        "ColumnName": "n2",
+        "GUID": "177b8b8b-bf25-4794-9e15-38db2dd32932"
       }
     },
     "2,4": {
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "n3"
+        "ColumnName": "n3",
+        "GUID": "2b0636d7-70fc-4748-a8c0-bd3cc5a87c0e"
       }
     },
     "2,5": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "n4"
+        "ColumnName": "n4",
+        "GUID": "97fd1a33-6ce2-4ce9-b997-27885064a961"
       }
     },
     "2,7": {
@@ -1308,77 +1307,88 @@
       },
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "ctrl_no"
+        "ColumnName": "ctrl_no",
+        "GUID": "312bc386-06e5-4ea6-bc93-d6c664737c39"
       }
     },
     "2,10": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "usage"
+        "ColumnName": "usage",
+        "GUID": "8ec0c411-a6ed-49cd-8b9e-549e86be0afd"
       }
     },
     "2,13": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "codateymd"
+        "ColumnName": "codateymd",
+        "GUID": "4022c736-d1b5-4d9b-a104-f98d083afb28"
       }
     },
     "2,17": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "kind"
+        "ColumnName": "kind",
+        "GUID": "794aa018-18ed-457d-b197-c4a224ea138e"
       }
     },
     "2,22": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "prohibition_reason"
+        "ColumnName": "prohibition_reason",
+        "GUID": "aa3dbd1f-730b-4c2e-ad02-c2868b041fd3"
       }
     },
     "2,26": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "item_name"
+        "ColumnName": "item_name",
+        "GUID": "3415bcb0-9e1b-4086-b868-806ccb22b155"
       }
     },
     "2,31": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "type"
+        "ColumnName": "type",
+        "GUID": "d425810c-4ebb-4371-800e-26bde284a3b1"
       }
     },
     "2,34": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "serial"
+        "ColumnName": "serial",
+        "GUID": "7dab148f-869e-4680-94f8-f95c09f09f52"
       }
     },
     "2,37": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "maker"
+        "ColumnName": "maker",
+        "GUID": "f93f10de-9962-499e-8ce8-32df346250da"
       }
     },
     "2,43": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "s1"
+        "ColumnName": "s1",
+        "GUID": "93efa270-9c96-414c-8650-d746e141305c"
       }
     },
     "2,46": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "s2"
+        "ColumnName": "s2",
+        "GUID": "a4a01bd1-6f4a-4c7a-9849-8c629b464e07"
       }
     },
     "2,50": {
@@ -1386,7 +1396,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "s3"
+        "ColumnName": "s3",
+        "GUID": "09555a6f-6513-4cef-bd2b-63ebfeee9569"
       }
     },
     "2,55": {
@@ -1394,7 +1405,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "madeymd"
+        "ColumnName": "madeymd",
+        "GUID": "e6a1bc92-4e5e-4080-bb4a-2b331c8e594d"
       }
     },
     "2,59": {
@@ -1402,7 +1414,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "asset_no"
+        "ColumnName": "asset_no",
+        "GUID": "718aa486-e68b-41fe-a3c2-3c5601abe217"
       }
     },
     "2,63": {
@@ -1410,7 +1423,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "purchaseymd"
+        "ColumnName": "purchaseymd",
+        "GUID": "9365a885-c8c5-4d80-b860-02e609ba60ce"
       }
     },
     "2,67": {
@@ -1418,7 +1432,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "retailer"
+        "ColumnName": "retailer",
+        "GUID": "274dea83-9671-4d56-8b37-a97887c5aa75"
       }
     },
     "2,71": {
@@ -1426,7 +1441,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "pic"
+        "ColumnName": "pic",
+        "GUID": "9c1d26c9-a173-4947-9cf5-f2ee69cb6938"
       }
     },
     "2,75": {
@@ -1435,6 +1451,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
         "ColumnName": "pic",
+        "GUID": "9c8367c4-92bd-4feb-90f8-f13547463a78",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -1446,7 +1463,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "administrator"
+        "ColumnName": "administrator",
+        "GUID": "87d0e43a-eb46-4a64-bdc5-cc193da60a9e"
       }
     },
     "2,82": {
@@ -1454,7 +1472,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "storage_location"
+        "ColumnName": "storage_location",
+        "GUID": "22df5a61-aab2-41c6-9f00-e23ee1e226cd"
       }
     },
     "2,88": {
@@ -1462,7 +1481,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "category"
+        "ColumnName": "category",
+        "GUID": "2cb856f1-3ed8-423c-9a6e-24c9dfd3cba7"
       }
     },
     "2,92": {
@@ -1470,7 +1490,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "lastrevisionymd"
+        "ColumnName": "lastrevisionymd",
+        "GUID": "af8212dd-801d-4afe-9ef4-027e50b72a97"
       }
     },
     "2,96": {
@@ -1478,7 +1499,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "calibration_cycle"
+        "ColumnName": "calibration_cycle",
+        "GUID": "eb3e139f-5826-417e-9d40-c3eb98a6a192"
       }
     },
     "2,98": {
@@ -1486,7 +1508,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "next_caribration_ymd"
+        "ColumnName": "next_caribration_ymd",
+        "GUID": "f5bc6702-3b29-4b96-aed6-d1f306410f1e"
       }
     },
     "2,102": {
@@ -1494,7 +1517,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "automaticnotificationymd"
+        "ColumnName": "automaticnotificationymd",
+        "GUID": "9f62987c-f4c0-4119-9d54-38ba6ddcdea5"
       }
     },
     "2,106": {
@@ -1502,7 +1526,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "etc"
+        "ColumnName": "etc",
+        "GUID": "ef875413-9e46-439c-a414-e7c372516c03"
       }
     },
     "2,112": {
@@ -1510,7 +1535,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "kouseiyuukoukigenymd"
+        "ColumnName": "kouseiyuukoukigenymd",
+        "GUID": "f607d9b5-3b8a-4474-8b1f-1122451808d4"
       }
     },
     "2,116": {
@@ -1518,7 +1544,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "外観"
+        "ColumnName": "外観",
+        "GUID": "5125c8ea-fa54-4a91-9c21-9cf846417ff5"
       }
     },
     "2,120": {
@@ -1526,7 +1553,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "その他画像"
+        "ColumnName": "その他画像",
+        "GUID": "28b9766f-343a-472d-bde8-7f9b2643ef94"
       }
     },
     "2,124": {
@@ -1534,7 +1562,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "添付ファイル"
+        "ColumnName": "添付ファイル",
+        "GUID": "2b9bd91e-973a-45dd-a439-c5ea9b77e6bd"
       }
     },
     "2,128": {
@@ -1542,7 +1571,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "calibration_enabled"
+        "ColumnName": "calibration_enabled",
+        "GUID": "12999d85-4212-4cd9-bcef-8d965fe10e10"
       }
     },
     "2,132": {
@@ -1550,7 +1580,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "公開"
+        "ColumnName": "公開",
+        "GUID": "2e1b7565-c5d0-42b7-8264-a61a6794ddca"
       }
     },
     "2,136": {
@@ -1558,7 +1589,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "FGC_LastModifyDate"
+        "ColumnName": "FGC_LastModifyDate",
+        "GUID": "a2a02fcd-0f82-4df9-b007-53f28ec38747"
       }
     },
     "2,140": {
@@ -1566,7 +1598,8 @@
       "IsCellIgnoreHideInListview": true,
       "BindingInfo": {
         "TableName": "trn_insptool_tools",
-        "ColumnName": "FGC_LastModifier"
+        "ColumnName": "FGC_LastModifier",
+        "GUID": "487358e4-fc52-4ab2-8330-5342d888b029"
       }
     },
     "2,144": {
@@ -1777,10 +1810,19 @@
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "masterpage",
     "Title": "計測機器一覧マスター",
-    "AuthorizeInfo": {
-      "VisitMode": 6,
-      "AllowVisitedRoles": [
-        "IT戦略室"
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "IT戦略室"
+          ]
+        }
       ]
     },
     "RowBreakLines": [],
@@ -1788,7 +1830,7 @@
     "RelatedDataTableName": "trn_insptool_tools"
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//mlttdN4tVL9jGlEz3yK4nVZ6Gor/AmfhyCDT/hRs/SC6RE/Vwq3dynMCuarVakDdHUL2wX+IcyRRuwxVNVHbjWuPRcU93ipsSWtAZ6EL8+VLAA7/LL4pvLMU/6fLaSi6J5AGxdSJU0G87fE30OPdbdoWNFdqxIauVlV26A0YLcvJ1rRvdiPOnIPJoNZsMxBTzZsKx/7/JhUf3lhpwzEw/HfCO/f6cxr2976ZeV13HPrKk/HNLgBBx/4CIj1HgLz7EthD6qMZXvGN3Pf1x7XUaACA6fFXFIClQ0hlkB3drHJdJfgV0FKlm/VkkAaWbPKBoZihn3MEv5Lz7fTp77ktiElZ1dZEzVs/yQDA4TbIBDHPyMrBVjdOEALhsy+XdFHa/JWD1W8wc/bDwXB3Ysi6NDaercLI/QLWS1pNE649Q2sYpq09Kjen7w77TEnOzPOVIit9y1NQ7veyiK10JCD1izpvmLxxngDRoRfb41TGQshiesWrsnMEx/RaVxeKQ1o6rc88HrLCvA40A4gqfNeBv1JW4EqaS/UH89KfPABgqXmLcjiBfi1Sn4wbWvr3OIt9eOVAPvQ4pot//RPoR/qkT8/gedgUdDviTq0+69Hz4asyzeTu2m6qUc6957bnmo1ocbfmVn/1DAH1vpUARqPKPoXgiJW7lnD3nrRvrZNB7WvHZyFJuFkgzbO4cgSJqm+hE8Xu3efnDZMpUVyi6BNYko4AIBoBnt8+DHVnbXbn2LBJ+5c+u0Zr5D11oVAlxbWOZIT9gasNTZGT76cWIZicYXfnego/RUuaExgtHWqH+QxzzAnbk3t3+YGhHTVt+nDFxctexHZwzizf1ryHXvzcvF6uGoyLvBkAlQHIo4Ul1CAuqH6RkgrMe8bUmZqgGRd/bAt6+VT5sFVoW0KIwYudGA==|920
+}//4GdRpzfiNpZl7AdT52tL8Q3rYoaep72Fppz68CkoTw8Qb3H/jJHqhgDCNjlgQBO5pBaewwGhQNNBalQJJjenvaNyINok83EaJati7hAj6Fez3Rten1rMU+eplFce63QHPRK93ZQuW20cnnFiFeuPdtcZPkw/2ZRlJTpp0o1rfW/e9LXXlrhk8b0FNiD2y0fW86PYe5EIPelK+TmEGFWjKBQ4Fvu/x4YLh9tiSoQnV54bUbJPpXBdiK12RFhVbCq/Wn/UmTpnz0fy/bMBKu4D5p63Mhv527HUU38FzYprtDH5zdEjN39s6Gr93uF9HH8idzBpzGH97rRLrn7Oi60gtzIHW5jORCFqDb6e2Z+vFDfofSquDaCkWVkVS5bjG5YC7hp/ySdFW9xsruRh4GQYhbLiMeZ9Vq/4Czw0oUT3iuHUKaIJM0B5tJROc+PDZJCeg+F7suX8KMm8lqmVK0+kYA5G0lid4uCW7CugvYYGZ/16LbqWo+XAqK51Zzj5o94SDii5JU4ZpYXOSc0MXJvEUBot3XhG23no2/yXtJi34RynTtV6mv3MLJsEy5u2JfNC+Al95xovFTZueEprFIAE9GGQKZVSl9ew6cEqdpLNFkkuoaI85A+IgG8hpIk32B5T2eIc+M0TQZSA9qUTX6Uj8CEc33mro53hcMF9QNOjsQ0/PdTf2eEez8S+Kw/IJxHwh7Q6JWCZUawNa4joljsIEZILyW5FzxmZ8YBxdDBqZvN0Y80bf8G8xWgZuBB04Ee+uC4d7H8l4OLy5L7ITIANtAQ9MZaQg5akG1CFfAL246QXDNhyUjoGnl57dlwlogwcUR2h7iD9pkymwl7+N7VN7aEMmMl1PZH0uJNQtzNdbvMSC13bNTIkYL253SDUPvdgt6UMvjVMrtehxMkhLRKXtw==|920

@@ -221,13 +221,15 @@
     "4,30": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
-        "ColumnName": "FGC_LastModifyDate"
+        "ColumnName": "FGC_LastModifyDate",
+        "GUID": "d3a3bb16-26e5-4e7c-bd70-280d571dcbb8"
       }
     },
     "5,30": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_LastModifier",
+        "GUID": "b2a9a18b-5d33-4d34-a824-7fbc3d835dbf",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -237,13 +239,15 @@
     "6,30": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
-        "ColumnName": "FGC_CreateDate"
+        "ColumnName": "FGC_CreateDate",
+        "GUID": "dabce9c2-f385-4a2b-b7d9-3b57747cfb99"
       }
     },
     "7,30": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
         "ColumnName": "FGC_Creator",
+        "GUID": "019b0d72-62ec-4c71-8959-9256ed54769d",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -253,16 +257,23 @@
     "9,6": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
-        "ColumnName": "registration_date"
+        "ColumnName": "registration_date",
+        "GUID": "253664fe-a7ff-419b-ac94-c15e9b83e554"
       }
     },
     "9,30": {
       "BindingInfo": {
         "TableName": "trn_insptool_certifications",
-        "ColumnName": "id"
+        "ColumnName": "id",
+        "GUID": "c73ff4a9-eefe-4f04-a3b2-1c55925e6b17"
       }
     },
     "10,6": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "subject",
+        "GUID": "8ba2e160-57be-44ad-b419-3c4e3ee6c152"
+      },
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
@@ -271,16 +282,17 @@
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_certifications",
-        "ColumnName": "subject"
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
       }
     },
     "11,6": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "calibrator",
+        "GUID": "054103cd-edf9-4bdb-84cd-e079ec0a93b4"
+      },
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
@@ -289,42 +301,41 @@
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_certifications",
-        "ColumnName": "calibrator"
       }
     },
     "12,6": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "memo",
+        "GUID": "ccefc0be-ecdd-43aa-a96d-426a12e9d5e9"
+      },
       "CellType": {
         "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_certifications",
-        "ColumnName": "memo"
       }
     },
     "16,6": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "attachment_list",
+        "GUID": "2a50a815-f4a4-45f8-bc9a-40dbd82d2188"
+      },
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "ReadOnly": true,
         "TemplateKey": "_RS_Normal_Style2"
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_certifications",
-        "ColumnName": "attachment_list"
       }
     },
     "20,6": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_certifications",
+        "ColumnName": "attachment",
+        "GUID": "11bdd126-d26d-4581-b223-dc18d12e2da6"
+      },
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "ReadOnly": true,
         "TemplateKey": "_RS_Normal_Style2"
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_certifications",
-        "ColumnName": "attachment"
       }
     }
   },
@@ -2197,31 +2208,38 @@
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
             "TableName": "trn_insptool_tools",
-            "ColumnName": "ctrl_no"
+            "ColumnName": "ctrl_no",
+            "GUID": "42573821-c5a5-4fe1-a907-5d0b9292ef33"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=記録文書の閲覧!AO2"
           }
         },
-        "Params": [
-          "=AO2"
-        ],
         "ID": "268b495bb7664b1bade8e383ca07a209"
       }
     ],
-    "AuthorizeInfo": {
-      "VisitMode": 6,
-      "AllowVisitedRoles": [
-        "IT戦略室",
-        "製造課",
-        "九州製造課",
-        "業務管理課",
-        "製造部",
-        "品質保証課",
-        "基礎開発課",
-        "電気設計課",
-        "サービス部"
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "IT戦略室",
+            "製造課",
+            "九州製造課",
+            "業務管理課",
+            "製造部",
+            "品質保証課",
+            "基礎開発課",
+            "電気設計課",
+            "サービス部"
+          ]
+        }
       ]
     },
     "RowBreakLines": [],
@@ -2230,7 +2248,7 @@
     "PageResponsiveMode": 1
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//BDxhjRGTrE5vydsB1imP/pjysyxuohmdHpp3eebbOmZ1F66GXBfkR+WGarpBS7omeHMa7OkiJZOOJmFvlbeU57p6fDO/0KGGmxau5BaMXlu9SviLlmnD2Zfa1K7yxeyEwZ2L8jh9x5Re+x3hsidVZi9MDqteR+vfBrBHstIZb2ExSB4tM4DZZjum37YL+AgY4qRsor1F3F8PTHWPjZhMu9XJnEJzPfGor7VOWTFe395VhEj1CE07gSqIpR3O+y3EPy57b7x5uiTfoxSAsu27jmbDzUWceyxbSqX5Ass3Bv8pJVGH0/Upoi2IeYPpuBs+RGZCEnpZh2g2cu5hOW3yJNT/l6xaTA0BkgmGMzHC8VVPJlKyGH974cT+Se6XH4wNK87ncSxLD1mbcFaD1xEiRyYCDN/xi3lQozhBr4ZNakFhnDrHV4HDpVKLSWZJ9ra4WomqEgpk7JAcQT7eCy0AyqtTlHBxkZm9qd9mxArcpnmrdo0bKyFm5FxLB1UTx/LUieGJrdsOEkPjAdHeGPH6Mlh40WW4UmmNE97DxxH8gyweDo7kijo6SPLZtL+ZbzZ0WsLsjyiR/W2ZFlnL7SNmn0nyAQ7OM80EMQHr2y3i2xjOkrkP2ZQ9flouy4SzWZR3MNp40Pkf9wsHb6468mbkUST91/LvoCyYNl487P3NU/h+7egZgpxiNF97MQEfF7Q5aHo3jh7Iu15X/AfOBHQvNcCYpiUYyrlvPMAC91A1IEVgEsPGCaQJHdOfY6ui3Qmp6tEDYd7+5hC46QqB0spKoTdpxHwph/CRezy/NWmH9zLjES50IdljBmlwy443EYOY3HJccB6spb46i5mZt6HpyQDkPDu16LwmCjvaubFNsZrdVpflwtTeaLQRvlEiCQ6/wvxeOb93vPq/oUEjyt669g==|920
+}//742TMVr24kElirUHp99aL1oWxqpSDc0Mr+vaBW8HtsvOpBHHXrc/SW9VkUzKTTPZkDsO4F1RmaUQegMz13BqDuLkGyVFNsCnNbwkYZu4RzCrb6TDdmfsoO2qOiQNM4AOtDtNj+mfWeqfxe8lPo3ntK2Y/GNiaw+TCCjijBDf0US1K5Mjx6+3XH6k7Rju2+Twdo5jLgVVX+DuHOo5hG8s5dc8Rw9ncBNShvrHBtttfUUWNu1F1AX7tn4HFJWdvtj5EJ0BVpI3aDpD/9QD7t+NywzMFoWfQeK0zi6WN1cXm49BrPQb4pWFrOKuBymnWo/LvIGy/QUg36e2/L0D9SwNp0nxuvw5pvgPZwsFLulDy27NVhrnyau/pCPvIM/gwT4zTC4ID4cQQrqautWqYijvQiyOq7cnVdAA8w2QUNy92CnX61DUZAi2EkXBFsU5r/IKu6089PU+mate9EQo/zDG0oPrxS5BPi6e4yevKpGAvk/PKrtG+3HsIit+tSFoWeWEc33dch3Lt6+z2Ral77sEcs9bjz4sIu93OsETzLjOlMFTqBpbyMXfDOSQVv45hxtDNDDbZOyu3BjSBjllEpvZxBMH2mJ+oRHYFjAxcR7NiF8K+TyJ6gAoh4m3JhbLEM//qpH319FyjRjRVEcv1nxfCRjFnnGSUjTMly8mBIbg78GgkRniItV/Y0Eb9VLpiiEMtmUFSuqxw0qhefmSoLhtBMMEhilmIIEfZNGlqMTLbiGgRavvfMmk4GtMoW+pAkVx19hKrUgirw+Ym8y3SCiGzmDZHuN1UTbw8UR1+6MKIRtE0dK3u3yEbxsKnmCs5s2E1VSamGkZck1IRQGqq6uHrwq29uv3nG0LcLXGg2VT7bw3Ie5RooFOH3mxAOOW5Gyf1ewdj6ryEpP7VOrYeJvU8g==|920

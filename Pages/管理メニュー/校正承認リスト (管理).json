@@ -173,7 +173,6 @@
     "2,1": {
       "CellType": {
         "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
-        "NoneItemText": "＜なし＞",
         "Style": 1,
         "CellDefaultValue": 1,
         "Items": [
@@ -217,31 +216,34 @@
                     "TargetTableName": "trn_insptool_calibration_history",
                     "SqlCondition": {
                       "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                      "Condition1": {
-                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                        "ColumnBindingInfo": {
-                          "TableName": "trn_insptool_calibration_history",
-                          "ColumnName": "FGC_State"
+                      "SubConditions": [
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_insptool_calibration_history",
+                            "ColumnName": "FGC_State",
+                            "GUID": "df247550-1932-4f36-bf67-a2862367b3fe"
+                          },
+                          "Value": "未申請",
+                          "LeftBracket": 1
                         },
-                        "Value": "未申請",
-                        "LeftBracket": 1
-                      },
-                      "Condition2": {
-                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                        "ColumnBindingInfo": {
-                          "TableName": "trn_insptool_calibration_history",
-                          "ColumnName": "FGC_State"
-                        },
-                        "Value": "新規",
-                        "RightBracket": 1
-                      },
+                        {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_insptool_calibration_history",
+                            "ColumnName": "FGC_State",
+                            "GUID": "1432c7e2-6fbc-4ca3-92f9-e459810304c5"
+                          },
+                          "Value": "新規",
+                          "RightBracket": 1
+                        }
+                      ],
                       "RelationType": 1
                     },
-                    "Params": [],
                     "ID": "1048772e31fe48f58aaebd88aa4e6975"
                   }
                 ],
-                "ID": "97539bb8-9ec9-42c7-8b84-ceb96a58101a"
+                "ID": "dc79d3cd-baf7-401a-9c75-80335641159b"
               },
               {
                 "Condition": {
@@ -264,15 +266,15 @@
                       "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                       "ColumnBindingInfo": {
                         "TableName": "trn_insptool_calibration_history",
-                        "ColumnName": "FGC_State"
+                        "ColumnName": "FGC_State",
+                        "GUID": "46f527db-1c64-4ecc-811f-73a99ec92997"
                       },
                       "Value": "申請中"
                     },
-                    "Params": [],
                     "ID": "8d05735cebf64cd9bbecabe02d217f13"
                   }
                 ],
-                "ID": "b3440c5c-28c4-46de-a0e3-ef4b16781886"
+                "ID": "13c94330-547f-4ea7-93c8-c22fe2cf0933"
               },
               {
                 "Condition": {
@@ -295,15 +297,15 @@
                       "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                       "ColumnBindingInfo": {
                         "TableName": "trn_insptool_calibration_history",
-                        "ColumnName": "FGC_State"
+                        "ColumnName": "FGC_State",
+                        "GUID": "297b3721-a036-4291-b13d-6bc926fb806d"
                       },
                       "Value": "否認"
                     },
-                    "Params": [],
                     "ID": "1969e5bfe193486c991a0cb27950df64"
                   }
                 ],
-                "ID": "8688f726-280b-4155-9164-826f09b39221"
+                "ID": "019bfe84-60b6-4bd4-a9ea-726825becc6e"
               },
               {
                 "CommandList": [
@@ -314,15 +316,15 @@
                       "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                       "ColumnBindingInfo": {
                         "TableName": "trn_insptool_calibration_history",
-                        "ColumnName": "FGC_State"
+                        "ColumnName": "FGC_State",
+                        "GUID": "5a0b56a6-75c2-4e09-ae1a-2e1d5b7c02fe"
                       },
                       "Value": "承認"
                     },
-                    "Params": [],
                     "ID": "bc62ca5434264bb2849cd253ee32c7d9"
                   }
                 ],
-                "ID": "03a2c70c-713c-480e-b918-1a9dfe213343"
+                "ID": "2471404f-91ec-4873-a88b-617b30339579"
               }
             ]
           }
@@ -333,6 +335,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "12e2cdea-13f1-4792-a570-e7b2d03240d0",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -343,13 +346,15 @@
     "2,48": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "id_tool"
+        "ColumnName": "id_tool",
+        "GUID": "be92d151-7203-468d-aa4c-586183579edf"
       }
     },
     "2,56": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "98709270-0ab7-46b7-8208-b5c625aca170",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -359,42 +364,42 @@
     },
     "3,1": {
       "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "trn_insptool_calibration_history",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 33,
+        "ColumnCount": 31,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
         "DoubleClickCommandList": [
           {
             "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
-            "UpdateType": 6,
             "ListviewName": "リストビュー1",
+            "UpdateType": 6,
             "UpdateListviewCommandRunTimeMethodSetting": {
               "MethodName": "Reload",
               "ParameterValues": {
                 "clearFilter": false,
                 "clearSort": false
-              },
-              "RetrunParamNames": {}
+              }
             }
           }
         ],
         "ShowColumnHeaderInDesigner": true,
-        "TableName": "trn_insptool_calibration_history",
-        "RowIndex": 3,
-        "ColumnIndex": 1,
-        "ColumnCount": 31,
-        "RowCount": 33,
         "IsTotalRowVisible": true,
-        "SelectionMode": 1,
-        "ColumnOperation": 2,
         "HideSelectionWhenLostFocus": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
-        "Name": "リストビュー1",
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2"
+        "SelectionMode": 1,
+        "ColumnOperation": 2
       }
     },
     "3,37": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "8d7193be-4bd4-41fd-b132-25c37c5621a9",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -414,6 +419,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "9c78fb9c-eda8-427b-a7c4-d36b99f52f3e",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -425,28 +431,32 @@
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "処理年月日"
+        "ColumnName": "処理年月日",
+        "GUID": "14577b18-3daf-4828-90e6-0407066b7045"
       }
     },
     "4,8": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "項目"
+        "ColumnName": "項目",
+        "GUID": "f8ca6452-1f3a-4704-8c94-e26caddf230c"
       }
     },
     "4,11": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "業者名"
+        "ColumnName": "業者名",
+        "GUID": "318ba4b2-9a88-4ffe-81f1-b490b9b54d89"
       }
     },
     "4,16": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "FGC_State"
+        "ColumnName": "FGC_State",
+        "GUID": "e1a1444e-405c-44f6-b47b-a9ef83351c89"
       }
     },
     "4,19": {
@@ -454,6 +464,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "FGC_AssignTo",
+        "GUID": "ea5f773b-764b-420e-b167-64af6a20bc04",
         "AttachType": {
           "$type": "ForguncyDataAccess.AssignToColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -464,14 +475,16 @@
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "申請者"
+        "ColumnName": "申請者",
+        "GUID": "2734cc08-bd30-45dc-aac2-62bb2adfaea5"
       }
     },
     "4,25": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "承認者"
+        "ColumnName": "承認者",
+        "GUID": "5eb1cd3e-64e0-4884-b532-b65c74576e41"
       }
     },
     "4,26": {
@@ -481,34 +494,39 @@
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "id_tool"
+        "ColumnName": "id_tool",
+        "GUID": "612246ec-2693-492e-9ce1-0511091038c3"
       }
     },
     "4,29": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "摘要"
+        "ColumnName": "摘要",
+        "GUID": "2acc4001-2be6-4018-b789-37f814adb9ee"
       }
     },
     "4,30": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "備考"
+        "ColumnName": "備考",
+        "GUID": "bd09ae79-0271-44ca-97ca-9d6649fc1c34"
       }
     },
     "4,31": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "記録文書へのリンク"
+        "ColumnName": "記録文書へのリンク",
+        "GUID": "47293c91-932b-4ce9-aaf7-a05d0071fd51"
       }
     },
     "4,37": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "bab48bce-1056-4359-993e-eaa7ee46c50b",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -525,6 +543,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "5c6aca67-4d24-48e8-86be-3fa37671c4cd",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -541,6 +560,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "7140f0a9-9a95-4f19-9093-024c1313b18e",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -552,6 +572,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "2af6dad0-2f9f-4516-a12d-8dd62cc402e4",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -563,6 +584,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "84444608-955d-4e90-b1ec-0b5739337b76",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -574,6 +596,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "2f3b07c0-8026-4147-910a-7c02d9e8daed",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -585,6 +608,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "b896c94b-858f-45f4-ba53-46c7b3d43989",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -596,6 +620,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "aa0274a7-5959-4327-bba5-1c1b79995253",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -604,26 +629,28 @@
       }
     },
     "11,52": {
-      "CellType": {
-        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
-        "HorizontalAlignment": 0,
-        "VerticalAlignment": 0
-      },
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "855cc8fe-32e8-4e7e-a8e3-7f6abb536f59",
         "IsImagePath": true,
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
           "DisplayColumn": "外観"
         }
+      },
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "HorizontalAlignment": 0,
+        "VerticalAlignment": 0
       }
     },
     "12,37": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "bffbae37-46c0-4694-acb1-73b1912e524c",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -635,6 +662,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "23cd191c-6c57-486d-b8c6-ca358d1bcd72",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -646,6 +674,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "57df94bd-0f7f-4db4-ab1a-841d6c322bf1",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -657,6 +686,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "a21610d2-3a05-47bd-b212-2d03a04b74ea",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -672,6 +702,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "23a6d9ed-ecd1-4267-b81d-93d7da56fdf4",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -683,6 +714,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "0e0f3d0e-7506-4eb6-8e6d-b6f52ba406f6",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -694,6 +726,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "67f05398-7aca-4041-90e8-5e527e436081",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -705,6 +738,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "a8f96df5-272c-4509-b7d9-b0c4f43a1266",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -716,6 +750,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "86d50f5f-850b-48ae-a156-2196a1808d19",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -727,6 +762,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "id_tool",
+        "GUID": "1b81ed53-1651-43e9-baec-68362551aba4",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_tools",
           "RelatedColumn": "ID",
@@ -737,40 +773,51 @@
     "24,45": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "ID"
+        "ColumnName": "ID",
+        "GUID": "4d1d2177-0924-4068-bec2-1e0dae58ed0f"
       }
     },
     "25,37": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "処理年月日"
+        "ColumnName": "処理年月日",
+        "GUID": "811983a4-49d2-4673-9b85-2c81e2345f3b"
       }
     },
     "25,45": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "摘要"
+        "ColumnName": "摘要",
+        "GUID": "6a0e59a6-7e2a-478a-b3bb-49e14b78400a"
       }
     },
     "26,37": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "項目"
+        "ColumnName": "項目",
+        "GUID": "edf38c3e-9dad-410b-b69a-5534b8dbcbc3"
       }
     },
     "26,45": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "備考"
+        "ColumnName": "備考",
+        "GUID": "5777049c-b347-4d53-83a5-95347befebd9"
       }
     },
     "27,37": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "業者名"
+        "ColumnName": "業者名",
+        "GUID": "f0f2ea76-1733-4bcd-acca-9a547500bb48"
       }
     },
     "28,37": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "記録文書へのリンク",
+        "GUID": "bf3597ac-87f8-44a0-9844-5ec90a65b079"
+      },
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
@@ -781,16 +828,14 @@
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_certifications",
-                "ColumnName": "id"
+                "ColumnName": "id",
+                "GUID": "83a803ce-bb5c-4e0e-8cb6-d52e901085b2"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "='校正承認リスト (管理)'!AL29"
               }
             },
-            "Params": [
-              "=AL29"
-            ],
             "ID": "d04b1e8f9de84ada9a9906ea98e48eb3"
           },
           {
@@ -902,16 +947,13 @@
         ],
         "Text": "ID:",
         "ClickMode": 1
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "記録文書へのリンク"
       }
     },
     "28,40": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク",
+        "GUID": "2d1b2338-947f-4f91-9790-e601075eb33f",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_certifications",
           "RelatedColumn": "id",
@@ -923,6 +965,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク",
+        "GUID": "fac33c50-3b3e-4e09-a68b-9fda1dc7d109",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_certifications",
           "RelatedColumn": "id",
@@ -931,24 +974,25 @@
       }
     },
     "29,45": {
+      "BindingInfo": {
+        "TableName": "trn_insptool_calibration_history",
+        "ColumnName": "attachment",
+        "GUID": "eb8e813c-df71-4135-ab49-afcafc6f0d86"
+      },
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "UploadLimit": {
-          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
-          "ReplaceWhenOneFile": true
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
         },
         "ReadOnly": true,
         "TemplateKey": "_RS_Normal_Style2"
-      },
-      "BindingInfo": {
-        "TableName": "trn_insptool_calibration_history",
-        "ColumnName": "attachment"
       }
     },
     "29,64": {
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク",
+        "GUID": "1888777b-b6ea-42fd-9a96-fdc80c9ca445",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_certifications",
           "RelatedColumn": "id",
@@ -960,6 +1004,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク",
+        "GUID": "6500c26b-706b-47d6-85b4-993c972138bc",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_certifications",
           "RelatedColumn": "id",
@@ -983,6 +1028,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク",
+        "GUID": "5666f7bc-c3bb-4c61-9c11-cc2dcb0996c4",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_certifications",
           "RelatedColumn": "id",
@@ -994,6 +1040,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク",
+        "GUID": "a4677000-bf0b-466e-aa0a-af34d0e12d5f",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_certifications",
           "RelatedColumn": "id",
@@ -1005,6 +1052,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク",
+        "GUID": "c3038cfe-a141-435b-a3ef-28556562e8e2",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_certifications",
           "RelatedColumn": "id",
@@ -1016,6 +1064,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク",
+        "GUID": "e54b8fab-490b-4af7-aa55-5ddcbf4a92b4",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -1031,6 +1080,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク",
+        "GUID": "782091cc-c7e4-4a3b-a6f5-a67f333eaa6c",
         "RelationBinding": {
           "RelatedTable": "trn_insptool_certifications",
           "RelatedColumn": "id",
@@ -1042,6 +1092,7 @@
       "BindingInfo": {
         "TableName": "trn_insptool_calibration_history",
         "ColumnName": "記録文書へのリンク",
+        "GUID": "f2a13261-ff57-441b-bbe4-940dbf0bafdb",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -3549,6 +3600,7 @@
     "25,45,1,19",
     "26,45,2,19",
     "29,33,2,9",
+    "31,33,5,31",
     "3,1,1,3",
     "3,4,1,4",
     "3,8,1,3",
@@ -3556,8 +3608,7 @@
     "3,16,1,3",
     "3,19,1,3",
     "3,22,1,3",
-    "3,25,1,3",
-    "31,33,5,31"
+    "3,25,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3586,31 +3637,34 @@
                 "TargetTableName": "trn_insptool_calibration_history",
                 "SqlCondition": {
                   "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                  "Condition1": {
-                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                    "ColumnBindingInfo": {
-                      "TableName": "trn_insptool_calibration_history",
-                      "ColumnName": "FGC_State"
+                  "SubConditions": [
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "trn_insptool_calibration_history",
+                        "ColumnName": "FGC_State",
+                        "GUID": "7fac3c56-fed5-402b-b50c-3b6f9af0e888"
+                      },
+                      "Value": "新規",
+                      "LeftBracket": 1
                     },
-                    "Value": "新規",
-                    "LeftBracket": 1
-                  },
-                  "Condition2": {
-                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                    "ColumnBindingInfo": {
-                      "TableName": "trn_insptool_calibration_history",
-                      "ColumnName": "FGC_State"
-                    },
-                    "Value": "未申請",
-                    "RightBracket": 1
-                  },
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "trn_insptool_calibration_history",
+                        "ColumnName": "FGC_State",
+                        "GUID": "af32025c-eb30-4298-a919-96dd5a8313a0"
+                      },
+                      "Value": "未申請",
+                      "RightBracket": 1
+                    }
+                  ],
                   "RelationType": 1
                 },
-                "Params": [],
                 "ID": "b5337f51a9e347c79e8d808ad39968ac"
               }
             ],
-            "ID": "0eeb3fdf-b6da-4a73-b2eb-e014e330d777"
+            "ID": "c6c7a01a-030b-4f28-9631-6942b4658baf"
           },
           {
             "Condition": {
@@ -3633,15 +3687,15 @@
                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                   "ColumnBindingInfo": {
                     "TableName": "trn_insptool_calibration_history",
-                    "ColumnName": "FGC_State"
+                    "ColumnName": "FGC_State",
+                    "GUID": "6fdc3162-e79c-4053-9cc3-073162ca2e22"
                   },
                   "Value": "申請中"
                 },
-                "Params": [],
                 "ID": "26c109ca046142ef9087d509a92df163"
               }
             ],
-            "ID": "4de2cda6-68fa-4ccc-afa0-a0bd07560e7e"
+            "ID": "2828420e-f826-42d4-9e3b-03da510bc677"
           },
           {
             "Condition": {
@@ -3664,15 +3718,15 @@
                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                   "ColumnBindingInfo": {
                     "TableName": "trn_insptool_calibration_history",
-                    "ColumnName": "FGC_State"
+                    "ColumnName": "FGC_State",
+                    "GUID": "6ca90bfc-a89e-4b28-9f08-e6ae1bd00ab4"
                   },
                   "Value": "否認"
                 },
-                "Params": [],
                 "ID": "69c86c1cb93a496a858c8774d01299c2"
               }
             ],
-            "ID": "59aeca41-c40b-4dca-a415-657e7ea9df0c"
+            "ID": "62f79bbc-5290-472a-8db3-d449123232e2"
           },
           {
             "CommandList": [
@@ -3683,15 +3737,15 @@
                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                   "ColumnBindingInfo": {
                     "TableName": "trn_insptool_calibration_history",
-                    "ColumnName": "FGC_State"
+                    "ColumnName": "FGC_State",
+                    "GUID": "f6dc6d82-4a02-4278-b8a6-a02d75b3097a"
                   },
                   "Value": "承認"
                 },
-                "Params": [],
                 "ID": "510d80224a8a40a8ac1275ce9b896c4b"
               }
             ],
-            "ID": "49f4df0e-b232-425e-854a-24607dee7621"
+            "ID": "a4ace98c-8d06-420a-ad22-395eca87a11e"
           }
         ]
       },
@@ -3703,7 +3757,8 @@
             {
               "ColumnBindingInfo": {
                 "TableName": "trn_insptool_calibration_history",
-                "ColumnName": "処理年月日"
+                "ColumnName": "処理年月日",
+                "GUID": "2e98ed6f-35da-4ba2-af54-ed6603b87be7"
               },
               "Order": 1
             }
@@ -3712,18 +3767,27 @@
         "ID": "fe95116b5dd2441ba4dade26f6101fe2"
       }
     ],
-    "AuthorizeInfo": {
-      "VisitMode": 6,
-      "AllowVisitedRoles": [
-        "IT戦略室",
-        "製造課",
-        "九州製造課",
-        "業務管理課",
-        "製造部",
-        "品質保証課",
-        "基礎開発課",
-        "電気設計課",
-        "サービス部"
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "IT戦略室",
+            "製造課",
+            "九州製造課",
+            "業務管理課",
+            "製造部",
+            "品質保証課",
+            "基礎開発課",
+            "電気設計課",
+            "サービス部"
+          ]
+        }
       ]
     },
     "RowBreakLines": [],
@@ -3731,7 +3795,7 @@
     "RelatedDataTableName": "trn_insptool_calibration_history"
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//j2KadH8KnyBwSoxluVdjCYlwxSh/zucr2EpXBFI99ye6pNo+eCdzKsEG4l5VrCTbDsk2ahF0qAxOlmo4/bv7l31ux7LXRqSS2irFah4d/M5M1QoMy5AmqFbcrLMulKI/IUora2yCIHF60e+v1SUHdWikiw4sZCxMim/3iIpzh/fj1disuJprDqZjLfBD1ZAZa1p2+dyMuodXw3ukUdUrVxqmzWoxZcjPeganl46eIS602hUSHAGVyUAmj67Clolg5oUYmpwYgOyIttc8ls4kjpRuj9Og0L8zNrCUrBfFWPPcyvXVn18gqzRoAlqQz8OHexsRIwZ/UgrCkxsyWEN+oqY6Upitw1jdAzTgtGTTIPvsSphPTcUeGzAtEwhnTagis5OtQvLEBSz/l67U7DWzUxTlKxy8UsxmoF/NcbfmH+1+D47J430bJyMsLwhwL2XcRabkfRfMmnsGgbbGa23oscKEst1ANJemcYsLmZ2zH7xYcVbW6W8Hi3Rr74tGIf287QE1vvr7BVYKJiwPOWdH3htqjgH+B6mxd7uoRIPuwtzHzI6aSGRPEI8jp62w5KYPnjMLaoOXl//rh7J68go8yX+5mpdEKw+4g/ceipXTHQIAoG3Yu3vFSTReG0jzaiuw8iqslfDAFb8y9XImQpf77LlcFfG/SNY3ZNcMOd2E364QJ8N4okteUEHnITTqkQN5quY7+huu5J8Ud0V0NkCoM8TmixlMCd0yyxAKIb/MvryLQ3dW1BUw0cxQQEsPMzreMgpB7MxuP0Jbn4x27drJWvpkZjDAPD+13r8X1DI0pLQW8j2Dm9ERtIxNCJuOIwzfJZ1uf+w7CTFIPOdLjDEQMVfmF7algcyjeCYCWUU5ZhjZZ4l1zcMHt4Kw9aZfJ6E/+zqKWobBhBDMs7/E7dq8mw==|920
+}//618UMWylwURswaQwjjoWcB1edFaIOE7Gi5iC55DT/GkbQm1WBjFcVU92JcR/NFgQkcsWyodPKN1H8OsxfLEcyR034FcPSUUbPNZmZiHKHlofL+XQpynceLHW2G5te5CTpNkNAfJcVCud0pyuN3HDXtdkCTZcrcECaq1SQCkWa0Vb2rU+kFyV2pAUZAG+s5xvPN9b5koUQkEFAbZ+alvkz8Fn5OzTt0ajAEEGR8FYQpO1Q7tadjTmX0PjitcX0qBRsXfrIjXaDXfjdHs6J8xLHB3YRFVEspyq+Oe40jcI3FAVB/MT0ROVIBD32mTyrakXu9TRKEg+8l/mxc+tGaziOPx1U+YxaGLgmwidPgA1szFnl0P4z6VTftqHKoUvigGEs68HoZGpiJRtwr45aDuaUd77OzQdSZfepWKagL0QIr4Pp9A/msjubmXt+VYdjSdbpUa/k//bgaM/mEjQIRLiDTIoNqp91/a54+cgCmHUqIt3a+Nq91JUBBcVGUQQuvmIM2NOFFYW6B7bBoz3Bw1rvuDs4aroRDrmln2IsAOFa73CQ0tOXFBXO9Xh0J2v8Fcm9JeYu6Icn1zQgbWVEk7c11o64Rzz+f0bl7a6bU8+QBbGGZPeyRRQcVkvOq3t7ZSqcPmG/29Id6A3RGOGbwWJadyoAspJLjtkeNfOETNkxbRMemu4YEdwXxc9tpRXBwZZcmeOgAaPRDkCM3hhI7+1RSPuPmy0my6ba3Mc6BHUwvdeN0muuGQc5LqEZwSrSBEJ9r4FQ2s8l9yd7kc3VeDoJZsIIhmXvYsFaCo5HZzuaJINBRwbVD8eWj3ANWDST9PXF+kK7monwr5pJEnqW/appV13FBoMLLjF/Cs3VqMWpXVzOazVtoQ2XqqTIAM0pdZbqVhOFn/xBBnemcDz2O73qw==|920

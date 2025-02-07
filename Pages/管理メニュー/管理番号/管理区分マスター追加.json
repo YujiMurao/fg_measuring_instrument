@@ -93,6 +93,11 @@
   },
   "AttachInfos": {
     "1,5": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_management_indicator",
+        "ColumnName": "devision",
+        "GUID": "2d5ea958-4a32-4aec-bc9b-20ca212ac0e1"
+      },
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
@@ -101,13 +106,14 @@
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "mst_insptool_management_indicator",
-        "ColumnName": "devision"
       }
     },
     "4,5": {
+      "BindingInfo": {
+        "TableName": "mst_insptool_management_indicator",
+        "ColumnName": "name",
+        "GUID": "12d48a70-6a8e-41ef-b13b-744c03aae021"
+      },
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
@@ -116,10 +122,6 @@
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      },
-      "BindingInfo": {
-        "TableName": "mst_insptool_management_indicator",
-        "ColumnName": "name"
       }
     },
     "6,8": {
@@ -130,9 +132,7 @@
             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
             "TableName": "mst_insptool_management_indicator",
             "UpdateType": "add",
-            "ShowConfirm": false,
-            "ConfirmText": "本当に追加してもよろしいですか？",
-            "UpdateValues": []
+            "ShowConfirm": false
           },
           {
             "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
@@ -249,10 +249,19 @@
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "管理区分",
-    "AuthorizeInfo": {
-      "VisitMode": 6,
-      "AllowVisitedRoles": [
-        "IT戦略室"
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "IT戦略室"
+          ]
+        }
       ]
     },
     "RowBreakLines": [],
@@ -260,7 +269,7 @@
     "RelatedDataTableName": "mst_insptool_management_indicator"
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//ZbYuDrU37V2Kq0ElTBBYxEOmS4GuC3k2UO221XlHajw8IA1QiDkMCV/4A/QnSBRCJWCiQgkraBNd9fjmxGXZIHvvRnprMRXYmAnNClleevG53Z1KY1fEl7h9kIU6G3PJJ0ZytGuduhE8jOdBP8sBKh4IGt3XukeZYmvtewIosSJPhIwg0aINHX2BgKrGihmnrevq3/EPXvdofXD1KKTMWmedyhmQQPjPLb4GopQPytfWDomR2xk4oreGrpC6sbZbC1ChL3GISa/ReOq1F3DC/ih6nSwK/eGSuYz0bneJ8WzI6uu4d8qAA5266E6+WDhiE3D69HYcZm/1ceXDCxmGo/Emh3kOUheibAnDkrFrrYfzVcTf6Cnt27rKLZxJvrLDL2JXJQBU/JB3rM8KEKbElIZzOtKkTQAdYIhIaa/Xsh6h8RN17LH2SHnnE/t69lRChClCj93kuq2gThSGHCI50Zfbg0dzFOWUAMqj1Ts8lofDKN9VDZZpCq3J6XC0zP2gomW8zj2grARC4gtykZE4omjHLZ2OnJTHbTFEwa7348wdVVX4T8N07jDRel+FeUw81gcXaVCkQShFSRt2DW+5WhXFG4f5KRbWGkOiIMBPyK0LQTpBnMoW/7MarOJyB3LchKM3AKebdgd94puRtKMNVI+dM3p/ZVuhYjgsEQjZEe+rXZd8TWN0+sR0bdzeUZubvamxjnww1Hn12eMUfhwxTsrZNMRIkRm0tbHL9cb1C3LozjlT4rdzlMc0hG9a/Nh4MjX8HRgz9UNF9R9YJtDxoOkZ8nuSZDjMO3c7HaxosTdibehiCSyi2HPmbu6Nu3LeC2ocDPs9sl+/iimHqRQP2fTIDKEurxQ7CG2rQaqiEYSO647aOZj/aBj4nhsx7shJCZu7UtOY1w8lCsZX3Z8p+Q==|920
+}//Jq34cQzDwQwUzVMkY1hHIajf+FPwvlj+tAI/su5i4KEMNAh/UU5HBKoi9gsoHwySXvVjA6yVuJrmAEkrYyDJAkBs65wE14il6lbiOw1sTsHPpEpK2w++QoxOs0doAeqB5F7yBQXD3Y8504aM/4J9QsbJkr7eInEbZJcqllCZXS7R9xePLktW6zv5p0SslIgi5bn5l4S9ftE3DsU49kn42nZuvmCgfJbRSEiEBhrX0GDo0jrZP2ARV0XfvQT8JgsOXAAbrZLKA9niKBzaDa96Ddg3FsqdfD2CCnf1+lJdxxOCoCM9GPtVRAFqoOHuNi4qpND1b03LwFjZHM8HRdacNGQjg6W2dZIeoSyCfBjlWehtRr5JdMz7Rq5b6vMCNZQAQvOoXEwT4KIjn5shhZBlQDMN1Vsfwc1DROdSPA/Gn1kgJNsHGJuxgfHlEYzlkha18oK8MXMNTQt8x2Q8swfQ+/jX3G9okEUiLLwXUTHaQSscCLTkitM6HzXJxdWdelzmAB10RJ+dlkK7F0A4jlOWpnzLYa/6fYDmJPWs8BPuB5bzsuxlOyMG6Loy+LMUvwSIrbQJaDogYSZDU+RFM4AxD42MJNSDb02/EWOFfblmOfHZ3+gZysIsp3XPsNy6O+SL7kvIqC4rJEB58TiSRQkyPWp75k0OFoRuUVOZiJ6mhiejPDHN7Gut6deyvXzVtHc+1SFYBofmBwPGl60nx6LJInU9lEhdIt4fbC5E0ZJ+G2yk8XB4lj6B2BGfcm/R5SYlYiPbLM3ZgdpukB1n6qQAcvfeC85vwf/3T8HwJXUcQcj5htvVO60eeU2uPUF2UjHsYLmHR2UplNmOC4Bx5VkmDYlVqWwfbwAyFRYFfKl/vEz/+IIMVsIFXi/DUkRlW9/fDZ+NytWv0Gu8APjLTjK8AA==|920

@@ -42,7 +42,6 @@
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "URL": "https://rorze365.sharepoint.com/:x:/r/sites/measurement_instrument/Shared%20Documents/General/%E6%89%8B%E9%A0%86%E6%9B%B8%26%E3%83%95%E3%83%AD%E3%83%BC/%E6%89%8B%E9%A0%86%E6%9B%B8%EF%BC%86%E3%83%95%E3%83%AD%E3%83%BC.xlsx?d=w3dad52ac492f4cbc944cf3e5bd2b3864&csf=1&web=1&e=9wSvrb",
-            "PassValues": [],
             "IsOpenInNewTab": true
           }
         ],
@@ -52,35 +51,38 @@
     },
     "8,2": {
       "ListViewInfo": {
-        "ShowColumnHeaderInDesigner": true,
+        "Name": "リストビュー1",
         "TableName": "mst_insptool_management_department",
         "RowIndex": 8,
         "ColumnIndex": 2,
-        "ColumnCount": 47,
         "RowCount": 16,
-        "ShowEditStatusIcon": true,
-        "UseSimpleBar": true,
-        "Name": "リストビュー1",
+        "ColumnCount": 47,
         "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2"
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true
       }
     },
     "9,2": {
       "BindingInfo": {
         "TableName": "mst_insptool_management_department",
-        "ColumnName": "code"
+        "ColumnName": "code",
+        "GUID": "d1b2bc5f-910f-49fb-850c-6edd6db7b9e0"
       }
     },
     "9,4": {
       "BindingInfo": {
         "TableName": "mst_insptool_management_department",
-        "ColumnName": "name"
+        "ColumnName": "name",
+        "GUID": "83083e3d-a2ed-4ebd-b822-dda82177cbea"
       }
     },
     "9,14": {
       "BindingInfo": {
         "TableName": "mst_insptool_management_department",
         "ColumnName": "supervisor",
+        "GUID": "9604bb97-d77e-47a6-97c1-2ae0d017a4d0",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -91,6 +93,7 @@
       "BindingInfo": {
         "TableName": "mst_insptool_management_department",
         "ColumnName": "leader",
+        "GUID": "654b8982-a011-4065-ada7-ceb6ae75739e",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -101,6 +104,7 @@
       "BindingInfo": {
         "TableName": "mst_insptool_management_department",
         "ColumnName": "staff1",
+        "GUID": "66c39292-dea2-4a4c-b85d-01a7358c411e",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -111,6 +115,7 @@
       "BindingInfo": {
         "TableName": "mst_insptool_management_department",
         "ColumnName": "staff2",
+        "GUID": "97cef710-8858-4f7e-a5af-eb0f6817867b",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -121,6 +126,7 @@
       "BindingInfo": {
         "TableName": "mst_insptool_management_department",
         "ColumnName": "staff3",
+        "GUID": "2b34deaa-44c0-4f37-b54f-23a491a68ada",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -131,6 +137,7 @@
       "BindingInfo": {
         "TableName": "mst_insptool_management_department",
         "ColumnName": "staff4",
+        "GUID": "51ee305d-c0a7-47c3-8601-83ff4d14b20d",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -141,6 +148,7 @@
       "BindingInfo": {
         "TableName": "mst_insptool_management_department",
         "ColumnName": "staff5",
+        "GUID": "4837df2a-757e-41fd-aa8c-f2909595c4f1",
         "AttachType": {
           "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
           "UserColumnAttachType": 1
@@ -1532,18 +1540,27 @@
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "masterpage",
     "Title": "説明 - 計測機器",
-    "AuthorizeInfo": {
-      "VisitMode": 6,
-      "AllowVisitedRoles": [
-        "IT戦略室",
-        "製造課",
-        "九州製造課",
-        "業務管理課",
-        "製造部",
-        "品質保証課",
-        "基礎開発課",
-        "電気設計課",
-        "サービス部"
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "IT戦略室",
+            "製造課",
+            "九州製造課",
+            "業務管理課",
+            "製造部",
+            "品質保証課",
+            "基礎開発課",
+            "電気設計課",
+            "サービス部"
+          ]
+        }
       ]
     },
     "RowBreakLines": [],
@@ -1551,7 +1568,7 @@
     "RelatedDataTableName": "mst_insptool_management_department"
   },
   "PrintInfo": {
-    "Margin": {},
-    "PaperSize": {}
+    "PaperSize": {},
+    "Margin": {}
   }
-}//qTxqkCq8k4MqC2i6tV5t5s/HCNm6ifp+GbgVgzmU8xuBh5wf/rmQx0+FwfXiZmHkVJlvWvnYkrfFRF3OM8bnIaZisMPBBopMhMMpLt2ngduoKkUnZaQsFMulNkfm/9pW0IwN5Nafhdywf/6gwh9H0dwFTws3zSo5uZP7bzmGauvMTpBy862iSKQlUoWYCi4ptPbfuf9bDKdHFZkpW9KR8WpFrh9fDU6r3lBu207u6xOaqqa/JHJ+rtXfT8ReLW8arFuJKt01AhUAqfLU4MaXnySQXjjJb3CcV6b3X/PBpTLUdeFRNOcn9rbH6xA1OUqt5ZMYCK9/jEOXdpl8ZbPIAlNtgdT4Kytj61yg9OPShF1vyEetc14I+xlZAcy0QG5Ah7ImtSiZGRjQwe6Y3niQKLT3LxUi4SKq0qlrbU+N5Fw/wqfov/nBuxWTnVdjqUCgTa4yTUY/Vyddzmcein65yg3wiprxmaOkVPk3zAWqrEIcaWoJAT3s8DcAyaW3vRsXgIYpxEXIwMBkFntTvWNajdWQCbgL8jNCFpIAARYMkKmUgJiTn4AX44B4fTft+dNgcVU08/VWQGZyfizncdt7bO+StcCqjKqvigU6eKmqqPiD5eQejapnIBngjKcQNUoG0Yhg1khOfko01SatfwHNrYWj5Y5j7hL6r/O4yA4KO37WkdcmVTfGbEz9b/NnKIHSo/uwSlMsMcVcwt2ihMNTfn145SMmgujK4x3XXSE5zwDev0juvnn1VpgtBeSoteI5UzjNJjl7ZlJLhDNBg1zLf+yXD1XsxduJF2vSooffwWd0GmP6yU0BBjwhFraUJy2jfdbweYKjkQ9/s828FyW8Mi8Zod9/0mUxU0ns/vozNDR1RZ1HlggwVBx1h+6ak+HW/uwN/5fahR+plBLLu270OA==|920
+}//gAvcJV2ngAYs00qsO/v5ky2XsGq+reJ5nkc1PFyXw5KweuIWBWY0yam+v9qLVXlZlh6Bn5Fs3d9SH8SQOy1vR0utKrG51m9JqAO3kfnozxP4I8+RMUubZn23V30NTDHGYuYLTfJfkGmtjkOBrOaI9PNwz2S5aXpPUOlQeHXWzte17gviCRPkfRCI0mujkwiGw11m0slX+RF1jxrm7YwsFxAdsXKA3YJgXSuz7gWic015Zq39rSc7TPxDvKDy98qW7vJr1H8HtYRsMKbswKNGTB4tSdRbnHqiYoISYGEZIdHQDT1eUInRbDhT8ALiySmRCEFWXTIPW9yi0C8ObUMPlUxMv9P9ojYEWETPNE8en/nVv2uWnygTzGZcYf4DLbwDoYQkGT65jGxEXPT+HNtd5jo7+DstmmfEXmfVG188m2ETimVcPDwGTG3O7uJf6T1ONtu5a/aa+BfPtaBSMrQ2Anthj1kP2rOyTFs99DiBCazZ6jMGUSD6SonpjcDD4cMGuB4Rtq06ygYfrjSY8ty1T1V+of/pFtWJXhPrlgZt5tD54niZFUORlN0eCG4rmEjay324Ea/XuekiYiecNulfjD8ZU8LmRRREE7HmQKgKbPxzfVyWujHJKc3ACVvOjjjuKRs4zeLbAyotPKW5/wABF2c2WO3qJhq/hqhE2tpsIa39L9B0C4OOmES7JTM4O0XZx4Dq9fYVVkjYiWv20PN4dmabPs+gnDnKwn+jzrlAxUbXUzbBBpN3TEIyozDAH1nLsp3auhTISQzEia0W5r+OKvkjnd0xlKNKT8O44uTliX/2ypas/c4WSaaFqiIDxt4vwfEVFjNgkDfmtdacLhL3nah6Avdyrxr+UIqiYQWmrtYI2Pv3fsw9ym3ByPnIDFfmQjbhmnVbNucU0ykSYEhQlQ==|920
