@@ -183,7 +183,7 @@
     "12,1": "*",
     "12,2": "年月日",
     "14,1": "*",
-    "14,2": "業者名（担当者）",
+    "14,2": "業者名/担当者",
     "16,2": "摘要",
     "18,2": "備考",
     "20,2": "添付ファイル",
@@ -313,7 +313,7 @@
                     ]
                   }
                 ],
-                "ID": "3183ff1e-6881-45d9-a9b7-44cb855c6aa1"
+                "ID": "b0d2a4d5-0184-452d-b074-443d4285784d"
               },
               {
                 "CommandList": [
@@ -403,7 +403,7 @@
                     ]
                   }
                 ],
-                "ID": "63ff9003-6d7f-4a65-950f-0f1803502f25"
+                "ID": "f9c0cb53-3ec6-4e00-ae79-6639157abbc4"
               }
             ]
           }
@@ -583,7 +583,7 @@
                     ]
                   }
                 ],
-                "ID": "3e6cb26b-7823-4c5f-830f-acac3d23ca9a"
+                "ID": "c0ce3836-d9b3-4d36-8adb-3d76eaa8695f"
               },
               {
                 "CommandList": [
@@ -603,7 +603,7 @@
                     ]
                   }
                 ],
-                "ID": "fb0072fb-5ba8-493f-85a9-cbb8ab77174e"
+                "ID": "11855427-ba64-4bb0-ad35-fdf757805495"
               }
             ]
           }
@@ -632,6 +632,7 @@
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "社内校正時は『作業者名』を入力する",
         "IsBounding": true,
         "DataSource": "trn_insptool_calibration_history",
         "ValueColumnBindingInfo": {
@@ -653,7 +654,9 @@
         }
       },
       "DataValidationInfo": {
-        "IgnoreBlank": false
+        "IgnoreBlank": false,
+        "InputMessageTitle": "注意事項",
+        "InputMessage": "社内校正時は『作業者名』を入力する"
       }
     },
     "16,7": {
@@ -740,7 +743,7 @@
                     ]
                   }
                 ],
-                "ID": "79870b8f-65a8-4f2e-b527-a8853c17de64"
+                "ID": "dfe4052d-c006-4d08-a0ae-8c3de7fa74d8"
               },
               {
                 "CommandList": [
@@ -760,7 +763,7 @@
                     ]
                   }
                 ],
-                "ID": "396669ec-d6b2-445e-aa4b-682ddb75ef9a"
+                "ID": "238290e4-98b0-4a51-91f0-576d09c13761"
               }
             ]
           }
@@ -2139,4 +2142,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//+zYgkr6U01nksDGvbUmKvIqsEBpTMfpLecoRpplm8O970m1fNE/euNcHpa2SA4W9s4n/xGJzlLk36PCo41WBXsIUehpilb/Bkz75GMHaOmMZN8E0W50M4RRvbvkpFmAVPp5Kx04tHuUUIeJnpFN48I8JsWlbYd7L3weLSZ3tasUCU/wWixCslBLcbX79zXIs3I+/nukalgDCgxL1tdHoi+BofHFQDFUTAr/Tb7w1nG7RrY0oJ89AZpK822b1vCw7/idBal3Cjh0zUNyMrd4JB9pV01WbSUDW/n0BOoY2dwGR1/AOp4RctW2jQWVss893skpWkERcHNaxA0CeP0sgzpHZU+uR7zZDbm2uyGggKfxmGcyTVmHOY4X/EH+4tdTRbMq+VTFNryycW+zV0+njABXkEnFiknYyPazqdTB2NwIDWKjPCfrrK4mxQ63I5QJK35xMgD7omPlnjVU3kFxBsZx57DMgssVmJKLEJS/B6Ovm94uq6lduMpZeZuKjeau+TVvVUT1QxuQfFGpghWJbuHc2mJu5CSFEsuvOYKwrWta9hPAf5e5qNU7VC20unA6mUjACNGEERNDyPrY3PKL9QtwLjIAKlqjKowz9U0dydooIPQwwTXa6HRWJQ58/agTuimeK7/nygXpO8f6ailhbit/y4jYJI1/1jS6y2ksFRDGCjX6stJTdd8dOPJZHf8cRXAa27T5Zva0YCJnbJu98zux2R9mzSuKJ42Bj7saz8TT4wtYNqvlgsKx0Xwi2Kwcu53GaHSR5ZYvECmM4hf0+XrfTOUTTZo3cYgXTlqX5Btcjg/Q/XoiLRlQ8c+MLFYt7KEQmX+rF0xv2Js2WbMj7qnT8bl8R7jsVveWzS8QR+/gaLcFefYwMfF5DQdFkH38//6KHmSaCxYeb9PVgsvwN3w==|920
+}//YcUFD92N/6RdfXeYMRTYpm9ZMsWFCPY3mpmANXk5Y9I0/i0wbdOxRcur2FKnepHpFQ+4UZ5zYyqAcGHVwT5uy75jTq5b85bACZWntwX9AjXL00+PKYMIHhJn0msLfYl+/gWJ+rwNMl4rKs3o2eXiekiiQfXWhjsTBBm+c+3bw1YkX9pfjm5MpuYikWDuRHUvEg2Y0TqASVAG0RI9DdB3qjvc0Bj3u9O8W61Qd50MMoWg5rGi9s3HfUg1RZaKSZ//U8BdB6WXwvhhjQAmxw/pYDDFfU3m/mGaXjFXUuPexFSPrQ4Pa03w5MAAAlT++os2azSqHIP1rbZT5+yrIa5zlpktvrCc8rg6Q9lwtPdblSofbdw4DtUtTSdzPpoyUvaToOtttnjf6pWT+fRErQQ1g13qeAkClIaMputVE8J5EK/or2S8qfjKo4jVyt8+ucnw9ExOEkfE/wUCMLj3lM8Tk8UFxkTQQB4/1DPppzBVEOxvNphlJk5Pdp5Tlg2mbyGc4yO+82+7ud5plPHGdtAu1pbKzqvuTJWQf9NqDre26Gb6LNH+FYO2RBXcrk/FZP7XGE0/qTY3ONLQHgmBCW0uIiFpXzsiOZ7G5RSJB+uiJ8wUy17JWk/4KLHK1OQjfdbC56HxBkkxjBZbRvFs+7Uj5NCokjlVQsFwoRmUvluG/Wc65atUhhHguXlgZXZ98mow/cPxp6QbMouRz/DfVJqnb9htTFm1JWXPS6Xm+I/9frpnoYfbg8I+JwOWM45x/pH2ORPzmWZZCGKsq9wUz625e4qBOsyxtqSWrBkfRvBNca89yWqyuFoTvrXs5JlByvc4YsUxrLSSuGkZMd9LxY53+vw4XSOl/zTTIUY44x2Sisj4gOm/qMjqmeoTGr1x2YpkKWDA2m580sTJz/gQD6YZOg==|920
